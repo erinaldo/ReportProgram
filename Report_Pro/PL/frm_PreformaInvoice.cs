@@ -313,6 +313,8 @@ namespace Report_Pro.PL
         {
             if (e.KeyCode==Keys.Enter && uC_Items1.ID.Text != string.Empty)
             {
+                txtUnit.SelectedIndex = -1;
+                txtUnitWeight.Text = "";
                 txtUnit.SelectedText = uC_Items1.itemUnit.Text;
                 txtUnitWeight.Text = uC_Items1.itemWeight.Text;
                 txtNote.Focus();
@@ -350,6 +352,11 @@ namespace Report_Pro.PL
             {
                
             }
+        }
+
+        private void groupPanel7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

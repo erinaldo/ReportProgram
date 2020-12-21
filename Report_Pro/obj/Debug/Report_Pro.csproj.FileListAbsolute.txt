@@ -3011,7 +3011,6 @@ D:\My-Github\ReportProgram\Report_Pro\bin\Debug\es\DevExpress.XtraVerticalGrid.v
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\ja\DevExpress.XtraVerticalGrid.v19.1.resources.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\ru\DevExpress.XtraVerticalGrid.v19.1.resources.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Interop.WIA.dll
-D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Interop.WIA.dll
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.ResolveComReference.cache
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Form1.resources
@@ -3267,3 +3266,6 @@ D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PreformaInvoice.resources
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PreformaInvoice.ar.resources
+D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Row.resources
+D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Row.ar.resources
+D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache

@@ -173,6 +173,10 @@
   <data name="lblExpiryDate.Text" xml:space="preserve">
     <value>تاريخ الانتهاء</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblExpiryDate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="lblShipDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -197,6 +201,9 @@
   <data name="lblOpenDate.Text" xml:space="preserve">
     <value>تاريخ الاصدار</value>
   </data>
+  <data name="lblOpenDate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="Amount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -205,6 +212,9 @@
   </data>
   <data name="Amount.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
+  </data>
+  <data name="Amount.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lblValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -217,6 +227,9 @@
   </data>
   <data name="lblValue.Text" xml:space="preserve">
     <value>القيمة</value>
+  </data>
+  <data name="lblValue.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lblCurency.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -242,6 +255,9 @@
   <data name="lblNo.Text" xml:space="preserve">
     <value>رقم الاعتماد</value>
   </data>
+  <data name="lblNo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="LcNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -250,6 +266,9 @@
   </data>
   <data name="LcNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 20</value>
+  </data>
+  <data name="LcNo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="BNew.Text" xml:space="preserve">
     <value>جديد</value>
@@ -324,7 +343,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 67</value>
+    <value>46, 82</value>
   </data>
   <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -339,7 +358,7 @@
     <value>Top, Right</value>
   </data>
   <data name="btnStatment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 35</value>
+    <value>46, 50</value>
   </data>
   <data name="btnStatment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -446,10 +465,12 @@
   <data name="label17.Text" xml:space="preserve">
     <value>حساب الاعتماد</value>
   </data>
+  <data name="label17.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtLcAcc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtLcAcc.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -458,6 +479,9 @@
   </data>
   <data name="txtLcAcc.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 21</value>
+  </data>
+  <data name="txtLcAcc.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -471,11 +495,17 @@
   <data name="label16.Text" xml:space="preserve">
     <value>الفرع</value>
   </data>
+  <data name="label16.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtBranch.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 220</value>
+  </data>
+  <data name="txtBranch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="txtMainLcAccNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -504,11 +534,17 @@
   <data name="label15.Text" xml:space="preserve">
     <value>ميناء الوصول</value>
   </data>
+  <data name="label15.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtArivePort.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtArivePort.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 270</value>
+  </data>
+  <data name="txtArivePort.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -582,6 +618,9 @@
   <data name="ExpiryDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 20</value>
   </data>
+  <data name="ExpiryDate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="OpenDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -606,6 +645,9 @@
   <data name="OpenDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 20</value>
   </data>
+  <data name="OpenDate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtAddValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -618,6 +660,9 @@
   <data name="txtAddValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 20</value>
   </data>
+  <data name="txtAddValue.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -627,6 +672,9 @@
   <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 0</value>
   </data>
+  <data name="label13.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -635,6 +683,9 @@
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label11.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -650,6 +701,9 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>سعر الصرف</value>
+  </data>
+  <data name="label1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lblSupplier.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -672,6 +726,9 @@
   <data name="lblBank.Text" xml:space="preserve">
     <value>البنك</value>
   </data>
+  <data name="lblBank.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtSupplier.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -686,6 +743,9 @@
   </data>
   <data name="txtBank.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 244</value>
+  </data>
+  <data name="txtBank.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lblMatrial.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -720,6 +780,9 @@
   <data name="lblQty.Text" xml:space="preserve">
     <value>الكمية</value>
   </data>
+  <data name="lblQty.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="txtQty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -728,6 +791,9 @@
   </data>
   <data name="txtQty.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 20</value>
+  </data>
+  <data name="txtQty.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="txtRate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -738,11 +804,14 @@
   <data name="txtRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 20</value>
   </data>
+  <data name="txtRate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="buttonX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 3</value>
+    <value>46, 18</value>
   </data>
   <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 28</value>
@@ -751,13 +820,13 @@
     <value>المرفقات</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1136, 354</value>
+    <value>1136, 145</value>
   </data>
   <data name="dGV_Item.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 54</value>
+    <value>1, 126</value>
   </data>
   <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1128, 207</value>
+    <value>1128, 344</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 9</value>
@@ -826,7 +895,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="groupPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 261</value>
+    <value>1, 470</value>
   </data>
   <data name="groupPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -838,7 +907,7 @@
     <value>Top, Right</value>
   </data>
   <data name="doubleInput3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 21</value>
+    <value>281, 21</value>
   </data>
   <data name="doubleInput3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -850,7 +919,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 3</value>
+    <value>282, 3</value>
   </data>
   <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -865,7 +934,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 3</value>
+    <value>792, 3</value>
   </data>
   <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -879,6 +948,9 @@
   <data name="txt_Price.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txt_Price.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 21</value>
+  </data>
   <data name="txt_Price.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
@@ -889,7 +961,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 3</value>
+    <value>362, 3</value>
   </data>
   <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -904,16 +976,16 @@
     <value>Top, Right</value>
   </data>
   <data name="uC_Items1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 21</value>
+    <value>795, 21</value>
   </data>
   <data name="uC_Items1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 20</value>
+    <value>321, 21</value>
   </data>
   <data name="txtUnit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 21</value>
+    <value>491, 21</value>
   </data>
   <data name="txtUnit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -925,7 +997,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 1</value>
+    <value>134, 1</value>
   </data>
   <data name="labelX53.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -940,7 +1012,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txt_TotWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 21</value>
+    <value>130, 21</value>
   </data>
   <data name="txt_TotWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -952,7 +1024,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 3</value>
+    <value>221, 3</value>
   </data>
   <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -967,7 +1039,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 21</value>
+    <value>218, 21</value>
   </data>
   <data name="txtUnitWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -979,7 +1051,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 3</value>
+    <value>492, 3</value>
   </data>
   <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -993,6 +1065,9 @@
   <data name="txt_Qty.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txt_Qty.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 21</value>
+  </data>
   <data name="txt_Qty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
@@ -1003,7 +1078,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 1</value>
+    <value>47, 1</value>
   </data>
   <data name="labelX52.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -1018,7 +1093,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 21</value>
+    <value>42, 21</value>
   </data>
   <data name="txtBalance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -1030,7 +1105,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 3</value>
+    <value>553, 3</value>
   </data>
   <data name="labelX17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -1045,7 +1120,7 @@
     <value>Top, Right</value>
   </data>
   <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>560, 21</value>
+    <value>554, 21</value>
   </data>
   <data name="txtNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -1057,7 +1132,7 @@
     <value>Top, Right</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 3</value>
+    <value>423, 3</value>
   </data>
   <data name="labelX29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
@@ -1075,40 +1150,37 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1128, 53</value>
+    <value>1128, 125</value>
   </data>
   <data name="tabControlPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tabControlPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 313</value>
+    <value>1130, 522</value>
   </data>
   <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 339</value>
+    <value>1130, 548</value>
   </data>
   <data name="tabItem2.Text" xml:space="preserve">
     <value>اضافة حساب الاعتماد</value>
   </data>
   <data name="groupPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 381</value>
+    <value>0, 172</value>
   </data>
   <data name="groupPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 1, 1, 1</value>
   </data>
   <data name="groupPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1136, 345</value>
+    <value>1136, 554</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1136, 726</value>
   </data>
   <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>600, 449</value>

@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSerchLcs));
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnSearch = new DevComponents.DotNetBar.ButtonX();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtlcNo = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPreformNo = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtSupplier = new Report_Pro.MyControls.UC_Acc();
+            this.txtBank = new Report_Pro.MyControls.UC_Acc();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.DGV1 = new System.Windows.Forms.DataGridView();
-            this.txtPreformNo = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtlcNo = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txtBank = new Report_Pro.MyControls.UC_Acc();
-            this.txtSupplier = new Report_Pro.MyControls.UC_Acc();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.btnSearch = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).BeginInit();
@@ -82,6 +82,76 @@
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
+            resources.ApplyResources(this.btnSearch, "btnSearch");
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // labelX4
+            // 
+            resources.ApplyResources(this.labelX4, "labelX4");
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            this.labelX4.Name = "labelX4";
+            // 
+            // labelX3
+            // 
+            resources.ApplyResources(this.labelX3, "labelX3");
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.labelX3.Name = "labelX3";
+            // 
+            // labelX2
+            // 
+            resources.ApplyResources(this.labelX2, "labelX2");
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            this.labelX2.Name = "labelX2";
+            // 
+            // labelX1
+            // 
+            resources.ApplyResources(this.labelX1, "labelX1");
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            this.labelX1.Name = "labelX1";
+            // 
+            // txtlcNo
+            // 
+            // 
+            // 
+            // 
+            this.txtlcNo.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.txtlcNo, "txtlcNo");
+            this.txtlcNo.Name = "txtlcNo";
+            this.txtlcNo.TextChanged += new System.EventHandler(this.txtlcNo_TextChanged);
+            this.txtlcNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtlcNo_KeyUp);
+            // 
+            // txtPreformNo
+            // 
+            // 
+            // 
+            // 
+            this.txtPreformNo.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.txtPreformNo, "txtPreformNo");
+            this.txtPreformNo.Name = "txtPreformNo";
+            this.txtPreformNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreformNo_KeyUp);
+            // 
+            // txtSupplier
+            // 
+            this.txtSupplier.BackColor = System.Drawing.Color.Transparent;
+            this.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.txtSupplier, "txtSupplier");
+            this.txtSupplier.Name = "txtSupplier";
+            this.txtSupplier.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSupplier_KeyUp);
+            // 
+            // txtBank
+            // 
+            this.txtBank.BackColor = System.Drawing.Color.Transparent;
+            this.txtBank.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.txtBank, "txtBank");
+            this.txtBank.Name = "txtBank";
+            this.txtBank.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBank_KeyUp);
+            // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
@@ -121,76 +191,6 @@
             this.DGV1.ReadOnly = true;
             this.DGV1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV1.DoubleClick += new System.EventHandler(this.DGV1_DoubleClick);
-            // 
-            // txtPreformNo
-            // 
-            // 
-            // 
-            // 
-            this.txtPreformNo.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txtPreformNo, "txtPreformNo");
-            this.txtPreformNo.Name = "txtPreformNo";
-            this.txtPreformNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreformNo_KeyUp);
-            // 
-            // txtlcNo
-            // 
-            // 
-            // 
-            // 
-            this.txtlcNo.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txtlcNo, "txtlcNo");
-            this.txtlcNo.Name = "txtlcNo";
-            this.txtlcNo.TextChanged += new System.EventHandler(this.txtlcNo_TextChanged);
-            this.txtlcNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtlcNo_KeyUp);
-            // 
-            // txtBank
-            // 
-            this.txtBank.BackColor = System.Drawing.Color.Transparent;
-            this.txtBank.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.txtBank, "txtBank");
-            this.txtBank.Name = "txtBank";
-            this.txtBank.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBank_KeyUp);
-            // 
-            // txtSupplier
-            // 
-            this.txtSupplier.BackColor = System.Drawing.Color.Transparent;
-            this.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.txtSupplier, "txtSupplier");
-            this.txtSupplier.Name = "txtSupplier";
-            this.txtSupplier.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSupplier_KeyUp);
-            // 
-            // labelX1
-            // 
-            resources.ApplyResources(this.labelX1, "labelX1");
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Name = "labelX1";
-            // 
-            // labelX2
-            // 
-            resources.ApplyResources(this.labelX2, "labelX2");
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Name = "labelX2";
-            // 
-            // labelX3
-            // 
-            resources.ApplyResources(this.labelX3, "labelX3");
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Name = "labelX3";
-            // 
-            // labelX4
-            // 
-            resources.ApplyResources(this.labelX4, "labelX4");
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Name = "labelX4";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
-            resources.ApplyResources(this.btnSearch, "btnSearch");
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // FrmSerchLcs
             // 
