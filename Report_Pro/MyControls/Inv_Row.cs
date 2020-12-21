@@ -17,11 +17,6 @@ namespace Report_Pro.MyControls
             InitializeComponent();
         }
 
-        private void UC_Catogry_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ID_KeyUp(object sender, KeyEventArgs e)
         {
             get_desc();
@@ -96,6 +91,20 @@ namespace Report_Pro.MyControls
 
         private void Desc_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void ID_DoubleClick(object sender, EventArgs e)
+        {
+           OnDoubleClick(e);
+        }
+
+        private void Inv_Row_Load(object sender, EventArgs e)
+        {
+            Unit.DataSource = dal.getDataTabl_1("select * from " + dal.db1 + ".dbo.wh_unit");
+            Unit.DisplayMember = "Wh_Unit";
+            Unit.ValueMember = "Wh_Unit";
+            Unit.SelectedIndex = -1;
 
         }
     }

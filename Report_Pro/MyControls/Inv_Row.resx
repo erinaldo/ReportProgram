@@ -119,14 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>100, 0</value>
   </data>
   <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 20</value>
+    <value>382, 27</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Desc.TabIndex" type="System.Int32, mscorlib">
@@ -142,40 +138,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 0</value>
-  </data>
-  <data name="btn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 19</value>
-  </data>
-  <data name="btn1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;btn1.Name" xml:space="preserve">
-    <value>btn1</value>
-  </data>
-  <data name="&gt;&gt;btn1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btn1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
+    <value>100, 27</value>
   </data>
   <data name="ID.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -190,13 +159,17 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ID.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="itemPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 25</value>
+    <value>164, 37</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="itemPrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="itemPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>120, 27</value>
   </data>
   <data name="itemPrice.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -211,13 +184,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;itemPrice.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="Weight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>437, 0</value>
+    <value>894, 0</value>
+  </data>
+  <data name="Weight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Weight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>120, 27</value>
   </data>
   <data name="Weight.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -232,13 +208,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Weight.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="Unit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 0</value>
+    <value>482, 0</value>
+  </data>
+  <data name="Unit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Unit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 21</value>
+    <value>172, 27</value>
   </data>
   <data name="Unit.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -253,37 +232,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Unit.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
-  <data name="doubleInput1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>597, 0</value>
+  <data name="Price.Location" type="System.Drawing.Point, System.Drawing">
+    <value>774, 0</value>
   </data>
-  <data name="doubleInput1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+  <data name="Price.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="doubleInput1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Price.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="Price.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;doubleInput1.Name" xml:space="preserve">
-    <value>doubleInput1</value>
+  <data name="&gt;&gt;Price.Name" xml:space="preserve">
+    <value>Price</value>
   </data>
-  <data name="&gt;&gt;doubleInput1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Price.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;doubleInput1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Price.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;doubleInput1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;Price.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="Qty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 0</value>
+    <value>654, 0</value>
+  </data>
+  <data name="Qty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Qty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>120, 27</value>
   </data>
   <data name="Qty.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="&gt;&gt;Qty.Name" xml:space="preserve">
     <value>Qty</value>
@@ -295,19 +280,91 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Qty.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TotalValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1014, 0</value>
+  </data>
+  <data name="TotalValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TotalValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="TotalValue.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;TotalValue.Name" xml:space="preserve">
+    <value>TotalValue</value>
+  </data>
+  <data name="&gt;&gt;TotalValue.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;TotalValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TotalValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TotalWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1134, 0</value>
+  </data>
+  <data name="TotalWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="TotalWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="TotalWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;TotalWeight.Name" xml:space="preserve">
+    <value>TotalWeight</value>
+  </data>
+  <data name="&gt;&gt;TotalWeight.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;TotalWeight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TotalWeight.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Balance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1254, 0</value>
+  </data>
+  <data name="Balance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="Balance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="Balance.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;Balance.Name" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="&gt;&gt;Balance.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;Balance.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Balance.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 19</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>677, 19</value>
+    <value>1427, 27</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Inv_Row</value>

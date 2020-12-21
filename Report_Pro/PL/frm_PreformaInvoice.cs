@@ -234,10 +234,6 @@ namespace Report_Pro.PL
             txtBranch.txtTfinal.Text = "1";
 
 
-            txtUnit.DataSource = dal.getDataTabl_1("select * from " + dal.db1 + ".dbo.wh_unit");
-            txtUnit.DisplayMember = "Wh_Unit";
-            txtUnit.ValueMember = "Wh_Unit";
-            txtUnit.SelectedIndex = -1;
 
         }
 
@@ -280,17 +276,6 @@ namespace Report_Pro.PL
      
 
 
-        private void uC_Items1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                PL.frm_search_items frm = new PL.frm_search_items();
-                frm.ShowDialog();
-                uC_Items1.ID.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
-                //get_balance();
-            }
-            catch { }
-        }
 
         private void buttonItem2_Click(object sender, EventArgs e)
         {
@@ -306,55 +291,7 @@ namespace Report_Pro.PL
             frmUpload.ShowDialog();
         }
 
-     
-       
-
-        private void uC_Items1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode==Keys.Enter && uC_Items1.ID.Text != string.Empty)
-            {
-                txtUnit.SelectedIndex = -1;
-                txtUnitWeight.Text = "";
-                txtUnit.SelectedText = uC_Items1.itemUnit.Text;
-                txtUnitWeight.Text = uC_Items1.itemWeight.Text;
-                txtNote.Focus();
-            }
-        }
-
-        private void txtNote_KeyDown(object sender, KeyEventArgs e)
-        {
-
-            if (e.KeyCode == Keys.Enter )
-            {
-                txtUnit.Focus();
-            }
-        }
-
-        private void txtUnit_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                txt_Qty.Focus();
-            }
-        }
-
-        private void txt_Qty_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter && txt_Qty.Value >0)
-            {
-                txt_Price.Focus();
-            }
-        }
-
-        private void txt_Price_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter && txt_Price.Value > 0)
-            {
-               
-            }
-        }
-
-        private void groupPanel7_Click(object sender, EventArgs e)
+        private void labelX1_Click(object sender, EventArgs e)
         {
 
         }

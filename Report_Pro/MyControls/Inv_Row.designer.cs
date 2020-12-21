@@ -30,17 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inv_Row));
             this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.btn1 = new DevComponents.DotNetBar.ButtonX();
             this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.itemPrice = new DevComponents.Editors.DoubleInput();
             this.Weight = new DevComponents.Editors.DoubleInput();
             this.Unit = new System.Windows.Forms.ComboBox();
+            this.Price = new DevComponents.Editors.DoubleInput();
             this.Qty = new DevComponents.Editors.DoubleInput();
-            this.doubleInput1 = new DevComponents.Editors.DoubleInput();
+            this.TotalValue = new DevComponents.Editors.DoubleInput();
+            this.TotalWeight = new DevComponents.Editors.DoubleInput();
+            this.Balance = new DevComponents.Editors.DoubleInput();
             ((System.ComponentModel.ISupportInitialize)(this.itemPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Price)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Qty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doubleInput1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalWeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Balance)).BeginInit();
             this.SuspendLayout();
             // 
             // Desc
@@ -59,15 +64,6 @@
             this.Desc.ReadOnly = true;
             this.Desc.TextChanged += new System.EventHandler(this.Desc_TextChanged);
             // 
-            // btn1
-            // 
-            this.btn1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn1.Image = global::Report_Pro.Properties.Resources.search_16;
-            resources.ApplyResources(this.btn1, "btn1");
-            this.btn1.Name = "btn1";
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            // 
             // ID
             // 
             // 
@@ -82,6 +78,7 @@
             resources.ApplyResources(this.ID, "ID");
             this.ID.Name = "ID";
             this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
+            this.ID.DoubleClick += new System.EventHandler(this.ID_DoubleClick);
             this.ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_KeyDown);
             this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
             // 
@@ -119,69 +116,124 @@
             resources.ApplyResources(this.Unit, "Unit");
             this.Unit.Name = "Unit";
             // 
+            // Price
+            // 
+            // 
+            // 
+            // 
+            this.Price.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Price.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Price.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Price.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Price.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Price.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.Price.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.Price.Increment = 1D;
+            resources.ApplyResources(this.Price, "Price");
+            this.Price.Name = "Price";
+            // 
             // Qty
             // 
             // 
             // 
             // 
-            this.doubleInput1.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.doubleInput1.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.Qty.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Qty.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Qty.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Qty.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Qty.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Qty.BackgroundStyle.Class = "DateTimeInputBackground";
             this.Qty.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.Qty.Increment = 1D;
             resources.ApplyResources(this.Qty, "Qty");
             this.Qty.Name = "Qty";
             // 
-            // doubleInput1
+            // TotalValue
             // 
             // 
             // 
             // 
-            this.doubleInput1.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.doubleInput1.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.doubleInput1.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.doubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.doubleInput1.Increment = 1D;
-            resources.ApplyResources(this.doubleInput1, "doubleInput1");
-            this.doubleInput1.Name = "doubleInput1";
+            this.TotalValue.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalValue.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TotalValue.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalValue.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalValue.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalValue.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.TotalValue.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.TotalValue.Increment = 1D;
+            resources.ApplyResources(this.TotalValue, "TotalValue");
+            this.TotalValue.Name = "TotalValue";
+            // 
+            // TotalWeight
+            // 
+            // 
+            // 
+            // 
+            this.TotalWeight.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalWeight.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TotalWeight.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalWeight.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalWeight.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.TotalWeight.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.TotalWeight.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.TotalWeight.Increment = 1D;
+            resources.ApplyResources(this.TotalWeight, "TotalWeight");
+            this.TotalWeight.Name = "TotalWeight";
+            // 
+            // Balance
+            // 
+            // 
+            // 
+            // 
+            this.Balance.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Balance.BackgroundStyle.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Balance.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Balance.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Balance.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Balance.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.Balance.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.Balance.Increment = 1D;
+            resources.ApplyResources(this.Balance, "Balance");
+            this.Balance.Name = "Balance";
             // 
             // Inv_Row
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.doubleInput1);
+            this.Controls.Add(this.TotalValue);
+            this.Controls.Add(this.TotalWeight);
+            this.Controls.Add(this.Balance);
             this.Controls.Add(this.Qty);
+            this.Controls.Add(this.Price);
             this.Controls.Add(this.Unit);
             this.Controls.Add(this.Weight);
             this.Controls.Add(this.itemPrice);
             this.Controls.Add(this.Desc);
-            this.Controls.Add(this.btn1);
             this.Controls.Add(this.ID);
             this.Name = "Inv_Row";
-            this.Load += new System.EventHandler(this.UC_Catogry_Load);
+            this.Load += new System.EventHandler(this.Inv_Row_Load);
             ((System.ComponentModel.ISupportInitialize)(this.itemPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Price)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Qty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doubleInput1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalWeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Balance)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         public DevComponents.DotNetBar.Controls.TextBoxX Desc;
-        private DevComponents.DotNetBar.ButtonX btn1;
         public DevComponents.DotNetBar.Controls.TextBoxX ID;
         public DevComponents.Editors.DoubleInput itemPrice;
         public DevComponents.Editors.DoubleInput Weight;
         private System.Windows.Forms.ComboBox Unit;
+        public DevComponents.Editors.DoubleInput Price;
         public DevComponents.Editors.DoubleInput Qty;
-        public DevComponents.Editors.DoubleInput doubleInput1;
+        public DevComponents.Editors.DoubleInput TotalValue;
+        public DevComponents.Editors.DoubleInput TotalWeight;
+        public DevComponents.Editors.DoubleInput Balance;
     }
 }
