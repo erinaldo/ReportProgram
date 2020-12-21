@@ -423,6 +423,16 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap myLogo {
+            get {
+                object obj = ResourceManager.GetObject("myLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_1 {
             get {
                 object obj = ResourceManager.GetObject("new-1", resourceCulture);

@@ -8,6 +8,7 @@
             <xs:sequence>
               <xs:element name="Branch_code" type="xs:string" minOccurs="0" />
               <xs:element name="branch_name" type="xs:string" minOccurs="0" />
+              <xs:element name="WH_E_NAME" type="xs:string" minOccurs="0" />
               <xs:element name="Weight" type="xs:decimal" minOccurs="0" />
               <xs:element name="local_cost" type="xs:decimal" minOccurs="0" />
               <xs:element name="Unit" type="xs:string" minOccurs="0" />

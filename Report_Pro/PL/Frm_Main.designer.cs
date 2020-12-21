@@ -77,6 +77,7 @@
             this.M53 = new DevComponents.DotNetBar.ButtonItem();
             this.M54 = new DevComponents.DotNetBar.ButtonItem();
             this.M55 = new DevComponents.DotNetBar.ButtonItem();
+            this.M56 = new DevComponents.DotNetBar.ButtonItem();
             this.M6 = new DevComponents.DotNetBar.ButtonItem();
             this.M61 = new DevComponents.DotNetBar.ButtonItem();
             this.M62 = new DevComponents.DotNetBar.ButtonItem();
@@ -106,6 +107,7 @@
             this.M84 = new DevComponents.DotNetBar.ButtonItem();
             this.M85 = new DevComponents.DotNetBar.ButtonItem();
             this.M86 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem9 = new DevComponents.DotNetBar.ButtonItem();
             this.M9 = new DevComponents.DotNetBar.ButtonItem();
             this.M91 = new DevComponents.DotNetBar.ButtonItem();
             this.M911 = new DevComponents.DotNetBar.ButtonItem();
@@ -140,7 +142,6 @@
             this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.M56 = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -498,6 +499,12 @@
             resources.ApplyResources(this.M55, "M55");
             this.M55.Click += new System.EventHandler(this.M55_Click);
             // 
+            // M56
+            // 
+            this.M56.Name = "M56";
+            resources.ApplyResources(this.M56, "M56");
+            this.M56.Click += new System.EventHandler(this.M56_Click);
+            // 
             // M6
             // 
             this.M6.Name = "M6";
@@ -666,7 +673,8 @@
             this.M83,
             this.M84,
             this.M85,
-            this.M86});
+            this.M86,
+            this.buttonItem9});
             this.M8.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.M8, "M8");
             this.M8.Click += new System.EventHandler(this.M8_Click);
@@ -706,6 +714,13 @@
             this.M86.Name = "M86";
             resources.ApplyResources(this.M86, "M86");
             this.M86.Click += new System.EventHandler(this.M86_Click);
+            // 
+            // buttonItem9
+            // 
+            this.buttonItem9.Name = "buttonItem9";
+            this.buttonItem9.OptionGroup = "M87";
+            resources.ApplyResources(this.buttonItem9, "buttonItem9");
+            this.buttonItem9.Click += new System.EventHandler(this.buttonItem9_Click);
             // 
             // M9
             // 
@@ -969,12 +984,6 @@
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
             // 
-            // M56
-            // 
-            this.M56.Name = "M56";
-            resources.ApplyResources(this.M56, "M56");
-            this.M56.Click += new System.EventHandler(this.M56_Click);
-            // 
             // Frm_Main
             // 
             this.AllowDrop = true;
@@ -1120,5 +1129,6 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem7;
         private DevComponents.DotNetBar.ButtonItem buttonItem8;
         private DevComponents.DotNetBar.ButtonItem M56;
+        private DevComponents.DotNetBar.ButtonItem buttonItem9;
     }
 }

@@ -291,13 +291,13 @@ namespace Report_Pro.RPT
             DataTable dt1 = new DataTable();
 
             //dt1 = dal.getDataTabl("get_inventory_", dTP2.Value.Date, Convert.ToString(category.SelectedValue), dal.db1);
-            dt1 = dal.getDataTabl_1(@"	SELECT d.Branch_code,B.branch_name,A.Weight,A.local_cost,A.Unit
+            dt1 = dal.getDataTabl_1(@"	SELECT d.Branch_code,B.branch_name,B.WH_E_NAME,A.Weight,A.local_cost,A.Unit
 		,sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd")+ "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as Balance_ "+
 		",sum (case when D.TRANSACTION_CODE  like'Xp%' and  cast(D.G_date as date) between '"+dTP1.Value.ToString("yyyy/MM/dd")+"' and '"+dTP2.Value.ToString("yyyy/MM/dd")+"' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as Purchases_ "+
         ",sum (case when D.TRANSACTION_CODE  like'XS%' and  cast(D.G_date as date) between '"+dTP1.Value.ToString("yyyy/MM/dd")+"' and '"+dTP2.Value.ToString("yyyy/MM/dd")+"' then D.QTY_TAKE-D.QTY_ADD  else 0 end)  as Sales_ "+
         "FROM wh_material_transaction As D inner join wh_BRANCHES as B on B.branch_code = D.Branch_code " +
 		"inner join wh_main_master As A on A.item_no = D.ITEM_NO inner join wh_Groups As G on g.group_code = a.group_code "+
-		"and  A.item_no = '"+Item.ID.Text+ "' group by d.Branch_code,B.branch_name,A.Weight,A.local_cost,A.Unit order by d.Branch_code");
+		"and  A.item_no = '"+Item.ID.Text+ "' group by d.Branch_code,B.branch_name,B.WH_E_NAME,A.Weight,A.local_cost,A.Unit order by d.Branch_code");
 
 //            ", sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.Weight)  else 0 end)  as weight_ " +
 //",sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.local_cost)  else 0 end)  as cost " +
