@@ -34,7 +34,7 @@ namespace Report_Pro.MyControls
 
                     ID.Text= dt_.Rows[0]["item_no"].ToString();
                     Weight.Value = Convert.ToDouble(dt_.Rows[0]["Weight"].ToString());
-                    itemPrice.Value = Convert.ToDouble(dt_.Rows[0]["sale_price"].ToString());
+                
                     Unit.SelectedText = dt_.Rows[0]["Unit"].ToString();
                     if (Properties.Settings.Default.lungh == "0")
                     {
@@ -50,7 +50,7 @@ namespace Report_Pro.MyControls
 
                     Desc.Clear();
                     Weight.Value = 0;
-                    itemPrice.Value = 0;
+                  
                     Unit.SelectedIndex=-1;
 
                 }

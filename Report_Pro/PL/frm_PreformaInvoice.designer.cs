@@ -93,6 +93,7 @@
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.inv_Row1 = new Report_Pro.MyControls.Inv_Row();
             this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -102,6 +103,9 @@
             this.totalWeight = new System.Windows.Forms.TextBox();
             this.totalQty = new System.Windows.Forms.TextBox();
             this.groupPanel7 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX8 = new DevComponents.DotNetBar.LabelX();
+            this.labelX17 = new DevComponents.DotNetBar.LabelX();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.doubleInput3 = new DevComponents.Editors.DoubleInput();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
@@ -112,14 +116,13 @@
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX52 = new DevComponents.DotNetBar.LabelX();
             this.txtBalance = new System.Windows.Forms.TextBox();
-            this.labelX17 = new DevComponents.DotNetBar.LabelX();
             this.labelX29 = new DevComponents.DotNetBar.LabelX();
             this.ItemsTab = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
-            this.inv_Row1 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row2 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row3 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row4 = new Report_Pro.MyControls.Inv_Row();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProformaDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LShipDate)).BeginInit();
@@ -831,8 +834,17 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.inv_Row1);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row2);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row3);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row4);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // inv_Row1
+            // 
+            this.inv_Row1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.inv_Row1, "inv_Row1");
+            this.inv_Row1.Name = "inv_Row1";
             // 
             // groupPanel5
             // 
@@ -960,6 +972,29 @@
             this.groupPanel7.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel7.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // labelX8
+            // 
+            this.labelX8.BackColor = System.Drawing.Color.RoyalBlue;
+            resources.ApplyResources(this.labelX8, "labelX8");
+            this.labelX8.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelX8.Name = "labelX8";
+            this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX17
+            // 
+            this.labelX17.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.labelX17, "labelX17");
+            this.labelX17.Name = "labelX17";
+            this.labelX17.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX7
+            // 
+            this.labelX7.BackColor = System.Drawing.Color.RoyalBlue;
+            resources.ApplyResources(this.labelX7, "labelX7");
+            this.labelX7.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelX7.Name = "labelX7";
+            this.labelX7.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
             // doubleInput3
             // 
             this.doubleInput3.BackColor = System.Drawing.SystemColors.Window;
@@ -1054,13 +1089,6 @@
             this.txtBalance.ReadOnly = true;
             this.txtBalance.TabStop = false;
             // 
-            // labelX17
-            // 
-            this.labelX17.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.labelX17, "labelX17");
-            this.labelX17.Name = "labelX17";
-            this.labelX17.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
             // labelX29
             // 
             this.labelX29.BackColor = System.Drawing.Color.RoyalBlue;
@@ -1109,27 +1137,23 @@
             this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
-            // labelX7
+            // inv_Row2
             // 
-            this.labelX7.BackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.labelX7, "labelX7");
-            this.labelX7.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX7.Name = "labelX7";
-            this.labelX7.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.inv_Row2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.inv_Row2, "inv_Row2");
+            this.inv_Row2.Name = "inv_Row2";
             // 
-            // labelX8
+            // inv_Row3
             // 
-            this.labelX8.BackColor = System.Drawing.Color.RoyalBlue;
-            resources.ApplyResources(this.labelX8, "labelX8");
-            this.labelX8.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX8.Name = "labelX8";
-            this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.inv_Row3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.inv_Row3, "inv_Row3");
+            this.inv_Row3.Name = "inv_Row3";
             // 
-            // inv_Row1
+            // inv_Row4
             // 
-            this.inv_Row1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.inv_Row1, "inv_Row1");
-            this.inv_Row1.Name = "inv_Row1";
+            this.inv_Row4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.inv_Row4, "inv_Row4");
+            this.inv_Row4.Name = "inv_Row4";
             // 
             // frm_PreformaInvoice
             // 
@@ -1140,8 +1164,10 @@
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.ribbonBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Name = "frm_PreformaInvoice";
             this.Load += new System.EventHandler(this.frmLcs_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_PreformaInvoice_KeyDown);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProformaDate)).EndInit();
@@ -1256,5 +1282,8 @@
         private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.DotNetBar.LabelX labelX7;
         private MyControls.Inv_Row inv_Row1;
+        private MyControls.Inv_Row inv_Row2;
+        private MyControls.Inv_Row inv_Row3;
+        private MyControls.Inv_Row inv_Row4;
     }
 }

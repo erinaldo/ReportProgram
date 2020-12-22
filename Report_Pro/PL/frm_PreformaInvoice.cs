@@ -295,5 +295,12 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void frm_PreformaInvoice_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter){
+                System.Windows.Forms.SendKeys.Send("{TAB}");
+ }
+        }
     }
 }

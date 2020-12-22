@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inv_Row));
             this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.itemPrice = new DevComponents.Editors.DoubleInput();
             this.Weight = new DevComponents.Editors.DoubleInput();
             this.Unit = new System.Windows.Forms.ComboBox();
             this.Price = new DevComponents.Editors.DoubleInput();
@@ -39,7 +38,6 @@
             this.TotalValue = new DevComponents.Editors.DoubleInput();
             this.TotalWeight = new DevComponents.Editors.DoubleInput();
             this.Balance = new DevComponents.Editors.DoubleInput();
-            ((System.ComponentModel.ISupportInitialize)(this.itemPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Price)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Qty)).BeginInit();
@@ -61,7 +59,7 @@
             this.Desc.Border.Class = "TextBoxBorder";
             resources.ApplyResources(this.Desc, "Desc");
             this.Desc.Name = "Desc";
-            this.Desc.ReadOnly = true;
+            this.Desc.TabStop = false;
             this.Desc.TextChanged += new System.EventHandler(this.Desc_TextChanged);
             // 
             // ID
@@ -82,18 +80,6 @@
             this.ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_KeyDown);
             this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
             // 
-            // itemPrice
-            // 
-            // 
-            // 
-            // 
-            this.itemPrice.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.itemPrice.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.itemPrice.Increment = 1D;
-            resources.ApplyResources(this.itemPrice, "itemPrice");
-            this.itemPrice.Name = "itemPrice";
-            this.itemPrice.ShowUpDown = true;
-            // 
             // Weight
             // 
             // 
@@ -109,6 +95,7 @@
             this.Weight.Increment = 1D;
             resources.ApplyResources(this.Weight, "Weight");
             this.Weight.Name = "Weight";
+            this.Weight.TabStop = false;
             // 
             // Unit
             // 
@@ -163,6 +150,7 @@
             this.TotalValue.Increment = 1D;
             resources.ApplyResources(this.TotalValue, "TotalValue");
             this.TotalValue.Name = "TotalValue";
+            this.TotalValue.TabStop = false;
             // 
             // TotalWeight
             // 
@@ -179,6 +167,7 @@
             this.TotalWeight.Increment = 1D;
             resources.ApplyResources(this.TotalWeight, "TotalWeight");
             this.TotalWeight.Name = "TotalWeight";
+            this.TotalWeight.TabStop = false;
             // 
             // Balance
             // 
@@ -195,6 +184,7 @@
             this.Balance.Increment = 1D;
             resources.ApplyResources(this.Balance, "Balance");
             this.Balance.Name = "Balance";
+            this.Balance.TabStop = false;
             // 
             // Inv_Row
             // 
@@ -208,12 +198,10 @@
             this.Controls.Add(this.Price);
             this.Controls.Add(this.Unit);
             this.Controls.Add(this.Weight);
-            this.Controls.Add(this.itemPrice);
             this.Controls.Add(this.Desc);
             this.Controls.Add(this.ID);
             this.Name = "Inv_Row";
             this.Load += new System.EventHandler(this.Inv_Row_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.itemPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Price)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Qty)).EndInit();
@@ -227,7 +215,6 @@
         #endregion
         public DevComponents.DotNetBar.Controls.TextBoxX Desc;
         public DevComponents.DotNetBar.Controls.TextBoxX ID;
-        public DevComponents.Editors.DoubleInput itemPrice;
         public DevComponents.Editors.DoubleInput Weight;
         private System.Windows.Forms.ComboBox Unit;
         public DevComponents.Editors.DoubleInput Price;
