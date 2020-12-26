@@ -356,51 +356,7 @@ namespace Report_Pro.RPT
 
             }
 
-        private void category_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void payment_type_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupPanel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupPanel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void button6_Click(object sender, EventArgs e)
         {
           
@@ -430,23 +386,47 @@ namespace Report_Pro.RPT
 
 
 
-                    RPT.CrystalReport3 rpt = new RPT.CrystalReport3();
+            RPT.CrystalReport3 rpt = new RPT.CrystalReport3();
+            DataTable dt_ = dal.getDataTabl_1(@"SELECT  H.Branch_code,
+		H.branch_name As name_
+		,sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight) as Weight_
+		,sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100) as value_
+		,sum(D.TAX_OUT-d.TAX_IN) as tax_
+		,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
+     
+		FROM wh_material_transaction As D
+		inner join wh_main_master As A on A.item_no=D.ITEM_NO
+		inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND 
+		C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear
+		inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
+  
+		where D.TRANSACTION_CODE like 'xp%'
+		and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
+        "' and ISNULL (a.Category,'') like '" + Convert.ToString(category.SelectedValue) +
+        "%' and ISNULL (A.Dim_category,'') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
+        "%' and ISNULL (A.UnitDepth,'') BETWEEN '" + T1 + "' AND '" + T2 +
+        "' 	and Payment_Type like '" + pay_code +
+         "%' and c.acc_no like '" + Uc_Acc.ID.Text +
+        "%' and  H.Branch_code like '" + UC_Branch.ID.Text +
+        "%'	and A.group_code like '" + Uc_Group.ID.Text +
+        "%'	group by H.Branch_code,H.branch_name");
 
-                rpt.SetDataSource(dal.getDataTabl("sales_by_branch_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp",UC_Branch.ID.Text,Uc_Acc.ID.Text,db1,Uc_Group.ID.Text,""));
-                crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المشتريات موزع بالفروع'";
+            // rpt.SetDataSource(dal.getDataTabl("sales_by_branch_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp",UC_Branch.ID.Text,Uc_Acc.ID.Text,db1,Uc_Group.ID.Text,""));
+            rpt.SetDataSource(dt_);
+            crystalReportViewer1.ReportSource = rpt;
+            rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
+            rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
+            rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+            rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
+            rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
+            rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المشتريات موزع بالفروع'";
             //}
             //catch
             //    { }
 
-                         
+
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -479,7 +459,34 @@ namespace Report_Pro.RPT
 
                 RPT.sales_by_group rpt = new RPT.sales_by_group();
 
-                rpt.SetDataSource(dal.getDataTabl("sales_by_Group_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp",db1,Uc_Acc.ID.Text, UC_Branch.ID.Text, Uc_Group.ID.Text,"",""));
+                DataTable dt_ = dal.getDataTabl_1(@"SELECT 	v.G_ID As Group_ID,G.Group_name as Group_name,V.xe_
+                ,ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 )as Weight_
+                ,ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0) as value_
+                ,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
+                FROM [wh_material_transaction]As D
+                inner join wh_main_master As A on A.item_no=D.ITEM_NO
+                inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
+                inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND 
+                C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear
+                inner join 
+                (SELECT CASE Category WHEN 'r' THEN LEFT(group_code, 4) WHEN 'F' THEN LEFT(group_code, 2) WHEN 'c' THEN LEFT(group_code, 2) ELSE LEFT(group_code, 2) END AS G_Id
+                , item_no, CASE WHEN LEFT(group_code, 2) IN ('40','41','42','43','44','45','46','47','48','49') THEN '2' WHEN LEFT(group_code, 2) IN ('50') THEN '3' ELSE '1' END AS xe_
+                FROM wh_main_master	) As V on V.item_no=a.item_no
+                inner join wh_Groups As G on  v.G_ID=G.group_code
+                inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
+
+                where D.TRANSACTION_CODE like 'xp%' 
+                and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
+                "' and ISNULL (a.Category,'')  like '"+ Convert.ToString(category.SelectedValue) + 
+                "%' and ISNULL (A.Dim_category,'') like '"+ Convert.ToString(cmb_DimCategory.SelectedValue) + 
+                "%' and ISNULL (A.UnitDepth,'') BETWEEN '"+T1+"' AND '"+T2+ 
+                "' and C.Payment_Type like '"+ pay_code + 
+                "%' and c.acc_no like '"+ Uc_Acc.ID.Text + 
+                "%' and C.Branch_code like '"+ UC_Branch.ID.Text + 
+                "%' and G.group_code like '"+ Uc_Group.ID.Text + 
+                "%' group by v.G_ID ,G.Group_name ,v.xe_");
+                rpt.SetDataSource(dt_);
+                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_", dTP1.Value.Date, dTP2.Value.Date, , , T1, T2, , "xp",db1,, , ,"",""));
                                
 
                 crystalReportViewer1.ReportSource = rpt;
@@ -541,24 +548,42 @@ namespace Report_Pro.RPT
 
                 RPT.rpt_transaction_byGroup_payType rpt = new RPT.rpt_transaction_byGroup_payType();
 
-                rpt.SetDataSource(dal.getDataTabl("sales_by_Group_Paytype_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp",UC_Branch.ID.Text,Uc_Acc.ID.Text,db1));
+                DataTable dt_ = dal.getDataTabl_1(@"SELECT v.G_ID As Group_ID,G.Group_name as Group_name,p.Payment_name
+                ,ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 )as Weight_
+                ,ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0) as value_
+                ,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
+                FROM [main_acc_wh].[dbo].[wh_material_transaction]As D
+                inner join wh_main_master As A on A.item_no=D.ITEM_NO
+                inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
+                inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND 
+                C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear	
 
-                //            rpt.SetDataSource(dal.getDataTabl_1(@"SELECT v.G_ID As Group_ID,G.Group_name as Group_name,p.Payment_name
-                //,ROUND(sum((D.[QTY_TAKE] - D.[QTY_ADD]) * A.Weight), 0) as Weight_
-                //,ROUND(sum((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price) - sum(((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price * D.total_disc) / 100), 0) as value_
-                //,ROUND(ROUND(sum((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price) - sum(((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price * D.total_disc) / 100), 0) / ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE] - D.[QTY_ADD]) * A.Weight), 0), 0), 1), 3) * 1000 AS Average_
-                //FROM " + Properties.Settings.Default.Database_1 + ".dbo.wh_material_transaction As D " +
-                //"inner join " + Properties.Settings.Default.Database_1 + ".dbo.wh_main_master As A on A.item_no=D.ITEM_NO " +
-                //"inner join " + Properties.Settings.Default.Database_1 + ".dbo.WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE " +
-                //"inner join " + Properties.Settings.Default.Database_1 + ".dbo.wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code = D.Branch_code AND " +
-                //"C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear " +
-                //"inner join View_G_ID As V on V.item_no= a.item_no " +
-                //"inner join " + Properties.Settings.Default.Database_1 + ".dbo.wh_Groups As G on  v.G_ID= G.group_code " +
-                //"inner join " + Properties.Settings.Default.Database_1 + ".dbo.wh_BRANCHES As H on H.Branch_code= d.Branch_code " +
-                //"inner join [main_acc_wh].[dbo].wh_Payment_type As P on P.Payment_type=C.Payment_Type " +
-                //"where D.TRANSACTION_CODE like '" + trans_code + "%' and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and C.Payment_Type like '%" + pay_code
-                //+ "%'and a.Category like '%" + Convert.ToString(category.SelectedValue) + "%' and A.UnitDepth BETWEEN '" + T1 + "' AND '" + T2 + "' and A.Company_code= 'A' group by v.G_ID, G.Group_name,p.Payment_name    "));
+                inner join 
+                (SELECT CASE Category WHEN 'r' THEN LEFT(group_code, 4) WHEN 'F' THEN LEFT(group_code, 2) WHEN 'c' THEN LEFT(group_code, 2) ELSE LEFT(group_code, 2) END AS G_Id
+                , item_no, CASE WHEN LEFT(group_code, 2) IN ('40','41','42','43','44','45','46','47','48','49') THEN '2' WHEN LEFT(group_code, 2) IN ('50') THEN '3' ELSE '1' END AS xe_
+                FROM wh_main_master	) As V on V.item_no=a.item_no
 
+                inner join wh_Groups As G on  v.G_ID=G.group_code
+                inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
+                inner join wh_Payment_type As P on P.Payment_type=C.Payment_Type
+
+                where D.TRANSACTION_CODE like 'xp%' 
+                and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
+                "' and ISNULL (a.Category,'')  like '" + Convert.ToString(category.SelectedValue) +
+                "%' and ISNULL (A.Dim_category,'') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
+                "%' and ISNULL (A.UnitDepth,'') BETWEEN '" + T1 + "' AND '" + T2 +
+                "' and C.Payment_Type like '" + pay_code +
+                "%' and c.acc_no like '" + Uc_Acc.ID.Text +
+                "%' and C.Branch_code like '" + UC_Branch.ID.Text +
+                "%' and G.group_code like '" + Uc_Group.ID.Text +
+                "%' group by v.G_ID,G.Group_name,p.Payment_name");
+
+                rpt.SetDataSource(dt_);
+
+
+
+
+                //rpt.SetDataSource(dal.getDataTabl("sales_by_Group_Paytype_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp",UC_Branch.ID.Text,Uc_Acc.ID.Text,db1));
 
                 crystalReportViewer1.ReportSource = rpt;
                 rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
@@ -619,12 +644,8 @@ namespace Report_Pro.RPT
                 ,sum((D.QTY_ADD - D.QTY_TAKE) * s.Weight) as Weight
 
                 FROM wh_inv_data as A
-                INNER JOIN payer2 As P ON A.Acc_no = P.ACC_NO AND A.Acc_Branch_code = P.BRANCH_code
-                INNER JOIN wh_BRANCHES As B ON A.Branch_code = B.Branch_code
-                INNER JOIN wh_Payment_type As C ON A.Payment_Type = C.Payment_type
                 INNER JOIN wh_material_transaction As D ON A.Ser_no = D.SER_NO
                 AND A.Branch_code = D.Branch_code AND A.Transaction_code = D.TRANSACTION_CODE AND A.Cyear = D.Cyear
-                inner join WH_INV_TYPE As T  on T.INV_CODE = A.Transaction_code
                 inner join wh_main_master As S  on D.ITEM_NO = s.item_no
                
                 where D.TRANSACTION_CODE like 'xp%'
@@ -633,11 +654,17 @@ namespace Report_Pro.RPT
                 "and s.Category like '" + Convert.ToString(category.SelectedValue) + "%' " +
                 "and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 + "' " +
                 "and S.Dim_category like '" + Convert.ToString(cmb_DimCategory.SelectedValue) + "%' " +
-                "and B.Branch_code like '" + UC_Branch.ID.Text + "%' " +
+                "and A.Branch_code like '" + UC_Branch.ID.Text + "%' " +
                 "and A.acc_no like '" + Uc_Acc.ID.Text + "%' " +
                 "and S.group_code like '" + Uc_Group.ID.Text + "%' " +
                 "and isnull(A.LC_ACC_NO,'') like '" + Lc_Acc.ID.Text + "%' " +
                 "group by d.ITEM_NO, s.descr");
+
+            //INNER JOIN payer2 As P ON A.Acc_no = P.ACC_NO AND A.Acc_Branch_code = P.BRANCH_code
+            //INNER JOIN wh_BRANCHES As B ON A.Branch_code = B.Branch_code
+            //    INNER JOIN wh_Payment_type As C ON A.Payment_Type = C.Payment_type
+            //    inner join WH_INV_TYPE As T on T.INV_CODE = A.Transaction_code
+
 
             rpt.SetDataSource(dt_);
             crystalReportViewer1.ReportSource = rpt;
