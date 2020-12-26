@@ -6,15 +6,27 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="SER_NO" type="xs:int" minOccurs="0" />
-              <xs:element name="Branch_code" type="xs:string" minOccurs="0" />
-              <xs:element name="branch_name" type="xs:string" minOccurs="0" />
+              <xs:element name="ser_no" type="xs:int" minOccurs="0" />
               <xs:element name="g_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="TRANSACTION_CODE" type="xs:string" minOccurs="0" />
-              <xs:element name="item_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ITEM_NO" type="xs:string" minOccurs="0" />
               <xs:element name="descr" type="xs:string" minOccurs="0" />
-              <xs:element name="Count_Qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY_TAKE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Local_Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANSACTION_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INV_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="C_Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Column1" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="B_balance" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

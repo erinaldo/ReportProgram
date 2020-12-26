@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPurchase_rpt));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_1 = new DevComponents.DotNetBar.ButtonX();
             this.Report_btn = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.UC_PayType = new Report_Pro.MyControls.UC_PayType();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
@@ -56,11 +56,30 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.buttonX3);
+            this.panel2.Controls.Add(this.buttonX2);
             this.panel2.Controls.Add(this.buttonX1);
             this.panel2.Controls.Add(this.btn_1);
             this.panel2.Controls.Add(this.Report_btn);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
+            resources.ApplyResources(this.buttonX3, "buttonX3");
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
+            resources.ApplyResources(this.buttonX2, "buttonX2");
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Right;
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // buttonX1
             // 
@@ -90,8 +109,6 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.labelX7);
-            this.groupPanel1.Controls.Add(this.comboBox2);
             this.groupPanel1.Controls.Add(this.UC_PayType);
             this.groupPanel1.Controls.Add(this.UC_Acc);
             this.groupPanel1.Controls.Add(this.UC_Branch);
@@ -127,24 +144,6 @@
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
-            // 
-            // labelX7
-            // 
-            resources.ApplyResources(this.labelX7, "labelX7");
-            this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Name = "labelX7";
-            // 
-            // comboBox2
-            // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2")});
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // UC_PayType
             // 
@@ -277,7 +276,7 @@
         private MyControls.UC_PayType UC_PayType;
         private MyControls.UC_Acc UC_Acc;
         private MyControls.UC_Branch UC_Branch;
-        private DevComponents.DotNetBar.LabelX labelX7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private DevComponents.DotNetBar.ButtonX buttonX3;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
     }
 }

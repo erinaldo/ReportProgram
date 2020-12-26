@@ -30,7 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_rpt_Purchases));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnOption = new System.Windows.Forms.Button();
+            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.button9 = new DevComponents.DotNetBar.ButtonX();
+            this.button6 = new DevComponents.DotNetBar.ButtonX();
+            this.btnOption = new DevComponents.DotNetBar.ButtonX();
             this.label5 = new System.Windows.Forms.Label();
             this.cmb_DimCategory = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,11 +51,6 @@
             this.dTP2 = new System.Windows.Forms.DateTimePicker();
             this.dTP1 = new System.Windows.Forms.DateTimePicker();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Lc_Acc = new Report_Pro.MyControls.UC_Acc();
@@ -60,32 +62,88 @@
             this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_purchase_byACC = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thick_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thick_1)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnOption);
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.buttonX5);
+            this.panel1.Controls.Add(this.buttonX4);
+            this.panel1.Controls.Add(this.buttonX3);
+            this.panel1.Controls.Add(this.buttonX2);
+            this.panel1.Controls.Add(this.buttonX1);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btnOption);
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // buttonX5
+            // 
+            resources.ApplyResources(this.buttonX5, "buttonX5");
+            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX5.Name = "buttonX5";
+            this.buttonX5.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // buttonX4
+            // 
+            resources.ApplyResources(this.buttonX4, "buttonX4");
+            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX4.Name = "buttonX4";
+            this.buttonX4.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // buttonX3
+            // 
+            resources.ApplyResources(this.buttonX3, "buttonX3");
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // buttonX2
+            // 
+            resources.ApplyResources(this.buttonX2, "buttonX2");
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // buttonX1
+            // 
+            resources.ApplyResources(this.buttonX1, "buttonX1");
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.button9.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.button9.Name = "button9";
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button6
+            // 
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.button6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.button6.Name = "button6";
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // btnOption
             // 
-            this.btnOption.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnOption.FlatAppearance.BorderSize = 0;
-            this.btnOption.ForeColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.btnOption, "btnOption");
+            this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnOption.Name = "btnOption";
-            this.btnOption.UseVisualStyleBackColor = false;
             this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
             // 
             // label5
@@ -185,64 +243,15 @@
             // 
             // crystalReportViewer1
             // 
+            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.ForeColor = System.Drawing.SystemColors.Window;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.ForeColor = System.Drawing.SystemColors.Window;
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.ForeColor = System.Drawing.SystemColors.Window;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.ForeColor = System.Drawing.SystemColors.Window;
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.ForeColor = System.Drawing.SystemColors.Window;
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.Lc_Acc);
@@ -254,7 +263,6 @@
             this.groupBox1.Controls.Add(this.UC_Branch);
             this.groupBox1.Controls.Add(this.thick_2);
             this.groupBox1.Controls.Add(this.thick_1);
-            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -267,10 +275,10 @@
             this.groupBox1.Controls.Add(this.payment_type);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cmb_DimCategory);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label11
             // 
@@ -350,53 +358,6 @@
             0});
             this.thick_1.Name = "thick_1";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.btn_purchase_byACC);
-            this.groupBox3.Controls.Add(this.button14);
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button10);
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button9);
-            this.groupBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // btn_purchase_byACC
-            // 
-            resources.ApplyResources(this.btn_purchase_byACC, "btn_purchase_byACC");
-            this.btn_purchase_byACC.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_purchase_byACC.FlatAppearance.BorderSize = 0;
-            this.btn_purchase_byACC.ForeColor = System.Drawing.SystemColors.Window;
-            this.btn_purchase_byACC.Name = "btn_purchase_byACC";
-            this.btn_purchase_byACC.UseVisualStyleBackColor = false;
-            this.btn_purchase_byACC.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.ForeColor = System.Drawing.SystemColors.Window;
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // frm_rpt_Purchases
             // 
             resources.ApplyResources(this, "$this");
@@ -411,7 +372,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thick_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thick_1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -432,26 +392,24 @@
         private System.Windows.Forms.ComboBox payment_type;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmb_DimCategory;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.NumericUpDown thick_2;
         private System.Windows.Forms.NumericUpDown thick_1;
-        private System.Windows.Forms.Button btnOption;
         private System.Windows.Forms.Label label7;
         private MyControls.UC_Branch UC_Branch;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label9;
         private MyControls.UC_Acc Uc_Acc;
-        private System.Windows.Forms.Button btn_purchase_byACC;
         private System.Windows.Forms.Label label10;
         private MyControls.Uc_Group Uc_Group;
         private System.Windows.Forms.Label label11;
         private MyControls.UC_Acc Lc_Acc;
-        private System.Windows.Forms.Button button1;
+        private DevComponents.DotNetBar.ButtonX btnOption;
+        private DevComponents.DotNetBar.ButtonX button6;
+        private DevComponents.DotNetBar.ButtonX buttonX3;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX button9;
+        private DevComponents.DotNetBar.ButtonX buttonX5;
+        private DevComponents.DotNetBar.ButtonX buttonX4;
     }
 }

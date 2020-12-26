@@ -326,7 +326,7 @@ namespace Report_Pro.RPT
 
             RPT.S_P_by_Items rpt = new RPT.S_P_by_Items();
 
-            rpt.SetDataSource(dal.getDataTabl(@"sales_by_item_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xs", UC_Branch.ID.Text, Uc_Acc.ID.Text, db1, Uc_Group.ID.Text));
+            rpt.SetDataSource(dal.getDataTabl(@"sales_by_item_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xs", UC_Branch.ID.Text, Uc_Acc.ID.Text, db1, Uc_Group.ID.Text,""));
             crystalReportViewer1.ReportSource = rpt;
 
         }

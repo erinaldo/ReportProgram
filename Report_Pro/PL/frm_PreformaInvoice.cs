@@ -234,6 +234,14 @@ namespace Report_Pro.PL
             txtBranch.txtTfinal.Text = "1";
 
 
+            foreach (MyControls.Inv_Row control in flowLayoutPanel1.Controls)
+            {
+                control.Ser.Value = (flowLayoutPanel1.Controls.GetChildIndex(control) + 1);      }
+
+
+
+
+
 
         }
 
@@ -298,9 +306,32 @@ namespace Report_Pro.PL
 
         private void frm_PreformaInvoice_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter){
-                System.Windows.Forms.SendKeys.Send("{TAB}");
- }
+         if (e.KeyCode == Keys.Enter)
+                        {
+
+                            System.Windows.Forms.SendKeys.Send("{TAB}");
+                        }
+                   
+        }
+
+        private void inv_Row4_Load(object sender, EventArgs e)
+        {
+           
+            //r.paySer.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+            //r.intrestRate.Value = txtIntrestRate.Value;
+        }
+
+      
+
+        private void flowLayoutPanel1_Click(object sender, EventArgs e)
+        {
+            //MyControls.Inv_Row r = new MyControls.Inv_Row();
+            //flowLayoutPanel1.Controls.Add(r);
+        }
+
+        private void inv_Row7_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -478,7 +478,7 @@
     <value>0, 0</value>
   </data>
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 27</value>
+    <value>1080, 27</value>
   </data>
   <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1582,7 +1582,7 @@
     <value>0, 27</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 226</value>
+    <value>1080, 226</value>
   </data>
   <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1599,17 +1599,44 @@
   <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="inv_Row1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="inv_Row5.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="inv_Row5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;inv_Row5.Name" xml:space="preserve">
+    <value>inv_Row5</value>
+  </data>
+  <data name="&gt;&gt;inv_Row5.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row5.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="inv_Row1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
   </data>
   <data name="inv_Row1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="inv_Row1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>917, 19</value>
+    <value>957, 23</value>
   </data>
   <data name="inv_Row1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;inv_Row1.Name" xml:space="preserve">
     <value>inv_Row1</value>
@@ -1621,19 +1648,19 @@
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;inv_Row1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="inv_Row2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 19</value>
+    <value>0, 46</value>
   </data>
   <data name="inv_Row2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="inv_Row2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>917, 19</value>
+    <value>957, 23</value>
   </data>
   <data name="inv_Row2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;inv_Row2.Name" xml:space="preserve">
     <value>inv_Row2</value>
@@ -1645,19 +1672,19 @@
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;inv_Row2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="inv_Row3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 38</value>
+    <value>0, 69</value>
   </data>
   <data name="inv_Row3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="inv_Row3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>917, 19</value>
+    <value>957, 23</value>
   </data>
   <data name="inv_Row3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;inv_Row3.Name" xml:space="preserve">
     <value>inv_Row3</value>
@@ -1669,19 +1696,19 @@
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;inv_Row3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="inv_Row4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 57</value>
+    <value>0, 92</value>
   </data>
   <data name="inv_Row4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="inv_Row4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>917, 19</value>
+    <value>957, 23</value>
   </data>
   <data name="inv_Row4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;inv_Row4.Name" xml:space="preserve">
     <value>inv_Row4</value>
@@ -1693,7 +1720,967 @@
     <value>flowLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;inv_Row4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="inv_Row6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 115</value>
+  </data>
+  <data name="inv_Row6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;inv_Row6.Name" xml:space="preserve">
+    <value>inv_Row6</value>
+  </data>
+  <data name="&gt;&gt;inv_Row6.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row6.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="inv_Row7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 138</value>
+  </data>
+  <data name="inv_Row7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;inv_Row7.Name" xml:space="preserve">
+    <value>inv_Row7</value>
+  </data>
+  <data name="&gt;&gt;inv_Row7.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row7.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="inv_Row8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 161</value>
+  </data>
+  <data name="inv_Row8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;inv_Row8.Name" xml:space="preserve">
+    <value>inv_Row8</value>
+  </data>
+  <data name="&gt;&gt;inv_Row8.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row8.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="inv_Row9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 184</value>
+  </data>
+  <data name="inv_Row9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row9.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;inv_Row9.Name" xml:space="preserve">
+    <value>inv_Row9</value>
+  </data>
+  <data name="&gt;&gt;inv_Row9.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row9.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row9.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="inv_Row10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 207</value>
+  </data>
+  <data name="inv_Row10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row10.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;inv_Row10.Name" xml:space="preserve">
+    <value>inv_Row10</value>
+  </data>
+  <data name="&gt;&gt;inv_Row10.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row10.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row10.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="inv_Row11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 230</value>
+  </data>
+  <data name="inv_Row11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row11.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;inv_Row11.Name" xml:space="preserve">
+    <value>inv_Row11</value>
+  </data>
+  <data name="&gt;&gt;inv_Row11.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row11.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="inv_Row12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 253</value>
+  </data>
+  <data name="inv_Row12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row12.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;inv_Row12.Name" xml:space="preserve">
+    <value>inv_Row12</value>
+  </data>
+  <data name="&gt;&gt;inv_Row12.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row12.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row12.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="inv_Row13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 276</value>
+  </data>
+  <data name="inv_Row13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row13.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;inv_Row13.Name" xml:space="preserve">
+    <value>inv_Row13</value>
+  </data>
+  <data name="&gt;&gt;inv_Row13.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row13.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row13.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="inv_Row14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 299</value>
+  </data>
+  <data name="inv_Row14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row14.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;inv_Row14.Name" xml:space="preserve">
+    <value>inv_Row14</value>
+  </data>
+  <data name="&gt;&gt;inv_Row14.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row14.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row14.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="inv_Row15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 322</value>
+  </data>
+  <data name="inv_Row15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row15.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;inv_Row15.Name" xml:space="preserve">
+    <value>inv_Row15</value>
+  </data>
+  <data name="&gt;&gt;inv_Row15.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row15.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row15.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="inv_Row16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 345</value>
+  </data>
+  <data name="inv_Row16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row16.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;inv_Row16.Name" xml:space="preserve">
+    <value>inv_Row16</value>
+  </data>
+  <data name="&gt;&gt;inv_Row16.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row16.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row16.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="inv_Row17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 368</value>
+  </data>
+  <data name="inv_Row17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row17.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;inv_Row17.Name" xml:space="preserve">
+    <value>inv_Row17</value>
+  </data>
+  <data name="&gt;&gt;inv_Row17.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row17.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row17.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="inv_Row18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 391</value>
+  </data>
+  <data name="inv_Row18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row18.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;inv_Row18.Name" xml:space="preserve">
+    <value>inv_Row18</value>
+  </data>
+  <data name="&gt;&gt;inv_Row18.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row18.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row18.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="inv_Row19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 414</value>
+  </data>
+  <data name="inv_Row19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row19.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;inv_Row19.Name" xml:space="preserve">
+    <value>inv_Row19</value>
+  </data>
+  <data name="&gt;&gt;inv_Row19.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row19.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row19.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="inv_Row20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 437</value>
+  </data>
+  <data name="inv_Row20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row20.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;inv_Row20.Name" xml:space="preserve">
+    <value>inv_Row20</value>
+  </data>
+  <data name="&gt;&gt;inv_Row20.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row20.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row20.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="inv_Row21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 460</value>
+  </data>
+  <data name="inv_Row21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row21.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;inv_Row21.Name" xml:space="preserve">
+    <value>inv_Row21</value>
+  </data>
+  <data name="&gt;&gt;inv_Row21.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row21.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row21.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="inv_Row22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 483</value>
+  </data>
+  <data name="inv_Row22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row22.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;inv_Row22.Name" xml:space="preserve">
+    <value>inv_Row22</value>
+  </data>
+  <data name="&gt;&gt;inv_Row22.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row22.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row22.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="inv_Row23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 506</value>
+  </data>
+  <data name="inv_Row23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row23.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;inv_Row23.Name" xml:space="preserve">
+    <value>inv_Row23</value>
+  </data>
+  <data name="&gt;&gt;inv_Row23.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row23.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row23.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="inv_Row24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 529</value>
+  </data>
+  <data name="inv_Row24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row24.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;inv_Row24.Name" xml:space="preserve">
+    <value>inv_Row24</value>
+  </data>
+  <data name="&gt;&gt;inv_Row24.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row24.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row24.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="inv_Row25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 552</value>
+  </data>
+  <data name="inv_Row25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row25.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;inv_Row25.Name" xml:space="preserve">
+    <value>inv_Row25</value>
+  </data>
+  <data name="&gt;&gt;inv_Row25.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row25.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row25.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="inv_Row26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 575</value>
+  </data>
+  <data name="inv_Row26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row26.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;inv_Row26.Name" xml:space="preserve">
+    <value>inv_Row26</value>
+  </data>
+  <data name="&gt;&gt;inv_Row26.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row26.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row26.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="inv_Row27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 598</value>
+  </data>
+  <data name="inv_Row27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row27.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;inv_Row27.Name" xml:space="preserve">
+    <value>inv_Row27</value>
+  </data>
+  <data name="&gt;&gt;inv_Row27.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row27.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row27.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="inv_Row28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 621</value>
+  </data>
+  <data name="inv_Row28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row28.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;inv_Row28.Name" xml:space="preserve">
+    <value>inv_Row28</value>
+  </data>
+  <data name="&gt;&gt;inv_Row28.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row28.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row28.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="inv_Row29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 644</value>
+  </data>
+  <data name="inv_Row29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row29.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;inv_Row29.Name" xml:space="preserve">
+    <value>inv_Row29</value>
+  </data>
+  <data name="&gt;&gt;inv_Row29.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row29.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row29.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="inv_Row30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 667</value>
+  </data>
+  <data name="inv_Row30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row30.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;inv_Row30.Name" xml:space="preserve">
+    <value>inv_Row30</value>
+  </data>
+  <data name="&gt;&gt;inv_Row30.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row30.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row30.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="inv_Row31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 690</value>
+  </data>
+  <data name="inv_Row31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row31.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;inv_Row31.Name" xml:space="preserve">
+    <value>inv_Row31</value>
+  </data>
+  <data name="&gt;&gt;inv_Row31.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row31.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row31.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="inv_Row32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 713</value>
+  </data>
+  <data name="inv_Row32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row32.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;inv_Row32.Name" xml:space="preserve">
+    <value>inv_Row32</value>
+  </data>
+  <data name="&gt;&gt;inv_Row32.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row32.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row32.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="inv_Row33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 736</value>
+  </data>
+  <data name="inv_Row33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row33.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;inv_Row33.Name" xml:space="preserve">
+    <value>inv_Row33</value>
+  </data>
+  <data name="&gt;&gt;inv_Row33.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row33.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row33.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="inv_Row34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 759</value>
+  </data>
+  <data name="inv_Row34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row34.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;inv_Row34.Name" xml:space="preserve">
+    <value>inv_Row34</value>
+  </data>
+  <data name="&gt;&gt;inv_Row34.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row34.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row34.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="inv_Row35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 782</value>
+  </data>
+  <data name="inv_Row35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row35.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;inv_Row35.Name" xml:space="preserve">
+    <value>inv_Row35</value>
+  </data>
+  <data name="&gt;&gt;inv_Row35.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row35.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row35.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="inv_Row36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 805</value>
+  </data>
+  <data name="inv_Row36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row36.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;inv_Row36.Name" xml:space="preserve">
+    <value>inv_Row36</value>
+  </data>
+  <data name="&gt;&gt;inv_Row36.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row36.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row36.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="inv_Row37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 828</value>
+  </data>
+  <data name="inv_Row37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row37.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;inv_Row37.Name" xml:space="preserve">
+    <value>inv_Row37</value>
+  </data>
+  <data name="&gt;&gt;inv_Row37.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row37.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row37.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="inv_Row38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 851</value>
+  </data>
+  <data name="inv_Row38.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row38.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;inv_Row38.Name" xml:space="preserve">
+    <value>inv_Row38</value>
+  </data>
+  <data name="&gt;&gt;inv_Row38.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row38.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row38.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="inv_Row39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 874</value>
+  </data>
+  <data name="inv_Row39.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row39.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;inv_Row39.Name" xml:space="preserve">
+    <value>inv_Row39</value>
+  </data>
+  <data name="&gt;&gt;inv_Row39.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row39.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row39.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="inv_Row40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 897</value>
+  </data>
+  <data name="inv_Row40.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row40.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;inv_Row40.Name" xml:space="preserve">
+    <value>inv_Row40</value>
+  </data>
+  <data name="&gt;&gt;inv_Row40.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row40.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row40.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="inv_Row41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 920</value>
+  </data>
+  <data name="inv_Row41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row41.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;inv_Row41.Name" xml:space="preserve">
+    <value>inv_Row41</value>
+  </data>
+  <data name="&gt;&gt;inv_Row41.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row41.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row41.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="inv_Row42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 943</value>
+  </data>
+  <data name="inv_Row42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row42.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;inv_Row42.Name" xml:space="preserve">
+    <value>inv_Row42</value>
+  </data>
+  <data name="&gt;&gt;inv_Row42.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row42.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row42.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="inv_Row43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 966</value>
+  </data>
+  <data name="inv_Row43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row43.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;inv_Row43.Name" xml:space="preserve">
+    <value>inv_Row43</value>
+  </data>
+  <data name="&gt;&gt;inv_Row43.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row43.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row43.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="inv_Row44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 989</value>
+  </data>
+  <data name="inv_Row44.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row44.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;inv_Row44.Name" xml:space="preserve">
+    <value>inv_Row44</value>
+  </data>
+  <data name="&gt;&gt;inv_Row44.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row44.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row44.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="inv_Row45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1012</value>
+  </data>
+  <data name="inv_Row45.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="inv_Row45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>957, 23</value>
+  </data>
+  <data name="inv_Row45.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;inv_Row45.Name" xml:space="preserve">
+    <value>inv_Row45</value>
+  </data>
+  <data name="&gt;&gt;inv_Row45.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Inv_Row, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inv_Row45.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;inv_Row45.ZOrder" xml:space="preserve">
+    <value>44</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 70</value>
@@ -1702,7 +2689,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 125</value>
+    <value>978, 205</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -1726,7 +2713,7 @@
     <value>True</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, 9</value>
+    <value>795, 7</value>
   </data>
   <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1756,7 +2743,7 @@
     <value>Top, Right</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>906, 8</value>
+    <value>861, 5</value>
   </data>
   <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1783,13 +2770,13 @@
     <value>Top, Right</value>
   </data>
   <data name="Btn_DelRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 6</value>
+    <value>114, 6</value>
   </data>
   <data name="Btn_DelRow.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="Btn_DelRow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 18</value>
+    <value>105, 18</value>
   </data>
   <data name="Btn_DelRow.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -1816,7 +2803,7 @@
     <value>True</value>
   </data>
   <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>677, 9</value>
+    <value>604, 7</value>
   </data>
   <data name="labelX24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1849,7 +2836,7 @@
     <value>True</value>
   </data>
   <data name="labelX23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 9</value>
+    <value>431, 7</value>
   </data>
   <data name="labelX23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1879,7 +2866,7 @@
     <value>Top, Right</value>
   </data>
   <data name="totalWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 8</value>
+    <value>675, 5</value>
   </data>
   <data name="totalWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1906,7 +2893,7 @@
     <value>Top, Right</value>
   </data>
   <data name="totalQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 8</value>
+    <value>484, 5</value>
   </data>
   <data name="totalQty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1939,7 +2926,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1021, 34</value>
+    <value>1072, 34</value>
   </data>
   <data name="groupPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -1960,7 +2947,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 50</value>
+    <value>34, 50</value>
   </data>
   <data name="labelX8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2017,7 +3004,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 50</value>
+    <value>632, 50</value>
   </data>
   <data name="labelX7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2071,7 +3058,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 50</value>
+    <value>710, 50</value>
   </data>
   <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2101,7 +3088,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 50</value>
+    <value>101, 50</value>
   </data>
   <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2131,7 +3118,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 50</value>
+    <value>554, 50</value>
   </data>
   <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2161,7 +3148,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>756, 50</value>
+    <value>793, 50</value>
   </data>
   <data name="labelX53.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2239,7 +3226,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 50</value>
+    <value>359, 50</value>
   </data>
   <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2269,7 +3256,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>835, 50</value>
+    <value>872, 50</value>
   </data>
   <data name="labelX52.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2323,7 +3310,7 @@
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 50</value>
+    <value>473, 50</value>
   </data>
   <data name="labelX29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2362,7 +3349,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1021, 121</value>
+    <value>1072, 121</value>
   </data>
   <data name="groupPanel7.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -2392,7 +3379,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="tabControlPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 314</value>
+    <value>1074, 314</value>
   </data>
   <data name="tabControlPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2422,7 +3409,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1023, 340</value>
+    <value>1074, 340</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -2455,7 +3442,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="groupPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 346</value>
+    <value>1080, 346</value>
   </data>
   <data name="groupPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -2479,7 +3466,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1029, 599</value>
+    <value>1080, 599</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>

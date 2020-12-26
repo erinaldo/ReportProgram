@@ -297,10 +297,11 @@ namespace Report_Pro.RPT
         ",sum (case when D.TRANSACTION_CODE  like'XS%' and  cast(D.G_date as date) between '"+dTP1.Value.ToString("yyyy/MM/dd")+"' and '"+dTP2.Value.ToString("yyyy/MM/dd")+"' then D.QTY_TAKE-D.QTY_ADD  else 0 end)  as Sales_ "+
         "FROM wh_material_transaction As D inner join wh_BRANCHES as B on B.branch_code = D.Branch_code " +
 		"inner join wh_main_master As A on A.item_no = D.ITEM_NO inner join wh_Groups As G on g.group_code = a.group_code "+
-		"and  A.item_no = '"+Item.ID.Text+ "' group by d.Branch_code,B.branch_name,B.WH_E_NAME,A.Weight,A.local_cost,A.Unit order by d.Branch_code");
+		"and  A.item_no = '"+Item.ID.Text+ "' and  D.branch_code like (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "%' else  '" + Branch.ID.Text + "%' end) " +
+  "group by d.Branch_code,B.branch_name,B.WH_E_NAME,A.Weight,A.local_cost,A.Unit order by d.Branch_code");
 
-//            ", sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.Weight)  else 0 end)  as weight_ " +
-//",sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.local_cost)  else 0 end)  as cost " +
+    //            ", sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.Weight)  else 0 end)  as weight_ " +
+    //",sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.local_cost)  else 0 end)  as cost " +
 
     //dt1 = dal.getDataTabl_1(@"SELECT d.Branch_code,B.branch_name,A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,A.Unit,t2.COST_PRICE,
     //a.Dim_category, round(sum(D.QTY_ADD - D.QTY_TAKE), 2) as balance, sum(D.QTY_ADD - D.QTY_TAKE) * a.local_cost as cost

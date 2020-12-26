@@ -118,41 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 0</value>
+  <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 20</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Desc.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
-    <value>Desc</value>
-  </data>
-  <data name="&gt;&gt;Desc.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="ID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 20</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ID.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -166,10 +142,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ID.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Weight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 0</value>
+    <value>623, 0</value>
   </data>
   <data name="Weight.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -187,31 +163,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Weight.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Unit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 0</value>
-  </data>
-  <data name="Unit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 21</value>
-  </data>
-  <data name="Unit.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Unit.Name" xml:space="preserve">
-    <value>Unit</value>
-  </data>
-  <data name="&gt;&gt;Unit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Unit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Unit.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="Price.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 0</value>
+    <value>543, 0</value>
   </data>
   <data name="Price.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -229,10 +184,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Price.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="Qty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 0</value>
+    <value>463, 0</value>
   </data>
   <data name="Qty.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -250,10 +205,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Qty.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="TotalValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>678, 0</value>
+    <value>703, 0</value>
   </data>
   <data name="TotalValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -271,10 +226,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TotalValue.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="TotalWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 0</value>
+    <value>783, 0</value>
   </data>
   <data name="TotalWeight.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -292,10 +247,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TotalWeight.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="Balance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>838, 0</value>
+    <value>863, 0</value>
   </data>
   <data name="Balance.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -313,7 +268,82 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Balance.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Ser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="Ser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Ser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 21</value>
+  </data>
+  <data name="Ser.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;Ser.Name" xml:space="preserve">
+    <value>Ser</value>
+  </data>
+  <data name="&gt;&gt;Ser.Type" xml:space="preserve">
+    <value>DevComponents.Editors.IntegerInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;Ser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ser.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Unit.ItemHeight" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Unit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 0</value>
+  </data>
+  <data name="Unit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 20</value>
+  </data>
+  <data name="Unit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Unit.Name" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="&gt;&gt;Unit.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.ComboBoxEx, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;Unit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Unit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="command1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 20</value>
+  </data>
+  <data name="Desc.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
+    <value>Desc</value>
+  </data>
+  <data name="&gt;&gt;Desc.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -325,7 +355,13 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 20</value>
+    <value>943, 19</value>
+  </data>
+  <data name="&gt;&gt;command1.Name" xml:space="preserve">
+    <value>command1</value>
+  </data>
+  <data name="&gt;&gt;command1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Command, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Inv_Row</value>

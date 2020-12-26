@@ -19,7 +19,7 @@ namespace Report_Pro.MyControls
 
         private void ID_KeyUp(object sender, KeyEventArgs e)
         {
-            get_desc();
+           // get_desc();
         }
 
         private void get_desc()
@@ -50,27 +50,16 @@ namespace Report_Pro.MyControls
 
                     Desc.Clear();
                     Weight.Value = 0;
-                  
                     Unit.SelectedIndex=-1;
-
+                   
                 }
-            }
+                clculat_amount();
+        }
 
             catch { }
         }
 
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            OnClick(e);
-
-        }
-
-       
-       
-
-      
-
-       
+    
       
 
         private void ID_TextChanged(object sender, EventArgs e)
@@ -86,7 +75,16 @@ namespace Report_Pro.MyControls
 
         private void ID_KeyDown(object sender, KeyEventArgs e)
         {
-            OnKeyDown(e);
+            if (e.KeyCode == Keys.Enter )
+            {
+                get_desc();
+            }
+            else
+            {
+                ID.Focus();
+                ID.SelectAll();
+            }
+           
         }
 
         private void Desc_TextChanged(object sender, EventArgs e)
@@ -96,16 +94,51 @@ namespace Report_Pro.MyControls
 
         private void ID_DoubleClick(object sender, EventArgs e)
         {
-           OnDoubleClick(e);
+           //OnDoubleClick(e);
         }
 
         private void Inv_Row_Load(object sender, EventArgs e)
         {
-            Unit.DataSource = dal.getDataTabl_1("select * from " + dal.db1 + ".dbo.wh_unit");
+            Unit.DataSource = dal.getDataTabl_1("select * from wh_unit");
             Unit.DisplayMember = "Wh_Unit";
             Unit.ValueMember = "Wh_Unit";
             Unit.SelectedIndex = -1;
 
+        }
+
+        private void Price_KeyDown(object sender, KeyEventArgs e)
+        {
+            //OnKeyDown(e);
+        }
+
+        private void ID_Leave(object sender, EventArgs e)
+        {
+            get_desc();
+        }
+
+        void clculat_amount()
+        {
+            try
+            {
+               TotalValue.Text = (Qty.Text.ToDecimal() * Price.Text.ToDecimal()).ToString("N" + dal.digits_);
+               // Txtvalue.Text = (TxtQty.Text.ToDecimal() * TxtPrice.Text.ToDecimal() - TxtDisc.Text.ToDecimal()).ToString("N" + dal.digits_);
+                //VatValue.Text = (Txtvalue.Text.ToDecimal() * VatRate.Text.ToDecimal()).ToString("N" + dal.digits_);
+               TotalWeight.Text = (Qty.Text.ToDecimal() * Weight.Text.ToDecimal()).ToString("N3");
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private void Qty_KeyUp(object sender, KeyEventArgs e)
+        {
+            clculat_amount();
+        }
+
+        private void Price_KeyUp(object sender, KeyEventArgs e)
+        {
+            clculat_amount();
         }
     }
 }

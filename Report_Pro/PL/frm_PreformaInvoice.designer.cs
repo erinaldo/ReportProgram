@@ -93,7 +93,51 @@
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.inv_Row5 = new Report_Pro.MyControls.Inv_Row();
             this.inv_Row1 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row2 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row3 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row4 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row6 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row7 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row8 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row9 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row10 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row11 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row12 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row13 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row14 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row15 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row16 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row17 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row18 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row19 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row20 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row21 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row22 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row23 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row24 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row25 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row26 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row27 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row28 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row29 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row30 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row31 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row32 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row33 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row34 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row35 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row36 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row37 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row38 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row39 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row40 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row41 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row42 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row43 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row44 = new Report_Pro.MyControls.Inv_Row();
+            this.inv_Row45 = new Report_Pro.MyControls.Inv_Row();
             this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -120,9 +164,6 @@
             this.ItemsTab = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.inv_Row2 = new Report_Pro.MyControls.Inv_Row();
-            this.inv_Row3 = new Report_Pro.MyControls.Inv_Row();
-            this.inv_Row4 = new Report_Pro.MyControls.Inv_Row();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProformaDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LShipDate)).BeginInit();
@@ -833,18 +874,370 @@
             // 
             // flowLayoutPanel1
             // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row5);
             this.flowLayoutPanel1.Controls.Add(this.inv_Row1);
             this.flowLayoutPanel1.Controls.Add(this.inv_Row2);
             this.flowLayoutPanel1.Controls.Add(this.inv_Row3);
             this.flowLayoutPanel1.Controls.Add(this.inv_Row4);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row6);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row7);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row8);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row9);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row10);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row11);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row12);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row13);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row14);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row15);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row16);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row17);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row18);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row19);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row20);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row21);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row22);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row23);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row24);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row25);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row26);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row27);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row28);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row29);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row30);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row31);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row32);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row33);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row34);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row35);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row36);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row37);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row38);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row39);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row40);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row41);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row42);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row43);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row44);
+            this.flowLayoutPanel1.Controls.Add(this.inv_Row45);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Click += new System.EventHandler(this.flowLayoutPanel1_Click);
+            // 
+            // inv_Row5
+            // 
+            this.inv_Row5.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row5, "inv_Row5");
+            this.inv_Row5.Name = "inv_Row5";
             // 
             // inv_Row1
             // 
-            this.inv_Row1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.inv_Row1.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             resources.ApplyResources(this.inv_Row1, "inv_Row1");
             this.inv_Row1.Name = "inv_Row1";
+            // 
+            // inv_Row2
+            // 
+            this.inv_Row2.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row2, "inv_Row2");
+            this.inv_Row2.Name = "inv_Row2";
+            // 
+            // inv_Row3
+            // 
+            this.inv_Row3.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row3, "inv_Row3");
+            this.inv_Row3.Name = "inv_Row3";
+            // 
+            // inv_Row4
+            // 
+            this.inv_Row4.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row4, "inv_Row4");
+            this.inv_Row4.Name = "inv_Row4";
+            // 
+            // inv_Row6
+            // 
+            this.inv_Row6.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row6, "inv_Row6");
+            this.inv_Row6.Name = "inv_Row6";
+            // 
+            // inv_Row7
+            // 
+            this.inv_Row7.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row7, "inv_Row7");
+            this.inv_Row7.Name = "inv_Row7";
+            this.inv_Row7.Load += new System.EventHandler(this.inv_Row7_Load);
+            // 
+            // inv_Row8
+            // 
+            this.inv_Row8.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row8, "inv_Row8");
+            this.inv_Row8.Name = "inv_Row8";
+            // 
+            // inv_Row9
+            // 
+            this.inv_Row9.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row9, "inv_Row9");
+            this.inv_Row9.Name = "inv_Row9";
+            // 
+            // inv_Row10
+            // 
+            this.inv_Row10.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row10, "inv_Row10");
+            this.inv_Row10.Name = "inv_Row10";
+            // 
+            // inv_Row11
+            // 
+            this.inv_Row11.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row11, "inv_Row11");
+            this.inv_Row11.Name = "inv_Row11";
+            // 
+            // inv_Row12
+            // 
+            this.inv_Row12.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row12, "inv_Row12");
+            this.inv_Row12.Name = "inv_Row12";
+            // 
+            // inv_Row13
+            // 
+            this.inv_Row13.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row13, "inv_Row13");
+            this.inv_Row13.Name = "inv_Row13";
+            // 
+            // inv_Row14
+            // 
+            this.inv_Row14.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row14, "inv_Row14");
+            this.inv_Row14.Name = "inv_Row14";
+            // 
+            // inv_Row15
+            // 
+            this.inv_Row15.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row15, "inv_Row15");
+            this.inv_Row15.Name = "inv_Row15";
+            // 
+            // inv_Row16
+            // 
+            this.inv_Row16.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row16, "inv_Row16");
+            this.inv_Row16.Name = "inv_Row16";
+            // 
+            // inv_Row17
+            // 
+            this.inv_Row17.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row17, "inv_Row17");
+            this.inv_Row17.Name = "inv_Row17";
+            // 
+            // inv_Row18
+            // 
+            this.inv_Row18.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row18, "inv_Row18");
+            this.inv_Row18.Name = "inv_Row18";
+            // 
+            // inv_Row19
+            // 
+            this.inv_Row19.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row19, "inv_Row19");
+            this.inv_Row19.Name = "inv_Row19";
+            // 
+            // inv_Row20
+            // 
+            this.inv_Row20.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row20, "inv_Row20");
+            this.inv_Row20.Name = "inv_Row20";
+            // 
+            // inv_Row21
+            // 
+            this.inv_Row21.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row21, "inv_Row21");
+            this.inv_Row21.Name = "inv_Row21";
+            // 
+            // inv_Row22
+            // 
+            this.inv_Row22.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row22, "inv_Row22");
+            this.inv_Row22.Name = "inv_Row22";
+            // 
+            // inv_Row23
+            // 
+            this.inv_Row23.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row23, "inv_Row23");
+            this.inv_Row23.Name = "inv_Row23";
+            // 
+            // inv_Row24
+            // 
+            this.inv_Row24.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row24, "inv_Row24");
+            this.inv_Row24.Name = "inv_Row24";
+            // 
+            // inv_Row25
+            // 
+            this.inv_Row25.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row25, "inv_Row25");
+            this.inv_Row25.Name = "inv_Row25";
+            // 
+            // inv_Row26
+            // 
+            this.inv_Row26.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row26.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row26, "inv_Row26");
+            this.inv_Row26.Name = "inv_Row26";
+            // 
+            // inv_Row27
+            // 
+            this.inv_Row27.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row27.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row27, "inv_Row27");
+            this.inv_Row27.Name = "inv_Row27";
+            // 
+            // inv_Row28
+            // 
+            this.inv_Row28.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row28, "inv_Row28");
+            this.inv_Row28.Name = "inv_Row28";
+            // 
+            // inv_Row29
+            // 
+            this.inv_Row29.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row29, "inv_Row29");
+            this.inv_Row29.Name = "inv_Row29";
+            // 
+            // inv_Row30
+            // 
+            this.inv_Row30.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row30, "inv_Row30");
+            this.inv_Row30.Name = "inv_Row30";
+            // 
+            // inv_Row31
+            // 
+            this.inv_Row31.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row31, "inv_Row31");
+            this.inv_Row31.Name = "inv_Row31";
+            // 
+            // inv_Row32
+            // 
+            this.inv_Row32.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row32, "inv_Row32");
+            this.inv_Row32.Name = "inv_Row32";
+            // 
+            // inv_Row33
+            // 
+            this.inv_Row33.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row33.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row33, "inv_Row33");
+            this.inv_Row33.Name = "inv_Row33";
+            // 
+            // inv_Row34
+            // 
+            this.inv_Row34.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row34.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row34, "inv_Row34");
+            this.inv_Row34.Name = "inv_Row34";
+            // 
+            // inv_Row35
+            // 
+            this.inv_Row35.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row35.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row35, "inv_Row35");
+            this.inv_Row35.Name = "inv_Row35";
+            // 
+            // inv_Row36
+            // 
+            this.inv_Row36.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row36.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row36, "inv_Row36");
+            this.inv_Row36.Name = "inv_Row36";
+            // 
+            // inv_Row37
+            // 
+            this.inv_Row37.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row37.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row37, "inv_Row37");
+            this.inv_Row37.Name = "inv_Row37";
+            // 
+            // inv_Row38
+            // 
+            this.inv_Row38.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row38.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row38, "inv_Row38");
+            this.inv_Row38.Name = "inv_Row38";
+            // 
+            // inv_Row39
+            // 
+            this.inv_Row39.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row39.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row39, "inv_Row39");
+            this.inv_Row39.Name = "inv_Row39";
+            // 
+            // inv_Row40
+            // 
+            this.inv_Row40.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row40, "inv_Row40");
+            this.inv_Row40.Name = "inv_Row40";
+            // 
+            // inv_Row41
+            // 
+            this.inv_Row41.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row41.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row41, "inv_Row41");
+            this.inv_Row41.Name = "inv_Row41";
+            // 
+            // inv_Row42
+            // 
+            this.inv_Row42.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row42, "inv_Row42");
+            this.inv_Row42.Name = "inv_Row42";
+            // 
+            // inv_Row43
+            // 
+            this.inv_Row43.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row43.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row43, "inv_Row43");
+            this.inv_Row43.Name = "inv_Row43";
+            // 
+            // inv_Row44
+            // 
+            this.inv_Row44.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row44.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row44, "inv_Row44");
+            this.inv_Row44.Name = "inv_Row44";
+            // 
+            // inv_Row45
+            // 
+            this.inv_Row45.BackColor = System.Drawing.Color.Transparent;
+            this.inv_Row45.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.inv_Row45, "inv_Row45");
+            this.inv_Row45.Name = "inv_Row45";
             // 
             // groupPanel5
             // 
@@ -1137,24 +1530,6 @@
             this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
-            // inv_Row2
-            // 
-            this.inv_Row2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.inv_Row2, "inv_Row2");
-            this.inv_Row2.Name = "inv_Row2";
-            // 
-            // inv_Row3
-            // 
-            this.inv_Row3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.inv_Row3, "inv_Row3");
-            this.inv_Row3.Name = "inv_Row3";
-            // 
-            // inv_Row4
-            // 
-            this.inv_Row4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.inv_Row4, "inv_Row4");
-            this.inv_Row4.Name = "inv_Row4";
-            // 
             // frm_PreformaInvoice
             // 
             resources.ApplyResources(this, "$this");
@@ -1260,30 +1635,71 @@
         private System.Windows.Forms.TextBox txtUnitWeight;
         private DevComponents.DotNetBar.LabelX labelX52;
         private System.Windows.Forms.TextBox txtBalance;
-        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel5;
-        private DevComponents.DotNetBar.ButtonX Btn_DelRow;
-        private DevComponents.DotNetBar.LabelX labelX24;
-        private DevComponents.DotNetBar.LabelX labelX23;
-        private System.Windows.Forms.TextBox totalWeight;
-        private System.Windows.Forms.TextBox totalQty;
         private DevComponents.DotNetBar.ButtonItem btnAttachment;
         private DevComponents.DotNetBar.ButtonItem buttonItem2;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.Editors.DoubleInput doubleInput3;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.LabelX labelX6;
-        private System.Windows.Forms.TextBox textBox1;
         private DevComponents.DotNetBar.ButtonItem btnPrintForm;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.LabelX labelX17;
         private DevComponents.DotNetBar.LabelX labelX29;
         private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.DotNetBar.LabelX labelX7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private MyControls.Inv_Row inv_Row5;
         private MyControls.Inv_Row inv_Row1;
         private MyControls.Inv_Row inv_Row2;
         private MyControls.Inv_Row inv_Row3;
         private MyControls.Inv_Row inv_Row4;
+        private MyControls.Inv_Row inv_Row6;
+        private MyControls.Inv_Row inv_Row7;
+        private MyControls.Inv_Row inv_Row8;
+        private MyControls.Inv_Row inv_Row9;
+        private MyControls.Inv_Row inv_Row10;
+        private MyControls.Inv_Row inv_Row11;
+        private MyControls.Inv_Row inv_Row12;
+        private MyControls.Inv_Row inv_Row13;
+        private MyControls.Inv_Row inv_Row14;
+        private MyControls.Inv_Row inv_Row15;
+        private MyControls.Inv_Row inv_Row16;
+        private MyControls.Inv_Row inv_Row17;
+        private MyControls.Inv_Row inv_Row18;
+        private MyControls.Inv_Row inv_Row19;
+        private MyControls.Inv_Row inv_Row20;
+        private MyControls.Inv_Row inv_Row21;
+        private MyControls.Inv_Row inv_Row22;
+        private MyControls.Inv_Row inv_Row23;
+        private MyControls.Inv_Row inv_Row24;
+        private MyControls.Inv_Row inv_Row25;
+        private MyControls.Inv_Row inv_Row26;
+        private MyControls.Inv_Row inv_Row27;
+        private MyControls.Inv_Row inv_Row28;
+        private MyControls.Inv_Row inv_Row29;
+        private MyControls.Inv_Row inv_Row30;
+        private MyControls.Inv_Row inv_Row31;
+        private MyControls.Inv_Row inv_Row32;
+        private MyControls.Inv_Row inv_Row33;
+        private MyControls.Inv_Row inv_Row34;
+        private MyControls.Inv_Row inv_Row35;
+        private MyControls.Inv_Row inv_Row36;
+        private MyControls.Inv_Row inv_Row37;
+        private MyControls.Inv_Row inv_Row38;
+        private MyControls.Inv_Row inv_Row39;
+        private MyControls.Inv_Row inv_Row40;
+        private MyControls.Inv_Row inv_Row41;
+        private MyControls.Inv_Row inv_Row42;
+        private MyControls.Inv_Row inv_Row43;
+        private MyControls.Inv_Row inv_Row44;
+        private MyControls.Inv_Row inv_Row45;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel5;
+        private DevComponents.DotNetBar.LabelX labelX6;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevComponents.DotNetBar.ButtonX Btn_DelRow;
+        private DevComponents.DotNetBar.LabelX labelX24;
+        private DevComponents.DotNetBar.LabelX labelX23;
+        private System.Windows.Forms.TextBox totalWeight;
+        private System.Windows.Forms.TextBox totalQty;
     }
 }
