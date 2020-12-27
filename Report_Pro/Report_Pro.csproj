@@ -1524,6 +1524,9 @@
     <EmbeddedResource Include="RPT\frm_lcsRep.sq-AL.resx">
       <DependentUpon>frm_lcsRep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_maintenance_SP_ByCustomer.resx">
+      <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_rpt_inventory.ar.resx">
       <DependentUpon>frm_rpt_inventory.cs</DependentUpon>
     </EmbeddedResource>
@@ -1567,6 +1570,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_TotalStockByCategory.resx">
       <DependentUpon>rpt_TotalStockByCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_Maintenance_SP_ByCustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Maintenance_SP_ByCustomer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_PrintInvoices.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2305,6 +2312,12 @@
     <Compile Include="RPT\frm_lcsRep.designer.cs">
       <DependentUpon>frm_lcsRep.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\frm_maintenance_SP_ByCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_maintenance_SP_ByCustomer.Designer.cs">
+      <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="RPT\print_PurchaseInv.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -2352,6 +2365,12 @@
     </Compile>
     <Compile Include="Reports\rpt_TotalStockByCategory.Designer.cs">
       <DependentUpon>rpt_TotalStockByCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\rpt_Maintenance_SP_ByCustomer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Maintenance_SP_ByCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\rpt_PrintInvoices.cs">
       <AutoGen>True</AutoGen>

@@ -142,6 +142,7 @@
             this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.M27 = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -238,7 +239,8 @@
             this.M23,
             this.M24,
             this.M25,
-            this.M26});
+            this.M26,
+            this.M27});
             this.M2.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.M2, "M2");
             this.M2.Click += new System.EventHandler(this.M2_Click);
@@ -984,6 +986,12 @@
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
             // 
+            // M27
+            // 
+            this.M27.Name = "M27";
+            resources.ApplyResources(this.M27, "M27");
+            this.M27.Click += new System.EventHandler(this.M27_Click);
+            // 
             // Frm_Main
             // 
             this.AllowDrop = true;
@@ -1130,5 +1138,6 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem8;
         private DevComponents.DotNetBar.ButtonItem M56;
         private DevComponents.DotNetBar.ButtonItem buttonItem9;
+        private DevComponents.DotNetBar.ButtonItem M27;
     }
 }

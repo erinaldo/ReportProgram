@@ -1230,5 +1230,10 @@ namespace Report_Pro.PL
         {
             openForm(new PL.frm_PreformaInvoice(), FormWindowState.Maximized, 0);
         }
+
+        private void M27_Click(object sender, EventArgs e)
+        {
+            openForm(new RPT.frm_maintenance_SP_ByCustomer(), FormWindowState.Maximized, 0);
+        }
     }
 }
