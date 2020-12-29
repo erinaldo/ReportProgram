@@ -389,10 +389,10 @@ namespace Report_Pro.RPT
             RPT.CrystalReport3 rpt = new RPT.CrystalReport3();
             DataTable dt_ = dal.getDataTabl_1(@"SELECT  H.Branch_code,
 		H.branch_name As name_
-		,sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight) as Weight_
-		,sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100) as value_
-		,sum(D.TAX_OUT-d.TAX_IN) as tax_
-		,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
+		,sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight) as Weight_
+		,sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100) as value_
+		,sum(D.TAX_IN-D.TAX_OUT) as tax_
+		,ROUND(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight),0 ),0),1),3)*1000 AS Average_
      
 		FROM wh_material_transaction As D
 		inner join wh_main_master As A on A.item_no=D.ITEM_NO
@@ -461,9 +461,9 @@ namespace Report_Pro.RPT
                 RPT.sales_by_group rpt = new RPT.sales_by_group();
 
                 DataTable dt_ = dal.getDataTabl_1(@"SELECT 	v.G_ID As Group_ID,G.Group_name as Group_name,V.xe_
-                ,ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 )as Weight_
-                ,ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0) as value_
-                ,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
+                ,ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight),0 )as Weight_
+                ,ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100),0) as value_
+                ,ROUND(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight),0 ),0),1),3)*1000 AS Average_
                 FROM [wh_material_transaction]As D
                 inner join wh_main_master As A on A.item_no=D.ITEM_NO
                 inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
@@ -551,10 +551,10 @@ namespace Report_Pro.RPT
                 RPT.rpt_transaction_byGroup_payType rpt = new RPT.rpt_transaction_byGroup_payType();
 
                 DataTable dt_ = dal.getDataTabl_1(@"SELECT v.G_ID As Group_ID,G.Group_name as Group_name,p.Payment_name
-                ,ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 )as Weight_
-                ,ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0) as value_
-                ,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
-                FROM [main_acc_wh].[dbo].[wh_material_transaction]As D
+                ,ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight),0 )as Weight_
+                ,ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100),0) as value_
+                ,ROUND(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight),0 ),0),1),3)*1000 AS Average_
+                FROM wh_material_transaction As D
                 inner join wh_main_master As A on A.item_no=D.ITEM_NO
                 inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
                 inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND 
@@ -1022,10 +1022,10 @@ namespace Report_Pro.RPT
             //dt1 = (dal.getDataTabl("sales_by_Acc_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp", UC_Branch.ID.Text, Uc_Acc.ID.Text, db1,Uc_Group.ID.Text));
 
             dt1 = dal.getDataTabl_1(@"SELECT C.acc_no,P.PAYER_NAME
-		        ,sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight) as Weight_
-		        ,sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100) as value_
-		        ,sum(D.TAX_OUT-d.TAX_IN) as tax_
-		        ,ROUND(ROUND(sum((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_TAKE-D.QTY_ADD)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.[QTY_TAKE]-D.[QTY_ADD])*A.Weight),0 ),0),1),3)*1000 AS Average_
+		        ,sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight) as Weight_
+		        ,sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100) as value_
+		        ,sum(d.TAX_IN-D.TAX_OUT) as tax_
+		        ,ROUND(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price)-sum(((D.QTY_ADD-D.QTY_TAKE)*D.Local_Price*D.total_disc)/100),0)/ISNULL(NULLIF(ROUND(sum((D.QTY_ADD-D.QTY_TAKE)*A.Weight),0 ),0),1),3)*1000 AS Average_
      
 		        FROM wh_material_transaction As D
 		        inner join wh_main_master As A on A.item_no=D.ITEM_NO
@@ -1034,19 +1034,19 @@ namespace Report_Pro.RPT
 		        C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear
 		        inner join wh_Groups As G on A.group_code=G.group_code
 		        inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
-		        left JOIN payer2 As P ON C.Acc_no = P.ACC_NO AND C.Acc_Branch_code = P.BRANCH_code group by C.acc_no, P.PAYER_NAME");
+		        left JOIN payer2 As P ON C.Acc_no = P.ACC_NO AND C.Acc_Branch_code = P.BRANCH_code 
 
-            // D.TRANSACTION_CODE like 'xp%'
-            //and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + dTP2.Value.ToString("yyyy-MM-dd") +
-            //"' and C.Payment_Type like '" + pay_code +
-            //"%' and A.Category like '" + Convert.ToString(category.SelectedValue) +
-            //"%' and isnull(A.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
-            //"' and A.Dim_category like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
-            //"%' and C.Branch_code like '" + UC_Branch.ID.Text +
-            //"%' and C.acc_no like '" + Uc_Acc.ID.Text +
-            //"%' and A.group_code like '" + Uc_Group.ID.Text +
-            //"%' and isnull(C.LC_ACC_NO,'') like '" + Lc_Acc.ID.Text + 
-            //"%' group by C.acc_no, P.PAYER_NAME");
+            where D.TRANSACTION_CODE like 'xp%'
+            and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + dTP2.Value.ToString("yyyy-MM-dd") +
+            "' and C.Payment_Type like '" + pay_code +
+            "%' and A.Category like '" + Convert.ToString(category.SelectedValue) +
+            "%' and isnull(A.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
+            "' and A.Dim_category like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
+            "%' and C.Branch_code like '" + UC_Branch.ID.Text +
+            "%' and C.acc_no like '" + Uc_Acc.ID.Text +
+            "%' and A.group_code like '" + Uc_Group.ID.Text +
+            "%' and isnull(C.LC_ACC_NO,'') like '" + Lc_Acc.ID.Text +
+            "%' group by C.acc_no, P.PAYER_NAME");
 
             //      where D.TRANSACTION_CODE like 'xp%' 
             //and cast(D.G_date as date) between '2020-01-01' and '2020-12-27'
