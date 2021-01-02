@@ -47,6 +47,8 @@
             this.txt_Area = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txt_VatNo = new System.Windows.Forms.MaskedTextBox();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.txtEmail = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +58,9 @@
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(324, 176);
+            this.buttonX1.Location = new System.Drawing.Point(213, 160);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(102, 23);
+            this.buttonX1.Size = new System.Drawing.Size(77, 23);
             this.buttonX1.TabIndex = 2;
             this.buttonX1.Text = "تحديث";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
@@ -70,7 +72,7 @@
             // 
             // 
             this.Desc.Border.Class = "TextBoxBorder";
-            this.Desc.Location = new System.Drawing.Point(324, 62);
+            this.Desc.Location = new System.Drawing.Point(321, 61);
             this.Desc.Name = "Desc";
             this.Desc.Size = new System.Drawing.Size(259, 20);
             this.Desc.TabIndex = 7;
@@ -86,14 +88,13 @@
             this.adress.Name = "adress";
             this.adress.Size = new System.Drawing.Size(300, 20);
             this.adress.TabIndex = 8;
-            this.adress.Visible = false;
             // 
             // labelX1
             // 
             this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(625, 36);
+            this.labelX1.Location = new System.Drawing.Point(586, 36);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(43, 17);
             this.labelX1.TabIndex = 10;
@@ -104,7 +105,7 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(589, 116);
+            this.labelX2.Location = new System.Drawing.Point(586, 113);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(36, 17);
             this.labelX2.TabIndex = 11;
@@ -115,7 +116,7 @@
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(187, 64);
+            this.labelX3.Location = new System.Drawing.Point(187, 63);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(68, 17);
             this.labelX3.TabIndex = 13;
@@ -126,7 +127,7 @@
             this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(589, 64);
+            this.labelX4.Location = new System.Drawing.Point(586, 63);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(96, 17);
             this.labelX4.TabIndex = 148;
@@ -137,7 +138,7 @@
             this.labelX5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX5.AutoSize = true;
             this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            this.labelX5.Location = new System.Drawing.Point(589, 90);
+            this.labelX5.Location = new System.Drawing.Point(586, 88);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(99, 17);
             this.labelX5.TabIndex = 149;
@@ -150,7 +151,7 @@
             // 
             // 
             this.Desc_L.Border.Class = "TextBoxBorder";
-            this.Desc_L.Location = new System.Drawing.Point(324, 88);
+            this.Desc_L.Location = new System.Drawing.Point(321, 86);
             this.Desc_L.Name = "Desc_L";
             this.Desc_L.Size = new System.Drawing.Size(259, 20);
             this.Desc_L.TabIndex = 150;
@@ -173,7 +174,7 @@
             this.lbl_Building.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Building.AutoSize = true;
             this.lbl_Building.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Building.Location = new System.Drawing.Point(338, 116);
+            this.lbl_Building.Location = new System.Drawing.Point(338, 113);
             this.lbl_Building.Name = "lbl_Building";
             this.lbl_Building.Size = new System.Drawing.Size(44, 17);
             this.lbl_Building.TabIndex = 153;
@@ -187,7 +188,7 @@
             // 
             // 
             this.txt_Building.Border.Class = "TextBoxBorder";
-            this.txt_Building.Location = new System.Drawing.Point(385, 114);
+            this.txt_Building.Location = new System.Drawing.Point(385, 111);
             this.txt_Building.Name = "txt_Building";
             this.txt_Building.Size = new System.Drawing.Size(80, 20);
             this.txt_Building.TabIndex = 154;
@@ -200,7 +201,7 @@
             // 
             // 
             this.txt_Block.Border.Class = "TextBoxBorder";
-            this.txt_Block.Location = new System.Drawing.Point(385, 140);
+            this.txt_Block.Location = new System.Drawing.Point(385, 137);
             this.txt_Block.Name = "txt_Block";
             this.txt_Block.Size = new System.Drawing.Size(80, 20);
             this.txt_Block.TabIndex = 156;
@@ -211,7 +212,7 @@
             this.lbl_Block.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Block.AutoSize = true;
             this.lbl_Block.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Block.Location = new System.Drawing.Point(350, 142);
+            this.lbl_Block.Location = new System.Drawing.Point(350, 139);
             this.lbl_Block.Name = "lbl_Block";
             this.lbl_Block.Size = new System.Drawing.Size(32, 17);
             this.lbl_Block.TabIndex = 155;
@@ -224,7 +225,7 @@
             // 
             // 
             this.txt_Road.Border.Class = "TextBoxBorder";
-            this.txt_Road.Location = new System.Drawing.Point(508, 114);
+            this.txt_Road.Location = new System.Drawing.Point(505, 111);
             this.txt_Road.Name = "txt_Road";
             this.txt_Road.Size = new System.Drawing.Size(75, 20);
             this.txt_Road.TabIndex = 158;
@@ -236,7 +237,7 @@
             this.lbl_Road.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Road.AutoSize = true;
             this.lbl_Road.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Road.Location = new System.Drawing.Point(474, 116);
+            this.lbl_Road.Location = new System.Drawing.Point(474, 113);
             this.lbl_Road.Name = "lbl_Road";
             this.lbl_Road.Size = new System.Drawing.Size(31, 17);
             this.lbl_Road.TabIndex = 157;
@@ -249,7 +250,7 @@
             // 
             // 
             this.txt_Area.Border.Class = "TextBoxBorder";
-            this.txt_Area.Location = new System.Drawing.Point(471, 140);
+            this.txt_Area.Location = new System.Drawing.Point(471, 137);
             this.txt_Area.Name = "txt_Area";
             this.txt_Area.Size = new System.Drawing.Size(109, 20);
             this.txt_Area.TabIndex = 159;
@@ -259,7 +260,8 @@
             // 
             this.txt_VatNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_VatNo.Culture = new System.Globalization.CultureInfo("ar-001");
-            this.txt_VatNo.Location = new System.Drawing.Point(70, 62);
+            this.txt_VatNo.HideSelection = false;
+            this.txt_VatNo.Location = new System.Drawing.Point(70, 61);
             this.txt_VatNo.Mask = "00000-00000-00000";
             this.txt_VatNo.Name = "txt_VatNo";
             this.txt_VatNo.Size = new System.Drawing.Size(111, 20);
@@ -270,6 +272,8 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.labelX6);
+            this.groupPanel1.Controls.Add(this.txtEmail);
             this.groupPanel1.Controls.Add(this.txt_VatNo);
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Controls.Add(this.buttonX1);
@@ -315,15 +319,39 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.TabIndex = 162;
             // 
+            // labelX6
+            // 
+            this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelX6.AutoSize = true;
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            this.labelX6.Location = new System.Drawing.Point(586, 163);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(37, 17);
+            this.labelX6.TabIndex = 162;
+            this.labelX6.Text = "الايميل";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txtEmail.Border.Class = "TextBoxBorder";
+            this.txtEmail.Location = new System.Drawing.Point(321, 161);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(259, 20);
+            this.txtEmail.TabIndex = 161;
+            // 
             // UC_Acc
             // 
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
             this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(294, 36);
+            this.UC_Acc.Location = new System.Drawing.Point(258, 33);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Size = new System.Drawing.Size(328, 23);
+            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
+            this.UC_Acc.Size = new System.Drawing.Size(322, 23);
             this.UC_Acc.TabIndex = 151;
             this.UC_Acc.Load += new System.EventHandler(this.UC_Acc_Load);
             // 
@@ -333,7 +361,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 232);
             this.Controls.Add(this.groupPanel1);
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.KeyPreview = true;
             this.Name = "UpdateAccData";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -369,5 +396,7 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txt_Area;
         private System.Windows.Forms.MaskedTextBox txt_VatNo;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
+        private DevComponents.DotNetBar.LabelX labelX6;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtEmail;
     }
 }

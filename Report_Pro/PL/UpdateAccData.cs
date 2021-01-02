@@ -46,7 +46,7 @@ namespace Report_Pro.PL
                     facility_ = "NO";
                 }
 
-                dal.Execute_1("update payer2 set PAYER_NAME='"+Desc.Text+"',payer_l_name='"+ Desc_L.Text+"', adress='" + adress.Text + "' , COSTMER_K_M_NO='" + txt_VatNo.Text + "',notes='" + facility_ + "' where acc_no= '" + UC_Acc.ID.Text + "'");
+                dal.Execute_1("update payer2 set PAYER_NAME='"+Desc.Text+"',payer_l_name='"+ Desc_L.Text+"', adress='" + adress.Text + "' , COSTMER_K_M_NO='" + txt_VatNo.Text + "',notes='" + facility_ + "' ,E_MAIL='" + txtEmail.Text + "' where acc_no= '" + UC_Acc.ID.Text + "'");
                 dal.Execute_1("update wh_inv_data set adress='" + adress.Text + "', COSTMER_K_M_NO='" + txt_VatNo.Text + "' where acc_no= '" + UC_Acc.ID.Text + "'");
                 MessageBox.Show("تمت عملية التعديل بنجاح", "تأكيد التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -66,25 +66,44 @@ namespace Report_Pro.PL
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("select PAYER_NAME,payer_l_name,adress,COSTMER_K_M_NO,notes from payer2 where ACC_NO= '" + UC_Acc.ID.Text + "'   ");
+                DataTable dt_ = dal.getDataTabl_1("select PAYER_NAME,payer_l_name,adress,COSTMER_K_M_NO,notes,E_Mail from payer2 where ACC_NO= '" + UC_Acc.ID.Text + "'   ");
                 if (dt_.Rows.Count > 0)
                 {
                     Desc.Text = dt_.Rows[0][0].ToString();
                     Desc_L.Text = dt_.Rows[0][1].ToString();
                     adress.Text = dt_.Rows[0][2].ToString();
-
-                   
-
+                    txtEmail.Text = dt_.Rows[0]["E_MAIL"].ToString();
+                    txt_VatNo.Text = dt_.Rows[0]["COSTMER_K_M_NO"].ToString();
+                if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 1)
+                {
+                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                }
+                else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 3)
+                {
+                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                }
+                else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 5)
+                {
                     txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
                     txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
                     txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
-                    if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length  > 7)
+                }
+                    else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length  > 7)
                     {
-                        txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6] + " " + Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[7];
+                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
+                    txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6] + " " + Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[7];
                     }
-                    else { txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6]; }
+                    else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length == 7)
+                {
+                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
+                    txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6]; }
 
-                    txt_VatNo.Text = dt_.Rows[0][3].ToString();
+                    
                     if (dt_.Rows[0][4].ToString().ToUpper() == "YES")
                     {
                         ch_facility.Checked = true;
@@ -95,7 +114,7 @@ namespace Report_Pro.PL
                             ch_facility.Checked = false;
                         }
                     }
-                    
+                   
                 }
                 else
                 {
@@ -108,10 +127,14 @@ namespace Report_Pro.PL
                     txt_Road.Clear();
                     txt_Block.Clear();
                     txt_Area.Clear();
+                    txtEmail.Clear();
 
                 }
-        }
-            catch  { }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
      
 
@@ -143,24 +166,64 @@ namespace Report_Pro.PL
             txt_Area.Text = adress.Text.Split(' ')[6];
         }
 
+
+        private void setAddress()
+        {
+            string Building = "";
+            string Road = "";
+            string Block = "";
+            
+
+            if (txt_Building.Text.Trim() != string.Empty)
+            {
+                Building = lbl_Building.Text + " " + txt_Building.Text + " ";
+            }
+            else
+            {
+                Building = "";
+            }
+
+            if (txt_Road.Text.Trim() != string.Empty)
+            {
+                Road = lbl_Road.Text + " " + txt_Road.Text + " ";
+            }
+            else
+            {
+                Road = "";
+            }
+
+            if (txt_Block.Text != string.Empty || txt_Area.Text != string.Empty)
+            {
+                Block = lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
+            }
+            else Block = "";
+
+            adress.Text = Building + Road + Block;
+                //lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
+
+        }
+
         private void txt_Building_KeyUp(object sender, KeyEventArgs e)
         {
-            adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
+            setAddress();
         }
 
         private void txt_Road_KeyUp(object sender, KeyEventArgs e)
         {
-            adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
+            setAddress();
+            //adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
         }
 
         private void txt_Block_KeyUp(object sender, KeyEventArgs e)
         {
-            adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
+            setAddress();
+            //adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
         }
 
         private void txt_Area_KeyUp(object sender, KeyEventArgs e)
         {
-            adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
+            setAddress();
+            //adress.Text = lbl_Building.Text + " " + txt_Building.Text + " " + lbl_Road.Text + " " + txt_Road.Text + " " + lbl_Block.Text + " " + txt_Block.Text + " " + txt_Area.Text;
         }
 
         private void txt_Road_TextChanged(object sender, EventArgs e)
