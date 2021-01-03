@@ -3750,3 +3750,7 @@ D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReferen
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Confirmation.resources
 >>>>>>> 436bd79b1d42ac815c32a1f9bb9d3047cf93c446
 C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Confirmation.resources
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\office.dll
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Microsoft.Office.Interop.Outlook.xml
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\office.xml
