@@ -3275,6 +3275,10 @@ C:\My-Github\ReportProgram\Report_Pro\obj\Debug\ar-DZ\Report_Pro.resources.dll
 C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
+C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.Extensions.dll
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.xml
+D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Interop.WIA.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Report_Pro.exe.config
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Report_Pro.exe
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Report_Pro.pdb
@@ -3320,7 +3324,6 @@ D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraNavBar.v19.1.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraPivotGrid.v19.1.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraPrinting.v19.1.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.dll
-D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.Extensions.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraRichEdit.v19.1.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraTreeList.v19.1.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraVerticalGrid.v19.1.dll
@@ -3365,7 +3368,6 @@ D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraLayout.v19.1.xml
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraNavBar.v19.1.xml
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraPivotGrid.v19.1.xml
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraPrinting.v19.1.xml
-D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.xml
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.Extensions.xml
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraRichEdit.v19.1.xml
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraTreeList.v19.1.xml
@@ -3483,7 +3485,6 @@ D:\My-Github\ReportProgram\Report_Pro\bin\Debug\de\DevExpress.XtraVerticalGrid.v
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\es\DevExpress.XtraVerticalGrid.v19.1.resources.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\ja\DevExpress.XtraVerticalGrid.v19.1.resources.dll
 D:\My-Github\ReportProgram\Report_Pro\bin\Debug\ru\DevExpress.XtraVerticalGrid.v19.1.resources.dll
-D:\My-Github\ReportProgram\Report_Pro\bin\Debug\Interop.WIA.dll
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Interop.WIA.dll
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.ResolveComReference.cache
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Form1.resources
@@ -3598,6 +3599,7 @@ D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_TotalTran
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Resources.ar.resources
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frmAccDetails.resources
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_lcsRep.resources
+D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_maintenance_SP_ByCustomer.resources
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_InventoryList.resources
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Inventory_M_Br.resources
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Report.rpt_TotalStockByCategory.resources
@@ -3741,6 +3743,10 @@ D:\My-Github\ReportProgram\Report_Pro\obj\Debug\ar-DZ\Report_Pro.resources.dll
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
-C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
-D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_maintenance_SP_ByCustomer.resources
+<<<<<<< HEAD
 C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_maintenance_SP_ByCustomer.resources
+=======
+D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+D:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Confirmation.resources
+>>>>>>> 436bd79b1d42ac815c32a1f9bb9d3047cf93c446
+C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Confirmation.resources

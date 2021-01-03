@@ -44,7 +44,7 @@ namespace Report_Pro.RPT
                 inner join wh_main_master as M on M.item_no = b.ITEM_NO 
                 inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code 
                 inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type 
-                where a.Acc_no = '" + Acc.ID.Text + "' and a.Transaction_code = 'xwo' and a.Branch_code = 'A2319' and a.Cyear = '15' and CAST(A.G_DATE as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
+                where isnull(A.acc_serial_no,'')<>'' and a.Acc_no = '" + Acc.ID.Text + "' and a.Transaction_code = 'xwo' and a.Branch_code = 'A2319' and a.Cyear = '15' and CAST(A.G_DATE as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
 
 
 
@@ -63,6 +63,39 @@ namespace Report_Pro.RPT
             //}
 
 
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                groupPanel2.Visible = false;
+
+                DataSet ds = new DataSet();
+                RPT.rpt_Maintenance_SP_ByCustomer_JO rpt = new rpt_Maintenance_SP_ByCustomer_JO();
+                DataTable dt_ = dal.getDataTabl_1(@"SELECT B.Ser_no,B.Deleviry_date,B.acc_serial_no,(A.QTY_TAKE-A.QTY_ADD) as qty_,A.Local_Price,((A.QTY_TAKE-A.QTY_ADD)*A.Local_Price) as subTot_ ,(A.TAX_OUT-A.TAX_IN) as Tax_ 
+      FROM wh_MATERIAL_TRANSACTION_MAINT As A
+      inner join wh_inv_data_MAINT as B on 
+      A.SER_NO=B.SER_NO
+      and A.Branch_code =B.Branch_code
+      and A.TRANSACTION_CODE=B.TRANSACTION_CODE
+      and A.Cyear=B.Cyear
+	  where A.ITEM_NO<>'ser' and B.Acc_no = '" + Acc.ID.Text + "' and CAST(B.Deleviry_date as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
+
+
+                ds.Tables.Add(dt_);
+
+
+                ds.WriteXmlSchema("schema_rpt.xml");
+                rpt.SetDataSource(ds);
+                rpt.DataDefinition.FormulaFields["from_date"].Text = "'" + dtp1.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["to_date"].Text = "'" + dtp2.Value.ToString("yyyy/MM/dd") + "'";
+                crystalReportViewer1.ReportSource = rpt;
+            }
+            catch
+            {
+
+            }
         }
     }
 }

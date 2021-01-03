@@ -6,19 +6,10 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="month" type="xs:int" minOccurs="0" />
-              <xs:element name="cat_code" type="xs:string" minOccurs="0" />
-              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_name" type="xs:string" minOccurs="0" />
-              <xs:element name="B_Salary" type="xs:decimal" minOccurs="0" />
-              <xs:element name="OverTime" type="xs:decimal" minOccurs="0" />
-              <xs:element name="bounse" type="xs:decimal" minOccurs="0" />
-              <xs:element name="iasha" type="xs:decimal" minOccurs="0" />
-              <xs:element name="transport" type="xs:decimal" minOccurs="0" />
-              <xs:element name="sakan" type="xs:decimal" minOccurs="0" />
-              <xs:element name="T_bank" type="xs:decimal" minOccurs="0" />
-              <xs:element name="loans" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Ending_balance" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -263,7 +263,7 @@ from wh_inv_data As A
                 inner join wh_main_master As M on C.ITEM_NO=M.item_no
                 inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code 
                 inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type 
-                where A.SER_NO=19414 ");
+                where A.SER_NO='"+txtSer.Text+"'and C.item_No<>'ser' ");
 
 
            // getSalesInv(int32.ToString(), Branch.ID.Text, Transaction.ID.Text, (txtYear.Value - 2000).ToString());
@@ -273,7 +273,7 @@ from wh_inv_data As A
             rptInv.DataDefinition.FormulaFields["Branch_"].Text = "'" + Branch.ID.Text + " - " + Branch.Desc.Text + "'";
             //getInvoiceTotal(int32.ToString(), Branch.ID.Text, Transaction.ID.Text, (txtYear.Value - 2000).ToString());
             //ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt_inv_total.Rows[0]["NetValue"].ToString())), currencies[currencyNo]);
-            //rptInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+            rptInv.DataDefinition.FormulaFields["invKind&No"].Text = "'أمر شغل رقم - "+txtSer.Text+"'";
             rptInv.PrintOptions.PrinterName = Properties.Settings.Default.Invoice_P;
 
             rptInv.PrintToPrinter(1, false, 0, 0);

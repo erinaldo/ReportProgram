@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.button6 = new DevComponents.DotNetBar.ButtonX();
+            this.btnOption = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.Acc = new Report_Pro.MyControls.UC_Acc();
@@ -36,9 +38,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dtp1 = new System.Windows.Forms.DateTimePicker();
             this.dtp2 = new System.Windows.Forms.DateTimePicker();
-            this.button6 = new DevComponents.DotNetBar.ButtonX();
-            this.btnOption = new DevComponents.DotNetBar.ButtonX();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.buttonX1);
             this.groupPanel1.Controls.Add(this.button6);
             this.groupPanel1.Controls.Add(this.btnOption);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -74,6 +76,30 @@
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.button6.Location = new System.Drawing.Point(753, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(119, 35);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "تقرير الصرف المباشر";
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnOption
+            // 
+            this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnOption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnOption.Location = new System.Drawing.Point(935, 3);
+            this.btnOption.Name = "btnOption";
+            this.btnOption.Size = new System.Drawing.Size(75, 35);
+            this.btnOption.TabIndex = 35;
+            this.btnOption.Text = "خيارات";
+            this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
             // 
             // groupPanel2
             // 
@@ -178,30 +204,6 @@
             this.dtp2.Size = new System.Drawing.Size(86, 20);
             this.dtp2.TabIndex = 36;
             // 
-            // button6
-            // 
-            this.button6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.button6.Location = new System.Drawing.Point(797, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 35);
-            this.button6.TabIndex = 36;
-            this.button6.Text = "التقرير";
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // btnOption
-            // 
-            this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnOption.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnOption.Location = new System.Drawing.Point(935, 3);
-            this.btnOption.Name = "btnOption";
-            this.btnOption.Size = new System.Drawing.Size(75, 35);
-            this.btnOption.TabIndex = 35;
-            this.btnOption.Text = "خيارات";
-            this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
-            // 
             // crystalReportViewer1
             // 
             this.crystalReportViewer1.ActiveViewIndex = -1;
@@ -214,7 +216,19 @@
             this.crystalReportViewer1.TabIndex = 2;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // frm_maintenance_S
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(603, 3);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(135, 35);
+            this.buttonX1.TabIndex = 37;
+            this.buttonX1.Text = "تقرير الصرف لاوامر الشغل";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // frm_maintenance_SP_ByCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +236,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.groupPanel2);
             this.Controls.Add(this.groupPanel1);
-            this.Name = "frm_maintenance_S";
+            this.Name = "frm_maintenance_SP_ByCustomer";
             this.Text = "frm_maintenance_S";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
@@ -244,5 +258,6 @@
         private DevComponents.DotNetBar.ButtonX button6;
         private DevComponents.DotNetBar.ButtonX btnOption;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
