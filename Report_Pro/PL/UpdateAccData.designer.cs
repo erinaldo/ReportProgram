@@ -259,7 +259,7 @@
             // txt_VatNo
             // 
             this.txt_VatNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_VatNo.Culture = new System.Globalization.CultureInfo("ar-001");
+            this.txt_VatNo.Culture = new System.Globalization.CultureInfo("");
             this.txt_VatNo.HideSelection = false;
             this.txt_VatNo.Location = new System.Drawing.Point(70, 61);
             this.txt_VatNo.Mask = "00000-00000-00000";
