@@ -124,6 +124,10 @@
   <data name="UC_Branch.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="thick_2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 13</value>
   </data>
@@ -140,7 +144,6 @@
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -156,6 +159,12 @@
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;thick_1.Name" xml:space="preserve">
+    <value>thick_1</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
   <data name="buttonX4.Location" type="System.Drawing.Point, System.Drawing">
     <value>559, 11</value>
   </data>
@@ -168,8 +177,8 @@
   <data name="Uc_Acc.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 44</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -204,6 +213,9 @@
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="buttonX3.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
@@ -212,12 +224,6 @@
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 100</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 11</value>
   </data>
   <data name="&gt;&gt;buttonX5.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -232,23 +238,26 @@
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="&gt;&gt;buttonX3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;buttonX4.Name" xml:space="preserve">
     <value>buttonX4</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
   </data>
   <data name="&gt;&gt;button6.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;buttonX5.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 68</value>
   </data>
   <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="buttonX4.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -258,9 +267,6 @@
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 11</value>
   </data>
   <data name="&gt;&gt;crystalReportViewer1.Name" xml:space="preserve">
     <value>crystalReportViewer1</value>
@@ -322,26 +328,20 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 35</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 56</value>
+  </data>
   <data name="button9.Text" xml:space="preserve">
     <value>Purchases By Groups</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="button6.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -352,6 +352,9 @@
   <data name="&gt;&gt;Lc_Acc.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="dTP1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Matrail Kind</value>
   </data>
@@ -360,9 +363,6 @@
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;buttonX3.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;dTP1.Name" xml:space="preserve">
     <value>dTP1</value>
@@ -376,14 +376,8 @@
   <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;payment_type.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -400,11 +394,11 @@
   <data name="&gt;&gt;buttonX3.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
   <data name="&gt;&gt;button9.Name" xml:space="preserve">
     <value>button9</value>
+  </data>
+  <data name="payment_type.Items1" xml:space="preserve">
+    <value>نقدي</value>
   </data>
   <data name="dTP1.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 154</value>
@@ -412,8 +406,8 @@
   <data name="label6.Text" xml:space="preserve">
     <value>Item Kind</value>
   </data>
-  <data name="thick_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 127</value>
+  <data name="&gt;&gt;dTP2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Payment</value>
@@ -421,8 +415,11 @@
   <data name="&gt;&gt;buttonX5.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="buttonX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+  <data name="Lc_Acc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 98</value>
+  </data>
+  <data name="Uc_Acc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="&gt;&gt;cmb_DimCategory.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -436,11 +433,11 @@
   <data name="&gt;&gt;thick_2.Name" xml:space="preserve">
     <value>thick_2</value>
   </data>
-  <data name="&gt;&gt;btnOption.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="buttonX2.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
   </data>
-  <data name="btnOption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -460,14 +457,14 @@
   <data name="&gt;&gt;Uc_Group.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Lc_Acc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 23</value>
-  </data>
   <data name="buttonX5.Location" type="System.Drawing.Point, System.Drawing">
     <value>640, 11</value>
   </data>
   <data name="buttonX3.Text" xml:space="preserve">
     <value>Monthely Purchases</value>
+  </data>
+  <data name="Uc_Acc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 23</value>
   </data>
   <data name="&gt;&gt;thick_2.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -475,11 +472,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frm_rpt_Purchases</value>
   </data>
-  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 35</value>
-  </data>
-  <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
-    <value>buttonX2</value>
+  <data name="category.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -490,17 +484,23 @@
   <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
     <value>buttonX1</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;buttonX2.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="cmb_DimCategory.Items1" xml:space="preserve">
     <value>نقدي</value>
+  </data>
+  <data name="&gt;&gt;thick_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="buttonX5.Text" xml:space="preserve">
     <value>Purchases By Invoice</value>
   </data>
   <data name="&gt;&gt;cmb_DimCategory.Parent" xml:space="preserve">
     <value>groupBox1</value>
+  </data>
+  <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>982, 420</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -514,14 +514,11 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonX3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="thick_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 127</value>
   </data>
   <data name="payment_type.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 21</value>
@@ -535,11 +532,11 @@
   <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
   <data name="payment_type.Location" type="System.Drawing.Point, System.Drawing">
     <value>545, 40</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 13</value>
@@ -568,8 +565,8 @@
   <data name="&gt;&gt;buttonX5.Name" xml:space="preserve">
     <value>buttonX5</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
     <value>198, 11</value>
@@ -577,8 +574,11 @@
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
-  <data name="cmb_DimCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonX2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;Uc_Group.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -613,11 +613,11 @@
   <data name="&gt;&gt;btnOption.Name" xml:space="preserve">
     <value>btnOption</value>
   </data>
+  <data name="&gt;&gt;buttonX4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Group</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>From Date</value>
   </data>
   <data name="Uc_Group.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 71</value>
@@ -631,6 +631,9 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Purchases Reports</value>
   </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
   <data name="payment_type.Items" xml:space="preserve">
     <value>الجميع</value>
   </data>
@@ -643,20 +646,14 @@
   <data name="&gt;&gt;cmb_DimCategory.Name" xml:space="preserve">
     <value>cmb_DimCategory</value>
   </data>
-  <data name="Lc_Acc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 98</value>
+  <data name="&gt;&gt;buttonX5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Account</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 13</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -670,8 +667,8 @@
   <data name="&gt;&gt;Uc_Acc.Name" xml:space="preserve">
     <value>Uc_Acc</value>
   </data>
-  <data name="&gt;&gt;buttonX2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="crystalReportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -688,17 +685,17 @@
   <data name="&gt;&gt;dTP2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="buttonX2.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="&gt;&gt;btnOption.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="payment_type.Items1" xml:space="preserve">
-    <value>نقدي</value>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 11</value>
   </data>
   <data name="&gt;&gt;category.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -709,11 +706,8 @@
   <data name="crystalReportViewer1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 56</value>
   </data>
-  <data name="&gt;&gt;UC_Branch.Name" xml:space="preserve">
-    <value>UC_Branch</value>
-  </data>
-  <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 420</value>
+  <data name="buttonX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 35</value>
   </data>
   <data name="cmb_DimCategory.Items" xml:space="preserve">
     <value>الجميع</value>
@@ -724,14 +718,17 @@
   <data name="&gt;&gt;cmb_DimCategory.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;UC_Branch.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;Uc_Group.Name" xml:space="preserve">
     <value>Uc_Group</value>
   </data>
   <data name="&gt;&gt;btnOption.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="category.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="cmb_DimCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -754,11 +751,8 @@
   <data name="thick_1.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 127</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;payment_type.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;UC_Branch.Name" xml:space="preserve">
+    <value>UC_Branch</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -769,8 +763,8 @@
   <data name="Uc_Group.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 23</value>
   </data>
-  <data name="&gt;&gt;dTP2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="button9.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 73</value>
@@ -784,26 +778,32 @@
   <data name="buttonX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 35</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 68</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>982, 253</value>
   </data>
-  <data name="&gt;&gt;buttonX4.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="&gt;&gt;payment_type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="btnOption.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;dTP1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;buttonX3.Name" xml:space="preserve">
-    <value>buttonX3</value>
+  <data name="&gt;&gt;dTP1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
   <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 35</value>
@@ -817,14 +817,17 @@
   <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="&gt;&gt;buttonX2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="UC_Branch.Location" type="System.Drawing.Point, System.Drawing">
     <value>105, 16</value>
   </data>
-  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>From Date</value>
   </data>
   <data name="&gt;&gt;Lc_Acc.Name" xml:space="preserve">
     <value>Lc_Acc</value>
@@ -847,8 +850,8 @@
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;payment_type.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;buttonX4.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -862,8 +865,8 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>259, 158</value>
   </data>
-  <data name="&gt;&gt;UC_Branch.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -871,17 +874,17 @@
   <data name="dTP2.Location" type="System.Drawing.Point, System.Drawing">
     <value>310, 154</value>
   </data>
-  <data name="thick_2.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
   <data name="&gt;&gt;payment_type.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="btnOption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;buttonX3.Name" xml:space="preserve">
+    <value>buttonX3</value>
   </data>
   <data name="UC_Branch.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -892,23 +895,20 @@
   <data name="Uc_Group.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="Uc_Acc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 23</value>
-  </data>
-  <data name="Uc_Acc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
+  <data name="&gt;&gt;buttonX4.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;thick_2.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;thick_1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 253</value>
+  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 35</value>
   </data>
   <data name="&gt;&gt;Uc_Acc.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -928,38 +928,38 @@
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;buttonX3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="dTP1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="Lc_Acc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 23</value>
   </data>
   <data name="crystalReportViewer1.ToolPanelWidth" type="System.Int32, mscorlib">
     <value>300</value>
   </data>
-  <data name="&gt;&gt;buttonX4.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
+    <value>buttonX2</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;dTP1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
   </data>
   <data name="dTP2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;Uc_Group.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.Uc_Group, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 13</value>
+  <data name="btnOption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 35</value>
   </data>
   <data name="&gt;&gt;thick_1.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;thick_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
     <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
@@ -967,17 +967,17 @@
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 13</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+  <data name="&gt;&gt;Uc_Group.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.Uc_Group, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="buttonX3.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
-  <data name="&gt;&gt;thick_1.Name" xml:space="preserve">
-    <value>thick_1</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 56</value>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="thick_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
@@ -988,7 +988,7 @@
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>487, 19</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
@@ -997,16 +997,13 @@
   <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="&gt;&gt;dTP2.Name" xml:space="preserve">
     <value>dTP2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
   </metadata>
 </root>
