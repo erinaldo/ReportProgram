@@ -859,7 +859,7 @@
     <Compile Include="Reports\rpt_Confirmation.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\rpt_Confirmation.Designer.cs">
+    <Compile Include="Reports\rpt_Confirmation.designer.cs">
       <DependentUpon>rpt_Confirmation.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\rpt_PExpenssBalance.cs">

@@ -14,6 +14,8 @@ using System.Windows.Forms;
 using Outlook = Microsoft.Office.Interop.Outlook;
 using CrystalDecisions.CrystalReports.Engine;
 using DevExpress.XtraReports.UI;
+using DevExpress.XtraPrinting;
+using DevExpress.DataProcessing;
 
 namespace Report_Pro.RPT
 {
@@ -318,31 +320,34 @@ namespace Report_Pro.RPT
 
 
                 //rpt.DataDefinition.FormulaFields["OB_studs"].Text = "";
-                
+
                 ds.Tables.Add(dt1);
                 //ds.WriteXmlSchema("schema1.xml");
                 //rpt.SetDataSource(ds);
-                rpt.DataSource=ds;
-               // crystalReportViewer1.ReportSource = rpt;
+                rpt.DataSource = ds;
+                // crystalReportViewer1.ReportSource = rpt;
                 this.Cursor = Cursors.Default;
                 //rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + ToDate.Value.ToString("dd/MM/yyyy") + "'";
                 rpt.toDate.Value = ToDate.Value.ToString("dd/MM/yyyy");
-                rpt.lblEndingBalance.Text = Math.Abs(Convert.ToDecimal(dt1.Rows[0][3].ToString())).ToString();
+                //  rpt.lblEndingBalance.Text = Math.Abs(Convert.ToDecimal(dt1.Rows[0][3].ToString())).ToString();
                 //rpt.DataDefinition.FormulaFields["CoName"].Text = " '" + Properties.Settings.Default.head_txt + "'";
                 //rpt.DataDefinition.FormulaFields["CoName_E"].Text = " '" + Properties.Settings.Default.head_txt_EN+ "'";
+                rpt.CoName.Value = Properties.Settings.Default.head_txt;
                 rpt.CoName_E.Value = Properties.Settings.Default.head_txt_EN;
                 //rpt.DataDefinition.FormulaFields["Currency_"].Text = "'" + Properties.Settings.Default.Currency + "'";
-                rpt.lblCurrency.Text = Properties.Settings.Default.Currency;
                 rpt.lblCurrency.Text = Properties.Settings.Default.Currency;
                 rpt.lblCurrency_1.Text = Properties.Settings.Default.Currency;
 
                 ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt1.Rows[0][3].ToString())), currencies[currencyNo]);
                 //rpt.DataDefinition.FormulaFields["NuToText_A"].Text = "'"+toWord.ConvertToArabic().ToString()+"'";
                 rpt.lblNoToText.Text = toWord.ConvertToEnglish().ToString();
-                rpt.ShowPreview();
+                rpt.lblNoToText_A.Text = toWord.ConvertToArabic().ToString();
+                // Ad an aray of recipients to the colection.      
+                string reportPath = Application.StartupPath + "\\Test.pdf";
+                rpt.ExportToPdf(reportPath);
                 groupPanel1.Visible = false;
 
-                }
+            }
 
 
 
