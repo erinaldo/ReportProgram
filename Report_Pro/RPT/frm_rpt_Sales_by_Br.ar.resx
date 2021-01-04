@@ -147,7 +147,7 @@
     <value>112, 51</value>
   </data>
   <data name="button15.Text" xml:space="preserve">
-    <value>المبيعات بالمورد</value>
+    <value>المبيعات بالعميل</value>
   </data>
   <data name="btnMonthelySales.Location" type="System.Drawing.Point, System.Drawing">
     <value>164, 4</value>
@@ -291,6 +291,9 @@
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 63</value>
   </data>
+  <data name="button5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>675, 110</value>
   </data>
@@ -424,6 +427,9 @@
   <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 63</value>
   </data>
+  <data name="button12.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 101</value>
   </data>
@@ -432,6 +438,9 @@
   </data>
   <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 63</value>
+  </data>
+  <data name="button11.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="groupPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -568,23 +577,20 @@
   <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 63</value>
   </data>
+  <data name="button8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="chX.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="chX.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>269, 74</value>
-  </data>
   <data name="chX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="chX.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 24</value>
-  </data>
-  <data name="chX.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
   </data>
   <data name="chX.Text" xml:space="preserve">
     <value>سكراب</value>
@@ -679,6 +685,9 @@
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 63</value>
   </data>
+  <data name="button7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>1352, 151</value>
   </data>
@@ -702,6 +711,9 @@
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 63</value>
+  </data>
+  <data name="button6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>1354, 107</value>
@@ -792,6 +804,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1460, 764</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>

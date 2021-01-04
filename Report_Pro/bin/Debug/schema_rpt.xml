@@ -6,14 +6,20 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Gr_Code" type="xs:string" minOccurs="0" />
-              <xs:element name="Gr_name" type="xs:string" minOccurs="0" />
-              <xs:element name="Main_no" type="xs:string" minOccurs="0" />
-              <xs:element name="t_final" type="xs:short" minOccurs="0" />
-              <xs:element name="Gr_name1" type="xs:string" minOccurs="0" />
-              <xs:element name="t_level" type="xs:short" minOccurs="0" />
-              <xs:element name="B_bal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="End_bal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_name" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0030_1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_7" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_8" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0030_9" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0031_0" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0031_1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0031_2" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

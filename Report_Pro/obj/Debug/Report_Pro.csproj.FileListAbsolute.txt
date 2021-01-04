@@ -473,3 +473,4 @@ C:\My-Github\ReportProgram\Report_Pro\bin\Debug\en-US\Report_Pro.resources.dll
 C:\My-Github\ReportProgram\Report_Pro\bin\Debug\ar-DZ\Report_Pro.resources.dll
 C:\My-Github\ReportProgram\Report_Pro\bin\Debug\Interop.WIA.dll
 C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Confirmation.resources
+C:\My-Github\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache

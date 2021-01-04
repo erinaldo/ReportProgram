@@ -66,6 +66,7 @@
             this.rBtnAll = new System.Windows.Forms.RadioButton();
             this.button8 = new System.Windows.Forms.Button();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.chX = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chF = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chZ = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chR = new DevComponents.DotNetBar.Controls.CheckBoxX();
@@ -74,17 +75,16 @@
             this.chS = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.button7 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.Items = new Report_Pro.MyControls.UC_Items();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
             this.label9 = new System.Windows.Forms.Label();
-            this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
             this.label7 = new System.Windows.Forms.Label();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
-            this.chX = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.Items = new Report_Pro.MyControls.UC_Items();
+            this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
+            this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
+            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -115,6 +115,7 @@
             this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX5.Name = "buttonX5";
+            this.buttonX5.Click += new System.EventHandler(this.buttonX5_Click);
             // 
             // button15
             // 
@@ -514,6 +515,16 @@
             this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // chX
+            // 
+            resources.ApplyResources(this.chX, "chX");
+            this.chX.BackColor = System.Drawing.Color.Transparent;
+            this.chX.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
+            this.chX.Checked = true;
+            this.chX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chX.CheckValue = "Y";
+            this.chX.Name = "chX";
+            // 
             // chF
             // 
             resources.ApplyResources(this.chF, "chF");
@@ -591,14 +602,6 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label10.Name = "label10";
             // 
-            // Items
-            // 
-            resources.ApplyResources(this.Items, "Items");
-            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Items.Name = "Items";
-            this.Items.Load += new System.EventHandler(this.Items_Load);
-            this.Items.Click += new System.EventHandler(this.Items_Click);
-            // 
             // button6
             // 
             resources.ApplyResources(this.button6, "button6");
@@ -616,12 +619,6 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label11.Name = "label11";
             // 
-            // Uc_Group
-            // 
-            resources.ApplyResources(this.Uc_Group, "Uc_Group");
-            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Group.Name = "Uc_Group";
-            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
@@ -629,27 +626,12 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label9.Name = "label9";
             // 
-            // Uc_Acc
-            // 
-            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
-            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Acc.Name = "Uc_Acc";
-            // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label7.Name = "label7";
-            // 
-            // UC_Branch
-            // 
-            resources.ApplyResources(this.UC_Branch, "UC_Branch");
-            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Name = "UC_Branch";
             // 
             // thick_2
             // 
@@ -673,15 +655,34 @@
             0});
             this.thick_1.Name = "thick_1";
             // 
-            // chX
+            // Items
             // 
-            resources.ApplyResources(this.chX, "chX");
-            this.chX.BackColor = System.Drawing.Color.Transparent;
-            this.chX.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
-            this.chX.Checked = true;
-            this.chX.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chX.CheckValue = "Y";
-            this.chX.Name = "chX";
+            resources.ApplyResources(this.Items, "Items");
+            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Items.Name = "Items";
+            this.Items.Load += new System.EventHandler(this.Items_Load);
+            this.Items.Click += new System.EventHandler(this.Items_Click);
+            // 
+            // Uc_Group
+            // 
+            resources.ApplyResources(this.Uc_Group, "Uc_Group");
+            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Group.Name = "Uc_Group";
+            // 
+            // Uc_Acc
+            // 
+            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
+            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Acc.Name = "Uc_Acc";
+            // 
+            // UC_Branch
+            // 
+            resources.ApplyResources(this.UC_Branch, "UC_Branch");
+            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
+            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.UC_Branch.Name = "UC_Branch";
             // 
             // frm_rpt_Sales_by_Br
             // 
