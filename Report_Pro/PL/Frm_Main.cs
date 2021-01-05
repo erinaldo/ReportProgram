@@ -107,7 +107,8 @@ namespace Report_Pro.PL
         private void Frm_Main_Load(object sender, EventArgs e)
         {
 
-            
+           
+
             this.Controls.OfType<MdiClient>().FirstOrDefault().BackColor = c;
             this.panel1.BackColor = c;
             this.listView1.BackColor = c;
@@ -1234,6 +1235,39 @@ namespace Report_Pro.PL
         private void M27_Click(object sender, EventArgs e)
         {
             openForm(new RPT.frm_maintenance_SP_ByCustomer(), FormWindowState.Maximized, 0);
+        }
+
+        private void buttonItem10_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void cmb_Year_ComboBoxTextChanged(object sender, EventArgs e)
+        {
+            //Properties.Settings.Default.Database_1 = cmb_Year.ComboBoxEx.ValueMember.ToString();
+            //Properties.Settings.Default.Save();
+        }
+
+        private void cmb_Year_TextChanged(object sender, EventArgs e)
+        {
+
+            //Properties.Settings.Default.Database_1 = cmb_Year.ComboBoxEx.SelectedValue.ToString();
+            //Properties.Settings.Default.Save();
+
+
+            //PL.Frm_Main.ActiveForm.Dispose();
+            //PL.Frm_Main sd = new PL.Frm_Main();
+            //sd.Show();
+
+        }
+
+        private void btn_ChangeYear_Click(object sender, EventArgs e)
+        {
+
+            openForm(new PL.frm_DataBaseChose(), FormWindowState.Normal, 0);
+            
+         
+            
         }
     }
 }

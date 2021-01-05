@@ -46,6 +46,7 @@
             this.M24 = new DevComponents.DotNetBar.ButtonItem();
             this.M25 = new DevComponents.DotNetBar.ButtonItem();
             this.M26 = new DevComponents.DotNetBar.ButtonItem();
+            this.M27 = new DevComponents.DotNetBar.ButtonItem();
             this.M3 = new DevComponents.DotNetBar.ButtonItem();
             this.M31 = new DevComponents.DotNetBar.ButtonItem();
             this.M32 = new DevComponents.DotNetBar.ButtonItem();
@@ -142,7 +143,7 @@
             this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.M27 = new DevComponents.DotNetBar.ButtonItem();
+            this.btn_ChangeYear = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -161,6 +162,7 @@
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
             resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btn_ChangeYear,
             this.M1,
             this.M2,
             this.M3,
@@ -280,6 +282,12 @@
             this.M26.Name = "M26";
             resources.ApplyResources(this.M26, "M26");
             this.M26.Click += new System.EventHandler(this.M26_Click);
+            // 
+            // M27
+            // 
+            this.M27.Name = "M27";
+            resources.ApplyResources(this.M27, "M27");
+            this.M27.Click += new System.EventHandler(this.M27_Click);
             // 
             // M3
             // 
@@ -986,11 +994,12 @@
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
             // 
-            // M27
+            // btn_ChangeYear
             // 
-            this.M27.Name = "M27";
-            resources.ApplyResources(this.M27, "M27");
-            this.M27.Click += new System.EventHandler(this.M27_Click);
+            this.btn_ChangeYear.Name = "btn_ChangeYear";
+            this.btn_ChangeYear.SubItemsExpandWidth = 14;
+            resources.ApplyResources(this.btn_ChangeYear, "btn_ChangeYear");
+            this.btn_ChangeYear.Click += new System.EventHandler(this.btn_ChangeYear_Click);
             // 
             // Frm_Main
             // 
@@ -1139,5 +1148,6 @@
         private DevComponents.DotNetBar.ButtonItem M56;
         private DevComponents.DotNetBar.ButtonItem buttonItem9;
         private DevComponents.DotNetBar.ButtonItem M27;
+        private DevComponents.DotNetBar.ButtonItem btn_ChangeYear;
     }
 }

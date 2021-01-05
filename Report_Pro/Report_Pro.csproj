@@ -452,6 +452,12 @@
     <Compile Include="MyControls\Uc_TransactionAssets.designer.cs">
       <DependentUpon>Uc_TransactionAssets.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\UC_Years.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UC_Years.Designer.cs">
+      <DependentUpon>UC_Years.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\Update_Acc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -649,6 +655,12 @@
     </Compile>
     <Compile Include="PL\frm_Create_PE_Jor .designer.cs">
       <DependentUpon>frm_Create_PE_Jor .cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_DataBaseChose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_DataBaseChose.Designer.cs">
+      <DependentUpon>frm_DataBaseChose.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frm_deposit.cs">
       <SubType>Form</SubType>
@@ -1115,6 +1127,9 @@
       <DependentUpon>Uc_TransactionAssets.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_Years.resx">
+      <DependentUpon>UC_Years.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Update_Acc.resx">
       <DependentUpon>Update_Acc.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1288,6 +1303,9 @@
     <EmbeddedResource Include="PL\frm_Create_PE_Jor .resx">
       <DependentUpon>frm_Create_PE_Jor .cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_DataBaseChose.resx">
+      <DependentUpon>frm_DataBaseChose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_deposit.resx">
       <DependentUpon>frm_deposit.cs</DependentUpon>
