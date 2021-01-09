@@ -874,6 +874,12 @@
     <Compile Include="Reports\rpt_Confirmation.designer.cs">
       <DependentUpon>rpt_Confirmation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\rpt_Fees_Consolidated.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Fees_Consolidated.Designer.cs">
+      <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\rpt_PExpenssBalance.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1504,6 +1510,9 @@
     <EmbeddedResource Include="Reports\rpt_Confirmation.resx">
       <DependentUpon>rpt_Confirmation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Fees_Consolidated.resx">
+      <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_ItemBalanceByBranches.ar.resx">
       <DependentUpon>rpt_ItemBalanceByBranches.cs</DependentUpon>
     </EmbeddedResource>
@@ -1553,6 +1562,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_maintenance_SP_ByCustomer.resx">
       <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rep_Fees_Consolidated.ar.resx">
+      <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rep_Fees_Consolidated.resx">
+      <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_rpt_inventory.ar.resx">
       <DependentUpon>frm_rpt_inventory.cs</DependentUpon>
@@ -2348,6 +2365,12 @@
     </Compile>
     <Compile Include="RPT\frm_maintenance_SP_ByCustomer.Designer.cs">
       <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_rep_Fees_Consolidated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rep_Fees_Consolidated.designer.cs">
+      <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
     </Compile>
     <Compile Include="RPT\print_PurchaseInv.cs">
       <AutoGen>True</AutoGen>

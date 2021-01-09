@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.button3 = new System.Windows.Forms.Button();
@@ -86,6 +86,7 @@
             this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.cachedCrystalReport21 = new Report_Pro.RPT.CachedCrystalReport2();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
@@ -102,15 +103,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.buttonX6);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.Button2);
             this.panel1.Controls.Add(this.Button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1758, 72);
+            this.panel1.Size = new System.Drawing.Size(1172, 49);
             this.panel1.TabIndex = 51;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -119,10 +120,9 @@
             this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.buttonX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX6.Location = new System.Drawing.Point(1624, 18);
-            this.buttonX6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonX6.Location = new System.Drawing.Point(1083, 12);
             this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Size = new System.Drawing.Size(124, 45);
+            this.buttonX6.Size = new System.Drawing.Size(83, 31);
             this.buttonX6.TabIndex = 290;
             this.buttonX6.Text = "خيارات";
             this.buttonX6.Click += new System.EventHandler(this.buttonX6_Click);
@@ -131,10 +131,9 @@
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1204, 18);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(803, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 45);
+            this.button3.Size = new System.Drawing.Size(83, 31);
             this.button3.TabIndex = 51;
             this.button3.Text = "الميزان عربي";
             this.button3.UseVisualStyleBackColor = true;
@@ -144,10 +143,9 @@
             // 
             this.Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button2.Location = new System.Drawing.Point(1338, 18);
-            this.Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button2.Location = new System.Drawing.Point(892, 12);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(147, 45);
+            this.Button2.Size = new System.Drawing.Size(98, 31);
             this.Button2.TabIndex = 41;
             this.Button2.Text = "الميزان انجليزي";
             this.Button2.UseVisualStyleBackColor = true;
@@ -157,10 +155,9 @@
             // 
             this.Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button1.Location = new System.Drawing.Point(1005, 18);
-            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button1.Location = new System.Drawing.Point(670, 12);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(124, 45);
+            this.Button1.Size = new System.Drawing.Size(83, 31);
             this.Button1.TabIndex = 37;
             this.Button1.Text = "التقرير";
             this.Button1.UseVisualStyleBackColor = true;
@@ -173,10 +170,9 @@
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 72);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 49);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1758, 953);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1172, 652);
             this.crystalReportViewer1.TabIndex = 54;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.ToolPanelWidth = 300;
@@ -186,10 +182,9 @@
             this.panel3.Controls.Add(this.DataGridView1);
             this.panel3.Controls.Add(this.groupPanel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 332);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(0, 227);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1758, 693);
+            this.panel3.Size = new System.Drawing.Size(1172, 474);
             this.panel3.TabIndex = 56;
             // 
             // DataGridView1
@@ -209,14 +204,13 @@
             this.Column7});
             this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersWidth = 43;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(1758, 649);
+            this.DataGridView1.Size = new System.Drawing.Size(1172, 444);
             this.DataGridView1.TabIndex = 42;
             this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
@@ -250,9 +244,9 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = "0.00";
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = "0.00";
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column4.HeaderText = "الرصيد السابق";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -260,9 +254,9 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = "0.00";
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = "0.00";
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column5.HeaderText = "مدين";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -270,9 +264,9 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = "0.00";
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Format = "N2";
+            dataGridViewCellStyle9.NullValue = "0.00";
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column6.HeaderText = "دائن";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
@@ -280,9 +274,9 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle4.Format = "N2";
-            dataGridViewCellStyle4.NullValue = "0.00";
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Format = "N2";
+            dataGridViewCellStyle10.NullValue = "0.00";
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column7.HeaderText = "الرصيد الحالي";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
@@ -297,10 +291,9 @@
             this.groupPanel2.Controls.Add(this.T_Bb);
             this.groupPanel2.Controls.Add(this.T_Db);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel2.Location = new System.Drawing.Point(0, 649);
-            this.groupPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPanel2.Location = new System.Drawing.Point(0, 444);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1758, 44);
+            this.groupPanel2.Size = new System.Drawing.Size(1172, 30);
             // 
             // 
             // 
@@ -326,37 +319,33 @@
             // T_Eb
             // 
             this.T_Eb.BackColor = System.Drawing.Color.White;
-            this.T_Eb.Location = new System.Drawing.Point(4, 1);
-            this.T_Eb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.T_Eb.Location = new System.Drawing.Point(3, 1);
             this.T_Eb.Name = "T_Eb";
-            this.T_Eb.Size = new System.Drawing.Size(234, 27);
+            this.T_Eb.Size = new System.Drawing.Size(157, 20);
             this.T_Eb.TabIndex = 46;
             // 
             // T_Cr
             // 
             this.T_Cr.BackColor = System.Drawing.Color.White;
-            this.T_Cr.Location = new System.Drawing.Point(243, 1);
-            this.T_Cr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.T_Cr.Location = new System.Drawing.Point(162, 1);
             this.T_Cr.Name = "T_Cr";
-            this.T_Cr.Size = new System.Drawing.Size(234, 27);
+            this.T_Cr.Size = new System.Drawing.Size(157, 20);
             this.T_Cr.TabIndex = 45;
             // 
             // T_Bb
             // 
             this.T_Bb.BackColor = System.Drawing.Color.White;
-            this.T_Bb.Location = new System.Drawing.Point(720, 1);
-            this.T_Bb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.T_Bb.Location = new System.Drawing.Point(480, 1);
             this.T_Bb.Name = "T_Bb";
-            this.T_Bb.Size = new System.Drawing.Size(234, 27);
+            this.T_Bb.Size = new System.Drawing.Size(157, 20);
             this.T_Bb.TabIndex = 43;
             // 
             // T_Db
             // 
             this.T_Db.BackColor = System.Drawing.Color.White;
-            this.T_Db.Location = new System.Drawing.Point(482, 1);
-            this.T_Db.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.T_Db.Location = new System.Drawing.Point(321, 1);
             this.T_Db.Name = "T_Db";
-            this.T_Db.Size = new System.Drawing.Size(234, 27);
+            this.T_Db.Size = new System.Drawing.Size(157, 20);
             this.T_Db.TabIndex = 44;
             // 
             // labelX6
@@ -364,10 +353,9 @@
             this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(1602, 51);
-            this.labelX6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX6.Location = new System.Drawing.Point(1068, 35);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(63, 24);
+            this.labelX6.Size = new System.Drawing.Size(43, 17);
             this.labelX6.TabIndex = 281;
             this.labelX6.Text = "الحساب";
             // 
@@ -376,10 +364,9 @@
             this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(1604, 16);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX1.Location = new System.Drawing.Point(1069, 11);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(42, 24);
+            this.labelX1.Size = new System.Drawing.Size(29, 17);
             this.labelX1.TabIndex = 289;
             this.labelX1.Text = "الفرع";
             // 
@@ -388,10 +375,9 @@
             this.labelX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX9.AutoSize = true;
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(1600, 89);
-            this.labelX9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX9.Location = new System.Drawing.Point(1067, 61);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(90, 24);
+            this.labelX9.Size = new System.Drawing.Size(61, 17);
             this.labelX9.TabIndex = 299;
             this.labelX9.Text = "مركز التكلفة";
             // 
@@ -400,10 +386,9 @@
             this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(1600, 124);
-            this.labelX8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX8.Location = new System.Drawing.Point(1067, 85);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(61, 24);
+            this.labelX8.Size = new System.Drawing.Size(42, 17);
             this.labelX8.TabIndex = 300;
             this.labelX8.Text = "التصنيف";
             // 
@@ -416,8 +401,7 @@
             this.FromDate.BackgroundStyle.Class = "DateTimeInputBackground";
             this.FromDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.FromDate.ButtonDropDown.Visible = true;
-            this.FromDate.Location = new System.Drawing.Point(1446, 158);
-            this.FromDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FromDate.Location = new System.Drawing.Point(964, 108);
             // 
             // 
             // 
@@ -448,17 +432,16 @@
             this.FromDate.MonthCalendar.TodayButtonVisible = true;
             this.FromDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.FromDate.Name = "FromDate";
-            this.FromDate.Size = new System.Drawing.Size(156, 27);
+            this.FromDate.Size = new System.Drawing.Size(104, 20);
             this.FromDate.TabIndex = 265;
             // 
             // UserName
             // 
             this.UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UserName.BackColor = System.Drawing.Color.White;
-            this.UserName.Location = new System.Drawing.Point(1178, 203);
-            this.UserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserName.Location = new System.Drawing.Point(785, 139);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(148, 27);
+            this.UserName.Size = new System.Drawing.Size(100, 20);
             this.UserName.TabIndex = 42;
             // 
             // GroupBox1
@@ -471,11 +454,9 @@
             this.GroupBox1.Controls.Add(this.RBtn3);
             this.GroupBox1.Controls.Add(this.RBtn2);
             this.GroupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox1.Location = new System.Drawing.Point(417, 20);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox1.Location = new System.Drawing.Point(278, 14);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GroupBox1.Size = new System.Drawing.Size(708, 51);
+            this.GroupBox1.Size = new System.Drawing.Size(472, 35);
             this.GroupBox1.TabIndex = 48;
             this.GroupBox1.TabStop = false;
             // 
@@ -484,10 +465,9 @@
             this.RBtnAll.AutoSize = true;
             this.RBtnAll.Checked = true;
             this.RBtnAll.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtnAll.Location = new System.Drawing.Point(622, 18);
-            this.RBtnAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtnAll.Location = new System.Drawing.Point(415, 12);
             this.RBtnAll.Name = "RBtnAll";
-            this.RBtnAll.Size = new System.Drawing.Size(82, 25);
+            this.RBtnAll.Size = new System.Drawing.Size(55, 17);
             this.RBtnAll.TabIndex = 32;
             this.RBtnAll.TabStop = true;
             this.RBtnAll.Text = "الجميع";
@@ -497,10 +477,9 @@
             // 
             this.RBtn4.AutoSize = true;
             this.RBtn4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn4.Location = new System.Drawing.Point(9, 16);
-            this.RBtn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtn4.Location = new System.Drawing.Point(6, 11);
             this.RBtn4.Name = "RBtn4";
-            this.RBtn4.Size = new System.Drawing.Size(141, 25);
+            this.RBtn4.Size = new System.Drawing.Size(95, 17);
             this.RBtn4.TabIndex = 30;
             this.RBtn4.Text = "المستوي الرابع";
             this.RBtn4.UseVisualStyleBackColor = true;
@@ -509,10 +488,9 @@
             // 
             this.RBtn1.AutoSize = true;
             this.RBtn1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn1.Location = new System.Drawing.Point(472, 18);
-            this.RBtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtn1.Location = new System.Drawing.Point(315, 12);
             this.RBtn1.Name = "RBtn1";
-            this.RBtn1.Size = new System.Drawing.Size(138, 25);
+            this.RBtn1.Size = new System.Drawing.Size(94, 17);
             this.RBtn1.TabIndex = 27;
             this.RBtn1.Text = "المستوي الاول";
             this.RBtn1.UseVisualStyleBackColor = true;
@@ -521,10 +499,9 @@
             // 
             this.RBtn3.AutoSize = true;
             this.RBtn3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn3.Location = new System.Drawing.Point(159, 18);
-            this.RBtn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtn3.Location = new System.Drawing.Point(106, 12);
             this.RBtn3.Name = "RBtn3";
-            this.RBtn3.Size = new System.Drawing.Size(147, 25);
+            this.RBtn3.Size = new System.Drawing.Size(98, 17);
             this.RBtn3.TabIndex = 29;
             this.RBtn3.Text = "المستوي الثالث";
             this.RBtn3.UseVisualStyleBackColor = true;
@@ -533,10 +510,9 @@
             // 
             this.RBtn2.AutoSize = true;
             this.RBtn2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RBtn2.Location = new System.Drawing.Point(315, 18);
-            this.RBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RBtn2.Location = new System.Drawing.Point(210, 12);
             this.RBtn2.Name = "RBtn2";
-            this.RBtn2.Size = new System.Drawing.Size(148, 25);
+            this.RBtn2.Size = new System.Drawing.Size(99, 17);
             this.RBtn2.TabIndex = 28;
             this.RBtn2.Text = "المستوي الثاني";
             this.RBtn2.UseVisualStyleBackColor = true;
@@ -550,8 +526,7 @@
             this.ToDate.BackgroundStyle.Class = "DateTimeInputBackground";
             this.ToDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.ToDate.ButtonDropDown.Visible = true;
-            this.ToDate.Location = new System.Drawing.Point(1154, 158);
-            this.ToDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ToDate.Location = new System.Drawing.Point(769, 108);
             // 
             // 
             // 
@@ -582,7 +557,7 @@
             this.ToDate.MonthCalendar.TodayButtonVisible = true;
             this.ToDate.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.ToDate.Name = "ToDate";
-            this.ToDate.Size = new System.Drawing.Size(156, 27);
+            this.ToDate.Size = new System.Drawing.Size(104, 20);
             this.ToDate.TabIndex = 266;
             // 
             // labelX7
@@ -590,10 +565,9 @@
             this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX7.AutoSize = true;
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(1604, 162);
-            this.labelX7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX7.Location = new System.Drawing.Point(1069, 111);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(65, 24);
+            this.labelX7.Size = new System.Drawing.Size(44, 17);
             this.labelX7.TabIndex = 267;
             this.labelX7.Text = "من تاريخ";
             // 
@@ -606,11 +580,9 @@
             this.GroupBox2.Controls.Add(this.RB2);
             this.GroupBox2.Controls.Add(this.RB1);
             this.GroupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox2.Location = new System.Drawing.Point(414, 134);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Location = new System.Drawing.Point(276, 92);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GroupBox2.Size = new System.Drawing.Size(708, 51);
+            this.GroupBox2.Size = new System.Drawing.Size(472, 35);
             this.GroupBox2.TabIndex = 49;
             this.GroupBox2.TabStop = false;
             // 
@@ -619,10 +591,9 @@
             this.RB4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RB4.AutoSize = true;
             this.RB4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB4.Location = new System.Drawing.Point(73, 20);
-            this.RB4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB4.Location = new System.Drawing.Point(47, 14);
             this.RB4.Name = "RB4";
-            this.RB4.Size = new System.Drawing.Size(143, 25);
+            this.RB4.Size = new System.Drawing.Size(97, 17);
             this.RB4.TabIndex = 37;
             this.RB4.Text = "الارصدة الصفرية";
             this.RB4.UseVisualStyleBackColor = true;
@@ -632,10 +603,9 @@
             this.RB3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RB3.AutoSize = true;
             this.RB3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB3.Location = new System.Drawing.Point(237, 19);
-            this.RB3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB3.Location = new System.Drawing.Point(156, 13);
             this.RB3.Name = "RB3";
-            this.RB3.Size = new System.Drawing.Size(171, 25);
+            this.RB3.Size = new System.Drawing.Size(116, 17);
             this.RB3.TabIndex = 36;
             this.RB3.Text = "الارصدة غير الصفرية";
             this.RB3.UseVisualStyleBackColor = true;
@@ -646,10 +616,9 @@
             this.RB2.AutoSize = true;
             this.RB2.Checked = true;
             this.RB2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB2.Location = new System.Drawing.Point(431, 19);
-            this.RB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB2.Location = new System.Drawing.Point(290, 13);
             this.RB2.Name = "RB2";
-            this.RB2.Size = new System.Drawing.Size(170, 25);
+            this.RB2.Size = new System.Drawing.Size(111, 17);
             this.RB2.TabIndex = 34;
             this.RB2.TabStop = true;
             this.RB2.Text = "الحسابات المتحركة";
@@ -660,10 +629,9 @@
             this.RB1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RB1.AutoSize = true;
             this.RB1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB1.Location = new System.Drawing.Point(609, 19);
-            this.RB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB1.Location = new System.Drawing.Point(406, 13);
             this.RB1.Name = "RB1";
-            this.RB1.Size = new System.Drawing.Size(82, 25);
+            this.RB1.Size = new System.Drawing.Size(55, 17);
             this.RB1.TabIndex = 35;
             this.RB1.Text = "الجميع";
             this.RB1.UseVisualStyleBackColor = true;
@@ -673,10 +641,9 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(1317, 162);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX2.Location = new System.Drawing.Point(878, 111);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(70, 24);
+            this.labelX2.Size = new System.Drawing.Size(47, 17);
             this.labelX2.TabIndex = 268;
             this.labelX2.Text = "الي تاريخ";
             // 
@@ -688,21 +655,20 @@
             this.DGV3.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV3.ColumnHeadersVisible = false;
-            this.DGV3.Location = new System.Drawing.Point(-4, 20);
-            this.DGV3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV3.Location = new System.Drawing.Point(-3, 14);
             this.DGV3.Name = "DGV3";
             this.DGV3.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV3.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV3.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.DGV3.RowHeadersVisible = false;
             this.DGV3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV3.Size = new System.Drawing.Size(405, 219);
+            this.DGV3.Size = new System.Drawing.Size(270, 150);
             this.DGV3.TabIndex = 288;
             this.DGV3.Visible = false;
             this.DGV3.DoubleClick += new System.EventHandler(this.DGV3_DoubleClick);
@@ -715,11 +681,9 @@
             this.groupBox3.Controls.Add(this.RB_M_Acc);
             this.groupBox3.Controls.Add(this.RB_All_Acc);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(417, 77);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(278, 53);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(708, 51);
+            this.groupBox3.Size = new System.Drawing.Size(472, 35);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             // 
@@ -728,10 +692,9 @@
             this.RB_S_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RB_S_Acc.AutoSize = true;
             this.RB_S_Acc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB_S_Acc.Location = new System.Drawing.Point(289, 20);
-            this.RB_S_Acc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB_S_Acc.Location = new System.Drawing.Point(194, 14);
             this.RB_S_Acc.Name = "RB_S_Acc";
-            this.RB_S_Acc.Size = new System.Drawing.Size(159, 25);
+            this.RB_S_Acc.Size = new System.Drawing.Size(105, 17);
             this.RB_S_Acc.TabIndex = 44;
             this.RB_S_Acc.Text = "الحسابات الفرعية";
             this.RB_S_Acc.UseVisualStyleBackColor = true;
@@ -741,10 +704,9 @@
             this.RB_M_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RB_M_Acc.AutoSize = true;
             this.RB_M_Acc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB_M_Acc.Location = new System.Drawing.Point(453, 20);
-            this.RB_M_Acc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB_M_Acc.Location = new System.Drawing.Point(304, 14);
             this.RB_M_Acc.Name = "RB_M_Acc";
-            this.RB_M_Acc.Size = new System.Drawing.Size(169, 25);
+            this.RB_M_Acc.Size = new System.Drawing.Size(111, 17);
             this.RB_M_Acc.TabIndex = 43;
             this.RB_M_Acc.Text = "الحسابات الرئيسية";
             this.RB_M_Acc.UseVisualStyleBackColor = true;
@@ -754,10 +716,9 @@
             this.RB_All_Acc.AutoSize = true;
             this.RB_All_Acc.Checked = true;
             this.RB_All_Acc.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RB_All_Acc.Location = new System.Drawing.Point(622, 18);
-            this.RB_All_Acc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RB_All_Acc.Location = new System.Drawing.Point(415, 12);
             this.RB_All_Acc.Name = "RB_All_Acc";
-            this.RB_All_Acc.Size = new System.Drawing.Size(82, 25);
+            this.RB_All_Acc.Size = new System.Drawing.Size(55, 17);
             this.RB_All_Acc.TabIndex = 32;
             this.RB_All_Acc.TabStop = true;
             this.RB_All_Acc.Text = "الجميع";
@@ -785,10 +746,9 @@
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Controls.Add(this.labelX6);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel1.Location = new System.Drawing.Point(0, 72);
-            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupPanel1.Location = new System.Drawing.Point(0, 49);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1758, 260);
+            this.groupPanel1.Size = new System.Drawing.Size(1172, 178);
             // 
             // 
             // 
@@ -816,20 +776,20 @@
             // 
             this.UC_Catogry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Catogry.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Catogry.Location = new System.Drawing.Point(1132, 118);
+            this.UC_Catogry.Location = new System.Drawing.Point(755, 81);
             this.UC_Catogry.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Catogry.Name = "UC_Catogry";
-            this.UC_Catogry.Size = new System.Drawing.Size(463, 32);
+            this.UC_Catogry.Size = new System.Drawing.Size(310, 23);
             this.UC_Catogry.TabIndex = 305;
             // 
             // UC_cost
             // 
             this.UC_cost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_cost.Location = new System.Drawing.Point(1132, 82);
+            this.UC_cost.Location = new System.Drawing.Point(755, 56);
             this.UC_cost.Margin = new System.Windows.Forms.Padding(0);
             this.UC_cost.Name = "UC_cost";
-            this.UC_cost.Size = new System.Drawing.Size(463, 32);
+            this.UC_cost.Size = new System.Drawing.Size(310, 23);
             this.UC_cost.TabIndex = 304;
             this.UC_cost.Load += new System.EventHandler(this.uC_cost1_Load);
             // 
@@ -839,10 +799,10 @@
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
             this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Location = new System.Drawing.Point(1132, 10);
+            this.UC_Branch.Location = new System.Drawing.Point(755, 7);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
-            this.UC_Branch.Size = new System.Drawing.Size(463, 32);
+            this.UC_Branch.Size = new System.Drawing.Size(310, 23);
             this.UC_Branch.TabIndex = 303;
             this.UC_Branch.Load += new System.EventHandler(this.UC_Branch_Load);
             // 
@@ -851,23 +811,34 @@
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
             this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(1132, 47);
+            this.UC_Acc.Location = new System.Drawing.Point(755, 32);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.UC_Acc.Size = new System.Drawing.Size(463, 32);
+            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.UC_Acc.Size = new System.Drawing.Size(310, 23);
             this.UC_Acc.TabIndex = 302;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(545, 9);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(83, 31);
+            this.button4.TabIndex = 291;
+            this.button4.Text = "الميزان المجمع";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // frm_TB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1758, 1025);
+            this.ClientSize = new System.Drawing.Size(1172, 701);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_TB";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -947,5 +918,6 @@
         private MyControls.UC_cost UC_cost;
         private CachedCrystalReport2 cachedCrystalReport21;
         private MyControls.UC_Catogry UC_Catogry;
+        internal System.Windows.Forms.Button button4;
     }
 }

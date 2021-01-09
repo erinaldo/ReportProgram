@@ -535,7 +535,6 @@ D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\FlashControlV71.dll
-D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\office.dll
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.dll
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\ADODB.dll
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
@@ -570,9 +569,6 @@ D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraReports.v19.1.Ext
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraRichEdit.v19.1.xml
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraTreeList.v19.1.xml
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraVerticalGrid.v19.1.xml
-D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\Microsoft.Office.Interop.Outlook.xml
-D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\Microsoft.ReportViewer.WinForms.xml
-D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\office.xml
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
 D:\MyProgram\ReportProgram\Report_Pro\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
@@ -949,3 +945,6 @@ D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Years.resources
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_DataBaseChose.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.ar.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Fees_Consolidated.resources

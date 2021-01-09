@@ -6,12 +6,20 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="DATABASE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Acc_no" type="xs:string" minOccurs="0" />
+              <xs:element name="PREV_NO" type="xs:string" minOccurs="0" />
               <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="Weight_" type="xs:decimal" minOccurs="0" />
-              <xs:element name="value_" type="xs:decimal" minOccurs="0" />
-              <xs:element name="tax_" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Average_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
+              <xs:element name="t_level" type="xs:int" minOccurs="0" />
+              <xs:element name="t_final" type="xs:int" minOccurs="0" />
+              <xs:element name="MAIN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="MAIN_MEZAN" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
+              <xs:element name="B_balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="db" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="E_balance" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

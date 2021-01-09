@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.btn_ChangeYear = new DevComponents.DotNetBar.ButtonItem();
             this.M1 = new DevComponents.DotNetBar.ButtonItem();
             this.M11 = new DevComponents.DotNetBar.ButtonItem();
             this.M12 = new DevComponents.DotNetBar.ButtonItem();
@@ -143,7 +144,7 @@
             this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.btn_ChangeYear = new DevComponents.DotNetBar.ButtonItem();
+            this.M717 = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -181,6 +182,13 @@
             this.ribbonBar1.TitleVisible = false;
             this.ribbonBar1.VerticalItemAlignment = DevComponents.DotNetBar.eVerticalItemsAlignment.Middle;
             this.ribbonBar1.ItemClick += new System.EventHandler(this.ribbonBar1_ItemClick);
+            // 
+            // btn_ChangeYear
+            // 
+            this.btn_ChangeYear.Name = "btn_ChangeYear";
+            this.btn_ChangeYear.SubItemsExpandWidth = 14;
+            resources.ApplyResources(this.btn_ChangeYear, "btn_ChangeYear");
+            this.btn_ChangeYear.Click += new System.EventHandler(this.btn_ChangeYear_Click);
             // 
             // M1
             // 
@@ -570,7 +578,8 @@
             this.M713,
             this.M714,
             this.M715,
-            this.M716});
+            this.M716,
+            this.M717});
             this.M7.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.M7, "M7");
             this.M7.Click += new System.EventHandler(this.buttonItem3_Click_1);
@@ -994,12 +1003,11 @@
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
             // 
-            // btn_ChangeYear
+            // M717
             // 
-            this.btn_ChangeYear.Name = "btn_ChangeYear";
-            this.btn_ChangeYear.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.btn_ChangeYear, "btn_ChangeYear");
-            this.btn_ChangeYear.Click += new System.EventHandler(this.btn_ChangeYear_Click);
+            this.M717.Name = "M717";
+            resources.ApplyResources(this.M717, "M717");
+            this.M717.Click += new System.EventHandler(this.M717_Click);
             // 
             // Frm_Main
             // 
@@ -1149,5 +1157,6 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem9;
         private DevComponents.DotNetBar.ButtonItem M27;
         private DevComponents.DotNetBar.ButtonItem btn_ChangeYear;
+        private DevComponents.DotNetBar.ButtonItem M717;
     }
 }

@@ -485,6 +485,9 @@
   <data name="M716.Text" xml:space="preserve">
     <value>تقرير المصاريف</value>
   </data>
+  <data name="M717.Text" xml:space="preserve">
+    <value>تقرير المصاريف المجمع</value>
+  </data>
   <data name="M7.Text" xml:space="preserve">
     <value>تقاير الحسابات</value>
   </data>
@@ -680,7 +683,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA+
-        SgAAAk1TRnQBSQFMAgEBCgEAATwBAwE8AQMBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        SgAAAk1TRnQBSQFMAgEBCgEAAUQBAwFEAQMBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABwAMAAZADAAEBAQABCAYAAWwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1196,7 +1199,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
-        GQAAAk1TRnQBSQFMAgEBCgEAATwBAwE8AQMBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        GQAAAk1TRnQBSQFMAgEBCgEAAUQBAwFEAQMBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1324,6 +1327,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="&gt;&gt;btn_ChangeYear.Name" xml:space="preserve">
+    <value>btn_ChangeYear</value>
+  </data>
+  <data name="&gt;&gt;btn_ChangeYear.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;M1.Name" xml:space="preserve">
     <value>M1</value>
@@ -1943,10 +1952,10 @@
   <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_ChangeYear.Name" xml:space="preserve">
-    <value>btn_ChangeYear</value>
+  <data name="&gt;&gt;M717.Name" xml:space="preserve">
+    <value>M717</value>
   </data>
-  <data name="&gt;&gt;btn_ChangeYear.Type" xml:space="preserve">
+  <data name="&gt;&gt;M717.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

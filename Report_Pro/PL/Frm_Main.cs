@@ -1269,5 +1269,11 @@ namespace Report_Pro.PL
          
             
         }
+
+        private void M717_Click(object sender, EventArgs e)
+        {
+            openForm(new RPT.frm_rep_Fees_Consolidated(), FormWindowState.Maximized, 0);
+
+        }
     }
 }
