@@ -6,16 +6,32 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Gr_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Prev_no" type="xs:string" minOccurs="0" />
               <xs:element name="Gr_name" type="xs:string" minOccurs="0" />
               <xs:element name="T_Indust" type="xs:decimal" minOccurs="0" />
+              <xs:element name="T_GA" type="xs:decimal" minOccurs="0" />
               <xs:element name="Q_GA_SAR" type="xs:decimal" minOccurs="0" />
               <xs:element name="K_GA_SAR" type="xs:decimal" minOccurs="0" />
               <xs:element name="B_GA_SAR" type="xs:decimal" minOccurs="0" />
               <xs:element name="O_GA_SAR" type="xs:decimal" minOccurs="0" />
               <xs:element name="Trans_SAR" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Prev_no" type="xs:string" minOccurs="0" />
-              <xs:element name="Gr_name1" type="xs:string" minOccurs="0" />
+              <xs:element name="F_GA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="F_Indust" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="T_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Q_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="K_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="O_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Trans_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="F_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="T_S_R" type="xs:decimal" minOccurs="0" />
+              <xs:element name="F_S_R" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

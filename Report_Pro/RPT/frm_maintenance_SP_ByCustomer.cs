@@ -44,7 +44,7 @@ namespace Report_Pro.RPT
                 inner join wh_main_master as M on M.item_no = b.ITEM_NO 
                 inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code 
                 inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type 
-                where isnull(A.acc_serial_no,'')<>'' and a.Acc_no = '" + Acc.ID.Text + "' and a.Transaction_code = 'xwo' and a.Branch_code = 'A2319' and a.Cyear = '15' and CAST(A.G_DATE as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
+                where isnull(A.acc_serial_no,'')<>'' and a.Acc_no like '" + Acc.ID.Text + "%' and a.Transaction_code = 'xwo' and a.Branch_code = 'A2319' and a.Cyear = '15' and CAST(A.G_DATE as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
 
 
 
@@ -80,7 +80,7 @@ namespace Report_Pro.RPT
       and A.Branch_code =B.Branch_code
       and A.TRANSACTION_CODE=B.TRANSACTION_CODE
       and A.Cyear=B.Cyear
-	  where A.ITEM_NO<>'ser' and B.Acc_no = '" + Acc.ID.Text + "' and CAST(B.Deleviry_date as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
+	  where A.ITEM_NO<>'ser' and B.Acc_no like '" + Acc.ID.Text + "%' and CAST(B.Deleviry_date as date ) between '" + dtp1.Value.ToString("yyyy/MM/dd") + "' and '" + dtp2.Value.ToString("yyyy/MM/dd") + "' ");
 
 
                 ds.Tables.Add(dt_);

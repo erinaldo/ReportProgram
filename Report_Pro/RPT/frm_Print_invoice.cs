@@ -263,7 +263,7 @@ from wh_inv_data As A
                 inner join wh_main_master As M on C.ITEM_NO=M.item_no
                 inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code 
                 inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type 
-                where A.SER_NO='"+txtSer.Text+"'and C.item_No<>'ser' ");
+                where A.SER_NO='"+txtSer.Text+"'and C.item_No ='ser' ");
 
 
            // getSalesInv(int32.ToString(), Branch.ID.Text, Transaction.ID.Text, (txtYear.Value - 2000).ToString());

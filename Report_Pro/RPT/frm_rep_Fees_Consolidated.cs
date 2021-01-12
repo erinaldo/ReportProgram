@@ -9,6 +9,7 @@ using CrystalDecisions.Windows.Forms;
 using DevComponents.DotNetBar;
 using DevComponents.DotNetBar.Controls;
 using DevComponents.Editors.DateTimeAdv;
+using DevExpress.XtraReports.UI;
 using Report_Pro.DAL;
 using Report_Pro.MyControls;
 using Report_Pro.Properties;
@@ -37,16 +38,18 @@ namespace Report_Pro.RPT
     private void btnReport_1_Click(object sender, EventArgs e)
     {
       this.groupPanel2.Visible = false;
-      rpt_feesReport rptFeesReport = new rpt_feesReport();
       DataSet1 dataSet1 = new DataSet1();
       DataTable dataTable = new DataTable();
             DataTable dataTabl1 = this.dal.getDataTabl_1(@"select C.Gr_Code,C.Gr_name
           , SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Trading' and A.acc_no like '34%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno-loh else 0 END) as T_Indust " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company = 'Trading' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as T_GA " +
           ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Qatar' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as Q_GA_SAR " +
           ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Kuwait' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as K_GA_SAR " +
           ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Bahrain' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as B_GA_SAR " +
           ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Oman' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as O_GA_SAR " +
           ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Transportation' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as Trans_SAR " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '31%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_GA " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_Indust " +
 
           ", c.Prev_no,d.Gr_name from GroupDB.dbo.daily_transaction  as A " +
           "inner join GroupDB.dbo.payer2 as b  on A.ACC_NO=B.ACC_NO and A.BRANCH_code = b.BRANCH_code " +
@@ -54,54 +57,95 @@ namespace Report_Pro.RPT
           "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as D on C.Prev_no =D.Gr_Code " +
           "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
           "where A.BRANCH_code like '%'  group by  C.Gr_Code,C.Gr_name,c.Prev_no,d.Gr_name");
-
-          //  "select  C.Gr_Code,C.Gr_name," +
-          //"  SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + this.fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + this.toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno-loh else 0 END) as GA_ " +
-          //", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.acc_no like '34%' and CAST(A.g_date as date) between '" + this.fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + this.toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno-loh else 0 END) as Indust_ " +
-          //", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.acc_no like '34%'  and CAST(A.g_date as date) between '" + this.fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + this.toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno-loh else 0 END) as Indust_ " +
-          //", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.acc_no like '321%' and CAST(A.g_date as date) between DATEADD(year, -1, '" + this.fromDate.Value.ToString("yyyy-MM-dd") + "') and DATEADD(year, -1, '" + this.toDate.Value.ToString("yyyy-MM-dd") + "') THEN  meno-loh else 0 END) as prev_GA_ " +
-          //", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.acc_no like '322%' and CAST(A.g_date as date) between DATEADD(year, -1, '" + this.fromDate.Value.ToString("yyyy-MM-dd") + "') and DATEADD(year, -1, '" + this.toDate.Value.ToString("yyyy-MM-dd") + "') THEN  meno-loh else 0 END) as prev_Sal_ " +
-          //", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.acc_no like '34%' and CAST(A.g_date as date) between DATEADD(year, -1, '" + this.fromDate.Value.ToString("yyyy-MM-dd") + "') and DATEADD(year, -1, '" + this.toDate.Value.ToString("yyyy-MM-dd") + "') THEN  meno-loh else 0 END) as prev_Indust_ " +
-          //", c.Prev_no,d.Gr_name from daily_transaction  as A  inner join payer2 as b  on A.ACC_NO=B.ACC_NO and A.BRANCH_code = b.BRANCH_code inner join Wh_Costmers_Vendors_Group as C on b.Temp1 =C.Gr_Code inner join Wh_Costmers_Vendors_Group as D on C.Prev_no =D.Gr_Code where A.BRANCH_code like '" + this.txtBranch.ID.Text + "%'  group by  C.Gr_Code,C.Gr_name,c.Prev_no,d.Gr_name");
       dataSet1.Tables.Add(dataTabl1);
-      dataSet1.WriteXmlSchema("schema1.xml");
-      rptFeesReport.SetDataSource((DataSet) dataSet1);
-      //if (this.rdo1.Checked)
-      //  rptFeesReport.ReportDefinition.Sections["Section3"].SectionFormat.EnableSuppress = true;
-      //else
-        rptFeesReport.ReportDefinition.Sections["GroupHeaderSection1"].SectionFormat.EnableSuppress = true;
-      this.crystalReportViewer1.ReportSource = (object) rptFeesReport;
-      FormulaFieldDefinition formulaField1 = rptFeesReport.DataDefinition.FormulaFields["From_date"];
-      DateTime dateTime = this.fromDate.Value;
-      string str1 = "'" + dateTime.ToString("yyyy/MM/dd") + "'";
-      formulaField1.Text = str1;
-      FormulaFieldDefinition formulaField2 = rptFeesReport.DataDefinition.FormulaFields["To_Date"];
-      dateTime = this.toDate.Value;
-      string str2 = "'" + dateTime.ToString("yyyy/MM/dd") + "'";
-      formulaField2.Text = str2;
-      rptFeesReport.DataDefinition.FormulaFields["company_name"].Text = "'" + Settings.Default.head_txt + "'";
-      rptFeesReport.DataDefinition.FormulaFields["Branch_Name"].Text = "'" + Settings.Default.Branch_txt + "'";
-      rptFeesReport.DataDefinition.FormulaFields["Branch_"].Text = "'" + this.txtBranch.Desc.Text + "'";
-      rptFeesReport.DataDefinition.FormulaFields["Acc_Group"].Text = "'" + this.Acc_Group.Desc.Text + "'";
+      //dataSet1.WriteXmlSchema("schema1.xml");
+      Reports.rpt_Fees_Consolidated rpt = new Reports.rpt_Fees_Consolidated();
+            rpt.DataSource = dataSet1;
+            rpt.ShowPreview();
+            rpt.lbl_Branch.Text = txtBranch.Desc.Text;
+            rpt.lbl_Group.Text = Acc_Group.Desc.Text;
+            rpt.lbl_FromDate.Text = fromDate.Value.ToShortDateString();
+            rpt.lbl_ToDate.Text = toDate.Value.ToShortDateString();
 
-    }
+        }
 
-    private void btnOption_Click(object sender, EventArgs e) { this.groupPanel2.Visible = true; }
+        private void btnOption_Click(object sender, EventArgs e) { this.groupPanel2.Visible = true; }
 
     private void btnReport_2_Click(object sender, EventArgs e)
     {
-      this.groupPanel2.Visible = false;
-      rpt_branches_summry rptBranchesSummry = new rpt_branches_summry();
-      DataSet1 dataSet1 = new DataSet1();
-      DataTable dataTable = new DataTable();
-      DataTable dataTabl1 = this.dal.getDataTabl_1("select D.BRANCH_code,B.BRANCH_name\r\n            ,sum (case  when acc_no like '4%' and cast(g_date as date) between '" + this.fromDate.Value.ToString("yyyy/MM/dd") + "' and '" + this.toDate.Value.ToString("yyyy/MM/dd") + "'  then (loh-meno) end) as sales_  , sum (case  when (acc_no like '123%' or ACC_NO like '12708%') and cast(g_date as date)<'" + this.fromDate.Value.ToString("yyyy/MM/dd") + "'  then (meno-loh) end) as Cust_1  , sum (case  when (acc_no like '123%' or ACC_NO like '12708%') and cast(g_date as date)<='" + this.toDate.Value.ToString("yyyy/MM/dd") + "'  then (meno-loh) end) as Cust_2  , sum (case  when acc_no like '32%' and cast(g_date as date) between '" + this.fromDate.Value.ToString("yyyy/MM/dd") + "'  and '" + this.toDate.Value.ToString("yyyy/MM/dd") + "'   then (meno-loh) end) as fees_  , sum (case  when acc_no like '35%' and cast(g_date as date) between '" + this.fromDate.Value.ToString("yyyy/MM/dd") + "'  and '" + this.toDate.Value.ToString("yyyy/MM/dd") + "'   then (meno-loh) end) as purch_  ,sum (case  when acc_no like '121%' and cast(g_date as date) <= '" + this.toDate.Value.ToString("yyyy/MM/dd") + "'   then (meno-loh) end) as Cash_  from daily_transaction as D inner join BRANCHS As B on B.BRANCH_code=D.BRANCH_code  where D.BRANCH_code like '" + this.txtBranch.ID.Text + "%'   group by D.BRANCH_code,B.BRANCH_name");
-      dataSet1.Tables.Add(dataTabl1);
-      dataSet1.WriteXmlSchema("schema1.xml");
-      rptBranchesSummry.SetDataSource((DataSet) dataSet1);
-      this.crystalReportViewer1.ReportSource = (object) rptBranchesSummry;
-    }
+            this.groupPanel2.Visible = false;
+            DataSet1 dataSet1 = new DataSet1();
+            DataTable dt_1 = new DataTable();
+            DataTable dt_2 = new DataTable();
+            dt_1 = dal.getDataTabl_1(@"select  c.Prev_no,d.Gr_name 
+          , SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Trading' and A.acc_no like '34%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno-loh else 0 END) as T_Indust " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company = 'Trading' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as T_GA " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Qatar' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as Q_GA_SAR " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Kuwait' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as K_GA_SAR " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Bahrain' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as B_GA_SAR " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Oman' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as O_GA_SAR " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Transportation' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as Trans_SAR " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '31%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_GA " +
+          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_Indust " +
 
-    private void labelX5_Click(object sender, EventArgs e)
+          
+
+
+
+          " from GroupDB.dbo.daily_transaction  as A " +
+          "inner join GroupDB.dbo.payer2 as b  on A.ACC_NO=B.ACC_NO and A.BRANCH_code = b.BRANCH_code " +
+          "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as C on b.Temp1 =C.Gr_Code " +
+          "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as D on C.Prev_no =D.Gr_Code " +
+          "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
+          "where A.BRANCH_code like '%'  group by  c.Prev_no,d.Gr_name");
+
+
+            dt_2 = dal.getDataTabl_1(@"select 
+             SUM(CASE WHEN  A.Company = 'Trading' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno) else 0 END) as T_R " +
+          ", SUM(CASE WHEN  A.Company='Qatar' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as Q_R " +
+          ", SUM(CASE WHEN  A.Company='Kuwait' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as K_R " +
+          ", SUM(CASE WHEN  A.Company='Bahrain' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as B_R " +
+          ", SUM(CASE WHEN  A.Company='Oman' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as O_R " +
+          ", SUM(CASE WHEN  A.Company='Transportation' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as Trans_R " +
+          ", SUM(CASE WHEN  A.Company='factory' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as F_R " +
+          ", SUM(CASE WHEN A.Company = 'Trading' and A.ACC_NO like '123998%' and SOURCE_CODE like 'xs%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as T_S_R " +
+          ", SUM(CASE WHEN A.Company = 'factory' and A.ACC_NO = '120200001' and SOURCE_CODE like 'xs%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as F_S_R " +
+
+
+
+          " from GroupDB.dbo.daily_transaction  as A " +
+          "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
+          "where A.BRANCH_code like '%' ");
+
+
+            dataSet1.Tables.Add(dt_1);
+            dataSet1.Tables.Add(dt_2);
+           // dataSet1.WriteXmlSchema("schema1.xml");
+            Reports.rpt_Fees_Consolidated rpt = new Reports.rpt_Fees_Consolidated();
+            rpt.DataSource = dataSet1;
+            rpt.ShowPreview();
+
+            if (Properties.Settings.Default.lungh == "0")
+            {
+                rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+                rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.Yes;
+                rpt.pram1.Value = 0;
+            }
+            else
+            {
+                rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+                rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+                rpt.pram1.Value = 1;
+            }
+
+            rpt.lbl_Branch.Text = txtBranch.Desc.Text;
+            rpt.lbl_Group.Text = Acc_Group.Desc.Text;
+            rpt.lbl_FromDate.Text = fromDate.Value.ToShortDateString();
+            rpt.lbl_ToDate.Text = toDate.Value.ToShortDateString();
+
+        }
+
+        private void labelX5_Click(object sender, EventArgs e)
     {
 
     }
@@ -109,7 +153,10 @@ namespace Report_Pro.RPT
     private void frm_rep_Fees_Load(object sender, EventArgs e)
     {
         Acc_Group.txtFinal.Text = "0";
-    }
+
+          fromDate.Value = new DateTime(DateTime.Now.Year, 1, 1);
+            toDate.Value = DateTime.Today;
+        }
 
        }
 }

@@ -948,3 +948,4 @@ D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_DataBaseChose.
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.resources
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.ar.resources
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Fees_Consolidated.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Fees_Consolidated.ar.resources

@@ -225,7 +225,7 @@ namespace Report_Pro.RPT
 
 
 
-            ds.WriteXmlSchema("schema1.xml");
+            //ds.WriteXmlSchema("schema1.xml");
 
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;

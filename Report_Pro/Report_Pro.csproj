@@ -1510,6 +1510,9 @@
     <EmbeddedResource Include="Reports\rpt_Confirmation.resx">
       <DependentUpon>rpt_Confirmation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Fees_Consolidated.ar.resx">
+      <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Fees_Consolidated.resx">
       <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
     </EmbeddedResource>
