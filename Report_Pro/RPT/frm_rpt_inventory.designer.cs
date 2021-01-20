@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_rpt_inventory));
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.Uc_Transaction = new Report_Pro.MyControls.UC_Transaction();
             this.dTP1 = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
@@ -75,6 +77,8 @@
             resources.ApplyResources(this.panelEx1, "panelEx1");
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx1.Controls.Add(this.labelX9);
+            this.panelEx1.Controls.Add(this.Uc_Transaction);
             this.panelEx1.Controls.Add(this.dTP1);
             this.panelEx1.Controls.Add(this.labelX1);
             this.panelEx1.Controls.Add(this.buttonX6);
@@ -109,6 +113,19 @@
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.Click += new System.EventHandler(this.panelEx1_Click);
+            // 
+            // labelX9
+            // 
+            resources.ApplyResources(this.labelX9, "labelX9");
+            this.labelX9.BackColor = System.Drawing.Color.Transparent;
+            this.labelX9.Name = "labelX9";
+            this.labelX9.Click += new System.EventHandler(this.labelX9_Click);
+            // 
+            // Uc_Transaction
+            // 
+            resources.ApplyResources(this.Uc_Transaction, "Uc_Transaction");
+            this.Uc_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Transaction.Name = "Uc_Transaction";
             // 
             // dTP1
             // 
@@ -571,5 +588,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX6;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dTP1;
         private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX labelX9;
+        private MyControls.UC_Transaction Uc_Transaction;
     }
 }

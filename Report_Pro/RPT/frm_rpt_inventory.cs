@@ -63,7 +63,7 @@ namespace Report_Pro.RPT
                 "where cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' " +
                 "and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "')  and   D.branch_code like " +
                 " (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "' else  '" + Branch.ID.Text + "%' end) and A.group_code like '" + Group.ID.Text +
-                "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "'  " +
+                "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "' and D.TRANSACTION_CODE like '"+Uc_Transaction.ID.Text+"%'  " +
                 "group by A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth, a.local_cost, a.Dim_category, t2.COST_PRICE order by A.item_no";
 
             DataTable dt1 = new DataTable();
@@ -78,7 +78,7 @@ namespace Report_Pro.RPT
              
              DataTable dt1 = new DataTable();
 
-            dt1 = dal.getDataTabl_1(@"SELECT d.Branch_code,B.branch_name,B.WH_E_NAME,A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,t2.COST_PRICE,
+            dt1 = dal.getDataTabl_1(@"SELECT  d.Branch_code,B.branch_name,B.WH_E_NAME,A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,t2.COST_PRICE,
             a.Dim_category, round(sum(D.QTY_ADD - D.QTY_TAKE), 2) as balance, sum(D.QTY_ADD - D.QTY_TAKE) * a.local_cost as cost
             FROM wh_material_transaction As D 
             inner join wh_BRANCHES as B on B.branch_code = D.Branch_code
@@ -90,7 +90,7 @@ namespace Report_Pro.RPT
             "where cast(D.G_date as date) <= '"+ dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '"+ dTP2.Value.ToString("yy") + "' " +
             "and A.Category in('"+R+"','"+ F + "','" + C + "','" + P +"','" + S +"','" + Z+"','"+X+"')  and   D.branch_code like " +
             " (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "%' else  '" + Branch.ID.Text + "%' end) and A.group_code like '"+Group.ID.Text+
-            "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "'  " +
+            "%' and  A.item_no like '" + Item.ID.Text + "%' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "' and D.Transaction_Code like '"+Uc_Transaction.ID.Text+"%'   " +
             "group by A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth, a.local_cost, a.Dim_category, t2.COST_PRICE,d.Branch_code,B.branch_name,B.WH_E_NAME order by A.item_no");
 
             DataSet1 ds = new DataSet1();
@@ -276,6 +276,11 @@ namespace Report_Pro.RPT
         }
 
         private void cmb_DimCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX9_Click(object sender, EventArgs e)
         {
 
         }

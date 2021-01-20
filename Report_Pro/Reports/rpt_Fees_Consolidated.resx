@@ -478,7 +478,7 @@
     <value>Trading</value>
   </data>
   <data name="xrTableCell32.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell32.Weight" type="System.Double, mscorlib">
     <value>0.743462610514853</value>
@@ -487,7 +487,7 @@
     <value>Arial, 9pt</value>
   </data>
   <data name="xrTableCell33.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell33.Weight" type="System.Double, mscorlib">
     <value>0.743462621305502</value>
@@ -496,7 +496,7 @@
     <value>Arial, 9pt</value>
   </data>
   <data name="xrTableCell34.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell34.Weight" type="System.Double, mscorlib">
     <value>0.743462621305502</value>
@@ -505,7 +505,7 @@
     <value>Arial, 9pt</value>
   </data>
   <data name="xrTableCell36.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell36.Weight" type="System.Double, mscorlib">
     <value>0.74346262130550222</value>
@@ -514,7 +514,7 @@
     <value>Arial, 9pt</value>
   </data>
   <data name="xrTableCell37.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell37.Weight" type="System.Double, mscorlib">
     <value>0.743462621305502</value>
@@ -526,7 +526,7 @@
     <value>Factory</value>
   </data>
   <data name="xrTableCell38.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell38.Weight" type="System.Double, mscorlib">
     <value>0.74346262130550189</value>
@@ -535,7 +535,7 @@
     <value>Arial, 9pt</value>
   </data>
   <data name="xrTableCell39.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell39.Weight" type="System.Double, mscorlib">
     <value>0.74346262130550189</value>
@@ -547,7 +547,7 @@
     <value>Total</value>
   </data>
   <data name="xrTableCell41.TextFormatString" xml:space="preserve">
-    <value>{0:n0}</value>
+    <value>{0:0%}</value>
   </data>
   <data name="xrTableCell41.Weight" type="System.Double, mscorlib">
     <value>0.82823766235686114</value>
