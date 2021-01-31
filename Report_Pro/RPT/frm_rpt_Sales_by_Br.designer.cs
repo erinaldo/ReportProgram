@@ -75,16 +75,16 @@
             this.chS = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.button7 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.Items = new Report_Pro.MyControls.UC_Items();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
             this.label9 = new System.Windows.Forms.Label();
+            this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
             this.label7 = new System.Windows.Forms.Label();
+            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
-            this.Items = new Report_Pro.MyControls.UC_Items();
-            this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
-            this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -106,6 +106,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_Report);
             this.panel1.Controls.Add(this.btnOption);
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -339,7 +340,6 @@
             this.groupBox1.Controls.Add(this.button12);
             this.groupBox1.Controls.Add(this.button11);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
@@ -602,6 +602,14 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label10.Name = "label10";
             // 
+            // Items
+            // 
+            resources.ApplyResources(this.Items, "Items");
+            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Items.Name = "Items";
+            this.Items.Load += new System.EventHandler(this.Items_Load);
+            this.Items.Click += new System.EventHandler(this.Items_Click);
+            // 
             // button6
             // 
             resources.ApplyResources(this.button6, "button6");
@@ -619,6 +627,12 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label11.Name = "label11";
             // 
+            // Uc_Group
+            // 
+            resources.ApplyResources(this.Uc_Group, "Uc_Group");
+            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Group.Name = "Uc_Group";
+            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
@@ -626,12 +640,27 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label9.Name = "label9";
             // 
+            // Uc_Acc
+            // 
+            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
+            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Acc.Name = "Uc_Acc";
+            // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label7.Name = "label7";
+            // 
+            // UC_Branch
+            // 
+            resources.ApplyResources(this.UC_Branch, "UC_Branch");
+            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
+            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.UC_Branch.Name = "UC_Branch";
             // 
             // thick_2
             // 
@@ -654,35 +683,6 @@
             0,
             0});
             this.thick_1.Name = "thick_1";
-            // 
-            // Items
-            // 
-            resources.ApplyResources(this.Items, "Items");
-            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Items.Name = "Items";
-            this.Items.Load += new System.EventHandler(this.Items_Load);
-            this.Items.Click += new System.EventHandler(this.Items_Click);
-            // 
-            // Uc_Group
-            // 
-            resources.ApplyResources(this.Uc_Group, "Uc_Group");
-            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Group.Name = "Uc_Group";
-            // 
-            // Uc_Acc
-            // 
-            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
-            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Acc.Name = "Uc_Acc";
-            // 
-            // UC_Branch
-            // 
-            resources.ApplyResources(this.UC_Branch, "UC_Branch");
-            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Name = "UC_Branch";
             // 
             // frm_rpt_Sales_by_Br
             // 

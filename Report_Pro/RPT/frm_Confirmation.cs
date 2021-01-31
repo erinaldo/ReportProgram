@@ -342,9 +342,12 @@ namespace Report_Pro.RPT
                 //rpt.DataDefinition.FormulaFields["NuToText_A"].Text = "'"+toWord.ConvertToArabic().ToString()+"'";
                 rpt.lblNoToText.Text = toWord.ConvertToEnglish().ToString();
                 rpt.lblNoToText_A.Text = toWord.ConvertToArabic().ToString();
-                // Ad an aray of recipients to the colection.      
-                string reportPath = Application.StartupPath + "\\Test.pdf";
-                rpt.ExportToPdf(reportPath);
+
+                rpt.ShowPreview();
+
+                //// Ad an aray of recipients to the colection.      
+                //string reportPath = Application.StartupPath + "\\Test.pdf";
+                //rpt.ExportToPdf(reportPath);
                 groupPanel1.Visible = false;
 
             }
@@ -362,6 +365,7 @@ namespace Report_Pro.RPT
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Gold));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Bahrain));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Oman));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Qatar));
 
             switch (Properties.Settings.Default.Currency)
             {
@@ -376,6 +380,9 @@ namespace Report_Pro.RPT
                     break;
                 case "DR":
                     currencyNo = 1;
+                    break;
+                case "QR":
+                    currencyNo = 7;
                     break;
             }
         }

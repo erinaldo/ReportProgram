@@ -4,7 +4,7 @@ namespace Report_Pro
 {
     public class CurrencyInfo
     {
-        public enum Currencies { Syria = 0, UAE, s, Tunisia, Gold ,Bahrain,Oman};
+        public enum Currencies { Syria = 0, UAE, s, Tunisia, Gold ,Bahrain,Oman,Qatar};
 
         #region Constructors
 
@@ -151,6 +151,27 @@ namespace Report_Pro
                     Arabic2CurrencyPartName = "بيستان";
                     Arabic310CurrencyPartName = "بيسات";
                     Arabic1199CurrencyPartName = "بيسه";
+                    PartPrecision = 3;
+                    IsCurrencyPartNameFeminine = true;
+                    break;
+
+
+                case Currencies.Qatar:
+                    CurrencyID = 6;
+                    CurrencyCode = "QAR";
+                    IsCurrencyNameFeminine = false;
+                    EnglishCurrencyName = "Qatari Rial";
+                    EnglishPluralCurrencyName = "Qatari Rials";
+                    EnglishCurrencyPartName = "Dirham ";
+                    EnglishPluralCurrencyPartName = "Dirhams";
+                    Arabic1CurrencyName = "ريال قطري";
+                    Arabic2CurrencyName = "ريالان قطريان";
+                    Arabic310CurrencyName = "ريالات قطرية";
+                    Arabic1199CurrencyName = "ريالاً قطرياً";
+                    Arabic1CurrencyPartName = "درهم";
+                    Arabic2CurrencyPartName = "درهمان";
+                    Arabic310CurrencyPartName = "دراهم";
+                    Arabic1199CurrencyPartName = "درهم";
                     PartPrecision = 3;
                     IsCurrencyPartNameFeminine = true;
                     break;

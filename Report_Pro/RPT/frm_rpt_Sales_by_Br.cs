@@ -1100,9 +1100,9 @@ namespace Report_Pro.RPT
             where D.TRANSACTION_CODE like 'xs%'
             and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + dTP2.Value.ToString("yyyy-MM-dd") +
             "' and A.Payment_Type like '" + pay_code +
-            "%' and s.Category like '" + Convert.ToString(category.SelectedValue) +
+            "%' and isnull(s.Category,'') like '" + Convert.ToString(category.SelectedValue) +
             "%' and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
-            "' and S.Dim_category like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
+            "' and isnull(S.Dim_category,'') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
             "%' and A.Branch_code like '" + UC_Branch.ID.Text +
             "%' and A.acc_no like '" + Uc_Acc.ID.Text +
             "%' and A.acc_no like case when '" + SC + "' = 2 then'123998%' else '%' end " +
@@ -1110,7 +1110,7 @@ namespace Report_Pro.RPT
             " and isnull(S.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "') " +
             " and S.group_code like '" + Uc_Group.ID.Text +
             "%' and D.Item_no like '" + Items.ID.Text +
-            "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
+            "%' and isnull(KM_CODE_ACC,0) like case when '" + str_t + "'= 3 then '3%' else '%' end  and isnull(KM_CODE_ACC,0) not like case when '" + str_t + "'= 2 then '3%' else '' end " +
             "group by   A.Ser_no,B.branch_name,A.G_date,p.PAYER_NAME, A.Inv_no, A.Inv_date, p.COSTMER_K_M_NO, A.Transaction_code, A.Branch_code," +
             " A.Payment_Type, T.INV_NAME, A.acc_serial_no, p.payer_l_name, C.Payment_name, A.Acc_no order by a.Branch_code, A.Ser_no");
 

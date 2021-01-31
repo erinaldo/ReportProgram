@@ -88,7 +88,7 @@ namespace Report_Pro.RPT
             left join (select * from payer2 )as p2 on p2.ACC_NO=a.LC_ACC_NO and a.Acc_Branch_code=p2.BRANCH_code
             inner join wh_main_master as M on M.item_no=b.ITEM_NO
             inner join Wh_Currency as C on C.Currency_Code=b.FORIN_TYPE
-            inner join wh_inv_data_Ext as EX on a.Ser_no =EX.SER_NO and a.Cyear=EX.Cyear  and a.Branch_code=EX.Branch_code
+            inner join wh_inv_data_Ext as EX on a.Ser_no =EX.SER_NO and a.Cyear=EX.Cyear  and a.Branch_code=EX.Branch_code and Ex.Transaction_code = 'PEX'
             inner join wh_BRANCHES As BR on BR.Branch_code=a.Branch_code
             where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'");
         }
