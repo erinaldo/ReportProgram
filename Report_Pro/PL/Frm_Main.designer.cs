@@ -102,6 +102,7 @@
             this.M714 = new DevComponents.DotNetBar.ButtonItem();
             this.M715 = new DevComponents.DotNetBar.ButtonItem();
             this.M716 = new DevComponents.DotNetBar.ButtonItem();
+            this.M717 = new DevComponents.DotNetBar.ButtonItem();
             this.M8 = new DevComponents.DotNetBar.ButtonItem();
             this.M81 = new DevComponents.DotNetBar.ButtonItem();
             this.M82 = new DevComponents.DotNetBar.ButtonItem();
@@ -144,7 +145,7 @@
             this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.M717 = new DevComponents.DotNetBar.ButtonItem();
+            this.M57 = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -484,7 +485,8 @@
             this.M53,
             this.M54,
             this.M55,
-            this.M56});
+            this.M56,
+            this.M57});
             this.M5.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.M5, "M5");
             // 
@@ -682,6 +684,12 @@
             this.M716.Name = "M716";
             resources.ApplyResources(this.M716, "M716");
             this.M716.Click += new System.EventHandler(this.M716_Click);
+            // 
+            // M717
+            // 
+            this.M717.Name = "M717";
+            resources.ApplyResources(this.M717, "M717");
+            this.M717.Click += new System.EventHandler(this.M717_Click);
             // 
             // M8
             // 
@@ -1003,11 +1011,11 @@
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
             // 
-            // M717
+            // M57
             // 
-            this.M717.Name = "M717";
-            resources.ApplyResources(this.M717, "M717");
-            this.M717.Click += new System.EventHandler(this.M717_Click);
+            this.M57.Name = "M57";
+            resources.ApplyResources(this.M57, "M57");
+            this.M57.Click += new System.EventHandler(this.M57_Click);
             // 
             // Frm_Main
             // 
@@ -1158,5 +1166,6 @@
         private DevComponents.DotNetBar.ButtonItem M27;
         private DevComponents.DotNetBar.ButtonItem btn_ChangeYear;
         private DevComponents.DotNetBar.ButtonItem M717;
+        private DevComponents.DotNetBar.ButtonItem M57;
     }
 }

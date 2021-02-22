@@ -909,5 +909,10 @@ namespace Report_Pro.PL
                 txtNote.Focus();
             }
         }
+
+        private void ribbonBar1_ItemClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

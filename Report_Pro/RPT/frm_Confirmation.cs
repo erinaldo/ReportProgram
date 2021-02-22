@@ -366,6 +366,7 @@ namespace Report_Pro.RPT
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Bahrain));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Oman));
             currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Qatar));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Kuwait));
 
             switch (Properties.Settings.Default.Currency)
             {
@@ -383,6 +384,9 @@ namespace Report_Pro.RPT
                     break;
                 case "QR":
                     currencyNo = 7;
+                    break;
+                case "KD":
+                    currencyNo = 8;
                     break;
             }
         }

@@ -35,12 +35,13 @@ namespace Report_Pro.RPT
         , SUM(CASE WHEN  D.ACC_NO in ('32104', '32204', '3420110')  THEN D.meno - D.loh  ELSE 0 END) AS iasha
         , SUM(CASE WHEN  D.ACC_NO in ('32105', '32205', '3420104')  THEN D.meno - D.loh  ELSE 0 END) AS transport
         , SUM(CASE WHEN  D.ACC_NO in ('32106', '32206', '3420107')  THEN D.meno - D.loh  ELSE 0 END) AS sakan
+        , SUM(CASE WHEN  D.ACC_NO in ('32169', '32269', '3420136')  THEN D.meno - D.loh  ELSE 0 END) AS schoolFess
         , SUM(CASE WHEN  D.ACC_NO in ('2339')  THEN D.meno - D.loh  ELSE 0 END) AS T_bank
         , SUM(CASE WHEN  D.ACC_NO like '127021%' and loh between 1 and 2000 THEN D.loh  ELSE 0 END) AS loans
         FROM daily_transaction as D
         left join CATEGORY as C on c.CAT_CODE = D.CAT_CODE
         inner join BRANCHS as B on B.BRANCH_code = D.BRANCH_code
-        where CAST(D.g_date as date) between '"+dTP1.Value.ToString("yyyy/MM/dd")+ "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
+        where CAST(D.g_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd")+ "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
         "' and D.CAT_CODE like '"+Catogry.ID.Text+ "%' and D.BRANCH_code like '" + AccBranch.ID.Text +
         "%' and D.ACC_NO like '" + Acc.ID.Text +"%' group by MONTH(D.g_date),isnull(D.CAT_CODE, 0),c.CAT_NAME,d.BRANCH_code,B.BRANCH_name " +
         "order by MONTH(D.g_date),cat_code");
@@ -80,6 +81,7 @@ namespace Report_Pro.RPT
         , SUM(CASE WHEN  D.ACC_NO in ('3204', '32204', '3420110')  THEN D.meno - D.loh  ELSE 0 END) AS iasha
         , SUM(CASE WHEN  D.ACC_NO in ('3205', '32205', '3420104')  THEN D.meno - D.loh  ELSE 0 END) AS transport
         , SUM(CASE WHEN  D.ACC_NO in ('3206', '32206', '3420107')  THEN D.meno - D.loh  ELSE 0 END) AS sakan
+       , SUM(CASE WHEN  D.ACC_NO in ('3269', '32269', '3420136')  THEN D.meno - D.loh  ELSE 0 END) AS schoolFess
         , SUM(CASE WHEN  D.ACC_NO in ('2339')  THEN D.meno - D.loh  ELSE 0 END) AS T_bank
         , SUM(CASE WHEN  D.ACC_NO like '127021%' and loh between 1 and 2000 THEN D.loh  ELSE 0 END) AS loans
         FROM daily_transaction as D
@@ -114,7 +116,8 @@ namespace Report_Pro.RPT
         , SUM(CASE WHEN  D.ACC_NO in ( '320108')  THEN D.meno - D.loh  ELSE 0 END) AS iasha
         , SUM(CASE WHEN  D.ACC_NO in ('310104', '320104')  THEN D.meno - D.loh  ELSE 0 END) AS transport
         , SUM(CASE WHEN  D.ACC_NO in ('310105', '320105')  THEN D.meno - D.loh  ELSE 0 END) AS sakan
-        , SUM(CASE WHEN  D.ACC_NO in ('230310')  THEN D.meno - D.loh  ELSE 0 END) AS T_bank
+       , SUM(CASE WHEN  D.ACC_NO in ('310540')  THEN D.meno - D.loh  ELSE 0 END) AS schoolFess
+       , SUM(CASE WHEN  D.ACC_NO in ('230310')  THEN D.meno - D.loh  ELSE 0 END) AS T_bank
         , SUM(CASE WHEN  D.ACC_NO like '120501%' and loh between 1 and 2000 THEN D.loh  ELSE 0 END) AS loans
         FROM daily_transaction as D
         left join CATEGORY as C on c.CAT_CODE = D.CAT_CODE

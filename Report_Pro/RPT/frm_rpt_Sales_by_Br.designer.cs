@@ -56,6 +56,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.radioBtn3 = new System.Windows.Forms.RadioButton();
             this.radioBtn2 = new System.Windows.Forms.RadioButton();
@@ -85,6 +86,7 @@
             this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -96,7 +98,6 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.buttonX5);
             this.panel1.Controls.Add(this.button15);
             this.panel1.Controls.Add(this.btnMonthelySales);
@@ -107,22 +108,23 @@
             this.panel1.Controls.Add(this.btn_Report);
             this.panel1.Controls.Add(this.btnOption);
             this.panel1.Controls.Add(this.button5);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonX5
             // 
-            resources.ApplyResources(this.buttonX5, "buttonX5");
             this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.buttonX5, "buttonX5");
             this.buttonX5.Name = "buttonX5";
             this.buttonX5.Click += new System.EventHandler(this.buttonX5_Click);
             // 
             // button15
             // 
-            resources.ApplyResources(this.button15, "button15");
             this.button15.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button15.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -138,49 +140,49 @@
             // 
             // button13
             // 
-            resources.ApplyResources(this.button13, "button13");
             this.button13.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button13.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.button13, "button13");
             this.button13.Name = "button13";
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button4
             // 
-            resources.ApplyResources(this.button4, "button4");
             this.button4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            resources.ApplyResources(this.button3, "button3");
             this.button3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.button1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_Report
             // 
-            resources.ApplyResources(this.btn_Report, "btn_Report");
             this.btn_Report.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_Report.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.btn_Report, "btn_Report");
             this.btn_Report.Name = "btn_Report";
             this.btn_Report.Click += new System.EventHandler(this.btn_Report_Click);
             // 
             // btnOption
             // 
-            resources.ApplyResources(this.btnOption, "btnOption");
             this.btnOption.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnOption.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.btnOption, "btnOption");
             this.btnOption.Name = "btnOption";
             this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
             // 
@@ -291,10 +293,10 @@
             // 
             // crystalReportViewer1
             // 
-            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             // 
             // button12
@@ -319,8 +321,9 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.buttonX2);
+            this.groupBox1.Controls.Add(this.buttonX1);
             this.groupBox1.Controls.Add(this.groupPanel3);
             this.groupBox1.Controls.Add(this.groupPanel1);
             this.groupBox1.Controls.Add(this.button8);
@@ -351,19 +354,28 @@
             this.groupBox1.Controls.Add(this.payment_type);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cmb_DimCategory);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.buttonX1, "buttonX1");
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
             // groupPanel3
             // 
-            resources.ApplyResources(this.groupPanel3, "groupPanel3");
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel3.Controls.Add(this.radioBtn3);
             this.groupPanel3.Controls.Add(this.radioBtn2);
             this.groupPanel3.Controls.Add(this.radioBtn1);
+            resources.ApplyResources(this.groupPanel3, "groupPanel3");
             this.groupPanel3.Name = "groupPanel3";
             // 
             // 
@@ -388,38 +400,38 @@
             // 
             // radioBtn3
             // 
-            resources.ApplyResources(this.radioBtn3, "radioBtn3");
             this.radioBtn3.BackColor = System.Drawing.Color.Transparent;
             this.radioBtn3.ForeColor = System.Drawing.Color.MidnightBlue;
+            resources.ApplyResources(this.radioBtn3, "radioBtn3");
             this.radioBtn3.Name = "radioBtn3";
             this.radioBtn3.UseVisualStyleBackColor = false;
             // 
             // radioBtn2
             // 
-            resources.ApplyResources(this.radioBtn2, "radioBtn2");
             this.radioBtn2.BackColor = System.Drawing.Color.Transparent;
             this.radioBtn2.ForeColor = System.Drawing.Color.MidnightBlue;
+            resources.ApplyResources(this.radioBtn2, "radioBtn2");
             this.radioBtn2.Name = "radioBtn2";
             this.radioBtn2.UseVisualStyleBackColor = false;
             // 
             // radioBtn1
             // 
-            resources.ApplyResources(this.radioBtn1, "radioBtn1");
             this.radioBtn1.BackColor = System.Drawing.Color.Transparent;
             this.radioBtn1.Checked = true;
             this.radioBtn1.ForeColor = System.Drawing.Color.MidnightBlue;
+            resources.ApplyResources(this.radioBtn1, "radioBtn1");
             this.radioBtn1.Name = "radioBtn1";
             this.radioBtn1.TabStop = true;
             this.radioBtn1.UseVisualStyleBackColor = false;
             // 
             // groupPanel1
             // 
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.rBtnS);
             this.groupPanel1.Controls.Add(this.rBtnWithoutS);
             this.groupPanel1.Controls.Add(this.rBtnAll);
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -517,12 +529,12 @@
             // 
             // chX
             // 
-            resources.ApplyResources(this.chX, "chX");
             this.chX.BackColor = System.Drawing.Color.Transparent;
             this.chX.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chX.Checked = true;
             this.chX.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chX.CheckValue = "Y";
+            resources.ApplyResources(this.chX, "chX");
             this.chX.Name = "chX";
             // 
             // chF
@@ -684,6 +696,14 @@
             0});
             this.thick_1.Name = "thick_1";
             // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.buttonX2, "buttonX2");
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
+            // 
             // frm_rpt_Sales_by_Br
             // 
             resources.ApplyResources(this, "$this");
@@ -698,11 +718,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupPanel3.ResumeLayout(false);
-            this.groupPanel3.PerformLayout();
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             this.groupPanel2.ResumeLayout(false);
-            this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thick_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thick_1)).EndInit();
             this.ResumeLayout(false);
@@ -767,5 +785,7 @@
         private DevComponents.DotNetBar.ButtonX btn_Report;
         private DevComponents.DotNetBar.ButtonX btnOption;
         private DevComponents.DotNetBar.Controls.CheckBoxX chX;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
     }
 }

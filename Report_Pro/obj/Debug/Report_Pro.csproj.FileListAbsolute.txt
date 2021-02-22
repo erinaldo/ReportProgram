@@ -949,3 +949,6 @@ D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Cons
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.ar.resources
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Fees_Consolidated.resources
 D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Fees_Consolidated.ar.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_Cut_off.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_Cut_off.ar.resources
+D:\MyProgram\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_Cut_off.en.resources

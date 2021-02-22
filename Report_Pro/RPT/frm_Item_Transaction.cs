@@ -107,7 +107,7 @@ namespace Report_Pro.RPT
             ,D.Local_Price*(100-ISNULL(D.DISC_R3,0))/100 as Local_Price
             ,D.TRANSACTION_CODE,p.ACC_NO,p.PAYER_NAME,t.INV_NAME,A.branch_code
             ,C_Balance= SUM(QTY_ADD-QTY_TAKE) OVER (  ORDER BY  D.G_DATE,D.SER_NO,D.main_counter)
-	       
+	       ,A.inv_no,A.inv_Date
            , ROW_NUMBER()OVER(  ORDER BY  D.G_DATE,D.SER_NO ,D.BRANCH_CODE) " +
             "from wh_inv_data as A "+
             "INNER JOIN payer2 As P ON A.Acc_no = P.ACC_NO AND A.Acc_Branch_code = P.BRANCH_code "+
@@ -117,7 +117,7 @@ namespace Report_Pro.RPT
             "AND A.Branch_code =D.Branch_code AND A.Transaction_code = D.TRANSACTION_CODE AND A.Cyear = D.Cyear "+
             "inner join wh_main_master As S  on D.ITEM_NO=s.item_no "+
             "inner join WH_INV_TYPE As T  on T.INV_CODE=A.Transaction_code "+
-            "where D.ITEM_NO like '" + UC_Items.ID.Text+"%' and CAST (D.G_DATE as date )between '" + FromDate_.Value.ToString("yyyy-MM-dd")+ 
+            "where D.ITEM_NO = '" + UC_Items.ID.Text+"' and CAST (D.G_DATE as date )between '" + FromDate_.Value.ToString("yyyy-MM-dd")+ 
             "' and '"+ToDate_.Value.ToString("yyyy-MM-dd")+ "' and D.Branch_code like '"+UC_Branch.ID.Text+
             "%' and A.Acc_no like '" + UC_Acc.ID.Text+ "%'  and A.Transaction_code like '"+UC_Transaction.ID.Text+
             "%' and S.group_code like '"+Uc_Group1.ID.Text+"%' order by D.G_DATE,D.SER_NO "));
@@ -128,7 +128,7 @@ namespace Report_Pro.RPT
             ds.Tables.Add(dt1);
             ds.Tables.Add(dt2);
 
-            ds.WriteXmlSchema("schema_rpt.xml");
+            //ds.WriteXmlSchema("schema_rpt.xml");
             rpt.SetDataSource(ds);
             crystalReportViewer1.ReportSource = rpt;
             this.Cursor = Cursors.Default;

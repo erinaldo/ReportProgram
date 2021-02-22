@@ -675,6 +675,9 @@
   <data name="xrTable7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
     <value>MiddleLeft</value>
   </data>
+  <data name="xrTable7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="table_S_R.BackColor" type="System.Drawing.Color, System.Drawing">
     <value>RoyalBlue</value>
   </data>
@@ -788,6 +791,9 @@
   </data>
   <data name="table_S_R.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v19.1">
     <value>MiddleLeft</value>
+  </data>
+  <data name="table_S_R.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="table_R.BackColor" type="System.Drawing.Color, System.Drawing">
     <value>RoyalBlue</value>

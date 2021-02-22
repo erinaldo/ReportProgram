@@ -1577,6 +1577,18 @@
     <EmbeddedResource Include="RPT\frm_rpt_inventory.ar.resx">
       <DependentUpon>frm_rpt_inventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rpt_Cut_off.ar.resx">
+      <DependentUpon>frm_rpt_Cut_off.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rpt_Cut_off.en.resx">
+      <DependentUpon>frm_rpt_Cut_off.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rpt_Cut_off.resx">
+      <DependentUpon>frm_rpt_Cut_off.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\print_PurchaseInv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>print_PurchaseInv.cs</LastGenOutput>
@@ -1590,6 +1602,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_InventoryList.resx">
       <DependentUpon>rpt_InventoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_Cut_Off.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Cut_Off.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\Rpt_inv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2375,6 +2391,12 @@
     <Compile Include="RPT\frm_rep_Fees_Consolidated.designer.cs">
       <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\frm_rpt_Cut_off.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_Cut_off.designer.cs">
+      <DependentUpon>frm_rpt_Cut_off.cs</DependentUpon>
+    </Compile>
     <Compile Include="RPT\print_PurchaseInv.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -2392,6 +2414,12 @@
     </Compile>
     <Compile Include="Reports\rpt_InventoryList.Designer.cs">
       <DependentUpon>rpt_InventoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\rpt_Cut_Off.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Cut_Off.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\Rpt_inv.cs">
       <AutoGen>True</AutoGen>
@@ -3343,6 +3371,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="report_SsV_icon.ico" />
+    <None Include="Resources\ختم الحسابات1.jpg" />
+    <None Include="Resources\ختم الحسابات.jpg" />
     <None Include="Resources\myLogo.png" />
   </ItemGroup>
   <ItemGroup>

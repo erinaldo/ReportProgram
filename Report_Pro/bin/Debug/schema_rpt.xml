@@ -6,27 +6,29 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Month_" type="xs:string" minOccurs="0" />
-              <xs:element name="Cr_Weight_sales" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_Value_sales" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_Average_Sales" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_tax_sal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tot_cr_sal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_Weight_sales" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_Value_sales" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_Average_Sales" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_tax_sal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tot_cash_sal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_Weight_sales1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_Value_sales1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_Average_Sales1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cr_tax_sal1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tot_cr_sal1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_Weight_sales1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_Value_sales1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_Average_Sales1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Cash_tax_sal1" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tot_cash_sal1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ser_no" type="xs:int" minOccurs="0" />
+              <xs:element name="g_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ITEM_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="descr" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QTY_TAKE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Local_Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANSACTION_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INV_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="C_Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="inv_no" type="xs:string" minOccurs="0" />
+              <xs:element name="inv_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Column1" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="B_balance" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
