@@ -251,7 +251,7 @@ namespace Report_Pro.RPT
             DataTable dt1 = new DataTable();
             DataTable dt2 = new DataTable();
             DataTable dt3 = new DataTable();
-            dt1 = (dal.getDataTabl("Get_TB_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc.ID.Text, UC_Branch.ID.Text, lvl, bal, Acc_Kind, Properties.Settings.Default.closeAcc, "", db1));
+            dt1 = (dal.getDataTabl("Get_TB_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc.ID.Text, UC_Branch.ID.Text, lvl, bal, Acc_Kind, Properties.Settings.Default.closeAcc, "", db1,UC_cost.ID.Text));
           //  dt2= dal.getDataTabl_1("SELECT*  FROM tbl1 As T inner join " + dal.db1 + ".dbo.MEZANIA_ARBAH_CHART As M on M.Gr_Code=T.acc_Code  where T.acc_Code='1106' and   cast(T.G_Date as date)  between '" + FromDate.Value.ToString("yyyy/MM/dd") + "' and '" + ToDate.Value.ToString("yyyy/MM/dd") + "'");
            // dt3 = dal.getDataTabl_1("select * FROM " + dal.db1 + ".dbo.MEZANIA_ARBAH_CHART  ");
             ds.Tables.Add(dt1);
@@ -508,7 +508,7 @@ namespace Report_Pro.RPT
             DataTable dt1 = new DataTable();
             DataTable dt2 = new DataTable();
             DataTable dt3 = new DataTable();
-            dt1 = (dal.getDataTabl("Get_TB_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc.ID.Text, UC_Branch.ID.Text, lvl, bal, Acc_Kind, Properties.Settings.Default.closeAcc, "", "GroupDB"));
+            dt1 = (dal.getDataTabl("Get_TB_group", FromDate.Value.Date, ToDate.Value.Date, UC_Acc.ID.Text, UC_Branch.ID.Text, lvl, bal, Acc_Kind, Properties.Settings.Default.closeAcc, "", "GroupDB"));
             //  dt2= dal.getDataTabl_1("SELECT*  FROM tbl1 As T inner join " + dal.db1 + ".dbo.MEZANIA_ARBAH_CHART As M on M.Gr_Code=T.acc_Code  where T.acc_Code='1106' and   cast(T.G_Date as date)  between '" + FromDate.Value.ToString("yyyy/MM/dd") + "' and '" + ToDate.Value.ToString("yyyy/MM/dd") + "'");
             // dt3 = dal.getDataTabl_1("select * FROM " + dal.db1 + ".dbo.MEZANIA_ARBAH_CHART  ");
             ds.Tables.Add(dt1);

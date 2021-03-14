@@ -521,6 +521,7 @@ namespace Report_Pro.PL
 
         private void M36_Click(object sender, EventArgs e)
         {
+
             openForm(new PL.UpdateAccData(), FormWindowState.Maximized, 0);
         }
 
@@ -1279,6 +1280,24 @@ namespace Report_Pro.PL
         private void M57_Click(object sender, EventArgs e)
         {
             openForm(new RPT.frm_rpt_Cut_off(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void M87_Click(object sender, EventArgs e)
+        {
+            openForm(new RPT.frm_LoansReport(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void M88_Click(object sender, EventArgs e)
+        {
+            openForm(new PL.frm_LoanPayment(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void buttonItem1_Click_2(object sender, EventArgs e)
+        {
+            openForm(new PL.frm_LoanPayment(), FormWindowState.Maximized, 0);
 
         }
     }

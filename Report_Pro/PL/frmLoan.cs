@@ -21,6 +21,17 @@ namespace Report_Pro.PL
         public frmLoan()
         {
             InitializeComponent();
+            txtLoanPurpose.DataSource = dal.getDataTabl_1(@"SELECT Id,Loan_Purpose,Loan_Purpose_E FROM LoanPurpose ");
+            txtLoanPurpose.ValueMember = "Id";
+            if (dal.languh_ == "0")
+            {
+                txtLoanPurpose.DisplayMember = "Loan_Purpose";
+            }
+            else
+            {
+                txtLoanPurpose.DisplayMember = "Loan_Purpose_E";
+            }
+            
         }
 
         private void BSave_Click(object sender, EventArgs e)
@@ -40,7 +51,7 @@ namespace Report_Pro.PL
                                     "',NumberOfPayments='" + NoOfPayments.Value + "',LoanValue='" + txtLoanValue.Value + "',PaymentNo='" + r.paySer.Value +
                                     "', PaymentValue='" + r.PayValue.Value + "',StartDate='" + r.startDate.Value.ToString("yyyy-MM-dd") +
                                     "', MaturityDate='" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "', Rate='" + r.intrestRate.Value +
-                                    "',LoanPurpose='"+txtLoanPurpose.SelectedIndex+"',LoanRefrance='" + txtLoanRefrance.Text +
+                                    "',LoanPurpose='"+ Convert.ToString(txtLoanPurpose.SelectedValue) + "',LoanRefrance='" + txtLoanRefrance.Text +
                                     "' where  id='" + txtLoanId.Text +"' and PaymentNo='" + r.paySer.Text + "' ");
                         MessageBox.Show(rm.GetString("msgEdit", cul), rm.GetString("msgEdit_H", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -52,7 +63,7 @@ namespace Report_Pro.PL
                             PaymentValue,StartDate,MaturityDate,Rate,LoanPurpose,LoanRefrance)
                             VALUES(  '" + txtLoanId.Text + "', '" + txtLoanNo.Text + "','" + BName.ID.Text + "','" + txtLoanAcc.ID.Text + "','" + NoOfPayments.Value +
                                     "','" + txtLoanValue.Value + "','" + r.paySer.Value + "','" + r.PayValue.Value + "','" + r.startDate.Value.ToString("yyyy-MM-dd") +
-                                    "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Value + "','"+ txtLoanPurpose.SelectedIndex+"','" + txtLoanRefrance.Text + "')");
+                                    "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Value + "','" + Convert.ToString( txtLoanPurpose.SelectedValue)+"', '" + txtLoanRefrance.Text + "')");
                         MessageBox.Show(rm.GetString("msgSave", cul), "تعديل ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }

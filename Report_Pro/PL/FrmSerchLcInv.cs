@@ -50,12 +50,9 @@ namespace Report_Pro.PL
             searchInv(txtSerch.Text);
         }
 
-        private void DGV1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+  
 
-        private void DGV1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DGV1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             this.Close();
         }

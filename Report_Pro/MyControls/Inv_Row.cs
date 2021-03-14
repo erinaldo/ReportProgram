@@ -26,7 +26,7 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                Unit.Text = "";
+                txtUnit.Text = "";
                 DataTable dt_ = dal.getDataTabl_1("SELECT item_no,descr,Descr_eng,isnull(Weight,0) as Weight,Unit,isnull(sale_price,0) as sale_price FROM wh_main_master where item_no = '" + ID.Text + "' or factory_no= '" + ID.Text + "' ");
                 if (ID.Text!="" && dt_.Rows.Count > 0)
                 {
@@ -34,8 +34,8 @@ namespace Report_Pro.MyControls
 
                     ID.Text= dt_.Rows[0]["item_no"].ToString();
                     Weight.Value = Convert.ToDouble(dt_.Rows[0]["Weight"].ToString());
-                
-                    Unit.SelectedText = dt_.Rows[0]["Unit"].ToString();
+
+                    txtUnit.SelectedText = dt_.Rows[0]["Unit"].ToString();
                     if (Properties.Settings.Default.lungh == "0")
                     {
                         Desc.Text = dt_.Rows[0]["descr"].ToString();
@@ -44,13 +44,14 @@ namespace Report_Pro.MyControls
                     {
                         Desc.Text = dt_.Rows[0]["Descr_eng"].ToString();
                     }
+                    txtNote.Focus();
                 }
                 else
                 {
 
                     Desc.Clear();
                     Weight.Value = 0;
-                    Unit.SelectedIndex=-1;
+                    txtUnit.SelectedIndex=-1;
                    
                 }
                 clculat_amount();
@@ -78,12 +79,13 @@ namespace Report_Pro.MyControls
             if (e.KeyCode == Keys.Enter )
             {
                 get_desc();
+                
             }
-            else
-            {
-                ID.Focus();
-                ID.SelectAll();
-            }
+            //else
+            //{
+            //    ID.Focus();
+            //    ID.SelectAll();
+            //}
            
         }
 
@@ -99,16 +101,21 @@ namespace Report_Pro.MyControls
 
         private void Inv_Row_Load(object sender, EventArgs e)
         {
-            Unit.DataSource = dal.getDataTabl_1("select * from wh_unit");
-            Unit.DisplayMember = "Wh_Unit";
-            Unit.ValueMember = "Wh_Unit";
-            Unit.SelectedIndex = -1;
+            //txtUnit.DataSource = dal.getDataTabl_1("select * from wh_unit");
+            //txtUnit.DisplayMember = "Wh_Unit";
+            //txtUnit.ValueMember = "Wh_Unit";
+            //txtUnit.SelectedIndex = -1;
 
         }
 
         private void Price_KeyDown(object sender, KeyEventArgs e)
         {
-            //OnKeyDown(e);
+            if (e.KeyCode == Keys.Enter && Price.Value > 0)
+            {
+                OnKeyDown(e);
+
+            }
+            
         }
 
         private void ID_Leave(object sender, EventArgs e)
@@ -120,7 +127,7 @@ namespace Report_Pro.MyControls
         {
             try
             {
-               TotalValue.Text = (Qty.Text.ToDecimal() * Price.Text.ToDecimal()).ToString("N" + dal.digits_);
+               txt_subTOt.Text = (Qty.Text.ToDecimal() * Price.Text.ToDecimal()).ToString("N" + dal.digits_);
                // Txtvalue.Text = (TxtQty.Text.ToDecimal() * TxtPrice.Text.ToDecimal() - TxtDisc.Text.ToDecimal()).ToString("N" + dal.digits_);
                 //VatValue.Text = (Txtvalue.Text.ToDecimal() * VatRate.Text.ToDecimal()).ToString("N" + dal.digits_);
                TotalWeight.Text = (Qty.Text.ToDecimal() * Weight.Text.ToDecimal()).ToString("N3");
@@ -139,6 +146,29 @@ namespace Report_Pro.MyControls
         private void Price_KeyUp(object sender, KeyEventArgs e)
         {
             clculat_amount();
+        }
+
+        private void Inv_Row_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txtNote_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Qty.Focus();
+
+            }
+        }
+
+        private void Qty_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && Qty.Value>0)
+            {
+                Price.Focus();
+
+            }
         }
     }
 }

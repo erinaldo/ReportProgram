@@ -29,13 +29,13 @@ namespace Report_Pro.PL
             try
 
             {
-                if (txt_VatNo.Text.Replace(" ", "").Length < 15 && txt_VatNo.Text.Trim() != string.Empty)
-                {
-                    MessageBox.Show("تأكد من الرقم الضريبي", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txt_VatNo.Focus();
-                    return;
+            //    if (txt_VatNo.Text.Replace(" ", "").Length < 15 && txt_VatNo.Text.Trim() != string.Empty)
+            //    {
+            //        MessageBox.Show("تأكد من الرقم الضريبي", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        txt_VatNo.Focus();
+            //        return;
 
-                }
+            //    }
                 string facility_;
                 if (ch_facility.Checked == true)
                 {
@@ -46,7 +46,7 @@ namespace Report_Pro.PL
                     facility_ = "NO";
                 }
 
-                dal.Execute_1("update payer2 set PAYER_NAME='"+Desc.Text+"',payer_l_name='"+ Desc_L.Text+"', adress='" + adress.Text + "' , COSTMER_K_M_NO='" + txt_VatNo.Text + "',notes='" + facility_ + "' ,E_MAIL='" + txtEmail.Text + "' where acc_no= '" + UC_Acc.ID.Text + "'");
+                dal.Execute_1("update payer2 set PAYER_NAME='" + Desc.Text + "',payer_l_name='" + Desc_L.Text + "', adress='" + adress.Text + "' , COSTMER_K_M_NO='" + txt_VatNo.Text + "',notes='" + facility_ + "' ,E_MAIL='" + txtEmail.Text + "',phone_no='" + txtTel.Text + "',resp_name='"+txtResponsaple.Text+"' where acc_no= '" + UC_Acc.ID.Text + "'");
                 dal.Execute_1("update wh_inv_data set adress='" + adress.Text + "', COSTMER_K_M_NO='" + txt_VatNo.Text + "' where acc_no= '" + UC_Acc.ID.Text + "'");
                 MessageBox.Show("تمت عملية التعديل بنجاح", "تأكيد التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -66,7 +66,7 @@ namespace Report_Pro.PL
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("select PAYER_NAME,payer_l_name,adress,COSTMER_K_M_NO,notes,E_Mail from payer2 where ACC_NO= '" + UC_Acc.ID.Text + "'   ");
+                DataTable dt_ = dal.getDataTabl_1("select PAYER_NAME,payer_l_name,adress,COSTMER_K_M_NO,notes,E_Mail,phone_no,resp_name from payer2 where ACC_NO= '" + UC_Acc.ID.Text + "'   ");
                 if (dt_.Rows.Count > 0)
                 {
                     Desc.Text = dt_.Rows[0][0].ToString();
@@ -74,34 +74,38 @@ namespace Report_Pro.PL
                     adress.Text = dt_.Rows[0][2].ToString();
                     txtEmail.Text = dt_.Rows[0]["E_MAIL"].ToString();
                     txt_VatNo.Text = dt_.Rows[0]["COSTMER_K_M_NO"].ToString();
-                if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 1)
-                {
-                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
-                }
-                else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 3)
-                {
-                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
-                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
-                }
-                else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 5)
-                {
-                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
-                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
-                    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
-                }
-                    else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length  > 7)
-                    {
-                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
-                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
-                    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
-                    txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6] + " " + Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[7];
-                    }
-                    else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length == 7)
-                {
-                    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
-                    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
-                    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
-                    txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6]; }
+                     txtTel.Text = dt_.Rows[0]["phone_no"].ToString();
+                     txtResponsaple.Text = dt_.Rows[0]["resp_name"].ToString();
+                     adress.Text = dt_.Rows[0]["adress"].ToString();
+
+                //if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 1)
+                //{
+                //    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                //}
+                //else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 3)
+                //{
+                //    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                //    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                //}
+                //else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length > 5)
+                //{
+                //    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                //    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                //    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
+                //}
+                //    else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length  > 7)
+                //    {
+                //    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                //    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                //    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
+                //    txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6] + " " + Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[7];
+                //    }
+                //    else if (Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ').Length == 7)
+                //{
+                //    txt_Building.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[1];
+                //    txt_Road.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[3];
+                //    txt_Block.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[5];
+                //    txt_Area.Text = Regex.Replace(dt_.Rows[0][2].ToString(), " {2,}", " ").Split(' ')[6]; }
 
                     
                     if (dt_.Rows[0][4].ToString().ToUpper() == "YES")
@@ -114,6 +118,9 @@ namespace Report_Pro.PL
                             ch_facility.Checked = false;
                         }
                     }
+
+                  
+
                    
                 }
                 else

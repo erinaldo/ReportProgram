@@ -100,18 +100,12 @@
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
-            this.labelX40 = new DevComponents.DotNetBar.LabelX();
-            this.txtTermsOfDelevry = new System.Windows.Forms.TextBox();
-            this.labelX10 = new DevComponents.DotNetBar.LabelX();
-            this.txtTermsOfPayment = new System.Windows.Forms.TextBox();
             this.labelX44 = new DevComponents.DotNetBar.LabelX();
             this.labelX26 = new DevComponents.DotNetBar.LabelX();
             this.txtSuppContact = new System.Windows.Forms.TextBox();
             this.labelX43 = new DevComponents.DotNetBar.LabelX();
             this.labelX42 = new DevComponents.DotNetBar.LabelX();
             this.labelX41 = new DevComponents.DotNetBar.LabelX();
-            this.labelX58 = new DevComponents.DotNetBar.LabelX();
-            this.txt_matu = new System.Windows.Forms.TextBox();
             this.txtcurrency = new System.Windows.Forms.ComboBox();
             this.txt_Rate = new DevComponents.Editors.DoubleInput();
             this.labelX59 = new DevComponents.DotNetBar.LabelX();
@@ -195,19 +189,29 @@
             this.chVAT = new System.Windows.Forms.CheckBox();
             this.chStop = new System.Windows.Forms.CheckBox();
             this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX46 = new DevComponents.DotNetBar.LabelX();
+            this.txt_transaction_code = new DevComponents.DotNetBar.LabelX();
+            this.labelX61 = new DevComponents.DotNetBar.LabelX();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtsearch = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX60 = new DevComponents.DotNetBar.LabelX();
             this.btn_Srearch = new System.Windows.Forms.Button();
             this.btn_Cancl = new System.Windows.Forms.Button();
+            this.labelX46 = new DevComponents.DotNetBar.LabelX();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelX51 = new DevComponents.DotNetBar.LabelX();
+            this.DelevryTearms = new System.Windows.Forms.ComboBox();
+            this.labelX62 = new DevComponents.DotNetBar.LabelX();
+            this.PaymentTearms = new System.Windows.Forms.ComboBox();
+            this.btnAddDelevery = new DevComponents.DotNetBar.ButtonX();
+            this.btnAddPayment = new DevComponents.DotNetBar.ButtonX();
+            this.ValidtyDays = new DevComponents.Editors.IntegerInput();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
+            this.Validty_Date = new System.Windows.Forms.DateTimePicker();
             this.txtApproveBY = new Report_Pro.MyControls.UC_cost();
             this.txtAauditBY = new Report_Pro.MyControls.UC_cost();
             this.txtBranch = new Report_Pro.MyControls.UC_Branch();
             this.txtSupplier = new Report_Pro.MyControls.UC_Acc();
             this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
-            this.txt_transaction_code = new DevComponents.DotNetBar.LabelX();
-            this.labelX61 = new DevComponents.DotNetBar.LabelX();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupPanel5.SuspendLayout();
@@ -230,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtQty)).BeginInit();
             this.groupPanel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ValidtyDays)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -804,8 +809,8 @@
             this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right)
-                        | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
             this.tabControlPanel2.Style.GradientAngle = 90;
             this.tabControlPanel2.TabItem = this.tabItem6;
             // 
@@ -829,8 +834,8 @@
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.Controls.Add(this.tabControlPanel1);
-            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
+            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
@@ -842,18 +847,21 @@
             // tabControlPanel1
             // 
             this.tabControlPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.tabControlPanel1.Controls.Add(this.labelX40);
-            this.tabControlPanel1.Controls.Add(this.txtTermsOfDelevry);
+            this.tabControlPanel1.Controls.Add(this.Validty_Date);
+            this.tabControlPanel1.Controls.Add(this.ValidtyDays);
             this.tabControlPanel1.Controls.Add(this.labelX10);
-            this.tabControlPanel1.Controls.Add(this.txtTermsOfPayment);
+            this.tabControlPanel1.Controls.Add(this.labelX51);
+            this.tabControlPanel1.Controls.Add(this.DelevryTearms);
+            this.tabControlPanel1.Controls.Add(this.labelX62);
+            this.tabControlPanel1.Controls.Add(this.PaymentTearms);
+            this.tabControlPanel1.Controls.Add(this.btnAddDelevery);
+            this.tabControlPanel1.Controls.Add(this.btnAddPayment);
             this.tabControlPanel1.Controls.Add(this.labelX44);
             this.tabControlPanel1.Controls.Add(this.labelX26);
             this.tabControlPanel1.Controls.Add(this.txtSuppContact);
             this.tabControlPanel1.Controls.Add(this.labelX43);
             this.tabControlPanel1.Controls.Add(this.labelX42);
             this.tabControlPanel1.Controls.Add(this.labelX41);
-            this.tabControlPanel1.Controls.Add(this.labelX58);
-            this.tabControlPanel1.Controls.Add(this.txt_matu);
             this.tabControlPanel1.Controls.Add(this.txtcurrency);
             this.tabControlPanel1.Controls.Add(this.txt_Rate);
             this.tabControlPanel1.Controls.Add(this.labelX59);
@@ -876,33 +884,11 @@
             this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right)
-                        | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
             this.tabControlPanel1.Style.GradientAngle = 90;
             this.tabControlPanel1.TabItem = this.tabItem5;
             this.tabControlPanel1.Click += new System.EventHandler(this.tabControlPanel1_Click_1);
-            // 
-            // labelX40
-            // 
-            resources.ApplyResources(this.labelX40, "labelX40");
-            this.labelX40.BackColor = System.Drawing.Color.Transparent;
-            this.labelX40.Name = "labelX40";
-            // 
-            // txtTermsOfDelevry
-            // 
-            resources.ApplyResources(this.txtTermsOfDelevry, "txtTermsOfDelevry");
-            this.txtTermsOfDelevry.Name = "txtTermsOfDelevry";
-            // 
-            // labelX10
-            // 
-            resources.ApplyResources(this.labelX10, "labelX10");
-            this.labelX10.BackColor = System.Drawing.Color.Transparent;
-            this.labelX10.Name = "labelX10";
-            // 
-            // txtTermsOfPayment
-            // 
-            resources.ApplyResources(this.txtTermsOfPayment, "txtTermsOfPayment");
-            this.txtTermsOfPayment.Name = "txtTermsOfPayment";
             // 
             // labelX44
             // 
@@ -941,17 +927,6 @@
             this.labelX41.BackColor = System.Drawing.Color.Transparent;
             this.labelX41.Name = "labelX41";
             // 
-            // labelX58
-            // 
-            resources.ApplyResources(this.labelX58, "labelX58");
-            this.labelX58.BackColor = System.Drawing.Color.Transparent;
-            this.labelX58.Name = "labelX58";
-            // 
-            // txt_matu
-            // 
-            resources.ApplyResources(this.txt_matu, "txt_matu");
-            this.txt_matu.Name = "txt_matu";
-            // 
             // txtcurrency
             // 
             resources.ApplyResources(this.txtcurrency, "txtcurrency");
@@ -968,7 +943,7 @@
             this.txt_Rate.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txt_Rate.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txt_Rate.DisplayFormat = "#,##0.000";
-            this.txt_Rate.Increment = 1;
+            this.txt_Rate.Increment = 1D;
             this.txt_Rate.Name = "txt_Rate";
             // 
             // labelX59
@@ -1051,8 +1026,8 @@
             this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
             this.tabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel3.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right)
-                        | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel3.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
             this.tabControlPanel3.Style.GradientAngle = 90;
             this.tabControlPanel3.TabItem = this.tabItem7;
             // 
@@ -1328,7 +1303,7 @@
             this.Price_ton.BackgroundStyle.Class = "DateTimeInputBackground";
             this.Price_ton.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.Price_ton.DisplayFormat = "#,##0";
-            this.Price_ton.Increment = 1;
+            this.Price_ton.Increment = 1D;
             this.Price_ton.Name = "Price_ton";
             // 
             // totWeight
@@ -1361,7 +1336,7 @@
             this.Weight_.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.Weight_.BackgroundStyle.Class = "DateTimeInputBackground";
             this.Weight_.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.Weight_.Increment = 1;
+            this.Weight_.Increment = 1D;
             this.Weight_.Name = "Weight_";
             // 
             // labelX55
@@ -1392,7 +1367,7 @@
             this.TxtDisc.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.TxtDisc.BackgroundStyle.Class = "DateTimeInputBackground";
             this.TxtDisc.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.TxtDisc.Increment = 1;
+            this.TxtDisc.Increment = 1D;
             this.TxtDisc.Name = "TxtDisc";
             this.TxtDisc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtDisc_KeyDown);
             this.TxtDisc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtDisc_KeyUp);
@@ -1411,7 +1386,7 @@
             this.TxtPrice.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.TxtPrice.BackgroundStyle.Class = "DateTimeInputBackground";
             this.TxtPrice.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.TxtPrice.Increment = 1;
+            this.TxtPrice.Increment = 1D;
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtPrice_KeyDown);
             this.TxtPrice.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtPrice_KeyUp);
@@ -1430,7 +1405,7 @@
             this.TxtQty.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.TxtQty.BackgroundStyle.Class = "DateTimeInputBackground";
             this.TxtQty.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.TxtQty.Increment = 1;
+            this.TxtQty.Increment = 1D;
             this.TxtQty.Name = "TxtQty";
             this.TxtQty.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtQty_KeyDown);
             this.TxtQty.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtQty_KeyUp);
@@ -1696,22 +1671,30 @@
             this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
-            // labelX46
+            // txt_transaction_code
             // 
-            resources.ApplyResources(this.labelX46, "labelX46");
-            this.labelX46.BackColor = System.Drawing.Color.Transparent;
-            this.labelX46.Name = "labelX46";
+            resources.ApplyResources(this.txt_transaction_code, "txt_transaction_code");
+            this.txt_transaction_code.BackColor = System.Drawing.Color.MistyRose;
+            this.txt_transaction_code.Name = "txt_transaction_code";
+            // 
+            // labelX61
+            // 
+            resources.ApplyResources(this.labelX61, "labelX61");
+            this.labelX61.BackColor = System.Drawing.Color.Transparent;
+            this.labelX61.Name = "labelX61";
             // 
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.Yellow;
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txtsearch);
             this.groupBox1.Controls.Add(this.labelX60);
             this.groupBox1.Controls.Add(this.btn_Srearch);
             this.groupBox1.Controls.Add(this.btn_Cancl);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtsearch
             // 
@@ -1742,6 +1725,85 @@
             this.btn_Cancl.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Cancl.Name = "btn_Cancl";
             this.btn_Cancl.UseVisualStyleBackColor = false;
+            // 
+            // labelX46
+            // 
+            resources.ApplyResources(this.labelX46, "labelX46");
+            this.labelX46.BackColor = System.Drawing.Color.Transparent;
+            this.labelX46.Name = "labelX46";
+            // 
+            // comboBox1
+            // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Name = "comboBox1";
+            // 
+            // labelX51
+            // 
+            resources.ApplyResources(this.labelX51, "labelX51");
+            this.labelX51.BackColor = System.Drawing.Color.Transparent;
+            this.labelX51.Name = "labelX51";
+            // 
+            // DelevryTearms
+            // 
+            resources.ApplyResources(this.DelevryTearms, "DelevryTearms");
+            this.DelevryTearms.FormattingEnabled = true;
+            this.DelevryTearms.Name = "DelevryTearms";
+            // 
+            // labelX62
+            // 
+            resources.ApplyResources(this.labelX62, "labelX62");
+            this.labelX62.BackColor = System.Drawing.Color.Transparent;
+            this.labelX62.Name = "labelX62";
+            // 
+            // PaymentTearms
+            // 
+            resources.ApplyResources(this.PaymentTearms, "PaymentTearms");
+            this.PaymentTearms.FormattingEnabled = true;
+            this.PaymentTearms.Name = "PaymentTearms";
+            // 
+            // btnAddDelevery
+            // 
+            this.btnAddDelevery.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            resources.ApplyResources(this.btnAddDelevery, "btnAddDelevery");
+            this.btnAddDelevery.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddDelevery.Image = ((System.Drawing.Image)(resources.GetObject("btnAddDelevery.Image")));
+            this.btnAddDelevery.ImageFixedSize = new System.Drawing.Size(30, 20);
+            this.btnAddDelevery.Name = "btnAddDelevery";
+            // 
+            // btnAddPayment
+            // 
+            this.btnAddPayment.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            resources.ApplyResources(this.btnAddPayment, "btnAddPayment");
+            this.btnAddPayment.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddPayment.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPayment.Image")));
+            this.btnAddPayment.ImageFixedSize = new System.Drawing.Size(30, 20);
+            this.btnAddPayment.Name = "btnAddPayment";
+            // 
+            // ValidtyDays
+            // 
+            resources.ApplyResources(this.ValidtyDays, "ValidtyDays");
+            // 
+            // 
+            // 
+            this.ValidtyDays.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.ValidtyDays.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.ValidtyDays.MaxValue = 10;
+            this.ValidtyDays.MinValue = 0;
+            this.ValidtyDays.Name = "ValidtyDays";
+            this.ValidtyDays.ShowUpDown = true;
+            this.ValidtyDays.Value = 3;
+            // 
+            // labelX10
+            // 
+            resources.ApplyResources(this.labelX10, "labelX10");
+            this.labelX10.BackColor = System.Drawing.Color.Transparent;
+            this.labelX10.Name = "labelX10";
+            // 
+            // Validty_Date
+            // 
+            resources.ApplyResources(this.Validty_Date, "Validty_Date");
+            this.Validty_Date.Name = "Validty_Date";
             // 
             // txtApproveBY
             // 
@@ -1776,18 +1838,6 @@
             resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
             this.Uc_Cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Uc_Cost.Name = "Uc_Cost";
-            // 
-            // txt_transaction_code
-            // 
-            resources.ApplyResources(this.txt_transaction_code, "txt_transaction_code");
-            this.txt_transaction_code.BackColor = System.Drawing.Color.MistyRose;
-            this.txt_transaction_code.Name = "txt_transaction_code";
-            // 
-            // labelX61
-            // 
-            resources.ApplyResources(this.labelX61, "labelX61");
-            this.labelX61.BackColor = System.Drawing.Color.Transparent;
-            this.labelX61.Name = "labelX61";
             // 
             // frm_PurchaseOrder
             // 
@@ -1833,6 +1883,7 @@
             this.groupPanel6.ResumeLayout(false);
             this.groupPanel6.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ValidtyDays)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1917,8 +1968,6 @@
         private DevComponents.DotNetBar.LabelX labelX43;
         private DevComponents.DotNetBar.LabelX labelX42;
         private DevComponents.DotNetBar.LabelX labelX41;
-        private DevComponents.DotNetBar.LabelX labelX58;
-        private System.Windows.Forms.TextBox txt_matu;
         private System.Windows.Forms.ComboBox txtcurrency;
         private DevComponents.Editors.DoubleInput txt_Rate;
         private DevComponents.DotNetBar.LabelX labelX59;
@@ -2006,10 +2055,6 @@
         private System.Windows.Forms.CheckBox chVAT;
         private System.Windows.Forms.CheckBox chStop;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel6;
-        private DevComponents.DotNetBar.LabelX labelX40;
-        private System.Windows.Forms.TextBox txtTermsOfDelevry;
-        private DevComponents.DotNetBar.LabelX labelX10;
-        private System.Windows.Forms.TextBox txtTermsOfPayment;
         private DevComponents.DotNetBar.LabelX labelX46;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevComponents.DotNetBar.Controls.TextBoxX txtsearch;
@@ -2018,5 +2063,15 @@
         private System.Windows.Forms.Button btn_Cancl;
         private DevComponents.DotNetBar.LabelX txt_transaction_code;
         private DevComponents.DotNetBar.LabelX labelX61;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private DevComponents.DotNetBar.LabelX labelX51;
+        private System.Windows.Forms.ComboBox DelevryTearms;
+        private DevComponents.DotNetBar.LabelX labelX62;
+        private System.Windows.Forms.ComboBox PaymentTearms;
+        private DevComponents.DotNetBar.ButtonX btnAddDelevery;
+        private DevComponents.DotNetBar.ButtonX btnAddPayment;
+        private DevComponents.Editors.IntegerInput ValidtyDays;
+        private DevComponents.DotNetBar.LabelX labelX10;
+        private System.Windows.Forms.DateTimePicker Validty_Date;
     }
 }

@@ -1,25 +1,35 @@
 <?xml version="1.0" standalone="yes"?>
-<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
-  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="month" type="xs:int" minOccurs="0" />
-              <xs:element name="cat_code" type="xs:string" minOccurs="0" />
-              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
-              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
+              <xs:element name="id" type="xs:int" minOccurs="0" />
+              <xs:element name="amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="kind" type="xs:string" minOccurs="0" />
+              <xs:element name="descr" type="xs:string" minOccurs="0" />
+              <xs:element name="branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="category_code" type="xs:string" minOccurs="0" />
+              <xs:element name="s_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="s_date_H" type="xs:string" minOccurs="0" />
+              <xs:element name="e_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="e_date_H" type="xs:string" minOccurs="0" />
+              <xs:element name="Acc_no_p" type="xs:string" minOccurs="0" />
+              <xs:element name="costCode" type="xs:string" minOccurs="0" />
+              <xs:element name="id1" type="xs:int" minOccurs="0" />
+              <xs:element name="P_ser" type="xs:int" minOccurs="0" />
+              <xs:element name="p_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="P_days" type="xs:int" minOccurs="0" />
+              <xs:element name="p_amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="p_year" type="xs:string" minOccurs="0" />
+              <xs:element name="p_Quarter" type="xs:string" minOccurs="0" />
+              <xs:element name="Recorded" type="xs:short" minOccurs="0" />
+              <xs:element name="Jor_No" type="xs:string" minOccurs="0" />
+              <xs:element name="C_Amount" type="xs:decimal" minOccurs="0" />
               <xs:element name="BRANCH_name" type="xs:string" minOccurs="0" />
-              <xs:element name="B_Salary" type="xs:decimal" minOccurs="0" />
-              <xs:element name="OverTime" type="xs:decimal" minOccurs="0" />
-              <xs:element name="bounse" type="xs:decimal" minOccurs="0" />
-              <xs:element name="iasha" type="xs:decimal" minOccurs="0" />
-              <xs:element name="transport" type="xs:decimal" minOccurs="0" />
-              <xs:element name="sakan" type="xs:decimal" minOccurs="0" />
-              <xs:element name="schoolFess" type="xs:decimal" minOccurs="0" />
-              <xs:element name="T_bank" type="xs:decimal" minOccurs="0" />
-              <xs:element name="loans" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

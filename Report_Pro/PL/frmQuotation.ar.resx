@@ -112,12 +112,30 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-   <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="تعديلToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 30</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 6</value>
+  </data>
+  <data name="حذفالسطرالحاليToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 30</value>
+  </data>
+  <data name="حذفالكلToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 30</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 100</value>
+  </data>
+  <data name="Lbl_position.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 19</value>
+  </data>
   <data name="BNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -316,7 +334,7 @@
 </value>
   </data>
   <data name="Btn_DelRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1082, 3</value>
+    <value>1076, 3</value>
   </data>
   <data name="Btn_DelRow.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 23</value>
@@ -325,13 +343,19 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="totalQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 7</value>
+    <value>234, 7</value>
+  </data>
+  <data name="totalQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
   </data>
   <data name="txtNetTotal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
   <data name="txtNetTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 7</value>
+    <value>-1, 7</value>
+  </data>
+  <data name="txtNetTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
   </data>
   <data name="labelX35.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -339,11 +363,17 @@
   <data name="labelX35.Location" type="System.Drawing.Point, System.Drawing">
     <value>100, 53</value>
   </data>
+  <data name="labelX35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 24</value>
+  </data>
   <data name="NetValue.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
   <data name="NetValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 51</value>
+    <value>-1, 51</value>
+  </data>
+  <data name="NetValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
   </data>
   <data name="labelX34.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -351,11 +381,17 @@
   <data name="labelX34.Location" type="System.Drawing.Point, System.Drawing">
     <value>338, 31</value>
   </data>
+  <data name="labelX34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 24</value>
+  </data>
   <data name="totalWeight.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
   <data name="totalWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 29</value>
+    <value>234, 29</value>
+  </data>
+  <data name="totalWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
   </data>
   <data name="labelX32.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -363,11 +399,17 @@
   <data name="labelX32.Location" type="System.Drawing.Point, System.Drawing">
     <value>100, 31</value>
   </data>
+  <data name="labelX32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 24</value>
+  </data>
   <data name="Net_Vat.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
   <data name="Net_Vat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 29</value>
+    <value>-1, 29</value>
+  </data>
+  <data name="Net_Vat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 27</value>
   </data>
   <data name="labelX22.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -375,95 +417,137 @@
   <data name="labelX22.Location" type="System.Drawing.Point, System.Drawing">
     <value>100, 9</value>
   </data>
+  <data name="labelX22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 24</value>
+  </data>
   <data name="labelX21.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
   <data name="labelX21.Location" type="System.Drawing.Point, System.Drawing">
     <value>338, 9</value>
   </data>
-  <data name="KM_TYPE_ITEMS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-137, 19</value>
+  <data name="labelX21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
   </data>
   <data name="Price_ton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 19</value>
+    <value>375, 19</value>
+  </data>
+  <data name="Price_ton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 27</value>
   </data>
   <data name="labelX11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 3</value>
+    <value>105, 3</value>
   </data>
   <data name="totWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 19</value>
+    <value>106, 19</value>
+  </data>
+  <data name="totWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 27</value>
   </data>
   <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>568, 3</value>
+    <value>562, 3</value>
   </data>
   <data name="txtUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>562, 19</value>
+    <value>556, 19</value>
+  </data>
+  <data name="txtUnitWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 27</value>
   </data>
   <data name="txtUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 19</value>
+    <value>617, 19</value>
+  </data>
+  <data name="txtUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 27</value>
   </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 3</value>
+    <value>617, 3</value>
   </data>
   <data name="TxtPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 19</value>
+    <value>436, 19</value>
+  </data>
+  <data name="TxtPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 27</value>
   </data>
   <data name="TxtQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 19</value>
+    <value>496, 19</value>
+  </data>
+  <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 27</value>
   </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 3</value>
+    <value>-4, 3</value>
   </data>
   <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 3</value>
+    <value>51, 3</value>
   </data>
   <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 19</value>
+    <value>49, 19</value>
+  </data>
+  <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 27</value>
   </data>
   <data name="txtCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 19</value>
+    <value>-8, 19</value>
+  </data>
+  <data name="txtCost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 27</value>
   </data>
   <data name="labelX33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 3</value>
+    <value>376, 3</value>
   </data>
   <data name="labelX16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 3</value>
+    <value>246, 3</value>
   </data>
   <data name="VatRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 19</value>
+    <value>249, 19</value>
+  </data>
+  <data name="VatRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 27</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>689, 3</value>
+    <value>683, 3</value>
   </data>
   <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 19</value>
+    <value>679, 19</value>
+  </data>
+  <data name="txtNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 27</value>
   </data>
   <data name="labelX19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 3</value>
+    <value>187, 3</value>
   </data>
   <data name="VatValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 19</value>
+    <value>183, 19</value>
+  </data>
+  <data name="VatValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 27</value>
   </data>
   <data name="labelX27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 3</value>
+    <value>291, 3</value>
   </data>
   <data name="labelX28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 3</value>
+    <value>436, 3</value>
   </data>
   <data name="Txtvalue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 19</value>
+    <value>291, 19</value>
+  </data>
+  <data name="Txtvalue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 27</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 3</value>
+    <value>496, 3</value>
   </data>
   <data name="labelX30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 3</value>
+    <value>924, 3</value>
   </data>
   <data name="labelX31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1231, 3</value>
+    <value>1225, 3</value>
   </data>
   <data name="TxtDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 19</value>
+    <value>924, 19</value>
+  </data>
+  <data name="TxtDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 27</value>
   </data>
   <data name="btn_braws.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -730,25 +814,181 @@
 </value>
   </data>
   <data name="btn_braws.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1291, 4</value>
+    <value>1285, 4</value>
   </data>
   <data name="TxtId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1229, 19</value>
+    <value>1223, 19</value>
+  </data>
+  <data name="TxtId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 27</value>
+  </data>
+  <data name="KM_TYPE_ITEMS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 146</value>
+  </data>
+  <data name="KM_TYPE_ITEMS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 27</value>
+  </data>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 16</value>
+  </data>
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 24</value>
+  </data>
+  <data name="txt_CustEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>615, 46</value>
+  </data>
+  <data name="txt_CustEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 27</value>
+  </data>
+  <data name="txt_custTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 14</value>
+  </data>
+  <data name="txt_custTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
+  </data>
+  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 48</value>
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 24</value>
+  </data>
+  <data name="labelX25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>726, 16</value>
+  </data>
+  <data name="labelX25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 24</value>
+  </data>
+  <data name="txt_custFax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>615, 14</value>
+  </data>
+  <data name="txt_custFax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 27</value>
+  </data>
+  <data name="Cust_Vat_No.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 48</value>
+  </data>
+  <data name="Cust_Vat_No.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 27</value>
+  </data>
+  <data name="labelX37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 48</value>
+  </data>
+  <data name="labelX37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 24</value>
+  </data>
+  <data name="Vat_Class.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 15</value>
+  </data>
+  <data name="Vat_Class.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 27</value>
+  </data>
+  <data name="labelX38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 17</value>
+  </data>
+  <data name="labelX38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 24</value>
+  </data>
+  <data name="Cust_Vat_Rate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 80</value>
+  </data>
+  <data name="Cust_Vat_Rate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 27</value>
+  </data>
+  <data name="labelX39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 81</value>
+  </data>
+  <data name="labelX39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
+  <data name="Vat_Class_Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 15</value>
+  </data>
+  <data name="Vat_Class_Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 27</value>
+  </data>
+  <data name="txt_address.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 25</value>
+  </data>
+  <data name="labelX47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, -5</value>
+  </data>
+  <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 24</value>
+  </data>
+  <data name="labelX48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 79</value>
+  </data>
+  <data name="labelX48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 24</value>
+  </data>
+  <data name="txt_area_code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>733, 78</value>
+  </data>
+  <data name="txt_area_code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 27</value>
+  </data>
+  <data name="labelX49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>677, 79</value>
+  </data>
+  <data name="labelX49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="txt_BoBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>623, 78</value>
+  </data>
+  <data name="txt_BoBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 27</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 29</value>
   </data>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 24</value>
+  </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 3</value>
   </data>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 24</value>
+  </data>
   <data name="txt_InvNu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 3</value>
+    <value>22, 3</value>
+  </data>
+  <data name="txt_InvNu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 27</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 112</value>
   </data>
+  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 24</value>
+  </data>
+  <data name="CashCust_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 27</value>
+  </data>
+  <data name="labelX46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 24</value>
+  </data>
+  <data name="labelX45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="txt_InvNot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 27</value>
+  </data>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 24</value>
+  </data>
+  <data name="Payment_Type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 27</value>
+  </data>
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 24</value>
+  </data>
   <data name="Doc_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, -3</value>
+    <value>175, -3</value>
   </data>
   <data name="Doc_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 43</value>
@@ -756,11 +996,14 @@
   <data name="labelX15.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 73</value>
   </data>
+  <data name="labelX15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
   <data name="txtStore_ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 74</value>
+    <value>28, 74</value>
   </data>
   <data name="txt_InvSM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-45, 112</value>
+    <value>-51, 112</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -770,43 +1013,55 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-12, 69</value>
+    <value>-3, 69</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 21</value>
+    <value>72, 27</value>
   </data>
   <data name="labelX41.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 40</value>
+  </data>
+  <data name="labelX41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 26</value>
   </data>
   <data name="txtSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 69</value>
   </data>
   <data name="txtSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 20</value>
+    <value>151, 27</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>901, 1</value>
+    <value>332, 13</value>
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 107</value>
   </data>
   <data name="AccType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 52</value>
+    <value>-5, 52</value>
   </data>
   <data name="txtBranchID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 92</value>
+    <value>28, 92</value>
   </data>
   <data name="labelX36.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 92</value>
   </data>
+  <data name="labelX36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 24</value>
+  </data>
   <data name="year_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 27</value>
+    <value>-5, 27</value>
   </data>
   <data name="Doc_Type.Location" type="System.Drawing.Point, System.Drawing">
     <value>100, 53</value>
   </data>
   <data name="userID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 112</value>
+    <value>80, 112</value>
   </data>
   <data name="labelX51.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 53</value>
+  </data>
+  <data name="labelX51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 24</value>
   </data>
   <data name="previous_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -826,7 +1081,7 @@
 </value>
   </data>
   <data name="previous_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 4</value>
+    <value>74, 4</value>
   </data>
   <data name="first_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -851,7 +1106,7 @@
 </value>
   </data>
   <data name="first_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 4</value>
+    <value>92, 4</value>
   </data>
   <data name="next_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -869,7 +1124,7 @@
 </value>
   </data>
   <data name="next_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 4</value>
+    <value>4, 4</value>
   </data>
   <data name="last_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -895,70 +1150,187 @@
 </value>
   </data>
   <data name="last_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-8, 4</value>
+    <value>-14, 4</value>
   </data>
   <data name="txt_InvDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 28</value>
+    <value>28, 28</value>
+  </data>
+  <data name="txt_InvDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 27</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 10</value>
+    <value>386, 10</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>947, 221</value>
   </data>
   <data name="cashCustomer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="cashCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 39</value>
+  </data>
   <data name="labelX42.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 96</value>
+  </data>
+  <data name="labelX42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 24</value>
   </data>
   <data name="txt_Bank.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="txt_Bank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 94</value>
+  </data>
+  <data name="txt_Bank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 27</value>
+  </data>
   <data name="labelX24.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 42</value>
+  </data>
+  <data name="labelX24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 24</value>
   </data>
   <data name="ValidtyDays.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="ValidtyDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 94</value>
+  </data>
+  <data name="ValidtyDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 27</value>
+  </data>
   <data name="labelX23.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 96</value>
+  </data>
+  <data name="labelX23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 24</value>
   </data>
   <data name="Validty_Date.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="Validty_Date.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 94</value>
+  </data>
+  <data name="Validty_Date.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 27</value>
+  </data>
   <data name="CustomerRef.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="CustomerRef.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="CustomerRef.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 27</value>
   </data>
   <data name="labelX40.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="labelX40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 21</value>
+  </data>
+  <data name="labelX40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 24</value>
+  </data>
   <data name="labelX26.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 71</value>
+  </data>
+  <data name="labelX26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 24</value>
   </data>
   <data name="DelevryTearms.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="DelevryTearms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 69</value>
+  </data>
+  <data name="DelevryTearms.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 27</value>
+  </data>
   <data name="labelX18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 46</value>
+  </data>
+  <data name="labelX18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
   </data>
   <data name="PaymentTearms.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="PaymentTearms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 44</value>
+  </data>
+  <data name="PaymentTearms.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 27</value>
+  </data>
   <data name="labelX14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 20</value>
+  </data>
+  <data name="labelX14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
   </data>
   <data name="PaymentType.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="PaymentType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 19</value>
+  </data>
+  <data name="PaymentType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 27</value>
+  </data>
   <data name="txt_attn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="txt_attn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 93</value>
+  </data>
+  <data name="txt_attn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 27</value>
   </data>
   <data name="المسئول.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="المسئول.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 93</value>
+  </data>
+  <data name="المسئول.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 24</value>
+  </data>
   <data name="labelX12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="labelX12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 19</value>
+  </data>
+  <data name="labelX12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 24</value>
+  </data>
   <data name="labelX13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="labelX13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>884, 70</value>
+  </data>
+  <data name="labelX13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 24</value>
   </data>
   <data name="btnAddDelevery.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1118,6 +1490,9 @@
         4ZqwHC4JVnCKM4d3mgPhAtj8ZMuSev37298d+H+XAf8D51VeS4gKYskAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnAddDelevery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 70</value>
+  </data>
   <data name="btnAddPayment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -1276,10 +1651,49 @@
         4ZqwHC4JVnCKM4d3mgPhAtj8ZMuSev37298d+H+XAf8D51VeS4gKYskAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnAddPayment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 45</value>
+  </data>
   <data name="Uc_cost.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
+  <data name="Uc_cost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 66</value>
+  </data>
   <data name="Uc_Acc.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
+  </data>
+  <data name="Uc_Acc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 14</value>
+  </data>
+  <data name="tabControlPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="tabControlPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>947, 189</value>
+  </data>
+  <data name="VAT_Acc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 84</value>
+  </data>
+  <data name="labelX20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 81</value>
+  </data>
+  <data name="labelX20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 24</value>
+  </data>
+  <data name="txtKmCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 80</value>
+  </data>
+  <data name="txtKmCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 27</value>
+  </data>
+  <data name="tabControlPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="tabControlPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>947, 189</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>

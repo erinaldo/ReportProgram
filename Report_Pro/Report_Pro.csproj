@@ -560,6 +560,12 @@
     <Compile Include="PL\frmLoan.Designer.cs">
       <DependentUpon>frmLoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmLoanPaymentSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmLoanPaymentSearch.Designer.cs">
+      <DependentUpon>frmLoanPaymentSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmLoanSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -673,6 +679,12 @@
     </Compile>
     <Compile Include="PL\frm_inputText.designer.cs">
       <DependentUpon>frm_inputText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_LoanPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_LoanPayment.Designer.cs">
+      <DependentUpon>frm_LoanPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Frm_Main.cs">
       <SubType>Form</SubType>
@@ -847,6 +859,12 @@
     </Compile>
     <Compile Include="PL\scanFrm.designer.cs">
       <DependentUpon>scanFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\UpdateAccData.cs">
       <SubType>Form</SubType>
@@ -1218,6 +1236,12 @@
     <EmbeddedResource Include="PL\frmLoan.resx">
       <DependentUpon>frmLoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmLoanPaymentSearch.ar.resx">
+      <DependentUpon>frmLoanPaymentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmLoanPaymentSearch.resx">
+      <DependentUpon>frmLoanPaymentSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmLoanSearch.ar.resx">
       <DependentUpon>frmLoanSearch.cs</DependentUpon>
     </EmbeddedResource>
@@ -1320,6 +1344,9 @@
     <EmbeddedResource Include="PL\frm_inputText.resx">
       <DependentUpon>frm_inputText.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_LoanPayment.resx">
+      <DependentUpon>frm_LoanPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Main.ar.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
@@ -1486,6 +1513,9 @@
       <DependentUpon>scanFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\UpdateAccData.ar.resx">
       <DependentUpon>UpdateAccData.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1563,6 +1593,9 @@
     <EmbeddedResource Include="RPT\frm_lcsRep.sq-AL.resx">
       <DependentUpon>frm_lcsRep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_LoansReport.resx">
+      <DependentUpon>frm_LoansReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_maintenance_SP_ByCustomer.resx">
       <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -1634,6 +1667,10 @@
     <EmbeddedResource Include="Reports\rpt_TotalStockByCategory.resx">
       <DependentUpon>rpt_TotalStockByCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_LoansBalance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LoansBalance.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_Maintenance_SP_ByCustomer_JO.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_Maintenance_SP_ByCustomer_JO.cs</LastGenOutput>
@@ -1641,6 +1678,14 @@
     <EmbeddedResource Include="RPT\rpt_Maintenance_SP_ByCustomer.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_Maintenance_SP_ByCustomer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_MonthelyProduction.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_MonthelyProduction.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_Preform_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Preform_Print.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_PrintInvoices.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2379,6 +2424,12 @@
     <Compile Include="RPT\frm_lcsRep.designer.cs">
       <DependentUpon>frm_lcsRep.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\frm_LoansReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_LoansReport.Designer.cs">
+      <DependentUpon>frm_LoansReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="RPT\frm_maintenance_SP_ByCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2451,6 +2502,12 @@
     <Compile Include="Reports\rpt_TotalStockByCategory.Designer.cs">
       <DependentUpon>rpt_TotalStockByCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\rpt_LoansBalance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LoansBalance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RPT\rpt_Maintenance_SP_ByCustomer_JO.cs">
       <DependentUpon>rpt_Maintenance_SP_ByCustomer_JO.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -2461,6 +2518,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rpt_Maintenance_SP_ByCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_MonthelyProduction.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_MonthelyProduction.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_Preform_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Preform_Print.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\rpt_PrintInvoices.cs">

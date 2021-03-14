@@ -41,7 +41,7 @@
             // 
             this.txtSerch.Location = new System.Drawing.Point(45, 12);
             this.txtSerch.Name = "txtSerch";
-            this.txtSerch.Size = new System.Drawing.Size(306, 22);
+            this.txtSerch.Size = new System.Drawing.Size(306, 30);
             this.txtSerch.TabIndex = 0;
             this.txtSerch.TextChanged += new System.EventHandler(this.txtSerch_TextChanged);
             // 
@@ -50,7 +50,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 15);
+            this.label1.Size = new System.Drawing.Size(38, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "بحث";
             // 
@@ -79,19 +79,18 @@
             this.DGV1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGV1.Location = new System.Drawing.Point(3, 18);
+            this.DGV1.Location = new System.Drawing.Point(3, 26);
             this.DGV1.MultiSelect = false;
             this.DGV1.Name = "DGV1";
             this.DGV1.ReadOnly = true;
             this.DGV1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV1.Size = new System.Drawing.Size(625, 165);
+            this.DGV1.Size = new System.Drawing.Size(625, 157);
             this.DGV1.TabIndex = 0;
-            this.DGV1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV1_CellClick);
-            this.DGV1.Click += new System.EventHandler(this.DGV1_Click);
+            this.DGV1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV1_CellDoubleClick);
             // 
             // FrmSerchLcInv
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 248);
             this.Controls.Add(this.groupBox1);

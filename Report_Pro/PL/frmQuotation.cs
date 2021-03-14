@@ -936,10 +936,6 @@ namespace Report_Pro.PL
             }
         }
 
-        private void Price_ton_ValueChanged(object sender, EventArgs e)
-        {
-            }
-
         private void Price_ton_KeyUp(object sender, KeyEventArgs e)
         {
           
@@ -1046,7 +1042,7 @@ namespace Report_Pro.PL
                 CustomerRef.Text = dt_Q.Rows[0][27].ToString();
                 txt_CustEmail.Text = dt_Q.Rows[0][30].ToString();
                 PaymentTearms.SelectedValue = dt_Q.Rows[0][32].ToString();
-                ValidtyDays.Value = Convert.ToInt32(dt_Q.Rows[0][33].ToString());
+                ValidtyDays.Value =dt_Q.Rows[0][33].ToString().ParseInt(0);
                 DelevryTearms.SelectedValue = dt_Q.Rows[0][35].ToString();
                 if (dt_Q.Rows[0][37] != DBNull.Value)
                 {

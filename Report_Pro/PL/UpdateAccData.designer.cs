@@ -29,14 +29,11 @@
         private void InitializeComponent()
         {
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.adress = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
-            this.Desc_L = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.ch_facility = new System.Windows.Forms.CheckBox();
             this.lbl_Building = new DevComponents.DotNetBar.LabelX();
             this.txt_Building = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -45,10 +42,17 @@
             this.txt_Road = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.lbl_Road = new DevComponents.DotNetBar.LabelX();
             this.txt_Area = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.txt_VatNo = new System.Windows.Forms.MaskedTextBox();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.txtEmail = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
+            this.labelX8 = new DevComponents.DotNetBar.LabelX();
+            this.Desc = new System.Windows.Forms.TextBox();
+            this.Desc_L = new System.Windows.Forms.TextBox();
+            this.adress = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txt_VatNo = new System.Windows.Forms.TextBox();
+            this.txtResponsaple = new System.Windows.Forms.TextBox();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,117 +60,79 @@
             // buttonX1
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(213, 160);
+            this.buttonX1.Location = new System.Drawing.Point(342, 227);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(77, 23);
+            this.buttonX1.Size = new System.Drawing.Size(93, 34);
             this.buttonX1.TabIndex = 2;
-            this.buttonX1.Text = "تحديث";
+            this.buttonX1.Text = "Update";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
-            // 
-            // Desc
-            // 
-            this.Desc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.Desc.Border.Class = "TextBoxBorder";
-            this.Desc.Location = new System.Drawing.Point(321, 61);
-            this.Desc.Name = "Desc";
-            this.Desc.Size = new System.Drawing.Size(259, 20);
-            this.Desc.TabIndex = 7;
-            // 
-            // adress
-            // 
-            this.adress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.adress.Border.Class = "TextBoxBorder";
-            this.adress.Location = new System.Drawing.Point(19, 111);
-            this.adress.Name = "adress";
-            this.adress.Size = new System.Drawing.Size(300, 20);
-            this.adress.TabIndex = 8;
             // 
             // labelX1
             // 
-            this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(586, 36);
+            this.labelX1.Location = new System.Drawing.Point(69, 23);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(43, 17);
+            this.labelX1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX1.Size = new System.Drawing.Size(40, 15);
             this.labelX1.TabIndex = 10;
-            this.labelX1.Text = "الحساب";
+            this.labelX1.Text = "Account";
             // 
             // labelX2
             // 
-            this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(586, 113);
+            this.labelX2.Location = new System.Drawing.Point(69, 100);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(36, 17);
+            this.labelX2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX2.Size = new System.Drawing.Size(40, 15);
             this.labelX2.TabIndex = 11;
-            this.labelX2.Text = "العنوان";
+            this.labelX2.Text = "Address";
             // 
             // labelX3
             // 
-            this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(187, 63);
+            this.labelX3.Location = new System.Drawing.Point(31, 204);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(68, 17);
+            this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX3.Size = new System.Drawing.Size(78, 15);
             this.labelX3.TabIndex = 13;
-            this.labelX3.Text = "الرقم الضريبي";
+            this.labelX3.Text = "Contact Persson";
             // 
             // labelX4
             // 
-            this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(586, 63);
+            this.labelX4.Location = new System.Drawing.Point(47, 50);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(96, 17);
+            this.labelX4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX4.Size = new System.Drawing.Size(62, 15);
             this.labelX4.TabIndex = 148;
-            this.labelX4.Text = "اسم الحساب عربي";
+            this.labelX4.Text = "Arabic Name";
             // 
             // labelX5
             // 
-            this.labelX5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX5.AutoSize = true;
             this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            this.labelX5.Location = new System.Drawing.Point(586, 88);
+            this.labelX5.Location = new System.Drawing.Point(42, 76);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(99, 17);
+            this.labelX5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX5.Size = new System.Drawing.Size(67, 15);
             this.labelX5.TabIndex = 149;
-            this.labelX5.Text = "اسم الحساب لاتيني";
-            // 
-            // Desc_L
-            // 
-            this.Desc_L.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.Desc_L.Border.Class = "TextBoxBorder";
-            this.Desc_L.Location = new System.Drawing.Point(321, 86);
-            this.Desc_L.Name = "Desc_L";
-            this.Desc_L.Size = new System.Drawing.Size(259, 20);
-            this.Desc_L.TabIndex = 150;
+            this.labelX5.Text = "English Name";
             // 
             // ch_facility
             // 
-            this.ch_facility.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ch_facility.AutoSize = true;
             this.ch_facility.BackColor = System.Drawing.Color.Transparent;
             this.ch_facility.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ch_facility.Location = new System.Drawing.Point(61, 88);
+            this.ch_facility.Location = new System.Drawing.Point(113, 227);
             this.ch_facility.Name = "ch_facility";
-            this.ch_facility.Size = new System.Drawing.Size(141, 17);
+            this.ch_facility.Size = new System.Drawing.Size(59, 17);
             this.ch_facility.TabIndex = 152;
-            this.ch_facility.Text = "تسهيلات ائتمانية معتمده";
+            this.ch_facility.Text = "Facility";
             this.ch_facility.UseVisualStyleBackColor = false;
             // 
             // lbl_Building
@@ -174,11 +140,12 @@
             this.lbl_Building.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Building.AutoSize = true;
             this.lbl_Building.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Building.Location = new System.Drawing.Point(338, 113);
+            this.lbl_Building.Location = new System.Drawing.Point(212, 271);
             this.lbl_Building.Name = "lbl_Building";
-            this.lbl_Building.Size = new System.Drawing.Size(44, 17);
+            this.lbl_Building.Size = new System.Drawing.Size(40, 15);
             this.lbl_Building.TabIndex = 153;
             this.lbl_Building.Text = "Building";
+            this.lbl_Building.Visible = false;
             this.lbl_Building.Click += new System.EventHandler(this.labelX6_Click);
             // 
             // txt_Building
@@ -188,10 +155,11 @@
             // 
             // 
             this.txt_Building.Border.Class = "TextBoxBorder";
-            this.txt_Building.Location = new System.Drawing.Point(385, 111);
+            this.txt_Building.Location = new System.Drawing.Point(259, 269);
             this.txt_Building.Name = "txt_Building";
             this.txt_Building.Size = new System.Drawing.Size(80, 20);
             this.txt_Building.TabIndex = 154;
+            this.txt_Building.Visible = false;
             this.txt_Building.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Building_KeyUp);
             // 
             // txt_Block
@@ -201,10 +169,11 @@
             // 
             // 
             this.txt_Block.Border.Class = "TextBoxBorder";
-            this.txt_Block.Location = new System.Drawing.Point(385, 137);
+            this.txt_Block.Location = new System.Drawing.Point(11, 271);
             this.txt_Block.Name = "txt_Block";
             this.txt_Block.Size = new System.Drawing.Size(80, 20);
             this.txt_Block.TabIndex = 156;
+            this.txt_Block.Visible = false;
             this.txt_Block.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Block_KeyUp);
             // 
             // lbl_Block
@@ -212,11 +181,12 @@
             this.lbl_Block.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Block.AutoSize = true;
             this.lbl_Block.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Block.Location = new System.Drawing.Point(350, 139);
+            this.lbl_Block.Location = new System.Drawing.Point(-24, 273);
             this.lbl_Block.Name = "lbl_Block";
-            this.lbl_Block.Size = new System.Drawing.Size(32, 17);
+            this.lbl_Block.Size = new System.Drawing.Size(27, 15);
             this.lbl_Block.TabIndex = 155;
             this.lbl_Block.Text = "Block";
+            this.lbl_Block.Visible = false;
             // 
             // txt_Road
             // 
@@ -225,23 +195,25 @@
             // 
             // 
             this.txt_Road.Border.Class = "TextBoxBorder";
-            this.txt_Road.Location = new System.Drawing.Point(505, 111);
+            this.txt_Road.Location = new System.Drawing.Point(379, 269);
             this.txt_Road.Name = "txt_Road";
             this.txt_Road.Size = new System.Drawing.Size(75, 20);
             this.txt_Road.TabIndex = 158;
-            this.txt_Road.TextChanged += new System.EventHandler(this.txt_Road_TextChanged);
+            this.txt_Road.Visible = false;
             this.txt_Road.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Road_KeyUp);
+            this.txt_Road.TextChanged += new System.EventHandler(this.txt_Road_TextChanged);
             // 
             // lbl_Road
             // 
             this.lbl_Road.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Road.AutoSize = true;
             this.lbl_Road.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Road.Location = new System.Drawing.Point(474, 113);
+            this.lbl_Road.Location = new System.Drawing.Point(348, 271);
             this.lbl_Road.Name = "lbl_Road";
-            this.lbl_Road.Size = new System.Drawing.Size(31, 17);
+            this.lbl_Road.Size = new System.Drawing.Size(26, 15);
             this.lbl_Road.TabIndex = 157;
             this.lbl_Road.Text = "Road";
+            this.lbl_Road.Visible = false;
             // 
             // txt_Area
             // 
@@ -250,53 +222,46 @@
             // 
             // 
             this.txt_Area.Border.Class = "TextBoxBorder";
-            this.txt_Area.Location = new System.Drawing.Point(471, 137);
+            this.txt_Area.Location = new System.Drawing.Point(97, 271);
             this.txt_Area.Name = "txt_Area";
             this.txt_Area.Size = new System.Drawing.Size(109, 20);
             this.txt_Area.TabIndex = 159;
+            this.txt_Area.Visible = false;
             this.txt_Area.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Area_KeyUp);
-            // 
-            // txt_VatNo
-            // 
-            this.txt_VatNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_VatNo.Culture = new System.Globalization.CultureInfo("");
-            this.txt_VatNo.HideSelection = false;
-            this.txt_VatNo.Location = new System.Drawing.Point(70, 61);
-            this.txt_VatNo.Mask = "00000-00000-00000";
-            this.txt_VatNo.Name = "txt_VatNo";
-            this.txt_VatNo.Size = new System.Drawing.Size(111, 20);
-            this.txt_VatNo.TabIndex = 160;
-            this.txt_VatNo.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // groupPanel1
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.labelX6);
-            this.groupPanel1.Controls.Add(this.txtEmail);
+            this.groupPanel1.Controls.Add(this.txtResponsaple);
             this.groupPanel1.Controls.Add(this.txt_VatNo);
+            this.groupPanel1.Controls.Add(this.txtTel);
+            this.groupPanel1.Controls.Add(this.txtEmail);
+            this.groupPanel1.Controls.Add(this.adress);
+            this.groupPanel1.Controls.Add(this.Desc_L);
+            this.groupPanel1.Controls.Add(this.Desc);
+            this.groupPanel1.Controls.Add(this.labelX8);
+            this.groupPanel1.Controls.Add(this.labelX7);
+            this.groupPanel1.Controls.Add(this.labelX6);
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Controls.Add(this.buttonX1);
             this.groupPanel1.Controls.Add(this.UC_Acc);
-            this.groupPanel1.Controls.Add(this.adress);
             this.groupPanel1.Controls.Add(this.ch_facility);
             this.groupPanel1.Controls.Add(this.labelX4);
-            this.groupPanel1.Controls.Add(this.txt_Area);
             this.groupPanel1.Controls.Add(this.labelX3);
-            this.groupPanel1.Controls.Add(this.Desc);
+            this.groupPanel1.Controls.Add(this.labelX5);
+            this.groupPanel1.Controls.Add(this.labelX2);
+            this.groupPanel1.Controls.Add(this.txt_Area);
             this.groupPanel1.Controls.Add(this.txt_Block);
             this.groupPanel1.Controls.Add(this.lbl_Road);
             this.groupPanel1.Controls.Add(this.lbl_Block);
             this.groupPanel1.Controls.Add(this.txt_Road);
             this.groupPanel1.Controls.Add(this.lbl_Building);
             this.groupPanel1.Controls.Add(this.txt_Building);
-            this.groupPanel1.Controls.Add(this.labelX5);
-            this.groupPanel1.Controls.Add(this.Desc_L);
-            this.groupPanel1.Controls.Add(this.labelX2);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(700, 232);
+            this.groupPanel1.Size = new System.Drawing.Size(487, 292);
             // 
             // 
             // 
@@ -321,36 +286,96 @@
             // 
             // labelX6
             // 
-            this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(586, 163);
+            this.labelX6.Location = new System.Drawing.Point(81, 152);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(37, 17);
+            this.labelX6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX6.Size = new System.Drawing.Size(28, 15);
             this.labelX6.TabIndex = 162;
-            this.labelX6.Text = "الايميل";
+            this.labelX6.Text = "Email";
+            // 
+            // labelX7
+            // 
+            this.labelX7.AutoSize = true;
+            this.labelX7.BackColor = System.Drawing.Color.Transparent;
+            this.labelX7.Location = new System.Drawing.Point(292, 178);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX7.Size = new System.Drawing.Size(20, 15);
+            this.labelX7.TabIndex = 164;
+            this.labelX7.Text = "Tel.";
+            // 
+            // labelX8
+            // 
+            this.labelX8.AutoSize = true;
+            this.labelX8.BackColor = System.Drawing.Color.Transparent;
+            this.labelX8.Location = new System.Drawing.Point(68, 177);
+            this.labelX8.Name = "labelX8";
+            this.labelX8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelX8.Size = new System.Drawing.Size(41, 15);
+            this.labelX8.TabIndex = 166;
+            this.labelX8.Text = "VAT No.";
+            // 
+            // Desc
+            // 
+            this.Desc.Location = new System.Drawing.Point(113, 47);
+            this.Desc.Name = "Desc";
+            this.Desc.Size = new System.Drawing.Size(322, 20);
+            this.Desc.TabIndex = 168;
+            // 
+            // Desc_L
+            // 
+            this.Desc_L.Location = new System.Drawing.Point(113, 73);
+            this.Desc_L.Name = "Desc_L";
+            this.Desc_L.Size = new System.Drawing.Size(322, 20);
+            this.Desc_L.TabIndex = 169;
+            // 
+            // adress
+            // 
+            this.adress.Location = new System.Drawing.Point(113, 99);
+            this.adress.Multiline = true;
+            this.adress.Name = "adress";
+            this.adress.Size = new System.Drawing.Size(322, 44);
+            this.adress.TabIndex = 170;
             // 
             // txtEmail
             // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.txtEmail.Border.Class = "TextBoxBorder";
-            this.txtEmail.Location = new System.Drawing.Point(321, 161);
+            this.txtEmail.Location = new System.Drawing.Point(113, 149);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(259, 20);
-            this.txtEmail.TabIndex = 161;
+            this.txtEmail.Size = new System.Drawing.Size(322, 20);
+            this.txtEmail.TabIndex = 171;
+            // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(315, 174);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(120, 20);
+            this.txtTel.TabIndex = 172;
+            // 
+            // txt_VatNo
+            // 
+            this.txt_VatNo.Location = new System.Drawing.Point(113, 173);
+            this.txt_VatNo.Name = "txt_VatNo";
+            this.txt_VatNo.Size = new System.Drawing.Size(128, 20);
+            this.txt_VatNo.TabIndex = 173;
+            // 
+            // txtResponsaple
+            // 
+            this.txtResponsaple.Location = new System.Drawing.Point(113, 201);
+            this.txtResponsaple.Name = "txtResponsaple";
+            this.txtResponsaple.Size = new System.Drawing.Size(322, 20);
+            this.txtResponsaple.TabIndex = 174;
             // 
             // UC_Acc
             // 
-            this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
             this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(258, 33);
+            this.UC_Acc.Location = new System.Drawing.Point(113, 19);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
             this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
+            this.UC_Acc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.UC_Acc.Size = new System.Drawing.Size(322, 23);
             this.UC_Acc.TabIndex = 151;
             this.UC_Acc.Load += new System.EventHandler(this.UC_Acc_Load);
@@ -359,12 +384,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 232);
+            this.ClientSize = new System.Drawing.Size(487, 292);
             this.Controls.Add(this.groupPanel1);
             this.KeyPreview = true;
             this.Name = "UpdateAccData";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "تحديث بيانات العملاء";
             this.Load += new System.EventHandler(this.UpdateAccData_Load);
@@ -377,14 +400,11 @@
         #endregion
 
         private DevComponents.DotNetBar.ButtonX buttonX1;
-        private DevComponents.DotNetBar.Controls.TextBoxX adress;
-        private DevComponents.DotNetBar.Controls.TextBoxX Desc;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.LabelX labelX5;
-        private DevComponents.DotNetBar.Controls.TextBoxX Desc_L;
         private MyControls.UC_Acc UC_Acc;
         private System.Windows.Forms.CheckBox ch_facility;
         private DevComponents.DotNetBar.LabelX lbl_Building;
@@ -394,9 +414,16 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txt_Road;
         private DevComponents.DotNetBar.LabelX lbl_Road;
         private DevComponents.DotNetBar.Controls.TextBoxX txt_Area;
-        private System.Windows.Forms.MaskedTextBox txt_VatNo;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.LabelX labelX6;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtEmail;
+        private DevComponents.DotNetBar.LabelX labelX8;
+        private DevComponents.DotNetBar.LabelX labelX7;
+        private System.Windows.Forms.TextBox txtResponsaple;
+        private System.Windows.Forms.TextBox txt_VatNo;
+        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox adress;
+        private System.Windows.Forms.TextBox Desc_L;
+        private System.Windows.Forms.TextBox Desc;
     }
 }

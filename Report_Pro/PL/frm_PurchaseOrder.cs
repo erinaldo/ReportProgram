@@ -15,7 +15,9 @@ namespace Report_Pro.PL
     public partial class frm_PurchaseOrder : Form
     {
         string btntype = "0";
+        string frmType = "ADD";
         Int32 m;
+        DataTable dt_Q;
         //string Jor_no;
         string btn_name;
         decimal old_balance, old_cost, new_balance, new_cost;
@@ -32,6 +34,8 @@ namespace Report_Pro.PL
 
             InitializeComponent();
 
+            comboBox1.DataSource = Enumerable.Range(1983, DateTime.Now.Year - 1983 + 1).ToList();
+            comboBox1.SelectedItem = DateTime.Now.Year;
 
             foreach (DataGridViewRow row in this.dGV_Item.Rows)
             {
@@ -283,10 +287,10 @@ values
     "','"+ txtRefrance.Text +
     "','"+ txt_CustEmail.Text+
     "','"+ Payment_Type.Text+
-    "','" + txt_matu.Text +
-    "','"+ txtTermsOfDelevry.Text+
+    "','" + ValidtyDays.Text +
+    "','"+ Convert.ToString(DelevryTearms.SelectedValue)+
     "','0','"+Convert.ToString(txtcurrency.SelectedValue)+
-    "','1','" + txtTermsOfPayment.Text+
+    "','1','" + Convert.ToString(PaymentTearms.SelectedValue) +
     "','" + Uc_Cost.ID.Text +
     "','" + txtAauditBY.ID.Text +
     "','" +txtBranch.ID.Text +
@@ -404,19 +408,29 @@ values
             string printModel = Properties.Settings.Default.inv_print;
             if (printModel == "1")
             {
-                RPT.Rpt_inv reportInv = new RPT.Rpt_inv();
+                RPT.rpt_SalesQuotation reportInv = new RPT.rpt_SalesQuotation();
                 RPT.Form1 frminv = new RPT.Form1();
-                reportInv.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
-               frminv.crystalReportViewer1.ReportSource = reportInv;
+                DataSet ds = new DataSet();
+                getQuotation(txt_InvNu.Text, txtStore_ID.Text, txt_transaction_code.Text, txt_InvDate.Value.ToString("yy"));
+                ds.Tables.Add(dt_Q);
+                ds.WriteXmlSchema("schema_rpt.xml");
+                reportInv.SetDataSource(ds);
+                //reportInv.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
+                frminv.crystalReportViewer1.ReportSource = reportInv;
                 frminv.ShowDialog();
             }
 
             else
 
             {
-                RPT.Rpt_inv_1 reportInv = new RPT.Rpt_inv_1();
+                RPT.rpt_SalesQuotation reportInv = new RPT.rpt_SalesQuotation();
                 RPT.Form1 frminv = new RPT.Form1();
-                reportInv.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
+                DataSet ds = new DataSet();
+                getQuotation(txt_InvNu.Text, txtStore_ID.Text, txt_transaction_code.Text, txt_InvDate.Value.ToString("yy"));
+                ds.Tables.Add(dt_Q);
+                ds.WriteXmlSchema("schema_rpt.xml");
+                reportInv.SetDataSource(ds);
+                //reportInv.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
                 frminv.crystalReportViewer1.ReportSource = reportInv;
                 frminv.ShowDialog();
             }
@@ -1131,10 +1145,122 @@ values
             }
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_Srearch_Click(object sender, EventArgs e)
         {
-            txt_InvNu.Text = txtsearch.Text;
-            groupBox1.Visible = false;
+            //txt_InvNu.Text = txtsearch.Text;
+            //groupBox1.Visible = false;
+
+           
+
+                frmType = "EDIT";
+
+//            dt_Q = dal.getDataTabl_1(@"select A.Ser_no,A.Branch_code,A.Transaction_code,A.Cyear,A.Sanad_no,A.G_date,A.Acc_no,A.Acc_Branch_code
+//,A.Payment_Type,A.Sales_man_Id,A.User_id,A.Po_Status,A.Po_Expire_Date,A.Cash_costomer_name,A.Costomer_adress
+//,A.Costomer_Phone,A.Costmer_fax,A.Ref,A.E_mail,A.TermsOfPayment,A.Validity,A.DelevryE,A.FORIN_TYPE
+//,A.COSTMER_K_M_NO,A.COMP_TAX_NO,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.total_disc,B.Local_Price,B.TAX_IN,B.TAX_OUT
+//,M.descr,M.Descr_eng,m.Weight,m.BALANCE ,K.KM_RATIO,
+//SP.Payment_name,SP.Notes,
+//            DP.DeLEVRY_Name,DP.DELEVER_NAME_E,U.USER_NAME
+//            from wh_Po_Cot_inv_data As A             
+//            Inner join wh_Po_Cot_MATERIAL_TRANSACTION As B
+//            on A.Ser_no = B.SER_NO and A.Branch_code = B.Branch_code AND A.Transaction_code = B.TRANSACTION_CODE AND A.Cyear = B.Cyear
+//            inner join wh_main_master AS M on M.item_no = B.ITEM_NO
+//            left join KM_MATERIAL_CODE As K on K.KM_CODE = ISNULL(NULLIF(M.KM_CODE, ''), 1)
+//            left join Sal_Pyment_type As SP on SP.Payment_type = A.termsOfPayment
+//            left join WH_PO_DELEVRY_CODE As DP on DP.DeLEVRY_CODE = A.DelevryE
+//            inner join wh_USERS As U on U.USER_ID = A.USER_ID
+//            where A.Ser_no = '" + txtsearch.Text + "'  and A.Branch_code = '" + txtStore_ID.Text + "'  and A.transaction_code = '" + txt_transaction_code.Text + "'  and A.cyear = '" + comboBox1.Text.Substring(comboBox1.Text.Length - 2) + "'");
+
+
+            getQuotation(txtsearch.Text, txtStore_ID.Text, txt_transaction_code.Text, comboBox1.Text.Substring(comboBox1.Text.Length - 2));
+
+            // DataTable dt_Q = dal.getDataTabl("Get_Po_Cot", txtSearch.Text, txtStore_ID.Text, Doc_Type.Text, txt_InvDate.Value.ToString("yy"),0,"");
+            if (dt_Q.Rows.Count > 0)
+                {
+                    txt_InvNu.Text = dt_Q.Rows[0]["Ser_no"].ToString();
+                    txt_InvDate.Text = dt_Q.Rows[0]["G_date"].ToString();
+                    txtSupplier.ID.Text = dt_Q.Rows[0]["Acc_no"].ToString();
+                    Payment_Type.SelectedValue = dt_Q.Rows[0]["Payment_Type"].ToString();
+                    Uc_Cost.ID.Text = dt_Q.Rows[0]["Sales_man_Id"].ToString();
+                    txt_address.Text = dt_Q.Rows[0]["Costomer_adress"].ToString();
+                    txt_custTel.Text = dt_Q.Rows[0]["Costomer_Phone"].ToString();
+                    txt_custFax.Text = dt_Q.Rows[0]["Costmer_fax"].ToString();
+                    txtRefrance.Text = dt_Q.Rows[0]["Ref"].ToString();
+                    txt_CustEmail.Text = dt_Q.Rows[0]["E_mail"].ToString();
+                    PaymentTearms.SelectedValue = dt_Q.Rows[0]["TermsOfPayment"].ToString();
+                    ValidtyDays.Value = dt_Q.Rows[0]["Validity"].ToString().ParseInt(0);
+                    DelevryTearms.SelectedValue = dt_Q.Rows[0]["DelevryE"].ToString();
+                    Vat_acc.Text = dt_Q.Rows[0]["K_M_ACC_NO"].ToString();     
+                    Net_Vat.Text = dt_Q.Rows[0]["K_M_Credit_TAX"].ToString();
+                    Cust_Vat_No.Text = dt_Q.Rows[0]["COSTMER_K_M_NO"].ToString();
+                    txtKmCode.Text = dt_Q.Rows[0]["KM_CODE_ACC"].ToString();
+                    Vat_Class.Text = dt_Q.Rows[0]["MAIN_KM_CODE"].ToString();
+                    txtSuppContact.Text = dt_Q.Rows[0]["Costomer_Notes"].ToString();
+                    if (dt_Q.Rows[0]["VAT_RATIO"].ToString() == string.Empty)
+                    { Cust_Vat_Rate.Text = "0.15"; }
+                    else
+                    {
+                        Cust_Vat_Rate.Text = dt_Q.Rows[0]["VAT_RATIO"].ToString().ToDecimal().ToString("N2");
+                    }
+                    Validty_Date.Value = txt_InvDate.Value.AddDays(ValidtyDays.Value);
+
+
+
+
+                    dt.Clear();
+                    int i = 0;
+                    DataRow row = null;
+                    foreach (DataRow r in dt_Q.Rows)
+                    {
+
+                        row = dt.NewRow();
+                        row[0] = dt_Q.Rows[i]["ITEM_NO"].ToString();
+                        if (Properties.Settings.Default.lungh == "0")
+                        {
+                            row[1] = dt_Q.Rows[i]["descr"].ToString();
+                        }
+                        else
+                        {
+                            row[1] = dt_Q.Rows[i]["Descr_eng"].ToString();
+                        }
+                        row[2] = dt_Q.Rows[i]["DETAILS"].ToString();
+                        row[3] = dt_Q.Rows[i]["Unit"].ToString();
+                        row[4] = dt_Q.Rows[i]["Weight"].ToString();
+                        row[5] = dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal().ToString("N2");
+                        row[6] = dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal().ToString("N" + dal.digits_);
+                        row[7] = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() / dt_Q.Rows[i]["Weight"].ToString().ToDecimal() * 1000).ToString("N0");
+                        row[8] = (dt_Q.Rows[i]["Local_Price"].ToString().ToDecimal() * dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal()).ToString("N" + dal.digits_); ;
+                        row[9] = dt_Q.Rows[i]["KM_RATIO"].ToString().ToDecimal().ToString("N2");
+                        row[10] = dt_Q.Rows[i]["TAX_OUT"].ToString().ToDecimal().ToString("N" + dal.digits_); ;
+                        row[11] = (dt_Q.Rows[i]["QTY_TAKE"].ToString().ToDecimal() * dt_Q.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
+                        row[12] = dt_Q.Rows[i]["BALANCE"].ToString().ToDecimal().ToString("N0");
+                        row[13] = dt_Q.Rows[i]["Pice_Total_Cost"].ToString().ToDecimal().ToString("N" + dal.digits_);
+                        row[14] = dt_Q.Rows[i]["K_M_TYPE_ITEMS"].ToString();
+                        dt.Rows.Add(row);
+                        i = i + 1;
+                    }
+                    dGV_Item.DataSource = dt;
+                    resizeDG();
+                    total_inv();
+                    txtsearch.Text = "";
+                    groupBox1.Visible = false;
+                    BSave.Enabled = false;
+                    BEdit.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("تاكد من الرقم", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+        
+
+
+
+
         }
 
         private void txtcurrency_SelectedIndexChanged(object sender, EventArgs e)
@@ -1149,15 +1275,39 @@ values
             { txt_Rate.Text = "0"; }
         }
 
-     
 
-      
 
-       
-      
+        private void getQuotation(string ser_, string branch_, string transaction_, string cyear_)
+        {
+            //try
+            //{ //, ReportDB.dbo.Tafkeet('+@4+', '''+@5+''')  from wh_Po_Cot_inv_data As A
+            dt_Q = dal.getDataTabl_1(@"select A.Ser_no,A.Branch_code,A.Transaction_code,A.Cyear,A.Sanad_no,A.G_date,A.Acc_no,A.Acc_Branch_code
+,A.Payment_Type,A.Sales_man_Id,A.User_id,A.Po_Status,A.Po_Expire_Date,A.Cash_costomer_name,A.Costomer_adress
+,A.Costomer_Phone,A.Costmer_fax,A.Ref,A.E_mail,A.TermsOfPayment,A.Validity,A.DelevryE,A.FORIN_TYPE
+,A.K_M_ACC_NO,A.K_M_Credit_TAX,A.COSTMER_K_M_NO,A.KM_CODE_ACC,A.MAIN_KM_CODE,A.Costomer_Notes,A.VAT_RATIO,A.COMP_TAX_NO
+,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.Unit,B.total_disc,B.Local_Price,B.TAX_IN,B.TAX_OUT,B.DETAILS,B.Pice_Total_Cost,B.K_M_TYPE_ITEMS
 
-      
-        
+,M.descr,M.Descr_eng,m.Weight,m.BALANCE ,K.KM_RATIO,
+SP.Payment_name,SP.Notes,
+            DP.DeLEVRY_Name,DP.DELEVER_NAME_E,U.USER_NAME
+            from wh_Po_Cot_inv_data As A             
+            Inner join wh_Po_Cot_MATERIAL_TRANSACTION As B
+            on A.Ser_no = B.SER_NO and A.Branch_code = B.Branch_code AND A.Transaction_code = B.TRANSACTION_CODE AND A.Cyear = B.Cyear
+            inner join wh_main_master AS M on M.item_no = B.ITEM_NO
+            left join KM_MATERIAL_CODE As K on K.KM_CODE = ISNULL(NULLIF(M.KM_CODE, ''), 1)
+            left join Sal_Pyment_type As SP on SP.Payment_type = A.termsOfPayment
+            left join WH_PO_DELEVRY_CODE As DP on DP.DeLEVRY_CODE = A.DelevryE
+            inner join wh_USERS As U on U.USER_ID = A.USER_ID
+            where A.Ser_no = '" + ser_ + "'  and A.Branch_code = '" + branch_ + "'  and A.transaction_code = '" + transaction_ + "'  and A.cyear = '" + cyear_ + "'");
+            //}
+            //catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+
+
+
+
+
+
     }
 }
 

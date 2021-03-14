@@ -118,8 +118,6 @@
             this.rdoPaied = new System.Windows.Forms.RadioButton();
             this.rdoNotPaied = new System.Windows.Forms.RadioButton();
             this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.recivePanel = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnRecive = new DevComponents.DotNetBar.ButtonX();
@@ -128,6 +126,8 @@
             this.rdoNotReceve = new System.Windows.Forms.RadioButton();
             this.reciveDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LShipDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiryDate)).BeginInit();
@@ -150,10 +150,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NoOfPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoanValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PayDate)).BeginInit();
-            this.tabControlPanel1.SuspendLayout();
             this.tabControlPanel2.SuspendLayout();
             this.recivePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reciveDate)).BeginInit();
+            this.tabControlPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonBar1
@@ -968,6 +968,7 @@
             this.btnAttach.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnAttach.Image = global::Report_Pro.Properties.Resources.iconfinder_attachment_3671672;
             this.btnAttach.Name = "btnAttach";
+            this.btnAttach.Click += new System.EventHandler(this.btnAttach_Click);
             // 
             // InvQty
             // 
@@ -1075,8 +1076,8 @@
             // 
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel1);
+            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
@@ -1493,26 +1494,6 @@
             this.tabItem3.Name = "tabItem3";
             resources.ApplyResources(this.tabItem3, "tabItem3");
             // 
-            // tabControlPanel1
-            // 
-            resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
-            this.tabControlPanel1.Controls.Add(this.groupPanel2);
-            this.tabControlPanel1.Name = "tabControlPanel1";
-            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel1.Style.GradientAngle = 90;
-            this.tabControlPanel1.TabItem = this.tabItem1;
-            // 
-            // tabItem1
-            // 
-            this.tabItem1.AttachedControl = this.tabControlPanel1;
-            this.tabItem1.Name = "tabItem1";
-            resources.ApplyResources(this.tabItem1, "tabItem1");
-            // 
             // tabControlPanel2
             // 
             resources.ApplyResources(this.tabControlPanel2, "tabControlPanel2");
@@ -1657,6 +1638,26 @@
             this.tabItem2.Name = "tabItem2";
             resources.ApplyResources(this.tabItem2, "tabItem2");
             // 
+            // tabControlPanel1
+            // 
+            resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
+            this.tabControlPanel1.Controls.Add(this.groupPanel2);
+            this.tabControlPanel1.Name = "tabControlPanel1";
+            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel1.Style.GradientAngle = 90;
+            this.tabControlPanel1.TabItem = this.tabItem1;
+            // 
+            // tabItem1
+            // 
+            this.tabItem1.AttachedControl = this.tabControlPanel1;
+            this.tabItem1.Name = "tabItem1";
+            resources.ApplyResources(this.tabItem1, "tabItem1");
+            // 
             // FrmLcInv
             // 
             resources.ApplyResources(this, "$this");
@@ -1696,11 +1697,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.NoOfPayments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoanValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PayDate)).EndInit();
-            this.tabControlPanel1.ResumeLayout(false);
             this.tabControlPanel2.ResumeLayout(false);
             this.recivePanel.ResumeLayout(false);
             this.recivePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reciveDate)).EndInit();
+            this.tabControlPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
