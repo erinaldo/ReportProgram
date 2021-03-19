@@ -321,5 +321,17 @@ namespace Report_Pro.Properties {
                 return ((string)(this["main_acc_whConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("8")]
+        public int font_ {
+            get {
+                return ((int)(this["font_"]));
+            }
+            set {
+                this["font_"] = value;
+            }
+        }
     }
 }

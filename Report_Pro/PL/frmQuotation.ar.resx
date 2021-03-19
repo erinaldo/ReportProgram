@@ -966,26 +966,11 @@
   <data name="CashCust_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>310, 27</value>
   </data>
-  <data name="labelX46.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 24</value>
-  </data>
-  <data name="labelX45.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
-  </data>
-  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 24</value>
-  </data>
   <data name="txt_InvNot.Size" type="System.Drawing.Size, System.Drawing">
     <value>310, 27</value>
   </data>
-  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 24</value>
-  </data>
   <data name="Payment_Type.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 27</value>
-  </data>
-  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 24</value>
   </data>
   <data name="Doc_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>175, -3</value>
@@ -1013,7 +998,7 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 69</value>
+    <value>20, 69</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 27</value>
@@ -1034,7 +1019,7 @@
     <value>332, 13</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 107</value>
+    <value>302, 107</value>
   </data>
   <data name="AccType.Location" type="System.Drawing.Point, System.Drawing">
     <value>-5, 52</value>
@@ -1157,12 +1142,6 @@
   </data>
   <data name="txt_InvDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 27</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 10</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>947, 221</value>
   </data>
   <data name="cashCustomer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -1693,7 +1672,10 @@
   <data name="tabControlPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>947, 189</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 10</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>947, 221</value>
   </data>
 </root>

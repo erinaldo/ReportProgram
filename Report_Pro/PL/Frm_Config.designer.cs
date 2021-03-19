@@ -31,6 +31,8 @@
             this.txtServer = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.fontSize = new DevComponents.Editors.IntegerInput();
+            this.label17 = new System.Windows.Forms.Label();
             this.txtCC = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cmbdigits = new DevComponents.Editors.IntegerInput();
@@ -75,6 +77,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fontSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbdigits)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -103,6 +106,8 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.fontSize);
+            this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.txtCC);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.cmbdigits);
@@ -118,6 +123,30 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "اعدادت البرنامج";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // fontSize
+            // 
+            // 
+            // 
+            // 
+            this.fontSize.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.fontSize.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.fontSize.Location = new System.Drawing.Point(649, 150);
+            this.fontSize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fontSize.Name = "fontSize";
+            this.fontSize.ShowUpDown = true;
+            this.fontSize.Size = new System.Drawing.Size(120, 27);
+            this.fontSize.TabIndex = 14;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(781, 155);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(78, 19);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "حجم الخط";
             // 
             // txtCC
             // 
@@ -603,6 +632,7 @@
             this.Load += new System.EventHandler(this.Frm_Config_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fontSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbdigits)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -660,6 +690,7 @@
         private System.Windows.Forms.TextBox txtCC;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button2;
-       
+        private DevComponents.Editors.IntegerInput fontSize;
+        private System.Windows.Forms.Label label17;
     }
 }

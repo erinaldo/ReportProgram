@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuotation));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.تعديلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -66,7 +66,6 @@
             this.labelX22 = new DevComponents.DotNetBar.LabelX();
             this.labelX21 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel7 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.KM_TYPE_ITEMS = new System.Windows.Forms.TextBox();
             this.Price_ton = new DevComponents.Editors.DoubleInput();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.totWeight = new System.Windows.Forms.TextBox();
@@ -96,6 +95,7 @@
             this.TxtDesc = new System.Windows.Forms.TextBox();
             this.btn_braws = new System.Windows.Forms.Button();
             this.TxtId = new System.Windows.Forms.TextBox();
+            this.KM_TYPE_ITEMS = new System.Windows.Forms.TextBox();
             this.dGV_Item = new System.Windows.Forms.DataGridView();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.txt_CustEmail = new System.Windows.Forms.TextBox();
@@ -156,6 +156,7 @@
             this.txt_InvDate = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.cashCustomer = new Report_Pro.MyControls.CashCustomer();
             this.labelX42 = new DevComponents.DotNetBar.LabelX();
             this.txt_Bank = new System.Windows.Forms.ComboBox();
             this.labelX24 = new DevComponents.DotNetBar.LabelX();
@@ -176,15 +177,14 @@
             this.labelX13 = new DevComponents.DotNetBar.LabelX();
             this.btnAddDelevery = new DevComponents.DotNetBar.ButtonX();
             this.btnAddPayment = new DevComponents.DotNetBar.ButtonX();
+            this.Uc_cost = new Report_Pro.MyControls.UC_cost();
+            this.Uc_Acc = new Report_Pro.MyControls.Uc_Customer();
             this.tabItem5 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.VAT_Acc = new DevComponents.DotNetBar.LabelX();
             this.labelX20 = new DevComponents.DotNetBar.LabelX();
             this.txtKmCode = new System.Windows.Forms.TextBox();
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.cashCustomer = new Report_Pro.MyControls.CashCustomer();
-            this.Uc_cost = new Report_Pro.MyControls.UC_cost();
-            this.Uc_Acc = new Report_Pro.MyControls.Uc_Customer();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupPanel5.SuspendLayout();
@@ -582,14 +582,6 @@
             this.groupPanel7.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel7.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
-            // KM_TYPE_ITEMS
-            // 
-            resources.ApplyResources(this.KM_TYPE_ITEMS, "KM_TYPE_ITEMS");
-            this.KM_TYPE_ITEMS.BackColor = System.Drawing.SystemColors.Info;
-            this.KM_TYPE_ITEMS.Name = "KM_TYPE_ITEMS";
-            this.KM_TYPE_ITEMS.ReadOnly = true;
-            this.KM_TYPE_ITEMS.TabStop = false;
-            // 
             // Price_ton
             // 
             resources.ApplyResources(this.Price_ton, "Price_ton");
@@ -890,6 +882,14 @@
             this.TxtId.Name = "TxtId";
             this.TxtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtId_KeyDown);
             // 
+            // KM_TYPE_ITEMS
+            // 
+            resources.ApplyResources(this.KM_TYPE_ITEMS, "KM_TYPE_ITEMS");
+            this.KM_TYPE_ITEMS.BackColor = System.Drawing.SystemColors.Info;
+            this.KM_TYPE_ITEMS.Name = "KM_TYPE_ITEMS";
+            this.KM_TYPE_ITEMS.ReadOnly = true;
+            this.KM_TYPE_ITEMS.TabStop = false;
+            // 
             // dGV_Item
             // 
             resources.ApplyResources(this.dGV_Item, "dGV_Item");
@@ -902,8 +902,8 @@
             this.dGV_Item.MultiSelect = false;
             this.dGV_Item.Name = "dGV_Item";
             this.dGV_Item.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.dGV_Item.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.dGV_Item.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dGV_Item.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGV_Item.DoubleClick += new System.EventHandler(this.dGV_Item_DoubleClick);
             // 
@@ -1428,6 +1428,13 @@
             this.tabControlPanel1.TabItem = this.tabItem5;
             this.tabControlPanel1.Click += new System.EventHandler(this.tabControlPanel1_Click);
             // 
+            // cashCustomer
+            // 
+            resources.ApplyResources(this.cashCustomer, "cashCustomer");
+            this.cashCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.cashCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cashCustomer.Name = "cashCustomer";
+            // 
             // labelX42
             // 
             resources.ApplyResources(this.labelX42, "labelX42");
@@ -1582,6 +1589,20 @@
             this.btnAddPayment.Name = "btnAddPayment";
             this.btnAddPayment.Click += new System.EventHandler(this.btnAddPayment_Click);
             // 
+            // Uc_cost
+            // 
+            resources.ApplyResources(this.Uc_cost, "Uc_cost");
+            this.Uc_cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_cost.Name = "Uc_cost";
+            // 
+            // Uc_Acc
+            // 
+            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
+            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Acc.Name = "Uc_Acc";
+            this.Uc_Acc.Load += new System.EventHandler(this.Uc_Acc_Load);
+            // 
             // tabItem5
             // 
             this.tabItem5.AttachedControl = this.tabControlPanel1;
@@ -1650,27 +1671,6 @@
             this.tabItem6.AttachedControl = this.tabControlPanel2;
             this.tabItem6.Name = "tabItem6";
             resources.ApplyResources(this.tabItem6, "tabItem6");
-            // 
-            // cashCustomer
-            // 
-            resources.ApplyResources(this.cashCustomer, "cashCustomer");
-            this.cashCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.cashCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.cashCustomer.Name = "cashCustomer";
-            // 
-            // Uc_cost
-            // 
-            resources.ApplyResources(this.Uc_cost, "Uc_cost");
-            this.Uc_cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_cost.Name = "Uc_cost";
-            // 
-            // Uc_Acc
-            // 
-            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
-            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Acc.Name = "Uc_Acc";
-            this.Uc_Acc.Load += new System.EventHandler(this.Uc_Acc_Load);
             // 
             // frmQuotation
             // 

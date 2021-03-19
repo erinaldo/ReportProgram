@@ -259,6 +259,12 @@
     <Compile Include="MyControls\CashCustomer .designer.cs">
       <DependentUpon>CashCustomer .cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\Inv_Grid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Inv_Grid.Designer.cs">
+      <DependentUpon>Inv_Grid.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\UC_Acc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -939,6 +945,9 @@
       <DependentUpon>CashCustomer .cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Inv_Grid.resx">
+      <DependentUpon>Inv_Grid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\LoanRow.ar.resx">
       <DependentUpon>LoanRow.cs</DependentUpon>
     </EmbeddedResource>
@@ -1350,15 +1359,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Main.ar.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Main.en.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_matrail_id.resx">
       <DependentUpon>frm_matrail_id.cs</DependentUpon>
@@ -1967,19 +1973,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lcOpenDocument.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPT\login_frm.ar-DZ.resx">
-      <DependentUpon>login_frm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="RPT\login_frm.ar.resx">
-      <DependentUpon>login_frm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\login_frm.en-US.resx">
-      <DependentUpon>login_frm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\login_frm.en.resx">
       <DependentUpon>login_frm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

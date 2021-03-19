@@ -72,6 +72,7 @@ namespace Report_Pro.RPT
 
                 PL.Frm_Main frm = new PL.Frm_Main();
                 frm.Show();
+                frm.Text +="- " +lblBranchCode.Text +" - " +lblBranchName.Text;
                 this.Hide();
 
                 Program.salesman = dt.Rows[0]["USER_NAME"].ToString();
@@ -152,8 +153,8 @@ namespace Report_Pro.RPT
                 DataTable dt = dal.getDataTabl_1(@"SELECT *  FROM wh_USERS  where USER_ID='" + textBox1.Text + "' and PASSWORD='" + textBox2.Text + "'");
                 if (dt.Rows.Count > 0)
                 {
-                    _acountsTb = dal.getDataTabl_1("SELECT * FROM wh_BRANCHES");
-                    PopulateTreeView("0", null);
+                    _acountsTb = dal.getDataTabl_1("select A.* from  wh_BRANCHES As A inner join Wh_users_branch As B on A.Branch_code =B.branch_code  where b.User_id = '" + textBox1.Text+"' ");
+                    PopulateTreeView_1("0", null);
                     TV1.SelectedNode = GetNodeByName(TV1.Nodes, dt.Rows[0][8].ToString());
 
 
@@ -223,6 +224,64 @@ namespace Report_Pro.RPT
                 PopulateTreeView(branch_, childNode);
             }
         }
+
+
+        private void PopulateTreeView_1(string parentId, TreeNode parentNode)
+        {
+            TV1.Nodes.Clear();
+            TreeNode childNode;
+            TreeNode node1 = new TreeNode("الفروع");
+            TV1.Nodes.Add(node1);
+            foreach (DataRow dr in _acountsTb.Select())
+            //.Select("[PREV_NO]= '" + parentId + "'"))
+            {
+
+                TreeNode t = new TreeNode();
+                string branch_ = dr["Branch_code"].ToString();
+                //if (string.IsNullOrEmpty(dr["Branch_code"].ToString()))
+                //{ branch_ = "0"; }
+                //else
+                //{
+                //    branch_ = dr["Branch_code"].ToString();
+                //}
+                t.Text = branch_ + " - " + dr["branch_name"].ToString();
+                t.Name = branch_;
+                t.Tag = _acountsTb.Rows.IndexOf(dr);
+                if (dr["t_final"].ToString() == "1")
+                {
+                    t.ImageIndex = 0;
+                    t.SelectedImageIndex = 1;
+                }
+                else
+                {
+                    t.ImageIndex = 2;
+                    t.SelectedImageIndex = 6;
+                }
+
+
+
+
+                if (parentNode == null)
+                {
+
+                    node1.Nodes.Add(t);
+                    childNode = t;
+                }
+                else
+                {
+
+                    parentNode.Nodes.Add(t);
+
+                    childNode = t;
+
+                }
+
+                PopulateTreeView(branch_, childNode);
+            }
+        }
+
+
+
 
 
 
@@ -404,6 +463,16 @@ namespace Report_Pro.RPT
         {
             DataRow r = _acountsTb.Rows[int.Parse(nod.Tag.ToString())];
             Properties.Settings.Default.BranchId = r[0].ToString();
+            lblBranchCode.Text= r[0].ToString();
+            if(Properties.Settings.Default.lungh == "0")
+            {
+                lblBranchName.Text = r[1].ToString();
+            }
+            else
+            {
+                lblBranchName.Text = r[2].ToString();
+            }
+            
             Properties.Settings.Default.BranchAccID = r[5].ToString();
             Properties.Settings.Default.TRANS_TO_ACC = r[13].ToString();
           

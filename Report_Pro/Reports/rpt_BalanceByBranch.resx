@@ -948,6 +948,12 @@
   <data name="ReportFooter.HeightF" type="System.Single, mscorlib">
     <value>63.5</value>
   </data>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 65</value>
+  </metadata>
+  <metadata name="backgroundWorker2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 113</value>
+  </metadata>
   <data name="PageFooter.Dpi" type="System.Single, mscorlib">
     <value>254</value>
   </data>

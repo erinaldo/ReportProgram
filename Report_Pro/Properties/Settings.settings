@@ -82,5 +82,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=mydell;Initial Catalog=main_acc_wh;integrated security=false; user id =  bilal ; password = hassan</Value>
     </Setting>
+    <Setting Name="font_" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

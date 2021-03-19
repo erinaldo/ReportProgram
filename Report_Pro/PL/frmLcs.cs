@@ -426,6 +426,7 @@ namespace Report_Pro.PL
             txtLcAcc.txtFinal.Text = "1";
 
             txtBranch.txtTfinal.Text = "1";
+           // txtBranch.txtUser.Text = Program.userID.ToString();
 
         }
 

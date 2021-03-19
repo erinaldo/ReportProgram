@@ -100,6 +100,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.dgv1);
             this.Controls.Add(this.Desc);
             this.Controls.Add(this.btn1);

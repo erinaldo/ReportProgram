@@ -33,7 +33,9 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1(@"select branch_name,WH_E_NAME,ACC_BRANCH from wh_BRANCHES  where T_final like '" + txtTfinal.Text+"%' and Branch_code='" + ID.Text + "' ");
+                DataTable dt_ = dal.getDataTabl_1(@"select A.branch_name,A.WH_E_NAME,A.ACC_BRANCH from  wh_BRANCHES As A inner join Wh_users_branch As B on A.Branch_code =B.branch_code
+                      where b.User_id = '" + Program.userID.ToString() + "' and t_final like '" + txtTfinal.Text + "%' and A.Branch_code='" + ID.Text + "'");
+                //select branch_name,WH_E_NAME,ACC_BRANCH from wh_BRANCHES  where T_final like '" + txtTfinal.Text+"%' and Branch_code='" + ID.Text + "' ");
                 if (dt_.Rows.Count > 0)
                 {
                     if (Properties.Settings.Default.lungh == "0")
@@ -72,11 +74,15 @@ namespace Report_Pro.MyControls
                 this.BringToFront();
                 if (Properties.Settings.Default.lungh == "0")
                 {
-                    dgv1.DataSource = dal.getDataTabl_1(@"select Branch_code,branch_name from  wh_BRANCHES where t_final like '"+txtTfinal.Text+"%' and branch_name like '%" + Desc.Text + "'+'%'  ");
+                    dgv1.DataSource = dal.getDataTabl_1(@"select A.Branch_code,A.branch_name from  wh_BRANCHES As A inner join Wh_users_branch As B on A.Branch_code =B.branch_code
+                      where b.User_id = '" + Program.userID.ToString() + "' and t_final like '" + txtTfinal.Text + "%' and branch_name like '%" + Desc.Text + "%'");
+                      //select Branch_code,branch_name from  wh_BRANCHES where t_final like '" + txtTfinal.Text+"%' and branch_name like '%" + Desc.Text + "'+'%'  ");
                 }
                 else
                 {
-                    dgv1.DataSource = dal.getDataTabl_1(@"select Branch_code,WH_E_NAME from wh_BRANCHES where t_final like '" + txtTfinal.Text + "%' and WH_E_NAME like '%" + Desc.Text + "'+'%'  ");
+                    dgv1.DataSource = dal.getDataTabl_1(@"select A.Branch_code,A.WH_E_NAME from  wh_BRANCHES As A inner join Wh_users_branch As B on A.Branch_code =B.branch_code
+                      where b.User_id = '" + Program.userID.ToString() + "' and t_final like '" + txtTfinal.Text + "%' and isnull(WH_E_NAME,'') like '%" + Desc.Text + "%'");
+//select Branch_code,WH_E_NAME from wh_BRANCHES where t_final like '" + txtTfinal.Text + "%' and isnull(WH_E_NAME,'') like '%" + Desc.Text + "'+'%'  ");
                 }
                     dgv1.Columns[0].Width = 72;
             }
@@ -146,7 +152,9 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1(@"select branch_name,WH_E_NAME,ACC_BRANCH from wh_BRANCHES  where T_final like '" + txtTfinal.Text + "%' and Branch_code='" + ID.Text + "' ");
+                DataTable dt_ = dal.getDataTabl_1(@"select A.branch_name,A.WH_E_NAME,A.ACC_BRANCH from  wh_BRANCHES As A inner join Wh_users_branch As B on A.Branch_code =B.branch_code
+                      where b.User_id = '" + Program.userID.ToString() + "' and t_final like '" + txtTfinal.Text + "%' and A.Branch_code='" + ID.Text + "'");
+                //select branch_name,WH_E_NAME,ACC_BRANCH from wh_BRANCHES  where T_final like '" + txtTfinal.Text + "%' and Branch_code='" + ID.Text + "' ");
                 if (dt_.Rows.Count > 0)
                 {
                     if (Properties.Settings.Default.lungh == "0")

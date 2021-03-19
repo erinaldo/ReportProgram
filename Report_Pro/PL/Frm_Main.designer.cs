@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.btn_ChangeYear = new DevComponents.DotNetBar.ButtonItem();
             this.M1 = new DevComponents.DotNetBar.ButtonItem();
             this.M11 = new DevComponents.DotNetBar.ButtonItem();
             this.M12 = new DevComponents.DotNetBar.ButtonItem();
@@ -80,7 +79,6 @@
             this.M54 = new DevComponents.DotNetBar.ButtonItem();
             this.M55 = new DevComponents.DotNetBar.ButtonItem();
             this.M56 = new DevComponents.DotNetBar.ButtonItem();
-            this.M57 = new DevComponents.DotNetBar.ButtonItem();
             this.M6 = new DevComponents.DotNetBar.ButtonItem();
             this.M61 = new DevComponents.DotNetBar.ButtonItem();
             this.M62 = new DevComponents.DotNetBar.ButtonItem();
@@ -103,7 +101,6 @@
             this.M714 = new DevComponents.DotNetBar.ButtonItem();
             this.M715 = new DevComponents.DotNetBar.ButtonItem();
             this.M716 = new DevComponents.DotNetBar.ButtonItem();
-            this.M717 = new DevComponents.DotNetBar.ButtonItem();
             this.M8 = new DevComponents.DotNetBar.ButtonItem();
             this.M81 = new DevComponents.DotNetBar.ButtonItem();
             this.M82 = new DevComponents.DotNetBar.ButtonItem();
@@ -111,9 +108,6 @@
             this.M84 = new DevComponents.DotNetBar.ButtonItem();
             this.M85 = new DevComponents.DotNetBar.ButtonItem();
             this.M86 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem9 = new DevComponents.DotNetBar.ButtonItem();
-            this.M87 = new DevComponents.DotNetBar.ButtonItem();
-            this.M88 = new DevComponents.DotNetBar.ButtonItem();
             this.M9 = new DevComponents.DotNetBar.ButtonItem();
             this.M91 = new DevComponents.DotNetBar.ButtonItem();
             this.M911 = new DevComponents.DotNetBar.ButtonItem();
@@ -148,6 +142,11 @@
             this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.M57 = new DevComponents.DotNetBar.ButtonItem();
+            this.M717 = new DevComponents.DotNetBar.ButtonItem();
+            this.M87 = new DevComponents.DotNetBar.ButtonItem();
+            this.M88 = new DevComponents.DotNetBar.ButtonItem();
+            this.M89 = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -166,7 +165,6 @@
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
             resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btn_ChangeYear,
             this.M1,
             this.M2,
             this.M3,
@@ -185,13 +183,6 @@
             this.ribbonBar1.TitleVisible = false;
             this.ribbonBar1.VerticalItemAlignment = DevComponents.DotNetBar.eVerticalItemsAlignment.Middle;
             this.ribbonBar1.ItemClick += new System.EventHandler(this.ribbonBar1_ItemClick);
-            // 
-            // btn_ChangeYear
-            // 
-            this.btn_ChangeYear.Name = "btn_ChangeYear";
-            this.btn_ChangeYear.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.btn_ChangeYear, "btn_ChangeYear");
-            this.btn_ChangeYear.Click += new System.EventHandler(this.btn_ChangeYear_Click);
             // 
             // M1
             // 
@@ -369,7 +360,6 @@
             // 
             this.buttonItem1.Name = "buttonItem1";
             resources.ApplyResources(this.buttonItem1, "buttonItem1");
-            this.buttonItem1.Click += new System.EventHandler(this.buttonItem1_Click_1);
             // 
             // M39
             // 
@@ -527,12 +517,6 @@
             this.M56.Name = "M56";
             resources.ApplyResources(this.M56, "M56");
             this.M56.Click += new System.EventHandler(this.M56_Click);
-            // 
-            // M57
-            // 
-            this.M57.Name = "M57";
-            resources.ApplyResources(this.M57, "M57");
-            this.M57.Click += new System.EventHandler(this.M57_Click);
             // 
             // M6
             // 
@@ -694,12 +678,6 @@
             resources.ApplyResources(this.M716, "M716");
             this.M716.Click += new System.EventHandler(this.M716_Click);
             // 
-            // M717
-            // 
-            this.M717.Name = "M717";
-            resources.ApplyResources(this.M717, "M717");
-            this.M717.Click += new System.EventHandler(this.M717_Click);
-            // 
             // M8
             // 
             this.M8.Name = "M8";
@@ -710,9 +688,9 @@
             this.M84,
             this.M85,
             this.M86,
-            this.buttonItem9,
             this.M87,
-            this.M88});
+            this.M88,
+            this.M89});
             this.M8.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.M8, "M8");
             this.M8.Click += new System.EventHandler(this.M8_Click);
@@ -752,25 +730,6 @@
             this.M86.Name = "M86";
             resources.ApplyResources(this.M86, "M86");
             this.M86.Click += new System.EventHandler(this.M86_Click);
-            // 
-            // buttonItem9
-            // 
-            this.buttonItem9.Name = "buttonItem9";
-            this.buttonItem9.OptionGroup = "M87";
-            resources.ApplyResources(this.buttonItem9, "buttonItem9");
-            this.buttonItem9.Click += new System.EventHandler(this.buttonItem9_Click);
-            // 
-            // M87
-            // 
-            this.M87.Name = "M87";
-            resources.ApplyResources(this.M87, "M87");
-            this.M87.Click += new System.EventHandler(this.M87_Click);
-            // 
-            // M88
-            // 
-            this.M88.Name = "M88";
-            resources.ApplyResources(this.M88, "M88");
-            this.M88.Click += new System.EventHandler(this.M88_Click);
             // 
             // M9
             // 
@@ -1034,6 +993,36 @@
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
             // 
+            // M57
+            // 
+            this.M57.Name = "M57";
+            resources.ApplyResources(this.M57, "M57");
+            this.M57.Click += new System.EventHandler(this.M57_Click);
+            // 
+            // M717
+            // 
+            this.M717.Name = "M717";
+            resources.ApplyResources(this.M717, "M717");
+            this.M717.Click += new System.EventHandler(this.M717_Click);
+            // 
+            // M87
+            // 
+            this.M87.Name = "M87";
+            resources.ApplyResources(this.M87, "M87");
+            this.M87.Click += new System.EventHandler(this.M87_Click);
+            // 
+            // M88
+            // 
+            this.M88.Name = "M88";
+            resources.ApplyResources(this.M88, "M88");
+            this.M88.Click += new System.EventHandler(this.M88_Click);
+            // 
+            // M89
+            // 
+            this.M89.Name = "M89";
+            resources.ApplyResources(this.M89, "M89");
+            this.M89.Click += new System.EventHandler(this.M89_Click);
+            // 
             // Frm_Main
             // 
             this.AllowDrop = true;
@@ -1179,12 +1168,11 @@
         private DevComponents.DotNetBar.ButtonItem buttonItem7;
         private DevComponents.DotNetBar.ButtonItem buttonItem8;
         private DevComponents.DotNetBar.ButtonItem M56;
-        private DevComponents.DotNetBar.ButtonItem buttonItem9;
         private DevComponents.DotNetBar.ButtonItem M27;
-        private DevComponents.DotNetBar.ButtonItem btn_ChangeYear;
-        private DevComponents.DotNetBar.ButtonItem M717;
         private DevComponents.DotNetBar.ButtonItem M57;
+        private DevComponents.DotNetBar.ButtonItem M717;
         private DevComponents.DotNetBar.ButtonItem M87;
         private DevComponents.DotNetBar.ButtonItem M88;
+        private DevComponents.DotNetBar.ButtonItem M89;
     }
 }

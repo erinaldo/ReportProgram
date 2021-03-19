@@ -87,7 +87,7 @@ namespace Report_Pro.PL
             txtCloseAcc.Text = Properties.Settings.Default.closeAcc;
             comboBox1.Text = Properties.Settings.Default.Currency;
             cmbdigits.Value = Properties.Settings.Default.digitNo_;
-
+            fontSize.Value = Properties.Settings.Default.font_;
         }
 
 
@@ -145,7 +145,7 @@ namespace Report_Pro.PL
             //Properties.Settings.Default.head_txt = company_name.Text;
             Properties.Settings.Default.EmailCC = txtCC.Text;
             Properties.Settings.Default.Currency =Convert.ToString(comboBox1.SelectedValue);
-
+            Properties.Settings.Default.font_ = fontSize.Value;
             Properties.Settings.Default.Save();
         }
 

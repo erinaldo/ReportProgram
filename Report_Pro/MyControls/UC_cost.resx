@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-   <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
@@ -126,7 +126,7 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 26</value>
+    <value>100, 27</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ID.TabIndex" type="System.Int32, mscorlib">
@@ -151,7 +151,7 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 27</value>
+    <value>40, 26</value>
   </data>
   <data name="btn1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -175,7 +175,7 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 26</value>
+    <value>340, 27</value>
   </data>
   <data name="Desc.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -193,13 +193,13 @@
     <value>1</value>
   </data>
   <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
+    <value>0, 28</value>
   </data>
   <data name="dgv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
   </data>
   <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 120</value>
+    <value>480, 114</value>
   </data>
   <data name="dgv1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -223,13 +223,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>9, 19</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 32</value>
+    <value>476, 23</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UC_cost</value>

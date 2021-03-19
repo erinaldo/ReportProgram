@@ -90,7 +90,7 @@ namespace Report_Pro.RPT
 
         private void Purchase_reports_Load(object sender, EventArgs e)
         {
-
+            //UC_Branch.txtUser.Text = Program.userID.ToString();
         }
 
         private void buttonX1_Click(object sender, EventArgs e)

@@ -232,11 +232,10 @@ namespace Report_Pro.DAL
 
         public void Execute_1(string sp)
         {
-            
-            close_1();
 
-            SqlCommand cmd = new SqlCommand();
+
             open_1();
+            SqlCommand cmd = new SqlCommand();
             cmd.CommandText = sp;
             cmd.CommandType = CommandType.Text;
             cmd.Connection = sqlconn_1;

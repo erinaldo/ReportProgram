@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Resources;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 //using Syncfusion.Pdf;
 //using Syncfusion.Pdf.Graphics;
@@ -38,17 +39,12 @@ namespace Report_Pro.PL
             comboBox1.DataSource = Enumerable.Range(1983, DateTime.Now.Year - 1983 + 1).ToList();
             comboBox1.SelectedItem = DateTime.Now.Year;
 
-            foreach (DataGridViewRow row in this.dGV_Item.Rows)
-            {
-                row.HeaderCell.Value = string.Format("{0}", row.Index + 1);
-                dGV_Item.EnableHeadersVisualStyles = false;
-            }
 
            
 
 
             creatDattable();
-            resizeDG();
+            //resizeDG();
 
 
 
@@ -105,8 +101,55 @@ namespace Report_Pro.PL
 
             }
             txtArivePort.SelectedIndex = -1;
+
+
+            txt_InvSM.Text = Program.salesman;
+            userID.Text = Program.userID;
+
         }
 
+
+        private void get_invSer()
+        {
+            //try
+            //{
+            DataTable dtSer = dal.getDataTabl_1(@"select isnull(per+1,1) from wh_Serial where Branch_code= '" + txtBranch.ID.Text + "' and Cyear='" + txtcyear.Text + "'");
+            if (dtSer.Rows.Count > 0)
+            {
+               txtId.Text =dtSer.Rows[0][0].ToString();
+            }
+            else
+            {
+                txtId.Text = "1";
+            }
+
+            //}
+            //catch { }
+
+
+        }
+
+        private void updateSer()
+        {
+            //try
+            //{
+            DataTable dtSer = dal.getDataTabl_1(@"select isnull(per+1,1) from wh_Serial where Branch_code= '" + txtBranch.ID.Text + "' and Cyear='" + txtcyear.Text + "'");
+            if (dtSer.Rows.Count > 0)
+            {
+                dal.Execute_1(@"UPDATE  wh_Serial SET  PER= '" + txtId.Text + "' WHERE Branch_code = '" + txtBranch.ID.Text + "' and Cyear='" + txtDate.Value.ToString("yy") + "' ");
+
+            }
+            else
+            {
+                dal.Execute_1(@"INSERT INTO wh_Serial (Branch_code,Cyear,PER) Values('" + txtBranch.ID.Text + "' ,'" + txtDate.Value.ToString("yy") + "','" + txtId.Text + "')");
+
+                //}
+                //catch { }
+
+
+            }
+
+        }
 
 
         void creatDattable()
@@ -128,33 +171,33 @@ namespace Report_Pro.PL
             dt.Columns.Add("الرصيد");
             dt.Columns.Add("التكلفة");
             dt.Columns.Add("كود القيمة المضافة");
-            dGV_Item.DataSource = dt;
+           // dGV_Item.DataSource = dt;
         }
 
-        void resizeDG()
-        {
+        //void resizeDG()
+        //{
 
-            this.dGV_Item.Columns[0].Width = this.txtId.Width;
-            this.dGV_Item.Columns[1].Width = this.TxtDesc.Width;
-            this.dGV_Item.Columns[2].Width = this.txtNote.Width;
-            this.dGV_Item.Columns[3].Width = this.txtUnit.Width;
-            this.dGV_Item.Columns[4].Width = this.Weight_.Width;
-            this.dGV_Item.Columns[5].Width = this.qty.Width;
-            this.dGV_Item.Columns[6].Width = this.TxtPrice.Width;
-            this.dGV_Item.Columns[7].Width = this.Price_ton.Width;
-            this.dGV_Item.Columns[8].Width = this.txt_subTOt.Width;
-            this.dGV_Item.Columns[9].Width = this.TxtDisc.Width;
-            this.dGV_Item.Columns[10].Width = this.Txtvalue.Width;
+        //    this.dGV_Item.Columns[0].Width = this.txtId.Width;
+        //    this.dGV_Item.Columns[1].Width = this.TxtDesc.Width;
+        //    this.dGV_Item.Columns[2].Width = this.txtNote.Width;
+        //    this.dGV_Item.Columns[3].Width = this.txtUnit.Width;
+        //    this.dGV_Item.Columns[4].Width = this.Weight_.Width;
+        //    this.dGV_Item.Columns[5].Width = this.qty.Width;
+        //    this.dGV_Item.Columns[6].Width = this.totWeight.Width;
+        //    this.dGV_Item.Columns[7].Width = this.TxtPrice.Width;
+        //    this.dGV_Item.Columns[8].Width = this.Price_ton.Width;
+        //    this.dGV_Item.Columns[9].Width = this.txt_subTOt.Width;
+        //    this.dGV_Item.Columns[10].Width = this.TxtDisc.Width;
+        //    this.dGV_Item.Columns[11].Width = this.Txtvalue.Width;
 
-            this.dGV_Item.Columns[11].Width = this.VatRate.Width;
-            this.dGV_Item.Columns[12].Width = this.VatValue.Width;
-            this.dGV_Item.Columns[13].Width = this.totWeight.Width;
-            this.dGV_Item.Columns[14].Width = this.txtBalance.Width;
-            this.dGV_Item.Columns[15].Width = this.txtCost.Width;
-            this.dGV_Item.Columns[16].Visible = false;
+        //    this.dGV_Item.Columns[12].Width = this.VatRate.Width;
+        //    this.dGV_Item.Columns[13].Width = this.VatValue.Width;
+        //    this.dGV_Item.Columns[14].Width = this.txtBalance.Width;
+        //    this.dGV_Item.Columns[15].Width = this.txtCost.Width;
+        //    this.dGV_Item.Columns[16].Visible = false;
 
 
-        }
+        //}
         private void ClearTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -174,14 +217,20 @@ namespace Report_Pro.PL
                         (control as DevComponents.Editors.DateTimeAdv.DateTimeInput).Text = "";
                     else if (control is DataGridView)
                         (control as DataGridView).DataSource = null;
-
-
+                    else if (control is FlowLayoutPanel)
+                        (control as FlowLayoutPanel).Controls.Clear();
+                    else if (control is DevComponents.DotNetBar.Controls.CheckBoxX)
+                        (control as DevComponents.DotNetBar.Controls.CheckBoxX).Checked = false;
 
                     else
                         func(control.Controls);
             };
 
             func(Controls);
+
+
+           // inv_Grid1.flowLayoutPanel1.Controls.Clear();
+
         }
 
 
@@ -191,7 +240,7 @@ namespace Report_Pro.PL
 
 
 
-       
+
 
 
 
@@ -266,8 +315,17 @@ namespace Report_Pro.PL
         private void BNew_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
+
+            MyControls.Inv_Row r = new MyControls.Inv_Row();
+            inv_Grid1.flowLayoutPanel1.Controls.Add(r);
+            r.Ser.Text = (inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+            r.KeyDown += r_KeyDown;
+
+
             BSave.Enabled = true;
-            BEdit.Enabled = false;
+            //BEdit.Enabled = false;
+            txtBranch.Enabled = true;
+
         }
 
 
@@ -284,41 +342,29 @@ namespace Report_Pro.PL
 
         private void frmLcs_Load(object sender, EventArgs e)
         {
+            txtBranch.ID.Text = Properties.Settings.Default.BranchId;
             txtSupplier.txtMainAcc.Text = "234";
             txtSupplier.txtFinal.Text = "1";
-            txtLcAcc.txtMainAcc.Text = "125";
+            //txtLcAcc.txtMainAcc.Text = "";
             txtLcAcc.txtFinal.Text = "1";
-
+            Bank_.txtMainAcc.Text = "1221";
+            Bank_.txtFinal.Text = "1";
             txtBranch.txtTfinal.Text = "1";
-            MyControls.Inv_Row row = new MyControls.Inv_Row();
-
-           
-
-
-       
-
-
-
-
-
-
-
+            txtDate.Value = DateTime.Today;
+            txtcyear.Text = txtDate.Value.ToString("yy");
+            get_invSer();
+            foreach(MyControls.Inv_Row r in inv_Grid1.flowLayoutPanel1.Controls)
+            {
+                r.VatAccRate.Text = Acc_Vat_Rate.Text;
+            }
+            
 
 
         }
 
       
 
-        //private UsersGrid selectedUser;
-
-        //void user_click(object sender, EventArgs e)
-        //{
-        //    if (selectedUser != null)
-        //        selectedUser.BorderStyle = BorderStyle.None;
-        //    selectedUser = (UsersGrid)sender;
-        //    selectedUser.BorderStyle = BorderStyle.FixedSingle;
-        //}
-
+      
 
 
 
@@ -345,10 +391,37 @@ namespace Report_Pro.PL
         private void txtSupplier_Load(object sender, EventArgs e)
         {
 
-            DataTable dtSupp = dal.getDataTabl_1("select adress from payer2 where acc_no='" + txtSupplier.ID.Text + "'");
+            DataTable dtSupp = dal.getDataTabl_1("select adress,resp_name,COSTMER_K_M_NO,phone_no,E_MAIL from payer2 where acc_no='" + txtSupplier.ID.Text + "' and BRANCH_code='"+txtSupplier.branchID.Text+"'");
             if (dtSupp.Rows.Count > 0)
             {
                 txtAddress.Text = dtSupp.Rows[0]["adress"].ToString();
+                txtSuppContact.Text = dtSupp.Rows[0]["resp_name"].ToString();
+                txtSuppVAT.Text = dtSupp.Rows[0]["COSTMER_K_M_NO"].ToString();
+                txtSuppPhone.Text = dtSupp.Rows[0]["phone_no"].ToString();
+                txtSuppEmail.Text = dtSupp.Rows[0]["E_MAIL"].ToString();
+                Vat_Class.Text = txtSupplier.KM_Code_Purch.Text;
+                Vat_Class_Desc.Text = txtSupplier.KM_Desc_Purch.Text;
+                Acc_Vat_Rate.Text = txtSupplier.KM_Ratio_Purch.Text;
+                inv_Grid1.txtAccVat_Rate.Text= txtSupplier.KM_Ratio_Purch.Text;
+
+            }
+            else
+            {
+                txtAddress.Clear();     
+                txtSuppContact.Clear(); 
+                txtSuppVAT.Clear();     
+                txtSuppPhone.Clear();   
+                txtSuppEmail.Clear();   
+                Vat_Class.Clear();      
+                Vat_Class_Desc.Clear(); 
+                Acc_Vat_Rate.Clear();
+                inv_Grid1.txtAccVat_Rate.Clear();
+            }
+            foreach (MyControls.Inv_Row r in inv_Grid1.flowLayoutPanel1.Controls)
+            {
+               r.VatAccRate.Text = Acc_Vat_Rate.Text;
+                r.VatValue.Text = ((r.VatRate.Text.ToDecimal() <= r.VatAccRate.Text.ToDecimal() ? r.VatRate.Text : r.VatAccRate.Text).ToDecimal() * r.Txtvalue.Text.ToDecimal()).ToString("N" + dal.digits_);
+
             }
         }
 
@@ -377,43 +450,244 @@ namespace Report_Pro.PL
 
         private void frm_PreformaInvoice_KeyDown(object sender, KeyEventArgs e)
         {
-           
+            if (e.KeyCode == Keys.Enter)
+            {
+                foreach (MyControls.Inv_Row inv_r in inv_Grid1.flowLayoutPanel1.Controls)
+                {
+                    inv_r.Ser.Text = (inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(inv_r) + 1).ToString();
+
+                    if (inv_r.txt_Code.Text == string.Empty)
+                    {
+                        inv_r.Dispose();
+
+                    }
+
+
+                }
+                MyControls.Inv_Row r = new MyControls.Inv_Row();
+                inv_Grid1.flowLayoutPanel1.Controls.Add(r);
+                r.Ser.Text = (inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                r.VatAccRate.Text = Acc_Vat_Rate.Text;
+                r.txt_Code.Focus();
+                r.KeyDown += r_KeyDown;
+                r.KeyUp += r_KeyUp;
+            }
         }
 
-        private void inv_Row4_Load(object sender, EventArgs e)
+
+
+        private void r_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
 
-            //r.paySer.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
-            //r.intrestRate.Value = txtIntrestRate.Value;
+            OnKeyDown(e);
         }
 
 
-
-        private void flowLayoutPanel1_Click(object sender, EventArgs e)
-        {
-            //MyControls.Inv_Row r = new MyControls.Inv_Row();
-            //flowLayoutPanel1.Controls.Add(r);
-        }
-
-        private void inv_Row7_Load(object sender, EventArgs e)
+        private void r_KeyUp(object sender, System.Windows.Forms.KeyEventArgs e)
         {
 
+            OnKeyUp(e);
         }
+
 
         private void BSearch_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = true;
+            txtsearch.Focus();
         }
 
         private void txtBranch_Load(object sender, EventArgs e)
         {
-
+            txtLcAcc.branchID.Text = txtBranch.txtAccBranch.Text;
+            Bank_.branchID.Text = txtBranch.txtAccBranch.Text;
+            txtSupplier.branchID.Text = txtBranch.txtAccBranch.Text;
+            get_invSer();
         }
 
         private void BSave_Click(object sender, EventArgs e)
         {
 
+           
+            DataTable dt_ = dal.getDataTabl_1(@"select * from wh_inv_data_Ext_Perform where ser_no='" + txtId.Text + "' and Transaction_code='" + Doc_Type.Text + "' and Branch_code='" + txtBranch.ID.Text + "' and Cyear='" + txtcyear.Text + "' ");
+            if (dt_.Rows.Count > 0)
+            {
+                SqlCommand cmd = dal.sqlconn_1.CreateCommand();
+                SqlTransaction trans;
+                trans = dal.sqlconn_1.BeginTransaction();
+                cmd.Connection = dal.sqlconn_1;
+                cmd.Transaction = trans;
+                try
+                {
+
+                    cmd.CommandText = @"UPDATE wh_inv_data_Ext_Perform set 
+                    Ser_no                  = '" + txtId.Text +
+                    "',Branch_code          = '" + txtBranch.ID.Text +
+                    "',Transaction_code     = '" + Doc_Type.Text +
+                    "',Cyear                = '" + txtcyear.Text +
+                    "',Sanad_no             = '0'" +
+                    ",G_date                = '" + txtDate.Value.ToString("yyyy-MM-dd") +
+                    "',ACC_TYPE             = 'A'" +
+                    ",Acc_no                = '" + txtSupplier.ID.Text +
+                    "',Acc_Branch_code      = '" + txtBranch.txtAccBranch.Text +
+                    "',Payment_Type         = '2' " +
+                    ",Sales_man_Id          = '" + Cost_.ID.Text +
+                    "',User_id              = '" + userID.Text +
+                    "',LC_NO                = '" + txtLcNo.Text +
+                    "',LC_ACC_NO            = '" + txtLcAcc.ID.Text +
+                    "',Perform_invoice      = '" + txtProforma.Text +
+                    "',Perform_invoice_date = '" + txtProformaDate.Value.ToString("yyyy-MM-dd") +
+                    "',Cargo_date           = '" + LShipDate.Value.ToString("yyyy-MM-dd") +
+                    "',Cargo_port           = '" + txtCrago_Port.Text +
+                    "',Arrival_port         = '" + Convert.ToString(txtArivePort.SelectedValue) +
+                    "',Catgo_Media          = '" + txtCrago_Media.Text +
+                    "',cargo_method         = '" + txtCrago_Method.Text +
+                    "',Cargo_notes1         = '" + txtCragoNote1.Text +
+                    "',Cargo_notes2         = '" + txtCragoNote2.Text +
+                    "',Estihkak_Dayes       = '" + AcceptDays.Text.ParseInt(0) +
+                    "',Lc_Date              = '" + OpenDate.Value.ToString("yyyy-MM-dd") +
+                    "',Paper_Arival_Notes   = ''" +
+                    ",Country               = '" + txtFactory.Text +
+                    "',Factory              = '" + Convert.ToString(txtRegion.SelectedValue) +
+                    "',LC_EXPIRE_DATE       =  '" + ExpiryDate.Value.ToString("yyyy-MM-dd") +
+                    "',LC_STOPED            = '" + (ch_Close.Checked ? "1" : "0") +
+                    "',Costmer_No            = '" + Bank_.ID.Text +
+                    "' where Ser_no = '" + txtId.Text + "' and Branch_code = '" + txtBranch.ID.Text + "' and  Transaction_code = '" + Doc_Type.Text + "' and Cyear = '" + txtcyear.Text + "' ";
+
+                    cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = @"Delete from wh_MATERIAL_TRANSACTION_Ext_Perform where Ser_no = '" + txtId.Text + "' and Branch_code = '" + txtBranch.ID.Text + "' and  Transaction_code = '" + Doc_Type.Text + "' and Cyear = '" + txtcyear.Text + "' ";
+                    cmd.ExecuteNonQuery();
+
+
+                    foreach (MyControls.Inv_Row r in inv_Grid1.flowLayoutPanel1.Controls)
+                    {
+
+                        if (r.txt_Code.Text != string.Empty && r.qty.Value > 0 && r.TxtPrice.Value > 0)
+                        {
+                            cmd.CommandText = @"INSERT INTO wh_MATERIAL_TRANSACTION_Ext_Perform        
+                            (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE,
+                            total_disc,DISC_R,DISC_R2,DISC_R3,G_DATE,Unit,Forign_price,Local_Price,FORIN_TYPE,
+                            USER_ID,main_counter,balance,Currancy_Change_Factor,Backege,GAMAREK,Notes)
+                            values ( '" + txtId.Text + "', '" + txtBranch.ID.Text + "', '" + Doc_Type.Text + "', '" + txtcyear.Text + "' ,'0','" +
+                            r.txt_Code.Text + "','" + r.qty.Text + "','0','0','0','0','0','" +
+                            txtDate.Value.ToString("yyyy/MM/dd HH: mm:ss") + "','" + r.txtUnit.Text + "','" + r.TxtPrice.Text + "','" +
+                            r.TxtPrice.Text.ToDecimal() * txtRate.Text.ToDecimal() + "','" + Convert.ToString(txtCurrency.SelectedValue) + "','" + userID.Text + "','" +
+                            inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + "','" + r.txtBalance.Text.ToDecimal() + "','" + txtRate.Text.ToDecimal() + "','1','0','" + r.txtNote.Text + "')";
+
+                            cmd.ExecuteNonQuery();
+
+                        }
+
+                    }
+
+                    trans.Commit();
+                }
+                catch (Exception ex)
+                {
+                    trans.Rollback();
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    dal.sqlconn_1.Close();
+                }
+
         }
+
+            else
+            {
+                SqlCommand cmd = dal.sqlconn_1.CreateCommand();
+                SqlTransaction trans;
+                trans = dal.sqlconn_1.BeginTransaction();
+                cmd.Connection = dal.sqlconn_1;
+                cmd.Transaction = trans;
+
+                try
+                {
+                    cmd.CommandText = @"insert into wh_inv_data_Ext_Perform (Ser_no,Branch_code,Transaction_code,Cyear,Sanad_no
+                ,G_date,ACC_TYPE,Acc_no,Acc_Branch_code,Payment_Type
+                ,Sales_man_Id,User_id,LC_NO,LC_ACC_NO,Perform_invoice
+                ,Perform_invoice_date,Cargo_date,Cargo_port,Arrival_port,Catgo_Media
+                ,cargo_method,Cargo_notes1,Cargo_notes2,Estihkak_Dayes,Lc_Date
+                ,Paper_Arival_Notes,Country,Factory,LC_EXPIRE_DATE,LC_STOPED,Costmer_No)
+                values('" + txtId.Text + "', '" + txtBranch.ID.Text + "', '" + Doc_Type.Text + "','" + txtcyear.Text +
+                "','0','" + txtDate.Value.ToString("yyyy-MM-dd") + "', 'A','" + txtSupplier.ID.Text +
+                "','" + txtBranch.txtAccBranch.Text + "', '2','" + Cost_.ID.Text + "', '" + userID.Text +
+                "','" + txtLcNo.Text + "', '" + txtLcAcc.ID.Text + "', '" + txtProforma.Text +
+                "', '" + txtProformaDate.Value.ToString("yyyy-MM-dd") + "', '" + LShipDate.Value.ToString("yyyy-MM-dd") +
+                "', '" + txtCrago_Port.Text + "','" + Convert.ToString(txtArivePort.SelectedValue) + "', '" + txtCrago_Media.Text +
+                "', '" + txtCrago_Method.Text + "', '" + txtCragoNote1.Text + "', '" + txtCragoNote2.Text +
+                "', '" + AcceptDays.Text.ParseInt(0) + "', '" + OpenDate.Value.ToString("yyyy-MM-dd") + "', '','" + txtFactory.Text +
+                "', '" + Convert.ToString(txtRegion.SelectedValue) + "','" + ExpiryDate.Value.ToString("yyyy-MM-dd") + "','" + (ch_Close.Checked ? "1" : "0") +"','" + Bank_.ID.Text + "')";
+
+                cmd.ExecuteNonQuery();
+
+
+                foreach (MyControls.Inv_Row r in inv_Grid1.flowLayoutPanel1.Controls)
+                {
+
+                    if (r.txt_Code.Text != string.Empty && r.qty.Value > 0 && r.TxtPrice.Value > 0)
+                    {
+                        cmd.CommandText = @"INSERT INTO wh_MATERIAL_TRANSACTION_Ext_Perform        
+                            (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE,
+                            total_disc,DISC_R,DISC_R2,DISC_R3,G_DATE,Unit,Forign_price,Local_Price,FORIN_TYPE,
+                            USER_ID,main_counter,balance,Currancy_Change_Factor,Backege,GAMAREK,Notes)
+                            values ( '" + txtId.Text + "', '" + txtBranch.ID.Text + "', '" + Doc_Type.Text + "', '" + txtcyear.Text + "' ,'0','" +
+                        r.txt_Code.Text + "','" + r.qty.Text + "','0','0','0','0','0','" +
+                        txtDate.Value.ToString("yyyy/MM/dd HH: mm:ss") + "','" + r.txtUnit.Text + "','" + r.TxtPrice.Text + "','" +
+                        r.TxtPrice.Text.ToDecimal() * txtRate.Text.ToDecimal() + "','" + Convert.ToString(txtCurrency.SelectedValue) + "','" + userID.Text + "','" +
+                        inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + "','" + r.txtBalance.Text.ToDecimal() + "','" + txtRate.Text.ToDecimal() + "','1','0','" + r.txtNote.Text + "')";
+
+                        cmd.ExecuteNonQuery();
+
+                    }
+
+                }
+
+
+                //DataTable dtSer = dal.getDataTabl_1(@"select isnull(per+1,1) from wh_Serial where Branch_code= '" + txtBranch.ID.Text + "' and Cyear='" + txtcyear.Text + "'");
+                //    if (dtSer.Rows.Count > 0)
+                //    {
+                        cmd.CommandText = @"UPDATE  wh_Serial SET  PER= '" + txtId.Text + "' WHERE Branch_code = '" + txtBranch.ID.Text + "' and Cyear='" + txtDate.Value.ToString("yy") + "' ";
+                        cmd.ExecuteNonQuery();
+
+                    //}
+                    //else
+                    //{
+                    //    cmd.CommandText = @"INSERT INTO wh_Serial (Branch_code,Cyear,PER) Values('" + txtBranch.ID.Text + "' ,'" + txtDate.Value.ToString("yy") + "','" + txtId.Text + "')";
+                    //    cmd.ExecuteNonQuery();
+
+                    //}
+                    trans.Commit();
+                }
+                catch (Exception ex)
+                {
+                    trans.Rollback();
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    dal.sqlconn_1.Close();
+                }
+
+
+            }
+
+
+
+
+                //AddInv(txtId.Text.ParseInt(0), txtBranch.ID.Text, Doc_Type.Text, txtcyear.Text, 0, txtDate.Value.ToString("yyyy-MM-dd"), "A", txtSupplier.ID.Text, txtBranch.txtAccBranch.Text
+                //   , "2", Cost_.ID.Text, userID.Text, txtLcNo.Text, txtLcAcc.ID.Text, txtProforma.Text, txtProformaDate.Value.ToString("yyyy-MM-dd"), LShipDate.Value.ToString("yyyy-MM-dd"), txtCrago_Port.Text
+                //   , Convert.ToString(txtArivePort.SelectedValue), txtCrago_Media.Text, txtCrago_Method.Text, txtCragoNote1.Text, txtCragoNote2.Text
+                //   , AcceptDays.Text.ParseInt(0), OpenDate.Value.ToString("yyyy-MM-dd"), "", txtFactory.Text, Convert.ToString(txtRegion.SelectedValue), ExpiryDate.Value.ToString("yyyy-MM-dd")
+                //   , Convert.ToBoolean(0), Bank_.ID.Text);
+
+                //AddInvDetails();
+                //updateSer();
+
+            }
+
+
 
         private void btn_Cancl_Click(object sender, EventArgs e)
         {
@@ -426,8 +700,8 @@ namespace Report_Pro.PL
             dt_P = dal.getDataTabl_1(@"SELECT A.Ser_no,A.Branch_code,A.Transaction_code,A.Cyear,A.G_date,A.ACC_TYPE,A.Acc_no,A.Acc_Branch_code
             ,A.Payment_Type,A.Sales_man_Id,A.User_id,A.LC_NO,A.LC_ACC_NO,A.Perform_invoice,A.Perform_invoice_date
             ,A.Cargo_date,A.Cargo_port,A.Arrival_port,A.cargo_method,A.Cargo_notes1,A.Cargo_notes2,A.Catgo_Media,A.Estihkak_Dayes
-            ,A.Lc_Date,A.Paper_Arival_Notes,A.Country,A.Factory,A.LC_EXPIRE_DATE,A.LC_STOPED
-            ,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.total_disc,B.Unit,B.Forign_price,B.Local_Price,B.FORIN_TYPE,B.Currancy_Change_Factor
+            ,A.Lc_Date,A.Paper_Arival_Notes,A.Country,A.Factory,A.LC_EXPIRE_DATE,A.LC_STOPED,A.Costmer_No
+            ,B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.total_disc,B.Unit,B.Forign_price,B.Local_Price,B.FORIN_TYPE,B.Currancy_Change_Factor,B.Notes,B.main_counter
 			,C.PAYER_NAME,C.payer_l_name,C.adress,C.resp_name,C.COSTMER_K_M_NO,C.phone_no,C.E_MAIL,D.branch_name,D.WH_E_NAME,E.descr
             ,E.Descr_eng,E.Weight,F.USER_NAME,H.Currency_Name,K.Payment_name
             FROM wh_inv_data_Ext_Perform As A 
@@ -446,74 +720,94 @@ namespace Report_Pro.PL
 
         private void btn_Srearch_Click(object sender, EventArgs e)
         {
+
             get_data(txtsearch.Text ,_branchCode,comboBox1.Text.Substring(comboBox1.Text.Length - 2),"PER");
            
             if (dt_P.Rows.Count > 0)
             {
-                txtId.Text = dt_P.Rows[0]["Ser_no"].ToString();
-                txtDate.Text = dt_P.Rows[0]["G_date"].ToString();
-                txtBranch.ID.Text = dt_P.Rows[0]["Branch_code"].ToString();
-                txtLcAcc.ID.Text = dt_P.Rows[0]["LC_ACC_NO"].ToString();
-                txtSupplier.ID.Text = dt_P.Rows[0]["Acc_no"].ToString();
-                txtSuppContact.Text = dt_P.Rows[0]["resp_name"].ToString();
-                txtSuppPhone.Text = dt_P.Rows[0]["phone_no"].ToString();
-                txtSuppVAT.Text = dt_P.Rows[0]["COSTMER_K_M_NO"].ToString();
-                txtAddress.Text = dt_P.Rows[0]["adress"].ToString();
-                txtSuppEmail.Text = dt_P.Rows[0]["E_MAIL"].ToString();
-                txtRate.Text = dt_P.Rows[0]["Currancy_Change_Factor"].ToString();
+                txtBranch.Enabled = false;
 
-                txtCurrency.SelectedValue = dt_P.Rows[0]["FORIN_TYPE"].ToString();
-                OpenDate.Text = dt_P.Rows[0]["Lc_Date"].ToString();
-                ExpiryDate.Text = dt_P.Rows[0]["LC_EXPIRE_DATE"].ToString();
-                LShipDate.Text = dt_P.Rows[0]["Cargo_date"].ToString();
-                txtProforma.Text = dt_P.Rows[0]["Perform_invoice"].ToString();
-                txtProformaDate.Text = dt_P.Rows[0]["Perform_invoice_date"].ToString();
-                txtLcNo.Text = dt_P.Rows[0]["LC_NO"].ToString();
-
-
+                txtcyear.Text               = comboBox1.Text.Substring(comboBox1.Text.Length - 2);
+                txtId.Text                  = dt_P.Rows[0]["Ser_no"].ToString();
+                txtDate.Text                = dt_P.Rows[0]["G_date"].ToString();
+                txtBranch.ID.Text           = dt_P.Rows[0]["Branch_code"].ToString();
+                txtLcAcc.ID.Text            = dt_P.Rows[0]["LC_ACC_NO"].ToString();
+                txtSupplier.ID.Text         = dt_P.Rows[0]["Acc_no"].ToString();
+                txtSuppContact.Text         = dt_P.Rows[0]["resp_name"].ToString();
+                txtSuppPhone.Text           = dt_P.Rows[0]["phone_no"].ToString();
+                txtSuppVAT.Text             = dt_P.Rows[0]["COSTMER_K_M_NO"].ToString();
+                txtAddress.Text             = dt_P.Rows[0]["adress"].ToString();
+                txtSuppEmail.Text           = dt_P.Rows[0]["E_MAIL"].ToString();
+                txtRate.Text                = dt_P.Rows[0]["Currancy_Change_Factor"].ToString();
+                AcceptDays.Text             = dt_P.Rows[0]["Estihkak_Dayes"].ToString();
+                txtCurrency.SelectedValue   = dt_P.Rows[0]["FORIN_TYPE"].ToString();
+                OpenDate.Text               = dt_P.Rows[0]["Lc_Date"].ToString();
+                ExpiryDate.Text             = dt_P.Rows[0]["LC_EXPIRE_DATE"].ToString();
+                LShipDate.Text              = dt_P.Rows[0]["Cargo_date"].ToString();
+                txtProforma.Text            = dt_P.Rows[0]["Perform_invoice"].ToString();
+                txtProformaDate.Text        = dt_P.Rows[0]["Perform_invoice_date"].ToString();
+                txtLcNo.Text                = dt_P.Rows[0]["LC_NO"].ToString();
+                Cost_.ID.Text               = dt_P.Rows[0]["Sales_man_Id"].ToString();
+                txtCragoNote1.Text          = dt_P.Rows[0]["Cargo_notes1"].ToString();
+                txtCragoNote2.Text          = dt_P.Rows[0]["Cargo_notes2"].ToString();
+                txtCrago_Method.Text        = dt_P.Rows[0]["cargo_method"].ToString();
+                txtCrago_Media.Text         = dt_P.Rows[0]["Catgo_Media"].ToString();
+                txtCrago_Port .Text         = dt_P.Rows[0]["Cargo_port"].ToString();
+                txtArivePort.Text           = dt_P.Rows[0]["Arrival_port"].ToString();
+                txtFactory.Text             = dt_P.Rows[0]["Country"].ToString();
+                txtRegion.SelectedValue     = dt_P.Rows[0]["Factory"].ToString();
+                Bank_.ID.Text               = dt_P.Rows[0]["Costmer_No"].ToString();
+                ch_Close.Checked = Convert.ToBoolean(dt_P.Rows[0]["LC_STOPED"].ToString());
                 dt.Clear();
                 int i = 0;
-                DataRow row = null;
-                foreach (DataRow r in dt_P.Rows)
+                inv_Grid1.flowLayoutPanel1.Controls.Clear();
+                foreach (DataRow row_ in dt_P.Rows)
                 {
+                  
 
-                    row = dt.NewRow();
-                    row[0] = dt_P.Rows[i]["ITEM_NO"].ToString();
+                        MyControls.Inv_Row rw = new MyControls.Inv_Row();
+                        rw.Ser.Text = (i+1).ToString();
+                        rw.txt_Code.Text        = dt_P.Rows[i]["ITEM_NO"].ToString();
                     if (Properties.Settings.Default.lungh == "0")
                     {
-                        row[1] = dt_P.Rows[i]["descr"].ToString();
+                        rw.TxtDesc.Text         = dt_P.Rows[i]["descr"].ToString();
                     }
                     else
                     {
-                        row[1] = dt_P.Rows[i]["Descr_eng"].ToString();
+                        rw.TxtDesc.Text         = dt_P.Rows[i]["Descr_eng"].ToString();
                     }
-                    //row[2] = dt_P.Rows[i]["DETAILS"].ToString();
-                    row[3] = dt_P.Rows[i]["Unit"].ToString();
-                    row[4] = dt_P.Rows[i]["Weight"].ToString();
-                    row[5] = dt_P.Rows[i]["QTY_ADD"].ToString().ToDecimal().ToString("N2");
-                    row[6] = dt_P.Rows[i]["Forign_price"].ToString().ToDecimal().ToString("N3");
-                    row[7] = (dt_P.Rows[i]["Forign_price"].ToString().ToDecimal() / dt_P.Rows[i]["Weight"].ToString().ToDecimal() * 1000).ToString("N0");
-                    row[8] = (dt_P.Rows[i]["Local_Price"].ToString().ToDecimal() * dt_P.Rows[i]["QTY_ADD"].ToString().ToDecimal()).ToString("N" + dal.digits_);
-                    row[9] = 5;
-                    row[10] = row[8].ToString().ToDecimal() - row[9].ToString().ToDecimal();
-                    //row[11] = dt_P.Rows[i]["TAX_OUT"].ToString().ToDecimal().ToString("N" + dal.digits_); ;
-                    //row[12] = dt_P.Rows[i]["TAX_OUT"].ToString().ToDecimal().ToString("N" + dal.digits_); ;
-
-                    row[13] = (dt_P.Rows[i]["QTY_ADD"].ToString().ToDecimal() * dt_P.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
-                   // row[12] = dt_P.Rows[i]["BALANCE"].ToString().ToDecimal().ToString("N0");
-                    //row[13] = dt_P.Rows[i]["Pice_Total_Cost"].ToString().ToDecimal().ToString("N" + dal.digits_);
-                    //row[14] = dt_P.Rows[i]["K_M_TYPE_ITEMS"].ToString();
-                    dt.Rows.Add(row);
+                        rw.txtNote.Text         = dt_P.Rows[i]["Notes"].ToString();
+                        rw.txtUnit.Text         = dt_P.Rows[i]["Unit"].ToString();
+                        rw.Weight_.Text         = dt_P.Rows[i]["Weight"].ToString();
+                        rw.qty.Text             = dt_P.Rows[i]["QTY_ADD"].ToString().ToDecimal().ToString("N2");
+                        rw.totWeight.Text       = (dt_P.Rows[i]["QTY_ADD"].ToString().ToDecimal() * dt_P.Rows[i]["Weight"].ToString().ToDecimal()).ToString("n3");
+                        rw.TxtPrice.Text        = dt_P.Rows[i]["Forign_price"].ToString().ToDecimal().ToString("N3");
+                        rw.Price_ton.Text       = (dt_P.Rows[i]["Forign_price"].ToString().ToDecimal() / dt_P.Rows[i]["Weight"].ToString().ToDecimal() * 1000).ToString("N0");
+                        rw.txt_subTOt.Text      = (dt_P.Rows[i]["Local_Price"].ToString().ToDecimal() * dt_P.Rows[i]["QTY_ADD"].ToString().ToDecimal()).ToString("N" + dal.digits_);
+                        rw.TxtDisc.Text         = "0";
+                        rw.Txtvalue.Text        = (rw.txt_subTOt.Text.ToDecimal() - rw.TxtDisc.Text.ToDecimal()).ToString("N2");
+                        inv_Grid1.flowLayoutPanel1.Controls.Add(rw);
+                       rw.KeyDown += r_KeyDown;
+                    rw.KeyUp += r_KeyUp;
                     i = i + 1;
+
                 }
-                dGV_Item.DataSource = dt;
-                resizeDG();
-               // total_inv();
+
+                MyControls.Inv_Row r = new MyControls.Inv_Row();
+                inv_Grid1.flowLayoutPanel1.Controls.Add(r);
+                r.Ser.Text = (inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                r.KeyDown += r_KeyDown;
+                r.KeyUp += r_KeyUp;
+
+
+                //dGV_Item.DataSource = dt;
+                //resizeDG();
+                // total_inv();
                 txtsearch.Text = "";
                 groupBox1.Visible = false;
-                BSave.Enabled = false;
-                BEdit.Enabled = true;
-
+               // BSave.Enabled = false;
+               // BEdit.Enabled = true;
+             
             }
         }
 
@@ -522,14 +816,7 @@ namespace Report_Pro.PL
 
         }
 
-        private void r_KeyDown(object sender, KeyEventArgs e)
-        {
-            //MyControls.Inv_Row r = new MyControls.Inv_Row();
-            //flowLayoutPanel1.Controls.Add(r);
-            //r.ID.Focus();
-            //r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
-
-        }
+        
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
@@ -551,150 +838,249 @@ namespace Report_Pro.PL
 
         }
 
-        private void Price_ton_KeyUp(object sender, KeyEventArgs e)
+
+
+
+
+
+
+
+
+        private void deleteInvDetails(int _Ser_no, string _Branch_code, string _Transaction_code, string _Cyear)
         {
-
-           
-
-
-            if (Weight_.Text.ToDecimal() > 0)
-            {
-                TxtPrice.Text = ((Price_ton.Text.ToDecimal() * Weight_.Text.ToDecimal()) / 1000).ToString("n3");
-            }
-            clculat_amount();
+            dal.Execute_1(@"Delete from wh_MATERIAL_TRANSACTION_Ext_Perform where Ser_no = '" + _Ser_no+"' and Branch_code = '"+_Branch_code+"' and  Transaction_code = '"+_Transaction_code+"' and Cyear = '"+_Cyear+"' "); 
         }
 
 
 
-
-        void clculat_amount()
-        {
-            //    try
-            //    {
-                txt_subTOt.Text = (qty.Text.ToDecimal() * TxtPrice.Text.ToDecimal()).ToString("N" + dal.digits_);
-                Txtvalue.Text =(txt_subTOt.Text.ToDecimal()-TxtDisc.Text.ToDecimal()).ToString("N" + dal.digits_);
-                VatValue.Text = (Txtvalue.Text.ToDecimal() * VatRate.Text.ToDecimal()).ToString("N" + dal.digits_);
-
-            //}
-            //catch
-            //{
-            //    return;
-            //}
-        }
-
-        void clculat_Peaces()
-        {
-            try
-            {
-                qty.Text = (Convert.ToDecimal(totWeight.Text) / Convert.ToDecimal(Weight_.Text)).ToString();
-                //Txtvalue.Text = (txt_subTOt.Text.ToDecimal() - TxtDisc.Text.ToDecimal()).ToString("N" + dal.digits_);
-                //VatValue.Text = (Convert.ToDecimal(Txtvalue.Text) * Convert.ToDecimal(VatRate.Text)).ToString("N" + dal.digits_);
-                //totWeight.Text = (Convert.ToDecimal(qty.Text) * Convert.ToDecimal(Weight_.Text)).ToString("N3");
-
-            }
-            catch
-            {
-                return;
-            }
-        }
-
-        private void txt_Code_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void txt_Code_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter && txt_Code.Text != "")
+private void AddInvDetails()
+{
+            foreach (MyControls.Inv_Row r in inv_Grid1.flowLayoutPanel1.Controls)
             {
 
-                get_ItemData(txt_Code.Text);
-
-            }
-        }
-
-        private void get_ItemData(string item_No)
-        {
-            DataTable dt = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,Weight,unit,
-                BALANCE,local_cost,K.KM_RATIO,K.KM_Code
-                FROM wh_main_master as A 
-                inner join wh_Groups As B on A.group_code = B.group_code 
-                left join KM_MATERIAL_CODE As K on  ISNULL(NULLIF(a.KM_CODE, ''), 1) = K.KM_CODE
-                 where item_no = '" + item_No + "' or factory_no = '" + item_No + "'");
-            if (dt.Rows.Count > 0)
-            {
-                txt_Code.Text = dt.Rows[0][0].ToString();
-                if (Properties.Settings.Default.lungh == "0")
+                if (r.txt_Code.Text != string.Empty && r.qty.Value > 0 && r.TxtPrice.Value > 0)
                 {
-                    TxtDesc.Text = dt.Rows[0][2].ToString();
+                    dal.Execute_1(@"INSERT INTO wh_MATERIAL_TRANSACTION_Ext_Perform
+                    
+                    (SER_NO,
+                    Branch_code,
+                    TRANSACTION_CODE,
+                    Cyear,
+                    SANAD_NO,
+                    ITEM_NO,
+                    QTY_ADD,
+                    QTY_TAKE,
+                    total_disc,
+                    DISC_R,
+                    DISC_R2,
+                    DISC_R3,
+                    G_DATE,
+                    Unit,
+                    Forign_price,
+                    Local_Price,
+                    FORIN_TYPE,
+                    USER_ID,
+                    main_counter,
+                    balance,
+                    Currancy_Change_Factor,
+                    Backege,
+                    GAMAREK,
+                    Notes)
+                values ( '" + txtId.Text + "', '" + txtBranch.ID.Text + "', '" +  Doc_Type.Text + "', '" + txtcyear.Text + "' ,'0','"+
+        r.txt_Code.Text+"','" + r.qty.Text + "','0','0','0','0','0','"+ 
+        txtDate.Value.ToString("yyyy/MM/dd HH: mm:ss") + "','"+ r.txtUnit.Text+"','"+ r.TxtPrice.Text+"','"+
+        r.TxtPrice.Text.ToDecimal()* txtRate.Text.ToDecimal()+ "','"+  Convert.ToString(txtCurrency.SelectedValue)+"','"+  userID.Text+"','"+ 
+        inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r)+"','"+ r.txtBalance.Text.ToDecimal()+"','"+ txtRate.Text.ToDecimal() + "','1','0','"+ r.txtNote.Text+"')");
+
                 }
-                else
-                {
-                    TxtDesc.Text = dt.Rows[0][3].ToString();
-                }
-                Weight_.Text = dt.Rows[0][4].ToString().ToDecimal().ToString("N3");
-                txtUnit.Text = dt.Rows[0][5].ToString();
-                txtBalance.Text = dt.Rows[0][6].ToString().ToDecimal().ToString("N1");
-                txtCost.Text = dt.Rows[0][7].ToString().ToDecimal().ToString("N3");
-                VatRate.Text = dt.Rows[0][8].ToString().ToDecimal().ToString("N2");
-                KM_TYPE_ITEMS.Text = dt.Rows[0][9].ToString();
-
-                txtNote.Focus();
+            }
+        }
 
 
+        private void UpdateInv(int _Ser_no,string _Branch_code,string _Transaction_code,string _Cyear,int _Sanad_no,
+            string _G_date,string _ACC_TYPE,string _Acc_no,string _Acc_Branch_code,string _Payment_Type,
+            string _Sales_man_Id,string _User_id,string _LC_NO,string _LC_ACC_NO,string _Perform_invoice,
+            string _Perform_invoice_date,string _Cargo_date,string _Cargo_port,string _Arrival_port,string _Catgo_Media,
+            string _cargo_method,string _Cargo_notes1,string _Cargo_notes2,int _Estihkak_Dayes,string _Lc_Date,string _Paper_Arival_Notes,
+            string _Country,string _Factory,string _LC_EXPIRE_DATE,Boolean _LC_STOPED,string _Costmer_No )
+        {
+            dal.Execute_1(@"UPDATE wh_inv_data_Ext_Perform set 
+            Ser_no                 = '"+ txtId.Text+
+           "',Branch_code          = '"+ txtBranch.ID.Text+
+           "',Transaction_code     = '"+ Doc_Type.Text+
+           "',Cyear                = '"+ txtcyear.Text+
+           "',Sanad_no             = '0'" +
+           ",G_date               = '"+ txtDate.Value.ToString("yyyy-MM-dd")+
+           "',ACC_TYPE             = 'A'" +
+           ",Acc_no               = '"+ txtSupplier.ID.Text+
+           "',Acc_Branch_code      = '"+ txtBranch.txtAccBranch.Text+
+           "',Payment_Type         = '2' "+
+           ",Sales_man_Id         = '"+ Cost_.ID.Text+
+           "',User_id              = '"+ userID.Text+
+           "',LC_NO                = '"+ txtLcNo.Text+
+           "',LC_ACC_NO            = '"+ txtLcAcc.ID.Text+
+           "',Perform_invoice      = '"+ txtProforma.Text+
+           "',Perform_invoice_date = '"+ txtProformaDate.Value.ToString("yyyy-MM-dd")+
+           "',Cargo_date           = '"+ LShipDate.Value.ToString("yyyy-MM-dd")+
+           "',Cargo_port           = '"+ txtCrago_Port.Text+
+           "',Arrival_port         = '"+ Convert.ToString(txtArivePort.SelectedValue)+
+           "',Catgo_Media          = '"+ txtCrago_Media.Text+
+           "',cargo_method         = '" + txtCrago_Method.Text +
+           "',Cargo_notes1         = '" + txtCragoNote1.Text +
+           "',Cargo_notes2         = '" + txtCragoNote2.Text +
+           "',Estihkak_Dayes       = '" + AcceptDays.Text.ParseInt(0) +
+           "',Lc_Date              = '" + OpenDate.Value.ToString("yyyy-MM-dd") +
+           "',Paper_Arival_Notes   = ''" +
+           ",Country              = '" + txtFactory.Text +
+           "',Factory              = '" + Convert.ToString(txtRegion.SelectedValue) +
+           "',LC_EXPIRE_DATE       =  '" + ExpiryDate.Value.ToString("yyyy-MM-dd") +
+           "',LC_STOPED            = '0'" +
+           ",Costmer_No           = '" + Bank_.ID.Text +
+            "' where Ser_no = '" +txtId.Text+ "' and Branch_code = '" + txtBranch.ID.Text + "' and  Transaction_code = '" + Doc_Type.Text + "' and Cyear = '"+txtcyear.Text+"' "); 
+        }
+
+
+
+        private void AddInv(int _Ser_no, string _Branch_code, string _Transaction_code, string _Cyear, int _Sanad_no,
+           string _G_date, string _ACC_TYPE, string _Acc_no, string _Acc_Branch_code, string _Payment_Type,
+           string _Sales_man_Id, string _User_id, string _LC_NO, string _LC_ACC_NO, string _Perform_invoice,
+           string _Perform_invoice_date, string _Cargo_date, string _Cargo_port, string _Arrival_port, string _Catgo_Media,
+           string _cargo_method, string _Cargo_notes1, string _Cargo_notes2, int _Estihkak_Dayes, string _Lc_Date, string _Paper_Arival_Notes,
+           string _Country, string _Factory, string _LC_EXPIRE_DATE, Boolean _LC_STOPED, string _Costmer_No)
+        {
+            dal.Execute_1(@"insert into wh_inv_data_Ext_Perform (Ser_no,Branch_code,Transaction_code,Cyear,Sanad_no
+                            ,G_date,ACC_TYPE,Acc_no,Acc_Branch_code,Payment_Type
+                            ,Sales_man_Id,User_id,LC_NO,LC_ACC_NO,Perform_invoice
+                            ,Perform_invoice_date,Cargo_date,Cargo_port,Arrival_port,Catgo_Media
+                            ,cargo_method,Cargo_notes1,Cargo_notes2,Estihkak_Dayes,Lc_Date
+                            ,Paper_Arival_Notes,Country,Factory,LC_EXPIRE_DATE,LC_STOPED,Costmer_No)
+                            values ('"+_Ser_no+"','"+ _Branch_code+"','"+ _Transaction_code+"','"+ _Cyear+"','"+ _Sanad_no
+                            +"','"+ _G_date+"','"+ _ACC_TYPE+"','"+ _Acc_no+"','"+ _Acc_Branch_code+"','"+ _Payment_Type
+                            +"','"+ _Sales_man_Id+"','"+ _User_id+"','"+ _LC_NO+"','"+ _LC_ACC_NO+"','"+ _Perform_invoice
+                            +"','"+ _Perform_invoice_date+"','"+ _Cargo_date+"','"+ _Cargo_port+"','"+ _Arrival_port+"','"+ _Catgo_Media
+                            +"','"+ _cargo_method+"','"+ _Cargo_notes1+"','"+ _Cargo_notes2+"','"+ _Estihkak_Dayes+"','"+ _Lc_Date
+                            +"','"+ _Paper_Arival_Notes+"','"+ _Country+"','"+ _Factory+"','"+ _LC_EXPIRE_DATE+"','"+ _LC_STOPED+"','"+ _Costmer_No+"')");
+        }
+
+
+        //private void AddInv()
+        //{
+
+
+
+
+
+        //    dal.Execute_1(@"insert into wh_inv_data_Ext_Perform (Ser_no,Branch_code,Transaction_code,Cyear,Sanad_no
+        //                    ,G_date,ACC_TYPE,Acc_no,Acc_Branch_code,Payment_Type
+        //                    ,Sales_man_Id,User_id,LC_NO,LC_ACC_NO,Perform_invoice
+        //                    ,Perform_invoice_date,Cargo_date,Cargo_port,Arrival_port,Catgo_Media
+        //                    ,cargo_method,Cargo_notes1,Cargo_notes2,Estihkak_Dayes,Lc_Date
+        //                    ,Paper_Arival_Notes,Country,Factory,LC_EXPIRE_DATE,LC_STOPED,Costmer_No)
+        //                    values('" + txtId.Text + "', '" + txtBranch.ID.Text + "', '" + Doc_Type.Text + "', '" + txtDate.Value.ToString("yy") + "' ,'0','"+
+        //                    txtDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','A', '" + txtSupplier.ID.Text + "', '" + txtBranch.txtAccBranch.Text + "', '2', '" +
+        //                    Cost_.ID.Text+"','"+userID.Text + "', '" + txtLcNo.Text + "', '" + txtLcAcc.ID.Text + "' , '" + txtProforma.Text +
+        //                    "', '" + txtProformaDate.Value.ToString("yyyy-MM-dd") + "', '" + LShipDate.Value.ToString("yyyy-MM-dd")+"', '" + txtCrago_Port.Text + "', '" + Convert.ToString(txtArivePort.SelectedValue) + "', '" + txtCrago_Media.Text + "', '" + 
+        //                    txtCrago_Method.Text + "', '" + txtCragoNote1.Text + "', '" + txtCragoNote2.Text + "', '" + AcceptDays.Text + "', '" + OpenDate.Value.ToString("yyyy-MM-dd") +
+        //                    "', '0', '" + Convert.ToString(txtRegion.SelectedValue) + "', '"+txtFactory.Text+"','" + ExpiryDate.Value.ToString("yyyy-MM-dd") + "','0','"+Bank_.ID.Text+"')");
+
+        //}
+
+        private void inv_Grid1_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void inv_Grid1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtsearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtsearch.Text != string.Empty)
+            {
+                btn_Srearch.Focus();
+            }
+        }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonBar1_ItemClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ch_Close_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ch_Close.Checked == true)
+            {
+                ch_Close.BackColor = Color.OrangeRed;
+                ch_Close.Text = "Closed";
             }
             else
             {
-                btn_braws.PerformClick();
+                ch_Close.BackColor = Color.GreenYellow;
+                ch_Close.Text = "Opened";
             }
         }
 
-        private void TxtPrice_KeyUp(object sender, KeyEventArgs e)
+        private void frm_PreformaInvoice_KeyUp(object sender, KeyEventArgs e)
         {
-            if (Weight_.Text.ToDecimal() > 0)
-            {
-                Price_ton.Text = ((TxtPrice.Text.ToDecimal() / Weight_.Text.ToDecimal()) * 1000).ToString("n0");
-            }
-            clculat_amount();
+            total_inv();
         }
 
-        private void qty_KeyUp(object sender, KeyEventArgs e)
+        private void total_inv()
         {
-            clculat_amount();
-            totWeight.Text = (qty.Text.ToDecimal() * Weight_.Text.ToDecimal()).ToString("N3");
+
+            inv_Grid1.totalQty.Text =
+               (from MyControls.Inv_Row row in inv_Grid1.flowLayoutPanel1.Controls
+                where row.qty.Text != string.Empty
+                select Convert.ToDouble(row.qty.Text)).Sum().ToString("n0");
+
+            inv_Grid1.txtNetTotal.Text =
+             (from MyControls.Inv_Row row in inv_Grid1.flowLayoutPanel1.Controls
+              where row.Txtvalue.Text != string.Empty
+              select Convert.ToDouble(row.Txtvalue.Text)).Sum().ToString("n0");
+
+            inv_Grid1.totalWeight.Text =
+              (from MyControls.Inv_Row row in inv_Grid1.flowLayoutPanel1.Controls
+               where row.totWeight.Text != string.Empty
+               select Convert.ToDouble(row.totWeight.Text)).Sum().ToString("n0");
+
+
+            //for (int i = 0; i <= dGV_Item.Rows.Count - 1; i++)
+            //{
+            //    if (dGV_Item.Rows[i].Cells[0].Value != null && dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() > 0
+            //       && dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() > 0)
+            //    {
+            //        if (dGV_Item.Rows[i].Cells[9].Value.ToString().ToDecimal() > Cust_Vat_Rate.Text.ToDecimal())
+            //        {
+            //            dGV_Item.Rows[i].Cells[10].Value = Math.Round((dGV_Item.Rows[i].Cells[8].Value.ToString().ToDecimal() * Cust_Vat_Rate.Text.ToDecimal()), 3);
+            //        }
+            //        else
+            //        {
+            //            dGV_Item.Rows[i].Cells[10].Value = Math.Round((dGV_Item.Rows[i].Cells[8].Value.ToString().ToDecimal() * dGV_Item.Rows[i].Cells[9].Value.ToString().ToDecimal()), 3);
+            //        }
+            //    }
+            //}
+            //Net_Vat.Text =
+            //    (from DataGridViewRow row in dGV_Item.Rows
+            //     where row.Cells[10].FormattedValue.ToString() != string.Empty
+            //     select Convert.ToDouble(row.Cells[10].FormattedValue)).Sum().ToString("N" + dal.digits_);
+
+            //NetValue.Text = (txtNetTotal.Text.ToDecimal() + Net_Vat.Text.ToDecimal()).ToString("N" + dal.digits_);
+
 
         }
 
-        private void totWeight_KeyUp(object sender, KeyEventArgs e)
-        {
-            clculat_Peaces();
-            clculat_amount();
-        }
 
-        private void AddInvDetails()
-        {
-            for (int i = 0; i <= dGV_Item.Rows.Count - 1; i++)
-            {
-                if (dGV_Item.Rows[i].Cells[0].Value != null && dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() > 0)
-                //&& dGV_Item.Rows[i].Cells[6].Value.ToString().ToDecimal() > 0)
-                {
-                    dal.Execute_1(@" INSERT INTO wh_MATERIAL_TRANSACTION_Ext_Perform
-                    (SER_NO,Branch_code,TRANSACTION_CODE,Cyear,SANAD_NO,ITEM_NO,QTY_ADD,QTY_TAKE
-                    ,total_disc,DISC_R,DISC_R2,DISC_R3,G_DATE,Unit,Forign_price,Local_Price,FORIN_TYPE
-                    ,USER_ID,main_counter,balance,Currancy_Change_Factor,Backege,GAMAREK,Notes) 
-                    values( '" + txtId.Text + "', '" + txtBranch.ID.Text + "', '" + Doc_Type.Text + "', '" + txtDate.Value.ToString("yy") +
-                    "' ,'0','" + dGV_Item.Rows[i].Cells[0].Value.ToString() + "' ,'" + dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() + "','0','" + 
-                   
-                    ((dGV_Item.Rows[i].Cells[9].Value.ToString().ToDecimal() / dGV_Item.Rows[i].Cells[8].Value.ToString().ToDecimal()) + disc_Rate.Text.ToDecimal()) * 100 +
-                    "' ,'" + (dGV_Item.Rows[i].Cells[9].Value.ToString().ToDecimal() / dGV_Item.Rows[i].Cells[8].Value.ToString().ToDecimal()) * 100 + "' ,'0','" + (disc_Rate.Text.ToDecimal()) * 100 +
-                    "', '" + txtDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dGV_Item.Rows[i].Cells[3].Value.ToString() +
-                    "' ,'" + dGV_Item.Rows[i].Cells[6].Value.ToString().ToDecimal() + "' ,'" + dGV_Item.Rows[i].Cells[6].Value.ToString().ToDecimal() + "','"+Convert.ToString(txtCurrency.SelectedValue)+"', '" + 
-                    userID.Text + "','" + dGV_Item.Rows[i].Index + "', '" + dGV_Item.Rows[i].Cells[5].Value.ToString().ToDecimal() + "', '" + txtRate.Text +
-
-                    "','1','0','" + dGV_Item.Rows[i].Cells[2].Value.ToString() + "')");
-
-                }
-            }
-        }
     }
 }

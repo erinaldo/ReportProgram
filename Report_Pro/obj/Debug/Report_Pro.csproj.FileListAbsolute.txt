@@ -961,7 +961,6 @@ C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\am-ET\Report_Pro.resources.
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\sq-AL\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ar-EG\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\en-US\Report_Pro.resources.dll
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ar-DZ\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportSource.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.Shared.dll
@@ -1381,7 +1380,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Banks.ar.
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_BS_elements.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Create_PE_Jor.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Main.ar.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Main.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PE_Jor.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PreformaInvoice.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Purch_Qutation.ar.resources
@@ -1424,10 +1422,7 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_statment
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_statment_Many_Rpt.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_statment_Rpt.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_statment_Rpt.en.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.login_frm.ar-DZ.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.login_frm.ar.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.login_frm.en-US.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.login_frm.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.GenerateResource.cache
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe.licenses
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CoreCompileInputs.cache
@@ -1437,8 +1432,9 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\am-ET\Report_Pro.resources.
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\sq-AL\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\ar-EG\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\en-US\Report_Pro.resources.dll
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\ar-DZ\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Grid.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Main.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache

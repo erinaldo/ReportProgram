@@ -117,25 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="buttonItem10.Text" xml:space="preserve">
-    <value>Year</value>
-  </data>
-  <data name="M1.Text" xml:space="preserve">
-    <value>Setup</value>
-  </data>
-  <data name="M2.Text" xml:space="preserve">
-    <value>Trasportation</value>
-  </data>
-  <data name="MLangue.Text" xml:space="preserve">
-    <value>اللغة</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 40</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 40</value>
-  </data>
   <data name="M11.Text" xml:space="preserve">
     <value>System Setup</value>
   </data>
@@ -151,12 +132,22 @@
   <data name="M15.Text" xml:space="preserve">
     <value>Stores</value>
   </data>
+  <data name="M1.Text" xml:space="preserve">
+    <value>Setup</value>
+  </data>
   <data name="M23.Text" xml:space="preserve">
     <value>Purchase</value>
   </data>
   <data name="M26.Text" xml:space="preserve">
     <value>تفاصيل النقليات</value>
   </data>
+  <data name="M27.Text" xml:space="preserve">
+    <value>buttonItem9</value>
+  </data>
+  <data name="M2.Text" xml:space="preserve">
+    <value>Trasportation</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="M35.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -337,14 +328,20 @@
   <data name="M93.Text" xml:space="preserve">
     <value>حساب الاهلاك</value>
   </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1924, 652</value>
+  <data name="MLangue.Text" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 58</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 58</value>
   </data>
   <data name="tvStore.Location" type="System.Drawing.Point, System.Drawing">
     <value>1619, 0</value>
   </data>
   <data name="tvStore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>305, 592</value>
+    <value>305, 574</value>
   </data>
   <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -682,16 +679,19 @@
     <value>False</value>
   </data>
   <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1624, 592</value>
+    <value>1624, 574</value>
   </data>
   <data name="TV1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 592</value>
+    <value>300, 574</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 592</value>
+    <value>0, 574</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>1924, 60</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1924, 634</value>
   </data>
   <data name="imageList2.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -811,6 +811,12 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1924, 692</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Home</value>

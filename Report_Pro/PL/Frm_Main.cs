@@ -89,10 +89,10 @@ namespace Report_Pro.PL
             form.TopLevel = false;
            
             this.panel2.Controls.Add(form);
-            this.panel2.Dock = DockStyle.Fill;
-            form.Dock = DockStyle.Fill;
+            //this.panel2.Dock = DockStyle.Fill;
+            //form.Dock = DockStyle.Fill;
 
-            //form.MdiParent = this;
+            ////form.MdiParent = this;
             form.WindowState = frmstate;
             form.Show();
             form.BringToFront();
@@ -107,8 +107,7 @@ namespace Report_Pro.PL
         private void Frm_Main_Load(object sender, EventArgs e)
         {
 
-           
-
+            
             this.Controls.OfType<MdiClient>().FirstOrDefault().BackColor = c;
             this.panel1.BackColor = c;
             this.listView1.BackColor = c;
@@ -380,14 +379,7 @@ namespace Report_Pro.PL
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-            switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
-            {
-                case ("ar"): Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("EN"); Properties.Settings.Default.lungh = "1"; break;
-                case ("en"): Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ar"); Properties.Settings.Default.lungh = "0"; break;
-            }
-            Properties.Settings.Default.Save();
-            this.Controls.Clear();
-            InitializeComponent();
+
         }
 
         private void ribbonBar1_ItemClick(object sender, EventArgs e)
@@ -521,7 +513,6 @@ namespace Report_Pro.PL
 
         private void M36_Click(object sender, EventArgs e)
         {
-
             openForm(new PL.UpdateAccData(), FormWindowState.Maximized, 0);
         }
 
@@ -896,11 +887,6 @@ namespace Report_Pro.PL
             //}
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void M710_Click(object sender, EventArgs e)
         {
             openForm(new RPT.frm_rpt_salary(), FormWindowState.Maximized, 0);
@@ -1228,52 +1214,9 @@ namespace Report_Pro.PL
            
         }
 
-        private void buttonItem9_Click(object sender, EventArgs e)
-        {
-            openForm(new PL.frm_PreformaInvoice(), FormWindowState.Maximized, 0);
-        }
-
         private void M27_Click(object sender, EventArgs e)
         {
             openForm(new RPT.frm_maintenance_SP_ByCustomer(), FormWindowState.Maximized, 0);
-        }
-
-        private void buttonItem10_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void cmb_Year_ComboBoxTextChanged(object sender, EventArgs e)
-        {
-            //Properties.Settings.Default.Database_1 = cmb_Year.ComboBoxEx.ValueMember.ToString();
-            //Properties.Settings.Default.Save();
-        }
-
-        private void cmb_Year_TextChanged(object sender, EventArgs e)
-        {
-
-            //Properties.Settings.Default.Database_1 = cmb_Year.ComboBoxEx.SelectedValue.ToString();
-            //Properties.Settings.Default.Save();
-
-
-            //PL.Frm_Main.ActiveForm.Dispose();
-            //PL.Frm_Main sd = new PL.Frm_Main();
-            //sd.Show();
-
-        }
-
-        private void btn_ChangeYear_Click(object sender, EventArgs e)
-        {
-
-            openForm(new PL.frm_DataBaseChose(), FormWindowState.Normal, 0);
-            
-         
-            
-        }
-
-        private void M717_Click(object sender, EventArgs e)
-        {
-            openForm(new RPT.frm_rep_Fees_Consolidated(), FormWindowState.Maximized, 0);
 
         }
 
@@ -1283,22 +1226,27 @@ namespace Report_Pro.PL
 
         }
 
+        private void M717_Click(object sender, EventArgs e)
+        {
+            openForm(new RPT.frm_rep_Fees_Consolidated(), FormWindowState.Maximized, 0);
+
+        }
+
         private void M87_Click(object sender, EventArgs e)
         {
-            openForm(new RPT.frm_LoansReport(), FormWindowState.Maximized, 0);
+            openForm(new PL.frm_PreformaInvoice(), FormWindowState.Maximized, 0);
 
         }
 
         private void M88_Click(object sender, EventArgs e)
         {
-            openForm(new PL.frm_LoanPayment(), FormWindowState.Maximized, 0);
+            openForm(new RPT.frm_LoansReport(), FormWindowState.Maximized, 0);
 
         }
 
-        private void buttonItem1_Click_2(object sender, EventArgs e)
+        private void M89_Click(object sender, EventArgs e)
         {
             openForm(new PL.frm_LoanPayment(), FormWindowState.Maximized, 0);
-
         }
     }
 }

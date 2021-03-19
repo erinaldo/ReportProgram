@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Acc));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Acc));
             this.dgv1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.branchID = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -37,12 +37,17 @@
             this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn1 = new DevComponents.DotNetBar.ButtonX();
             this.txtFinal = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.KM_Code_Sales = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.KM_Desc_Sales = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.KM_Ratio_Sales = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.KM_Ratio_Purch = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.KM_Desc_Purch = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.KM_Code_Purch = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv1
             // 
-            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -59,6 +64,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
             this.dgv1.RowHeadersVisible = false;
@@ -68,17 +74,11 @@
             // 
             // ID
             // 
-            resources.ApplyResources(this.ID, "ID");
             // 
             // 
             // 
             this.ID.Border.Class = "TextBoxBorder";
-            this.ID.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom.DisplayPosition")));
-            this.ID.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom.Image")));
-            this.ID.ButtonCustom.Text = resources.GetString("ID.ButtonCustom.Text");
-            this.ID.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom2.DisplayPosition")));
-            this.ID.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom2.Image")));
-            this.ID.ButtonCustom2.Text = resources.GetString("ID.ButtonCustom2.Text");
+            resources.ApplyResources(this.ID, "ID");
             this.ID.Name = "ID";
             this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged_1);
             this.ID.Enter += new System.EventHandler(this.ID_Enter);
@@ -88,74 +88,104 @@
             // 
             // branchID
             // 
-            resources.ApplyResources(this.branchID, "branchID");
             // 
             // 
             // 
             this.branchID.Border.Class = "TextBoxBorder";
-            this.branchID.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("branchID.ButtonCustom.DisplayPosition")));
-            this.branchID.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("branchID.ButtonCustom.Image")));
-            this.branchID.ButtonCustom.Text = resources.GetString("branchID.ButtonCustom.Text");
-            this.branchID.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("branchID.ButtonCustom2.DisplayPosition")));
-            this.branchID.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("branchID.ButtonCustom2.Image")));
-            this.branchID.ButtonCustom2.Text = resources.GetString("branchID.ButtonCustom2.Text");
+            resources.ApplyResources(this.branchID, "branchID");
             this.branchID.Name = "branchID";
             // 
             // txtMainAcc
             // 
-            resources.ApplyResources(this.txtMainAcc, "txtMainAcc");
             // 
             // 
             // 
             this.txtMainAcc.Border.Class = "TextBoxBorder";
-            this.txtMainAcc.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtMainAcc.ButtonCustom.DisplayPosition")));
-            this.txtMainAcc.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtMainAcc.ButtonCustom.Image")));
-            this.txtMainAcc.ButtonCustom.Text = resources.GetString("txtMainAcc.ButtonCustom.Text");
-            this.txtMainAcc.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtMainAcc.ButtonCustom2.DisplayPosition")));
-            this.txtMainAcc.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtMainAcc.ButtonCustom2.Image")));
-            this.txtMainAcc.ButtonCustom2.Text = resources.GetString("txtMainAcc.ButtonCustom2.Text");
+            resources.ApplyResources(this.txtMainAcc, "txtMainAcc");
             this.txtMainAcc.Name = "txtMainAcc";
             // 
             // Desc
             // 
             this.Desc.AcceptsReturn = true;
-            resources.ApplyResources(this.Desc, "Desc");
             // 
             // 
             // 
             this.Desc.Border.Class = "TextBoxBorder";
-            this.Desc.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom.DisplayPosition")));
-            this.Desc.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom.Image")));
-            this.Desc.ButtonCustom.Text = resources.GetString("Desc.ButtonCustom.Text");
-            this.Desc.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom2.DisplayPosition")));
-            this.Desc.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom2.Image")));
-            this.Desc.ButtonCustom2.Text = resources.GetString("Desc.ButtonCustom2.Text");
+            resources.ApplyResources(this.Desc, "Desc");
             this.Desc.Name = "Desc";
             this.Desc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Desc_KeyUp);
             // 
             // btn1
             // 
-            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn1.Image = global::Report_Pro.Properties.Resources.search_16;
+            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.Name = "btn1";
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // txtFinal
             // 
-            resources.ApplyResources(this.txtFinal, "txtFinal");
             // 
             // 
             // 
             this.txtFinal.Border.Class = "TextBoxBorder";
-            this.txtFinal.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtFinal.ButtonCustom.DisplayPosition")));
-            this.txtFinal.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtFinal.ButtonCustom.Image")));
-            this.txtFinal.ButtonCustom.Text = resources.GetString("txtFinal.ButtonCustom.Text");
-            this.txtFinal.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtFinal.ButtonCustom2.DisplayPosition")));
-            this.txtFinal.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtFinal.ButtonCustom2.Image")));
-            this.txtFinal.ButtonCustom2.Text = resources.GetString("txtFinal.ButtonCustom2.Text");
+            resources.ApplyResources(this.txtFinal, "txtFinal");
             this.txtFinal.Name = "txtFinal";
+            // 
+            // KM_Code_Sales
+            // 
+            // 
+            // 
+            // 
+            this.KM_Code_Sales.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.KM_Code_Sales, "KM_Code_Sales");
+            this.KM_Code_Sales.Name = "KM_Code_Sales";
+            // 
+            // KM_Desc_Sales
+            // 
+            // 
+            // 
+            // 
+            this.KM_Desc_Sales.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.KM_Desc_Sales, "KM_Desc_Sales");
+            this.KM_Desc_Sales.Name = "KM_Desc_Sales";
+            // 
+            // KM_Ratio_Sales
+            // 
+            // 
+            // 
+            // 
+            this.KM_Ratio_Sales.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.KM_Ratio_Sales, "KM_Ratio_Sales");
+            this.KM_Ratio_Sales.Name = "KM_Ratio_Sales";
+            // 
+            // KM_Ratio_Purch
+            // 
+            // 
+            // 
+            // 
+            this.KM_Ratio_Purch.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.KM_Ratio_Purch, "KM_Ratio_Purch");
+            this.KM_Ratio_Purch.Name = "KM_Ratio_Purch";
+            // 
+            // KM_Desc_Purch
+            // 
+            // 
+            // 
+            // 
+            this.KM_Desc_Purch.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.KM_Desc_Purch, "KM_Desc_Purch");
+            this.KM_Desc_Purch.Name = "KM_Desc_Purch";
+            // 
+            // KM_Code_Purch
+            // 
+            // 
+            // 
+            // 
+            this.KM_Code_Purch.Border.Class = "TextBoxBorder";
+            resources.ApplyResources(this.KM_Code_Purch, "KM_Code_Purch");
+            this.KM_Code_Purch.Name = "KM_Code_Purch";
             // 
             // UC_Acc
             // 
@@ -163,6 +193,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.KM_Ratio_Purch);
+            this.Controls.Add(this.KM_Desc_Purch);
+            this.Controls.Add(this.KM_Code_Purch);
+            this.Controls.Add(this.KM_Ratio_Sales);
+            this.Controls.Add(this.KM_Desc_Sales);
+            this.Controls.Add(this.KM_Code_Sales);
             this.Controls.Add(this.txtFinal);
             this.Controls.Add(this.Desc);
             this.Controls.Add(this.btn1);
@@ -186,5 +222,11 @@
         public DevComponents.DotNetBar.Controls.TextBoxX Desc;
         private DevComponents.DotNetBar.ButtonX btn1;
         public DevComponents.DotNetBar.Controls.TextBoxX txtFinal;
+        public DevComponents.DotNetBar.Controls.TextBoxX KM_Code_Sales;
+        public DevComponents.DotNetBar.Controls.TextBoxX KM_Desc_Sales;
+        public DevComponents.DotNetBar.Controls.TextBoxX KM_Ratio_Sales;
+        public DevComponents.DotNetBar.Controls.TextBoxX KM_Ratio_Purch;
+        public DevComponents.DotNetBar.Controls.TextBoxX KM_Desc_Purch;
+        public DevComponents.DotNetBar.Controls.TextBoxX KM_Code_Purch;
     }
 }

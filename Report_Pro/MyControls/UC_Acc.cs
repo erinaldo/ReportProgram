@@ -37,10 +37,35 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("select PAYER_NAME from payer2 where ACC_NO= '" + ID.Text + "'  and acc_no like '"+txtMainAcc.Text +"%' and BRANCH_code like '" + branchID.Text + "'+'%' and t_final like '"+txtFinal.Text+"%' ");
-                if (dt_.Rows.Count > 0)
+                DataTable dt_ = dal.getDataTabl_1(@"select A.PAYER_NAME,A.payer_l_name,
+                    B.MAIN_KM_CODE as V_PurchCode ,B.MAIN_KM_DESC as V_PurchDesc,
+                    C.MAIN_KM_CODE as V_SalesCode,C.MAIN_KM_DESC as V_SalesDesc,
+                    D.KM_RATIO as V_PurchRatio,
+                    E.KM_RATIO as V_SalesRatio
+                    from payer2 As A 
+                   inner join KM_MAIN_ACC_CODE As B on isnull(A.KM_CODE_Purch,21)=B.MAIN_KM_CODE
+				   inner join KM_MAIN_ACC_CODE As C on isnull(A.KM_CODE_Sales,11)=C.MAIN_KM_CODE
+				   inner join KM_ACC_CODE As D on B.KM_CODE=D.KM_CODE
+				   inner join KM_ACC_CODE As E on C.KM_CODE=E.KM_CODE
+                   where A.ACC_NO= '" + ID.Text + "'  and A.acc_no like '"+txtMainAcc.Text +"%' and A.BRANCH_code like '" + branchID.Text + "'+'%' and A.t_final like '"+txtFinal.Text+"%' ");
+
+
+                          if (dt_.Rows.Count > 0)
                 {
-                    Desc.Text = dt_.Rows[0][0].ToString();
+                    if (Properties.Settings.Default.lungh == "0")
+                    {
+                        Desc.Text = dt_.Rows[0]["PAYER_NAME"].ToString();
+                    }
+                    else
+                    {
+                        Desc.Text = dt_.Rows[0]["payer_l_name"].ToString();
+                    }
+                    KM_Code_Purch.Text = dt_.Rows[0]["V_PurchCode"].ToString();
+                    KM_Desc_Purch.Text = dt_.Rows[0]["V_PurchDesc"].ToString();
+                    KM_Ratio_Purch.Text = dt_.Rows[0]["V_PurchRatio"].ToString();
+                    KM_Code_Sales.Text = dt_.Rows[0]["V_SalesCode"].ToString();
+                    KM_Desc_Sales.Text = dt_.Rows[0]["V_SalesDesc"].ToString();
+                    KM_Ratio_Sales.Text = dt_.Rows[0]["V_SalesRatio"].ToString();
                 }
                 else
                 {
@@ -124,16 +149,45 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("select PAYER_NAME from payer2 where ACC_NO= '" + ID.Text + "'  and acc_no like '" + txtMainAcc.Text + "%' and BRANCH_code like '" + branchID.Text + "'+'%' and t_final like '" + txtFinal.Text + "%' ");
+                DataTable dt_ = dal.getDataTabl_1(@"select A.PAYER_NAME,A.payer_l_name,
+                    B.MAIN_KM_CODE as V_PurchCode ,B.MAIN_KM_DESC as V_PurchDesc,
+                    C.MAIN_KM_CODE as V_SalesCode,C.MAIN_KM_DESC as V_SalesDesc,
+                    D.KM_RATIO as V_PurchRatio,
+                    E.KM_RATIO as V_SalesRatio
+                    from payer2 As A 
+                   inner join KM_MAIN_ACC_CODE As B on isnull(A.KM_CODE_Purch,21)=B.MAIN_KM_CODE
+				   inner join KM_MAIN_ACC_CODE As C on isnull(A.KM_CODE_Sales,11)=C.MAIN_KM_CODE
+				   inner join KM_ACC_CODE As D on B.KM_CODE=D.KM_CODE
+				   inner join KM_ACC_CODE As E on C.KM_CODE=E.KM_CODE
+                   where A.ACC_NO= '" + ID.Text + "'  and A.acc_no like '" + txtMainAcc.Text + "%' and A.BRANCH_code like '" + branchID.Text + "'+'%' and A.t_final like '" + txtFinal.Text + "%' ");
+
                 if (dt_.Rows.Count > 0)
                 {
-                    Desc.Text = dt_.Rows[0][0].ToString();
+                    if (Properties.Settings.Default.lungh == "0")
+                    {
+                        Desc.Text = dt_.Rows[0]["PAYER_NAME"].ToString();
+                    }
+                    else
+                    {
+                        Desc.Text = dt_.Rows[0]["payer_l_name"].ToString();
+                    }
+                    KM_Code_Purch.Text = dt_.Rows[0]["V_PurchCode"].ToString();
+                    KM_Desc_Purch.Text = dt_.Rows[0]["V_PurchDesc"].ToString();
+                    KM_Ratio_Purch.Text = dt_.Rows[0]["V_PurchRatio"].ToString();
+                    KM_Code_Sales.Text = dt_.Rows[0]["V_SalesCode"].ToString();
+                    KM_Desc_Sales.Text = dt_.Rows[0]["V_SalesDesc"].ToString();
+                    KM_Ratio_Sales.Text = dt_.Rows[0]["V_SalesRatio"].ToString();
                 }
                 else
                 {
                     ID.Clear();
                     Desc.Clear();
-
+                    KM_Code_Purch.Clear();
+                    KM_Desc_Purch.Clear();
+                    KM_Ratio_Purch.Clear();
+                    KM_Code_Sales.Clear();
+                    KM_Desc_Sales.Clear();
+                    KM_Ratio_Sales.Clear();
                 }
             }
             catch { }
