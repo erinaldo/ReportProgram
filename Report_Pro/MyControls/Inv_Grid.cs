@@ -16,16 +16,19 @@ namespace Report_Pro.MyControls
         public Inv_Grid()
         {
             InitializeComponent();
-
-
+           
         }
+
+      
 
         private void Inv_Grid_KeyDown(object sender, KeyEventArgs e)
         {
+
             if (e.KeyCode == Keys.Enter)
             {
                 foreach (MyControls.Inv_Row inv_r in flowLayoutPanel1.Controls)
                 {
+                   
                     inv_r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(inv_r) + 1).ToString();
 
                     if (inv_r.txt_Code.Text == string.Empty)
@@ -36,14 +39,18 @@ namespace Report_Pro.MyControls
 
 
                 }
+               
                 MyControls.Inv_Row r = new MyControls.Inv_Row();
                 flowLayoutPanel1.Controls.Add(r);
                 r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                
                 r.VatAccRate.Text = txtAccVat_Rate.Text;
                 r.txt_Code.Focus();
                 r.KeyDown += r_KeyDown;
                 r.KeyUp += r_KeyUP;
                 r.Enter += r_Enter;
+                r.Click += r_Click;
+
 
                 //r.DoubleClick += r_DoubleClick;
                 // OnKeyDown(e);
@@ -64,14 +71,17 @@ namespace Report_Pro.MyControls
 
         private void Inv_Grid_Load(object sender, EventArgs e)
         {
+
+
             MyControls.Inv_Row r = new MyControls.Inv_Row();
             flowLayoutPanel1.Controls.Add(r);
             r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
 
-
+            
             r.KeyDown += r_KeyDown;
             r.DoubleClick += r_DoubleClick;
             r.KeyUp += r_KeyUP;
+            r.Click += r_Click;
 
             flowLayoutPanel1.AutoScroll = false;
             flowLayoutPanel1.HorizontalScroll.Enabled = false;
@@ -86,11 +96,15 @@ namespace Report_Pro.MyControls
 
         }
 
+
+      
         public void r_KeyUP(object sender, System.Windows.Forms.KeyEventArgs e)
         {
 
             base.OnKeyUp(e);
         }
+
+      
 
         public void r_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
@@ -102,6 +116,13 @@ namespace Report_Pro.MyControls
         {
 
             base.OnDoubleClick(e);
+        }
+
+
+        private void r_Click(object sender, EventArgs e)
+        {
+
+            base.OnClick(e);
         }
 
         private void flowLayoutPanel1_DoubleClick(object sender, EventArgs e)
@@ -181,12 +202,31 @@ namespace Report_Pro.MyControls
 
         private void flowLayoutPanel1_ControlAdded(object sender, ControlEventArgs e)
         {
+            
             total_inv();
         }
 
         private void flowLayoutPanel1_ControlRemoved(object sender, ControlEventArgs e)
         {
+           
             total_inv();
+            if (flowLayoutPanel1.Controls.Count < 1 && txtAccVat_Rate.Text=="1")
+            {
+                MyControls.Inv_Row r = new MyControls.Inv_Row();
+                flowLayoutPanel1.Controls.Add(r);
+                r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                r.KeyDown += r_KeyDown;
+                r.DoubleClick += r_DoubleClick;
+                r.KeyUp += r_KeyUP;
+                r.Click += r_Click;
+
+            }
+            txtAccVat_Rate.Clear();
+            foreach(MyControls.Inv_Row r in flowLayoutPanel1.Controls)
+            {
+                r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+
+            }
         }
 
         private void Inv_Grid_KeyUp(object sender, KeyEventArgs e)
@@ -194,10 +234,14 @@ namespace Report_Pro.MyControls
             total_inv();
         }
 
-        private void buttonX1_Click(object sender, EventArgs e)
-        {
-            //flowLayoutPanel1.Controls[0].Dispose();
-        }
+        //private void buttonX1_Click(object sender, EventArgs e)
+        //{
+        //    var selectedUC = flowLayoutPanel1.Controls.Cast<Jor_Row>().FirstOrDefault(uc => uc.IsSelected);
+        //    if (selectedUC != null)
+        //    {
+        //        // Use the properties of the UC found to be selected as parameters is method EditUser.
+        //        EditUser(selectedUC.Name, selectedUC.Username, selectedUC.Administrator);//flowLayoutPanel1.Controls[0].Dispose();
+        //    }
 
         private void Inv_Grid_Enter(object sender, EventArgs e)
         {
@@ -208,6 +252,12 @@ namespace Report_Pro.MyControls
         private void textBox1_Enter(object sender, EventArgs e)
         {
            
+        }
+
+        private void Inv_Grid_Click(object sender, EventArgs e)
+        {
+            txtAccVat_Rate.Text = "1";
+         
         }
     }
 }

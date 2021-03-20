@@ -40,6 +40,70 @@ namespace Report_Pro.PL
 
 
 
+        //private void openForm(Form form, FormWindowState frmstate, int allowMultiOpen)
+        //{
+        //    foreach (Form frm in Application.OpenForms)
+        //    {
+        //        if (frm.Name == "login_frm" || frm.Name == "Frm_Main") continue;
+        //        if (allowMultiOpen == 0)
+        //        {
+        //            if (form.Name == frm.Name)
+        //            {
+        //                frm.Activate();
+        //                return;
+        //            }
+        //        }
+        //    }
+
+
+
+        //   // Color c = Color.FromArgb(dt_C_ch.Rows[0][1].ToString().ParseInt(), dt_C_ch.Rows[0][2].ToString().ParseInt(), dt_C_ch.Rows[0][3].ToString().ParseInt());
+        //    form.BackColor = c;
+        //    if (form.Controls.OfType<TabControl>().Count() > 0)
+        //    {
+        //        foreach (TabControl tc in form.Controls)
+        //        {
+
+        //            foreach (TabPage tb in tc.TabPages)
+        //            {
+        //                tb.BackColor = c;
+        //            }
+
+        //        }
+
+        //    }
+
+        //    Size S = form.Size;
+        //    form.Font = new Font(form.Font.Name, Program.FS, form.Font.Style);
+
+        //    foreach (Control ctrl in form.Controls)
+        //    {
+        //        //if (ctrl.Controls != null)
+
+        //        //   SetAllControlsFont(ctrl);
+
+        //        ctrl.Font = new Font(form.Font.Name, Program.FS, form.Font.Style);
+
+        //    }
+        //    form.Size = S;
+        //    form.TopLevel = false;
+
+        //    this.panel2.Controls.Add(form);
+        //    //this.panel2.Dock = DockStyle.Fill;
+        //    //form.Dock = DockStyle.Fill;
+
+        //    ////form.MdiParent = this;
+        //    form.WindowState = frmstate;
+        //    form.Show();
+        //    form.BringToFront();
+        //    form.Location = new Point(
+        //    (panel2.Location.X + panel2.Width / 2) - (form.Width / 2),
+        //    (panel2.Location.Y + panel2.Height / 2) - (form.Height / 2));
+        //    form.StartPosition = FormStartPosition.Manual;
+
+        //}
+
+
         private void openForm(Form form, FormWindowState frmstate, int allowMultiOpen)
         {
             foreach (Form frm in Application.OpenForms)
@@ -57,7 +121,7 @@ namespace Report_Pro.PL
 
 
 
-           // Color c = Color.FromArgb(dt_C_ch.Rows[0][1].ToString().ParseInt(), dt_C_ch.Rows[0][2].ToString().ParseInt(), dt_C_ch.Rows[0][3].ToString().ParseInt());
+            // Color c = Color.FromArgb(dt_C_ch.Rows[0][1].ToString().ParseInt(), dt_C_ch.Rows[0][2].ToString().ParseInt(), dt_C_ch.Rows[0][3].ToString().ParseInt());
             form.BackColor = c;
             if (form.Controls.OfType<TabControl>().Count() > 0)
             {
@@ -68,13 +132,13 @@ namespace Report_Pro.PL
                     {
                         tb.BackColor = c;
                     }
-               
+
                 }
 
             }
-           
+
             Size S = form.Size;
-            form.Font = new Font(form.Font.Name, Program.FS, form.Font.Style);
+            form.Font = new Font(form.Font.Name, Properties.Settings.Default.font_, form.Font.Style);
 
             foreach (Control ctrl in form.Controls)
             {
@@ -82,17 +146,17 @@ namespace Report_Pro.PL
 
                 //   SetAllControlsFont(ctrl);
 
-                ctrl.Font = new Font(form.Font.Name, Program.FS, form.Font.Style);
+                ctrl.Font = new Font(form.Font.Name, Properties.Settings.Default.font_, form.Font.Style);
 
             }
             form.Size = S;
             form.TopLevel = false;
-           
-            this.panel2.Controls.Add(form);
-            //this.panel2.Dock = DockStyle.Fill;
-            //form.Dock = DockStyle.Fill;
 
-            ////form.MdiParent = this;
+            this.panel2.Controls.Add(form);
+            this.panel2.Dock = DockStyle.Fill;
+            form.Dock = DockStyle.Fill;
+
+            //form.MdiParent = this;
             form.WindowState = frmstate;
             form.Show();
             form.BringToFront();
@@ -1086,7 +1150,14 @@ namespace Report_Pro.PL
                 {
                     branch_ = dr["Branch_code"].ToString();
                 }
-                t.Text = branch_ + " - " + dr["branch_name"].ToString();
+                if (Properties.Settings.Default.lungh == "0")
+                {
+                    t.Text = branch_ + " - " + dr["branch_name"].ToString();
+                }
+                else
+                {
+                    t.Text = branch_ + " - " + dr["WH_E_NAME"].ToString();
+                }
                 t.Name = branch_;
                 t.Tag = _acountsTb.Rows.IndexOf(dr);
                 if (dr["t_final"].ToString() == "1")

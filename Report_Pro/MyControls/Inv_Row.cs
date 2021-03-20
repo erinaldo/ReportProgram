@@ -321,5 +321,11 @@ namespace Report_Pro.MyControls
         {
           
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+          OnClick(e);
+           this.Dispose();
+        }
     }
 }

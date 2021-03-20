@@ -48,6 +48,7 @@
             this.qty = new DevComponents.Editors.DoubleInput();
             this.totWeight = new DevComponents.Editors.DoubleInput();
             this.VatAccRate = new System.Windows.Forms.TextBox();
+            this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.Ser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Price_ton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight_)).BeginInit();
@@ -267,12 +268,22 @@
             this.VatAccRate.ReadOnly = true;
             this.VatAccRate.TabStop = false;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDelete.Image = global::Report_Pro.Properties.Resources.Cross_icon1;
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Inv_Row
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.VatAccRate);
             this.Controls.Add(this.totWeight);
             this.Controls.Add(this.KM_TYPE_ITEMS);
@@ -327,5 +338,6 @@
         public DevComponents.Editors.DoubleInput qty;
         public DevComponents.Editors.DoubleInput totWeight;
         public System.Windows.Forms.TextBox VatAccRate;
+        private DevComponents.DotNetBar.ButtonX btnDelete;
     }
 }

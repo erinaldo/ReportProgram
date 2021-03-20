@@ -1100,9 +1100,6 @@
       <DependentUpon>Uc_Group.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyControls\Inv_Row.ar.resx">
-      <DependentUpon>Inv_Row.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Inv_Row.resx">
       <DependentUpon>Inv_Row.cs</DependentUpon>
     </EmbeddedResource>
@@ -1380,9 +1377,6 @@
     <EmbeddedResource Include="PL\frm_PE_Jor.resx">
       <DependentUpon>frm_PE_Jor.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\frm_PreformaInvoice.ar.resx">
-      <DependentUpon>frm_PreformaInvoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_PreformaInvoice.resx">
       <DependentUpon>frm_PreformaInvoice.cs</DependentUpon>

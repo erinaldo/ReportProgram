@@ -471,6 +471,7 @@ namespace Report_Pro.PL
                 r.txt_Code.Focus();
                 r.KeyDown += r_KeyDown;
                 r.KeyUp += r_KeyUp;
+                r.Click += r_Click;
             }
         }
 
@@ -489,8 +490,11 @@ namespace Report_Pro.PL
             OnKeyUp(e);
         }
 
-
-        private void BSearch_Click(object sender, EventArgs e)
+        private void r_Click(object sender, EventArgs e)
+        {
+            OnClick(e);
+        }
+            private void BSearch_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = true;
             txtsearch.Focus();
@@ -645,19 +649,19 @@ namespace Report_Pro.PL
                 }
 
 
-                //DataTable dtSer = dal.getDataTabl_1(@"select isnull(per+1,1) from wh_Serial where Branch_code= '" + txtBranch.ID.Text + "' and Cyear='" + txtcyear.Text + "'");
-                //    if (dtSer.Rows.Count > 0)
-                //    {
+                    DataTable dtSer = dal.getDataTabl_1(@"select isnull(per+1,1) from wh_Serial where Branch_code= '" + txtBranch.ID.Text + "' and Cyear='" + txtcyear.Text + "'");
+                    if (dtSer.Rows.Count > 0)
+                    {
                         cmd.CommandText = @"UPDATE  wh_Serial SET  PER= '" + txtId.Text + "' WHERE Branch_code = '" + txtBranch.ID.Text + "' and Cyear='" + txtDate.Value.ToString("yy") + "' ";
                         cmd.ExecuteNonQuery();
 
-                    //}
-                    //else
-                    //{
-                    //    cmd.CommandText = @"INSERT INTO wh_Serial (Branch_code,Cyear,PER) Values('" + txtBranch.ID.Text + "' ,'" + txtDate.Value.ToString("yy") + "','" + txtId.Text + "')";
-                    //    cmd.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                        cmd.CommandText = @"INSERT INTO wh_Serial (Branch_code,Cyear,PER) Values('" + txtBranch.ID.Text + "' ,'" + txtDate.Value.ToString("yy") + "','" + txtId.Text + "')";
+                        cmd.ExecuteNonQuery();
 
-                    //}
+                    }
                     trans.Commit();
                 }
                 catch (Exception ex)
@@ -789,6 +793,7 @@ namespace Report_Pro.PL
                         inv_Grid1.flowLayoutPanel1.Controls.Add(rw);
                        rw.KeyDown += r_KeyDown;
                     rw.KeyUp += r_KeyUp;
+                    rw.Click += r_Click;
                     i = i + 1;
 
                 }
@@ -798,7 +803,7 @@ namespace Report_Pro.PL
                 r.Ser.Text = (inv_Grid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
                 r.KeyDown += r_KeyDown;
                 r.KeyUp += r_KeyUp;
-
+                r.Click += r_Click;
 
                 //dGV_Item.DataSource = dt;
                 //resizeDG();
@@ -1081,6 +1086,10 @@ private void AddInvDetails()
 
         }
 
-
+        private void frm_PreformaInvoice_Click(object sender, EventArgs e)
+        {
+            inv_Grid1.txtAccVat_Rate.Text = "1";
+           
+        }
     }
 }

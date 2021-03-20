@@ -1360,7 +1360,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_Cu
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_Customer.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_Group.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_Group.sq-AL.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Row.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Items.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_PayType.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Uc_Supplier.ar.resources
@@ -1381,7 +1380,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_BS_elemen
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Create_PE_Jor.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Main.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PE_Jor.ar.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PreformaInvoice.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Purch_Qutation.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Purch_Qutation.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_R_Matrails.ar.resources
