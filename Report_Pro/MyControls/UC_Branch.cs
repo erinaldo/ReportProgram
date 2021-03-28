@@ -100,8 +100,9 @@ namespace Report_Pro.MyControls
         private void ID_Enter(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 23;
+            this.Height = 26;
             this.SendToBack();
+            this.BackColor = Color.Red;
         }
 
         private void dgv1_DoubleClick(object sender, EventArgs e)
@@ -114,7 +115,7 @@ namespace Report_Pro.MyControls
             get_desc();
 
             dgv1.Visible = false;
-            this.Height = 23;
+            this.Height = 26;
             this.SendToBack();
 
         }
@@ -144,8 +145,9 @@ namespace Report_Pro.MyControls
         private void UC_Branch_Leave(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 23;
+            this.Height = 26;
             this.SendToBack();
+            this.BackColor = Color.Transparent;
         }
 
         private void ID_Leave(object sender, EventArgs e)

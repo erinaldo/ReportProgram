@@ -36,12 +36,12 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.btn_delete = new DevComponents.DotNetBar.ButtonX();
             this.btnSearch = new DevComponents.DotNetBar.ButtonX();
+            this.btnNew = new DevComponents.DotNetBar.ButtonX();
             this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.txtDesc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.txtCode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.btnNew = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).BeginInit();
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,11 +70,12 @@
             this.dgv_1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dgv_1.Location = new System.Drawing.Point(0, 111);
+            this.dgv_1.Location = new System.Drawing.Point(0, 137);
+            this.dgv_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgv_1.Name = "dgv_1";
             this.dgv_1.ReadOnly = true;
             this.dgv_1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_1.Size = new System.Drawing.Size(563, 136);
+            this.dgv_1.Size = new System.Drawing.Size(782, 167);
             this.dgv_1.TabIndex = 8;
             this.dgv_1.DoubleClick += new System.EventHandler(this.dgv_1_DoubleClick);
             // 
@@ -94,8 +95,9 @@
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
+            this.groupPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(563, 111);
+            this.groupPanel1.Size = new System.Drawing.Size(782, 137);
             // 
             // 
             // 
@@ -125,9 +127,10 @@
             // 
             // 
             this.txtDesc_L.Border.Class = "TextBoxBorder";
-            this.txtDesc_L.Location = new System.Drawing.Point(229, 70);
+            this.txtDesc_L.Location = new System.Drawing.Point(392, 86);
+            this.txtDesc_L.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDesc_L.Name = "txtDesc_L";
-            this.txtDesc_L.Size = new System.Drawing.Size(249, 20);
+            this.txtDesc_L.Size = new System.Drawing.Size(290, 24);
             this.txtDesc_L.TabIndex = 8;
             this.txtDesc_L.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDesc_L_KeyUp);
             // 
@@ -136,9 +139,10 @@
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(480, 72);
+            this.labelX3.Location = new System.Drawing.Point(685, 89);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(67, 17);
+            this.labelX3.Size = new System.Drawing.Size(83, 20);
             this.labelX3.TabIndex = 9;
             this.labelX3.Text = "الوصف لاتيني";
             // 
@@ -147,9 +151,10 @@
             this.btn_delete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_delete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn_delete.Image = global::Report_Pro.Properties.Resources.deleteAttach_icon;
-            this.btn_delete.Location = new System.Drawing.Point(33, 80);
+            this.btn_delete.Location = new System.Drawing.Point(38, 98);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(75, 22);
+            this.btn_delete.Size = new System.Drawing.Size(87, 27);
             this.btn_delete.TabIndex = 7;
             this.btn_delete.Text = "حذف";
             // 
@@ -158,21 +163,36 @@
             this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
-            this.btnSearch.Location = new System.Drawing.Point(33, 56);
+            this.btnSearch.Location = new System.Drawing.Point(38, 69);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 22);
+            this.btnSearch.Size = new System.Drawing.Size(87, 27);
             this.btnSearch.TabIndex = 6;
             this.btnSearch.Text = "بحث";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnNew
+            // 
+            this.btnNew.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnNew.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
+            this.btnNew.Location = new System.Drawing.Point(38, 7);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(87, 27);
+            this.btnNew.TabIndex = 5;
+            this.btnNew.Text = "جديد";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnSave
             // 
             this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
-            this.btnSave.Location = new System.Drawing.Point(33, 31);
+            this.btnSave.Location = new System.Drawing.Point(38, 38);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 22);
+            this.btnSave.Size = new System.Drawing.Size(87, 27);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "حفظ";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -184,9 +204,10 @@
             // 
             // 
             this.txtDesc.Border.Class = "TextBoxBorder";
-            this.txtDesc.Location = new System.Drawing.Point(229, 47);
+            this.txtDesc.Location = new System.Drawing.Point(392, 58);
+            this.txtDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(249, 20);
+            this.txtDesc.Size = new System.Drawing.Size(290, 24);
             this.txtDesc.TabIndex = 1;
             this.txtDesc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDesc_KeyUp);
             // 
@@ -195,9 +216,10 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(480, 49);
+            this.labelX2.Location = new System.Drawing.Point(685, 60);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(35, 17);
+            this.labelX2.Size = new System.Drawing.Size(43, 20);
             this.labelX2.TabIndex = 3;
             this.labelX2.Text = "الوصف";
             // 
@@ -208,9 +230,10 @@
             // 
             // 
             this.txtCode.Border.Class = "TextBoxBorder";
-            this.txtCode.Location = new System.Drawing.Point(384, 24);
+            this.txtCode.Location = new System.Drawing.Point(573, 30);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(94, 20);
+            this.txtCode.Size = new System.Drawing.Size(110, 24);
             this.txtCode.TabIndex = 0;
             this.txtCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCode_KeyUp);
             // 
@@ -219,35 +242,25 @@
             this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(480, 27);
+            this.labelX1.Location = new System.Drawing.Point(685, 33);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(28, 17);
+            this.labelX1.Size = new System.Drawing.Size(34, 20);
             this.labelX1.TabIndex = 2;
             this.labelX1.Text = "الكود";
             // 
-            // btnNew
+            // frmAddDelevryTearms
             // 
-            this.btnNew.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnNew.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
-            this.btnNew.Location = new System.Drawing.Point(33, 6);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 22);
-            this.btnNew.TabIndex = 5;
-            this.btnNew.Text = "جديد";
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // frmAddPaymentTearms
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 247);
+            this.ClientSize = new System.Drawing.Size(782, 304);
             this.Controls.Add(this.dgv_1);
             this.Controls.Add(this.groupPanel1);
-            this.Name = "frmAddPaymentTearms";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "frmAddDelevryTearms";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "شروط الدفع";
+            this.Text = "مكان التسليم";
             this.Load += new System.EventHandler(this.frmAddPaymentTearms_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).EndInit();
             this.groupPanel1.ResumeLayout(false);

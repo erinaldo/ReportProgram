@@ -105,8 +105,9 @@ namespace Report_Pro.MyControls
         private void ID_Enter(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 23;
+            this.Height = 26;
             this.SendToBack();
+            this.BackColor = Color.Red;
         }
 
 
@@ -120,7 +121,7 @@ namespace Report_Pro.MyControls
             Desc.Text = dgv1.Rows[ii].Cells[1].Value.ToString();
 
             dgv1.Visible = false;
-            this.Height = 23;
+            this.Height = 26;
             this.SendToBack();
 
         }
@@ -140,9 +141,9 @@ namespace Report_Pro.MyControls
         private void UC_Acc_Leave(object sender, EventArgs e)
         {
             dgv1.Visible = false;
-            this.Height = 23;
+            this.Height = 26;
             this.SendToBack();
-
+            this.BackColor = Color.Transparent;
         }
 
         private void ID_Leave(object sender, EventArgs e)
@@ -189,6 +190,7 @@ namespace Report_Pro.MyControls
                     KM_Desc_Sales.Clear();
                     KM_Ratio_Sales.Clear();
                 }
+               
             }
             catch { }
         }

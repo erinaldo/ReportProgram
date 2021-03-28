@@ -147,7 +147,7 @@ namespace Report_Pro.PL
                 txtLoanAcc.ID.Text = loanData.Rows[0]["LoanACC"].ToString();
                 NoOfPayments.Text = loanData.Rows[0]["NumberOfPayments"].ToString();
                 txtLoanNo.Text = loanData.Rows[0]["LoanNo"].ToString();
-                txtIntrestRate.Text = loanData.Rows[0]["Rate"].ToString();
+                txtIntrestRate.Text = loanData.Rows[0]["Rate"].ToString().ToDecimal().ToString();
                 txtLoanValue.Text = loanData.Rows[0]["LoanValue"].ToString();
                 txtLoanPurpose.SelectedIndex= loanData.Rows[0]["LoanPurpose"].ToString().ParseInt(0);
                 txtLoanRefrance.Text= loanData.Rows[0]["LoanRefrance"].ToString(); 

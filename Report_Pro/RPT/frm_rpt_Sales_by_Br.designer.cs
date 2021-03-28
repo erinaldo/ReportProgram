@@ -30,43 +30,37 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_rpt_Sales_by_Br));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMonthelySales = new DevComponents.DotNetBar.ButtonX();
+            this.button5 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
             this.button15 = new DevComponents.DotNetBar.ButtonX();
-            this.btnMonthelySales = new System.Windows.Forms.Button();
             this.button13 = new DevComponents.DotNetBar.ButtonX();
             this.button4 = new DevComponents.DotNetBar.ButtonX();
             this.button3 = new DevComponents.DotNetBar.ButtonX();
             this.button1 = new DevComponents.DotNetBar.ButtonX();
             this.btn_Report = new DevComponents.DotNetBar.ButtonX();
             this.btnOption = new DevComponents.DotNetBar.ButtonX();
-            this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cmb_DimCategory = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.payment_type = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.category = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dTP2 = new System.Windows.Forms.DateTimePicker();
             this.dTP1 = new System.Windows.Forms.DateTimePicker();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.radioBtn1 = new System.Windows.Forms.RadioButton();
             this.radioBtn3 = new System.Windows.Forms.RadioButton();
             this.radioBtn2 = new System.Windows.Forms.RadioButton();
-            this.radioBtn1 = new System.Windows.Forms.RadioButton();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.rBtnS = new System.Windows.Forms.RadioButton();
             this.rBtnWithoutS = new System.Windows.Forms.RadioButton();
             this.rBtnAll = new System.Windows.Forms.RadioButton();
-            this.button8 = new System.Windows.Forms.Button();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.chX = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chF = new DevComponents.DotNetBar.Controls.CheckBoxX();
@@ -75,42 +69,58 @@
             this.chP = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chC = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.chS = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.button7 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.Items = new Report_Pro.MyControls.UC_Items();
-            this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
             this.label9 = new System.Windows.Forms.Label();
-            this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
             this.label7 = new System.Windows.Forms.Label();
-            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.thick_2 = new System.Windows.Forms.NumericUpDown();
             this.thick_1 = new System.Windows.Forms.NumericUpDown();
+            this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
+            this.Items = new Report_Pro.MyControls.UC_Items();
+            this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
+            this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thick_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thick_1)).BeginInit();
+            this.groupPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel1.Controls.Add(this.btnMonthelySales);
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.buttonX5);
             this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.btnMonthelySales);
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_Report);
             this.panel1.Controls.Add(this.btnOption);
-            this.panel1.Controls.Add(this.button5);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnMonthelySales
+            // 
+            this.btnMonthelySales.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnMonthelySales.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.btnMonthelySales, "btnMonthelySales");
+            this.btnMonthelySales.Name = "btnMonthelySales";
+            this.btnMonthelySales.Click += new System.EventHandler(this.btnMonthelySales_Click);
+            // 
+            // button5
+            // 
+            this.button5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.button5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // buttonX5
             // 
@@ -127,16 +137,6 @@
             resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
             this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // btnMonthelySales
-            // 
-            resources.ApplyResources(this.btnMonthelySales, "btnMonthelySales");
-            this.btnMonthelySales.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnMonthelySales.FlatAppearance.BorderSize = 0;
-            this.btnMonthelySales.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnMonthelySales.Name = "btnMonthelySales";
-            this.btnMonthelySales.UseVisualStyleBackColor = false;
-            this.btnMonthelySales.Click += new System.EventHandler(this.btnMonthelySales_Click);
             // 
             // button13
             // 
@@ -186,16 +186,6 @@
             this.btnOption.Name = "btnOption";
             this.btnOption.Click += new System.EventHandler(this.btnOption_Click);
             // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.ForeColor = System.Drawing.SystemColors.Window;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
@@ -206,12 +196,12 @@
             // 
             // cmb_DimCategory
             // 
-            resources.ApplyResources(this.cmb_DimCategory, "cmb_DimCategory");
             this.cmb_DimCategory.FormattingEnabled = true;
             this.cmb_DimCategory.Items.AddRange(new object[] {
             resources.GetString("cmb_DimCategory.Items"),
             resources.GetString("cmb_DimCategory.Items1"),
             resources.GetString("cmb_DimCategory.Items2")});
+            resources.ApplyResources(this.cmb_DimCategory, "cmb_DimCategory");
             this.cmb_DimCategory.Name = "cmb_DimCategory";
             this.cmb_DimCategory.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -225,22 +215,14 @@
             // 
             // payment_type
             // 
-            resources.ApplyResources(this.payment_type, "payment_type");
             this.payment_type.FormattingEnabled = true;
             this.payment_type.Items.AddRange(new object[] {
             resources.GetString("payment_type.Items"),
             resources.GetString("payment_type.Items1"),
             resources.GetString("payment_type.Items2")});
+            resources.ApplyResources(this.payment_type, "payment_type");
             this.payment_type.Name = "payment_type";
             this.payment_type.SelectedIndexChanged += new System.EventHandler(this.payment_type_SelectedIndexChanged);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label6.Name = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label4
             // 
@@ -257,13 +239,6 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label3.Name = "label3";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // category
-            // 
-            resources.ApplyResources(this.category, "category");
-            this.category.FormattingEnabled = true;
-            this.category.Name = "category";
-            this.category.SelectedIndexChanged += new System.EventHandler(this.category_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -299,67 +274,6 @@
             resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.ForeColor = System.Drawing.SystemColors.Window;
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button11
-            // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.ForeColor = System.Drawing.SystemColors.Window;
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.buttonX2);
-            this.groupBox1.Controls.Add(this.buttonX1);
-            this.groupBox1.Controls.Add(this.groupPanel3);
-            this.groupBox1.Controls.Add(this.groupPanel1);
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.groupPanel2);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.Items);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.Uc_Group);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.Uc_Acc);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.UC_Branch);
-            this.groupBox1.Controls.Add(this.thick_2);
-            this.groupBox1.Controls.Add(this.thick_1);
-            this.groupBox1.Controls.Add(this.button12);
-            this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.dTP1);
-            this.groupBox1.Controls.Add(this.category);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.dTP2);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.payment_type);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.cmb_DimCategory);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // buttonX2
             // 
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -378,11 +292,12 @@
             // 
             // groupPanel3
             // 
+            this.groupPanel3.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.radioBtn1);
             this.groupPanel3.Controls.Add(this.radioBtn3);
             this.groupPanel3.Controls.Add(this.radioBtn2);
-            this.groupPanel3.Controls.Add(this.radioBtn1);
             resources.ApplyResources(this.groupPanel3, "groupPanel3");
             this.groupPanel3.Name = "groupPanel3";
             // 
@@ -406,6 +321,16 @@
             this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
+            // radioBtn1
+            // 
+            this.radioBtn1.BackColor = System.Drawing.Color.Transparent;
+            this.radioBtn1.Checked = true;
+            this.radioBtn1.ForeColor = System.Drawing.Color.MidnightBlue;
+            resources.ApplyResources(this.radioBtn1, "radioBtn1");
+            this.radioBtn1.Name = "radioBtn1";
+            this.radioBtn1.TabStop = true;
+            this.radioBtn1.UseVisualStyleBackColor = false;
+            // 
             // radioBtn3
             // 
             this.radioBtn3.BackColor = System.Drawing.Color.Transparent;
@@ -422,18 +347,9 @@
             this.radioBtn2.Name = "radioBtn2";
             this.radioBtn2.UseVisualStyleBackColor = false;
             // 
-            // radioBtn1
-            // 
-            this.radioBtn1.BackColor = System.Drawing.Color.Transparent;
-            this.radioBtn1.Checked = true;
-            this.radioBtn1.ForeColor = System.Drawing.Color.MidnightBlue;
-            resources.ApplyResources(this.radioBtn1, "radioBtn1");
-            this.radioBtn1.Name = "radioBtn1";
-            this.radioBtn1.TabStop = true;
-            this.radioBtn1.UseVisualStyleBackColor = false;
-            // 
             // groupPanel1
             // 
+            this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.rBtnS);
@@ -490,19 +406,8 @@
             this.rBtnAll.TabStop = true;
             this.rBtnAll.UseVisualStyleBackColor = false;
             // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.ForeColor = System.Drawing.SystemColors.Window;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
             // groupPanel2
             // 
-            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.Color.Transparent;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
@@ -513,6 +418,7 @@
             this.groupPanel2.Controls.Add(this.chP);
             this.groupPanel2.Controls.Add(this.chC);
             this.groupPanel2.Controls.Add(this.chS);
+            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.Name = "groupPanel2";
             // 
             // 
@@ -537,12 +443,12 @@
             // 
             // chX
             // 
+            resources.ApplyResources(this.chX, "chX");
             this.chX.BackColor = System.Drawing.Color.Transparent;
             this.chX.CheckBoxPosition = DevComponents.DotNetBar.eCheckBoxPosition.Right;
             this.chX.Checked = true;
             this.chX.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chX.CheckValue = "Y";
-            resources.ApplyResources(this.chX, "chX");
             this.chX.Name = "chX";
             // 
             // chF
@@ -605,40 +511,12 @@
             this.chS.CheckValue = "Y";
             this.chS.Name = "chS";
             // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.ForeColor = System.Drawing.SystemColors.Window;
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click_1);
-            // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label10.Name = "label10";
-            // 
-            // Items
-            // 
-            resources.ApplyResources(this.Items, "Items");
-            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Items.Name = "Items";
-            this.Items.Load += new System.EventHandler(this.Items_Load);
-            this.Items.Click += new System.EventHandler(this.Items_Click);
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.ForeColor = System.Drawing.SystemColors.Window;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // label11
             // 
@@ -647,25 +525,12 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label11.Name = "label11";
             // 
-            // Uc_Group
-            // 
-            resources.ApplyResources(this.Uc_Group, "Uc_Group");
-            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Group.Name = "Uc_Group";
-            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label9.Name = "label9";
-            // 
-            // Uc_Acc
-            // 
-            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
-            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Acc.Name = "Uc_Acc";
             // 
             // label7
             // 
@@ -674,18 +539,10 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label7.Name = "label7";
             // 
-            // UC_Branch
-            // 
-            resources.ApplyResources(this.UC_Branch, "UC_Branch");
-            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
-            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Name = "UC_Branch";
-            // 
             // thick_2
             // 
-            resources.ApplyResources(this.thick_2, "thick_2");
             this.thick_2.DecimalPlaces = 2;
+            resources.ApplyResources(this.thick_2, "thick_2");
             this.thick_2.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -695,8 +552,8 @@
             // 
             // thick_1
             // 
-            resources.ApplyResources(this.thick_1, "thick_1");
             this.thick_1.DecimalPlaces = 2;
+            resources.ApplyResources(this.thick_1, "thick_1");
             this.thick_1.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -704,25 +561,107 @@
             0});
             this.thick_1.Name = "thick_1";
             // 
+            // groupPanel4
+            // 
+            this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.buttonX2);
+            this.groupPanel4.Controls.Add(this.UC_Branch);
+            this.groupPanel4.Controls.Add(this.buttonX1);
+            this.groupPanel4.Controls.Add(this.cmb_DimCategory);
+            this.groupPanel4.Controls.Add(this.groupPanel3);
+            this.groupPanel4.Controls.Add(this.label8);
+            this.groupPanel4.Controls.Add(this.groupPanel1);
+            this.groupPanel4.Controls.Add(this.payment_type);
+            this.groupPanel4.Controls.Add(this.groupPanel2);
+            this.groupPanel4.Controls.Add(this.label5);
+            this.groupPanel4.Controls.Add(this.label10);
+            this.groupPanel4.Controls.Add(this.dTP2);
+            this.groupPanel4.Controls.Add(this.Items);
+            this.groupPanel4.Controls.Add(this.label4);
+            this.groupPanel4.Controls.Add(this.label11);
+            this.groupPanel4.Controls.Add(this.dTP1);
+            this.groupPanel4.Controls.Add(this.Uc_Group);
+            this.groupPanel4.Controls.Add(this.label3);
+            this.groupPanel4.Controls.Add(this.label9);
+            this.groupPanel4.Controls.Add(this.label1);
+            this.groupPanel4.Controls.Add(this.Uc_Acc);
+            this.groupPanel4.Controls.Add(this.label2);
+            this.groupPanel4.Controls.Add(this.label7);
+            this.groupPanel4.Controls.Add(this.thick_1);
+            this.groupPanel4.Controls.Add(this.thick_2);
+            resources.ApplyResources(this.groupPanel4, "groupPanel4");
+            this.groupPanel4.Name = "groupPanel4";
+            // 
+            // 
+            // 
+            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel4.Style.BackColorGradientAngle = 90;
+            this.groupPanel4.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderBottomWidth = 1;
+            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderLeftWidth = 1;
+            this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderRightWidth = 1;
+            this.groupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderTopWidth = 1;
+            this.groupPanel4.Style.CornerDiameter = 4;
+            this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel4.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // UC_Branch
+            // 
+            this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
+            this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.UC_Branch, "UC_Branch");
+            this.UC_Branch.Name = "UC_Branch";
+            // 
+            // Items
+            // 
+            this.Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.Items, "Items");
+            this.Items.Name = "Items";
+            this.Items.Load += new System.EventHandler(this.Items_Load);
+            this.Items.Click += new System.EventHandler(this.Items_Click);
+            // 
+            // Uc_Group
+            // 
+            this.Uc_Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.Uc_Group, "Uc_Group");
+            this.Uc_Group.Name = "Uc_Group";
+            // 
+            // Uc_Acc
+            // 
+            this.Uc_Acc.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
+            this.Uc_Acc.Name = "Uc_Acc";
+            // 
             // frm_rpt_Sales_by_Br
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupPanel4);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Name = "frm_rpt_Sales_by_Br";
             this.Load += new System.EventHandler(this.frm_rpt_Sales_by_Br_Load);
             this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupPanel3.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             this.groupPanel2.ResumeLayout(false);
+            this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thick_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thick_1)).EndInit();
+            this.groupPanel4.ResumeLayout(false);
+            this.groupPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -736,17 +675,11 @@
         private System.Windows.Forms.DateTimePicker dTP1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox category;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox payment_type;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmb_DimCategory;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.NumericUpDown thick_2;
         private System.Windows.Forms.NumericUpDown thick_1;
         private System.Windows.Forms.Label label7;
@@ -755,10 +688,8 @@
         private MyControls.UC_Acc Uc_Acc;
         private System.Windows.Forms.Label label11;
         private MyControls.Uc_Group Uc_Group;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label10;
         private MyControls.UC_Items Items;
-        private System.Windows.Forms.Button button7;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
         private DevComponents.DotNetBar.Controls.CheckBoxX chF;
         private DevComponents.DotNetBar.Controls.CheckBoxX chZ;
@@ -766,8 +697,6 @@
         private DevComponents.DotNetBar.Controls.CheckBoxX chP;
         private DevComponents.DotNetBar.Controls.CheckBoxX chC;
         private DevComponents.DotNetBar.Controls.CheckBoxX chS;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button btnMonthelySales;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private System.Windows.Forms.RadioButton rBtnS;
         private System.Windows.Forms.RadioButton rBtnWithoutS;
@@ -787,5 +716,8 @@
         private DevComponents.DotNetBar.Controls.CheckBoxX chX;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX btnMonthelySales;
+        private DevComponents.DotNetBar.ButtonX button5;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
     }
 }

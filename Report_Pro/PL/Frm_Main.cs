@@ -178,7 +178,14 @@ namespace Report_Pro.PL
 
             _acountsTb = dal.getDataTabl("get_SM");
             TreeNode tr = new TreeNode();
-            tr.Text = "الصفحة الرئيسية";
+            if (Properties.Settings.Default.lungh == "0")
+            {
+                tr.Text = "الصفحة الرئيسية";
+            }
+            else
+            {
+                tr.Text = "Home";
+            }
             tr.Name = "0";
             TV1.Nodes.Add(tr);
             PopulateTreeView_Menue("0", null);
@@ -191,7 +198,14 @@ namespace Report_Pro.PL
         {
             _acountsTb = dal.getDataTabl("get_SM");
             TreeNode tr = new TreeNode();
-            tr.Text = "الصفحة الرئيسية";
+            if (Properties.Settings.Default.lungh == "0")
+            {
+                tr.Text = "الصفحة الرئيسية";
+            }
+            else
+            {
+                tr.Text = "Home";
+            }
             tr.Name = "0";
             TV1.Nodes.Add(tr);
             PopulateTreeView_Menue("0", null);
@@ -204,7 +218,14 @@ namespace Report_Pro.PL
             foreach (DataRow dr in _acountsTb.Select("prev_no = '" + parentId + "'"))
             {
                 TreeNode t = new TreeNode();
-                t.Text =/* dr["Menu_code"].ToString() + " - " +*/ dr["Menu_name"].ToString();
+                if (Properties.Settings.Default.lungh == "0")
+                {
+                    t.Text =/* dr["Menu_code"].ToString() + " - " +*/ dr["Menu_name"].ToString();
+                }
+                else
+                {
+                    t.Text =/* dr["Menu_code"].ToString() + " - " +*/ dr["Menu_E_Name"].ToString();
+                }
                 t.Name = dr["Menu_code"].ToString();
                 t.Tag = _acountsTb.Rows.IndexOf(dr);
                 if (dr["T_final"].ToString() == "0")
@@ -547,7 +568,9 @@ namespace Report_Pro.PL
 
         private void M51_Click(object sender, EventArgs e)
         {
-            openForm(new RPT.frm_rpt_inventory(), FormWindowState.Normal, 0);
+            //openForm(new RPT.frm_rpt_inventory(), FormWindowState.Normal, 0);
+            openForm(new RPT.frm_Inventory_Report(), FormWindowState.Normal, 0);
+
         }
 
         private void M53_Click(object sender, EventArgs e)
@@ -832,7 +855,16 @@ namespace Report_Pro.PL
             for (int i = 0; i < dt_icons.Rows.Count; i++)
             {
                 DataRow dr = dt_icons.Rows[i];
-                ListViewItem listitem = new ListViewItem(dr["Menu_name"].ToString());
+                ListViewItem listitem;
+                if (Properties.Settings.Default.lungh == "0")
+                {
+                     listitem = new ListViewItem(dr["Menu_name"].ToString());
+                }
+                else
+                {
+                    listitem = new ListViewItem(dr["Menu_E_Name"].ToString());
+                }
+                //ListViewItem listitem = new ListViewItem(dr["Menu_name"].ToString());
                 listitem.SubItems.Add(dr["Menu_code"].ToString());
                 listitem.SubItems.Add(dr["Form_Name"].ToString());
                 listitem.SubItems.Add(dr["T_final"].ToString());
@@ -1305,7 +1337,7 @@ namespace Report_Pro.PL
 
         private void M87_Click(object sender, EventArgs e)
         {
-            openForm(new PL.frm_PreformaInvoice(), FormWindowState.Maximized, 0);
+         
 
         }
 
@@ -1318,6 +1350,23 @@ namespace Report_Pro.PL
         private void M89_Click(object sender, EventArgs e)
         {
             openForm(new PL.frm_LoanPayment(), FormWindowState.Maximized, 0);
+        }
+
+        private void M87_2_Click(object sender, EventArgs e)
+        {
+            openForm(new PL.frm_PreformaInvoice(), FormWindowState.Maximized, 0);
+           
+        }
+
+        private void M87_1_Click(object sender, EventArgs e)
+        {
+
+            openForm(new PL.frm_PreformaInvoice_Local(), FormWindowState.Maximized, 0);
+        }
+
+        private void btn_CashTransaction_Click(object sender, EventArgs e)
+        {
+            openForm(new CTR.frm_cash_transaction(), FormWindowState.Maximized, 0);
         }
     }
 }

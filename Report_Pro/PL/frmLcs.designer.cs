@@ -201,11 +201,13 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label9.Name = "label9";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // AcceptDays
             // 
             resources.ApplyResources(this.AcceptDays, "AcceptDays");
             this.AcceptDays.Name = "AcceptDays";
+            this.AcceptDays.TextChanged += new System.EventHandler(this.AcceptDays_TextChanged);
             this.AcceptDays.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AcceptDays_KeyDown);
             this.AcceptDays.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AcceptDays_KeyPress);
             // 
@@ -883,8 +885,8 @@
             // tabControl1
             // 
             this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
+            this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";

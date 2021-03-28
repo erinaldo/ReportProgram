@@ -16,8 +16,9 @@ namespace Report_Pro.PL
 {
     public partial class frm_LoanPayment : Form
     {
-        CultureInfo cul;
-        Assembly a = Assembly.Load("Report_Pro");
+       // CultureInfo cul;
+       //// Assembly a = Assembly.Load("Report_Pro");
+       // ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", Assembly.Load("Report_Pro"));
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         public frm_LoanPayment()
         {
@@ -191,7 +192,7 @@ namespace Report_Pro.PL
 
         private void BSave_Click(object sender, EventArgs e)
         {
-            ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", a);
+            //ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", a);
 
 
             if (PaymentAmount.Value > 0 && dal.IsDateTime(PaymentDate.Text))
@@ -207,7 +208,7 @@ namespace Report_Pro.PL
                         "',PayMentInterest='" + PaymentInterest.Value + 
                         "',PaymentDate='" + PaymentDate.Value.ToString("yyyy/MM/dd") +
                         "' where  id='" +txtID.Text+"'");
-                    MessageBox.Show(rm.GetString("msgEdit", cul), rm.GetString("msgEdit_H", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(dal.rm.GetString("msgEdit", dal.cul), dal.rm.GetString("msgEdit_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
@@ -216,7 +217,7 @@ namespace Report_Pro.PL
                     dal.Execute_1(@"INSERT INTO LoanPaymentTbl(LoanNo,PaymentNo,PaymentAmount,PayMentInterest,PaymentDate)
                      VALUES ('" + txtLoanNo.Text + "','" + txtPaymentNo.Value + "','" + PaymentAmount.Value + "','" + PaymentInterest.Value +
                         "','" + PaymentDate.Value.ToString("yyyy/MM/dd") + "')");
-                    MessageBox.Show(rm.GetString("msgSave", cul), "حفظ ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(dal.rm.GetString("msgSave", dal.cul), "حفظ ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 getBalance();

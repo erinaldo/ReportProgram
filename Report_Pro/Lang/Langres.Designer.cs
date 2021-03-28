@@ -88,6 +88,24 @@ namespace Report_Pro.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Make sure the data entered .
+        /// </summary>
+        internal static string msgError {
+            get {
+                return ResourceManager.GetString("msgError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string msgError_H {
+            get {
+                return ResourceManager.GetString("msgError_H", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data was saved.
         /// </summary>
         internal static string msgSave {

@@ -126,37 +126,58 @@
     <value>Yes</value>
   </data>
   <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 150</value>
+    <value>372, 150</value>
   </data>
   <data name="ID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 0</value>
+    <value>296, 1</value>
+  </data>
+  <data name="ID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="ID.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
   <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>1, 1</value>
+  </data>
+  <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>340, 1</value>
-  </data>
-  <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 26</value>
+    <value>265, 1</value>
   </data>
   <data name="txtFinal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="txtFinal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 27</value>
+    <value>112, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtFinal.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KM_Code_Sales.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KM_Desc_Sales.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KM_Ratio_Sales.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KM_Ratio_Purch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KM_Desc_Purch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="KM_Code_Purch.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>476, 27</value>
+    <value>370, 27</value>
   </data>
 </root>

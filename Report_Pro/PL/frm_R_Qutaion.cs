@@ -887,7 +887,7 @@ if (dt_RQ.Rows.Count > 0)
 
         private void btnAddPayment_Click(object sender, EventArgs e)
         {
-            PL.frmAddDelevryTearms frm = new frmAddDelevryTearms();
+            PL.frmAddArrivalPort frm = new frmAddArrivalPort();
             frm.ShowDialog();
         }
 

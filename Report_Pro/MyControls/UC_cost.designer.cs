@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_cost));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btn1 = new DevComponents.DotNetBar.ButtonX();
             this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -39,11 +39,17 @@
             // 
             // ID
             // 
+            resources.ApplyResources(this.ID, "ID");
             // 
             // 
             // 
             this.ID.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.ID, "ID");
+            this.ID.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom.DisplayPosition")));
+            this.ID.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom.Image")));
+            this.ID.ButtonCustom.Text = resources.GetString("ID.ButtonCustom.Text");
+            this.ID.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("ID.ButtonCustom2.DisplayPosition")));
+            this.ID.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("ID.ButtonCustom2.Image")));
+            this.ID.ButtonCustom2.Text = resources.GetString("ID.ButtonCustom2.Text");
             this.ID.Name = "ID";
             this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged_1);
             this.ID.Enter += new System.EventHandler(this.ID_Enter);
@@ -53,26 +59,33 @@
             // 
             // btn1
             // 
+            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn1.Image = global::Report_Pro.Properties.Resources.search_16;
-            resources.ApplyResources(this.btn1, "btn1");
             this.btn1.Name = "btn1";
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // Desc
             // 
+            resources.ApplyResources(this.Desc, "Desc");
             // 
             // 
             // 
             this.Desc.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.Desc, "Desc");
+            this.Desc.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom.DisplayPosition")));
+            this.Desc.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom.Image")));
+            this.Desc.ButtonCustom.Text = resources.GetString("Desc.ButtonCustom.Text");
+            this.Desc.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Desc.ButtonCustom2.DisplayPosition")));
+            this.Desc.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Desc.ButtonCustom2.Image")));
+            this.Desc.ButtonCustom2.Text = resources.GetString("Desc.ButtonCustom2.Text");
             this.Desc.Name = "Desc";
             this.Desc.TextChanged += new System.EventHandler(this.Desc_TextChanged);
             this.Desc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Desc_KeyUp);
             // 
             // dgv1
             // 
+            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.AllowUserToAddRows = false;
             this.dgv1.AllowUserToDeleteRows = false;
             this.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -80,16 +93,15 @@
             this.dgv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            resources.ApplyResources(this.dgv1, "dgv1");
             this.dgv1.Name = "dgv1";
             this.dgv1.ReadOnly = true;
             this.dgv1.RowHeadersVisible = false;

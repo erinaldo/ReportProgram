@@ -1,0 +1,1478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;labelX3.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Payment_Type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="&gt;&gt;Cost.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 95</value>
+  </data>
+  <data name="&gt;&gt;paied_amount.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.Category" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Payment_Type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 62</value>
+  </data>
+  <data name="txtStore_ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 80</value>
+  </data>
+  <data name="labelX3.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtCashAcc.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="acc_year.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="paied_amount.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;search_1.Name" xml:space="preserve">
+    <value>search_1</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
+    <value>labelX3</value>
+  </data>
+  <data name="&gt;&gt;txtStore_ID.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnCancelSearch.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="paied_amount.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Check_Date.MonthCalendar.Category" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX8.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="btnCancelSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 61</value>
+  </data>
+  <data name="labelX3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txt_sandDate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtsearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 20</value>
+  </data>
+  <data name="txt_sandNo.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Name" xml:space="preserve">
+    <value>labelX8</value>
+  </data>
+  <data name="labelX1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelX44.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Acc_Cr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 69</value>
+  </data>
+  <data name="txt_sandNo.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCust.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX9.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX43.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtCashAcc.Type" xml:space="preserve">
+    <value>cash_trasaction.UC_Acc, cash_trasaction, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 47</value>
+  </data>
+  <data name="&gt;&gt;search_2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Name" xml:space="preserve">
+    <value>labelX9</value>
+  </data>
+  <data name="BSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;dgv1.Name" xml:space="preserve">
+    <value>dgv1</value>
+  </data>
+  <data name="search_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 45</value>
+  </data>
+  <data name="print_sand.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHGSURBVDhPhZIxayJBGIbnf9xvyC+wsY6jkJVE7ESw
+        E4tTtLjK6gSz25xoYSWCuDnBgIpiLNWI9hK5VgUt3DIKgTffN1mXNSr3wePM+j3vzu7OiEql8p0igStw
+        78Q/uWBKpRKuFfe++2Kz2Th4PB7kcjlbPy/usePOqJ9yufyH+OBmJpOx9fPiHjvkMkV1g0Kh8KNarWK7
+        3cLr9SIWi9n6eXGPHXZrtRooeyPy+fyvyWQCy7KQSCQQiUQQCoUuwj122J3NZqDsb5HNZt92ux3e93sc
+        Dgfs7fGI+5rnR6ydBcr+E/xe8/kcy+USq9XKYb1eX4R77C4WC/VNRDwex2AwwHA4xHg8VoxGI2Joj1+8
+        vo7BrzqdTunxp8rjrIhGo2g2m2i324pOp+PMW62W8x/T6/XQ7/fx8tJHt9sDZ0U4HIZpmmg0GvD7JKT0
+        wecjbgma+6VEwO9HIBDAnXaHYFCjBZ/VopwVmqahXq/DrJvUDCL5Mwld16E/GjDUqNP4CMMwkEqlcH//
+        oBb7+/QEzgopZZGglaXaIn5M3qZLcI+do89Z3gWHdDp9slWXYMedEXS63Nhn7nqx484IOmFuinzi/gM7
+        th8Sn3zWygdB5YtNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="&gt;&gt;search_1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="paied_amount.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;G_Search.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>911, 486</value>
+  </data>
+  <data name="&gt;&gt;labelX41.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;dgv1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="lbl_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 11</value>
+  </data>
+  <data name="labelX41.Text" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="dgv2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 264</value>
+  </data>
+  <data name="txt_sandDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="Check_Date.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;AccSer_No.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="AccSer_No.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_Cash_Receipt</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
+  </data>
+  <data name="labelX44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 169</value>
+  </data>
+  <data name="&gt;&gt;txt_sandNo.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelX42.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;G_Search.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;acc_year.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;txt_sanad_type2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bank.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="labelX6.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txt_sandNo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txt_sandDate.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 169</value>
+  </data>
+  <data name="cmb_Pay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 92</value>
+  </data>
+  <data name="Check_Date.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BNew.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="Cost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="txt_sanad_type2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtDescr.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Check_Date.Name" xml:space="preserve">
+    <value>Check_Date</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="&gt;&gt;AccSer_No.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;Cost.Type" xml:space="preserve">
+    <value>cash_trasaction.UC_cost, cash_trasaction, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txt_sandDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txt_source_code.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtStore_ID.Name" xml:space="preserve">
+    <value>txtStore_ID</value>
+  </data>
+  <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 264</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.Tooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Cost.Name" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="&gt;&gt;txt_Check.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="Check_Date.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtCust.Name" xml:space="preserve">
+    <value>txtCust</value>
+  </data>
+  <data name="labelX4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="search_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="labelX7.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lbl_1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Acc_Cr.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;user_id.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txt_sandDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX42.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;acc_year.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="print_sand.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="&gt;&gt;Acc_Cr.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 15</value>
+  </data>
+  <data name="&gt;&gt;btnCancelSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_sandDate.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX43.Text" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="btnSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 61</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.Tooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX44.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtDescr.Name" xml:space="preserve">
+    <value>txtDescr</value>
+  </data>
+  <data name="paied_amount.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="Check_Date.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 20</value>
+  </data>
+  <data name="labelX42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 120</value>
+  </data>
+  <data name="labelX4.Text" xml:space="preserve">
+    <value>Cost Center</value>
+  </data>
+  <data name="labelX7.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;AccSer_No.Name" xml:space="preserve">
+    <value>AccSer_No</value>
+  </data>
+  <data name="BExit.RibbonWordWrap" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txt_sandNo.Name" xml:space="preserve">
+    <value>txt_sandNo</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtCust.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txt_sandDate.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;labelX3.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="labelX2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelX43.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX8.Text" xml:space="preserve">
+    <value>Sanad No.</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
+  <data name="txt_sandDate.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Check_Date.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelX43.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Cost.TabIndex" type="System.Int32, mscorlib">
+    <value>295</value>
+  </data>
+  <data name="&gt;&gt;labelX8.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ribbonBar1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="txtDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Check_Date.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txtCashAcc.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="G_Search.TabIndex" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="&gt;&gt;user_id.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;user_id.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="labelX44.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;labelX44.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txtStore_ID.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Check_Date.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DateTimeAdv.DateTimeInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtCashAcc.Name" xml:space="preserve">
+    <value>txtCashAcc</value>
+  </data>
+  <data name="&gt;&gt;txtCust.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="BExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="cmb_Bank.TabIndex" type="System.Int32, mscorlib">
+    <value>271</value>
+  </data>
+  <data name="txtDescr.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_source_code.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;BExit.Name" xml:space="preserve">
+    <value>BExit</value>
+  </data>
+  <data name="cmb_Bank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 141</value>
+  </data>
+  <data name="dgv1.TabIndex" type="System.Int32, mscorlib">
+    <value>301</value>
+  </data>
+  <data name="Payment_Type.TabIndex" type="System.Int32, mscorlib">
+    <value>276</value>
+  </data>
+  <data name="txtDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 117</value>
+  </data>
+  <data name="labelX41.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="txtDescr.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="search_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="cmb_Pay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 21</value>
+  </data>
+  <data name="&gt;&gt;BNew.Name" xml:space="preserve">
+    <value>BNew</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txt_source_code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="txtCust.TabIndex" type="System.Int32, mscorlib">
+    <value>282</value>
+  </data>
+  <data name="user_id.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.Tag" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX43.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txtCashAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txt_sandNo.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 15</value>
+  </data>
+  <data name="&gt;&gt;cmb_Pay.Name" xml:space="preserve">
+    <value>cmb_Pay</value>
+  </data>
+  <data name="&gt;&gt;Acc_Cr.Type" xml:space="preserve">
+    <value>cash_trasaction.UC_Acc, cash_trasaction, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="labelX43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 144</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
+  </data>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
+  </data>
+  <data name="&gt;&gt;dgv2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Parent" xml:space="preserve">
+    <value>G_Search</value>
+  </data>
+  <data name="acc_year.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtStore_ID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="&gt;&gt;txtsearch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;search_2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 15</value>
+  </data>
+  <data name="AccSer_No.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="paied_amount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 70</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="dgv2.TabIndex" type="System.Int32, mscorlib">
+    <value>302</value>
+  </data>
+  <data name="txtCashAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 140</value>
+  </data>
+  <data name="paied_amount.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 15</value>
+  </data>
+  <data name="labelX8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Check_Date.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 15</value>
+  </data>
+  <data name="&gt;&gt;BSave.Name" xml:space="preserve">
+    <value>BSave</value>
+  </data>
+  <data name="labelX43.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="labelX1.Text" xml:space="preserve">
+    <value>Journal Entry No.</value>
+  </data>
+  <data name="txtsearch.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelX9.Text" xml:space="preserve">
+    <value>Cash Account</value>
+  </data>
+  <data name="txtsearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 32</value>
+  </data>
+  <data name="&gt;&gt;txt_sandDate.Name" xml:space="preserve">
+    <value>txt_sandDate</value>
+  </data>
+  <data name="AccSer_No.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCust.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnCancelSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="labelX1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="txtDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>272</value>
+  </data>
+  <data name="&gt;&gt;Payment_Type.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelX5.Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="&gt;&gt;dgv2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BExit.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="Cost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 165</value>
+  </data>
+  <data name="&gt;&gt;Acc_Cr.Name" xml:space="preserve">
+    <value>Acc_Cr</value>
+  </data>
+  <data name="cmb_Pay.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="cmb_Bank.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 21</value>
+  </data>
+  <data name="&gt;&gt;print_sand.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ribbonBar1.Text" xml:space="preserve">
+    <value>ribbonBar1</value>
+  </data>
+  <data name="&gt;&gt;labelX44.Name" xml:space="preserve">
+    <value>labelX44</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_1.Text" xml:space="preserve">
+    <value>Enter Entery Number :</value>
+  </data>
+  <data name="&gt;&gt;Payment_Type.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txtStore_ID.TabIndex" type="System.Int32, mscorlib">
+    <value>278</value>
+  </data>
+  <data name="labelX42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="txt_Check.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="BEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="search_1.TabIndex" type="System.Int32, mscorlib">
+    <value>297</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Name" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="G_Search.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 64</value>
+  </data>
+  <data name="&gt;&gt;BSave.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;search_1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtStore_ID.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;cmb_Pay.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="user_id.TabIndex" type="System.Int32, mscorlib">
+    <value>280</value>
+  </data>
+  <data name="search_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 45</value>
+  </data>
+  <data name="txt_sanad_type2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="search_2.TabIndex" type="System.Int32, mscorlib">
+    <value>298</value>
+  </data>
+  <data name="txt_sandDate.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelX43.Name" xml:space="preserve">
+    <value>labelX43</value>
+  </data>
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 47</value>
+  </data>
+  <data name="&gt;&gt;cmb_Pay.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bank.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;txt_sandDate.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;BEdit.Name" xml:space="preserve">
+    <value>BEdit</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="&gt;&gt;txtCashAcc.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;Check_Date.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txt_sandNo.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;user_id.Name" xml:space="preserve">
+    <value>user_id</value>
+  </data>
+  <data name="paied_amount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="txt_sanad_type2.TabIndex" type="System.Int32, mscorlib">
+    <value>296</value>
+  </data>
+  <data name="txt_sandNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="Check_Date.TabIndex" type="System.Int32, mscorlib">
+    <value>269</value>
+  </data>
+  <data name="paied_amount.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="acc_year.TabIndex" type="System.Int32, mscorlib">
+    <value>277</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Acc_Cr.TabIndex" type="System.Int32, mscorlib">
+    <value>294</value>
+  </data>
+  <data name="labelX44.TabIndex" type="System.Int32, mscorlib">
+    <value>270</value>
+  </data>
+  <data name="txtCust.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX41.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;G_Search.Name" xml:space="preserve">
+    <value>G_Search</value>
+  </data>
+  <data name="txt_sandNo.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgv1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnCancelSearch.Name" xml:space="preserve">
+    <value>btnCancelSearch</value>
+  </data>
+  <data name="txt_Check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 117</value>
+  </data>
+  <data name="labelX42.Text" xml:space="preserve">
+    <value>Check No.</value>
+  </data>
+  <data name="txt_sandDate.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txt_source_code.Name" xml:space="preserve">
+    <value>txt_source_code</value>
+  </data>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 15</value>
+  </data>
+  <data name="txtCust.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 15</value>
+  </data>
+  <data name="Acc_Cr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 23</value>
+  </data>
+  <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;txtStore_ID.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="G_Search.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="labelX8.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Check_Date.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 166</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bank.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt_source_code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 116</value>
+  </data>
+  <data name="&gt;&gt;txt_sanad_type2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="Cost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 23</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Parent" xml:space="preserve">
+    <value>G_Search</value>
+  </data>
+  <data name="&gt;&gt;btnCancelSearch.Parent" xml:space="preserve">
+    <value>G_Search</value>
+  </data>
+  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 73</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
+    <value>labelX4</value>
+  </data>
+  <data name="Acc_Cr.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 15</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txt_source_code.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtsearch.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_sandDate.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DateTimeAdv.DateTimeInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;cmb_Bank.Name" xml:space="preserve">
+    <value>cmb_Bank</value>
+  </data>
+  <data name="labelX2.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="AccSer_No.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="txtDescr.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX5.Name" xml:space="preserve">
+    <value>labelX5</value>
+  </data>
+  <data name="labelX9.TabIndex" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="&gt;&gt;txt_sandNo.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;txtsearch.Name" xml:space="preserve">
+    <value>txtsearch</value>
+  </data>
+  <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 144</value>
+  </data>
+  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="txtsearch.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;paied_amount.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;labelX41.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;txt_Check.Name" xml:space="preserve">
+    <value>txt_Check</value>
+  </data>
+  <data name="paied_amount.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 120</value>
+  </data>
+  <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;acc_year.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtCust.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="user_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 64</value>
+  </data>
+  <data name="&gt;&gt;Payment_Type.Name" xml:space="preserve">
+    <value>Payment_Type</value>
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>911, 486</value>
+  </data>
+  <data name="&gt;&gt;paied_amount.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;search_1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Name" xml:space="preserve">
+    <value>ribbonBar1</value>
+  </data>
+  <data name="Check_Date.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;BEdit.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX42.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 95</value>
+  </data>
+  <data name="txtCust.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 92</value>
+  </data>
+  <data name="&gt;&gt;cmb_Pay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmb_Bank.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;paied_amount.Name" xml:space="preserve">
+    <value>paied_amount</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="&gt;&gt;dgv1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Payment_Type.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dgv2.Name" xml:space="preserve">
+    <value>dgv2</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 47</value>
+  </data>
+  <data name="txt_Check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="&gt;&gt;Payment_Type.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txt_sandNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 44</value>
+  </data>
+  <data name="txt_sandDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.Tag" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelX42.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="Check_Date.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtsearch.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Receipt Voucher</value>
+  </data>
+  <data name="&gt;&gt;search_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX44.Text" xml:space="preserve">
+    <value>Check Date</value>
+  </data>
+  <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 213</value>
+  </data>
+  <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 73</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Name" xml:space="preserve">
+    <value>labelX1</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
+    <value>labelX6</value>
+  </data>
+  <data name="labelX41.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 15</value>
+  </data>
+  <data name="&gt;&gt;txt_sandNo.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="lbl_1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtCashAcc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 23</value>
+  </data>
+  <data name="AccSer_No.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;print_sand.Name" xml:space="preserve">
+    <value>print_sand</value>
+  </data>
+  <data name="ribbonBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>911, 34</value>
+  </data>
+  <data name="&gt;&gt;labelX42.Name" xml:space="preserve">
+    <value>labelX42</value>
+  </data>
+  <data name="txtCashAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;labelX41.Name" xml:space="preserve">
+    <value>labelX41</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txt_source_code.TabIndex" type="System.Int32, mscorlib">
+    <value>281</value>
+  </data>
+  <data name="&gt;&gt;txt_sanad_type2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txt_sandDate.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="paied_amount.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AccSer_No.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="paied_amount.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_Check.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;txt_source_code.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;G_Search.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="AccSer_No.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txt_Check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="txtCashAcc.TabIndex" type="System.Int32, mscorlib">
+    <value>293</value>
+  </data>
+  <data name="&gt;&gt;txtsearch.Parent" xml:space="preserve">
+    <value>G_Search</value>
+  </data>
+  <data name="dgv2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 213</value>
+  </data>
+  <data name="txt_sanad_type2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 44</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Name" xml:space="preserve">
+    <value>labelX7</value>
+  </data>
+  <data name="&gt;&gt;txtDescr.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="paied_amount.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_sandDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 44</value>
+  </data>
+  <data name="&gt;&gt;labelX42.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txt_sandDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Name" xml:space="preserve">
+    <value>lbl_1</value>
+  </data>
+  <data name="user_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="labelX5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtCust.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtsearch.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Acc_Cr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;search_2.Name" xml:space="preserve">
+    <value>search_2</value>
+  </data>
+  <data name="AccSer_No.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 44</value>
+  </data>
+  <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="Check_Date.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt_sandDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="&gt;&gt;txtDescr.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Check_Date.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;AccSer_No.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="paied_amount.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;txtDescr.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="acc_year.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 98</value>
+  </data>
+  <data name="Check_Date.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txt_sanad_type2.Name" xml:space="preserve">
+    <value>txt_sanad_type2</value>
+  </data>
+  <data name="&gt;&gt;btnCancelSearch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="Check_Date.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
+    <value>labelX2</value>
+  </data>
+  <data name="btnCancelSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Cost.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;txt_Check.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;acc_year.Name" xml:space="preserve">
+    <value>acc_year</value>
+  </data>
+  <data name="txtsearch.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="G_Search.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dgv2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Arabic</value>
+  </metadata>
+</root>

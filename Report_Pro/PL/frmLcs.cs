@@ -915,5 +915,15 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void AcceptDays_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

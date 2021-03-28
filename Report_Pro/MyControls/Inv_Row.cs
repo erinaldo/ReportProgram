@@ -121,10 +121,9 @@ namespace Report_Pro.MyControls
             //    {
             txt_subTOt.Text = (qty.Text.ToDecimal() * TxtPrice.Text.ToDecimal()).ToString("N0");
             Txtvalue.Text = (txt_subTOt.Text.ToDecimal() - TxtDisc.Text.ToDecimal()).ToString("N0");
-            VatValue.Text = ((VatRate.Text.ToDecimal() <= VatAccRate.Text.ToDecimal() ? VatRate.Text : VatAccRate.Text).ToDecimal() * Txtvalue.Text.ToDecimal()).ToString("N0");
-            //(Txtvalue.Text.ToDecimal() * VatRate.Text.ToDecimal()).ToString("N" + dal.digits_);
 
-            //}
+            VatValue.Text = ((VatRate.Value <= VatAccRate.Value ? VatRate.Value : VatAccRate.Value) * Txtvalue.Value).ToString("N0");
+               //}
             //catch
             //{
             //    return;
@@ -219,9 +218,9 @@ namespace Report_Pro.MyControls
                     }
                     Weight_.Text = dt.Rows[0][4].ToString().ToDecimal().ToString("N3");
                     txtUnit.Text = dt.Rows[0][5].ToString();
-                    txtBalance.Text = dt.Rows[0][6].ToString().ToDecimal().ToString("N1");
+                    txtBalance.Text = dt.Rows[0][6].ToString().ToDecimal().ToString("N0");
                     txtCost.Text = dt.Rows[0][7].ToString().ToDecimal().ToString("N3");
-                    VatRate.Text = dt.Rows[0][8].ToString().ToDecimal().ToString("N2");
+                    VatRate.Text = dt.Rows[0][8].ToString().ToDecimal().ToString();
                     KM_TYPE_ITEMS.Text = dt.Rows[0][9].ToString();
 
                     txtNote.Focus();
@@ -326,6 +325,16 @@ namespace Report_Pro.MyControls
         {
           OnClick(e);
            this.Dispose();
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            OnClick(e);
+        }
+
+        private void buttonX1_DoubleClick(object sender, EventArgs e)
+        {
+           
         }
     }
 }

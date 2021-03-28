@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="G_Search.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 11</value>
+  </data>
+  <data name="lbl_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="lbl_1.Text" xml:space="preserve">
+    <value>ادخل الرقم للبحث</value>
+  </data>
+  <data name="btnCancelSearch.Text" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="G_Search.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 47</value>
+  </data>
+  <data name="dgv2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 215</value>
+  </data>
+  <data name="dgv2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 285</value>
+  </data>
+  <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 215</value>
+  </data>
+  <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 285</value>
+  </data>
+  <data name="search_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="search_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 47</value>
+  </data>
+  <data name="search_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="search_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 47</value>
+  </data>
+  <data name="txt_sanad_type2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_sanad_type2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 40</value>
+  </data>
+  <data name="Cost.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Cost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 175</value>
+  </data>
+  <data name="Acc_Cr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Acc_Cr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 72</value>
+  </data>
+  <data name="txtCashAcc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtCashAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 149</value>
+  </data>
+  <data name="txtCust.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtCust.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 100</value>
+  </data>
+  <data name="txt_source_code.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_source_code.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 124</value>
+  </data>
+  <data name="user_id.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="user_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 66</value>
+  </data>
+  <data name="txtStore_ID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtStore_ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 82</value>
+  </data>
+  <data name="acc_year.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="acc_year.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 103</value>
+  </data>
+  <data name="Payment_Type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Payment_Type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 61</value>
+  </data>
+  <data name="labelX9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 153</value>
+  </data>
+  <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 15</value>
+  </data>
+  <data name="labelX9.Text" xml:space="preserve">
+    <value>حساب الصندوق</value>
+  </data>
+  <data name="txtDescr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 125</value>
+  </data>
+  <data name="labelX44.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 179</value>
+  </data>
+  <data name="labelX44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 15</value>
+  </data>
+  <data name="labelX44.Text" xml:space="preserve">
+    <value>تاريخ الشيك</value>
+  </data>
+  <data name="cmb_Bank.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cmb_Bank.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 150</value>
+  </data>
+  <data name="Check_Date.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Check_Date.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 176</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="Check_Date.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
+  <data name="labelX43.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 153</value>
+  </data>
+  <data name="labelX43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 15</value>
+  </data>
+  <data name="labelX43.Text" xml:space="preserve">
+    <value>البنك</value>
+  </data>
+  <data name="labelX8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 49</value>
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 15</value>
+  </data>
+  <data name="labelX8.Text" xml:space="preserve">
+    <value>رقم السند</value>
+  </data>
+  <data name="txt_Check.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_Check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 125</value>
+  </data>
+  <data name="labelX42.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 128</value>
+  </data>
+  <data name="labelX42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 15</value>
+  </data>
+  <data name="labelX42.Text" xml:space="preserve">
+    <value>رقم الشيك</value>
+  </data>
+  <data name="txt_sandNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_sandNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>752, 46</value>
+  </data>
+  <data name="labelX41.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 103</value>
+  </data>
+  <data name="labelX41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 15</value>
+  </data>
+  <data name="labelX41.Text" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="labelX7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 128</value>
+  </data>
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 15</value>
+  </data>
+  <data name="labelX7.Text" xml:space="preserve">
+    <value>البيان</value>
+  </data>
+  <data name="cmb_Pay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cmb_Pay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 100</value>
+  </data>
+  <data name="labelX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 103</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 15</value>
+  </data>
+  <data name="labelX6.Text" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="labelX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 76</value>
+  </data>
+  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 15</value>
+  </data>
+  <data name="labelX5.Text" xml:space="preserve">
+    <value>الحساب</value>
+  </data>
+  <data name="labelX4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 179</value>
+  </data>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
+  </data>
+  <data name="labelX4.Text" xml:space="preserve">
+    <value>مركز التكلفة</value>
+  </data>
+  <data name="paied_amount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="paied_amount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 73</value>
+  </data>
+  <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 76</value>
+  </data>
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 15</value>
+  </data>
+  <data name="labelX3.Text" xml:space="preserve">
+    <value>المبلغ</value>
+  </data>
+  <data name="labelX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 49</value>
+  </data>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 15</value>
+  </data>
+  <data name="labelX2.Text" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="txt_sandDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txt_sandDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 46</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="txt_sandDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
+  <data name="labelX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 49</value>
+  </data>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 15</value>
+  </data>
+  <data name="labelX1.Text" xml:space="preserve">
+    <value>رقم قيد اليومية</value>
+  </data>
+  <data name="AccSer_No.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="AccSer_No.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 46</value>
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>937, 515</value>
+  </data>
+  <data name="BNew.Text" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="BSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="BEdit.Text" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="print_sand.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHGSURBVDhPhZIxayJBGIbnf9xvyC+wsY6jkJVE7ESw
+        E4tTtLjK6gSz25xoYSWCuDnBgIpiLNWI9hK5VgUt3DIKgTffN1mXNSr3wePM+j3vzu7OiEql8p0igStw
+        78Q/uWBKpRKuFfe++2Kz2Th4PB7kcjlbPy/usePOqJ9yufyH+OBmJpOx9fPiHjvkMkV1g0Kh8KNarWK7
+        3cLr9SIWi9n6eXGPHXZrtRooeyPy+fyvyWQCy7KQSCQQiUQQCoUuwj122J3NZqDsb5HNZt92ux3e93sc
+        Dgfs7fGI+5rnR6ydBcr+E/xe8/kcy+USq9XKYb1eX4R77C4WC/VNRDwex2AwwHA4xHg8VoxGI2Joj1+8
+        vo7BrzqdTunxp8rjrIhGo2g2m2i324pOp+PMW62W8x/T6/XQ7/fx8tJHt9sDZ0U4HIZpmmg0GvD7JKT0
+        wecjbgma+6VEwO9HIBDAnXaHYFCjBZ/VopwVmqahXq/DrJvUDCL5Mwld16E/GjDUqNP4CMMwkEqlcH//
+        oBb7+/QEzgopZZGglaXaIn5M3qZLcI+do89Z3gWHdDp9slWXYMedEXS63Nhn7nqx484IOmFuinzi/gM7
+        th8Sn3zWygdB5YtNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="print_sand.Text" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="BExit.Text" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>937, 34</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>937, 515</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+</root>

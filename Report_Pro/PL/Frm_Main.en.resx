@@ -117,53 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="M1.Text" xml:space="preserve">
-    <value>Setup</value>
-  </data>
-  <data name="M2.Text" xml:space="preserve">
-    <value>Trasportation</value>
-  </data>
-  <data name="M3.Text" xml:space="preserve">
-    <value>Sales</value>
-  </data>
-  <data name="M4.Text" xml:space="preserve">
-    <value>Purchases</value>
-  </data>
-  <data name="M5.Text" xml:space="preserve">
-    <value>Inventory</value>
-  </data>
-  <data name="M6.Text" xml:space="preserve">
-    <value>Production</value>
-  </data>
-  <data name="M7.Text" xml:space="preserve">
-    <value>Accounting</value>
-  </data>
-  <data name="M8.Text" xml:space="preserve">
-    <value>Letter Of Credit</value>
-  </data>
-  <data name="M9.Text" xml:space="preserve">
-    <value>Fixed Assetes</value>
-  </data>
-  <data name="M10.Text" xml:space="preserve">
-    <value>Prepaid</value>
-  </data>
-  <data name="buttonItem2.Text" xml:space="preserve">
-    <value>Others</value>
-  </data>
-  <data name="MLangue.Text" xml:space="preserve">
-    <value>عربي</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1551, 49</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1551, 49</value>
-  </data>
   <data name="M11.Text" xml:space="preserve">
     <value>System Setup</value>
   </data>
@@ -179,15 +132,49 @@
   <data name="M15.Text" xml:space="preserve">
     <value>Stores</value>
   </data>
+  <data name="M16.Text" xml:space="preserve">
+    <value>Currency Rate</value>
+  </data>
+  <data name="M1.Text" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="M21.Text" xml:space="preserve">
+    <value>Transport Report</value>
+  </data>
+  <data name="M22.Text" xml:space="preserve">
+    <value>Maintenance Revenue</value>
+  </data>
   <data name="M23.Text" xml:space="preserve">
     <value>Purchase</value>
   </data>
+  <data name="M24.Text" xml:space="preserve">
+    <value>Total Revenue</value>
+  </data>
+  <data name="M25.Text" xml:space="preserve">
+    <value>Edit Purchase</value>
+  </data>
   <data name="M26.Text" xml:space="preserve">
-    <value>تفاصيل النقليات</value>
+    <value>Transport Detials</value>
   </data>
   <data name="M27.Text" xml:space="preserve">
     <value>buttonItem9</value>
   </data>
+  <data name="M2.Text" xml:space="preserve">
+    <value>Trasportation</value>
+  </data>
+  <data name="M31.Text" xml:space="preserve">
+    <value>Sales Reports</value>
+  </data>
+  <data name="M32.Text" xml:space="preserve">
+    <value>Sales VAT Report</value>
+  </data>
+  <data name="M33.Text" xml:space="preserve">
+    <value>Item Price Check</value>
+  </data>
+  <data name="M34.Text" xml:space="preserve">
+    <value>Customers TB</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="M35.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -223,6 +210,9 @@
         3+GV/xHvZW/E4brQOeU4s/LaH/HN3srRglC0usnbuP9aYDT69Z16AYP/ALwm1GSNmS/1AAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="M35.Text" xml:space="preserve">
+    <value>Custom Data Update</value>
   </data>
   <data name="M36.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -260,11 +250,63 @@
         QmCC
 </value>
   </data>
+  <data name="M36.Text" xml:space="preserve">
+    <value>Account Data Update</value>
+  </data>
+  <data name="M37.Text" xml:space="preserve">
+    <value>Cash Customer Sales</value>
+  </data>
+  <data name="buttonItem1.Text" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+  <data name="M39.Text" xml:space="preserve">
+    <value>Facilities Report </value>
+  </data>
+  <data name="M312.Text" xml:space="preserve">
+    <value>List Price</value>
+  </data>
   <data name="M313.Text" xml:space="preserve">
     <value>Delivry Note</value>
   </data>
+  <data name="M3.Text" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="M41.Text" xml:space="preserve">
+    <value>Purchase Reports</value>
+  </data>
+  <data name="M42.Text" xml:space="preserve">
+    <value>Purchase VAT Reports</value>
+  </data>
+  <data name="M43.Text" xml:space="preserve">
+    <value>Last Purchase Reports</value>
+  </data>
+  <data name="M44.Text" xml:space="preserve">
+    <value>Request Purchase Quotation 
+</value>
+  </data>
+  <data name="M45.Text" xml:space="preserve">
+    <value>Vendor Quotation </value>
+  </data>
+  <data name="M46.Text" xml:space="preserve">
+    <value>Compare Purchase Quotations </value>
+  </data>
+  <data name="M47.Text" xml:space="preserve">
+    <value>Request Products</value>
+  </data>
+  <data name="M48.Text" xml:space="preserve">
+    <value>Preforma Report</value>
+  </data>
+  <data name="M49.Text" xml:space="preserve">
+    <value>Purchase Order</value>
+  </data>
   <data name="M410.Text" xml:space="preserve">
     <value>Prin Import Purchase</value>
+  </data>
+  <data name="M4.Text" xml:space="preserve">
+    <value>Purchases</value>
+  </data>
+  <data name="M5.Text" xml:space="preserve">
+    <value>Inventory</value>
   </data>
   <data name="M61.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -307,6 +349,9 @@
         80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
         AElFTkSuQmCC
 </value>
+  </data>
+  <data name="M6.Text" xml:space="preserve">
+    <value>Production</value>
   </data>
   <data name="M72.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -365,17 +410,48 @@
   <data name="M714.Text" xml:space="preserve">
     <value>Daily Jornal</value>
   </data>
+  <data name="M7.Text" xml:space="preserve">
+    <value>Accounting</value>
+  </data>
+  <data name="M87_1.Text" xml:space="preserve">
+    <value>PreformaInvoice Local</value>
+  </data>
+  <data name="M87_2.Text" xml:space="preserve">
+    <value>PreformaInvoice</value>
+  </data>
+  <data name="M8.Text" xml:space="preserve">
+    <value>Letter Of Credit</value>
+  </data>
   <data name="M93.Text" xml:space="preserve">
     <value>حساب الاهلاك</value>
   </data>
+  <data name="M9.Text" xml:space="preserve">
+    <value>Fixed Assetes</value>
+  </data>
+  <data name="M10.Text" xml:space="preserve">
+    <value>Prepaid</value>
+  </data>
+  <data name="buttonItem2.Text" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="MLangue.Text" xml:space="preserve">
+    <value>عربي</value>
+  </data>
+  <data name="btn_CashTransaction.Text" xml:space="preserve">
+    <value>Cash Transaction</value>
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1496, 49</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1496, 49</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnChangBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
   <data name="btnChangBranch.Location" type="System.Drawing.Point, System.Drawing">
     <value>244, 801</value>
-  </data>
-  <data name="btnChangBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
   </data>
   <data name="btnChangBranch.Size" type="System.Drawing.Size, System.Drawing">
     <value>290, 33</value>
@@ -387,10 +463,7 @@
     <value>Right</value>
   </data>
   <data name="TV1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1287, 0</value>
-  </data>
-  <data name="TV1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>1232, 0</value>
   </data>
   <data name="TV1.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 846</value>
@@ -399,17 +472,11 @@
   <data name="TV1.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="TV1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="btnChangeAccBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="btnChangeAccBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1011, 801</value>
-  </data>
-  <data name="btnChangeAccBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>956, 801</value>
   </data>
   <data name="btnChangeAccBranch.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 33</value>
@@ -423,9 +490,6 @@
   <data name="tvStore.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="tvStore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
   <data name="tvStore.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 846</value>
   </data>
@@ -434,7 +498,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA+
-        SgAAAk1TRnQBSQFMAgEBCgEAAQQBAQEEAQEBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        SgAAAk1TRnQBSQFMAgEBCgEAASwBAQEsAQEBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABwAMAAZADAAEBAQABCAYAAWwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -753,12 +817,6 @@
         AT8B/xIAA/8B4AL/DAABgAUAA/8B4AL/EgAD/wHgAv8SAAP/AeAC/xIABv8MAAHgBQAL
 </value>
   </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="listView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
   <data name="listView1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Inherit</value>
   </data>
@@ -766,26 +824,17 @@
     <value>False</value>
   </data>
   <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1551, 846</value>
-  </data>
-  <data name="vScrollBarAdv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 49</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>1496, 846</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1551, 846</value>
+    <value>1496, 846</value>
   </data>
   <data name="imageList2.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
-        GQAAAk1TRnQBSQFMAgEBCgEAAQQBAQEEAQEBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        GQAAAk1TRnQBSQFMAgEBCgEAASwBAQEsAQEBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -896,14 +945,8 @@
         Af4BAAF/CQAB/gEAAX8JAAH/AfwB/wYAAYACAAH/AfwB/wkAA/8GAAHAAgAL
 </value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1551, 895</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>1496, 895</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Inherit</value>

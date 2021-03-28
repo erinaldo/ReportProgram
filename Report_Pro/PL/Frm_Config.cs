@@ -9,8 +9,7 @@ using System.Text;
 //
 using System.Windows.Forms;
 
-namespace Report_Pro.PL
-{
+namespace Report_Pro.PL{
 
     public partial class Frm_Config : DevExpress.XtraEditors.XtraForm
     {

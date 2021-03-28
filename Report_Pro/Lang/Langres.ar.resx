@@ -126,6 +126,9 @@
   <data name="msgEdit_H" xml:space="preserve">
     <value>تعديل</value>
   </data>
+  <data name="msgError" xml:space="preserve">
+    <value>تاكد من البيانات </value>
+  </data>
   <data name="msgSave" xml:space="preserve">
     <value>تم حفظ البيانات بنجاح</value>
   </data>

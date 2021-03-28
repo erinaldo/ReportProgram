@@ -36,6 +36,7 @@ namespace Report_Pro.PL
         {
             dgv_1.Columns[0].Width = 80;
             dgv_1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_1.Columns[2].Width = 300;
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -120,14 +121,14 @@ namespace Report_Pro.PL
                 if (saveType == "add")
                 {
                     {
-                        dal.Execute_1("insert into  " + dal.db1 + ".dbo.WH_PO_DELEVRY_CODE values('" + txtCode.Text + "," + txtDesc.Text + "," + txtDesc_L.Text + "')");
+                        dal.Execute_1("insert into  WH_PO_DELEVRY_CODE values('" + txtCode.Text + "','" + txtDesc.Text + "','" + txtDesc_L.Text + "')");
                         MessageBox.Show("تم حفظ البيانات بنجاح", "تاكيد الحفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         fillDG();
                     }
                 }
                 else
                 {
-                    dal.Execute_1("update  " + dal.db1 + ".dbo.WH_PO_DELEVRY_CODE set DeLEVRY_Name ='" + txtDesc.Text + "',DELEVER_NAME_E ='" + txtDesc_L.Text + "' where DeLEVRY_CODE = '" + txtCode.Text + "'");
+                    dal.Execute_1("update  WH_PO_DELEVRY_CODE set DeLEVRY_Name ='" + txtDesc.Text + "',DELEVER_NAME_E ='" + txtDesc_L.Text + "' where DeLEVRY_CODE = '" + txtCode.Text + "'");
                     MessageBox.Show("تم تعديل البيانات بنجاح", "تاكيد التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     fillDG();
                 }

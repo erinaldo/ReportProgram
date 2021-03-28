@@ -57,7 +57,6 @@
             this.M37 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.M39 = new DevComponents.DotNetBar.ButtonItem();
-            this.M310 = new DevComponents.DotNetBar.ButtonItem();
             this.M311 = new DevComponents.DotNetBar.ButtonItem();
             this.M312 = new DevComponents.DotNetBar.ButtonItem();
             this.M313 = new DevComponents.DotNetBar.ButtonItem();
@@ -111,6 +110,8 @@
             this.M85 = new DevComponents.DotNetBar.ButtonItem();
             this.M86 = new DevComponents.DotNetBar.ButtonItem();
             this.M87 = new DevComponents.DotNetBar.ButtonItem();
+            this.M87_1 = new DevComponents.DotNetBar.ButtonItem();
+            this.M87_2 = new DevComponents.DotNetBar.ButtonItem();
             this.M88 = new DevComponents.DotNetBar.ButtonItem();
             this.M89 = new DevComponents.DotNetBar.ButtonItem();
             this.M9 = new DevComponents.DotNetBar.ButtonItem();
@@ -138,14 +139,15 @@
             this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem8 = new DevComponents.DotNetBar.ButtonItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnChangBranch = new DevComponents.DotNetBar.ButtonX();
             this.TV1 = new System.Windows.Forms.TreeView();
+            this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.tvStore = new System.Windows.Forms.TreeView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnChangBranch = new DevComponents.DotNetBar.ButtonX();
-            this.btnChangeAccBranch = new DevComponents.DotNetBar.ButtonX();
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.btn_CashTransaction = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -175,7 +177,8 @@
             this.M10,
             this.buttonItem2,
             this.MLangue,
-            this.buttonItem6});
+            this.buttonItem6,
+            this.btn_CashTransaction});
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2010;
             this.ribbonBar1.TitleVisible = false;
@@ -303,7 +306,6 @@
             this.M37,
             this.buttonItem1,
             this.M39,
-            this.M310,
             this.M311,
             this.M312,
             this.M313});
@@ -364,12 +366,6 @@
             resources.ApplyResources(this.M39, "M39");
             this.M39.Name = "M39";
             this.M39.Click += new System.EventHandler(this.M39_Click);
-            // 
-            // M310
-            // 
-            resources.ApplyResources(this.M310, "M310");
-            this.M310.Name = "M310";
-            this.M310.Click += new System.EventHandler(this.M310_Click);
             // 
             // M311
             // 
@@ -746,7 +742,22 @@
             // 
             resources.ApplyResources(this.M87, "M87");
             this.M87.Name = "M87";
+            this.M87.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.M87_1,
+            this.M87_2});
             this.M87.Click += new System.EventHandler(this.M87_Click);
+            // 
+            // M87_1
+            // 
+            resources.ApplyResources(this.M87_1, "M87_1");
+            this.M87_1.Name = "M87_1";
+            this.M87_1.Click += new System.EventHandler(this.M87_1_Click);
+            // 
+            // M87_2
+            // 
+            resources.ApplyResources(this.M87_2, "M87_2");
+            this.M87_2.Name = "M87_2";
+            this.M87_2.Click += new System.EventHandler(this.M87_2_Click);
             // 
             // M88
             // 
@@ -943,11 +954,26 @@
             this.panel2.Controls.Add(this.vScrollBarAdv1);
             this.panel2.Name = "panel2";
             // 
+            // btnChangBranch
+            // 
+            resources.ApplyResources(this.btnChangBranch, "btnChangBranch");
+            this.btnChangBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnChangBranch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnChangBranch.Name = "btnChangBranch";
+            this.btnChangBranch.Click += new System.EventHandler(this.btnChangBranch_Click);
+            // 
             // TV1
             // 
             resources.ApplyResources(this.TV1, "TV1");
             this.TV1.Name = "TV1";
             this.TV1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TV1_AfterSelect);
+            // 
+            // btnChangeAccBranch
+            // 
+            resources.ApplyResources(this.btnChangeAccBranch, "btnChangeAccBranch");
+            this.btnChangeAccBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnChangeAccBranch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnChangeAccBranch.Name = "btnChangeAccBranch";
             // 
             // tvStore
             // 
@@ -982,21 +1008,6 @@
             this.imageList1.Images.SetKeyName(8, "file.png");
             this.imageList1.Images.SetKeyName(9, "Maintinance.png");
             // 
-            // btnChangBranch
-            // 
-            resources.ApplyResources(this.btnChangBranch, "btnChangBranch");
-            this.btnChangBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnChangBranch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnChangBranch.Name = "btnChangBranch";
-            this.btnChangBranch.Click += new System.EventHandler(this.btnChangBranch_Click);
-            // 
-            // btnChangeAccBranch
-            // 
-            resources.ApplyResources(this.btnChangeAccBranch, "btnChangeAccBranch");
-            this.btnChangeAccBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnChangeAccBranch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnChangeAccBranch.Name = "btnChangeAccBranch";
-            // 
             // vScrollBarAdv1
             // 
             resources.ApplyResources(this.vScrollBarAdv1, "vScrollBarAdv1");
@@ -1016,6 +1027,13 @@
             this.imageList2.Images.SetKeyName(7, "Setting.png");
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
+            // 
+            // btn_CashTransaction
+            // 
+            resources.ApplyResources(this.btn_CashTransaction, "btn_CashTransaction");
+            this.btn_CashTransaction.Name = "btn_CashTransaction";
+            this.btn_CashTransaction.SubItemsExpandWidth = 14;
+            this.btn_CashTransaction.Click += new System.EventHandler(this.btn_CashTransaction_Click);
             // 
             // Frm_Main
             // 
@@ -1120,7 +1138,6 @@
 
         private DevComponents.DotNetBar.ButtonItem btnUpdatetables;
         private DevComponents.DotNetBar.ButtonItem btnAdjData;
-        private DevComponents.DotNetBar.ButtonItem M310;
         private DevComponents.DotNetBar.ButtonItem M711;
         private DevComponents.DotNetBar.ButtonItem M712;
         private DevComponents.DotNetBar.ButtonItem M713;
@@ -1166,5 +1183,8 @@
         private DevComponents.DotNetBar.ButtonItem M88;
         private DevComponents.DotNetBar.ButtonItem M89;
         private System.Windows.Forms.TreeView TV1;
+        private DevComponents.DotNetBar.ButtonItem M87_1;
+        private DevComponents.DotNetBar.ButtonItem M87_2;
+        private DevComponents.DotNetBar.ButtonItem btn_CashTransaction;
     }
 }

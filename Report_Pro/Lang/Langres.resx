@@ -126,6 +126,12 @@
   <data name="msgEdit_H" xml:space="preserve">
     <value>Update</value>
   </data>
+  <data name="msgError" xml:space="preserve">
+    <value>Make sure the data entered </value>
+  </data>
+  <data name="msgError_H" xml:space="preserve">
+    <value>Error</value>
+  </data>
   <data name="msgSave" xml:space="preserve">
     <value>Data was saved</value>
   </data>

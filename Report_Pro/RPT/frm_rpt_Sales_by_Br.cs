@@ -27,10 +27,7 @@ namespace Report_Pro.RPT
         public frm_rpt_Sales_by_Br()
         {
             InitializeComponent();
-            category.DataSource = dal.getDataTabl("Get_category_", db1);
-            category.DisplayMember = "Category_name";
-            category.ValueMember = "Category_code";
-            category.SelectedIndex = -1;
+           
 
             cmb_DimCategory.DataSource = dal.getDataTabl_1(@"select * FROM " + Properties.Settings.Default.Database_1 + ".dbo.Wh_Unit_dim");
             cmb_DimCategory.DisplayMember = "Wh_Unit_dim";
@@ -84,11 +81,11 @@ namespace Report_Pro.RPT
                 rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
                 rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" +  category.Text + "'";
                 rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
                 rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
                 rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المبيعات موزع بالفروع'";
-                groupBox1.Visible = false;
+                groupPanel4.Visible = false;
             }
             catch (Exception ex)
             {
@@ -162,12 +159,12 @@ namespace Report_Pro.RPT
                 rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
                 rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
                 rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
                 rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
                 rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المبيعات موزع بالمجموعات'";
 
-                groupBox1.Visible = false;
+                groupPanel4.Visible = false;
             }
             catch (System.Exception ex)
             {
@@ -177,50 +174,7 @@ namespace Report_Pro.RPT
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
-
-
-                RPT.rpt_sales_ByBranch rpt = new RPT.rpt_sales_ByBranch();
-
-                rpt.SetDataSource(dal.getDataTabl("sales_by_branch_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xs", UC_Branch.ID.Text, Uc_Acc.ID.Text, db1, Uc_Group.ID.Text,""));
-                crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المبيعات موزع بالفروع'";
-            }
-            catch
-            { }
-        }
-
+      
         private void thick_2_ValueChanged(object sender, EventArgs e)
         {
 
@@ -281,11 +235,11 @@ namespace Report_Pro.RPT
                 rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
                 rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
                 rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + payment_type.Text + "'";
                 rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المبيعات موزع بالمجموعات وطريقة الدفع'";
 
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
             }
             catch (System.Exception ex)
             {
@@ -439,7 +393,7 @@ namespace Report_Pro.RPT
                 rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + UC_Branch.Desc.Text + "'";
                 rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + payment_type.Text + "'";
 
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
             }
             catch (System.Exception ex)
             {
@@ -451,68 +405,47 @@ namespace Report_Pro.RPT
         private void button5_Click(object sender, EventArgs e)
         {
 
-            Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-                groupBox1.Visible = false;
+            //Cursor.Current = Cursors.WaitCursor;
+            //try
+            //{
+            //    choises();
+              
 
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
+            //    RPT.Sales_Purchase_Groups rpt = new RPT.Sales_Purchase_Groups();
 
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
+            //    DataSet1 ds = new DataSet1();
+            //    DataTable dt1 = new DataTable();
+            //    DataTable dt2 = new DataTable();
+            //    DataTable dt3 = new DataTable();
 
 
-                RPT.Sales_Purchase_Groups rpt = new RPT.Sales_Purchase_Groups();
+            //    dt1 = (dal.getDataTabl("sales_ByGroup__", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), UC_Branch.ID.Text, Uc_Acc.ID.Text, db1));
+            //    dt2 = (dal.getDataTabl("Get_customers_payments", dTP1.Value.Date, dTP2.Value.Date, db1));
+            //    dt3 = (dal.getDataTabl("Sales_total", dTP1.Value.Date, dTP2.Value.Date, db1));
 
-                DataSet1 ds = new DataSet1();
-                DataTable dt1 = new DataTable();
-                DataTable dt2 = new DataTable();
-                DataTable dt3 = new DataTable();
+            //    ds.Tables.Add(dt1);
+            //    ds.Tables.Add(dt2);
+            //    ds.Tables.Add(dt3);
 
+            //    ds.WriteXmlSchema("schema2.xml");
+            //    rpt.SetDataSource(ds);
 
-                dt1 = (dal.getDataTabl("sales_ByGroup__", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), UC_Branch.ID.Text, Uc_Acc.ID.Text, db1));
-                dt2 = (dal.getDataTabl("Get_customers_payments", dTP1.Value.Date, dTP2.Value.Date, db1));
-                dt3 = (dal.getDataTabl("Sales_total", dTP1.Value.Date, dTP2.Value.Date, db1));
-
-                ds.Tables.Add(dt1);
-                ds.Tables.Add(dt2);
-                ds.Tables.Add(dt3);
-
-                ds.WriteXmlSchema("schema2.xml");
-                rpt.SetDataSource(ds);
-
-                crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'ملخص المبيعات والمشتريات'";
-                rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt + "'";
-                rpt.DataDefinition.FormulaFields["branch_name"].Text = "'" + Properties.Settings.Default.Branch_txt + "'";
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            Cursor.Current = Cursors.Default;
+            //    crystalReportViewer1.ReportSource = rpt;
+            //    rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
+            //    rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
+            //    rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
+            //    rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
+            //    //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+            //    rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + payment_type.Text + "'";
+            //    rpt.DataDefinition.FormulaFields["Type_"].Text = "'ملخص المبيعات والمشتريات'";
+            //    rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt + "'";
+            //    rpt.DataDefinition.FormulaFields["branch_name"].Text = "'" + Properties.Settings.Default.Branch_txt + "'";
+            //}
+            //catch (System.Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //Cursor.Current = Cursors.Default;
 
         }
 
@@ -571,58 +504,7 @@ namespace Report_Pro.RPT
 
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-                //if (cmb_transaction.SelectedIndex == 0)
-                //{
-                //    trans_code = "xs";
-                //}
-                //else if (cmb_transaction.SelectedIndex == 1)
-                //{
-                //    trans_code = "xp";
-                //}
-
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
-
-
-                RPT.rpt_sales_ByBranch rpt = new RPT.rpt_sales_ByBranch();
-
-                rpt.SetDataSource(dal.getDataTabl("sales_by_branch_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp", UC_Branch.ID.Text, Uc_Acc.ID.Text, db1));
-                crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المشتريات موزع بالفروع'";
-            }
-            catch
-            { }
-        }
-
+    
         private void button7_Click(object sender, EventArgs e)
         {
 
@@ -640,133 +522,11 @@ namespace Report_Pro.RPT
 
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-
-
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
-
-
-                RPT.sales_by_group rpt = new RPT.sales_by_group();
-
-
-                rpt.SetDataSource(dal.getDataTabl("take_to_production_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xtp", UC_Branch.ID.Text, Uc_Acc.ID.Text, db1));
-
-
-                crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المنصرف للانتاج'";
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            Cursor.Current = Cursors.Default;
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-            Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-
-
-                string R, F, C, P, S, Z;
-                if (chR.Checked == true) { R = "R"; } else { R = "X"; }
-                if (chF.Checked == true) { F = "F"; } else { F = "X"; }
-                if (chC.Checked == true) { C = "C"; } else { C = "X"; }
-                if (chS.Checked == true) { S = "S"; } else { S = "X"; }
-                if (chP.Checked == true) { P = "P"; } else { P = "X"; }
-                if (chZ.Checked == true) { Z = "Z"; } else { Z = "X"; }
-
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-                //if (cmb_transaction.SelectedIndex == 0)
-                //{ trans_code="xs";
-                //}
-                //else if (cmb_transaction.SelectedIndex == 1)
-                //{
-                //    trans_code = "xp";
-                //}
-
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
-
-
-                RPT.sales_by_group rpt = new RPT.sales_by_group();
-
-
-                rpt.SetDataSource(dal.getDataTabl("Out_from_production_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xtp", db1));
-
-
-                crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "' تقرير الانتاج - موزع بالمجموعات'";
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            Cursor.Current = Cursors.Default;
-        }
-
+      
+     
         private void btnOption_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = true;
+            groupPanel4.Visible  = true;
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -775,7 +535,7 @@ namespace Report_Pro.RPT
             Cursor.Current = Cursors.WaitCursor;
             try
             {
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
 
                 double T1, T2;
                 if (thick_1.Text == "")
@@ -904,11 +664,11 @@ namespace Report_Pro.RPT
                 rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
                 rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
                 rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
                 rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
                 rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
                 rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير المبيعات موزع بالعميل'";
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
 
             }
             catch (Exception ex)
@@ -923,157 +683,8 @@ namespace Report_Pro.RPT
 
         }
 
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            string R, F, C, P, S, Z;
-            if (chR.Checked == true) { R = "R"; } else { R = "X"; }
-            if (chF.Checked == true) { F = "F"; } else { F = "X"; }
-            if (chC.Checked == true) { C = "C"; } else { C = "X"; }
-            if (chS.Checked == true) { S = "S"; } else { S = "X"; }
-            if (chP.Checked == true) { P = "P"; } else { P = "X"; }
-            if (chZ.Checked == true) { Z = "Z"; } else { Z = "X"; }
-
-            Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
-
-
-                RPT.Productin rpt = new RPT.Productin();
-
-                DataSet1 ds = new DataSet1();
-                DataTable dt1 = new DataTable();
-                dt1 = dal.getDataTabl_1(@"SELECT C.ser_no,C.G_date,A.item_no,A.descr,C.Branch_code,H.Branch_Name,C.Machin_No,Prod_code
-                ,ROUND(sum(D.[QTY_ADD]),0 )as Qty_
-                ,ROUND(sum((D.[QTY_ADD])*A.Weight),3 )as Weight_
-                ,ROUND(sum((D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_ADD)*D.Local_Price*D.total_disc)/100),3) as value_
-	            FROM	wh_material_transaction As D
-                inner join wh_main_master As A on A.item_no=D.ITEM_NO
-                inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
-                inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND 
-                C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear
-                inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
-                inner join Fac_Machine As M on M.Machine_no=C.Machin_No 
-                where C.transaction_code='xtp' and IN_OUT_TYPE='O' and D.ITEM_NO like'" + Items.ID.Text + "%' and  A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "') and Cast(C.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
-                "' group by C.ser_no,C.G_date,A.item_no,A.descr,C.Branch_code,H.Branch_Name,Machin_No,Prod_code ");
-
-                ds.Tables.Add(dt1);
-                ds.WriteXmlSchema("schema_rpt.xml");
-                rpt.SetDataSource(ds);
-                crystalReportViewer1.ReportSource = rpt;
-
-                //crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير الانتاج'";
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            Cursor.Current = Cursors.Default;
-        }
-
-        private void button7_Click_1(object sender, EventArgs e)
-        {
-            Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-                string R, F, C, P, S, Z;
-                if (chR.Checked == true) { R = "R"; } else { R = "X"; }
-                if (chF.Checked == true) { F = "F"; } else { F = "X"; }
-                if (chC.Checked == true) { C = "C"; } else { C = "X"; }
-                if (chS.Checked == true) { S = "S"; } else { S = "X"; }
-                if (chP.Checked == true) { P = "P"; } else { P = "X"; }
-                if (chZ.Checked == true) { Z = "Z"; } else { Z = "X"; }
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-                if (payment_type.SelectedIndex == 0)
-                {
-                    pay_code = "";
-                }
-                else if (payment_type.SelectedIndex == 1)
-                {
-                    pay_code = "11";
-                }
-                else if (payment_type.SelectedIndex == 2)
-                {
-                    pay_code = "2";
-                }
-
-
-                RPT.Productin_by_Item rpt = new RPT.Productin_by_Item();
-
-                DataSet1 ds = new DataSet1();
-                DataTable dt1 = new DataTable();
-                dt1 = dal.getDataTabl_1(@"SELECT A.item_no,A.descr
-                ,ROUND(sum(D.[QTY_ADD]),0 )as Qty_
-                ,ROUND(sum((D.[QTY_ADD])*A.Weight),3 )as Weight_
-                ,ROUND(sum((D.QTY_ADD)*D.Local_Price)-sum(((D.QTY_ADD)*D.Local_Price*D.total_disc)/100),3) as value_
-	            FROM	wh_material_transaction As D
-                inner join wh_main_master As A on A.item_no=D.ITEM_NO
-                inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE
-                inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND 
-                C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear
-                inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
-                inner join Fac_Machine As M on M.Machine_no=C.Machin_No 
-                where C.transaction_code='xtp' and IN_OUT_TYPE='O' and D.ITEM_NO like'" + Items.ID.Text + "%' and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "') and Cast(C.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
-                "' group by A.item_no,A.descr");
-
-                ds.Tables.Add(dt1);
-                ds.WriteXmlSchema("schema_rpt.xml");
-                rpt.SetDataSource(ds);
-                crystalReportViewer1.ReportSource = rpt;
-
-                //crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "'تقرير الانتاج - موزع بالاصناف'";
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            Cursor.Current = Cursors.Default;
-        }
-
+    
+      
         private void buttonX5_Click(object sender, EventArgs e)
         {
         try {
@@ -1100,8 +711,8 @@ namespace Report_Pro.RPT
             where D.TRANSACTION_CODE like 'xs%'
             and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy-MM-dd") + "' and '" + dTP2.Value.ToString("yyyy-MM-dd") +
             "' and A.Payment_Type like '" + pay_code +
-            "%' and isnull(s.Category,'') like '" + Convert.ToString(category.SelectedValue) +
-            "%' and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
+            "%' and isnull(s.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "') " +
+            " and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 +
             "' and isnull(S.Dim_category,'') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
             "%' and A.Branch_code like '" + UC_Branch.ID.Text +
             "%' and A.acc_no like '" + Uc_Acc.ID.Text +
@@ -1122,7 +733,7 @@ namespace Report_Pro.RPT
             rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + Uc_Acc.ID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
             rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + UC_Branch.Desc.Text + "'";
             rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + payment_type.Text + "'";
-            groupBox1.Visible = false;
+           groupPanel4.Visible = false;
             }
         catch (System.Exception ex)
             {
@@ -1173,7 +784,7 @@ ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE desc) AS ser
                 //rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + Uc_Acc.ID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
                 //rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + UC_Branch.Desc.Text + "'";
                 //rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + payment_type.Text + "'";
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
             //}
             //catch (System.Exception ex)
             //{
@@ -1226,7 +837,7 @@ ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE ) AS ser
                 //rpt.DataDefinition.FormulaFields["Acc_"].Text = "'" + Uc_Acc.ID.Text + " - '+'" + Uc_Acc.Desc.Text + "'";
                 //rpt.DataDefinition.FormulaFields["Branch_"].Text = "'" + UC_Branch.Desc.Text + "'";
                 //rpt.DataDefinition.FormulaFields["Payment_"].Text = "'" + payment_type.Text + "'";
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
                 //}
                 //catch (System.Exception ex)
                 //{
@@ -1240,98 +851,14 @@ ROW_NUMBER() OVER(PARTITION BY B.branch_name ORDER BY A.G_DATE ) AS ser
 
         }
 
-        private void button8_Click_1(object sender, EventArgs e)
-        {
-            string R, F, C, P, S, Z;
-            if (chR.Checked == true) { R = "R"; } else { R = "X"; }
-            if (chF.Checked == true) { F = "F"; } else { F = "X"; }
-            if (chC.Checked == true) { C = "C"; } else { C = "X"; }
-            if (chS.Checked == true) { S = "S"; } else { S = "X"; }
-            if (chP.Checked == true) { P = "P"; } else { P = "X"; }
-            if (chZ.Checked == true) { Z = "Z"; } else { Z = "X"; }
-
-            Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-                groupBox1.Visible = false;
-                double T1, T2;
-                if (thick_1.Text == "")
-                { T1 = 0; }
-                else { T1 = Convert.ToDouble(thick_1.Text); }
-                if (thick_2.Text == "" || thick_2.Value == 0)
-                { T2 = 10000; }
-                else { T2 = Convert.ToDouble(thick_2.Text); }
-
-                
-                DateTime psDate = dTP1.Value.AddYears(-1);
-                DateTime peDate = dTP2.Value.AddYears(-1);
-                RPT.Productin_by_Machin rpt = new RPT.Productin_by_Machin();
-
-                DataSet1 ds = new DataSet1();
-                DataTable dt1 = new DataTable();
-                dt1 = dal.getDataTabl_1(@"SELECT C.Branch_code,H.Branch_Name,C.Machin_No,Machine_Name
-        ,SUM(CASE WHEN  Cast(C.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
-        "' THEN D.QTY_ADD ELSE 0 END) AS 'Qty2019'" +
-        ",SUM(CASE WHEN  Cast(C.G_date as date) between '" + psDate.ToString("yyyy/MM/dd") + "' and '" + peDate.ToString("yyyy/MM/dd") +
-        "'  THEN D.QTY_ADD ELSE 0 END) AS 'Qty2018'" +
-       ", SUM(CASE WHEN  Cast(C.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
-        "' THEN D.QTY_ADD*A.unitlenth/1000 ELSE 0 END) AS 'lenth2019'" +
-        ",SUM(CASE WHEN  Cast(C.G_date as date) between '" + psDate.ToString("yyyy/MM/dd") + "' and '" + peDate.ToString("yyyy/MM/dd") +
-        "'  THEN D.QTY_ADD*A.unitlenth/1000 ELSE 0 END) AS 'lenth2018'" +
-
-
-        ",SUM(CASE WHEN  Cast(C.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
-        "' THEN D.QTY_ADD*A.Weight ELSE 0 END) AS 'Weight2019'" +
-        ",SUM(CASE WHEN  Cast(C.G_date as date) between '" + psDate.ToString("yyyy/MM/dd") + "' and '" + peDate.ToString("yyyy/MM/dd") +
-        "' THEN D.QTY_ADD*A.Weight ELSE 0 END) AS 'Weight2018'" +
-		      
-        ",SUM(CASE WHEN  Cast(C.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
-        "' THEN (D.QTY_ADD*D.Local_Price)-((D.QTY_ADD*D.Local_Price*D.total_disc)/100) ELSE 0 END) AS 'Value2019'" +
-        ", SUM(CASE WHEN  Cast(C.G_date as date) between '" + psDate.ToString("yyyy/MM/dd") + "' and '" + peDate.ToString("yyyy/MM/dd") +
-        "'  THEN (D.QTY_ADD*D.Local_Price)-((D.QTY_ADD*D.Local_Price*D.total_disc)/100)  ELSE 0 END) AS 'Value2018'" +
-       
-        "FROM	wh_material_transaction As D " +
-        "inner join wh_main_master As A on A.item_no=D.ITEM_NO " +
-        "inner join WH_INV_TYPE As B on D.TRANSACTION_CODE=b.INV_CODE " +
-        "inner join wh_inv_data As C on  C.Ser_no = D.SER_NO AND C.Branch_code =D.Branch_code AND " +
-        "C.Transaction_code = D.TRANSACTION_CODE AND C.Cyear = D.Cyear " +
-        "inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code " +
-        "inner join Fac_Machine As M on M.Machine_no=C.Machin_No " +
-        "where C.transaction_code='xtp' and IN_OUT_TYPE='O' and D.ITEM_NO like'" + Items.ID.Text +
-        "%'  and group_code like '"+Uc_Group.ID.Text+"%' and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "') " +
-        "group by C.Branch_code,H.Branch_Name,C.Machin_No,Machine_Name ");
-
-                ds.Tables.Add(dt1);
-                ds.WriteXmlSchema("schema_rpt.xml");
-                rpt.SetDataSource(ds);
-                crystalReportViewer1.ReportSource = rpt;
-
-                //crystalReportViewer1.ReportSource = rpt;
-                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-                rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + cmb_DimCategory.Text + "'";
-                rpt.DataDefinition.FormulaFields["payment_"].Text = "'" + payment_type.Text + "'";
-                rpt.DataDefinition.FormulaFields["Type_"].Text = "' تقرير الانتاج - موزع بخطوط الانتاج'";
-
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            Cursor.Current = Cursors.Default;
-
-        }
-
+    
         private void btnMonthelySales_Click(object sender, EventArgs e)
         {
 
             Cursor.Current = Cursors.WaitCursor;
             try
             {
-                groupBox1.Visible = false;
+               groupPanel4.Visible = false;
 
                 double T1, T2;
                 if (thick_1.Text == "")

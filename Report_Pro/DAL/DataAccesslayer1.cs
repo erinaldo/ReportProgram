@@ -310,22 +310,11 @@ namespace Report_Pro.DAL
 
 
 
-        //public bool IsDateTime(string text)
-        //{
-        //    DateTime dateTime;
-        //    bool isDateTime = false;
-
-        //    // Check for empty string.
-        //    if (string.IsNullOrEmpty(text))
-        //    {
-        //        return false;
-        //    }
-
-        //    isDateTime = DateTime.TryParse(text, out dateTime);
-
-        //    return isDateTime;
-        //}
+      
 
 
+       public CultureInfo cul;
+        // Assembly a = Assembly.Load("Report_Pro");
+       public ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", Assembly.Load("Report_Pro"));
     }
-    }
+}
