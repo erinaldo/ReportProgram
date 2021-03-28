@@ -54,7 +54,7 @@ namespace Report_Pro.CTR
         {
             if (e.KeyCode == Keys.Enter)
             {
-                txtDiscription.Focus();
+            txtType.Focus();
             }
         }
 
@@ -74,6 +74,14 @@ namespace Report_Pro.CTR
             if (e.KeyCode == Keys.Enter && dal.IsDateTime(txt_R_Date.Text))
             {
                 txtNote.Focus();
+            }
+        }
+
+        private void txtType_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtType.Text!= string.Empty)
+            {
+                txtDiscription.Focus();
             }
         }
     }

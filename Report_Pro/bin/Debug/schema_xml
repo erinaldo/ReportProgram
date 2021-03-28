@@ -18,6 +18,19 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Table2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="branch_code" type="xs:string" minOccurs="0" />
+              <xs:element name="G_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="type" type="xs:string" minOccurs="0" />
+              <xs:element name="descripstion" type="xs:string" minOccurs="0" />
+              <xs:element name="d_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="notes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

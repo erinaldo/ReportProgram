@@ -135,7 +135,13 @@ namespace Report_Pro.CTR
                 "FROM daily_transaction as D inner join payer2 As P on D.Acc_no = P.acc_no and D.BRANCH_code = p.BRANCH_code " +
                 "inner join wh_BRANCHES As B on D.BRANCH_code = B.BRANCH_code where B.BRANCH_code = '" + Branch.ID.Text + "' group by branch_name ");
 
+
+
+                DataTable dt_detials = dal.getDataTabl_1(@"SELECT* FROM fund_Balance_Detials 
+                                WHERE cast(G_date as date) ='" + ToDate.Value.ToString("yyyy-MM-dd") + "' and  branch_code = '" + Branch.ID.Text + "'");
+
                 ds.Tables.Add(dt_tr);
+                ds.Tables.Add(dt_detials);
                 ds.WriteXmlSchema("schema_xml");
                 rpt.SetDataSource(ds);
                 rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + FromDate.Value.ToString("yyyy/MM/dd") + "'";
@@ -353,9 +359,26 @@ namespace Report_Pro.CTR
                     {                    
 
 
-                        if (r.txtamount.Value > 0 && r.txtDiscription.Text != string.Empty)
-                        {
-                           cmd.CommandText=@"INSERT INTO fund_Balance_Detials        
+                        if (r.txtamount.Value > 0 )
+                        { 
+                            if(r.txtDiscription.Text.Trim() == string.Empty)
+                            {
+                                MessageBox.Show(dal.rm.GetString("msgError") + "Description", dal.rm.GetString("msgError_H"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return ;
+                            }
+                            if (dal.IsDateTime( r.txt_R_Date.Text) == false)
+                            {
+                                MessageBox.Show(dal.rm.GetString("msgError") + "Date", dal.rm.GetString("msgError_H"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+                            if (r.txtType.Text.Trim() == string.Empty)
+                            {
+                                MessageBox.Show(dal.rm.GetString("msgError") + "Type", dal.rm.GetString("msgError_H"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+                            cmd.CommandText=@"INSERT INTO fund_Balance_Detials        
                             (branch_code,G_date,amount,type,descripstion,d_date,notes)
                             values ('" + Branch.ID.Text + "','" + ToDate.Value.ToString("yyyy/MM/dd") + "','" + r.txtamount.Text + "','" + r.txtType.Text + "','" + r.txtDiscription.Text + "','" + r.txt_R_Date.Value.ToString("yyyy/MM/dd") + "','" + r.txtNote.Text + "')";
                             cmd.ExecuteNonQuery();
@@ -440,23 +463,23 @@ namespace Report_Pro.CTR
 
         private void gettData_dt()
         {
-            DataTable dt_Copy = dal.getDataTabl_1(@"SELECT* FROM fund_Balance_Detials 
+            DataTable dt1 = dal.getDataTabl_1(@"SELECT* FROM fund_Balance_Detials 
                                 WHERE cast(G_date as date) ='"+ToDate.Value.ToString("yyyy-MM-dd")+"' and  branch_code = '"+Branch.ID.Text+"'");
-            if (dt_Copy.Rows.Count > 0)
+            if (dt1.Rows.Count > 0)
             {
                 int i = 0;
                 feesGrid1.flowLayoutPanel1.Controls.Clear();
-                foreach (DataRow row_ in dt_Copy.Rows)
+                foreach (DataRow row_ in dt1.Rows)
                 {
 
 
                     CTR.FeesRow rw = new CTR.FeesRow();
                     rw.Ser.Text = (i + 1).ToString();
-                    rw.txtamount.Text = dt_Copy.Rows[i]["amount"].ToString();
-                    rw.txtType.Text = dt_Copy.Rows[i]["type"].ToString();
-                    rw.txtDiscription.Text = dt_Copy.Rows[i]["descripstion"].ToString();
-                    rw.txt_R_Date.Text = dt_Copy.Rows[i]["d_date"].ToString();
-                    rw.txtNote.Text = dt_Copy.Rows[i]["notes"].ToString();
+                    rw.txtamount.Text = dt1.Rows[i]["amount"].ToString();
+                    rw.txtType.Text = dt1.Rows[i]["type"].ToString();
+                    rw.txtDiscription.Text = dt1.Rows[i]["descripstion"].ToString();
+                    rw.txt_R_Date.Text = dt1.Rows[i]["d_date"].ToString();
+                    rw.txtNote.Text = dt1.Rows[i]["notes"].ToString();
                     feesGrid1.flowLayoutPanel1.Controls.Add(rw);
                     rw.KeyDown += feesGrid1.r_KeyDown;
                     rw.KeyUp += feesGrid1.r_KeyUP;

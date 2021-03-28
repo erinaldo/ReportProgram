@@ -51,11 +51,11 @@
             // 
             this.txtDiscription.Border.Class = "TextBoxBorder";
             this.txtDiscription.FocusHighlightEnabled = true;
-            this.txtDiscription.Location = new System.Drawing.Point(475, 0);
+            this.txtDiscription.Location = new System.Drawing.Point(407, 0);
             this.txtDiscription.Margin = new System.Windows.Forms.Padding(0);
-            this.txtDiscription.MinimumSize = new System.Drawing.Size(0, 30);
+            this.txtDiscription.MinimumSize = new System.Drawing.Size(0, 24);
             this.txtDiscription.Name = "txtDiscription";
-            this.txtDiscription.Size = new System.Drawing.Size(322, 30);
+            this.txtDiscription.Size = new System.Drawing.Size(276, 24);
             this.txtDiscription.TabIndex = 1;
             this.txtDiscription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDiscription_KeyDown);
             // 
@@ -68,9 +68,9 @@
             this.txtNote.FocusHighlightEnabled = true;
             this.txtNote.Location = new System.Drawing.Point(0, 0);
             this.txtNote.Margin = new System.Windows.Forms.Padding(0);
-            this.txtNote.MinimumSize = new System.Drawing.Size(0, 30);
+            this.txtNote.MinimumSize = new System.Drawing.Size(0, 24);
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(300, 30);
+            this.txtNote.Size = new System.Drawing.Size(257, 24);
             this.txtNote.TabIndex = 2;
             this.txtNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNote_KeyDown);
             // 
@@ -89,11 +89,11 @@
             this.Ser.ForeColor = System.Drawing.SystemColors.Window;
             this.Ser.FreeTextEntryMode = true;
             this.Ser.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Center;
-            this.Ser.Location = new System.Drawing.Point(1050, 0);
+            this.Ser.Location = new System.Drawing.Point(900, 0);
             this.Ser.Margin = new System.Windows.Forms.Padding(0);
-            this.Ser.MinimumSize = new System.Drawing.Size(0, 30);
+            this.Ser.MinimumSize = new System.Drawing.Size(0, 24);
             this.Ser.Name = "Ser";
-            this.Ser.Size = new System.Drawing.Size(40, 30);
+            this.Ser.Size = new System.Drawing.Size(34, 24);
             this.Ser.TabIndex = 3;
             // 
             // txtamount
@@ -105,11 +105,11 @@
             this.txtamount.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtamount.FocusHighlightEnabled = true;
             this.txtamount.Increment = 1D;
-            this.txtamount.Location = new System.Drawing.Point(930, 0);
+            this.txtamount.Location = new System.Drawing.Point(797, 0);
             this.txtamount.Margin = new System.Windows.Forms.Padding(0);
-            this.txtamount.MinimumSize = new System.Drawing.Size(0, 30);
+            this.txtamount.MinimumSize = new System.Drawing.Size(0, 24);
             this.txtamount.Name = "txtamount";
-            this.txtamount.Size = new System.Drawing.Size(120, 30);
+            this.txtamount.Size = new System.Drawing.Size(103, 24);
             this.txtamount.TabIndex = 4;
             this.txtamount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtamount_KeyDown_1);
             this.txtamount.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtamount_KeyUp_1);
@@ -122,9 +122,9 @@
             this.txt_R_Date.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txt_R_Date.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.txt_R_Date.ButtonDropDown.Visible = true;
-            this.txt_R_Date.Location = new System.Drawing.Point(300, 0);
+            this.txt_R_Date.Location = new System.Drawing.Point(257, 0);
             this.txt_R_Date.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_R_Date.MinimumSize = new System.Drawing.Size(0, 30);
+            this.txt_R_Date.MinimumSize = new System.Drawing.Size(0, 24);
             // 
             // 
             // 
@@ -155,7 +155,7 @@
             this.txt_R_Date.MonthCalendar.TodayButtonVisible = true;
             this.txt_R_Date.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.txt_R_Date.Name = "txt_R_Date";
-            this.txt_R_Date.Size = new System.Drawing.Size(175, 30);
+            this.txt_R_Date.Size = new System.Drawing.Size(150, 24);
             this.txt_R_Date.TabIndex = 5;
             this.txt_R_Date.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_R_Date_KeyDown);
             // 
@@ -163,6 +163,7 @@
             // 
             this.txtType.DisplayMember = "Text";
             this.txtType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtType.FocusHighlightEnabled = true;
             this.txtType.FormattingEnabled = true;
             this.txtType.ItemHeight = 18;
             this.txtType.Items.AddRange(new object[] {
@@ -171,10 +172,12 @@
             this.comboItem3,
             this.comboItem4,
             this.comboItem5});
-            this.txtType.Location = new System.Drawing.Point(797, 0);
+            this.txtType.Location = new System.Drawing.Point(683, 0);
+            this.txtType.Margin = new System.Windows.Forms.Padding(0);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(133, 24);
+            this.txtType.Size = new System.Drawing.Size(115, 24);
             this.txtType.TabIndex = 6;
+            this.txtType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtType_KeyDown);
             // 
             // comboItem1
             // 
@@ -198,7 +201,7 @@
             // 
             // FeesRow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.Controls.Add(this.txtType);
@@ -209,7 +212,7 @@
             this.Controls.Add(this.txtDiscription);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "FeesRow";
-            this.Size = new System.Drawing.Size(1093, 30);
+            this.Size = new System.Drawing.Size(937, 26);
             ((System.ComponentModel.ISupportInitialize)(this.Ser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtamount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_R_Date)).EndInit();
