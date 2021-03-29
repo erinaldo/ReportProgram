@@ -40,11 +40,13 @@
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.totalAmount = new DevComponents.Editors.DoubleInput();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtRemove = new System.Windows.Forms.TextBox();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.txtBalance = new DevComponents.Editors.DoubleInput();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiff)).BeginInit();
@@ -57,11 +59,12 @@
             // 
             this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX1.Location = new System.Drawing.Point(1055, 97);
+            this.labelX1.Location = new System.Drawing.Point(920, 79);
             this.labelX1.Margin = new System.Windows.Forms.Padding(0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(35, 28);
+            this.labelX1.Size = new System.Drawing.Size(30, 23);
             this.labelX1.TabIndex = 1;
             this.labelX1.Text = "م";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -70,11 +73,12 @@
             // 
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX2.Location = new System.Drawing.Point(936, 97);
+            this.labelX2.Location = new System.Drawing.Point(818, 79);
             this.labelX2.Margin = new System.Windows.Forms.Padding(0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(117, 28);
+            this.labelX2.Size = new System.Drawing.Size(100, 23);
             this.labelX2.TabIndex = 2;
             this.labelX2.Text = "المبلغ";
             this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -83,11 +87,12 @@
             // 
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX3.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX3.Location = new System.Drawing.Point(480, 97);
+            this.labelX3.Location = new System.Drawing.Point(427, 79);
             this.labelX3.Margin = new System.Windows.Forms.Padding(0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(321, 28);
+            this.labelX3.Size = new System.Drawing.Size(275, 23);
             this.labelX3.TabIndex = 3;
             this.labelX3.Text = "البيان";
             this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -96,11 +101,12 @@
             // 
             this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX4.Location = new System.Drawing.Point(4, 97);
+            this.labelX4.Location = new System.Drawing.Point(19, 79);
             this.labelX4.Margin = new System.Windows.Forms.Padding(0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(301, 28);
+            this.labelX4.Size = new System.Drawing.Size(258, 23);
             this.labelX4.TabIndex = 4;
             this.labelX4.Text = "ملاحظات";
             this.labelX4.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -114,9 +120,8 @@
             this.groupPanel1.Controls.Add(this.groupPanel2);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
-            this.groupPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1098, 792);
+            this.groupPanel1.Size = new System.Drawing.Size(988, 644);
             // 
             // 
             // 
@@ -138,15 +143,16 @@
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.TabIndex = 6;
+            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 132);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 107);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1092, 538);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(982, 437);
             this.flowLayoutPanel1.TabIndex = 7;
+            this.flowLayoutPanel1.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlRemoved);
             // 
             // groupPanel3
             // 
@@ -157,10 +163,9 @@
             this.groupPanel3.Controls.Add(this.labelX5);
             this.groupPanel3.Controls.Add(this.totalAmount);
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel3.Location = new System.Drawing.Point(0, 670);
-            this.groupPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupPanel3.Location = new System.Drawing.Point(0, 544);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(1092, 116);
+            this.groupPanel3.Size = new System.Drawing.Size(982, 94);
             // 
             // 
             // 
@@ -190,10 +195,9 @@
             this.labelX9.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX9.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX9.Location = new System.Drawing.Point(877, 61);
-            this.labelX9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelX9.Location = new System.Drawing.Point(798, 50);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(177, 28);
+            this.labelX9.Size = new System.Drawing.Size(152, 23);
             this.labelX9.TabIndex = 6;
             this.labelX9.Text = "الفرق";
             this.labelX9.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -207,10 +211,9 @@
             this.txtDiff.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtDiff.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtDiff.Increment = 1D;
-            this.txtDiff.Location = new System.Drawing.Point(688, 63);
-            this.txtDiff.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDiff.Location = new System.Drawing.Point(636, 51);
             this.txtDiff.Name = "txtDiff";
-            this.txtDiff.Size = new System.Drawing.Size(183, 24);
+            this.txtDiff.Size = new System.Drawing.Size(157, 20);
             this.txtDiff.TabIndex = 7;
             this.txtDiff.ValueChanged += new System.EventHandler(this.txtDiff_ValueChanged);
             // 
@@ -220,10 +223,9 @@
             this.labelX5.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX5.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX5.Location = new System.Drawing.Point(877, 20);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelX5.Location = new System.Drawing.Point(798, 16);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(177, 28);
+            this.labelX5.Size = new System.Drawing.Size(152, 23);
             this.labelX5.TabIndex = 4;
             this.labelX5.Text = "اجمالي التفاصيل";
             this.labelX5.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -237,16 +239,17 @@
             this.totalAmount.BackgroundStyle.Class = "DateTimeInputBackground";
             this.totalAmount.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.totalAmount.Increment = 1D;
-            this.totalAmount.Location = new System.Drawing.Point(688, 22);
-            this.totalAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.totalAmount.Location = new System.Drawing.Point(636, 18);
             this.totalAmount.Name = "totalAmount";
-            this.totalAmount.Size = new System.Drawing.Size(183, 24);
+            this.totalAmount.Size = new System.Drawing.Size(157, 20);
             this.totalAmount.TabIndex = 5;
             // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.txtRemove);
+            this.groupPanel2.Controls.Add(this.labelX11);
             this.groupPanel2.Controls.Add(this.labelX10);
             this.groupPanel2.Controls.Add(this.labelX8);
             this.groupPanel2.Controls.Add(this.txtBalance);
@@ -260,7 +263,7 @@
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(1092, 132);
+            this.groupPanel2.Size = new System.Drawing.Size(982, 107);
             // 
             // 
             // 
@@ -283,16 +286,53 @@
             this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel2.TabIndex = 0;
             // 
+            // txtRemove
+            // 
+            this.txtRemove.BackColor = System.Drawing.SystemColors.Window;
+            this.txtRemove.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemove.Location = new System.Drawing.Point(445, 40);
+            this.txtRemove.Name = "txtRemove";
+            this.txtRemove.ReadOnly = true;
+            this.txtRemove.Size = new System.Drawing.Size(72, 20);
+            this.txtRemove.TabIndex = 334;
+            this.txtRemove.TabStop = false;
+            this.txtRemove.Visible = false;
+            // 
+            // labelX11
+            // 
+            this.labelX11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelX11.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX11.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelX11.Location = new System.Drawing.Point(952, 79);
+            this.labelX11.Margin = new System.Windows.Forms.Padding(0);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(30, 23);
+            this.labelX11.TabIndex = 10;
+            this.labelX11.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX10
+            // 
+            this.labelX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelX10.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX10.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX10.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelX10.Location = new System.Drawing.Point(704, 79);
+            this.labelX10.Margin = new System.Windows.Forms.Padding(0);
+            this.labelX10.Name = "labelX10";
+            this.labelX10.Size = new System.Drawing.Size(112, 23);
+            this.labelX10.TabIndex = 9;
+            this.labelX10.Text = "التصنيف";
+            this.labelX10.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
             // labelX8
             // 
             this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX8.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX8.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX8.Location = new System.Drawing.Point(893, 20);
-            this.labelX8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelX8.Location = new System.Drawing.Point(811, 16);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(177, 28);
+            this.labelX8.Size = new System.Drawing.Size(152, 23);
             this.labelX8.TabIndex = 7;
             this.labelX8.Text = "الرصيد المرحل";
             this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -306,21 +346,21 @@
             this.txtBalance.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtBalance.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtBalance.Increment = 1D;
-            this.txtBalance.Location = new System.Drawing.Point(704, 22);
-            this.txtBalance.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtBalance.Location = new System.Drawing.Point(649, 18);
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(183, 24);
+            this.txtBalance.Size = new System.Drawing.Size(157, 20);
             this.txtBalance.TabIndex = 8;
             // 
             // labelX7
             // 
             this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX7.BackColor = System.Drawing.Color.RoyalBlue;
+            this.labelX7.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX7.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX7.Location = new System.Drawing.Point(307, 97);
+            this.labelX7.Location = new System.Drawing.Point(279, 79);
             this.labelX7.Margin = new System.Windows.Forms.Padding(0);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(171, 28);
+            this.labelX7.Size = new System.Drawing.Size(147, 23);
             this.labelX7.TabIndex = 6;
             this.labelX7.Text = "التاريخ";
             this.labelX7.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -330,44 +370,30 @@
             this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX6.Location = new System.Drawing.Point(905, 65);
-            this.labelX6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelX6.Location = new System.Drawing.Point(822, 53);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(178, 28);
+            this.labelX6.Size = new System.Drawing.Size(153, 23);
             this.labelX6.TabIndex = 5;
             this.labelX6.Text = "تفاصيل الرصيد";
             this.labelX6.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // labelX10
-            // 
-            this.labelX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX10.BackColor = System.Drawing.Color.RoyalBlue;
-            this.labelX10.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX10.Location = new System.Drawing.Point(803, 97);
-            this.labelX10.Margin = new System.Windows.Forms.Padding(0);
-            this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(131, 28);
-            this.labelX10.TabIndex = 9;
-            this.labelX10.Text = "التصنيف";
-            this.labelX10.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
             // FeesGrid
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FeesGrid";
-            this.Size = new System.Drawing.Size(1098, 792);
+            this.Size = new System.Drawing.Size(988, 644);
             this.Load += new System.EventHandler(this.FeesGrid_Load);
+            this.Click += new System.EventHandler(this.FeesGrid_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FeesGrid_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FeesGrid_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FeesGrid_KeyUp);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtDiff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.totalAmount)).EndInit();
             this.groupPanel2.ResumeLayout(false);
+            this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
             this.ResumeLayout(false);
 
@@ -392,5 +418,7 @@
         public DevComponents.Editors.DoubleInput txtBalance;
         public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private DevComponents.DotNetBar.LabelX labelX10;
+        private DevComponents.DotNetBar.LabelX labelX11;
+        public System.Windows.Forms.TextBox txtRemove;
     }
 }

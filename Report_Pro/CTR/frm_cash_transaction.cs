@@ -293,7 +293,7 @@ namespace Report_Pro.CTR
 
         private void frm_cash_transaction_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+           
         }
 
         private void buttonX4_Click(object sender, EventArgs e)
@@ -338,6 +338,7 @@ namespace Report_Pro.CTR
         {
             getBalance();
             gettData_dt();
+            feesGrid1.total_inv();
         }
 
         private void btnSaveDetials_Click(object sender, EventArgs e)
@@ -428,11 +429,12 @@ namespace Report_Pro.CTR
             DataTable dt_Copy = dal.getDataTabl_1(@"SELECT* FROM fund_Balance_Detials AS a
                                 WHERE a.G_date = ( SELECT MAX(b.G_date)
                                 FROM fund_Balance_Detials AS b
-                                WHERE a.branch_code = b.branch_code)");
+                                WHERE a.branch_code = b.branch_code) and  A.branch_code = '" + Branch.ID.Text + "'");
+            feesGrid1.flowLayoutPanel1.Controls.Clear();
             if (dt_Copy.Rows.Count > 0)
             {
                 int i = 0;
-                feesGrid1.flowLayoutPanel1.Controls.Clear();
+               
                 foreach (DataRow row_ in dt_Copy.Rows)
                 {
 
@@ -458,6 +460,15 @@ namespace Report_Pro.CTR
                 r.KeyUp += feesGrid1.r_KeyUP;
 
             }
+            else
+            {
+
+                CTR.FeesRow r = new CTR.FeesRow();
+                feesGrid1.flowLayoutPanel1.Controls.Add(r);
+                r.Ser.Text = (feesGrid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                r.KeyDown += feesGrid1.r_KeyDown;
+                r.KeyUp += feesGrid1.r_KeyUP;
+            }
 
         }
 
@@ -465,10 +476,12 @@ namespace Report_Pro.CTR
         {
             DataTable dt1 = dal.getDataTabl_1(@"SELECT* FROM fund_Balance_Detials 
                                 WHERE cast(G_date as date) ='"+ToDate.Value.ToString("yyyy-MM-dd")+"' and  branch_code = '"+Branch.ID.Text+"'");
+
+            feesGrid1.flowLayoutPanel1.Controls.Clear();
             if (dt1.Rows.Count > 0)
             {
                 int i = 0;
-                feesGrid1.flowLayoutPanel1.Controls.Clear();
+               
                 foreach (DataRow row_ in dt1.Rows)
                 {
 
@@ -483,7 +496,7 @@ namespace Report_Pro.CTR
                     feesGrid1.flowLayoutPanel1.Controls.Add(rw);
                     rw.KeyDown += feesGrid1.r_KeyDown;
                     rw.KeyUp += feesGrid1.r_KeyUP;
-
+                    rw.Click += feesGrid1.r_Click;
                     i = i + 1;
 
                 }
@@ -492,7 +505,18 @@ namespace Report_Pro.CTR
                 r.Ser.Text = (feesGrid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
                 r.KeyDown += feesGrid1.r_KeyDown;
                 r.KeyUp += feesGrid1.r_KeyUP;
+                r.Click += feesGrid1.r_Click;
 
+            }
+            else
+            {
+               
+                CTR.FeesRow r = new CTR.FeesRow();
+                feesGrid1.flowLayoutPanel1.Controls.Add(r);
+                r.Ser.Text = (feesGrid1.flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                r.KeyDown += feesGrid1.r_KeyDown;
+                r.KeyUp += feesGrid1.r_KeyUP;
+                r.Click += feesGrid1.r_Click;
             }
 
         }
@@ -501,6 +525,21 @@ namespace Report_Pro.CTR
         {
             getBalance();
             gettData_dt();
+            feesGrid1.total_inv();
+        }
+
+        private void Branch_DoubleClick(object sender, EventArgs e)
+        {
+            ////getBalance();
+            //gettData_dt();
+            //feesGrid1.total_inv();
+        }
+
+        private void buttonX7_Click(object sender, EventArgs e)
+        {
+            getBalance();
+            gettData_dt();
+            feesGrid1.total_inv();
         }
     }
 }

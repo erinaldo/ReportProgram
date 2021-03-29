@@ -39,6 +39,7 @@
             this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.comboItem4 = new DevComponents.Editors.ComboItem();
             this.comboItem5 = new DevComponents.Editors.ComboItem();
+            this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.Ser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtamount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_R_Date)).BeginInit();
@@ -53,7 +54,6 @@
             this.txtDiscription.FocusHighlightEnabled = true;
             this.txtDiscription.Location = new System.Drawing.Point(407, 0);
             this.txtDiscription.Margin = new System.Windows.Forms.Padding(0);
-            this.txtDiscription.MinimumSize = new System.Drawing.Size(0, 24);
             this.txtDiscription.Name = "txtDiscription";
             this.txtDiscription.Size = new System.Drawing.Size(276, 24);
             this.txtDiscription.TabIndex = 1;
@@ -68,7 +68,6 @@
             this.txtNote.FocusHighlightEnabled = true;
             this.txtNote.Location = new System.Drawing.Point(0, 0);
             this.txtNote.Margin = new System.Windows.Forms.Padding(0);
-            this.txtNote.MinimumSize = new System.Drawing.Size(0, 24);
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(257, 24);
             this.txtNote.TabIndex = 2;
@@ -107,7 +106,6 @@
             this.txtamount.Increment = 1D;
             this.txtamount.Location = new System.Drawing.Point(797, 0);
             this.txtamount.Margin = new System.Windows.Forms.Padding(0);
-            this.txtamount.MinimumSize = new System.Drawing.Size(0, 24);
             this.txtamount.Name = "txtamount";
             this.txtamount.Size = new System.Drawing.Size(103, 24);
             this.txtamount.TabIndex = 4;
@@ -124,7 +122,6 @@
             this.txt_R_Date.ButtonDropDown.Visible = true;
             this.txt_R_Date.Location = new System.Drawing.Point(257, 0);
             this.txt_R_Date.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_R_Date.MinimumSize = new System.Drawing.Size(0, 24);
             // 
             // 
             // 
@@ -163,6 +160,7 @@
             // 
             this.txtType.DisplayMember = "Text";
             this.txtType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtType.FocusHighlightEnabled = true;
             this.txtType.FormattingEnabled = true;
             this.txtType.ItemHeight = 18;
@@ -199,11 +197,24 @@
             // 
             this.comboItem5.Text = "اخري";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnDelete.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDelete.Image = global::Report_Pro.Properties.Resources.Cross_icon1;
+            this.btnDelete.Location = new System.Drawing.Point(934, 0);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(29, 24);
+            this.btnDelete.TabIndex = 296;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // FeesRow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.txt_R_Date);
             this.Controls.Add(this.txtamount);
@@ -212,7 +223,7 @@
             this.Controls.Add(this.txtDiscription);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "FeesRow";
-            this.Size = new System.Drawing.Size(937, 26);
+            this.Size = new System.Drawing.Size(965, 24);
             ((System.ComponentModel.ISupportInitialize)(this.Ser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtamount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_R_Date)).EndInit();
@@ -232,5 +243,6 @@
         private DevComponents.Editors.ComboItem comboItem4;
         private DevComponents.Editors.ComboItem comboItem5;
         public DevComponents.DotNetBar.Controls.ComboBoxEx txtType;
+        private DevComponents.DotNetBar.ButtonX btnDelete;
     }
 }

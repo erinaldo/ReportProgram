@@ -84,5 +84,12 @@ namespace Report_Pro.CTR
                 txtDiscription.Focus();
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            OnClick(e);
+            this.Dispose();
+
+        }
     }
 }

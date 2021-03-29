@@ -1446,7 +1446,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\en-US\Report_Pro.resources.
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
 D:\ReportProgram\Report_Pro\bin\Debug\Report_Pro.exe.config
 D:\ReportProgram\Report_Pro\bin\Debug\Report_Pro.exe
 D:\ReportProgram\Report_Pro\bin\Debug\Report_Pro.pdb

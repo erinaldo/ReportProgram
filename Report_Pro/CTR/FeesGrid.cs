@@ -29,7 +29,7 @@ namespace Report_Pro.CTR
             r.KeyDown += r_KeyDown;
             //r.DoubleClick += r_DoubleClick;
             r.KeyUp += r_KeyUP;
-            //r.Click += r_Click;
+            r.Click += r_Click;
 
             flowLayoutPanel1.AutoScroll = false;
             flowLayoutPanel1.HorizontalScroll.Enabled = false;
@@ -107,6 +107,7 @@ namespace Report_Pro.CTR
                         r.txtamount.Focus();
                         r.KeyDown += r_KeyDown;
                         r.KeyUp += r_KeyUP;
+                        r.Click += r_Click;
 
                     }
                     else if (flowLayoutPanel1.Controls.GetChildIndex(inv_r) == index + 1)
@@ -120,11 +121,6 @@ namespace Report_Pro.CTR
         }
 
         private void groupPanel3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FeesGrid_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
@@ -145,6 +141,43 @@ namespace Report_Pro.CTR
         {
           
 
+        }
+
+        private void flowLayoutPanel1_ControlRemoved(object sender, ControlEventArgs e)
+        {
+
+           
+            if (flowLayoutPanel1.Controls.Count < 1 && txtRemove.Text=="1")
+            {
+               CTR.FeesRow r = new CTR.FeesRow();
+                flowLayoutPanel1.Controls.Add(r);
+                r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+                r.KeyDown += r_KeyDown;
+                r.KeyUp += r_KeyUP;
+                r.Click += r_Click;
+            }
+            txtRemove.Clear();
+            foreach (CTR.FeesRow r in flowLayoutPanel1.Controls)
+            {
+                r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+
+            }
+        }
+
+        public void r_Click(object sender, EventArgs e)
+        {
+
+            base.OnClick(e);
+        }
+
+        private void FeesGrid_Click(object sender, EventArgs e)
+        {
+            txtRemove.Text = "1";
+        }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
