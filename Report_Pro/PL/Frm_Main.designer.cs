@@ -138,6 +138,7 @@
             this.b1 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem8 = new DevComponents.DotNetBar.ButtonItem();
+            this.btn_CashTransaction = new DevComponents.DotNetBar.ButtonItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnChangBranch = new DevComponents.DotNetBar.ButtonX();
             this.TV1 = new System.Windows.Forms.TreeView();
@@ -147,7 +148,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.vScrollBarAdv1 = new DevComponents.DotNetBar.VScrollBarAdv();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.btn_CashTransaction = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -942,6 +942,13 @@
             this.buttonItem8.Name = "buttonItem8";
             this.buttonItem8.Click += new System.EventHandler(this.buttonItem8_Click);
             // 
+            // btn_CashTransaction
+            // 
+            resources.ApplyResources(this.btn_CashTransaction, "btn_CashTransaction");
+            this.btn_CashTransaction.Name = "btn_CashTransaction";
+            this.btn_CashTransaction.SubItemsExpandWidth = 14;
+            this.btn_CashTransaction.Click += new System.EventHandler(this.btn_CashTransaction_Click);
+            // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
@@ -1027,13 +1034,6 @@
             this.imageList2.Images.SetKeyName(7, "Setting.png");
             this.imageList2.Images.SetKeyName(8, "file.png");
             this.imageList2.Images.SetKeyName(9, "Maintinance.png");
-            // 
-            // btn_CashTransaction
-            // 
-            resources.ApplyResources(this.btn_CashTransaction, "btn_CashTransaction");
-            this.btn_CashTransaction.Name = "btn_CashTransaction";
-            this.btn_CashTransaction.SubItemsExpandWidth = 14;
-            this.btn_CashTransaction.Click += new System.EventHandler(this.btn_CashTransaction_Click);
             // 
             // Frm_Main
             // 

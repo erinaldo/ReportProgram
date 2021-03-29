@@ -20,6 +20,7 @@ namespace Report_Pro.MyControls
         private void ID_KeyUp(object sender, KeyEventArgs e)
         {
             get_desc();
+            OnDoubleClick(e);
         }
 
         private void get_desc()
@@ -85,6 +86,7 @@ namespace Report_Pro.MyControls
             dgv1.Visible = false;
             this.Height = 23;
             this.SendToBack();
+            OnDoubleClick(e);
 
         }
 
@@ -137,7 +139,7 @@ namespace Report_Pro.MyControls
             }
 
             catch { }
-
+            OnDoubleClick(e);
         }
 
         private void Desc_Leave(object sender, EventArgs e)
@@ -158,6 +160,11 @@ namespace Report_Pro.MyControls
             }
 
             catch { }
+
+        }
+
+        private void UC_AccBranch_DoubleClick(object sender, EventArgs e)
+        {
 
         }
     }
