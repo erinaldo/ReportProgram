@@ -1940,3 +1940,4 @@ D:\ReportProgram\Report_Pro\obj\Debug\en-US\Report_Pro.resources.dll
 D:\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 D:\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 D:\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache

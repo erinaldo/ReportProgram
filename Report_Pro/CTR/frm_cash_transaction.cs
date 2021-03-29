@@ -190,15 +190,7 @@ namespace Report_Pro.CTR
                     break;
             }
 
-            if (Program.userID == "firas" || Program.userID == "waled")
-            {
-                buttonX6.Visible = true;
-
-            }
-            else
-            {
-                buttonX6.Visible = false;
-            }
+           
 
             getBalance();
 
@@ -268,15 +260,13 @@ namespace Report_Pro.CTR
             if (textBox1.Text == "1975")
             {
                 buttonX2.Visible = true;
-                buttonX3.Visible = true;
-                buttonX4.Visible = true;
                 buttonX5.Visible = true;
+                btn_ReportFundDetials.Visible = true;
             }
             else {
                 buttonX2.Visible = false;
-                buttonX3.Visible = false;
-                buttonX4.Visible = false;
                 buttonX5.Visible = false;
+                btn_ReportFundDetials.Visible = false;
             }
         }
 
@@ -540,6 +530,37 @@ namespace Report_Pro.CTR
             getBalance();
             gettData_dt();
             feesGrid1.total_inv();
+        }
+
+        private void btn_ReportFundDetials_Click(object sender, EventArgs e)
+        {
+            rpt_FundDetials rpt = new rpt_FundDetials();
+            DataSet ds = new DataSet();
+            DataTable dt1 = new DataTable();
+            tabControl1.SelectedTab = tabItem1;
+            dt1 = dal.getDataTabl_1(@"select * from 
+                (SELECT   D.BRANCH_code,branch_name, SUM(CASE WHEN  d.acc_no like '121%' and convert(varchar,D.g_date,111) > '1950-01-01' and convert(varchar,D.g_date,111) <=  '" + ToDate.Value.ToString("yyyy/MM/dd") + "'  THEN meno -loh ELSE 0 END) AS End_balance_ " +
+                "FROM daily_transaction as D inner join payer2 As P on D.Acc_no = P.acc_no and D.BRANCH_code = p.BRANCH_code " +
+                "inner join wh_BRANCHES As B on D.BRANCH_code = B.BRANCH_code  where B.notes='مبيعات' and  B.BRANCH_code like '" + Branch.ID.Text + "%'  group by D.BRANCH_code,branch_name )as Z " +
+                "left join (SELECT  branch_code,G_date " +
+                ", SUM(CASE WHEN  type like 'نقدي'  THEN amount ELSE 0 END) AS Cash_ " +
+                ", SUM(CASE WHEN  type like 'شيكات'  THEN amount ELSE 0 END) AS Sheck_ " +
+                ", SUM(CASE WHEN  type like 'سلف'  THEN amount ELSE 0 END) AS Advance_ " +
+                ", SUM(CASE WHEN  type like 'فواتير'  THEN amount ELSE 0 END) AS invoices_ " +
+                ", SUM(CASE WHEN  type like 'اخري'  THEN amount ELSE 0 END) AS Other_ " +
+                "from fund_Balance_Detials where convert(varchar,g_date,111) = '" + ToDate.Value.ToString("yyyy/MM/dd") + "' " +
+                "group by branch_code,G_date ) as X on X.branch_code = Z.BRANCH_code ");
+              ds.Tables.Add(dt1);
+            ds.WriteXmlSchema("schema_xml");
+            rpt.SetDataSource(ds);
+            //rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + FromDate.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + ToDate.Value.ToString("yyyy/MM/dd") + "'";
+            //rpt.DataDefinition.FormulaFields["dgits_"].Text = "'" + dal.digits_ + "'";
+            //rpt.DataDefinition.FormulaFields["Titel_"].Text = "'تقرير تفاصيل ارصدة صناديق الفروع'";
+            ////rpt.DataDefinition.FormulaFields["branch_E_"].Text = "'" + Properties.Settings.Default.Branch_txt_EN + "'";
+
+            crystalReportViewer1.ReportSource = rpt;
+
         }
     }
 }
