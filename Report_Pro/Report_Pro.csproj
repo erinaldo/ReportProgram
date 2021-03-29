@@ -306,6 +306,12 @@
       <DependentUpon>rpt_deliveryRep.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CTR\rpt_FundDetials.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_FundDetials.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CurrencyInfo.cs" />
     <Compile Include="DAL\DataAccesslayer1.cs" />
     <Compile Include="DAL\db.designer.cs">
@@ -1071,6 +1077,10 @@
     <EmbeddedResource Include="CTR\rpt_deliveryRep.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_deliveryRep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTR\rpt_FundDetials.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_FundDetials.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
