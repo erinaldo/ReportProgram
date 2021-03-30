@@ -30,6 +30,7 @@ namespace Report_Pro.CTR
             //r.DoubleClick += r_DoubleClick;
             r.KeyUp += r_KeyUP;
             r.Click += r_Click;
+            r.EnabledChanged += r_TextChanged;
 
             flowLayoutPanel1.AutoScroll = false;
             flowLayoutPanel1.HorizontalScroll.Enabled = false;
@@ -108,7 +109,7 @@ namespace Report_Pro.CTR
                         r.KeyDown += r_KeyDown;
                         r.KeyUp += r_KeyUP;
                         r.Click += r_Click;
-
+                        r.EnabledChanged += r_TextChanged;
                     }
                     else if (flowLayoutPanel1.Controls.GetChildIndex(inv_r) == index + 1)
                     {
@@ -155,6 +156,7 @@ namespace Report_Pro.CTR
                 r.KeyDown += r_KeyDown;
                 r.KeyUp += r_KeyUP;
                 r.Click += r_Click;
+                r.EnabledChanged += r_TextChanged;
             }
             txtRemove.Clear();
             foreach (CTR.FeesRow r in flowLayoutPanel1.Controls)
@@ -168,6 +170,12 @@ namespace Report_Pro.CTR
         {
 
             base.OnClick(e);
+        }
+
+        public void r_TextChanged(object sender, EventArgs e)
+        {
+
+            base.OnTextChanged(e);
         }
 
         private void FeesGrid_Click(object sender, EventArgs e)

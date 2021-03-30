@@ -91,5 +91,34 @@ namespace Report_Pro.CTR
             this.Dispose();
 
         }
+
+        private void txtType_TextChanged(object sender, EventArgs e)
+        {
+            //Action<Control.ControlCollection> func = null;
+
+            //func = (controls) =>
+            //{
+
+            //    foreach (Control ctrl in controls)
+            //        if (txtType.Text == "فواتير")
+            //        {
+            //            ctrl.BackColor = System.Drawing.SystemColors.Info;
+            //        }
+            //        else {
+
+            //            ctrl.BackColor = Color.White;
+            //        }
+
+            //};
+
+            //func(Controls);
+
+            //OnEnabledChanged(e);
+        }
+
+        private void FeesRow_EnabledChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

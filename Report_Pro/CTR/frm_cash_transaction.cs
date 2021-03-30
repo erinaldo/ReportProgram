@@ -487,6 +487,7 @@ namespace Report_Pro.CTR
                     rw.KeyDown += feesGrid1.r_KeyDown;
                     rw.KeyUp += feesGrid1.r_KeyUP;
                     rw.Click += feesGrid1.r_Click;
+                    rw.EnabledChanged += feesGrid1.r_TextChanged;
                     i = i + 1;
 
                 }
@@ -496,7 +497,7 @@ namespace Report_Pro.CTR
                 r.KeyDown += feesGrid1.r_KeyDown;
                 r.KeyUp += feesGrid1.r_KeyUP;
                 r.Click += feesGrid1.r_Click;
-
+                r.EnabledChanged += feesGrid1.r_TextChanged;
             }
             else
             {
@@ -507,6 +508,7 @@ namespace Report_Pro.CTR
                 r.KeyDown += feesGrid1.r_KeyDown;
                 r.KeyUp += feesGrid1.r_KeyUP;
                 r.Click += feesGrid1.r_Click;
+                r.EnabledChanged += feesGrid1.r_TextChanged;
             }
 
         }
