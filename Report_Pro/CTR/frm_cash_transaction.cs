@@ -553,7 +553,7 @@ namespace Report_Pro.CTR
               ds.Tables.Add(dt1);
             ds.WriteXmlSchema("schema_xml");
             rpt.SetDataSource(ds);
-            //rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + FromDate.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["pic_path"].Text = "'" + Application.StartupPath + "'";
             rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + ToDate.Value.ToString("yyyy/MM/dd") + "'";
             //rpt.DataDefinition.FormulaFields["dgits_"].Text = "'" + dal.digits_ + "'";
             //rpt.DataDefinition.FormulaFields["Titel_"].Text = "'تقرير تفاصيل ارصدة صناديق الفروع'";
