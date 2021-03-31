@@ -12,6 +12,8 @@ namespace Report_Pro.CTR
     public partial class FeesGrid : UserControl
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
+
+        int clic_index;
         public FeesGrid()
         {
             InitializeComponent();
@@ -178,14 +180,66 @@ namespace Report_Pro.CTR
             base.OnTextChanged(e);
         }
 
+        public void r_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            base.OnMouseClick(e);
+        }
+
+
         private void FeesGrid_Click(object sender, EventArgs e)
         {
             txtRemove.Text = "1";
+           
         }
 
         private void groupPanel1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void groupPanel1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void FeesGrid_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                clic_index = flowLayoutPanel1.Controls.GetChildIndex(ActiveControl);
+            }
+           
+        }
+
+        private void cmsAddRow_Click(object sender, EventArgs e)
+        {
+            FeesRow r = new FeesRow();
+             flowLayoutPanel1.Controls.Add(r);
+            flowLayoutPanel1.Controls.SetChildIndex(r, clic_index);
+            r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+            r.txtamount.Focus();
+            r.KeyDown += r_KeyDown;
+            r.KeyUp += r_KeyUP;
+            r.Click += r_Click;
+            r.EnabledChanged += r_TextChanged;
+            r.MouseClick += r_MouseClick;
+
+            foreach (CTR.FeesRow rw in flowLayoutPanel1.Controls)
+            {
+                rw.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(rw) + 1).ToString();
+
+            }
+        }
+
+        private void flowLayoutPanel1_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void cmsDeleteRow_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.RemoveAt(clic_index);
         }
     }
 }

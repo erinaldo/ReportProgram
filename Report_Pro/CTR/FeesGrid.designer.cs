@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -47,12 +48,16 @@
             this.txtBalance = new DevComponents.Editors.DoubleInput();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.cmsRows = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsAddRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsDeleteRow = new System.Windows.Forms.ToolStripMenuItem();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.totalAmount)).BeginInit();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).BeginInit();
+            this.cmsRows.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelX1
@@ -115,6 +120,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.ContextMenuStrip = this.cmsRows;
             this.groupPanel1.Controls.Add(this.flowLayoutPanel1);
             this.groupPanel1.Controls.Add(this.groupPanel3);
             this.groupPanel1.Controls.Add(this.groupPanel2);
@@ -144,6 +150,7 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.TabIndex = 6;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
+            this.groupPanel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.groupPanel1_MouseClick);
             // 
             // flowLayoutPanel1
             // 
@@ -152,6 +159,7 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(982, 437);
             this.flowLayoutPanel1.TabIndex = 7;
+            this.flowLayoutPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlAdded);
             this.flowLayoutPanel1.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlRemoved);
             // 
             // groupPanel3
@@ -377,6 +385,31 @@
             this.labelX6.Text = "تفاصيل الرصيد";
             this.labelX6.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
+            // cmsRows
+            // 
+            this.cmsRows.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsAddRow,
+            this.cmsDeleteRow});
+            this.cmsRows.Name = "cmsRows";
+            this.cmsRows.Size = new System.Drawing.Size(181, 70);
+            this.cmsRows.Text = "اضافة سطر";
+            // 
+            // cmsAddRow
+            // 
+            this.cmsAddRow.Image = global::Report_Pro.Properties.Resources.Add_Icon;
+            this.cmsAddRow.Name = "cmsAddRow";
+            this.cmsAddRow.Size = new System.Drawing.Size(180, 22);
+            this.cmsAddRow.Text = "اضافة سطر";
+            this.cmsAddRow.Click += new System.EventHandler(this.cmsAddRow_Click);
+            // 
+            // cmsDeleteRow
+            // 
+            this.cmsDeleteRow.Image = global::Report_Pro.Properties.Resources.Cross_icon1;
+            this.cmsDeleteRow.Name = "cmsDeleteRow";
+            this.cmsDeleteRow.Size = new System.Drawing.Size(180, 22);
+            this.cmsDeleteRow.Text = "حذف سطر";
+            this.cmsDeleteRow.Click += new System.EventHandler(this.cmsDeleteRow_Click);
+            // 
             // FeesGrid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,6 +421,7 @@
             this.Click += new System.EventHandler(this.FeesGrid_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FeesGrid_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FeesGrid_KeyUp);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FeesGrid_MouseClick);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtDiff)).EndInit();
@@ -395,6 +429,7 @@
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
+            this.cmsRows.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -420,5 +455,8 @@
         private DevComponents.DotNetBar.LabelX labelX10;
         private DevComponents.DotNetBar.LabelX labelX11;
         public System.Windows.Forms.TextBox txtRemove;
+        private System.Windows.Forms.ContextMenuStrip cmsRows;
+        private System.Windows.Forms.ToolStripMenuItem cmsAddRow;
+        private System.Windows.Forms.ToolStripMenuItem cmsDeleteRow;
     }
 }

@@ -405,47 +405,48 @@ namespace Report_Pro.RPT
         private void button5_Click(object sender, EventArgs e)
         {
 
-            //Cursor.Current = Cursors.WaitCursor;
-            //try
-            //{
-            //    choises();
-              
-
-            //    RPT.Sales_Purchase_Groups rpt = new RPT.Sales_Purchase_Groups();
-
-            //    DataSet1 ds = new DataSet1();
-            //    DataTable dt1 = new DataTable();
-            //    DataTable dt2 = new DataTable();
-            //    DataTable dt3 = new DataTable();
+            Cursor.Current = Cursors.WaitCursor;
+            try
+            {
+                choises();
 
 
-            //    dt1 = (dal.getDataTabl("sales_ByGroup__", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), UC_Branch.ID.Text, Uc_Acc.ID.Text, db1));
-            //    dt2 = (dal.getDataTabl("Get_customers_payments", dTP1.Value.Date, dTP2.Value.Date, db1));
-            //    dt3 = (dal.getDataTabl("Sales_total", dTP1.Value.Date, dTP2.Value.Date, db1));
+                RPT.Sales_Purchase_Groups rpt = new RPT.Sales_Purchase_Groups();
 
-            //    ds.Tables.Add(dt1);
-            //    ds.Tables.Add(dt2);
-            //    ds.Tables.Add(dt3);
+                DataSet1 ds = new DataSet1();
+                DataTable dt1 = new DataTable();
+                DataTable dt2 = new DataTable();
+                DataTable dt3 = new DataTable();
 
-            //    ds.WriteXmlSchema("schema2.xml");
-            //    rpt.SetDataSource(ds);
 
-            //    crystalReportViewer1.ReportSource = rpt;
-            //    rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
-            //    rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
-            //    rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
-            //    rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
-            //    //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
-            //    rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + payment_type.Text + "'";
-            //    rpt.DataDefinition.FormulaFields["Type_"].Text = "'ملخص المبيعات والمشتريات'";
-            //    rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt + "'";
-            //    rpt.DataDefinition.FormulaFields["branch_name"].Text = "'" + Properties.Settings.Default.Branch_txt + "'";
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-            //Cursor.Current = Cursors.Default;
+                dt1 = (dal.getDataTabl("sales_ByGroup__", dTP1.Value.Date, dTP2.Value.Date, pay_code,"", T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), UC_Branch.ID.Text, Uc_Acc.ID.Text, db1));
+                dt2 = (dal.getDataTabl("Get_customers_payments", dTP1.Value.Date, dTP2.Value.Date, db1));
+                dt3 = (dal.getDataTabl("Sales_total", dTP1.Value.Date, dTP2.Value.Date, db1));
+
+                ds.Tables.Add(dt1);
+                ds.Tables.Add(dt2);
+                ds.Tables.Add(dt3);
+
+                ds.WriteXmlSchema("schema2.xml");
+                rpt.SetDataSource(ds);
+
+                crystalReportViewer1.ReportSource = rpt;
+                rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
+                rpt.DataDefinition.FormulaFields["From_thick"].Text = "'" + thick_1.Text + "'";
+                rpt.DataDefinition.FormulaFields["To_thick"].Text = "'" + thick_2.Text + "'";
+                //rpt.DataDefinition.FormulaFields["Catogery"].Text = "'" + category.Text + "'";
+                rpt.DataDefinition.FormulaFields["Dim_category"].Text = "'" + payment_type.Text + "'";
+                rpt.DataDefinition.FormulaFields["Type_"].Text = "'ملخص المبيعات والمشتريات'";
+                rpt.DataDefinition.FormulaFields["company_name"].Text = "'" + Properties.Settings.Default.head_txt + "'";
+                rpt.DataDefinition.FormulaFields["branch_name"].Text = "'" + Properties.Settings.Default.Branch_txt + "'";
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            groupPanel4.Visible = false;
+            Cursor.Current = Cursors.Default;
 
         }
 

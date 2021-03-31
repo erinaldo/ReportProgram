@@ -1085,8 +1085,8 @@ namespace Report_Pro.PL
 
         private void M714_Click(object sender, EventArgs e)
         {
-            //openForm(new PL.frmJornal(), FormWindowState.Maximized, 0);
-            openForm(new PL.frmJornal(), FormWindowState.Maximized, 0);
+            openForm(new PL.frm_DailyEntry(), FormWindowState.Maximized, 0);
+           // openForm(new PL.frmJornal(), FormWindowState.Maximized, 0);
         }
 
         private void buttonItem7_Click(object sender, EventArgs e)

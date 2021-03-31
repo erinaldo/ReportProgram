@@ -764,6 +764,12 @@
     <Compile Include="PL\frm_Create_PE_Jor .designer.cs">
       <DependentUpon>frm_Create_PE_Jor .cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frm_DailyEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_DailyEntry.Designer.cs">
+      <DependentUpon>frm_DailyEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frm_DataBaseChose.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1496,6 +1502,9 @@
     <EmbeddedResource Include="PL\frm_Create_PE_Jor .resx">
       <DependentUpon>frm_Create_PE_Jor .cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_DailyEntry.resx">
+      <DependentUpon>frm_DailyEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_DataBaseChose.resx">
       <DependentUpon>frm_DataBaseChose.cs</DependentUpon>

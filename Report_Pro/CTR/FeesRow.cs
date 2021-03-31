@@ -120,5 +120,40 @@ namespace Report_Pro.CTR
         {
 
         }
+
+        private void FeesRow_MouseClick(object sender, MouseEventArgs e)
+        {
+          
+        }
+
+        private void txtamount_MouseClick(object sender, MouseEventArgs e)
+        {
+            OnMouseClick(e);
+        }
+
+        private void Ser_MouseClick(object sender, MouseEventArgs e)
+        {
+            OnMouseClick(e);
+        }
+
+        private void txtType_MouseClick(object sender, MouseEventArgs e)
+        {
+            OnMouseClick(e);
+        }
+
+        private void txtDiscription_MouseClick(object sender, MouseEventArgs e)
+        {
+            OnMouseClick(e);
+        }
+
+        private void txt_R_Date_MouseClick(object sender, MouseEventArgs e)
+        {
+            OnMouseClick(e);
+        }
+
+        private void txtNote_MouseClick(object sender, MouseEventArgs e)
+        {
+            OnMouseClick(e);
+        }
     }
 }

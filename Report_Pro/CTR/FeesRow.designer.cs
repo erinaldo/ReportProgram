@@ -58,6 +58,7 @@
             this.txtDiscription.Name = "txtDiscription";
             this.txtDiscription.Size = new System.Drawing.Size(276, 24);
             this.txtDiscription.TabIndex = 1;
+            this.txtDiscription.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtDiscription_MouseClick);
             this.txtDiscription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDiscription_KeyDown);
             // 
             // txtNote
@@ -73,6 +74,7 @@
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(257, 24);
             this.txtNote.TabIndex = 2;
+            this.txtNote.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtNote_MouseClick);
             this.txtNote.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNote_KeyDown);
             // 
             // Ser
@@ -96,6 +98,7 @@
             this.Ser.Name = "Ser";
             this.Ser.Size = new System.Drawing.Size(34, 24);
             this.Ser.TabIndex = 3;
+            this.Ser.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Ser_MouseClick);
             // 
             // txtamount
             // 
@@ -117,6 +120,7 @@
             this.txtamount.TabIndex = 4;
             this.txtamount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtamount_KeyDown_1);
             this.txtamount.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtamount_KeyUp_1);
+            this.txtamount.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtamount_MouseClick);
             // 
             // txt_R_Date
             // 
@@ -162,6 +166,7 @@
             this.txt_R_Date.Size = new System.Drawing.Size(150, 24);
             this.txt_R_Date.TabIndex = 5;
             this.txt_R_Date.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_R_Date_KeyDown);
+            this.txt_R_Date.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_R_Date_MouseClick);
             // 
             // txtType
             // 
@@ -184,7 +189,7 @@
             this.txtType.TabIndex = 6;
             this.txtType.TextChanged += new System.EventHandler(this.txtType_TextChanged);
             this.txtType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtType_KeyDown);
-
+            this.txtType.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtType_MouseClick);
             // 
             // comboItem1
             // 
@@ -234,6 +239,7 @@
             this.Name = "FeesRow";
             this.Size = new System.Drawing.Size(965, 25);
             this.EnabledChanged += new System.EventHandler(this.FeesRow_EnabledChanged);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FeesRow_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.Ser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtamount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_R_Date)).EndInit();
