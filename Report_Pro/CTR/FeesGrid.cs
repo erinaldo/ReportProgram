@@ -33,6 +33,7 @@ namespace Report_Pro.CTR
             r.KeyUp += r_KeyUP;
             r.Click += r_Click;
             r.EnabledChanged += r_TextChanged;
+            r.MouseClick += r_MouseClick;
 
             flowLayoutPanel1.AutoScroll = false;
             flowLayoutPanel1.HorizontalScroll.Enabled = false;
@@ -112,6 +113,7 @@ namespace Report_Pro.CTR
                         r.KeyUp += r_KeyUP;
                         r.Click += r_Click;
                         r.EnabledChanged += r_TextChanged;
+                        r.MouseClick += r_MouseClick;
                     }
                     else if (flowLayoutPanel1.Controls.GetChildIndex(inv_r) == index + 1)
                     {
@@ -159,6 +161,7 @@ namespace Report_Pro.CTR
                 r.KeyUp += r_KeyUP;
                 r.Click += r_Click;
                 r.EnabledChanged += r_TextChanged;
+                r.MouseClick += r_MouseClick;
             }
             txtRemove.Clear();
             foreach (CTR.FeesRow r in flowLayoutPanel1.Controls)
@@ -217,7 +220,7 @@ namespace Report_Pro.CTR
             FeesRow r = new FeesRow();
              flowLayoutPanel1.Controls.Add(r);
             flowLayoutPanel1.Controls.SetChildIndex(r, clic_index);
-            r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+           // r.Ser.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
             r.txtamount.Focus();
             r.KeyDown += r_KeyDown;
             r.KeyUp += r_KeyUP;
@@ -240,6 +243,11 @@ namespace Report_Pro.CTR
         private void cmsDeleteRow_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.RemoveAt(clic_index);
+        }
+
+        private void cmsRows_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

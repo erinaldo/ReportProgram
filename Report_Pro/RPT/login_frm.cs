@@ -155,8 +155,8 @@ namespace Report_Pro.RPT
                 {
                     _acountsTb = dal.getDataTabl_1("select A.* from  wh_BRANCHES As A inner join Wh_users_branch As B on A.Branch_code =B.branch_code  where b.User_id = '" + textBox1.Text+"' ");
                     PopulateTreeView_1("0", null);
-                    TV1.SelectedNode = GetNodeByName(TV1.Nodes, dt.Rows[0][8].ToString());
 
+                    TV1.SelectedNode = GetNodeByName(TV1.Nodes, dt.Rows[0][8].ToString());
 
                 }
 

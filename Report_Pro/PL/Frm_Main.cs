@@ -1368,5 +1368,10 @@ namespace Report_Pro.PL
         {
             openForm(new CTR.frm_cash_transaction(), FormWindowState.Maximized, 0);
         }
+
+        private void btnChangeAccBranch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

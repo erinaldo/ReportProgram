@@ -215,12 +215,12 @@
             this.dGV_Item.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dGV_Item.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGV_Item.ShowCellToolTips = false;
-            this.dGV_Item.DoubleClick += new System.EventHandler(this.dGV_Item_DoubleClick);
-            this.dGV_Item.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGV_Item_CellEndEdit);
-            this.dGV_Item.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dGV_Item_EditingControlShowing);
-            this.dGV_Item.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dGV_Item_KeyDown);
-            this.dGV_Item.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGV_Item_CellEnter);
             this.dGV_Item.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGV_Item_CellContentClick);
+            this.dGV_Item.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGV_Item_CellEndEdit);
+            this.dGV_Item.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGV_Item_CellEnter);
+            this.dGV_Item.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dGV_Item_EditingControlShowing);
+            this.dGV_Item.DoubleClick += new System.EventHandler(this.dGV_Item_DoubleClick);
+            this.dGV_Item.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dGV_Item_KeyDown);
             // 
             // contextMenuStrip1
             // 
@@ -258,7 +258,7 @@
             this.totalDebit.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.DashDot;
             this.totalDebit.BackgroundStyle.BorderTopWidth = 1;
             this.totalDebit.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.totalDebit.Increment = 1;
+            this.totalDebit.Increment = 1D;
             this.totalDebit.Name = "totalDebit";
             // 
             // totalCredit
@@ -277,7 +277,7 @@
             this.totalCredit.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.DashDot;
             this.totalCredit.BackgroundStyle.BorderTopWidth = 1;
             this.totalCredit.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.totalCredit.Increment = 1;
+            this.totalCredit.Increment = 1D;
             this.totalCredit.Name = "totalCredit";
             // 
             // ribbonBar1
@@ -521,7 +521,7 @@
             this.txtdiff.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.DashDot;
             this.txtdiff.BackgroundStyle.BorderTopWidth = 1;
             this.txtdiff.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtdiff.Increment = 1;
+            this.txtdiff.Increment = 1D;
             this.txtdiff.Name = "txtdiff";
             // 
             // BtnDelRow
@@ -615,9 +615,9 @@
             resources.ApplyResources(this.mTxt_H, "mTxt_H");
             this.mTxt_H.Name = "mTxt_H";
             this.mTxt_H.ValidatingType = typeof(System.DateTime);
+            this.mTxt_H.Click += new System.EventHandler(this.mTxt_H_Click);
             this.mTxt_H.KeyDown += new System.Windows.Forms.KeyEventHandler(this.maskedTextBox1_KeyDown);
             this.mTxt_H.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mTxt_H_KeyUp);
-            this.mTxt_H.Click += new System.EventHandler(this.mTxt_H_Click);
             // 
             // labelX4
             // 
@@ -746,7 +746,7 @@
             this.txt_docValue.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txt_docValue.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txt_docValue.FocusHighlightColor = System.Drawing.Color.White;
-            this.txt_docValue.Increment = 1;
+            this.txt_docValue.Increment = 1D;
             this.txt_docValue.Name = "txt_docValue";
             this.txt_docValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_docValue_KeyDown);
             // 
@@ -930,7 +930,7 @@
             this.txt_Cr.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txt_Cr.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txt_Cr.FocusHighlightColor = System.Drawing.Color.White;
-            this.txt_Cr.Increment = 1;
+            this.txt_Cr.Increment = 1D;
             this.txt_Cr.Name = "txt_Cr";
             this.txt_Cr.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Cr_KeyDown);
             this.txt_Cr.Leave += new System.EventHandler(this.txt_Cr_Leave);
@@ -947,7 +947,7 @@
             this.txt_Db.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txt_Db.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txt_Db.FocusHighlightColor = System.Drawing.Color.White;
-            this.txt_Db.Increment = 1;
+            this.txt_Db.Increment = 1D;
             this.txt_Db.Name = "txt_Db";
             this.txt_Db.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Db_KeyDown);
             this.txt_Db.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Db_KeyUp);
@@ -1157,8 +1157,8 @@
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.KeyPreview = true;
             this.Name = "frmJornal";
-            this.Load += new System.EventHandler(this.frmJornal_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmJornal_FormClosing);
+            this.Load += new System.EventHandler(this.frmJornal_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmJornal_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dGV_Item)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);

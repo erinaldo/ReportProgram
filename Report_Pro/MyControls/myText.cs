@@ -45,7 +45,13 @@ namespace Report_Pro.MyControls
 
         private void t_KeyDown(object sender, KeyEventArgs e)
         {
+           
             OnKeyDown(e);
+        }
+
+        private void t_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            OnKeyPress(e);
         }
     }
 }

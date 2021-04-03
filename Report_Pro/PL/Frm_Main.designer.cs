@@ -981,6 +981,7 @@
             this.btnChangeAccBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnChangeAccBranch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnChangeAccBranch.Name = "btnChangeAccBranch";
+            this.btnChangeAccBranch.Click += new System.EventHandler(this.btnChangeAccBranch_Click);
             // 
             // tvStore
             // 

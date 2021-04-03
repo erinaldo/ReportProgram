@@ -361,6 +361,18 @@
     <Compile Include="MyControls\Inv_Row.designer.cs">
       <DependentUpon>Inv_Row.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\Jor_Acc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Jor_Acc.Designer.cs">
+      <DependentUpon>Jor_Acc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\mDouble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\mDouble.Designer.cs">
+      <DependentUpon>mDouble.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\UC_Acc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -452,11 +464,23 @@
     <Compile Include="MyControls\UC_CashCard.designer.cs">
       <DependentUpon>UC_CashCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\Jor_Cat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Jor_Cat.designer.cs">
+      <DependentUpon>Jor_Cat.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\UC_Catogry.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MyControls\UC_Catogry.designer.cs">
       <DependentUpon>UC_Catogry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Jor_Cost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Jor_Cost.designer.cs">
+      <DependentUpon>Jor_Cost.cs</DependentUpon>
     </Compile>
     <Compile Include="MyControls\UC_cost.cs">
       <SubType>UserControl</SubType>
@@ -751,6 +775,12 @@
     </Compile>
     <Compile Include="PL\frm_check_item_Price.designer.cs">
       <DependentUpon>frm_check_item_Price.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_ChoseAccBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_ChoseAccBranch.Designer.cs">
+      <DependentUpon>frm_ChoseAccBranch.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Frm_Config.cs">
       <SubType>Form</SubType>
@@ -1117,8 +1147,26 @@
     <EmbeddedResource Include="MyControls\Inv_Row.resx">
       <DependentUpon>Inv_Row.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\jorDebit.ar.resx">
+      <DependentUpon>jorDebit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Acc.ar.resx">
+      <DependentUpon>Jor_Acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Acc.resx">
+      <DependentUpon>Jor_Acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Cost.aa.resx">
+      <DependentUpon>Jor_Cost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Row.ar.resx">
+      <DependentUpon>Jor_Row.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\LoanRow.ar.resx">
       <DependentUpon>LoanRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\mDouble.resx">
+      <DependentUpon>mDouble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_Acc.ar.resx">
       <DependentUpon>UC_Acc.cs</DependentUpon>
@@ -1210,12 +1258,28 @@
       <DependentUpon>UC_CashCard.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Cat.ar.resx">
+      <DependentUpon>Jor_Cat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Cat.resx">
+      <DependentUpon>Jor_Cat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_Catogry.ar.resx">
       <DependentUpon>UC_Catogry.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_Catogry.resx">
       <DependentUpon>UC_Catogry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Cost.ar.resx">
+      <DependentUpon>Jor_Cost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Cost.resx">
+      <DependentUpon>Jor_Cost.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_cost.ar.resx">
@@ -1491,6 +1555,9 @@
       <DependentUpon>frm_check_item_Price.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_ChoseAccBranch.resx">
+      <DependentUpon>frm_ChoseAccBranch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Config.resx">
       <DependentUpon>Frm_Config.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1502,6 +1569,9 @@
     <EmbeddedResource Include="PL\frm_Create_PE_Jor .resx">
       <DependentUpon>frm_Create_PE_Jor .cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_DailyEntry.ar.resx">
+      <DependentUpon>frm_DailyEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_DailyEntry.resx">
       <DependentUpon>frm_DailyEntry.cs</DependentUpon>
@@ -3615,6 +3685,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="report_SsV_icon.ico" />
+    <None Include="Resources\company_chose.jpg" />
+    <None Include="Resources\company chose.jpg" />
+    <None Include="Resources\Cross-icon11.png" />
+    <None Include="Resources\Cross-icon1.png" />
+    <None Include="Resources\arow_green.png" />
+    <None Include="Resources\arow_red.png" />
+    <None Include="Resources\Arrow2.png" />
     <None Include="Resources\ختم الحسابات1.jpg" />
     <None Include="Resources\ختم الحسابات.jpg" />
     <None Include="Resources\myLogo.png" />

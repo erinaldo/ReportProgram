@@ -117,4 +117,539 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelX2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 486</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelX2.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
+    <value>labelX2</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtTotalDb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="txtTotalDb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 486</value>
+  </data>
+  <data name="txtTotalDb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtTotalDb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="txtTotalDb.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtTotalDb.Name" xml:space="preserve">
+    <value>txtTotalDb</value>
+  </data>
+  <data name="&gt;&gt;txtTotalDb.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtTotalDb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTotalDb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelX6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -2</value>
+  </data>
+  <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelX6.Text" xml:space="preserve">
+    <value>Ser</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
+    <value>labelX6</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelX5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, -2</value>
+  </data>
+  <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 20</value>
+  </data>
+  <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelX5.Text" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Name" xml:space="preserve">
+    <value>labelX5</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX5.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelX4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, -2</value>
+  </data>
+  <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelX4.Text" xml:space="preserve">
+    <value>Account #</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
+    <value>labelX4</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX4.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelX3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, -2</value>
+  </data>
+  <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 20</value>
+  </data>
+  <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelX3.Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
+    <value>labelX3</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX3.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelX7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>952, -2</value>
+  </data>
+  <data name="labelX7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 20</value>
+  </data>
+  <data name="labelX7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelX7.Text" xml:space="preserve">
+    <value>Cost Center</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Name" xml:space="preserve">
+    <value>labelX7</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX7.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1331, 450</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelX1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1200, -2</value>
+  </data>
+  <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="labelX1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelX1.Text" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Name" xml:space="preserve">
+    <value>labelX1</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX1.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelX9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, -2</value>
+  </data>
+  <data name="labelX9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="labelX9.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelX9.Text" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Name" xml:space="preserve">
+    <value>labelX9</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelX8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>702, -2</value>
+  </data>
+  <data name="labelX8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 20</value>
+  </data>
+  <data name="labelX8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelX8.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Name" xml:space="preserve">
+    <value>labelX8</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX8.Parent" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelX8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1331, 24</value>
+  </data>
+  <data name="groupPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.Name" xml:space="preserve">
+    <value>groupPanel2</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;groupPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1354, 474</value>
+  </data>
+  <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Name" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtTotalCr.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="txtTotalCr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 486</value>
+  </data>
+  <data name="txtTotalCr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtTotalCr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="txtTotalCr.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtTotalCr.Name" xml:space="preserve">
+    <value>txtTotalCr</value>
+  </data>
+  <data name="&gt;&gt;txtTotalCr.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtTotalCr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTotalCr.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtDiff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="txtDiff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 486</value>
+  </data>
+  <data name="txtDiff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="txtDiff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="txtDiff.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtDiff.Name" xml:space="preserve">
+    <value>txtDiff</value>
+  </data>
+  <data name="&gt;&gt;txtDiff.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtDiff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDiff.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelX10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 486</value>
+  </data>
+  <data name="labelX10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 22</value>
+  </data>
+  <data name="labelX10.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="labelX10.Text" xml:space="preserve">
+    <value>Difference</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Name" xml:space="preserve">
+    <value>labelX10</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelX10.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonX1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAvBJREFUWEftVttOE1EU5RP8AIEGaSmlFAoFWixQoIJ0pi0gtMFgxHsQL5j4Abzq
+        k4mPvPgJ+gc++GRMwFclhiDG21z7A8u9p+c0BQR6mZqYsJKdmTmz91r77H3OnGk6wxn+BdLp9La4rR1E
+        skEGNjFUEVKpVO/H1ETlcYqiJFRVtaSYtOfLcyis51F4uFhVEuxrTsYrj5GCbPlsBoWnSyg8IeFHiyis
+        XYF9bw727dmKCNnHHB+GMRrFp3istiQKj3MoPFiAvToP+84s7JsZ2NdV3MimweUVIUfAscZYDEZ8CEZ0
+        AMZAv8N3UswBlLfBvkuzvpWFvUL3ywqspRlYueljZ8TjL6eSMGKDMAYjMPr7oPf0liYl3E4HOa9zQD5D
+        wtdI+CoJ56dhLUzBmk1iJz15hJASf8VjxhAJR0g43Au9OwQ9EMRWKCyT2BDupyObzZ6TSViLJDyfhJWZ
+        gKkkYF4ePUAofY1IP4xwGHqoB3pXN3R/F/T2TunrmENeDThoLa3AVMdhzozBvDQCc+IiTOqzJOTrPonr
+        PSQcZOEgdG8AWpu/PnEJDn6WmqZtRcIJWt3xqNPnnKo6xDlFKZa7k4R9AegX/NA8vnLxykt/HJjoTTIB
+        Y5gWWFmfeVwP0Kw7iuXWPB3Qmr0lcRHuDpwkRkdg9B3qs5eE20i4xQvtfLsUfyvC3AURb2/1RYrlFn3W
+        Wn2O8G8hLlwbBxLZlX3WmovCu60d4G+IcGkcaMt59rjXVG4WZvtFSfwUfRdujcP95FSp3B98QUf0B4l/
+        J9vx+MHfBOHqPljMmTEZJ8LP0r5RRfZbiltPuLsLJmZhWepyIXl+fKUE9shcXwtEvlLe578J0Pg2v9ul
+        HfHOH3K3CpsDMafPLHBSj+m9c4h9oR3BVzFcH5jova+7YkI+99n3My1Iutb3T8hEq7TYqu2pPB03I9Ha
+        q0Cir5mE970YqhoczyYeq0PNgYfAPDSZF+KxMlCQqweJW5OpCw39Qv6HaGr6A7HvJphkf/OkAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>837, 486</value>
+  </data>
+  <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 22</value>
+  </data>
+  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="buttonX1.Text" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
+    <value>buttonX1</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1354, 628</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>jorDebit</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
