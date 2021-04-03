@@ -241,5 +241,10 @@ namespace Report_Pro.CTR
         {
             flowLayoutPanel1.Controls.RemoveAt(clic_index);
         }
+
+        private void cmsRows_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

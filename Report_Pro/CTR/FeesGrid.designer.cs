@@ -34,6 +34,9 @@
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.cmsRows = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsAddRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsDeleteRow = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
@@ -48,16 +51,13 @@
             this.txtBalance = new DevComponents.Editors.DoubleInput();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.cmsRows = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsAddRow = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsDeleteRow = new System.Windows.Forms.ToolStripMenuItem();
             this.groupPanel1.SuspendLayout();
+            this.cmsRows.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.totalAmount)).BeginInit();
             this.groupPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).BeginInit();
-            this.cmsRows.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelX1
@@ -66,10 +66,10 @@
             this.labelX1.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX1.Location = new System.Drawing.Point(920, 79);
+            this.labelX1.Location = new System.Drawing.Point(1383, 115);
             this.labelX1.Margin = new System.Windows.Forms.Padding(0);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(30, 23);
+            this.labelX1.Size = new System.Drawing.Size(45, 34);
             this.labelX1.TabIndex = 1;
             this.labelX1.Text = "م";
             this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -80,10 +80,10 @@
             this.labelX2.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX2.Location = new System.Drawing.Point(818, 79);
+            this.labelX2.Location = new System.Drawing.Point(1230, 115);
             this.labelX2.Margin = new System.Windows.Forms.Padding(0);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(100, 23);
+            this.labelX2.Size = new System.Drawing.Size(150, 34);
             this.labelX2.TabIndex = 2;
             this.labelX2.Text = "المبلغ";
             this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -94,10 +94,10 @@
             this.labelX3.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX3.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX3.Location = new System.Drawing.Point(427, 79);
+            this.labelX3.Location = new System.Drawing.Point(643, 115);
             this.labelX3.Margin = new System.Windows.Forms.Padding(0);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(275, 23);
+            this.labelX3.Size = new System.Drawing.Size(412, 34);
             this.labelX3.TabIndex = 3;
             this.labelX3.Text = "البيان";
             this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -108,10 +108,10 @@
             this.labelX4.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX4.Location = new System.Drawing.Point(19, 79);
+            this.labelX4.Location = new System.Drawing.Point(31, 115);
             this.labelX4.Margin = new System.Windows.Forms.Padding(0);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(258, 23);
+            this.labelX4.Size = new System.Drawing.Size(387, 34);
             this.labelX4.TabIndex = 4;
             this.labelX4.Text = "ملاحظات";
             this.labelX4.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -126,8 +126,9 @@
             this.groupPanel1.Controls.Add(this.groupPanel2);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
+            this.groupPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(988, 644);
+            this.groupPanel1.Size = new System.Drawing.Size(1482, 941);
             // 
             // 
             // 
@@ -152,12 +153,40 @@
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             this.groupPanel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.groupPanel1_MouseClick);
             // 
+            // cmsRows
+            // 
+            this.cmsRows.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.cmsRows.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsAddRow,
+            this.cmsDeleteRow});
+            this.cmsRows.Name = "cmsRows";
+            this.cmsRows.Size = new System.Drawing.Size(249, 97);
+            this.cmsRows.Text = "اضافة سطر";
+            this.cmsRows.Opening += new System.ComponentModel.CancelEventHandler(this.cmsRows_Opening);
+            // 
+            // cmsAddRow
+            // 
+            this.cmsAddRow.Image = global::Report_Pro.Properties.Resources.Add_Icon;
+            this.cmsAddRow.Name = "cmsAddRow";
+            this.cmsAddRow.Size = new System.Drawing.Size(248, 30);
+            this.cmsAddRow.Text = "اضافة سطر";
+            this.cmsAddRow.Click += new System.EventHandler(this.cmsAddRow_Click);
+            // 
+            // cmsDeleteRow
+            // 
+            this.cmsDeleteRow.Image = global::Report_Pro.Properties.Resources.Cross_icon1;
+            this.cmsDeleteRow.Name = "cmsDeleteRow";
+            this.cmsDeleteRow.Size = new System.Drawing.Size(248, 30);
+            this.cmsDeleteRow.Text = "حذف سطر";
+            this.cmsDeleteRow.Click += new System.EventHandler(this.cmsDeleteRow_Click);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 107);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 156);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(982, 437);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1476, 642);
             this.flowLayoutPanel1.TabIndex = 7;
             this.flowLayoutPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlAdded);
             this.flowLayoutPanel1.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlRemoved);
@@ -171,9 +200,10 @@
             this.groupPanel3.Controls.Add(this.labelX5);
             this.groupPanel3.Controls.Add(this.totalAmount);
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel3.Location = new System.Drawing.Point(0, 544);
+            this.groupPanel3.Location = new System.Drawing.Point(0, 798);
+            this.groupPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(982, 94);
+            this.groupPanel3.Size = new System.Drawing.Size(1476, 137);
             // 
             // 
             // 
@@ -203,9 +233,10 @@
             this.labelX9.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX9.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX9.Location = new System.Drawing.Point(798, 50);
+            this.labelX9.Location = new System.Drawing.Point(1200, 73);
+            this.labelX9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(152, 23);
+            this.labelX9.Size = new System.Drawing.Size(228, 34);
             this.labelX9.TabIndex = 6;
             this.labelX9.Text = "الفرق";
             this.labelX9.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -219,9 +250,10 @@
             this.txtDiff.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtDiff.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtDiff.Increment = 1D;
-            this.txtDiff.Location = new System.Drawing.Point(636, 51);
+            this.txtDiff.Location = new System.Drawing.Point(957, 75);
+            this.txtDiff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDiff.Name = "txtDiff";
-            this.txtDiff.Size = new System.Drawing.Size(157, 20);
+            this.txtDiff.Size = new System.Drawing.Size(236, 27);
             this.txtDiff.TabIndex = 7;
             this.txtDiff.ValueChanged += new System.EventHandler(this.txtDiff_ValueChanged);
             // 
@@ -231,9 +263,10 @@
             this.labelX5.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX5.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX5.Location = new System.Drawing.Point(798, 16);
+            this.labelX5.Location = new System.Drawing.Point(1200, 23);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(152, 23);
+            this.labelX5.Size = new System.Drawing.Size(228, 34);
             this.labelX5.TabIndex = 4;
             this.labelX5.Text = "اجمالي التفاصيل";
             this.labelX5.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -247,9 +280,10 @@
             this.totalAmount.BackgroundStyle.Class = "DateTimeInputBackground";
             this.totalAmount.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.totalAmount.Increment = 1D;
-            this.totalAmount.Location = new System.Drawing.Point(636, 18);
+            this.totalAmount.Location = new System.Drawing.Point(957, 26);
+            this.totalAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.totalAmount.Name = "totalAmount";
-            this.totalAmount.Size = new System.Drawing.Size(157, 20);
+            this.totalAmount.Size = new System.Drawing.Size(236, 27);
             this.totalAmount.TabIndex = 5;
             // 
             // groupPanel2
@@ -271,7 +305,7 @@
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(982, 107);
+            this.groupPanel2.Size = new System.Drawing.Size(1476, 156);
             // 
             // 
             // 
@@ -298,10 +332,11 @@
             // 
             this.txtRemove.BackColor = System.Drawing.SystemColors.Window;
             this.txtRemove.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRemove.Location = new System.Drawing.Point(445, 40);
+            this.txtRemove.Location = new System.Drawing.Point(668, 58);
+            this.txtRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRemove.Name = "txtRemove";
             this.txtRemove.ReadOnly = true;
-            this.txtRemove.Size = new System.Drawing.Size(72, 20);
+            this.txtRemove.Size = new System.Drawing.Size(107, 27);
             this.txtRemove.TabIndex = 334;
             this.txtRemove.TabStop = false;
             this.txtRemove.Visible = false;
@@ -311,10 +346,10 @@
             this.labelX11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX11.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX11.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX11.Location = new System.Drawing.Point(952, 79);
+            this.labelX11.Location = new System.Drawing.Point(1431, 115);
             this.labelX11.Margin = new System.Windows.Forms.Padding(0);
             this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(30, 23);
+            this.labelX11.Size = new System.Drawing.Size(45, 34);
             this.labelX11.TabIndex = 10;
             this.labelX11.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
@@ -324,10 +359,10 @@
             this.labelX10.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX10.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX10.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX10.Location = new System.Drawing.Point(704, 79);
+            this.labelX10.Location = new System.Drawing.Point(1059, 115);
             this.labelX10.Margin = new System.Windows.Forms.Padding(0);
             this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(112, 23);
+            this.labelX10.Size = new System.Drawing.Size(168, 34);
             this.labelX10.TabIndex = 9;
             this.labelX10.Text = "التصنيف";
             this.labelX10.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -338,9 +373,10 @@
             this.labelX8.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX8.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX8.Location = new System.Drawing.Point(811, 16);
+            this.labelX8.Location = new System.Drawing.Point(1219, 23);
+            this.labelX8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(152, 23);
+            this.labelX8.Size = new System.Drawing.Size(228, 34);
             this.labelX8.TabIndex = 7;
             this.labelX8.Text = "الرصيد المرحل";
             this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -354,9 +390,10 @@
             this.txtBalance.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtBalance.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtBalance.Increment = 1D;
-            this.txtBalance.Location = new System.Drawing.Point(649, 18);
+            this.txtBalance.Location = new System.Drawing.Point(977, 26);
+            this.txtBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(157, 20);
+            this.txtBalance.Size = new System.Drawing.Size(236, 27);
             this.txtBalance.TabIndex = 8;
             // 
             // labelX7
@@ -365,10 +402,10 @@
             this.labelX7.BackColor = System.Drawing.Color.RoyalBlue;
             this.labelX7.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX7.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelX7.Location = new System.Drawing.Point(279, 79);
+            this.labelX7.Location = new System.Drawing.Point(421, 115);
             this.labelX7.Margin = new System.Windows.Forms.Padding(0);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(147, 23);
+            this.labelX7.Size = new System.Drawing.Size(220, 34);
             this.labelX7.TabIndex = 6;
             this.labelX7.Text = "التاريخ";
             this.labelX7.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -378,58 +415,35 @@
             this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.BackColor = System.Drawing.Color.LemonChiffon;
             this.labelX6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX6.Location = new System.Drawing.Point(822, 53);
+            this.labelX6.Location = new System.Drawing.Point(1236, 77);
+            this.labelX6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(153, 23);
+            this.labelX6.Size = new System.Drawing.Size(230, 34);
             this.labelX6.TabIndex = 5;
             this.labelX6.Text = "تفاصيل الرصيد";
             this.labelX6.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // cmsRows
-            // 
-            this.cmsRows.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsAddRow,
-            this.cmsDeleteRow});
-            this.cmsRows.Name = "cmsRows";
-            this.cmsRows.Size = new System.Drawing.Size(181, 70);
-            this.cmsRows.Text = "اضافة سطر";
-            // 
-            // cmsAddRow
-            // 
-            this.cmsAddRow.Image = global::Report_Pro.Properties.Resources.Add_Icon;
-            this.cmsAddRow.Name = "cmsAddRow";
-            this.cmsAddRow.Size = new System.Drawing.Size(180, 22);
-            this.cmsAddRow.Text = "اضافة سطر";
-            this.cmsAddRow.Click += new System.EventHandler(this.cmsAddRow_Click);
-            // 
-            // cmsDeleteRow
-            // 
-            this.cmsDeleteRow.Image = global::Report_Pro.Properties.Resources.Cross_icon1;
-            this.cmsDeleteRow.Name = "cmsDeleteRow";
-            this.cmsDeleteRow.Size = new System.Drawing.Size(180, 22);
-            this.cmsDeleteRow.Text = "حذف سطر";
-            this.cmsDeleteRow.Click += new System.EventHandler(this.cmsDeleteRow_Click);
-            // 
             // FeesGrid
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FeesGrid";
-            this.Size = new System.Drawing.Size(988, 644);
+            this.Size = new System.Drawing.Size(1482, 941);
             this.Load += new System.EventHandler(this.FeesGrid_Load);
             this.Click += new System.EventHandler(this.FeesGrid_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FeesGrid_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FeesGrid_KeyUp);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FeesGrid_MouseClick);
             this.groupPanel1.ResumeLayout(false);
+            this.cmsRows.ResumeLayout(false);
             this.groupPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtDiff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.totalAmount)).EndInit();
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtBalance)).EndInit();
-            this.cmsRows.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

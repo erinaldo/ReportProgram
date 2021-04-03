@@ -21,5 +21,10 @@ namespace Report_Pro.PL
         {
             
         }
+
+        private void BExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
