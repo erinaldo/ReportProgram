@@ -42,13 +42,14 @@
             this.d.BackgroundStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(200)))));
             this.d.BackgroundStyle.Class = "DateTimeInputBackground";
             this.d.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.d.Dock = System.Windows.Forms.DockStyle.Top;
+            this.d.Dock = System.Windows.Forms.DockStyle.Fill;
             this.d.FocusHighlightEnabled = true;
             this.d.Increment = 0D;
             this.d.Location = new System.Drawing.Point(0, 0);
             this.d.Margin = new System.Windows.Forms.Padding(0);
+            this.d.MaximumSize = new System.Drawing.Size(0, 24);
             this.d.Name = "d";
-            this.d.Size = new System.Drawing.Size(213, 27);
+            this.d.Size = new System.Drawing.Size(142, 20);
             this.d.TabIndex = 0;
             this.d.KeyDown += new System.Windows.Forms.KeyEventHandler(this.d_KeyDown);
             this.d.KeyUp += new System.Windows.Forms.KeyEventHandler(this.d_KeyUp);
@@ -56,14 +57,14 @@
             // 
             // mDouble
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.d);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "mDouble";
-            this.Size = new System.Drawing.Size(213, 27);
+            this.Size = new System.Drawing.Size(142, 19);
             ((System.ComponentModel.ISupportInitialize)(this.d)).EndInit();
             this.ResumeLayout(false);
 

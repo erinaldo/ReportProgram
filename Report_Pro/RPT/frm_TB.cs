@@ -182,7 +182,7 @@ namespace Report_Pro.RPT
             DataSet1 ds = new DataSet1();
             DataTable dt1 = new DataTable();
 
-            dt1=(dal.getDataTabl("Get_TB_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc.ID.Text, UC_Branch.ID.Text, lvl, bal, Acc_Kind, Properties.Settings.Default.closeAcc,"", db1));
+            dt1=(dal.getDataTabl("Get_TB_", FromDate.Value.Date, ToDate.Value.Date, UC_Acc.ID.Text, UC_Branch.ID.Text, lvl, bal, Acc_Kind, Properties.Settings.Default.closeAcc,"", db1, UC_cost.ID.Text));
             ds.Tables.Add(dt1);
             ds.WriteXmlSchema("schema1.xml");
             tb_rep.SetDataSource(ds);

@@ -74,8 +74,8 @@ namespace Report_Pro.MyControls
 
         private void ID_TextChanged(object sender, EventArgs e)
         {
-            get_desc();
-            OnLoad(e);
+            //get_desc();
+            //OnLoad(e);
 
         }
 

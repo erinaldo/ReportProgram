@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jor_Cat));
             this.Desc = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.ID = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Desc
@@ -69,16 +71,22 @@
             this.ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ID_KeyDown);
             this.ID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ID_KeyUp);
             // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.ID, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Desc, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
             // Jor_Cat
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Controls.Add(this.Desc);
-            this.Controls.Add(this.ID);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Jor_Cat";
             this.Load += new System.EventHandler(this.UC_Catogry_Load);
             this.Leave += new System.EventHandler(this.UC_Catogry_Leave);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -86,5 +94,6 @@
         #endregion
         public DevComponents.DotNetBar.Controls.TextBoxX Desc;
         public DevComponents.DotNetBar.Controls.TextBoxX ID;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

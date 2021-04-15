@@ -105,7 +105,7 @@
             // BNew
             // 
             this.BNew.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
+            //this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
             this.BNew.Name = "BNew";
             this.BNew.SubItemsExpandWidth = 14;
             this.BNew.Text = "New";
@@ -114,7 +114,7 @@
             // BSave
             // 
             this.BSave.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
+            //this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
             this.BSave.Name = "BSave";
             this.BSave.SubItemsExpandWidth = 14;
             this.BSave.Text = "Save";
@@ -123,7 +123,7 @@
             // BSearch
             // 
             this.BSearch.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
+            //this.BSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
             this.BSearch.Name = "BSearch";
             this.BSearch.SubItemsExpandWidth = 14;
             this.BSearch.Text = "Search";
@@ -132,7 +132,7 @@
             // BExit
             // 
             this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
+            //this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
             this.BExit.Name = "BExit";
             this.BExit.RibbonWordWrap = false;
             this.BExit.SubItemsExpandWidth = 14;
@@ -141,7 +141,7 @@
             // btnStatment
             // 
             this.btnStatment.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnStatment.Image = global::Report_Pro.Properties.Resources.Reports2;
+            //this.btnStatment.Image = global::Report_Pro.Properties.Resources.Reports2;
             this.btnStatment.ImageFixedSize = new System.Drawing.Size(16, 16);
             this.btnStatment.Name = "btnStatment";
             this.btnStatment.SubItemsExpandWidth = 14;
@@ -200,7 +200,7 @@
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Image = global::Report_Pro.Properties.Resources.Search_icon1;
+            //this.buttonX1.Image = global::Report_Pro.Properties.Resources.Search_icon1;
             this.buttonX1.Location = new System.Drawing.Point(359, 27);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(44, 23);

@@ -40,6 +40,7 @@
             this.BtnCalc = new DevComponents.DotNetBar.ButtonItem();
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtCyear = new DevComponents.DotNetBar.LabelX();
             this.txtUserID = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.btn_ChoseCompamy = new System.Windows.Forms.Button();
@@ -52,10 +53,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
             this.txt_sp_ser = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.mTxt_H = new System.Windows.Forms.MaskedTextBox();
+            this.txtDate_H = new System.Windows.Forms.MaskedTextBox();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.txtMainNote = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtSerNo = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -67,7 +68,6 @@
             this.next_ = new System.Windows.Forms.PictureBox();
             this.last_ = new System.Windows.Forms.PictureBox();
             this.jorDebit1 = new Report_Pro.MyControls.jorDebit();
-            this.txtCyear = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.previous_)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.first_)).BeginInit();
@@ -77,9 +77,9 @@
             // 
             // ribbonBar1
             // 
+            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.AutoOverflowEnabled = true;
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
-            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.BNew,
@@ -97,24 +97,25 @@
             // 
             // BNew
             // 
+            resources.ApplyResources(this.BNew, "BNew");
             this.BNew.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
             this.BNew.ImagePaddingHorizontal = 15;
             this.BNew.Name = "BNew";
             this.BNew.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BNew, "BNew");
             // 
             // BSave
             // 
+            resources.ApplyResources(this.BSave, "BSave");
             this.BSave.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
             this.BSave.ImagePaddingHorizontal = 15;
             this.BSave.Name = "BSave";
             this.BSave.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BSave, "BSave");
             // 
             // BEdit
             // 
+            resources.ApplyResources(this.BEdit, "BEdit");
             this.BEdit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BEdit.Enabled = false;
             this.BEdit.FontBold = true;
@@ -122,68 +123,68 @@
             this.BEdit.ImagePaddingHorizontal = 15;
             this.BEdit.Name = "BEdit";
             this.BEdit.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BEdit, "BEdit");
             // 
             // BSearch
             // 
+            resources.ApplyResources(this.BSearch, "BSearch");
             this.BSearch.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BSearch.Image = global::Report_Pro.Properties.Resources.search_16;
             this.BSearch.ImagePaddingHorizontal = 15;
             this.BSearch.Name = "BSearch";
             this.BSearch.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BSearch, "BSearch");
             // 
             // BtnPrint
             // 
+            resources.ApplyResources(this.BtnPrint, "BtnPrint");
             this.BtnPrint.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BtnPrint.Image = global::Report_Pro.Properties.Resources.printer_icon;
             this.BtnPrint.ImagePaddingHorizontal = 15;
             this.BtnPrint.Name = "BtnPrint";
             this.BtnPrint.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BtnPrint, "BtnPrint");
             // 
             // BtnEmail
             // 
+            resources.ApplyResources(this.BtnEmail, "BtnEmail");
             this.BtnEmail.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BtnEmail.Image = global::Report_Pro.Properties.Resources.Mail_icon;
             this.BtnEmail.ImagePaddingHorizontal = 15;
             this.BtnEmail.Name = "BtnEmail";
             this.BtnEmail.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BtnEmail, "BtnEmail");
             // 
             // BtnAttache
             // 
+            resources.ApplyResources(this.BtnAttache, "BtnAttache");
             this.BtnAttache.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BtnAttache.Image = global::Report_Pro.Properties.Resources.Attachment_icon1;
             this.BtnAttache.ImageFixedSize = new System.Drawing.Size(24, 24);
             this.BtnAttache.ImagePaddingHorizontal = 15;
             this.BtnAttache.Name = "BtnAttache";
             this.BtnAttache.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BtnAttache, "BtnAttache");
             // 
             // BtnCalc
             // 
+            resources.ApplyResources(this.BtnCalc, "BtnCalc");
             this.BtnCalc.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BtnCalc.Image = global::Report_Pro.Properties.Resources.CalcImg;
             this.BtnCalc.ImageFixedSize = new System.Drawing.Size(24, 24);
             this.BtnCalc.ImagePaddingHorizontal = 15;
             this.BtnCalc.Name = "BtnCalc";
             this.BtnCalc.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BtnCalc, "BtnCalc");
             // 
             // BExit
             // 
+            resources.ApplyResources(this.BExit, "BExit");
             this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
             this.BExit.ImagePaddingHorizontal = 15;
             this.BExit.ItemAlignment = DevComponents.DotNetBar.eItemAlignment.Far;
             this.BExit.Name = "BExit";
-            resources.ApplyResources(this.BExit, "BExit");
             this.BExit.SubItemsExpandWidth = 14;
             this.BExit.Click += new System.EventHandler(this.BExit_Click);
             // 
             // groupPanel1
             // 
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.txtCyear);
@@ -199,10 +200,10 @@
             this.groupPanel1.Controls.Add(this.label1);
             this.groupPanel1.Controls.Add(this.labelX9);
             this.groupPanel1.Controls.Add(this.txt_sp_ser);
-            this.groupPanel1.Controls.Add(this.dateTimePicker1);
+            this.groupPanel1.Controls.Add(this.txtDate);
             this.groupPanel1.Controls.Add(this.labelX5);
             this.groupPanel1.Controls.Add(this.labelX4);
-            this.groupPanel1.Controls.Add(this.mTxt_H);
+            this.groupPanel1.Controls.Add(this.txtDate_H);
             this.groupPanel1.Controls.Add(this.labelX1);
             this.groupPanel1.Controls.Add(this.txtMainNote);
             this.groupPanel1.Controls.Add(this.txtSerNo);
@@ -213,7 +214,6 @@
             this.groupPanel1.Controls.Add(this.first_);
             this.groupPanel1.Controls.Add(this.next_);
             this.groupPanel1.Controls.Add(this.last_);
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -235,11 +235,18 @@
             this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
+            // 
+            // txtCyear
+            // 
+            resources.ApplyResources(this.txtCyear, "txtCyear");
+            this.txtCyear.BackColor = System.Drawing.SystemColors.Info;
+            this.txtCyear.Name = "txtCyear";
             // 
             // txtUserID
             // 
-            this.txtUserID.BackColor = System.Drawing.SystemColors.Info;
             resources.ApplyResources(this.txtUserID, "txtUserID");
+            this.txtUserID.BackColor = System.Drawing.SystemColors.Info;
             this.txtUserID.Name = "txtUserID";
             // 
             // labelX3
@@ -250,8 +257,8 @@
             // 
             // btn_ChoseCompamy
             // 
-            this.btn_ChoseCompamy.BackColor = System.Drawing.Color.Beige;
             resources.ApplyResources(this.btn_ChoseCompamy, "btn_ChoseCompamy");
+            this.btn_ChoseCompamy.BackColor = System.Drawing.Color.Beige;
             this.btn_ChoseCompamy.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btn_ChoseCompamy.Name = "btn_ChoseCompamy";
             this.btn_ChoseCompamy.UseVisualStyleBackColor = false;
@@ -259,38 +266,41 @@
             // 
             // buttonX3
             // 
+            resources.ApplyResources(this.buttonX3, "buttonX3");
             this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX3.Image = global::Report_Pro.Properties.Resources.Search_icon1;
-            resources.ApplyResources(this.buttonX3, "buttonX3");
             this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
             // 
             // buttonX2
             // 
+            resources.ApplyResources(this.buttonX2, "buttonX2");
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX2.Image = global::Report_Pro.Properties.Resources.Search_icon1;
-            resources.ApplyResources(this.buttonX2, "buttonX2");
             this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // buttonX1
             // 
+            resources.ApplyResources(this.buttonX1, "buttonX1");
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Image = global::Report_Pro.Properties.Resources.Search_icon1;
-            resources.ApplyResources(this.buttonX1, "buttonX1");
             this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // txtBranchName
             // 
-            this.txtBranchName.BackColor = System.Drawing.SystemColors.Info;
             resources.ApplyResources(this.txtBranchName, "txtBranchName");
+            this.txtBranchName.BackColor = System.Drawing.SystemColors.Info;
             this.txtBranchName.Name = "txtBranchName";
             // 
             // txtBranchCode
             // 
-            this.txtBranchCode.BackColor = System.Drawing.SystemColors.Info;
             resources.ApplyResources(this.txtBranchCode, "txtBranchCode");
+            this.txtBranchCode.BackColor = System.Drawing.SystemColors.Info;
             this.txtBranchCode.Name = "txtBranchCode";
             // 
             // labelX20
@@ -301,8 +311,8 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
             // labelX9
@@ -313,18 +323,24 @@
             // 
             // txt_sp_ser
             // 
+            resources.ApplyResources(this.txt_sp_ser, "txt_sp_ser");
             // 
             // 
             // 
             this.txt_sp_ser.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txt_sp_ser, "txt_sp_ser");
+            this.txt_sp_ser.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txt_sp_ser.ButtonCustom.DisplayPosition")));
+            this.txt_sp_ser.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txt_sp_ser.ButtonCustom.Image")));
+            this.txt_sp_ser.ButtonCustom.Text = resources.GetString("txt_sp_ser.ButtonCustom.Text");
+            this.txt_sp_ser.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txt_sp_ser.ButtonCustom2.DisplayPosition")));
+            this.txt_sp_ser.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txt_sp_ser.ButtonCustom2.Image")));
+            this.txt_sp_ser.ButtonCustom2.Text = resources.GetString("txt_sp_ser.ButtonCustom2.Text");
             this.txt_sp_ser.Name = "txt_sp_ser";
             // 
-            // dateTimePicker1
+            // txtDate
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
-            this.dateTimePicker1.Name = "dateTimePicker1";
+            resources.ApplyResources(this.txtDate, "txtDate");
+            this.txtDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDate.Name = "txtDate";
             // 
             // labelX5
             // 
@@ -338,11 +354,11 @@
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
             this.labelX4.Name = "labelX4";
             // 
-            // mTxt_H
+            // txtDate_H
             // 
-            resources.ApplyResources(this.mTxt_H, "mTxt_H");
-            this.mTxt_H.Name = "mTxt_H";
-            this.mTxt_H.ValidatingType = typeof(System.DateTime);
+            resources.ApplyResources(this.txtDate_H, "txtDate_H");
+            this.txtDate_H.Name = "txtDate_H";
+            this.txtDate_H.ValidatingType = typeof(System.DateTime);
             // 
             // labelX1
             // 
@@ -352,29 +368,47 @@
             // 
             // txtMainNote
             // 
+            resources.ApplyResources(this.txtMainNote, "txtMainNote");
             // 
             // 
             // 
             this.txtMainNote.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txtMainNote, "txtMainNote");
+            this.txtMainNote.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtMainNote.ButtonCustom.DisplayPosition")));
+            this.txtMainNote.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtMainNote.ButtonCustom.Image")));
+            this.txtMainNote.ButtonCustom.Text = resources.GetString("txtMainNote.ButtonCustom.Text");
+            this.txtMainNote.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtMainNote.ButtonCustom2.DisplayPosition")));
+            this.txtMainNote.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtMainNote.ButtonCustom2.Image")));
+            this.txtMainNote.ButtonCustom2.Text = resources.GetString("txtMainNote.ButtonCustom2.Text");
             this.txtMainNote.Name = "txtMainNote";
             // 
             // txtSerNo
             // 
+            resources.ApplyResources(this.txtSerNo, "txtSerNo");
             // 
             // 
             // 
             this.txtSerNo.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txtSerNo, "txtSerNo");
+            this.txtSerNo.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtSerNo.ButtonCustom.DisplayPosition")));
+            this.txtSerNo.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtSerNo.ButtonCustom.Image")));
+            this.txtSerNo.ButtonCustom.Text = resources.GetString("txtSerNo.ButtonCustom.Text");
+            this.txtSerNo.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtSerNo.ButtonCustom2.DisplayPosition")));
+            this.txtSerNo.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtSerNo.ButtonCustom2.Image")));
+            this.txtSerNo.ButtonCustom2.Text = resources.GetString("txtSerNo.ButtonCustom2.Text");
             this.txtSerNo.Name = "txtSerNo";
             // 
             // Main_serNo
             // 
+            resources.ApplyResources(this.Main_serNo, "Main_serNo");
             // 
             // 
             // 
             this.Main_serNo.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.Main_serNo, "Main_serNo");
+            this.Main_serNo.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Main_serNo.ButtonCustom.DisplayPosition")));
+            this.Main_serNo.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Main_serNo.ButtonCustom.Image")));
+            this.Main_serNo.ButtonCustom.Text = resources.GetString("Main_serNo.ButtonCustom.Text");
+            this.Main_serNo.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Main_serNo.ButtonCustom2.DisplayPosition")));
+            this.Main_serNo.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Main_serNo.ButtonCustom2.Image")));
+            this.Main_serNo.ButtonCustom2.Text = resources.GetString("Main_serNo.ButtonCustom2.Text");
             this.Main_serNo.Name = "Main_serNo";
             // 
             // labelX6
@@ -391,33 +425,33 @@
             // 
             // previous_
             // 
+            resources.ApplyResources(this.previous_, "previous_");
             this.previous_.BackColor = System.Drawing.Color.Transparent;
             this.previous_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.previous_, "previous_");
             this.previous_.Name = "previous_";
             this.previous_.TabStop = false;
             // 
             // first_
             // 
+            resources.ApplyResources(this.first_, "first_");
             this.first_.BackColor = System.Drawing.Color.Transparent;
             this.first_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.first_, "first_");
             this.first_.Name = "first_";
             this.first_.TabStop = false;
             // 
             // next_
             // 
+            resources.ApplyResources(this.next_, "next_");
             this.next_.BackColor = System.Drawing.Color.Transparent;
             this.next_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.next_, "next_");
             this.next_.Name = "next_";
             this.next_.TabStop = false;
             // 
             // last_
             // 
+            resources.ApplyResources(this.last_, "last_");
             this.last_.BackColor = System.Drawing.Color.Transparent;
             this.last_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.last_, "last_");
             this.last_.Name = "last_";
             this.last_.TabStop = false;
             // 
@@ -426,12 +460,7 @@
             resources.ApplyResources(this.jorDebit1, "jorDebit1");
             this.jorDebit1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.jorDebit1.Name = "jorDebit1";
-            // 
-            // txtCyear
-            // 
-            this.txtCyear.BackColor = System.Drawing.SystemColors.Info;
-            resources.ApplyResources(this.txtCyear, "txtCyear");
-            this.txtCyear.Name = "txtCyear";
+            this.jorDebit1.Load += new System.EventHandler(this.jorDebit1_Load);
             // 
             // frm_DailyEntry
             // 
@@ -476,10 +505,10 @@
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.LabelX labelX9;
         private DevComponents.DotNetBar.Controls.TextBoxX txt_sp_ser;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtDate;
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private System.Windows.Forms.MaskedTextBox mTxt_H;
+        private System.Windows.Forms.MaskedTextBox txtDate_H;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.TextBoxX txtMainNote;
         private DevComponents.DotNetBar.Controls.TextBoxX txtSerNo;

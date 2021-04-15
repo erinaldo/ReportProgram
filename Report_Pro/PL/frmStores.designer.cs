@@ -47,6 +47,31 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.txt_MBranch = new System.Windows.Forms.TextBox();
             this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txt_AccBranch = new Report_Pro.MyControls.UC_AccBranch();
+            this.txt_area = new Report_Pro.MyControls.UC_Area();
+            this.txt_Tranc_ToAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_SalesAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_PurAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_CashAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_banksAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_AdvanceAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_CostmersAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_SuppliersAacc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_OpeningAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_PurFessAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_CargoAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_conection = new Report_Pro.MyControls.UC_Acc();
+            this.txt_BoanasAcc = new Report_Pro.MyControls.UC_Acc();
+            this.c = new Report_Pro.MyControls.UC_Acc();
+            this.txt_SP_Inventory = new Report_Pro.MyControls.UC_Acc();
+            this.txt_TR_Inventory = new Report_Pro.MyControls.UC_Acc();
+            this.txt_OI_Inventory = new Report_Pro.MyControls.UC_Acc();
+            this.txt_WS_Inventory = new Report_Pro.MyControls.UC_Acc();
+            this.txt_TO_Inventory = new Report_Pro.MyControls.UC_Acc();
+            this.txt_OSP_Inventory = new Report_Pro.MyControls.UC_Acc();
+            this.txt_Petrol_ٍSupp = new Report_Pro.MyControls.UC_Acc();
+            this.txt_1 = new Report_Pro.MyControls.UC_Acc();
+            this.txt_2 = new Report_Pro.MyControls.UC_Acc();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -90,6 +115,14 @@
             this.BCalc = new DevComponents.DotNetBar.ButtonItem();
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txt_InventoryAcc = new Report_Pro.MyControls.UC_Acc();
+            this.txt_3 = new Report_Pro.MyControls.UC_Acc();
+            this.txt_4 = new Report_Pro.MyControls.UC_Acc();
+            this.txt_5 = new Report_Pro.MyControls.UC_Acc();
+            this.txt_6 = new Report_Pro.MyControls.UC_Acc();
+            this.txt_7 = new Report_Pro.MyControls.UC_Acc();
+            this.txt_KM_Sales = new Report_Pro.MyControls.UC_Acc();
+            this.txt_KM_purchase = new Report_Pro.MyControls.UC_Acc();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -103,39 +136,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.expandableSplitter1 = new DevComponents.DotNetBar.ExpandableSplitter();
-            this.txt_AccBranch = new Report_Pro.MyControls.UC_AccBranch();
-            this.txt_area = new Report_Pro.MyControls.UC_Area();
-            this.txt_Tranc_ToAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_SalesAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_PurAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_CashAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_banksAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_AdvanceAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_CostmersAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_SuppliersAacc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_OpeningAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_PurFessAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_CargoAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_conection = new Report_Pro.MyControls.UC_Acc();
-            this.txt_BoanasAcc = new Report_Pro.MyControls.UC_Acc();
-            this.c = new Report_Pro.MyControls.UC_Acc();
-            this.txt_SP_Inventory = new Report_Pro.MyControls.UC_Acc();
-            this.txt_TR_Inventory = new Report_Pro.MyControls.UC_Acc();
-            this.txt_OI_Inventory = new Report_Pro.MyControls.UC_Acc();
-            this.txt_WS_Inventory = new Report_Pro.MyControls.UC_Acc();
-            this.txt_TO_Inventory = new Report_Pro.MyControls.UC_Acc();
-            this.txt_OSP_Inventory = new Report_Pro.MyControls.UC_Acc();
-            this.txt_Petrol_ٍSupp = new Report_Pro.MyControls.UC_Acc();
-            this.txt_1 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_2 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_InventoryAcc = new Report_Pro.MyControls.UC_Acc();
-            this.txt_3 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_4 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_5 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_6 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_7 = new Report_Pro.MyControls.UC_Acc();
-            this.txt_KM_Sales = new Report_Pro.MyControls.UC_Acc();
-            this.txt_KM_purchase = new Report_Pro.MyControls.UC_Acc();
             this.GroupPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -192,7 +192,7 @@
             this.panel2.Controls.Add(this.wh_stoped);
             this.panel2.Controls.Add(this.wh_active);
             this.panel2.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.panel2.Location = new System.Drawing.Point(3, 12);
+            this.panel2.Location = new System.Drawing.Point(-3, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(68, 55);
             this.panel2.TabIndex = 28;
@@ -228,7 +228,7 @@
             this.panel1.Controls.Add(this.radioTransaction);
             this.panel1.Controls.Add(this.radioParent);
             this.panel1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.panel1.Location = new System.Drawing.Point(75, 12);
+            this.panel1.Location = new System.Drawing.Point(69, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(68, 55);
             this.panel1.TabIndex = 27;
@@ -262,7 +262,7 @@
             this.txt_BranchLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_BranchLevel.Enabled = false;
             this.txt_BranchLevel.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_BranchLevel.Location = new System.Drawing.Point(146, 7);
+            this.txt_BranchLevel.Location = new System.Drawing.Point(140, 7);
             this.txt_BranchLevel.Name = "txt_BranchLevel";
             this.txt_BranchLevel.Size = new System.Drawing.Size(39, 20);
             this.txt_BranchLevel.TabIndex = 19;
@@ -273,7 +273,7 @@
             this.txt_BranchCode.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txt_BranchCode.Enabled = false;
             this.txt_BranchCode.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_BranchCode.Location = new System.Drawing.Point(344, 8);
+            this.txt_BranchCode.Location = new System.Drawing.Point(338, 8);
             this.txt_BranchCode.Name = "txt_BranchCode";
             this.txt_BranchCode.Size = new System.Drawing.Size(75, 20);
             this.txt_BranchCode.TabIndex = 7;
@@ -283,7 +283,7 @@
             this.Label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.Label6.Location = new System.Drawing.Point(188, 12);
+            this.Label6.Location = new System.Drawing.Point(182, 12);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(79, 13);
             this.Label6.TabIndex = 18;
@@ -295,7 +295,7 @@
             this.Label4.AutoSize = true;
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.Label4.Location = new System.Drawing.Point(422, 56);
+            this.Label4.Location = new System.Drawing.Point(416, 56);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(75, 13);
             this.Label4.TabIndex = 11;
@@ -307,7 +307,7 @@
             this.Label3.AutoSize = true;
             this.Label3.BackColor = System.Drawing.Color.Transparent;
             this.Label3.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.Label3.Location = new System.Drawing.Point(422, 34);
+            this.Label3.Location = new System.Drawing.Point(416, 34);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(56, 13);
             this.Label3.TabIndex = 10;
@@ -317,7 +317,7 @@
             // 
             this.txt_BranchName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_BranchName.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_BranchName.Location = new System.Drawing.Point(146, 30);
+            this.txt_BranchName.Location = new System.Drawing.Point(140, 30);
             this.txt_BranchName.Name = "txt_BranchName";
             this.txt_BranchName.Size = new System.Drawing.Size(274, 20);
             this.txt_BranchName.TabIndex = 8;
@@ -326,7 +326,7 @@
             // 
             this.txt_BrancName_L.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_BrancName_L.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_BrancName_L.Location = new System.Drawing.Point(146, 52);
+            this.txt_BrancName_L.Location = new System.Drawing.Point(140, 52);
             this.txt_BrancName_L.Name = "txt_BrancName_L";
             this.txt_BrancName_L.Size = new System.Drawing.Size(274, 20);
             this.txt_BrancName_L.TabIndex = 9;
@@ -337,7 +337,7 @@
             this.Label2.AutoSize = true;
             this.Label2.BackColor = System.Drawing.Color.Transparent;
             this.Label2.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.Label2.Location = new System.Drawing.Point(422, 12);
+            this.Label2.Location = new System.Drawing.Point(416, 12);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(51, 13);
             this.Label2.TabIndex = 6;
@@ -348,7 +348,7 @@
             this.txt_MBranch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_MBranch.BackColor = System.Drawing.SystemColors.Info;
             this.txt_MBranch.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_MBranch.Location = new System.Drawing.Point(281, 8);
+            this.txt_MBranch.Location = new System.Drawing.Point(275, 8);
             this.txt_MBranch.Name = "txt_MBranch";
             this.txt_MBranch.Size = new System.Drawing.Size(62, 20);
             this.txt_MBranch.TabIndex = 2;
@@ -437,6 +437,302 @@
             this.groupPanel5.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel5.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel5.TabIndex = 134;
+            // 
+            // txt_AccBranch
+            // 
+            this.txt_AccBranch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_AccBranch.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_AccBranch.Location = new System.Drawing.Point(7, 51);
+            this.txt_AccBranch.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_AccBranch.Name = "txt_AccBranch";
+            this.txt_AccBranch.Size = new System.Drawing.Size(310, 23);
+            this.txt_AccBranch.TabIndex = 209;
+            // 
+            // txt_area
+            // 
+            this.txt_area.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_area.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_area.Location = new System.Drawing.Point(7, 27);
+            this.txt_area.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_area.Name = "txt_area";
+            this.txt_area.Size = new System.Drawing.Size(310, 23);
+            this.txt_area.TabIndex = 208;
+            // 
+            // txt_Tranc_ToAcc
+            // 
+            this.txt_Tranc_ToAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Tranc_ToAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_Tranc_ToAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_Tranc_ToAcc.Location = new System.Drawing.Point(7, 75);
+            this.txt_Tranc_ToAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_Tranc_ToAcc.Name = "txt_Tranc_ToAcc";
+            this.txt_Tranc_ToAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_Tranc_ToAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_Tranc_ToAcc.TabIndex = 206;
+            // 
+            // txt_SalesAcc
+            // 
+            this.txt_SalesAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_SalesAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_SalesAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_SalesAcc.Location = new System.Drawing.Point(7, 99);
+            this.txt_SalesAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_SalesAcc.Name = "txt_SalesAcc";
+            this.txt_SalesAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_SalesAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_SalesAcc.TabIndex = 205;
+            // 
+            // txt_PurAcc
+            // 
+            this.txt_PurAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_PurAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_PurAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_PurAcc.Location = new System.Drawing.Point(7, 123);
+            this.txt_PurAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_PurAcc.Name = "txt_PurAcc";
+            this.txt_PurAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_PurAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_PurAcc.TabIndex = 204;
+            // 
+            // txt_CashAcc
+            // 
+            this.txt_CashAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_CashAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_CashAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_CashAcc.Location = new System.Drawing.Point(7, 147);
+            this.txt_CashAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_CashAcc.Name = "txt_CashAcc";
+            this.txt_CashAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_CashAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_CashAcc.TabIndex = 203;
+            // 
+            // txt_banksAcc
+            // 
+            this.txt_banksAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_banksAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_banksAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_banksAcc.Location = new System.Drawing.Point(7, 171);
+            this.txt_banksAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_banksAcc.Name = "txt_banksAcc";
+            this.txt_banksAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_banksAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_banksAcc.TabIndex = 202;
+            // 
+            // txt_AdvanceAcc
+            // 
+            this.txt_AdvanceAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_AdvanceAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_AdvanceAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_AdvanceAcc.Location = new System.Drawing.Point(7, 195);
+            this.txt_AdvanceAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_AdvanceAcc.Name = "txt_AdvanceAcc";
+            this.txt_AdvanceAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_AdvanceAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_AdvanceAcc.TabIndex = 201;
+            // 
+            // txt_CostmersAcc
+            // 
+            this.txt_CostmersAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_CostmersAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_CostmersAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_CostmersAcc.Location = new System.Drawing.Point(7, 219);
+            this.txt_CostmersAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_CostmersAcc.Name = "txt_CostmersAcc";
+            this.txt_CostmersAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_CostmersAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_CostmersAcc.TabIndex = 200;
+            // 
+            // txt_SuppliersAacc
+            // 
+            this.txt_SuppliersAacc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_SuppliersAacc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_SuppliersAacc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_SuppliersAacc.Location = new System.Drawing.Point(7, 243);
+            this.txt_SuppliersAacc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_SuppliersAacc.Name = "txt_SuppliersAacc";
+            this.txt_SuppliersAacc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_SuppliersAacc.Size = new System.Drawing.Size(310, 23);
+            this.txt_SuppliersAacc.TabIndex = 199;
+            // 
+            // txt_OpeningAcc
+            // 
+            this.txt_OpeningAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_OpeningAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_OpeningAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_OpeningAcc.Location = new System.Drawing.Point(7, 267);
+            this.txt_OpeningAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_OpeningAcc.Name = "txt_OpeningAcc";
+            this.txt_OpeningAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_OpeningAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_OpeningAcc.TabIndex = 198;
+            // 
+            // txt_PurFessAcc
+            // 
+            this.txt_PurFessAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_PurFessAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_PurFessAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_PurFessAcc.Location = new System.Drawing.Point(7, 291);
+            this.txt_PurFessAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_PurFessAcc.Name = "txt_PurFessAcc";
+            this.txt_PurFessAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_PurFessAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_PurFessAcc.TabIndex = 197;
+            // 
+            // txt_CargoAcc
+            // 
+            this.txt_CargoAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_CargoAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_CargoAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_CargoAcc.Location = new System.Drawing.Point(7, 315);
+            this.txt_CargoAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_CargoAcc.Name = "txt_CargoAcc";
+            this.txt_CargoAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_CargoAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_CargoAcc.TabIndex = 196;
+            // 
+            // txt_conection
+            // 
+            this.txt_conection.BackColor = System.Drawing.Color.Transparent;
+            this.txt_conection.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_conection.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_conection.Location = new System.Drawing.Point(7, 339);
+            this.txt_conection.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_conection.Name = "txt_conection";
+            this.txt_conection.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_conection.Size = new System.Drawing.Size(310, 23);
+            this.txt_conection.TabIndex = 195;
+            // 
+            // txt_BoanasAcc
+            // 
+            this.txt_BoanasAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_BoanasAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_BoanasAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_BoanasAcc.Location = new System.Drawing.Point(7, 363);
+            this.txt_BoanasAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_BoanasAcc.Name = "txt_BoanasAcc";
+            this.txt_BoanasAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_BoanasAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_BoanasAcc.TabIndex = 194;
+            // 
+            // c
+            // 
+            this.c.BackColor = System.Drawing.Color.Transparent;
+            this.c.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.c.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.c.Location = new System.Drawing.Point(7, 387);
+            this.c.Margin = new System.Windows.Forms.Padding(0);
+            this.c.Name = "c";
+            this.c.Padding = new System.Windows.Forms.Padding(1);
+            this.c.Size = new System.Drawing.Size(310, 23);
+            this.c.TabIndex = 193;
+            // 
+            // txt_SP_Inventory
+            // 
+            this.txt_SP_Inventory.BackColor = System.Drawing.Color.Transparent;
+            this.txt_SP_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_SP_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_SP_Inventory.Location = new System.Drawing.Point(7, 411);
+            this.txt_SP_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_SP_Inventory.Name = "txt_SP_Inventory";
+            this.txt_SP_Inventory.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_SP_Inventory.Size = new System.Drawing.Size(310, 23);
+            this.txt_SP_Inventory.TabIndex = 192;
+            // 
+            // txt_TR_Inventory
+            // 
+            this.txt_TR_Inventory.BackColor = System.Drawing.Color.Transparent;
+            this.txt_TR_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_TR_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_TR_Inventory.Location = new System.Drawing.Point(7, 435);
+            this.txt_TR_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_TR_Inventory.Name = "txt_TR_Inventory";
+            this.txt_TR_Inventory.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_TR_Inventory.Size = new System.Drawing.Size(310, 23);
+            this.txt_TR_Inventory.TabIndex = 191;
+            // 
+            // txt_OI_Inventory
+            // 
+            this.txt_OI_Inventory.BackColor = System.Drawing.Color.Transparent;
+            this.txt_OI_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_OI_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_OI_Inventory.Location = new System.Drawing.Point(7, 459);
+            this.txt_OI_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_OI_Inventory.Name = "txt_OI_Inventory";
+            this.txt_OI_Inventory.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_OI_Inventory.Size = new System.Drawing.Size(310, 23);
+            this.txt_OI_Inventory.TabIndex = 190;
+            // 
+            // txt_WS_Inventory
+            // 
+            this.txt_WS_Inventory.BackColor = System.Drawing.Color.Transparent;
+            this.txt_WS_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_WS_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_WS_Inventory.Location = new System.Drawing.Point(7, 483);
+            this.txt_WS_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_WS_Inventory.Name = "txt_WS_Inventory";
+            this.txt_WS_Inventory.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_WS_Inventory.Size = new System.Drawing.Size(310, 23);
+            this.txt_WS_Inventory.TabIndex = 189;
+            // 
+            // txt_TO_Inventory
+            // 
+            this.txt_TO_Inventory.BackColor = System.Drawing.Color.Transparent;
+            this.txt_TO_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_TO_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_TO_Inventory.Location = new System.Drawing.Point(7, 507);
+            this.txt_TO_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_TO_Inventory.Name = "txt_TO_Inventory";
+            this.txt_TO_Inventory.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_TO_Inventory.Size = new System.Drawing.Size(310, 23);
+            this.txt_TO_Inventory.TabIndex = 188;
+            // 
+            // txt_OSP_Inventory
+            // 
+            this.txt_OSP_Inventory.BackColor = System.Drawing.Color.Transparent;
+            this.txt_OSP_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_OSP_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_OSP_Inventory.Location = new System.Drawing.Point(7, 531);
+            this.txt_OSP_Inventory.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_OSP_Inventory.Name = "txt_OSP_Inventory";
+            this.txt_OSP_Inventory.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_OSP_Inventory.Size = new System.Drawing.Size(310, 23);
+            this.txt_OSP_Inventory.TabIndex = 187;
+            // 
+            // txt_Petrol_ٍSupp
+            // 
+            this.txt_Petrol_ٍSupp.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Petrol_ٍSupp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_Petrol_ٍSupp.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_Petrol_ٍSupp.Location = new System.Drawing.Point(7, 555);
+            this.txt_Petrol_ٍSupp.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_Petrol_ٍSupp.Name = "txt_Petrol_ٍSupp";
+            this.txt_Petrol_ٍSupp.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_Petrol_ٍSupp.Size = new System.Drawing.Size(310, 23);
+            this.txt_Petrol_ٍSupp.TabIndex = 186;
+            // 
+            // txt_1
+            // 
+            this.txt_1.BackColor = System.Drawing.Color.Transparent;
+            this.txt_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_1.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_1.Location = new System.Drawing.Point(7, 579);
+            this.txt_1.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_1.Name = "txt_1";
+            this.txt_1.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_1.Size = new System.Drawing.Size(310, 23);
+            this.txt_1.TabIndex = 185;
+            // 
+            // txt_2
+            // 
+            this.txt_2.BackColor = System.Drawing.Color.Transparent;
+            this.txt_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_2.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_2.Location = new System.Drawing.Point(7, 603);
+            this.txt_2.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_2.Name = "txt_2";
+            this.txt_2.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_2.Size = new System.Drawing.Size(310, 23);
+            this.txt_2.TabIndex = 184;
             // 
             // label18
             // 
@@ -555,7 +851,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.label7.Location = new System.Drawing.Point(205, 6);
+            this.label7.Location = new System.Drawing.Point(199, 6);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 13);
             this.label7.TabIndex = 172;
@@ -565,7 +861,7 @@
             // 
             this.txt_ShortName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_ShortName.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_ShortName.Location = new System.Drawing.Point(1, 2);
+            this.txt_ShortName.Location = new System.Drawing.Point(-5, 2);
             this.txt_ShortName.Name = "txt_ShortName";
             this.txt_ShortName.Size = new System.Drawing.Size(201, 20);
             this.txt_ShortName.TabIndex = 171;
@@ -885,6 +1181,7 @@
             this.BSearch.Name = "BSearch";
             this.BSearch.SubItemsExpandWidth = 14;
             this.BSearch.Text = "بحث";
+            this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
             // 
             // BPrint
             // 
@@ -990,6 +1287,103 @@
             this.groupPanel6.TabIndex = 104;
             this.groupPanel6.Click += new System.EventHandler(this.groupPanel6_Click);
             // 
+            // txt_InventoryAcc
+            // 
+            this.txt_InventoryAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txt_InventoryAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_InventoryAcc.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_InventoryAcc.Location = new System.Drawing.Point(27, 4);
+            this.txt_InventoryAcc.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_InventoryAcc.Name = "txt_InventoryAcc";
+            this.txt_InventoryAcc.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_InventoryAcc.Size = new System.Drawing.Size(310, 23);
+            this.txt_InventoryAcc.TabIndex = 201;
+            // 
+            // txt_3
+            // 
+            this.txt_3.BackColor = System.Drawing.Color.Transparent;
+            this.txt_3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_3.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_3.Location = new System.Drawing.Point(27, 28);
+            this.txt_3.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_3.Name = "txt_3";
+            this.txt_3.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_3.Size = new System.Drawing.Size(310, 23);
+            this.txt_3.TabIndex = 200;
+            // 
+            // txt_4
+            // 
+            this.txt_4.BackColor = System.Drawing.Color.Transparent;
+            this.txt_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_4.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_4.Location = new System.Drawing.Point(27, 52);
+            this.txt_4.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_4.Name = "txt_4";
+            this.txt_4.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_4.Size = new System.Drawing.Size(310, 23);
+            this.txt_4.TabIndex = 199;
+            this.txt_4.Load += new System.EventHandler(this.uC_Acc1_Load);
+            // 
+            // txt_5
+            // 
+            this.txt_5.BackColor = System.Drawing.Color.Transparent;
+            this.txt_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_5.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_5.Location = new System.Drawing.Point(27, 76);
+            this.txt_5.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_5.Name = "txt_5";
+            this.txt_5.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_5.Size = new System.Drawing.Size(310, 23);
+            this.txt_5.TabIndex = 198;
+            // 
+            // txt_6
+            // 
+            this.txt_6.BackColor = System.Drawing.Color.Transparent;
+            this.txt_6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_6.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_6.Location = new System.Drawing.Point(27, 100);
+            this.txt_6.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_6.Name = "txt_6";
+            this.txt_6.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_6.Size = new System.Drawing.Size(310, 23);
+            this.txt_6.TabIndex = 197;
+            // 
+            // txt_7
+            // 
+            this.txt_7.BackColor = System.Drawing.Color.Transparent;
+            this.txt_7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_7.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_7.Location = new System.Drawing.Point(27, 124);
+            this.txt_7.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_7.Name = "txt_7";
+            this.txt_7.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_7.Size = new System.Drawing.Size(310, 23);
+            this.txt_7.TabIndex = 196;
+            // 
+            // txt_KM_Sales
+            // 
+            this.txt_KM_Sales.BackColor = System.Drawing.Color.Transparent;
+            this.txt_KM_Sales.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_KM_Sales.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_KM_Sales.Location = new System.Drawing.Point(27, 148);
+            this.txt_KM_Sales.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_KM_Sales.Name = "txt_KM_Sales";
+            this.txt_KM_Sales.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_KM_Sales.Size = new System.Drawing.Size(310, 23);
+            this.txt_KM_Sales.TabIndex = 195;
+            // 
+            // txt_KM_purchase
+            // 
+            this.txt_KM_purchase.BackColor = System.Drawing.Color.Transparent;
+            this.txt_KM_purchase.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txt_KM_purchase.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txt_KM_purchase.Location = new System.Drawing.Point(27, 172);
+            this.txt_KM_purchase.Margin = new System.Windows.Forms.Padding(0);
+            this.txt_KM_purchase.Name = "txt_KM_purchase";
+            this.txt_KM_purchase.Padding = new System.Windows.Forms.Padding(1);
+            this.txt_KM_purchase.Size = new System.Drawing.Size(310, 23);
+            this.txt_KM_purchase.TabIndex = 194;
+            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -1029,7 +1423,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.label1.Location = new System.Drawing.Point(334, 223);
+            this.label1.Location = new System.Drawing.Point(328, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 170;
@@ -1052,7 +1446,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.label5.Location = new System.Drawing.Point(334, 203);
+            this.label5.Location = new System.Drawing.Point(328, 203);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 13);
             this.label5.TabIndex = 169;
@@ -1073,7 +1467,7 @@
             // 
             this.txt_KM_No.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_KM_No.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_KM_No.Location = new System.Drawing.Point(57, 198);
+            this.txt_KM_No.Location = new System.Drawing.Point(51, 198);
             this.txt_KM_No.Name = "txt_KM_No";
             this.txt_KM_No.Size = new System.Drawing.Size(274, 20);
             this.txt_KM_No.TabIndex = 167;
@@ -1093,7 +1487,7 @@
             // 
             this.txt_CityCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_CityCode.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_CityCode.Location = new System.Drawing.Point(57, 220);
+            this.txt_CityCode.Location = new System.Drawing.Point(51, 220);
             this.txt_CityCode.Name = "txt_CityCode";
             this.txt_CityCode.Size = new System.Drawing.Size(274, 20);
             this.txt_CityCode.TabIndex = 168;
@@ -1150,368 +1544,6 @@
             this.expandableSplitter1.Size = new System.Drawing.Size(3, 715);
             this.expandableSplitter1.TabIndex = 135;
             this.expandableSplitter1.TabStop = false;
-            // 
-            // txt_AccBranch
-            // 
-            this.txt_AccBranch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_AccBranch.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_AccBranch.Location = new System.Drawing.Point(7, 51);
-            this.txt_AccBranch.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_AccBranch.Name = "txt_AccBranch";
-            this.txt_AccBranch.Size = new System.Drawing.Size(310, 23);
-            this.txt_AccBranch.TabIndex = 209;
-            // 
-            // txt_area
-            // 
-            this.txt_area.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_area.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_area.Location = new System.Drawing.Point(7, 27);
-            this.txt_area.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_area.Name = "txt_area";
-            this.txt_area.Size = new System.Drawing.Size(310, 23);
-            this.txt_area.TabIndex = 208;
-            // 
-            // txt_Tranc_ToAcc
-            // 
-            this.txt_Tranc_ToAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_Tranc_ToAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_Tranc_ToAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_Tranc_ToAcc.Location = new System.Drawing.Point(7, 75);
-            this.txt_Tranc_ToAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_Tranc_ToAcc.Name = "txt_Tranc_ToAcc";
-            this.txt_Tranc_ToAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_Tranc_ToAcc.TabIndex = 206;
-            // 
-            // txt_SalesAcc
-            // 
-            this.txt_SalesAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_SalesAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_SalesAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_SalesAcc.Location = new System.Drawing.Point(7, 99);
-            this.txt_SalesAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_SalesAcc.Name = "txt_SalesAcc";
-            this.txt_SalesAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_SalesAcc.TabIndex = 205;
-            // 
-            // txt_PurAcc
-            // 
-            this.txt_PurAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_PurAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_PurAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_PurAcc.Location = new System.Drawing.Point(7, 123);
-            this.txt_PurAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_PurAcc.Name = "txt_PurAcc";
-            this.txt_PurAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_PurAcc.TabIndex = 204;
-            // 
-            // txt_CashAcc
-            // 
-            this.txt_CashAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_CashAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_CashAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_CashAcc.Location = new System.Drawing.Point(7, 147);
-            this.txt_CashAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_CashAcc.Name = "txt_CashAcc";
-            this.txt_CashAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_CashAcc.TabIndex = 203;
-            // 
-            // txt_banksAcc
-            // 
-            this.txt_banksAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_banksAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_banksAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_banksAcc.Location = new System.Drawing.Point(7, 171);
-            this.txt_banksAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_banksAcc.Name = "txt_banksAcc";
-            this.txt_banksAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_banksAcc.TabIndex = 202;
-            // 
-            // txt_AdvanceAcc
-            // 
-            this.txt_AdvanceAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_AdvanceAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_AdvanceAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_AdvanceAcc.Location = new System.Drawing.Point(7, 195);
-            this.txt_AdvanceAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_AdvanceAcc.Name = "txt_AdvanceAcc";
-            this.txt_AdvanceAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_AdvanceAcc.TabIndex = 201;
-            // 
-            // txt_CostmersAcc
-            // 
-            this.txt_CostmersAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_CostmersAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_CostmersAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_CostmersAcc.Location = new System.Drawing.Point(7, 219);
-            this.txt_CostmersAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_CostmersAcc.Name = "txt_CostmersAcc";
-            this.txt_CostmersAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_CostmersAcc.TabIndex = 200;
-            // 
-            // txt_SuppliersAacc
-            // 
-            this.txt_SuppliersAacc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_SuppliersAacc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_SuppliersAacc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_SuppliersAacc.Location = new System.Drawing.Point(7, 243);
-            this.txt_SuppliersAacc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_SuppliersAacc.Name = "txt_SuppliersAacc";
-            this.txt_SuppliersAacc.Size = new System.Drawing.Size(310, 23);
-            this.txt_SuppliersAacc.TabIndex = 199;
-            // 
-            // txt_OpeningAcc
-            // 
-            this.txt_OpeningAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_OpeningAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_OpeningAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_OpeningAcc.Location = new System.Drawing.Point(7, 267);
-            this.txt_OpeningAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_OpeningAcc.Name = "txt_OpeningAcc";
-            this.txt_OpeningAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_OpeningAcc.TabIndex = 198;
-            // 
-            // txt_PurFessAcc
-            // 
-            this.txt_PurFessAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_PurFessAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_PurFessAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_PurFessAcc.Location = new System.Drawing.Point(7, 291);
-            this.txt_PurFessAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_PurFessAcc.Name = "txt_PurFessAcc";
-            this.txt_PurFessAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_PurFessAcc.TabIndex = 197;
-            // 
-            // txt_CargoAcc
-            // 
-            this.txt_CargoAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_CargoAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_CargoAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_CargoAcc.Location = new System.Drawing.Point(7, 315);
-            this.txt_CargoAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_CargoAcc.Name = "txt_CargoAcc";
-            this.txt_CargoAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_CargoAcc.TabIndex = 196;
-            // 
-            // txt_conection
-            // 
-            this.txt_conection.BackColor = System.Drawing.Color.Transparent;
-            this.txt_conection.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_conection.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_conection.Location = new System.Drawing.Point(7, 339);
-            this.txt_conection.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_conection.Name = "txt_conection";
-            this.txt_conection.Size = new System.Drawing.Size(310, 23);
-            this.txt_conection.TabIndex = 195;
-            // 
-            // txt_BoanasAcc
-            // 
-            this.txt_BoanasAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_BoanasAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_BoanasAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_BoanasAcc.Location = new System.Drawing.Point(7, 363);
-            this.txt_BoanasAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_BoanasAcc.Name = "txt_BoanasAcc";
-            this.txt_BoanasAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_BoanasAcc.TabIndex = 194;
-            // 
-            // c
-            // 
-            this.c.BackColor = System.Drawing.Color.Transparent;
-            this.c.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.c.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c.Location = new System.Drawing.Point(7, 387);
-            this.c.Margin = new System.Windows.Forms.Padding(0);
-            this.c.Name = "c";
-            this.c.Size = new System.Drawing.Size(310, 23);
-            this.c.TabIndex = 193;
-            // 
-            // txt_SP_Inventory
-            // 
-            this.txt_SP_Inventory.BackColor = System.Drawing.Color.Transparent;
-            this.txt_SP_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_SP_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_SP_Inventory.Location = new System.Drawing.Point(7, 411);
-            this.txt_SP_Inventory.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_SP_Inventory.Name = "txt_SP_Inventory";
-            this.txt_SP_Inventory.Size = new System.Drawing.Size(310, 23);
-            this.txt_SP_Inventory.TabIndex = 192;
-            // 
-            // txt_TR_Inventory
-            // 
-            this.txt_TR_Inventory.BackColor = System.Drawing.Color.Transparent;
-            this.txt_TR_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_TR_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_TR_Inventory.Location = new System.Drawing.Point(7, 435);
-            this.txt_TR_Inventory.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_TR_Inventory.Name = "txt_TR_Inventory";
-            this.txt_TR_Inventory.Size = new System.Drawing.Size(310, 23);
-            this.txt_TR_Inventory.TabIndex = 191;
-            // 
-            // txt_OI_Inventory
-            // 
-            this.txt_OI_Inventory.BackColor = System.Drawing.Color.Transparent;
-            this.txt_OI_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_OI_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_OI_Inventory.Location = new System.Drawing.Point(7, 459);
-            this.txt_OI_Inventory.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_OI_Inventory.Name = "txt_OI_Inventory";
-            this.txt_OI_Inventory.Size = new System.Drawing.Size(310, 23);
-            this.txt_OI_Inventory.TabIndex = 190;
-            // 
-            // txt_WS_Inventory
-            // 
-            this.txt_WS_Inventory.BackColor = System.Drawing.Color.Transparent;
-            this.txt_WS_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_WS_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_WS_Inventory.Location = new System.Drawing.Point(7, 483);
-            this.txt_WS_Inventory.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_WS_Inventory.Name = "txt_WS_Inventory";
-            this.txt_WS_Inventory.Size = new System.Drawing.Size(310, 23);
-            this.txt_WS_Inventory.TabIndex = 189;
-            // 
-            // txt_TO_Inventory
-            // 
-            this.txt_TO_Inventory.BackColor = System.Drawing.Color.Transparent;
-            this.txt_TO_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_TO_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_TO_Inventory.Location = new System.Drawing.Point(7, 507);
-            this.txt_TO_Inventory.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_TO_Inventory.Name = "txt_TO_Inventory";
-            this.txt_TO_Inventory.Size = new System.Drawing.Size(310, 23);
-            this.txt_TO_Inventory.TabIndex = 188;
-            // 
-            // txt_OSP_Inventory
-            // 
-            this.txt_OSP_Inventory.BackColor = System.Drawing.Color.Transparent;
-            this.txt_OSP_Inventory.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_OSP_Inventory.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_OSP_Inventory.Location = new System.Drawing.Point(7, 531);
-            this.txt_OSP_Inventory.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_OSP_Inventory.Name = "txt_OSP_Inventory";
-            this.txt_OSP_Inventory.Size = new System.Drawing.Size(310, 23);
-            this.txt_OSP_Inventory.TabIndex = 187;
-            // 
-            // txt_Petrol_ٍSupp
-            // 
-            this.txt_Petrol_ٍSupp.BackColor = System.Drawing.Color.Transparent;
-            this.txt_Petrol_ٍSupp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_Petrol_ٍSupp.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_Petrol_ٍSupp.Location = new System.Drawing.Point(7, 555);
-            this.txt_Petrol_ٍSupp.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_Petrol_ٍSupp.Name = "txt_Petrol_ٍSupp";
-            this.txt_Petrol_ٍSupp.Size = new System.Drawing.Size(310, 23);
-            this.txt_Petrol_ٍSupp.TabIndex = 186;
-            // 
-            // txt_1
-            // 
-            this.txt_1.BackColor = System.Drawing.Color.Transparent;
-            this.txt_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_1.Location = new System.Drawing.Point(7, 579);
-            this.txt_1.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_1.Name = "txt_1";
-            this.txt_1.Size = new System.Drawing.Size(310, 23);
-            this.txt_1.TabIndex = 185;
-            // 
-            // txt_2
-            // 
-            this.txt_2.BackColor = System.Drawing.Color.Transparent;
-            this.txt_2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_2.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_2.Location = new System.Drawing.Point(7, 603);
-            this.txt_2.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_2.Name = "txt_2";
-            this.txt_2.Size = new System.Drawing.Size(310, 23);
-            this.txt_2.TabIndex = 184;
-            // 
-            // txt_InventoryAcc
-            // 
-            this.txt_InventoryAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txt_InventoryAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_InventoryAcc.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_InventoryAcc.Location = new System.Drawing.Point(27, 4);
-            this.txt_InventoryAcc.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_InventoryAcc.Name = "txt_InventoryAcc";
-            this.txt_InventoryAcc.Size = new System.Drawing.Size(310, 23);
-            this.txt_InventoryAcc.TabIndex = 201;
-            // 
-            // txt_3
-            // 
-            this.txt_3.BackColor = System.Drawing.Color.Transparent;
-            this.txt_3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_3.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_3.Location = new System.Drawing.Point(27, 28);
-            this.txt_3.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_3.Name = "txt_3";
-            this.txt_3.Size = new System.Drawing.Size(310, 23);
-            this.txt_3.TabIndex = 200;
-            // 
-            // txt_4
-            // 
-            this.txt_4.BackColor = System.Drawing.Color.Transparent;
-            this.txt_4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_4.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_4.Location = new System.Drawing.Point(27, 52);
-            this.txt_4.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_4.Name = "txt_4";
-            this.txt_4.Size = new System.Drawing.Size(310, 23);
-            this.txt_4.TabIndex = 199;
-            this.txt_4.Load += new System.EventHandler(this.uC_Acc1_Load);
-            // 
-            // txt_5
-            // 
-            this.txt_5.BackColor = System.Drawing.Color.Transparent;
-            this.txt_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_5.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_5.Location = new System.Drawing.Point(27, 76);
-            this.txt_5.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_5.Name = "txt_5";
-            this.txt_5.Size = new System.Drawing.Size(310, 23);
-            this.txt_5.TabIndex = 198;
-            // 
-            // txt_6
-            // 
-            this.txt_6.BackColor = System.Drawing.Color.Transparent;
-            this.txt_6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_6.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_6.Location = new System.Drawing.Point(27, 100);
-            this.txt_6.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_6.Name = "txt_6";
-            this.txt_6.Size = new System.Drawing.Size(310, 23);
-            this.txt_6.TabIndex = 197;
-            // 
-            // txt_7
-            // 
-            this.txt_7.BackColor = System.Drawing.Color.Transparent;
-            this.txt_7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_7.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_7.Location = new System.Drawing.Point(27, 124);
-            this.txt_7.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_7.Name = "txt_7";
-            this.txt_7.Size = new System.Drawing.Size(310, 23);
-            this.txt_7.TabIndex = 196;
-            // 
-            // txt_KM_Sales
-            // 
-            this.txt_KM_Sales.BackColor = System.Drawing.Color.Transparent;
-            this.txt_KM_Sales.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_KM_Sales.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_KM_Sales.Location = new System.Drawing.Point(27, 148);
-            this.txt_KM_Sales.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_KM_Sales.Name = "txt_KM_Sales";
-            this.txt_KM_Sales.Size = new System.Drawing.Size(310, 23);
-            this.txt_KM_Sales.TabIndex = 195;
-            // 
-            // txt_KM_purchase
-            // 
-            this.txt_KM_purchase.BackColor = System.Drawing.Color.Transparent;
-            this.txt_KM_purchase.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txt_KM_purchase.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txt_KM_purchase.Location = new System.Drawing.Point(27, 172);
-            this.txt_KM_purchase.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_KM_purchase.Name = "txt_KM_purchase";
-            this.txt_KM_purchase.Size = new System.Drawing.Size(310, 23);
-            this.txt_KM_purchase.TabIndex = 194;
             // 
             // frmStores
             // 

@@ -784,9 +784,6 @@
   <data name="buttonX2.Text" xml:space="preserve">
     <value>Early Cut-off</value>
   </data>
-  <data name="buttonX2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
     <value>buttonX2</value>
   </data>
@@ -813,9 +810,6 @@
   </data>
   <data name="buttonX1.Text" xml:space="preserve">
     <value>Late Cut-off</value>
-  </data>
-  <data name="buttonX1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
     <value>buttonX1</value>
@@ -1596,9 +1590,6 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

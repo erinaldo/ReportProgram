@@ -78,6 +78,7 @@
             // 
             // panelEx1
             // 
+            resources.ApplyResources(this.panelEx1, "panelEx1");
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.panelEx1.Controls.Add(this.buttonX6);
@@ -89,7 +90,6 @@
             this.panelEx1.Controls.Add(this.buttonX1);
             this.panelEx1.Controls.Add(this.btnReport);
             this.panelEx1.Controls.Add(this.btnOptions);
-            resources.ApplyResources(this.panelEx1, "panelEx1");
             this.panelEx1.Name = "panelEx1";
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.Color = System.Drawing.Color.PapayaWhip;
@@ -101,79 +101,82 @@
             // 
             // buttonX6
             // 
+            resources.ApplyResources(this.buttonX6, "buttonX6");
             this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX6.ImageFixedSize = new System.Drawing.Size(32, 32);
-            resources.ApplyResources(this.buttonX6, "buttonX6");
             this.buttonX6.Name = "buttonX6";
+            this.buttonX6.Click += new System.EventHandler(this.buttonX6_Click);
             // 
             // buttonX5
             // 
+            resources.ApplyResources(this.buttonX5, "buttonX5");
             this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX5.ImageFixedSize = new System.Drawing.Size(32, 32);
-            resources.ApplyResources(this.buttonX5, "buttonX5");
             this.buttonX5.Name = "buttonX5";
+            this.buttonX5.Click += new System.EventHandler(this.buttonX5_Click);
             // 
             // buttonX4
             // 
+            resources.ApplyResources(this.buttonX4, "buttonX4");
             this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX4.ImageFixedSize = new System.Drawing.Size(32, 32);
-            resources.ApplyResources(this.buttonX4, "buttonX4");
             this.buttonX4.Name = "buttonX4";
             this.buttonX4.Click += new System.EventHandler(this.buttonX4_Click);
             // 
             // buttonX3
             // 
+            resources.ApplyResources(this.buttonX3, "buttonX3");
             this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.buttonX3, "buttonX3");
             this.buttonX3.Name = "buttonX3";
             this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
             // 
             // buttonX2
             // 
+            resources.ApplyResources(this.buttonX2, "buttonX2");
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.buttonX2, "buttonX2");
             this.buttonX2.Name = "buttonX2";
             this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click_1);
             // 
             // btn_stockByBranch
             // 
-            this.btn_stockByBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             resources.ApplyResources(this.btn_stockByBranch, "btn_stockByBranch");
+            this.btn_stockByBranch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_stockByBranch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn_stockByBranch.Name = "btn_stockByBranch";
             this.btn_stockByBranch.Click += new System.EventHandler(this.buttonX2_Click);
             // 
             // buttonX1
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             resources.ApplyResources(this.buttonX1, "buttonX1");
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // btnReport
             // 
-            this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             resources.ApplyResources(this.btnReport, "btnReport");
+            this.btnReport.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReport.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnReport.Name = "btnReport";
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnOptions
             // 
-            this.btnOptions.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             resources.ApplyResources(this.btnOptions, "btnOptions");
+            this.btnOptions.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnOptions.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // groupPanel1
             // 
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.groupPanel2);
@@ -195,7 +198,6 @@
             this.groupPanel1.Controls.Add(this.Item);
             this.groupPanel1.Controls.Add(this.Group);
             this.groupPanel1.Controls.Add(this.dTP2);
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -221,6 +223,7 @@
             // 
             // groupPanel2
             // 
+            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.Color.Transparent;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
@@ -231,7 +234,6 @@
             this.groupPanel2.Controls.Add(this.chP);
             this.groupPanel2.Controls.Add(this.chC);
             this.groupPanel2.Controls.Add(this.chS);
-            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.Name = "groupPanel2";
             // 
             // 
@@ -326,13 +328,28 @@
             // 
             // dTP1
             // 
+            resources.ApplyResources(this.dTP1, "dTP1");
             // 
             // 
             // 
             this.dTP1.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dTP1.ButtonClear.DisplayPosition = ((int)(resources.GetObject("dTP1.ButtonClear.DisplayPosition")));
+            this.dTP1.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("dTP1.ButtonClear.Image")));
+            this.dTP1.ButtonClear.Text = resources.GetString("dTP1.ButtonClear.Text");
+            this.dTP1.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("dTP1.ButtonCustom.DisplayPosition")));
+            this.dTP1.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("dTP1.ButtonCustom.Image")));
+            this.dTP1.ButtonCustom.Text = resources.GetString("dTP1.ButtonCustom.Text");
+            this.dTP1.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("dTP1.ButtonCustom2.DisplayPosition")));
+            this.dTP1.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("dTP1.ButtonCustom2.Image")));
+            this.dTP1.ButtonCustom2.Text = resources.GetString("dTP1.ButtonCustom2.Text");
+            this.dTP1.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("dTP1.ButtonDropDown.DisplayPosition")));
+            this.dTP1.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("dTP1.ButtonDropDown.Image")));
             this.dTP1.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dTP1.ButtonDropDown.Text = resources.GetString("dTP1.ButtonDropDown.Text");
             this.dTP1.ButtonDropDown.Visible = true;
-            resources.ApplyResources(this.dTP1, "dTP1");
+            this.dTP1.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("dTP1.ButtonFreeText.DisplayPosition")));
+            this.dTP1.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("dTP1.ButtonFreeText.Image")));
+            this.dTP1.ButtonFreeText.Text = resources.GetString("dTP1.ButtonFreeText.Text");
             // 
             // 
             // 
@@ -341,7 +358,9 @@
             // 
             // 
             this.dTP1.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.dTP1.MonthCalendar.Category = resources.GetString("dTP1.MonthCalendar.Category");
             this.dTP1.MonthCalendar.ClearButtonVisible = true;
+            this.dTP1.MonthCalendar.CommandParameter = ((object)(resources.GetObject("dTP1.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -351,6 +370,8 @@
             this.dTP1.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.dTP1.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.dTP1.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dTP1.MonthCalendar.DayNames = ((string[])(resources.GetObject("dTP1.MonthCalendar.DayNames")));
+            this.dTP1.MonthCalendar.Description = resources.GetString("dTP1.MonthCalendar.Description");
             this.dTP1.MonthCalendar.DisplayMonth = new System.DateTime(2019, 12, 1, 0, 0, 0, 0);
             this.dTP1.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("dTP1.MonthCalendar.MarkedDates")));
             this.dTP1.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("dTP1.MonthCalendar.MonthlyMarkedDates")));
@@ -360,7 +381,10 @@
             this.dTP1.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.dTP1.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.dTP1.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dTP1.MonthCalendar.Tag = resources.GetString("dTP1.MonthCalendar.Tag");
+            this.dTP1.MonthCalendar.Text = resources.GetString("dTP1.MonthCalendar.Text");
             this.dTP1.MonthCalendar.TodayButtonVisible = true;
+            this.dTP1.MonthCalendar.Tooltip = resources.GetString("dTP1.MonthCalendar.Tooltip");
             this.dTP1.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("dTP1.MonthCalendar.WeeklyMarkedDays")));
             this.dTP1.Name = "dTP1";
             // 
@@ -384,8 +408,8 @@
             // 
             // Uc_Transaction
             // 
-            this.Uc_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             resources.ApplyResources(this.Uc_Transaction, "Uc_Transaction");
+            this.Uc_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Uc_Transaction.Name = "Uc_Transaction";
             // 
             // labelX8
@@ -402,8 +426,8 @@
             // 
             // thick_2
             // 
-            this.thick_2.DecimalPlaces = 2;
             resources.ApplyResources(this.thick_2, "thick_2");
+            this.thick_2.DecimalPlaces = 2;
             this.thick_2.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -413,8 +437,8 @@
             // 
             // thick_1
             // 
-            this.thick_1.DecimalPlaces = 2;
             resources.ApplyResources(this.thick_1, "thick_1");
+            this.thick_1.DecimalPlaces = 2;
             this.thick_1.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -430,10 +454,10 @@
             // 
             // Branch
             // 
+            resources.ApplyResources(this.Branch, "Branch");
             this.Branch.BackColor = System.Drawing.Color.Transparent;
             this.Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.Branch, "Branch");
             this.Branch.Name = "Branch";
             // 
             // labelX5
@@ -445,8 +469,8 @@
             // 
             // cmb_DimCategory
             // 
-            this.cmb_DimCategory.FormattingEnabled = true;
             resources.ApplyResources(this.cmb_DimCategory, "cmb_DimCategory");
+            this.cmb_DimCategory.FormattingEnabled = true;
             this.cmb_DimCategory.Name = "cmb_DimCategory";
             // 
             // labelX3
@@ -464,26 +488,41 @@
             // 
             // Item
             // 
-            this.Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             resources.ApplyResources(this.Item, "Item");
+            this.Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Item.Name = "Item";
             this.Item.Click += new System.EventHandler(this.Item_Click);
             // 
             // Group
             // 
-            this.Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             resources.ApplyResources(this.Group, "Group");
+            this.Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Group.Name = "Group";
             // 
             // dTP2
             // 
+            resources.ApplyResources(this.dTP2, "dTP2");
             // 
             // 
             // 
             this.dTP2.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.dTP2.ButtonClear.DisplayPosition = ((int)(resources.GetObject("dTP2.ButtonClear.DisplayPosition")));
+            this.dTP2.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("dTP2.ButtonClear.Image")));
+            this.dTP2.ButtonClear.Text = resources.GetString("dTP2.ButtonClear.Text");
+            this.dTP2.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("dTP2.ButtonCustom.DisplayPosition")));
+            this.dTP2.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("dTP2.ButtonCustom.Image")));
+            this.dTP2.ButtonCustom.Text = resources.GetString("dTP2.ButtonCustom.Text");
+            this.dTP2.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("dTP2.ButtonCustom2.DisplayPosition")));
+            this.dTP2.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("dTP2.ButtonCustom2.Image")));
+            this.dTP2.ButtonCustom2.Text = resources.GetString("dTP2.ButtonCustom2.Text");
+            this.dTP2.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("dTP2.ButtonDropDown.DisplayPosition")));
+            this.dTP2.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("dTP2.ButtonDropDown.Image")));
             this.dTP2.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.dTP2.ButtonDropDown.Text = resources.GetString("dTP2.ButtonDropDown.Text");
             this.dTP2.ButtonDropDown.Visible = true;
-            resources.ApplyResources(this.dTP2, "dTP2");
+            this.dTP2.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("dTP2.ButtonFreeText.DisplayPosition")));
+            this.dTP2.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("dTP2.ButtonFreeText.Image")));
+            this.dTP2.ButtonFreeText.Text = resources.GetString("dTP2.ButtonFreeText.Text");
             // 
             // 
             // 
@@ -492,7 +531,9 @@
             // 
             // 
             this.dTP2.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.dTP2.MonthCalendar.Category = resources.GetString("dTP2.MonthCalendar.Category");
             this.dTP2.MonthCalendar.ClearButtonVisible = true;
+            this.dTP2.MonthCalendar.CommandParameter = ((object)(resources.GetObject("dTP2.MonthCalendar.CommandParameter")));
             // 
             // 
             // 
@@ -502,6 +543,8 @@
             this.dTP2.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.dTP2.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.dTP2.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.dTP2.MonthCalendar.DayNames = ((string[])(resources.GetObject("dTP2.MonthCalendar.DayNames")));
+            this.dTP2.MonthCalendar.Description = resources.GetString("dTP2.MonthCalendar.Description");
             this.dTP2.MonthCalendar.DisplayMonth = new System.DateTime(2019, 12, 1, 0, 0, 0, 0);
             this.dTP2.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("dTP2.MonthCalendar.MarkedDates")));
             this.dTP2.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("dTP2.MonthCalendar.MonthlyMarkedDates")));
@@ -511,16 +554,19 @@
             this.dTP2.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.dTP2.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.dTP2.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.dTP2.MonthCalendar.Tag = resources.GetString("dTP2.MonthCalendar.Tag");
+            this.dTP2.MonthCalendar.Text = resources.GetString("dTP2.MonthCalendar.Text");
             this.dTP2.MonthCalendar.TodayButtonVisible = true;
+            this.dTP2.MonthCalendar.Tooltip = resources.GetString("dTP2.MonthCalendar.Tooltip");
             this.dTP2.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("dTP2.MonthCalendar.WeeklyMarkedDays")));
             this.dTP2.Name = "dTP2";
             // 
             // crystalReportViewer1
             // 
+            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            resources.ApplyResources(this.crystalReportViewer1, "crystalReportViewer1");
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.SelectionFormula = "";
             this.crystalReportViewer1.ViewTimeSelectionFormula = "";
@@ -533,6 +579,7 @@
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.panelEx1);
             this.Name = "frm_Inventory_Report";
+            this.Load += new System.EventHandler(this.frm_Inventory_Report_Load);
             this.panelEx1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();

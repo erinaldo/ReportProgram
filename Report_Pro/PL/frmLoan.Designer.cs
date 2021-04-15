@@ -32,17 +32,25 @@
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.BNew = new DevComponents.DotNetBar.ButtonItem();
             this.BSave = new DevComponents.DotNetBar.ButtonItem();
-            this.BEdit = new DevComponents.DotNetBar.ButtonItem();
             this.BSearch = new DevComponents.DotNetBar.ButtonItem();
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.btnStatment = new DevComponents.DotNetBar.ButtonItem();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.BName = new Report_Pro.MyControls.UC_Acc();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.loanPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.jorDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.txtTotal = new DevComponents.Editors.DoubleInput();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtJorSer = new System.Windows.Forms.TextBox();
+            this.txtSanadSer = new System.Windows.Forms.TextBox();
+            this.txtYear = new System.Windows.Forms.Label();
+            this.btnPrintJor = new System.Windows.Forms.Button();
+            this.btnCreateJor = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -62,11 +70,17 @@
             this.txtLoanAcc = new Report_Pro.MyControls.UC_Acc();
             this.txtLoanNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtLoanValue = new DevComponents.Editors.DoubleInput();
+            this.BName = new Report_Pro.MyControls.UC_Acc();
+            this.label7 = new System.Windows.Forms.Label();
+            this.L_StartDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.panel1.SuspendLayout();
             this.loanPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jorDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIntrestRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoOfPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoanValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.L_StartDate)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonBar1
@@ -78,7 +92,6 @@
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.BNew,
             this.BSave,
-            this.BEdit,
             this.BSearch,
             this.BExit,
             this.btnStatment});
@@ -102,14 +115,6 @@
             this.BSave.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.BSave, "BSave");
             this.BSave.Click += new System.EventHandler(this.BSave_Click);
-            // 
-            // BEdit
-            // 
-            this.BEdit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BEdit.Image = global::Report_Pro.Properties.Resources.update1;
-            this.BEdit.Name = "BEdit";
-            this.BEdit.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BEdit, "BEdit");
             // 
             // BSearch
             // 
@@ -136,6 +141,7 @@
             this.btnStatment.Name = "btnStatment";
             this.btnStatment.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.btnStatment, "btnStatment");
+            this.btnStatment.Click += new System.EventHandler(this.btnStatment_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -148,13 +154,6 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label1.Name = "label1";
-            // 
-            // BName
-            // 
-            this.BName.BackColor = System.Drawing.Color.Transparent;
-            this.BName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.BName, "BName");
-            this.BName.Name = "BName";
             // 
             // label9
             // 
@@ -180,6 +179,18 @@
             // 
             this.loanPanel.CanvasColor = System.Drawing.SystemColors.Control;
             this.loanPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.loanPanel.Controls.Add(this.label7);
+            this.loanPanel.Controls.Add(this.L_StartDate);
+            this.loanPanel.Controls.Add(this.label6);
+            this.loanPanel.Controls.Add(this.jorDate);
+            this.loanPanel.Controls.Add(this.txtTotal);
+            this.loanPanel.Controls.Add(this.label5);
+            this.loanPanel.Controls.Add(this.label4);
+            this.loanPanel.Controls.Add(this.txtJorSer);
+            this.loanPanel.Controls.Add(this.txtSanadSer);
+            this.loanPanel.Controls.Add(this.txtYear);
+            this.loanPanel.Controls.Add(this.btnPrintJor);
+            this.loanPanel.Controls.Add(this.btnCreateJor);
             this.loanPanel.Controls.Add(this.label27);
             this.loanPanel.Controls.Add(this.label26);
             this.loanPanel.Controls.Add(this.label25);
@@ -227,6 +238,104 @@
             this.loanPanel.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.loanPanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.loanPanel.TabStop = true;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Name = "label6";
+            // 
+            // jorDate
+            // 
+            // 
+            // 
+            // 
+            this.jorDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.jorDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.jorDate.ButtonDropDown.Visible = true;
+            resources.ApplyResources(this.jorDate, "jorDate");
+            // 
+            // 
+            // 
+            this.jorDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("jorDate.MonthCalendar.AnnuallyMarkedDates")));
+            // 
+            // 
+            // 
+            this.jorDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.jorDate.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.jorDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.jorDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.jorDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.jorDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.jorDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.jorDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.jorDate.MonthCalendar.DisplayMonth = new System.DateTime(2021, 4, 1, 0, 0, 0, 0);
+            this.jorDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("jorDate.MonthCalendar.MarkedDates")));
+            this.jorDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("jorDate.MonthCalendar.MonthlyMarkedDates")));
+            // 
+            // 
+            // 
+            this.jorDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.jorDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.jorDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.jorDate.MonthCalendar.TodayButtonVisible = true;
+            this.jorDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("jorDate.MonthCalendar.WeeklyMarkedDays")));
+            this.jorDate.Name = "jorDate";
+            // 
+            // txtTotal
+            // 
+            // 
+            // 
+            // 
+            this.txtTotal.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtTotal.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtTotal.Increment = 1D;
+            resources.ApplyResources(this.txtTotal, "txtTotal");
+            this.txtTotal.Name = "txtTotal";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Name = "label4";
+            // 
+            // txtJorSer
+            // 
+            resources.ApplyResources(this.txtJorSer, "txtJorSer");
+            this.txtJorSer.Name = "txtJorSer";
+            // 
+            // txtSanadSer
+            // 
+            resources.ApplyResources(this.txtSanadSer, "txtSanadSer");
+            this.txtSanadSer.Name = "txtSanadSer";
+            // 
+            // txtYear
+            // 
+            resources.ApplyResources(this.txtYear, "txtYear");
+            this.txtYear.BackColor = System.Drawing.Color.Transparent;
+            this.txtYear.Name = "txtYear";
+            // 
+            // btnPrintJor
+            // 
+            resources.ApplyResources(this.btnPrintJor, "btnPrintJor");
+            this.btnPrintJor.Name = "btnPrintJor";
+            this.btnPrintJor.UseVisualStyleBackColor = true;
+            // 
+            // btnCreateJor
+            // 
+            resources.ApplyResources(this.btnCreateJor, "btnCreateJor");
+            this.btnCreateJor.Name = "btnCreateJor";
+            this.btnCreateJor.UseVisualStyleBackColor = true;
+            this.btnCreateJor.Click += new System.EventHandler(this.btnCreateJor_Click);
             // 
             // label27
             // 
@@ -384,6 +493,59 @@
             resources.ApplyResources(this.txtLoanValue, "txtLoanValue");
             this.txtLoanValue.Name = "txtLoanValue";
             // 
+            // BName
+            // 
+            this.BName.BackColor = System.Drawing.Color.Transparent;
+            this.BName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.BName, "BName");
+            this.BName.Name = "BName";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Name = "label7";
+            // 
+            // L_StartDate
+            // 
+            // 
+            // 
+            // 
+            this.L_StartDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.L_StartDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.L_StartDate.ButtonDropDown.Visible = true;
+            resources.ApplyResources(this.L_StartDate, "L_StartDate");
+            // 
+            // 
+            // 
+            this.L_StartDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("dateTimeInput1.MonthCalendar.AnnuallyMarkedDates")));
+            // 
+            // 
+            // 
+            this.L_StartDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.L_StartDate.MonthCalendar.ClearButtonVisible = true;
+            // 
+            // 
+            // 
+            this.L_StartDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.L_StartDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.L_StartDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.L_StartDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.L_StartDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.L_StartDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.L_StartDate.MonthCalendar.DisplayMonth = new System.DateTime(2021, 4, 1, 0, 0, 0, 0);
+            this.L_StartDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("dateTimeInput1.MonthCalendar.MarkedDates")));
+            this.L_StartDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("dateTimeInput1.MonthCalendar.MonthlyMarkedDates")));
+            // 
+            // 
+            // 
+            this.L_StartDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.L_StartDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.L_StartDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.L_StartDate.MonthCalendar.TodayButtonVisible = true;
+            this.L_StartDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("dateTimeInput1.MonthCalendar.WeeklyMarkedDays")));
+            this.L_StartDate.Name = "L_StartDate";
+            // 
             // frmLoan
             // 
             resources.ApplyResources(this, "$this");
@@ -395,9 +557,12 @@
             this.panel1.ResumeLayout(false);
             this.loanPanel.ResumeLayout(false);
             this.loanPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jorDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIntrestRate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoOfPayments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoanValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.L_StartDate)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -407,7 +572,6 @@
         private DevComponents.DotNetBar.RibbonBar ribbonBar1;
         private DevComponents.DotNetBar.ButtonItem BNew;
         private DevComponents.DotNetBar.ButtonItem BSave;
-        private DevComponents.DotNetBar.ButtonItem BEdit;
         private DevComponents.DotNetBar.ButtonItem BSearch;
         private DevComponents.DotNetBar.ButtonItem BExit;
         private DevComponents.DotNetBar.ButtonItem btnStatment;
@@ -437,5 +601,19 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
+        private MyControls.myText JorNo;
+        private System.Windows.Forms.Button btnPrintJor;
+        private System.Windows.Forms.Button btnCreateJor;
+        private System.Windows.Forms.Label txtYear;
+        private MyControls.myText myText1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtJorSer;
+        private System.Windows.Forms.TextBox txtSanadSer;
+        private DevComponents.Editors.DoubleInput txtTotal;
+        private System.Windows.Forms.Label label6;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput jorDate;
+        private System.Windows.Forms.Label label7;
+        private DevComponents.Editors.DateTimeAdv.DateTimeInput L_StartDate;
     }
 }

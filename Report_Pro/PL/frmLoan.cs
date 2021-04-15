@@ -15,6 +15,7 @@ namespace Report_Pro.PL
     public partial class frmLoan : Form
     {
         CultureInfo cul;
+        string _branch = Properties.Settings.Default.BranchAccID;
         Assembly a = Assembly.Load("Report_Pro");
 
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
@@ -52,7 +53,7 @@ namespace Report_Pro.PL
                                     "', PaymentValue='" + r.PayValue.Value + "',StartDate='" + r.startDate.Value.ToString("yyyy-MM-dd") +
                                     "', MaturityDate='" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "', Rate='" + r.intrestRate.Value +
                                     "',LoanPurpose='"+ Convert.ToString(txtLoanPurpose.SelectedValue) + "',LoanRefrance='" + txtLoanRefrance.Text +
-                                    "' where  id='" + txtLoanId.Text +"' and PaymentNo='" + r.paySer.Text + "' ");
+                                    "',Branch_code = '"+_branch +"' where  id='" + txtLoanId.Text +"' and PaymentNo='" + r.paySer.Text + "' ");
                         MessageBox.Show(rm.GetString("msgEdit", cul), rm.GetString("msgEdit_H", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
@@ -60,10 +61,10 @@ namespace Report_Pro.PL
                             {
                                
                                 dal.Execute_1(@"INSERT INTO LoansTbl(id,LoanNo,BankId,LoanACC,NumberOfPayments,LoanValue,PaymentNo,
-                            PaymentValue,StartDate,MaturityDate,Rate,LoanPurpose,LoanRefrance)
+                            PaymentValue,StartDate,MaturityDate,Rate,LoanPurpose,LoanRefrance,Branch_code)
                             VALUES(  '" + txtLoanId.Text + "', '" + txtLoanNo.Text + "','" + BName.ID.Text + "','" + txtLoanAcc.ID.Text + "','" + NoOfPayments.Value +
                                     "','" + txtLoanValue.Value + "','" + r.paySer.Value + "','" + r.PayValue.Value + "','" + r.startDate.Value.ToString("yyyy-MM-dd") +
-                                    "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Value + "','" + Convert.ToString( txtLoanPurpose.SelectedValue)+"', '" + txtLoanRefrance.Text + "')");
+                                    "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Value + "','" + Convert.ToString( txtLoanPurpose.SelectedValue)+"', '" + txtLoanRefrance.Text + "','"+_branch+"')");
                         MessageBox.Show(rm.GetString("msgSave", cul), "تعديل ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
@@ -163,7 +164,7 @@ namespace Report_Pro.PL
                     row.PayValue.Text = loanData.Rows[i]["PaymentValue"].ToString();
                     row.startDate.Text = loanData.Rows[i]["StartDate"].ToString();
                     row.maturityDate.Text = loanData.Rows[i]["MaturityDate"].ToString();
-                    row.intrestRate.Text = loanData.Rows[i]["Rate"].ToString();
+                    row.intrestRate.Text = loanData.Rows[i]["Rate"].ToString().ToDecimal().ToString();
 
                     flowLayoutPanel1.Controls.Add(row);
                     i = i + 1;
@@ -176,7 +177,102 @@ namespace Report_Pro.PL
             PL.frmLoanSearch frm = new PL.frmLoanSearch();
             frm.ShowDialog();
             txtLoanId.Text = frm.DGV1.CurrentRow.Cells[0].Value.ToString();
+            gettot();
 
+        }
+
+        private void btnStatment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void getJorSer()
+        {
+
+            txtJorSer.Text = "M" + dal.getDataTabl_1(@"select isnull(main_daily_ser+1,1) from serial_no where BRANCH_CODE='" + _branch
+                     + "' and ACC_YEAR= '" + txtYear.Text + "'").Rows[0][0].ToString().PadLeft(4, '0');
+
+            txtSanadSer.Text = dal.getDataTabl_1(@"select isnull(daily_sn_ser+1,1) from serial_no where BRANCH_CODE='" + _branch
+                + "' and ACC_YEAR= '" + txtYear.Text + "' ").Rows[0][0].ToString();//.PadLeft(4, '0');
+
+
+        }
+
+        private void btnCreateJor_Click(object sender, EventArgs e)
+        {
+            int JorSer;
+            getJorSer();
+            gettot();
+            if (txtLoanValue.Value <= 0 || txtTotal.Value <= 0 || txtLoanValue.Value != txtTotal.Value)
+            {
+                MessageBox.Show("تأكد من توازن القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+
+            if (txtJorSer.Text.Contains('M'))
+            {
+                var Jor_ser = txtJorSer.Text.Split('M');
+                JorSer = Convert.ToInt32(Jor_ser[1]);
+            }
+
+            else
+            {
+                JorSer = Convert.ToInt32(txtJorSer.Text);
+            }
+
+            string DbDesc = "صرف قرض رقم " + txtLoanNo.Text;
+            dal.Execute_1(@"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
+                   , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
+                    VALUES('" + txtYear.Text + "','" + BName.ID.Text + "','" + _branch + "','" +
+                   txtJorSer.Text + "','1','"+txtLoanValue.Value+"','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
+                   "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')");
+
+
+            foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
+            {
+
+                if (r.PayValue.Value > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
+                {
+
+                    string crDesc = "صرف الدفعة رقم " + r.paySer.Text + " من القرض";
+
+                    dal.Execute_1(@"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
+                   , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
+                    VALUES('" + txtYear.Text + "','" + txtLoanAcc.ID.Text + "','" + _branch + "','" +
+                    txtJorSer.Text + "','1','0','" + r.PayValue.Value + "','" + -r.PayValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
+                    "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + crDesc + "','0','1','" + JorSer + "')");
+
+                }
+
+                dal.Execute_1(@"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ");
+
+                dal.Execute_1(@"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer + "' WHERE id =  '" + txtLoanId + "' ");
+
+
+                MessageBox.Show("تم الحفظ بنجاح", "حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+
+
+
+        }
+
+        public void gettot()
+        {
+            double totDb = 0;
+          
+            foreach (MyControls.LoanRow c in flowLayoutPanel1.Controls)
+            {
+
+                totDb += c.PayValue.Value;
+                txtTotal.Value = totDb;
+               
+
+
+            }
         }
     }
 }

@@ -201,11 +201,11 @@
   <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
     <value>labelX2</value>
   </data>
+  <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>980, 156</value>
+  </data>
   <data name="labelX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="Report_btn.Text" xml:space="preserve">
-    <value>تقرير </value>
   </data>
   <data name="UC_Acc1.Size" type="System.Drawing.Size, System.Drawing">
     <value>480, 29</value>
@@ -215,9 +215,6 @@
   </data>
   <data name="Report_btn.Tooltip" xml:space="preserve">
     <value>&lt;font color="#ED1C24"&gt;التقرير&lt;/font&gt;&lt;b&gt;&lt;/b&gt;</value>
-  </data>
-  <data name="UC_Acc1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -239,9 +236,6 @@
   </data>
   <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
     <value>labelX3</value>
-  </data>
-  <data name="UC_Catogry1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -318,9 +312,6 @@
   <data name="FromDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="ToDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="FromDate.TabIndex" type="System.Int32, mscorlib">
     <value>291</value>
   </data>
@@ -369,23 +360,20 @@
   <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
     <value>labelX4</value>
   </data>
-  <data name="&gt;&gt;UC_cost1.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
   </data>
   <data name="groupPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
+  <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
     <value>buttonX1</value>
-  </data>
-  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
-    <value>294</value>
   </data>
   <data name="UC_cost1.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 78</value>
@@ -395,9 +383,6 @@
   </data>
   <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
-  </data>
-  <data name="&gt;&gt;labelX4.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 22</value>
@@ -441,11 +426,20 @@
   <data name="&gt;&gt;labelX1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="&gt;&gt;FromDate.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
   <data name="&gt;&gt;buttonX6.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;buttonX5.Name" xml:space="preserve">
     <value>buttonX5</value>
+  </data>
+  <data name="&gt;&gt;FromDate.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -470,9 +464,6 @@
   </data>
   <data name="&gt;&gt;ToDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
-    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
   </data>
   <data name="UC_cost1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
@@ -537,6 +528,9 @@
   <data name="&gt;&gt;UC_cost1.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
+  <data name="&gt;&gt;Report_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;Report_btn.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
@@ -546,14 +540,17 @@
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="UC_Catogry1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>
   </data>
   <data name="UC_Acc1.TabIndex" type="System.Int32, mscorlib">
     <value>298</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UC_Acc1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="&gt;&gt;UC_Branch.Name" xml:space="preserve">
     <value>UC_Branch</value>
@@ -600,8 +597,8 @@
   <data name="buttonX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;FromDate.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="UC_Catogry1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;UC_Branch.Type" xml:space="preserve">
     <value>Report_Pro.MyControls.UC_AccBranch, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
@@ -609,14 +606,17 @@
   <data name="buttonX5.TabIndex" type="System.Int32, mscorlib">
     <value>293</value>
   </data>
-  <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
+    <value>294</value>
   </data>
   <data name="UC_cost1.Size" type="System.Drawing.Size, System.Drawing">
     <value>480, 29</value>
   </data>
   <data name="&gt;&gt;chB_1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.CheckBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="UC_cost1.TabIndex" type="System.Int32, mscorlib">
     <value>299</value>
@@ -669,6 +669,9 @@
   <data name="UC_Catogry1.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 115</value>
   </data>
+  <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
   <data name="labelX3.TabIndex" type="System.Int32, mscorlib">
     <value>282</value>
   </data>
@@ -678,8 +681,8 @@
   <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="Report_btn.Text" xml:space="preserve">
+    <value>تقرير </value>
   </data>
   <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
     <value>groupPanel1</value>
@@ -705,11 +708,11 @@
   <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;FromDate.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
+  <data name="&gt;&gt;labelX4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;UC_cost1.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Report_btn.Name" xml:space="preserve">
     <value>Report_btn</value>
@@ -723,14 +726,14 @@
   <data name="UC_Branch.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 5</value>
   </data>
-  <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>980, 156</value>
+  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
   </data>
   <data name="chB_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
-  <data name="&gt;&gt;Report_btn.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="ToDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="buttonX6.Location" type="System.Drawing.Point, System.Drawing">
     <value>1121, 7</value>
@@ -738,17 +741,14 @@
   <data name="Report_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>987, 7</value>
   </data>
-  <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1265, 59</value>
   </data>
   <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

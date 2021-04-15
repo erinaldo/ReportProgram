@@ -356,6 +356,16 @@ namespace Report_Pro.MyControls
                 this.BackColor = Color.Transparent;
             }
         }
+
+        private void txtDescription_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDocument_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

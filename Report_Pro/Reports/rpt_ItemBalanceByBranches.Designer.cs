@@ -763,6 +763,7 @@
             resources.ApplyResources(this.xrTableCell4, "xrTableCell4");
             this.xrTableCell4.Multiline = true;
             this.xrTableCell4.Name = "xrTableCell4";
+            this.xrTableCell4.StylePriority.UseFont = false;
             // 
             // xrTableCell5
             // 
@@ -781,12 +782,14 @@
             resources.ApplyResources(this.xrTableCell16, "xrTableCell16");
             this.xrTableCell16.Multiline = true;
             this.xrTableCell16.Name = "xrTableCell16";
+            this.xrTableCell16.StylePriority.UseFont = false;
             // 
             // xrTableCell24
             // 
             resources.ApplyResources(this.xrTableCell24, "xrTableCell24");
             this.xrTableCell24.Multiline = true;
             this.xrTableCell24.Name = "xrTableCell24";
+            this.xrTableCell24.StylePriority.UseFont = false;
             // 
             // PageFooter
             // 

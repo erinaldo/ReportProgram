@@ -31,6 +31,34 @@ namespace Report_Pro.MyControls
                 t.BackColor = value;
             }
             }
+
+
+
+        public Color labelBackColor
+        {
+            get
+            {
+                return label1.BackColor;
+            }
+            set
+            {
+                label1.BackColor = value;
+            }
+        }
+
+
+        public string lblControl { 
+            get
+            {
+                return label1.Text.ToString();
+            }
+            set
+            {
+               label1.Text = value;
+            }
+        }
+       
+
         private void textBoxX1_TextChanged(object sender, EventArgs e)
         {
 

@@ -36,7 +36,7 @@ namespace Report_Pro.MyControls
 
         private void ID_TextChanged_1(object sender, EventArgs e)
         {
-            get_desc();
+            //get_desc();
         }
 
         private void ID_Enter(object sender, EventArgs e)

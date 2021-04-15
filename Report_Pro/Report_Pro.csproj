@@ -44,6 +44,12 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AccRow">
+      <HintPath>..\..\..\WH 22-9-2020\bin\AccRow.dll</HintPath>
+    </Reference>
+    <Reference Include="AccRow_new">
+      <HintPath>..\..\..\WH 22-9-2020\bin\AccRow_new.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -207,6 +213,7 @@
     <Reference Include="Microsoft.Office.Interop.Outlook, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -367,6 +374,18 @@
     <Compile Include="MyControls\Jor_Acc.Designer.cs">
       <DependentUpon>Jor_Acc.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\JorRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\JorRow.designer.cs">
+      <DependentUpon>JorRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Jor_Row.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Jor_Row.designer.cs">
+      <DependentUpon>Jor_Row.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\mDouble.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -402,12 +421,6 @@
     </Compile>
     <Compile Include="MyControls\JorHead.designer.cs">
       <DependentUpon>JorHead.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MyControls\Jor_Row.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MyControls\Jor_Row.designer.cs">
-      <DependentUpon>Jor_Row.cs</DependentUpon>
     </Compile>
     <Compile Include="MyControls\LoanRow.cs">
       <SubType>UserControl</SubType>
@@ -728,6 +741,12 @@
     <Compile Include="PL\frmSearchAcc.designer.cs">
       <DependentUpon>frmSearchAcc.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmSerch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSerch.Designer.cs">
+      <DependentUpon>frmSerch.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FrmSerchLcInv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -751,6 +770,12 @@
     </Compile>
     <Compile Include="PL\frmStores.designer.cs">
       <DependentUpon>frmStores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Frm_Banks.cs">
       <SubType>Form</SubType>
@@ -1159,7 +1184,28 @@
     <EmbeddedResource Include="MyControls\Jor_Cost.aa.resx">
       <DependentUpon>Jor_Cost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\JorRow.aa.resx">
+      <DependentUpon>JorRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\JorRow.ar.resx">
+      <DependentUpon>JorRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\JorRow.en.resx">
+      <DependentUpon>JorRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\JorRow.resx">
+      <DependentUpon>JorRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Row.aa.resx">
+      <DependentUpon>Jor_Row.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Jor_Row.ar.resx">
+      <DependentUpon>Jor_Row.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Row.en.resx">
+      <DependentUpon>Jor_Row.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Jor_Row.resx">
       <DependentUpon>Jor_Row.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\LoanRow.ar.resx">
@@ -1196,10 +1242,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\JorHead.resx">
       <DependentUpon>JorHead.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyControls\Jor_Row.resx">
-      <DependentUpon>Jor_Row.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\LoanRow.resx">
@@ -1463,6 +1505,9 @@
       <DependentUpon>frmLcs.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmLoan.aa.resx">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmLoan.ar.resx">
       <DependentUpon>frmLoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -1509,6 +1554,9 @@
       <DependentUpon>frmSearchAcc.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSerch.resx">
+      <DependentUpon>frmSerch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FrmSerchLcInv.resx">
       <DependentUpon>FrmSerchLcInv.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1532,6 +1580,9 @@
     <EmbeddedResource Include="PL\frmStores.resx">
       <DependentUpon>frmStores.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Banks.ar.resx">
       <DependentUpon>Frm_Banks.cs</DependentUpon>
@@ -1936,9 +1987,21 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_Preform_Print.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_Preform_Print_Ton.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Preform_Print_Ton.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_PrintInvoices.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_PrintInvoices.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_TotalInventoryByBranch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TotalInventoryByBranch.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_TotalStockByCategory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TotalStockByCategory.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\Supp_AgeReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2772,15 +2835,33 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\rpt_Preform_Print.cs">
+      <DependentUpon>rpt_Preform_Print.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_Preform_Print_Ton.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>rpt_Preform_Print.rpt</DependentUpon>
+      <DependentUpon>rpt_Preform_Print_Ton.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\rpt_PrintInvoices.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rpt_PrintInvoices.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_TotalInventoryByBranch.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TotalInventoryByBranch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_TotalStockByCategory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TotalStockByCategory.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\Supp_AgeReport.cs">

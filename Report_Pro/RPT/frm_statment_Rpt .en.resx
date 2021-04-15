@@ -123,10 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 6</value>
+    <value>162, 4</value>
   </data>
   <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 34</value>
+    <value>97, 23</value>
   </data>
   <data name="buttonX1.Text" xml:space="preserve">
     <value>Report with aging</value>
@@ -135,16 +135,19 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1032, 11</value>
+    <value>688, 8</value>
+  </data>
+  <data name="buttonX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
   </data>
   <data name="Report_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
   <data name="Report_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 6</value>
+    <value>94, 4</value>
   </data>
   <data name="Report_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 34</value>
+    <value>62, 23</value>
   </data>
   <data name="Report_btn.Text" xml:space="preserve">
     <value>Report</value>
@@ -153,13 +156,22 @@
     <value>Top, Left</value>
   </data>
   <data name="buttonX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 6</value>
+    <value>10, 4</value>
   </data>
   <data name="buttonX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 34</value>
+    <value>62, 23</value>
   </data>
   <data name="buttonX6.Text" xml:space="preserve">
     <value>Options</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 40</value>
+  </data>
+  <data name="crystalReportViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 399</value>
   </data>
   <assembly alias="CrystalDecisions.Windows.Forms" name="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
   <data name="crystalReportViewer1.ToolPanelView" type="CrystalDecisions.Windows.Forms.ToolPanelViewType, CrystalDecisions.Windows.Forms">
@@ -169,10 +181,10 @@
     <value />
   </data>
   <data name="UC_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 14</value>
+    <value>75, 10</value>
   </data>
   <data name="UC_Branch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 31</value>
+    <value>321, 22</value>
   </data>
   <data name="UC_Catogry1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
@@ -181,10 +193,10 @@
     <value />
   </data>
   <data name="UC_Catogry1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 122</value>
+    <value>75, 83</value>
   </data>
   <data name="UC_Catogry1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 31</value>
+    <value>321, 22</value>
   </data>
   <data name="UC_cost1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
@@ -193,10 +205,10 @@
     <value />
   </data>
   <data name="UC_cost1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 85</value>
+    <value>75, 58</value>
   </data>
   <data name="UC_cost1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 31</value>
+    <value>321, 22</value>
   </data>
   <data name="UC_Acc1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
@@ -205,19 +217,22 @@
     <value />
   </data>
   <data name="UC_Acc1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 50</value>
+    <value>75, 34</value>
+  </data>
+  <data name="UC_Acc1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
   </data>
   <data name="UC_Acc1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 31</value>
+    <value>321, 22</value>
   </data>
   <data name="labelX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 20</value>
+    <value>32, 14</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
+    <value>40, 17</value>
   </data>
   <data name="labelX5.Text" xml:space="preserve">
     <value>Branch</value>
@@ -226,10 +241,10 @@
     <value>Top, Left</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 127</value>
+    <value>21, 87</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 24</value>
+    <value>49, 17</value>
   </data>
   <data name="labelX4.Text" xml:space="preserve">
     <value>Category</value>
@@ -238,10 +253,10 @@
     <value>Top, Left</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 91</value>
+    <value>8, 62</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 24</value>
+    <value>63, 17</value>
   </data>
   <data name="labelX3.Text" xml:space="preserve">
     <value>Cost Center</value>
@@ -250,10 +265,10 @@
     <value>Top, Left</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 55</value>
+    <value>27, 38</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>45, 17</value>
   </data>
   <data name="labelX6.Text" xml:space="preserve">
     <value>Account</value>
@@ -262,22 +277,28 @@
     <value>Top, Left</value>
   </data>
   <data name="ToDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 160</value>
+    <value>265, 109</value>
+  </data>
+  <data name="ToDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
   </data>
   <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
   <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 160</value>
+    <value>75, 109</value>
+  </data>
+  <data name="FromDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
   </data>
   <data name="labelX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 163</value>
+    <value>214, 112</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>45, 17</value>
   </data>
   <data name="labelX2.Text" xml:space="preserve">
     <value>To Date</value>
@@ -286,10 +307,10 @@
     <value>Top, Left</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 163</value>
+    <value>14, 112</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
+    <value>57, 17</value>
   </data>
   <data name="labelX1.Text" xml:space="preserve">
     <value>From Date</value>
@@ -298,13 +319,25 @@
     <value>Top, Left</value>
   </data>
   <data name="chB_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 198</value>
+    <value>71, 135</value>
   </data>
   <data name="chB_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 33</value>
+    <value>177, 23</value>
   </data>
   <data name="chB_1.Text" xml:space="preserve">
     <value>Without the opening balance</value>
+  </data>
+  <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 166</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>843, 439</value>
   </data>
   <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />

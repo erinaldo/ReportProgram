@@ -237,6 +237,11 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

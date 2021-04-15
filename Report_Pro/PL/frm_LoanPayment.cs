@@ -1,4 +1,4 @@
-﻿using DevExpress.Utils.Filtering.Internal;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -173,11 +173,14 @@ namespace Report_Pro.PL
         {
             PL.frmLoanSearch frm = new PL.frmLoanSearch();
             frm.ShowDialog();
-            txtLoanNo.Text = frm.DGV1.CurrentRow.Cells[2].Value.ToString();
-            txtPaymentNo.Text = frm.DGV1.CurrentRow.Cells[3].Value.ToString();
+            try
+            {
+                txtLoanNo.Text = frm.DGV1.CurrentRow.Cells[2].Value.ToString();
+                txtPaymentNo.Text = frm.DGV1.CurrentRow.Cells[3].Value.ToString();
 
-            getLoanData();
-           
+                getLoanData();
+            }
+            catch { }
         }
 
         private void txtPaymentNo_ValueChanged(object sender, EventArgs e)

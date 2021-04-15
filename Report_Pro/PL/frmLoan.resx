@@ -122,23 +122,20 @@
     <value>Top</value>
   </data>
   <data name="BNew.Text" xml:space="preserve">
-    <value>جديد</value>
+    <value>New</value>
   </data>
   <data name="BSave.Text" xml:space="preserve">
-    <value>حفظ</value>
-  </data>
-  <data name="BEdit.Text" xml:space="preserve">
-    <value>تعديل</value>
+    <value>Save</value>
   </data>
   <data name="BSearch.Text" xml:space="preserve">
-    <value>بحث</value>
+    <value>Search</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BExit.RibbonWordWrap" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="BExit.Text" xml:space="preserve">
-    <value>خروج</value>
+    <value>Exit</value>
   </data>
   <data name="btnStatment.Text" xml:space="preserve">
     <value>Statment</value>
@@ -147,14 +144,8 @@
   <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="ribbonBar1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 53</value>
+    <value>818, 36</value>
   </data>
   <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -178,10 +169,13 @@
     <value>True</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 314</value>
+    <value>27, 230</value>
+  </data>
+  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 209</value>
+    <value>430, 143</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -196,7 +190,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>24</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -205,13 +199,10 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 243</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>16, 181</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 19</value>
+    <value>77, 13</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
@@ -229,34 +220,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="BName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 112</value>
-  </data>
-  <data name="BName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="BName.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
-  </data>
-  <data name="BName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 32</value>
-  </data>
-  <data name="BName.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;BName.Name" xml:space="preserve">
-    <value>BName</value>
-  </data>
-  <data name="&gt;&gt;BName.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BName.Parent" xml:space="preserve">
-    <value>loanPanel</value>
-  </data>
-  <data name="&gt;&gt;BName.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>25</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -265,13 +229,10 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 119</value>
-  </data>
-  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>62, 96</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 19</value>
+    <value>30, 13</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
@@ -289,7 +250,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>35</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -298,13 +259,10 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 205</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>21, 155</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 19</value>
+    <value>72, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
@@ -322,19 +280,355 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>27</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 18</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="L_StartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 15</value>
+  </data>
+  <data name="dateTimeInput1.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="dateTimeInput1.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="dateTimeInput1.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="dateTimeInput1.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
+  <data name="L_StartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="L_StartDate.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="&gt;&gt;L_StartDate.Name" xml:space="preserve">
+    <value>L_StartDate</value>
+  </data>
+  <data name="&gt;&gt;L_StartDate.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DateTimeAdv.DateTimeInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;L_StartDate.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;L_StartDate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 152</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>128</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Daily Entry Date</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="jorDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 148</value>
+  </data>
+  <data name="jorDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="jorDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="jorDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="jorDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
+  <data name="jorDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="jorDate.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="&gt;&gt;jorDate.Name" xml:space="preserve">
+    <value>jorDate</value>
+  </data>
+  <data name="&gt;&gt;jorDate.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DateTimeAdv.DateTimeInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;jorDate.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;jorDate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 378</value>
+  </data>
+  <data name="txtTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 20</value>
+  </data>
+  <data name="txtTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.Name" xml:space="preserve">
+    <value>txtTotal</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 99</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Sanad No</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>514, 73</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Daily Entry No</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtJorSer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtJorSer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 69</value>
+  </data>
+  <data name="txtJorSer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="txtJorSer.TabIndex" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.Name" xml:space="preserve">
+    <value>txtJorSer</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtSanadSer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtSanadSer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 95</value>
+  </data>
+  <data name="txtSanadSer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="txtSanadSer.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.Name" xml:space="preserve">
+    <value>txtSanadSer</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtYear.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtYear.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="txtYear.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 42</value>
+  </data>
+  <data name="txtYear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="txtYear.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="txtYear.Text" xml:space="preserve">
+    <value>cy</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Name" xml:space="preserve">
+    <value>txtYear</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtYear.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;txtYear.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnPrintJor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPrintJor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 216</value>
+  </data>
+  <data name="btnPrintJor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 29</value>
+  </data>
+  <data name="btnPrintJor.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="btnPrintJor.Text" xml:space="preserve">
+    <value>Create Daily Entry</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.Name" xml:space="preserve">
+    <value>btnPrintJor</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnCreateJor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCreateJor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 181</value>
+  </data>
+  <data name="btnCreateJor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 29</value>
+  </data>
+  <data name="btnCreateJor.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="btnCreateJor.Text" xml:space="preserve">
+    <value>Create Daily Entry</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.Name" xml:space="preserve">
+    <value>btnCreateJor</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>603, 284</value>
-  </data>
-  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>402, 209</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 29</value>
+    <value>50, 20</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -355,19 +649,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>12</value>
   </data>
   <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 284</value>
-  </data>
-  <data name="label26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>291, 209</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 29</value>
+    <value>110, 20</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -388,19 +679,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>13</value>
   </data>
   <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 284</value>
-  </data>
-  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>180, 209</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 29</value>
+    <value>110, 20</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -421,19 +709,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>14</value>
   </data>
   <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 284</value>
-  </data>
-  <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>69, 209</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 29</value>
+    <value>110, 20</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -454,19 +739,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>15</value>
   </data>
   <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 284</value>
-  </data>
-  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>28, 209</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 29</value>
+    <value>40, 20</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -487,19 +769,19 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>16</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 13</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 24</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 19</value>
+    <value>18, 13</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -517,13 +799,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>17</value>
   </data>
   <data name="txtLoanId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 7</value>
+    <value>98, 20</value>
+  </data>
+  <data name="txtLoanId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtLoanId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 27</value>
+    <value>50, 20</value>
   </data>
   <data name="txtLoanId.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -538,13 +823,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtLoanId.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>18</value>
   </data>
   <data name="txtIntrestRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 39</value>
+    <value>354, 42</value>
+  </data>
+  <data name="txtIntrestRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtIntrestRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
+    <value>64, 20</value>
   </data>
   <data name="txtIntrestRate.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -559,16 +847,19 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtIntrestRate.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>19</value>
   </data>
   <data name="labelX5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 42</value>
+    <value>285, 44</value>
+  </data>
+  <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 24</value>
+    <value>64, 17</value>
   </data>
   <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -586,16 +877,13 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>20</value>
   </data>
   <data name="txtLoanRefrance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 237</value>
-  </data>
-  <data name="txtLoanRefrance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>98, 177</value>
   </data>
   <data name="txtLoanRefrance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>321, 20</value>
   </data>
   <data name="txtLoanRefrance.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -610,16 +898,19 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtLoanRefrance.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>21</value>
   </data>
   <data name="labelX4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 78</value>
+    <value>269, 68</value>
+  </data>
+  <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 24</value>
+    <value>81, 17</value>
   </data>
   <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -637,13 +928,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>22</value>
   </data>
   <data name="NoOfPayments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 75</value>
+    <value>354, 66</value>
+  </data>
+  <data name="NoOfPayments.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="NoOfPayments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
+    <value>64, 20</value>
   </data>
   <data name="NoOfPayments.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -658,7 +952,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;NoOfPayments.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>23</value>
   </data>
   <data name="txtLoanPurpose.Items" xml:space="preserve">
     <value>lc Pyment</value>
@@ -670,13 +964,10 @@
     <value>Long Tearm Loan</value>
   </data>
   <data name="txtLoanPurpose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 199</value>
-  </data>
-  <data name="txtLoanPurpose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>98, 151</value>
   </data>
   <data name="txtLoanPurpose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>321, 21</value>
   </data>
   <data name="txtLoanPurpose.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -691,7 +982,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtLoanPurpose.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>26</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -700,13 +991,10 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 81</value>
-  </data>
-  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>22, 70</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 19</value>
+    <value>70, 13</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -724,7 +1012,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>28</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -733,13 +1021,10 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 45</value>
-  </data>
-  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>42, 46</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 19</value>
+    <value>50, 13</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -757,7 +1042,7 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>29</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -766,13 +1051,10 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 160</value>
-  </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>21, 124</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 19</value>
+    <value>72, 13</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -790,19 +1072,19 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>30</value>
   </data>
   <data name="txtLoanAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 153</value>
+    <value>98, 120</value>
   </data>
   <data name="txtLoanAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="txtLoanAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="txtLoanAcc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 32</value>
+    <value>321, 23</value>
   </data>
   <data name="txtLoanAcc.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -817,13 +1099,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtLoanAcc.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>31</value>
   </data>
   <data name="txtLoanNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 39</value>
+    <value>97, 42</value>
+  </data>
+  <data name="txtLoanNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtLoanNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 27</value>
+    <value>139, 20</value>
   </data>
   <data name="txtLoanNo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -838,13 +1123,16 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtLoanNo.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>32</value>
   </data>
   <data name="txtLoanValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 75</value>
+    <value>97, 66</value>
+  </data>
+  <data name="txtLoanValue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtLoanValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 27</value>
+    <value>139, 20</value>
   </data>
   <data name="txtLoanValue.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -859,7 +1147,34 @@
     <value>loanPanel</value>
   </data>
   <data name="&gt;&gt;txtLoanValue.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>33</value>
+  </data>
+  <data name="BName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 92</value>
+  </data>
+  <data name="BName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="BName.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="BName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 23</value>
+  </data>
+  <data name="BName.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;BName.Name" xml:space="preserve">
+    <value>BName</value>
+  </data>
+  <data name="&gt;&gt;BName.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BName.Parent" xml:space="preserve">
+    <value>loanPanel</value>
+  </data>
+  <data name="&gt;&gt;BName.ZOrder" xml:space="preserve">
+    <value>34</value>
   </data>
   <data name="loanPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -867,8 +1182,11 @@
   <data name="loanPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="loanPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="loanPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 605</value>
+    <value>818, 414</value>
   </data>
   <data name="loanPanel.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -889,13 +1207,10 @@
     <value>Fill</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 53</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>0, 36</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 605</value>
+    <value>818, 414</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -916,13 +1231,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 19</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>730, 658</value>
+    <value>818, 450</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>frmLoan</value>
@@ -937,12 +1252,6 @@
     <value>BSave</value>
   </data>
   <data name="&gt;&gt;BSave.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;BEdit.Name" xml:space="preserve">
-    <value>BEdit</value>
-  </data>
-  <data name="&gt;&gt;BEdit.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;BSearch.Name" xml:space="preserve">

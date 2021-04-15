@@ -15,15 +15,24 @@ namespace Report_Pro.MyControls
         int clic_index;
         int txtRemove = 0;
         public jorDebit()
+
         {
             InitializeComponent();
         }
  
                 private void UserControl2_Load(object sender, EventArgs e)
         {
-          MyControls.Jor_Row r = new MyControls.Jor_Row();
-            flowLayoutPanel1.Controls.Add(r);
-            r.ser_.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+            //foreach (Jor_Row r in flowLayoutPanel1.Controls)
+            //{
+
+                MyControls.Jor_Row r = new MyControls.Jor_Row();
+                r.Width = flowLayoutPanel1.Width;
+                flowLayoutPanel1.Controls.Add(r);
+              //  flowLayoutPanel1.SuspendLayout();
+
+
+                r.ser_.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
+            //}
 
 
             r.KeyDown += r_KeyDown;
@@ -38,9 +47,6 @@ namespace Report_Pro.MyControls
             flowLayoutPanel1.AutoScroll = true;
 
 
-            groupPanel1.AutoScroll = false;
-            groupPanel1.VerticalScroll.Enabled = false;
-            groupPanel1.AutoScroll = true;
 
         }
 
@@ -52,12 +58,12 @@ namespace Report_Pro.MyControls
             base.OnKeyUp(e);
         }
 
-        private void r_Click(object sender, EventArgs e)
+        public void r_Click(object sender, EventArgs e)
         {
             base.OnClick(e);
         }
 
-        private void r_DoubleClick(object sender, EventArgs e)
+        public void r_DoubleClick(object sender, EventArgs e)
         {
             base.OnDoubleClick(e);
         }
@@ -93,7 +99,7 @@ namespace Report_Pro.MyControls
             //gettotDb();
         }
 
-        private void gettotDb()
+        public void gettotDb()
         {
             double totDb = 0;
             double totCr = 0;
@@ -144,6 +150,7 @@ namespace Report_Pro.MyControls
 
                         MyControls.Jor_Row r  = new MyControls.Jor_Row();
                         flowLayoutPanel1.Controls.Add(r);
+                        r.Width = flowLayoutPanel1.Width;
                         r.ser_.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
 
                         r.KeyDown += r_KeyDown;
@@ -156,7 +163,7 @@ namespace Report_Pro.MyControls
                     else if (flowLayoutPanel1.Controls.GetChildIndex(JRow) == index + 1)
                     {
 
-                        JRow.txtDb.d.Focus();
+                        JRow.txtDb.Focus();
                     }
                     else { }
                 }
@@ -186,7 +193,7 @@ namespace Report_Pro.MyControls
                 if (flowLayoutPanel1.Controls.GetChildIndex(ctr) == clic_index + 1)
                     {
                         ctr.txtDescription.t.Text = txtdesc;
-                    ctr.txtDescription.t.Focus();
+                    ctr.txtDescription.Focus();
                     }
                 }
             }
@@ -225,7 +232,7 @@ namespace Report_Pro.MyControls
                         date_ = ctr.txtDocDate.Text;
                         vatID = ctr.txtVatNo.t.Text;
                         acc2 = ctr.txtAcc_2.t.Text;
-                        balnce_ = ctr.txtBalance.Text;
+                        balnce_ = ctr.txtBalance.t.Text;
 
 
                     }
@@ -233,6 +240,7 @@ namespace Report_Pro.MyControls
 
                 MyControls.Jor_Row r = new MyControls.Jor_Row();
                 flowLayoutPanel1.Controls.Add(r);
+                r.Width = flowLayoutPanel1.Width;
                 flowLayoutPanel1.Controls.SetChildIndex(r, clic_index + 1);
 
                 r.txtDb.d.Value = db;
@@ -245,7 +253,7 @@ namespace Report_Pro.MyControls
                 r.txtDocDate.Text = date_;
                 r.txtVatNo.t.Text = vatID;
                 r.txtAcc_2.t.Text = acc2;
-                r.txtBalance.Text = balnce_;
+                r.txtBalance.t.Text = balnce_;
                 r.txtDb.Focus();
 
                 r.KeyDown += r_KeyDown;
@@ -316,7 +324,7 @@ namespace Report_Pro.MyControls
             {
                 MyControls.Jor_Row r = new MyControls.Jor_Row();
                 flowLayoutPanel1.Controls.Add(r);
-
+                r.Width = flowLayoutPanel1.Width;
                 r.KeyDown += r_KeyDown;
                 r.KeyUp += r_KeyUP;
                 r.Click += r_Click;
@@ -330,6 +338,7 @@ namespace Report_Pro.MyControls
                 r.ser_.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
 
             }
+            gettotDb();
         }
 
         private void buttonX1_Click(object sender, EventArgs e)
@@ -342,27 +351,12 @@ namespace Report_Pro.MyControls
             catch { }
         }
 
-        private void txtTotalCr_ValueChanged(object sender, EventArgs e)
+        private void flowLayoutPanel1_ControlAdded(object sender, ControlEventArgs e)
         {
 
         }
 
-        private void txtTotalDb_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelX10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDiff_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelX2_Click(object sender, EventArgs e)
+        private void jor_Row1_Load(object sender, EventArgs e)
         {
 
         }

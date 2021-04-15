@@ -844,7 +844,7 @@ namespace Report_Pro.PL
 
         private void buttonItem6_Click_1(object sender, EventArgs e)
         {
-            openForm(new PL.Form1(), FormWindowState.Normal, 0);
+            openForm(new PL.frmTest(), FormWindowState.Maximized, 0);
         }
 
         private void TV1_AfterSelect(object sender, TreeViewEventArgs e)

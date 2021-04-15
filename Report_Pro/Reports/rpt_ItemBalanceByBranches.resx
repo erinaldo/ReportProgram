@@ -819,6 +819,9 @@
   <data name="xrTableCell4.Dpi" type="System.Single, mscorlib">
     <value>254</value>
   </data>
+  <data name="xrTableCell4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.23pt, style=Bold</value>
+  </data>
   <data name="xrTableCell4.Text" xml:space="preserve">
     <value>Balance Weight</value>
   </data>
@@ -846,6 +849,9 @@
   <data name="xrTableCell16.Dpi" type="System.Single, mscorlib">
     <value>254</value>
   </data>
+  <data name="xrTableCell16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 7.06pt, style=Bold</value>
+  </data>
   <data name="xrTableCell16.Text" xml:space="preserve">
     <value>Avg. Sales /Month</value>
   </data>
@@ -854,6 +860,9 @@
   </data>
   <data name="xrTableCell24.Dpi" type="System.Single, mscorlib">
     <value>254</value>
+  </data>
+  <data name="xrTableCell24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.37pt, style=Bold</value>
   </data>
   <data name="xrTableCell24.Text" xml:space="preserve">
     <value>Balance Period</value>

@@ -79,6 +79,7 @@ namespace Report_Pro.MyControls
                     ID.Clear();
                     Desc.Clear();
                 }
+
             }
             catch { }
 
@@ -92,8 +93,13 @@ namespace Report_Pro.MyControls
 
         private void ID_TextChanged(object sender, EventArgs e)
         {
-            get_desc();
-            OnLoad(e);
+            //get_desc();
+            //OnLoad(e);
+        }
+
+        private void Jor_Acc_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

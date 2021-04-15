@@ -49,6 +49,7 @@
             this.btnAttachment = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.btnPrint = new DevComponents.DotNetBar.ButtonItem();
+            this.btnPrint_1 = new DevComponents.DotNetBar.ButtonItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Cancl = new DevComponents.DotNetBar.ButtonX();
             this.btn_Srearch = new DevComponents.DotNetBar.ButtonX();
@@ -137,6 +138,9 @@
             this.tabDelevery = new DevComponents.DotNetBar.TabItem(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.inv_Grid1 = new Report_Pro.MyControls.Inv_Grid();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Factory_Paper = new System.Windows.Forms.RadioButton();
+            this.Company_Paper = new System.Windows.Forms.RadioButton();
             this.ribbonBar1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate)).BeginInit();
@@ -153,6 +157,7 @@
             this.tabControlPanel2.SuspendLayout();
             this.tabControlPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label9
@@ -162,7 +167,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label9.Location = new System.Drawing.Point(1174, 10);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label9.Margin = new System.Windows.Forms.Padding(2);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 13);
             this.label9.TabIndex = 21;
@@ -175,7 +180,7 @@
             this.lblAccept.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblAccept.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblAccept.Location = new System.Drawing.Point(1029, 10);
-            this.lblAccept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblAccept.Margin = new System.Windows.Forms.Padding(2);
             this.lblAccept.Name = "lblAccept";
             this.lblAccept.Size = new System.Drawing.Size(63, 13);
             this.lblAccept.TabIndex = 19;
@@ -185,7 +190,7 @@
             // 
             this.txtCurrency.FormattingEnabled = true;
             this.txtCurrency.Location = new System.Drawing.Point(1104, 31);
-            this.txtCurrency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCurrency.Margin = new System.Windows.Forms.Padding(2);
             this.txtCurrency.Name = "txtCurrency";
             this.txtCurrency.Size = new System.Drawing.Size(99, 21);
             this.txtCurrency.TabIndex = 15;
@@ -199,7 +204,7 @@
             this.lblExpiryDate.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblExpiryDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblExpiryDate.Location = new System.Drawing.Point(1029, 107);
-            this.lblExpiryDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblExpiryDate.Margin = new System.Windows.Forms.Padding(2);
             this.lblExpiryDate.Name = "lblExpiryDate";
             this.lblExpiryDate.Size = new System.Drawing.Size(63, 13);
             this.lblExpiryDate.TabIndex = 13;
@@ -212,7 +217,7 @@
             this.lblShipDate.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblShipDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblShipDate.Location = new System.Drawing.Point(1039, 132);
-            this.lblShipDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblShipDate.Margin = new System.Windows.Forms.Padding(2);
             this.lblShipDate.Name = "lblShipDate";
             this.lblShipDate.Size = new System.Drawing.Size(53, 13);
             this.lblShipDate.TabIndex = 11;
@@ -225,7 +230,7 @@
             this.lblOpenDate.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblOpenDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblOpenDate.Location = new System.Drawing.Point(1041, 83);
-            this.lblOpenDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblOpenDate.Margin = new System.Windows.Forms.Padding(2);
             this.lblOpenDate.Name = "lblOpenDate";
             this.lblOpenDate.Size = new System.Drawing.Size(53, 13);
             this.lblOpenDate.TabIndex = 9;
@@ -234,7 +239,7 @@
             // txtAmount
             // 
             this.txtAmount.Location = new System.Drawing.Point(124, 163);
-            this.txtAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(2);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(151, 20);
             this.txtAmount.TabIndex = 8;
@@ -248,7 +253,7 @@
             this.lblValue.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblValue.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblValue.Location = new System.Drawing.Point(70, 167);
-            this.lblValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblValue.Margin = new System.Windows.Forms.Padding(2);
             this.lblValue.Name = "lblValue";
             this.lblValue.Size = new System.Drawing.Size(44, 13);
             this.lblValue.TabIndex = 7;
@@ -261,7 +266,7 @@
             this.lblCurency.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblCurency.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblCurency.Location = new System.Drawing.Point(1045, 34);
-            this.lblCurency.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblCurency.Margin = new System.Windows.Forms.Padding(2);
             this.lblCurency.Name = "lblCurency";
             this.lblCurency.Size = new System.Drawing.Size(51, 13);
             this.lblCurency.TabIndex = 5;
@@ -274,7 +279,7 @@
             this.lblNo.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblNo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblNo.Location = new System.Drawing.Point(81, 93);
-            this.lblNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblNo.Margin = new System.Windows.Forms.Padding(2);
             this.lblNo.Name = "lblNo";
             this.lblNo.Size = new System.Drawing.Size(33, 13);
             this.lblNo.TabIndex = 1;
@@ -283,7 +288,7 @@
             // txtLcNo
             // 
             this.txtLcNo.Location = new System.Drawing.Point(124, 90);
-            this.txtLcNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLcNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtLcNo.Name = "txtLcNo";
             this.txtLcNo.Size = new System.Drawing.Size(325, 20);
             this.txtLcNo.TabIndex = 0;
@@ -302,7 +307,8 @@
             this.BExit,
             this.btnAttachment,
             this.buttonItem2,
-            this.btnPrint});
+            this.btnPrint,
+            this.btnPrint_1});
             this.ribbonBar1.Location = new System.Drawing.Point(0, 0);
             this.ribbonBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonBar1.Name = "ribbonBar1";
@@ -394,8 +400,15 @@
             this.btnPrint.ImageFixedSize = new System.Drawing.Size(16, 16);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.SubItemsExpandWidth = 14;
-            this.btnPrint.Text = "Print Form";
+            this.btnPrint.Text = "Print Ton Preforma";
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // btnPrint_1
+            // 
+            this.btnPrint_1.Name = "btnPrint_1";
+            this.btnPrint_1.SubItemsExpandWidth = 14;
+            this.btnPrint_1.Text = "Print Pieces Preforma";
+            this.btnPrint_1.Click += new System.EventHandler(this.btnPrint_1_Click);
             // 
             // groupBox1
             // 
@@ -407,9 +420,9 @@
             this.groupBox1.Controls.Add(this.txtsearch);
             this.groupBox1.Controls.Add(this.labelX60);
             this.groupBox1.Location = new System.Drawing.Point(207, 32);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(266, 90);
             this.groupBox1.TabIndex = 126;
             this.groupBox1.TabStop = false;
@@ -420,7 +433,7 @@
             this.btn_Cancl.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_Cancl.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn_Cancl.Location = new System.Drawing.Point(178, 41);
-            this.btn_Cancl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Cancl.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Cancl.Name = "btn_Cancl";
             this.btn_Cancl.Size = new System.Drawing.Size(63, 21);
             this.btn_Cancl.TabIndex = 138;
@@ -432,7 +445,7 @@
             this.btn_Srearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_Srearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btn_Srearch.Location = new System.Drawing.Point(178, 15);
-            this.btn_Srearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Srearch.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Srearch.Name = "btn_Srearch";
             this.btn_Srearch.Size = new System.Drawing.Size(63, 21);
             this.btn_Srearch.TabIndex = 137;
@@ -443,7 +456,7 @@
             // 
             this.labelX5.AutoSize = true;
             this.labelX5.Location = new System.Drawing.Point(33, 44);
-            this.labelX5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(2);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(28, 17);
             this.labelX5.TabIndex = 133;
@@ -455,7 +468,7 @@
             this.comboBox1.Font = new System.Drawing.Font("Tahoma", 8F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(69, 42);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(98, 21);
             this.comboBox1.TabIndex = 132;
@@ -467,7 +480,7 @@
             // 
             this.txtsearch.Border.Class = "TextBoxBorder";
             this.txtsearch.Location = new System.Drawing.Point(69, 17);
-            this.txtsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(98, 20);
             this.txtsearch.TabIndex = 128;
@@ -477,7 +490,7 @@
             // 
             this.labelX60.AutoSize = true;
             this.labelX60.Location = new System.Drawing.Point(16, 19);
-            this.labelX60.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelX60.Margin = new System.Windows.Forms.Padding(2);
             this.labelX60.Name = "labelX60";
             this.labelX60.Size = new System.Drawing.Size(45, 17);
             this.labelX60.TabIndex = 129;
@@ -491,7 +504,7 @@
             this.label18.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label18.Location = new System.Drawing.Point(450, 78);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label18.Margin = new System.Windows.Forms.Padding(2);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(82, 13);
             this.label18.TabIndex = 296;
@@ -500,7 +513,7 @@
             // txtCragoNote2
             // 
             this.txtCragoNote2.Location = new System.Drawing.Point(544, 75);
-            this.txtCragoNote2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCragoNote2.Margin = new System.Windows.Forms.Padding(2);
             this.txtCragoNote2.Name = "txtCragoNote2";
             this.txtCragoNote2.Size = new System.Drawing.Size(335, 20);
             this.txtCragoNote2.TabIndex = 297;
@@ -512,7 +525,7 @@
             this.label12.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(450, 55);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label12.Margin = new System.Windows.Forms.Padding(2);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 13);
             this.label12.TabIndex = 294;
@@ -521,7 +534,7 @@
             // txtCragoNote1
             // 
             this.txtCragoNote1.Location = new System.Drawing.Point(544, 52);
-            this.txtCragoNote1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCragoNote1.Margin = new System.Windows.Forms.Padding(2);
             this.txtCragoNote1.Name = "txtCragoNote1";
             this.txtCragoNote1.Size = new System.Drawing.Size(335, 20);
             this.txtCragoNote1.TabIndex = 295;
@@ -533,7 +546,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label10.Location = new System.Drawing.Point(16, 32);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label10.Margin = new System.Windows.Forms.Padding(2);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 13);
             this.label10.TabIndex = 292;
@@ -543,7 +556,7 @@
             // 
             this.txtCrago_Method.FormattingEnabled = true;
             this.txtCrago_Method.Location = new System.Drawing.Point(110, 29);
-            this.txtCrago_Method.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrago_Method.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrago_Method.Name = "txtCrago_Method";
             this.txtCrago_Method.Size = new System.Drawing.Size(295, 21);
             this.txtCrago_Method.TabIndex = 293;
@@ -555,7 +568,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label8.Location = new System.Drawing.Point(11, 78);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label8.Margin = new System.Windows.Forms.Padding(2);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(89, 13);
             this.label8.TabIndex = 290;
@@ -564,7 +577,7 @@
             // txtCrago_Media
             // 
             this.txtCrago_Media.Location = new System.Drawing.Point(110, 75);
-            this.txtCrago_Media.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrago_Media.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrago_Media.Name = "txtCrago_Media";
             this.txtCrago_Media.Size = new System.Drawing.Size(319, 20);
             this.txtCrago_Media.TabIndex = 291;
@@ -576,7 +589,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label7.Location = new System.Drawing.Point(34, 55);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label7.Margin = new System.Windows.Forms.Padding(2);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 13);
             this.label7.TabIndex = 288;
@@ -585,7 +598,7 @@
             // txtCrago_Port
             // 
             this.txtCrago_Port.Location = new System.Drawing.Point(110, 52);
-            this.txtCrago_Port.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCrago_Port.Margin = new System.Windows.Forms.Padding(2);
             this.txtCrago_Port.Name = "txtCrago_Port";
             this.txtCrago_Port.Size = new System.Drawing.Size(319, 20);
             this.txtCrago_Port.TabIndex = 289;
@@ -626,7 +639,7 @@
             // 
             this.Doc_Type.AutoSize = true;
             this.Doc_Type.BackColor = System.Drawing.Color.Transparent;
-            this.Doc_Type.Location = new System.Drawing.Point(1478, 89);
+            this.Doc_Type.Location = new System.Drawing.Point(1369, 51);
             this.Doc_Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Doc_Type.Name = "Doc_Type";
             this.Doc_Type.Size = new System.Drawing.Size(26, 13);
@@ -636,7 +649,7 @@
             // txtSuppVAT
             // 
             this.txtSuppVAT.Location = new System.Drawing.Point(328, 66);
-            this.txtSuppVAT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSuppVAT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSuppVAT.Name = "txtSuppVAT";
             this.txtSuppVAT.Size = new System.Drawing.Size(144, 20);
             this.txtSuppVAT.TabIndex = 136;
@@ -644,7 +657,7 @@
             // txtSuppEmail
             // 
             this.txtSuppEmail.Location = new System.Drawing.Point(117, 41);
-            this.txtSuppEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSuppEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtSuppEmail.Name = "txtSuppEmail";
             this.txtSuppEmail.Size = new System.Drawing.Size(356, 20);
             this.txtSuppEmail.TabIndex = 134;
@@ -652,7 +665,7 @@
             // txtSuppContact
             // 
             this.txtSuppContact.Location = new System.Drawing.Point(117, 18);
-            this.txtSuppContact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSuppContact.Margin = new System.Windows.Forms.Padding(2);
             this.txtSuppContact.Name = "txtSuppContact";
             this.txtSuppContact.Size = new System.Drawing.Size(356, 20);
             this.txtSuppContact.TabIndex = 133;
@@ -660,7 +673,7 @@
             // txtSuppPhone
             // 
             this.txtSuppPhone.Location = new System.Drawing.Point(117, 64);
-            this.txtSuppPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSuppPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtSuppPhone.Name = "txtSuppPhone";
             this.txtSuppPhone.Size = new System.Drawing.Size(144, 20);
             this.txtSuppPhone.TabIndex = 132;
@@ -672,7 +685,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(75, 44);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label5.Margin = new System.Windows.Forms.Padding(2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 131;
@@ -685,7 +698,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(72, 67);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label4.Margin = new System.Windows.Forms.Padding(2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 130;
@@ -698,7 +711,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(66, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 129;
@@ -711,7 +724,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(303, 11);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label2.Margin = new System.Windows.Forms.Padding(2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 128;
@@ -727,7 +740,7 @@
             this.txtDate.ButtonDropDown.Visible = true;
             this.txtDate.Enabled = false;
             this.txtDate.Location = new System.Drawing.Point(342, 7);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(2);
             // 
             // 
             // 
@@ -768,7 +781,7 @@
             this.label26.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label26.Location = new System.Drawing.Point(96, 11);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label26.Margin = new System.Windows.Forms.Padding(2);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(18, 13);
             this.label26.TabIndex = 93;
@@ -782,7 +795,7 @@
             this.txtId.Border.Class = "TextBoxBorder";
             this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(124, 7);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(106, 20);
             this.txtId.TabIndex = 92;
@@ -794,7 +807,7 @@
             this.label24.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label24.Location = new System.Drawing.Point(66, 90);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label24.Margin = new System.Windows.Forms.Padding(2);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(46, 13);
             this.label24.TabIndex = 91;
@@ -807,7 +820,7 @@
             // 
             this.txtAddress.Border.Class = "TextBoxBorder";
             this.txtAddress.Location = new System.Drawing.Point(117, 87);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(355, 67);
@@ -822,7 +835,7 @@
             this.txtProformaDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.txtProformaDate.ButtonDropDown.Visible = true;
             this.txtProformaDate.Location = new System.Drawing.Point(914, 137);
-            this.txtProformaDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProformaDate.Margin = new System.Windows.Forms.Padding(2);
             // 
             // 
             // 
@@ -863,7 +876,7 @@
             this.label21.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label21.Location = new System.Drawing.Point(818, 141);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label21.Margin = new System.Windows.Forms.Padding(2);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 13);
             this.label21.TabIndex = 86;
@@ -876,7 +889,7 @@
             this.label20.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label20.Location = new System.Drawing.Point(539, 141);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label20.Margin = new System.Windows.Forms.Padding(2);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(55, 13);
             this.label20.TabIndex = 84;
@@ -885,7 +898,7 @@
             // txtProforma
             // 
             this.txtProforma.Location = new System.Drawing.Point(603, 137);
-            this.txtProforma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProforma.Margin = new System.Windows.Forms.Padding(2);
             this.txtProforma.Name = "txtProforma";
             this.txtProforma.Size = new System.Drawing.Size(198, 20);
             this.txtProforma.TabIndex = 85;
@@ -897,7 +910,7 @@
             this.label19.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label19.Location = new System.Drawing.Point(543, 116);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label19.Margin = new System.Windows.Forms.Padding(2);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(51, 13);
             this.label19.TabIndex = 79;
@@ -906,7 +919,7 @@
             // txtFactory
             // 
             this.txtFactory.Location = new System.Drawing.Point(603, 113);
-            this.txtFactory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFactory.Margin = new System.Windows.Forms.Padding(2);
             this.txtFactory.Name = "txtFactory";
             this.txtFactory.Size = new System.Drawing.Size(325, 20);
             this.txtFactory.TabIndex = 80;
@@ -918,7 +931,7 @@
             this.label15.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label15.Location = new System.Drawing.Point(465, 32);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label15.Margin = new System.Windows.Forms.Padding(2);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 13);
             this.label15.TabIndex = 70;
@@ -928,7 +941,7 @@
             // 
             this.txtArivePort.FormattingEnabled = true;
             this.txtArivePort.Location = new System.Drawing.Point(544, 29);
-            this.txtArivePort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtArivePort.Margin = new System.Windows.Forms.Padding(2);
             this.txtArivePort.Name = "txtArivePort";
             this.txtArivePort.Size = new System.Drawing.Size(311, 21);
             this.txtArivePort.TabIndex = 71;
@@ -940,7 +953,7 @@
             this.label14.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label14.Location = new System.Drawing.Point(559, 92);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label14.Margin = new System.Windows.Forms.Padding(2);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(35, 13);
             this.label14.TabIndex = 68;
@@ -950,7 +963,7 @@
             // 
             this.txtRegion.FormattingEnabled = true;
             this.txtRegion.Location = new System.Drawing.Point(603, 89);
-            this.txtRegion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRegion.Margin = new System.Windows.Forms.Padding(2);
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Size = new System.Drawing.Size(325, 21);
             this.txtRegion.TabIndex = 69;
@@ -964,7 +977,7 @@
             this.LShipDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.LShipDate.ButtonDropDown.Visible = true;
             this.LShipDate.Location = new System.Drawing.Point(1105, 128);
-            this.LShipDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LShipDate.Margin = new System.Windows.Forms.Padding(2);
             // 
             // 
             // 
@@ -1007,7 +1020,7 @@
             this.ExpiryDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.ExpiryDate.ButtonDropDown.Visible = true;
             this.ExpiryDate.Location = new System.Drawing.Point(1105, 104);
-            this.ExpiryDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ExpiryDate.Margin = new System.Windows.Forms.Padding(2);
             // 
             // 
             // 
@@ -1051,7 +1064,7 @@
             this.OpenDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.OpenDate.ButtonDropDown.Visible = true;
             this.OpenDate.Location = new System.Drawing.Point(1105, 80);
-            this.OpenDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OpenDate.Margin = new System.Windows.Forms.Padding(2);
             // 
             // 
             // 
@@ -1094,7 +1107,7 @@
             this.txtAddValue.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtAddValue.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtAddValue.Location = new System.Drawing.Point(1104, 55);
-            this.txtAddValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddValue.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddValue.Name = "txtAddValue";
             this.txtAddValue.Size = new System.Drawing.Size(51, 20);
             this.txtAddValue.TabIndex = 64;
@@ -1107,7 +1120,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(1159, 58);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label13.Margin = new System.Windows.Forms.Padding(2);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(18, 13);
             this.label13.TabIndex = 63;
@@ -1120,7 +1133,7 @@
             this.lblSupplier.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblSupplier.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblSupplier.Location = new System.Drawing.Point(69, 67);
-            this.lblSupplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.lblSupplier.Name = "lblSupplier";
             this.lblSupplier.Size = new System.Drawing.Size(45, 13);
             this.lblSupplier.TabIndex = 42;
@@ -1133,7 +1146,7 @@
             this.lblMatrial.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblMatrial.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblMatrial.Location = new System.Drawing.Point(64, 118);
-            this.lblMatrial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblMatrial.Margin = new System.Windows.Forms.Padding(2);
             this.lblMatrial.Name = "lblMatrial";
             this.lblMatrial.Size = new System.Drawing.Size(50, 13);
             this.lblMatrial.TabIndex = 36;
@@ -1142,7 +1155,7 @@
             // txtMatrails
             // 
             this.txtMatrails.Location = new System.Drawing.Point(124, 115);
-            this.txtMatrails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMatrails.Margin = new System.Windows.Forms.Padding(2);
             this.txtMatrails.Name = "txtMatrails";
             this.txtMatrails.Size = new System.Drawing.Size(325, 20);
             this.txtMatrails.TabIndex = 37;
@@ -1154,7 +1167,7 @@
             this.lblQty.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblQty.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblQty.Location = new System.Drawing.Point(65, 142);
-            this.lblQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblQty.Margin = new System.Windows.Forms.Padding(2);
             this.lblQty.Name = "lblQty";
             this.lblQty.Size = new System.Drawing.Size(49, 13);
             this.lblQty.TabIndex = 34;
@@ -1163,7 +1176,7 @@
             // txtQty
             // 
             this.txtQty.Location = new System.Drawing.Point(124, 139);
-            this.txtQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQty.Margin = new System.Windows.Forms.Padding(2);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(151, 20);
             this.txtQty.TabIndex = 35;
@@ -1182,7 +1195,7 @@
             this.txtRate.FreeTextEntryMode = true;
             this.txtRate.Increment = 1D;
             this.txtRate.Location = new System.Drawing.Point(1206, 31);
-            this.txtRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRate.Margin = new System.Windows.Forms.Padding(2);
             this.txtRate.Name = "txtRate";
             this.txtRate.Size = new System.Drawing.Size(99, 20);
             this.txtRate.TabIndex = 31;
@@ -1216,7 +1229,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(1028, 58);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 88;
@@ -1229,7 +1242,7 @@
             this.label17.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label17.Location = new System.Drawing.Point(535, 12);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label17.Margin = new System.Windows.Forms.Padding(2);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(59, 13);
             this.label17.TabIndex = 78;
@@ -1242,7 +1255,7 @@
             this.label22.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label22.Location = new System.Drawing.Point(565, 65);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label22.Margin = new System.Windows.Forms.Padding(2);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(29, 13);
             this.label22.TabIndex = 298;
@@ -1255,7 +1268,7 @@
             this.label16.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label16.Location = new System.Drawing.Point(74, 39);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label16.Margin = new System.Windows.Forms.Padding(2);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 13);
             this.label16.TabIndex = 76;
@@ -1269,7 +1282,7 @@
             this.tabcontrol1.Controls.Add(this.tabControlPanel3);
             this.tabcontrol1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabcontrol1.Location = new System.Drawing.Point(2, 2);
-            this.tabcontrol1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabcontrol1.Margin = new System.Windows.Forms.Padding(2);
             this.tabcontrol1.Name = "tabcontrol1";
             this.tabcontrol1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.tabcontrol1.SelectedTabIndex = 0;
@@ -1283,6 +1296,7 @@
             // 
             // tabControlPanel1
             // 
+            this.tabControlPanel1.Controls.Add(this.groupBox2);
             this.tabControlPanel1.Controls.Add(this.AcceptDays);
             this.tabControlPanel1.Controls.Add(this.disc_Rate);
             this.tabControlPanel1.Controls.Add(this.ch_Close);
@@ -1337,7 +1351,7 @@
             this.tabControlPanel1.Controls.Add(this.txtSupplier);
             this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
-            this.tabControlPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
             this.tabControlPanel1.Size = new System.Drawing.Size(1536, 193);
@@ -1371,7 +1385,7 @@
             // 
             this.ch_Close.BackColor = System.Drawing.Color.GreenYellow;
             this.ch_Close.Location = new System.Drawing.Point(1425, 51);
-            this.ch_Close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ch_Close.Margin = new System.Windows.Forms.Padding(2);
             this.ch_Close.Name = "ch_Close";
             this.ch_Close.Size = new System.Drawing.Size(70, 20);
             this.ch_Close.TabIndex = 303;
@@ -1394,7 +1408,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label11.Location = new System.Drawing.Point(564, 37);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label11.Margin = new System.Windows.Forms.Padding(2);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(30, 13);
             this.label11.TabIndex = 301;
@@ -1480,7 +1494,7 @@
             this.tabControlPanel2.Controls.Add(this.txtSuppVAT);
             this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel2.Location = new System.Drawing.Point(0, 26);
-            this.tabControlPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlPanel2.Name = "tabControlPanel2";
             this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
             this.tabControlPanel2.Size = new System.Drawing.Size(1536, 193);
@@ -1501,7 +1515,7 @@
             this.label25.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label25.Location = new System.Drawing.Point(368, 162);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label25.Margin = new System.Windows.Forms.Padding(2);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 13);
             this.label25.TabIndex = 145;
@@ -1514,7 +1528,7 @@
             this.label23.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label23.Location = new System.Drawing.Point(16, 162);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label23.Margin = new System.Windows.Forms.Padding(2);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(91, 13);
             this.label23.TabIndex = 144;
@@ -1560,7 +1574,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label6.Location = new System.Drawing.Point(280, 68);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label6.Margin = new System.Windows.Forms.Padding(2);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 136;
@@ -1590,7 +1604,7 @@
             this.tabControlPanel3.Controls.Add(this.txtCrago_Port);
             this.tabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel3.Location = new System.Drawing.Point(0, 26);
-            this.tabControlPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControlPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlPanel3.Name = "tabControlPanel3";
             this.tabControlPanel3.Padding = new System.Windows.Forms.Padding(1);
             this.tabControlPanel3.Size = new System.Drawing.Size(1536, 193);
@@ -1646,7 +1660,7 @@
             this.tableLayoutPanel1.Controls.Add(this.inv_Grid1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 59);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.69877F));
@@ -1659,10 +1673,43 @@
             this.inv_Grid1.AutoScroll = true;
             this.inv_Grid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inv_Grid1.Location = new System.Drawing.Point(2, 225);
-            this.inv_Grid1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inv_Grid1.Margin = new System.Windows.Forms.Padding(2);
             this.inv_Grid1.Name = "inv_Grid1";
             this.inv_Grid1.Size = new System.Drawing.Size(1536, 477);
             this.inv_Grid1.TabIndex = 88;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Company_Paper);
+            this.groupBox2.Controls.Add(this.Factory_Paper);
+            this.groupBox2.Location = new System.Drawing.Point(1307, 87);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(188, 86);
+            this.groupBox2.TabIndex = 305;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Print Paper";
+            // 
+            // Factory_Paper
+            // 
+            this.Factory_Paper.AutoSize = true;
+            this.Factory_Paper.Location = new System.Drawing.Point(35, 22);
+            this.Factory_Paper.Name = "Factory_Paper";
+            this.Factory_Paper.Size = new System.Drawing.Size(96, 17);
+            this.Factory_Paper.TabIndex = 0;
+            this.Factory_Paper.TabStop = true;
+            this.Factory_Paper.Text = "Factory paper ";
+            this.Factory_Paper.UseVisualStyleBackColor = true;
+            // 
+            // Company_Paper
+            // 
+            this.Company_Paper.AutoSize = true;
+            this.Company_Paper.Location = new System.Drawing.Point(35, 48);
+            this.Company_Paper.Name = "Company_Paper";
+            this.Company_Paper.Size = new System.Drawing.Size(104, 17);
+            this.Company_Paper.TabIndex = 1;
+            this.Company_Paper.TabStop = true;
+            this.Company_Paper.Text = "Company paper ";
+            this.Company_Paper.UseVisualStyleBackColor = true;
             // 
             // frm_PreformaInvoice
             // 
@@ -1674,7 +1721,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ribbonBar1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_PreformaInvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Letter Of Credit";
@@ -1701,6 +1748,8 @@
             this.tabControlPanel3.ResumeLayout(false);
             this.tabControlPanel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1815,5 +1864,9 @@
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.ButtonX btnAddPayment;
         private DevComponents.DotNetBar.LabelX lblTitel;
+        private DevComponents.DotNetBar.ButtonItem btnPrint_1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton Company_Paper;
+        private System.Windows.Forms.RadioButton Factory_Paper;
     }
 }

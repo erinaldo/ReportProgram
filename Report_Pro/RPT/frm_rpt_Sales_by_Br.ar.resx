@@ -322,7 +322,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 17</value>
+    <value>51, 13</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>نوع المواد</value>
@@ -337,7 +337,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="cmb_DimCategory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 24</value>
+    <value>163, 21</value>
   </data>
   <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -349,7 +349,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 17</value>
+    <value>60, 13</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>طريقة الدفع</value>
@@ -364,7 +364,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="payment_type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 24</value>
+    <value>163, 21</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -376,7 +376,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 17</value>
+    <value>59, 13</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>الي سماكة</value>
@@ -391,7 +391,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 17</value>
+    <value>56, 13</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>من سماكة</value>
@@ -406,7 +406,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
+    <value>48, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>الي تاريخ</value>
@@ -421,7 +421,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 17</value>
+    <value>45, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>من تاريخ</value>
@@ -460,7 +460,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 11</value>
+    <value>298, 27</value>
   </data>
   <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -472,7 +472,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-36, 11</value>
+    <value>157, 27</value>
   </data>
   <data name="buttonX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -493,13 +493,13 @@
     <value>NoControl</value>
   </data>
   <data name="radioBtn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 14</value>
+    <value>207, 14</value>
   </data>
   <data name="radioBtn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="radioBtn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 21</value>
+    <value>55, 17</value>
   </data>
   <data name="radioBtn1.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -517,13 +517,13 @@
     <value>NoControl</value>
   </data>
   <data name="radioBtn3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+    <value>17, 14</value>
   </data>
   <data name="radioBtn3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="radioBtn3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>57, 17</value>
   </data>
   <data name="radioBtn3.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -541,13 +541,13 @@
     <value>NoControl</value>
   </data>
   <data name="radioBtn2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 14</value>
+    <value>113, 14</value>
   </data>
   <data name="radioBtn2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="radioBtn2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 21</value>
+    <value>55, 17</value>
   </data>
   <data name="radioBtn2.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -574,13 +574,13 @@
     <value>Top, Right</value>
   </data>
   <data name="rBtnS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 18</value>
+    <value>40, 18</value>
   </data>
   <data name="rBtnS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="rBtnS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 21</value>
+    <value>108, 17</value>
   </data>
   <data name="rBtnS.Text" xml:space="preserve">
     <value>الشركات الشقيقة</value>
@@ -589,13 +589,13 @@
     <value>Top, Right</value>
   </data>
   <data name="rBtnWithoutS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 18</value>
+    <value>195, 18</value>
   </data>
   <data name="rBtnWithoutS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="rBtnWithoutS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 21</value>
+    <value>132, 17</value>
   </data>
   <data name="rBtnWithoutS.Text" xml:space="preserve">
     <value>بدون الشركات الشقيقة</value>
@@ -604,13 +604,13 @@
     <value>Top, Right</value>
   </data>
   <data name="rBtnAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 18</value>
+    <value>356, 18</value>
   </data>
   <data name="rBtnAll.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="rBtnAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 21</value>
+    <value>55, 17</value>
   </data>
   <data name="rBtnAll.Text" xml:space="preserve">
     <value>الجميع</value>
@@ -633,9 +633,6 @@
   <data name="chX.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="chX.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="chX.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 63</value>
   </data>
@@ -643,16 +640,13 @@
     <value>5, 4, 5, 4</value>
   </data>
   <data name="chX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 20</value>
+    <value>59, 17</value>
   </data>
   <data name="chX.Text" xml:space="preserve">
     <value>سكراب</value>
   </data>
   <data name="chF.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="chF.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="chF.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 5</value>
@@ -661,16 +655,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="chF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 20</value>
+    <value>77, 17</value>
   </data>
   <data name="chF.Text" xml:space="preserve">
     <value>المنتج التام</value>
   </data>
   <data name="chZ.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="chZ.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="chZ.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 33</value>
@@ -679,16 +670,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="chZ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>50, 17</value>
   </data>
   <data name="chZ.Text" xml:space="preserve">
     <value>اخري</value>
   </data>
   <data name="chR.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="chR.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="chR.Location" type="System.Drawing.Point, System.Drawing">
     <value>186, 4</value>
@@ -697,16 +685,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="chR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 20</value>
+    <value>77, 17</value>
   </data>
   <data name="chR.Text" xml:space="preserve">
     <value>المواد الخام</value>
   </data>
   <data name="chP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="chP.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="chP.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 34</value>
@@ -715,16 +700,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="chP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 20</value>
+    <value>66, 17</value>
   </data>
   <data name="chP.Text" xml:space="preserve">
     <value>قطع غيار</value>
   </data>
   <data name="chC.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="chC.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="chC.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 4</value>
@@ -733,16 +715,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="chC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
+    <value>53, 17</value>
   </data>
   <data name="chC.Text" xml:space="preserve">
     <value>تجاري</value>
   </data>
   <data name="chS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="chS.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="chS.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 33</value>
@@ -751,7 +730,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="chS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 20</value>
+    <value>75, 17</value>
   </data>
   <data name="chS.Text" xml:space="preserve">
     <value>نصف مصنع</value>
@@ -778,7 +757,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 17</value>
+    <value>36, 13</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>الصنف</value>
@@ -793,7 +772,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 17</value>
+    <value>52, 13</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>المجموعة</value>
@@ -808,7 +787,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 17</value>
+    <value>44, 13</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>الحساب</value>
@@ -823,7 +802,7 @@
     <value>5, 0, 5, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
+    <value>31, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>الفرع</value>
@@ -838,7 +817,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="thick_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>66, 20</value>
   </data>
   <data name="thick_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -850,7 +829,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="thick_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>66, 20</value>
   </data>
   <data name="UC_Branch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -902,9 +881,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1381, 767</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
