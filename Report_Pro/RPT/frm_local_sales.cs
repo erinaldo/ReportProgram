@@ -41,5 +41,10 @@ namespace Report_Pro.RPT
         {
 
         }
+
+        private void frm_local_sales_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

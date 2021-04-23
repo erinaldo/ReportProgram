@@ -529,15 +529,15 @@ namespace Report_Pro.PL
                     foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
                     {
 
-                        if (r.PayValue.Value > 0 && IsDateTime(r.startDate.Text) &&IsDateTime(r.maturityDate.Text))
+                        if (r.PayValue.Text.ToDecimal() > 0 && IsDateTime(r.startDate.Text) &&IsDateTime(r.maturityDate.Text))
                         {
                             DataTable dt_ = dal.getDataTabl_1(@"select * from LoansTbl where id='" + txtLoanId.Text + "' and PaymentNo='" + r.paySer.Text + "' ");
                             if (dt_.Rows.Count > 0) {
                                 string invNum = LcNo.Text + "-" + InvNo.Text;
                                 dal.Execute_1(@"UPDATE LoansTbl set LoanNo='" + txtLoanNo.Text + "',BankId='" + BName.ID.Text + "',LoanACC='" + txtLoanAcc.ID.Text +
                                     "',NumberOfPayments='" + NoOfPayments.Value + "',LoanValue='" + txtLoanValue.Value + "',PaymentNo='" + r.paySer.Value +
-                                    "', PaymentValue='" + r.PayValue.Value + "',StartDate='" + r.startDate.Value.ToString("yyyy-MM-dd") +
-                                    "', MaturityDate='" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "', Rate='" + r.intrestRate.Value +
+                                    "', PaymentValue='" + r.PayValue.Text.ToDecimal() + "',StartDate='" + r.startDate.Value.ToString("yyyy-MM-dd") +
+                                    "', MaturityDate='" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "', Rate='" + r.intrestRate.Text.ToDecimal() +
                                     "',LoanPurpose='0' ,LoanRefrance='" + invNum + 
                                     "' where  id='" + txtLoanId.Text + "' and PaymentNo='" + r.paySer.Text + "' ");
 
@@ -548,8 +548,8 @@ namespace Report_Pro.PL
                             dal.Execute_1(@"INSERT INTO LoansTbl(id,LoanNo,BankId,LoanACC,NumberOfPayments,LoanValue,PaymentNo,
                             PaymentValue,StartDate,MaturityDate,Rate,LoanPurpose,LoanRefrance)
                             VALUES('"+txtLoanId.Text+"','" + txtLoanNo.Text + "','" + BName.ID.Text + "','" + txtLoanAcc.ID.Text + "','" + NoOfPayments.Value +
-                                "','" + txtLoanValue.Value + "','" + r.paySer.Value + "','" + r.PayValue.Value + "','" + r.startDate.Value.ToString("yyyy-MM-dd") +
-                                "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Value + "','0','" + invNum + "')");
+                                "','" + txtLoanValue.Value + "','" + r.paySer.Value + "','" + r.PayValue.Text.ToDecimal() + "','" + r.startDate.Value.ToString("yyyy-MM-dd") +
+                                "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Text.ToDecimal() + "','0','" + invNum + "')");
                             }
                         }
                     }
@@ -599,7 +599,7 @@ namespace Report_Pro.PL
                     MyControls.LoanRow r = new MyControls.LoanRow();
                     flowLayoutPanel1.Controls.Add(r);
                     r.paySer.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
-                    r.intrestRate.Value = txtIntrestRate.Value;
+                    r.intrestRate.Text = txtIntrestRate.Text;
                 }
             }
             else if ((NoOfPayments.Value - flowLayoutPanel1.Controls.Count) < 0)
@@ -641,7 +641,7 @@ namespace Report_Pro.PL
            
             foreach (MyControls.LoanRow ctr in flowLayoutPanel1.Controls)
             {
-                ctr.intrestRate.Value = txtIntrestRate.Value;
+                ctr.intrestRate.Text = txtIntrestRate.Text;
             }
         }
 

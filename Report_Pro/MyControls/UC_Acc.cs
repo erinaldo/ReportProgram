@@ -146,7 +146,12 @@ namespace Report_Pro.MyControls
             this.BackColor = Color.Transparent;
         }
 
-        private void ID_Leave(object sender, EventArgs e)
+        public void ID_Leave(object sender, EventArgs e)
+        {
+            leaveID();
+        }
+
+        public void leaveID()
         {
             try
             {
@@ -190,7 +195,7 @@ namespace Report_Pro.MyControls
                     KM_Desc_Sales.Clear();
                     KM_Ratio_Sales.Clear();
                 }
-               
+
             }
             catch { }
         }

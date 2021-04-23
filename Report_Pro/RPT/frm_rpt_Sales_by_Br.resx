@@ -118,17 +118,44 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_CustomersMonthelySales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1210, 10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_CustomersMonthelySales.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btn_CustomersMonthelySales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 37</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_CustomersMonthelySales.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="btn_CustomersMonthelySales.Text" xml:space="preserve">
+    <value>Customers Monthely Sales</value>
+  </data>
+  <data name="&gt;&gt;btn_CustomersMonthelySales.Name" xml:space="preserve">
+    <value>btn_CustomersMonthelySales</value>
+  </data>
+  <data name="&gt;&gt;btn_CustomersMonthelySales.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btn_CustomersMonthelySales.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_CustomersMonthelySales.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnMonthelySales.Location" type="System.Drawing.Point, System.Drawing">
     <value>979, 10</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnMonthelySales.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="btnMonthelySales.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 37</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnMonthelySales.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
   </data>
@@ -145,7 +172,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnMonthelySales.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>1089, 10</value>
@@ -172,7 +199,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="buttonX5.Location" type="System.Drawing.Point, System.Drawing">
     <value>868, 10</value>
@@ -199,7 +226,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;buttonX5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
     <value>758, 10</value>
@@ -226,7 +253,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -256,7 +283,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -286,7 +313,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -316,7 +343,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -346,7 +373,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="btn_Report.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -376,7 +403,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btn_Report.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="btnOption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -406,7 +433,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnOption.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -418,7 +445,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 64</value>
+    <value>1335, 64</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -745,7 +772,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 663</value>
+    <value>1335, 663</value>
   </data>
   <data name="crystalReportViewer1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1571,7 +1598,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="groupPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 332</value>
+    <value>1335, 332</value>
   </data>
   <data name="groupPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1595,7 +1622,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1223, 727</value>
+    <value>1335, 727</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt</value>

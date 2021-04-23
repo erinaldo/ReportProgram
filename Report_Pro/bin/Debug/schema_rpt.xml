@@ -6,13 +6,22 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Ser_no" type="xs:int" minOccurs="0" />
-              <xs:element name="Deleviry_date" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="acc_serial_no" type="xs:int" minOccurs="0" />
-              <xs:element name="qty_" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Local_Price" type="xs:decimal" minOccurs="0" />
-              <xs:element name="subTot_" type="xs:decimal" minOccurs="0" />
-              <xs:element name="Tax_" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ser_no" type="xs:string" minOccurs="0" />
+              <xs:element name="ACC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="g_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="desc2" type="xs:string" minOccurs="0" />
+              <xs:element name="meno" type="xs:decimal" minOccurs="0" />
+              <xs:element name="loh" type="xs:decimal" minOccurs="0" />
+              <xs:element name="sanad_no" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_code" type="xs:string" minOccurs="0" />
+              <xs:element name="user_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_CENTER" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="payer_l_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_name" type="xs:string" minOccurs="0" />
+              <xs:element name="COST_E_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CAT_NAME" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

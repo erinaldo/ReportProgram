@@ -844,7 +844,9 @@ namespace Report_Pro.PL
 
         private void buttonItem6_Click_1(object sender, EventArgs e)
         {
-            openForm(new PL.frmTest(), FormWindowState.Maximized, 0);
+            // openForm(new PL.frmTest(), FormWindowState.Maximized, 0);
+            frmTest frm = new frmTest();
+            frm.Show();
         }
 
         private void TV1_AfterSelect(object sender, TreeViewEventArgs e)
@@ -1292,7 +1294,7 @@ namespace Report_Pro.PL
 
         private void M85_Click(object sender, EventArgs e)
         {
-            openForm(new PL.frmLoan(), FormWindowState.Maximized, 0);
+            openForm(new Loans.frm_Loan(), FormWindowState.Maximized, 0);
         }
 
         private void M86_Click(object sender, EventArgs e)
@@ -1343,13 +1345,13 @@ namespace Report_Pro.PL
 
         private void M88_Click(object sender, EventArgs e)
         {
-            openForm(new RPT.frm_LoansReport(), FormWindowState.Maximized, 0);
+            openForm(new Loans.frm_LoansReport(), FormWindowState.Maximized, 0);
 
         }
 
         private void M89_Click(object sender, EventArgs e)
         {
-            openForm(new PL.frm_LoanPayment(), FormWindowState.Maximized, 0);
+            openForm(new Loans.frm_LoanPayment(), FormWindowState.Maximized, 0);
         }
 
         private void M87_2_Click(object sender, EventArgs e)
@@ -1372,6 +1374,11 @@ namespace Report_Pro.PL
         private void btnChangeAccBranch_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void M810_Click(object sender, EventArgs e)
+        {
+            openForm(new Loans.frm_LoansReports(), FormWindowState.Maximized, 0);
         }
     }
 }

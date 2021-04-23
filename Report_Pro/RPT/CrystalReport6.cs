@@ -16,14 +16,14 @@ namespace Report_Pro.RPT {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class rpt_LoansBalance : ReportClass {
+    public class CrystalReport6 : ReportClass {
         
-        public rpt_LoansBalance() {
+        public CrystalReport6() {
         }
         
         public override string ResourceName {
             get {
-                return "rpt_LoansBalance.rpt";
+                return "CrystalReport6.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Report_Pro.RPT {
         
         public override string FullResourceName {
             get {
-                return "Report_Pro.RPT.rpt_LoansBalance.rpt";
+                return "Report_Pro.RPT.CrystalReport6.rpt";
             }
             set {
                 // Do nothing
@@ -74,7 +74,7 @@ namespace Report_Pro.RPT {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section DetailSection1 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,41 @@ namespace Report_Pro.RPT {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rpt_DailyEntryrpt_0 {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_rpt_DailyEntryrpt_1 {
+            get {
+                return this.DataDefinition.ParameterFields[1];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedrpt_LoansBalance : Component, ICachedReport {
+    public class CachedCrystalReport6 : Component, ICachedReport {
         
-        public Cachedrpt_LoansBalance() {
+        public CachedCrystalReport6() {
         }
         
         [Browsable(false)]
@@ -129,7 +153,7 @@ namespace Report_Pro.RPT {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            rpt_LoansBalance rpt = new rpt_LoansBalance();
+            CrystalReport6 rpt = new CrystalReport6();
             rpt.Site = this.Site;
             return rpt;
         }

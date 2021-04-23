@@ -11,6 +11,8 @@ using System.Resources;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CrystalDecisions.Shared;
+
 
 //using Syncfusion.Pdf;
 //using Syncfusion.Pdf.Graphics;
@@ -1063,7 +1065,6 @@ private void BSave_Click(object sender, EventArgs e)
             RPT.Form1 frm = new RPT.Form1();
             RPT.rpt_Preform_Print_Ton rpt_P = new RPT.rpt_Preform_Print_Ton();
             rpt_P.SetDataSource(ds);
-            ////rpt_P.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
             rpt_P.SetParameterValue("h_pic", Convert.ToInt32(Factory_Paper.Checked));
             frm.crystalReportViewer1.ReportSource = rpt_P;
             frm.ShowDialog();
@@ -1311,6 +1312,28 @@ private void BSave_Click(object sender, EventArgs e)
             ////rpt_P.SetDataSource(dal.getDataTabl("get_invDetails", txt_InvNu.Text, txt_transaction_code.Text, txt_InvDate.Value.Year.ToString()));
             rpt_P.SetParameterValue("h_pic", Convert.ToInt32(Factory_Paper.Checked));
             frm.crystalReportViewer1.ReportSource = rpt_P;
+            frm.ShowDialog();
+            //ToWord toWord = new ToWord(Math.Abs(Math.Round(dt_P.Rows[0][1].ToString().ToDecimal(), dal.digits_)), currencies[currencyNo]);
+            //rpt_P.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToEnglish().ToString() + "'";
+
+
+        }
+
+        private void btnSendEmail_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+
+            get_data(txtId.Text, txtBranch.ID.Text, comboBox1.Text.Substring(comboBox1.Text.Length - 2), "PER");
+
+            ds.Tables.Add(dt_P);
+            ds.WriteXmlSchema("schema_rpt.xml");
+            RPT.Form1 frm = new RPT.Form1();
+            RPT.rpt_Preform_Print_Ton rpt_P = new RPT.rpt_Preform_Print_Ton();
+            rpt_P.SetDataSource(ds);
+            rpt_P.SetParameterValue("h_pic", Convert.ToInt32(Factory_Paper.Checked));
+            rpt_P.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, "Crystal.pdf");
+
+            //frm.crystalReportViewer1.ReportSource = rpt_P;
             frm.ShowDialog();
             //ToWord toWord = new ToWord(Math.Abs(Math.Round(dt_P.Rows[0][1].ToString().ToDecimal(), dal.digits_)), currencies[currencyNo]);
             //rpt_P.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToEnglish().ToString() + "'";

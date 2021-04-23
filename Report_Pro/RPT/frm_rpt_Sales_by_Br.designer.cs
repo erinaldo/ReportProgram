@@ -80,6 +80,7 @@
             this.Items = new Report_Pro.MyControls.UC_Items();
             this.Uc_Group = new Report_Pro.MyControls.Uc_Group();
             this.Uc_Acc = new Report_Pro.MyControls.UC_Acc();
+            this.btn_CustomersMonthelySales = new DevComponents.DotNetBar.ButtonX();
             this.panel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -92,6 +93,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel1.Controls.Add(this.btn_CustomersMonthelySales);
             this.panel1.Controls.Add(this.btnMonthelySales);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.buttonX5);
@@ -642,6 +644,14 @@
             resources.ApplyResources(this.Uc_Acc, "Uc_Acc");
             this.Uc_Acc.Name = "Uc_Acc";
             // 
+            // btn_CustomersMonthelySales
+            // 
+            this.btn_CustomersMonthelySales.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_CustomersMonthelySales.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            resources.ApplyResources(this.btn_CustomersMonthelySales, "btn_CustomersMonthelySales");
+            this.btn_CustomersMonthelySales.Name = "btn_CustomersMonthelySales";
+            this.btn_CustomersMonthelySales.Click += new System.EventHandler(this.btn_CustomersMonthelySales_Click);
+            // 
             // frm_rpt_Sales_by_Br
             // 
             resources.ApplyResources(this, "$this");
@@ -719,5 +729,6 @@
         private DevComponents.DotNetBar.ButtonX btnMonthelySales;
         private DevComponents.DotNetBar.ButtonX button5;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
+        private DevComponents.DotNetBar.ButtonX btn_CustomersMonthelySales;
     }
 }

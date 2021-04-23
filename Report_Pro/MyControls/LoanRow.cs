@@ -20,7 +20,7 @@ namespace Report_Pro.MyControls
 
         private void PayValue_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode==Keys.Enter && PayValue.Value > 0)
+            if(e.KeyCode==Keys.Enter && PayValue.Text.ToDecimal() > 0)
             {
                 startDate.Focus();
             }
@@ -45,10 +45,10 @@ namespace Report_Pro.MyControls
 
         private void intrestRate_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Enter)
-            //{
-            //    SelectNextControl(ActiveControl, true, true, true, true);
-            //}
+            ////if (e.KeyCode == Keys.Enter)
+            ////{
+            ////    SelectNextControl(ActiveControl, true, true, true, true);
+            ////}
         }
     }
 }

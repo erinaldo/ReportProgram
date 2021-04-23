@@ -16,5 +16,21 @@ namespace Report_Pro.PL
         {
             InitializeComponent();
         }
+
+        private void frmTest_Load(object sender, EventArgs e)
+        {
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    jorDebit1.flowLayoutPanel1.Controls.Clear();
+            //    MyControls.JorRow r = new MyControls.JorRow();
+          
+            //    jorDebit1.flowLayoutPanel1.Controls.Add(r);
+               
+            //}
+        }
+
+
+
+
     }
 }

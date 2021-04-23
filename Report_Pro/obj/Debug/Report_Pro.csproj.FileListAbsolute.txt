@@ -1955,6 +1955,10 @@ D:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.jorDe
 D:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Jor_Row.ar.resources
 D:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_DailyEntry.ar.resources
 D:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_ChoseAccBranch.resources
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraEditors.v19.1.xml
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\de\DevExpress.XtraReports.v19.1.Extensions.resources.dll
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.JorRow.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Inventory_Report.resources
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\Report_Pro.exe.config
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\Report_Pro.exe
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\Report_Pro.pdb
@@ -2044,7 +2048,6 @@ C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraBars.v19.1.x
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraCharts.v19.1.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraCharts.v19.1.Wizard.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraDiagram.v19.1.xml
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraEditors.v19.1.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraGauges.v19.1.Core.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraGrid.v19.1.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.XtraLayout.v19.1.xml
@@ -2156,7 +2159,6 @@ C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\de\DevExpress.XtraReports.v
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\es\DevExpress.XtraReports.v19.1.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ja\DevExpress.XtraReports.v19.1.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ru\DevExpress.XtraReports.v19.1.resources.dll
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\de\DevExpress.XtraReports.v19.1.Extensions.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\es\DevExpress.XtraReports.v19.1.Extensions.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ja\DevExpress.XtraReports.v19.1.Extensions.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ru\DevExpress.XtraReports.v19.1.Extensions.resources.dll
@@ -2191,7 +2193,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.CashC
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Grid.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Row.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Jor_Acc.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.JorRow.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Jor_Row.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.mDouble.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Acc.resources
@@ -2244,9 +2245,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmEntryJorna
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmJornal.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.FrmLcInv.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLcs.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoan.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoanPaymentSearch.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoanSearch.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLocations.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmProducts.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmQuotation.resources
@@ -2269,7 +2267,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_DailyEntr
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_DataBaseChose.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_deposit.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_inputText.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_LoanPayment.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Main.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_matrail_id.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_PaySanad.resources
@@ -2314,11 +2311,9 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Tota
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Resources.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frmAccDetails.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_lcsRep.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_LoansReport.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_maintenance_SP_ByCustomer.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_Cut_off.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Inventory_Report.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_InventoryList.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Inventory_M_Br.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Report.rpt_TotalStockByCategory.resources
@@ -2406,10 +2401,6 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_Tr
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmJornal.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.FrmLcInv.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLcs.ar.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoan.aa.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoan.ar.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoanPaymentSearch.ar.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmLoanSearch.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmQuotation.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmQuotation.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.FrmSerchLcs.ar-EG.resources
@@ -2475,4 +2466,17 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\en-US\Report_Pro.resources.
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoan.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoanPaymentSearch.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoanSearch.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_LoanPayment.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_LoansReport.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_LoansReports.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoanPaymentSearch.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoanSearch.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_Loan.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoan.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_Loan.aa.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_Loan.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_LoanPayment.ar.resources

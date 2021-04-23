@@ -1,4 +1,4 @@
-﻿namespace Report_Pro.PL
+﻿namespace Report_Pro.Loans
 {
     partial class frmLoanSearch
     {

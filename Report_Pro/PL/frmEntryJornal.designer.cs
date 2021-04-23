@@ -104,8 +104,9 @@
             this.BtnCalc,
             this.BExit});
             this.ribbonBar1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(1803, 43);
+            this.ribbonBar1.Size = new System.Drawing.Size(1202, 29);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TabIndex = 102;
             this.ribbonBar1.Text = "ribbonBar1";
@@ -158,6 +159,7 @@
             this.BtnPrint.Name = "BtnPrint";
             this.BtnPrint.SubItemsExpandWidth = 14;
             this.BtnPrint.Text = "طباعة";
+            this.BtnPrint.Click += new System.EventHandler(this.BtnPrint_Click);
             // 
             // BtnEmail
             // 
@@ -231,10 +233,11 @@
             this.groupPanel1.Controls.Add(this.next_);
             this.groupPanel1.Controls.Add(this.last_);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel1.Location = new System.Drawing.Point(0, 43);
+            this.groupPanel1.Location = new System.Drawing.Point(0, 29);
+            this.groupPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupPanel1.Size = new System.Drawing.Size(1803, 155);
+            this.groupPanel1.Size = new System.Drawing.Size(1202, 106);
             // 
             // 
             // 
@@ -264,10 +267,11 @@
             // 
             // 
             this.txt_docId.Border.Class = "TextBoxBorder";
-            this.txt_docId.Location = new System.Drawing.Point(706, 3);
+            this.txt_docId.Location = new System.Drawing.Point(471, 2);
+            this.txt_docId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_docId.Name = "txt_docId";
             this.txt_docId.ReadOnly = true;
-            this.txt_docId.Size = new System.Drawing.Size(49, 27);
+            this.txt_docId.Size = new System.Drawing.Size(33, 20);
             this.txt_docId.TabIndex = 140;
             this.txt_docId.Text = "JOR";
             this.txt_docId.Visible = false;
@@ -279,10 +283,11 @@
             // 
             // 
             this.txt_Cyear.Border.Class = "TextBoxBorder";
-            this.txt_Cyear.Location = new System.Drawing.Point(651, 3);
+            this.txt_Cyear.Location = new System.Drawing.Point(434, 2);
+            this.txt_Cyear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_Cyear.Name = "txt_Cyear";
             this.txt_Cyear.ReadOnly = true;
-            this.txt_Cyear.Size = new System.Drawing.Size(49, 27);
+            this.txt_Cyear.Size = new System.Drawing.Size(33, 20);
             this.txt_Cyear.TabIndex = 139;
             this.txt_Cyear.Text = "cy";
             this.txt_Cyear.Visible = false;
@@ -294,10 +299,11 @@
             // 
             // 
             this.txtSanad_type.Border.Class = "TextBoxBorder";
-            this.txtSanad_type.Location = new System.Drawing.Point(785, 3);
+            this.txtSanad_type.Location = new System.Drawing.Point(523, 2);
+            this.txtSanad_type.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSanad_type.Name = "txtSanad_type";
             this.txtSanad_type.ReadOnly = true;
-            this.txtSanad_type.Size = new System.Drawing.Size(49, 27);
+            this.txtSanad_type.Size = new System.Drawing.Size(33, 20);
             this.txtSanad_type.TabIndex = 137;
             this.txtSanad_type.Visible = false;
             // 
@@ -306,9 +312,10 @@
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(840, 5);
+            this.labelX3.Location = new System.Drawing.Point(560, 3);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(72, 22);
+            this.labelX3.Size = new System.Drawing.Size(53, 17);
             this.labelX3.TabIndex = 136;
             this.labelX3.Text = "نوع الحركة";
             this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -319,9 +326,10 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(981, 5);
+            this.labelX2.Location = new System.Drawing.Point(654, 3);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(49, 22);
+            this.labelX2.Size = new System.Drawing.Size(38, 17);
             this.labelX2.TabIndex = 135;
             this.labelX2.Text = "المعرف";
             this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -334,10 +342,11 @@
             // 
             // 
             this.txtSer_code.Border.Class = "TextBoxBorder";
-            this.txtSer_code.Location = new System.Drawing.Point(927, 3);
+            this.txtSer_code.Location = new System.Drawing.Point(618, 2);
+            this.txtSer_code.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSer_code.Name = "txtSer_code";
             this.txtSer_code.ReadOnly = true;
-            this.txtSer_code.Size = new System.Drawing.Size(49, 27);
+            this.txtSer_code.Size = new System.Drawing.Size(33, 20);
             this.txtSer_code.TabIndex = 138;
             this.txtSer_code.Visible = false;
             // 
@@ -345,20 +354,22 @@
             // 
             this.txtBranchName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBranchName.BackColor = System.Drawing.Color.Transparent;
-            this.txtBranchName.Location = new System.Drawing.Point(1209, 72);
+            this.txtBranchName.Location = new System.Drawing.Point(806, 49);
+            this.txtBranchName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBranchName.Name = "txtBranchName";
             this.txtBranchName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtBranchName.Size = new System.Drawing.Size(416, 30);
+            this.txtBranchName.Size = new System.Drawing.Size(277, 21);
             this.txtBranchName.TabIndex = 134;
             // 
             // txtBranchCode
             // 
             this.txtBranchCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBranchCode.BackColor = System.Drawing.Color.Transparent;
-            this.txtBranchCode.Location = new System.Drawing.Point(1625, 76);
+            this.txtBranchCode.Location = new System.Drawing.Point(1083, 52);
+            this.txtBranchCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBranchCode.Name = "txtBranchCode";
             this.txtBranchCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtBranchCode.Size = new System.Drawing.Size(76, 22);
+            this.txtBranchCode.Size = new System.Drawing.Size(51, 15);
             this.txtBranchCode.TabIndex = 133;
             // 
             // labelX20
@@ -366,10 +377,11 @@
             this.labelX20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX20.AutoSize = true;
             this.labelX20.BackColor = System.Drawing.Color.Transparent;
-            this.labelX20.Location = new System.Drawing.Point(1701, 76);
+            this.labelX20.Location = new System.Drawing.Point(1134, 52);
+            this.labelX20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX20.Name = "labelX20";
             this.labelX20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX20.Size = new System.Drawing.Size(46, 22);
+            this.labelX20.Size = new System.Drawing.Size(36, 17);
             this.labelX20.TabIndex = 132;
             this.labelX20.Text = "الفرع :";
             // 
@@ -381,9 +393,11 @@
             this.groupBox1.Controls.Add(this.labelX15);
             this.groupBox1.Controls.Add(this.btn_Srearch);
             this.groupBox1.Controls.Add(this.btn_Cancl);
-            this.groupBox1.Location = new System.Drawing.Point(199, 0);
+            this.groupBox1.Location = new System.Drawing.Point(133, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(249, 90);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(166, 62);
             this.groupBox1.TabIndex = 124;
             this.groupBox1.TabStop = false;
             this.groupBox1.Visible = false;
@@ -395,17 +409,19 @@
             // 
             // 
             this.txtsearch.Border.Class = "TextBoxBorder";
-            this.txtsearch.Location = new System.Drawing.Point(18, 21);
+            this.txtsearch.Location = new System.Drawing.Point(12, 14);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(141, 27);
+            this.txtsearch.Size = new System.Drawing.Size(94, 20);
             this.txtsearch.TabIndex = 128;
             // 
             // labelX15
             // 
             this.labelX15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelX15.Location = new System.Drawing.Point(162, 22);
+            this.labelX15.Location = new System.Drawing.Point(108, 15);
+            this.labelX15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX15.Name = "labelX15";
-            this.labelX15.Size = new System.Drawing.Size(77, 25);
+            this.labelX15.Size = new System.Drawing.Size(51, 17);
             this.labelX15.TabIndex = 129;
             this.labelX15.Text = "رقم القيد";
             this.labelX15.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -416,9 +432,10 @@
             this.btn_Srearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Srearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Srearch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Srearch.Location = new System.Drawing.Point(107, 53);
+            this.btn_Srearch.Location = new System.Drawing.Point(71, 36);
+            this.btn_Srearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Srearch.Name = "btn_Srearch";
-            this.btn_Srearch.Size = new System.Drawing.Size(79, 25);
+            this.btn_Srearch.Size = new System.Drawing.Size(53, 17);
             this.btn_Srearch.TabIndex = 130;
             this.btn_Srearch.Text = "بحث";
             this.btn_Srearch.UseVisualStyleBackColor = false;
@@ -429,9 +446,10 @@
             this.btn_Cancl.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Cancl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Cancl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Cancl.Location = new System.Drawing.Point(22, 53);
+            this.btn_Cancl.Location = new System.Drawing.Point(15, 36);
+            this.btn_Cancl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Cancl.Name = "btn_Cancl";
-            this.btn_Cancl.Size = new System.Drawing.Size(79, 25);
+            this.btn_Cancl.Size = new System.Drawing.Size(53, 17);
             this.btn_Cancl.TabIndex = 131;
             this.btn_Cancl.Text = "الغاء";
             this.btn_Cancl.UseVisualStyleBackColor = false;
@@ -442,9 +460,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10.75F, System.Drawing.FontStyle.Bold);
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(1449, 15);
+            this.label1.Location = new System.Drawing.Point(966, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 30);
+            this.label1.Size = new System.Drawing.Size(97, 21);
             this.label1.TabIndex = 129;
             this.label1.Text = "قيد يومية";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -454,9 +473,10 @@
             this.labelX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX9.AutoSize = true;
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(693, 110);
+            this.labelX9.Location = new System.Drawing.Point(462, 75);
+            this.labelX9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(83, 22);
+            this.labelX9.Size = new System.Drawing.Size(61, 17);
             this.labelX9.TabIndex = 128;
             this.labelX9.Text = "الرقم الخاص";
             // 
@@ -467,9 +487,10 @@
             // 
             // 
             this.txt_sp_ser.Border.Class = "TextBoxBorder";
-            this.txt_sp_ser.Location = new System.Drawing.Point(564, 108);
+            this.txt_sp_ser.Location = new System.Drawing.Point(376, 74);
+            this.txt_sp_ser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_sp_ser.Name = "txt_sp_ser";
-            this.txt_sp_ser.Size = new System.Drawing.Size(121, 27);
+            this.txt_sp_ser.Size = new System.Drawing.Size(81, 20);
             this.txt_sp_ser.TabIndex = 127;
             this.txt_sp_ser.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -477,10 +498,11 @@
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(894, 42);
+            this.dateTimePicker1.Location = new System.Drawing.Point(596, 29);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dateTimePicker1.Size = new System.Drawing.Size(121, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(82, 20);
             this.dateTimePicker1.TabIndex = 125;
             this.dateTimePicker1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePicker1_KeyDown);
             // 
@@ -489,9 +511,10 @@
             this.labelX5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX5.AutoSize = true;
             this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            this.labelX5.Location = new System.Drawing.Point(1019, 44);
+            this.labelX5.Location = new System.Drawing.Point(679, 30);
+            this.labelX5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(104, 22);
+            this.labelX5.Size = new System.Drawing.Size(76, 17);
             this.labelX5.TabIndex = 61;
             this.labelX5.Text = "التاريخ الميلادي";
             // 
@@ -500,19 +523,21 @@
             this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(1022, 76);
+            this.labelX4.Location = new System.Drawing.Point(681, 52);
+            this.labelX4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(96, 22);
+            this.labelX4.Size = new System.Drawing.Size(70, 17);
             this.labelX4.TabIndex = 60;
             this.labelX4.Text = "التاريخ الهجري";
             // 
             // mTxt_H
             // 
             this.mTxt_H.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.mTxt_H.Location = new System.Drawing.Point(894, 74);
+            this.mTxt_H.Location = new System.Drawing.Point(596, 51);
+            this.mTxt_H.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mTxt_H.Mask = "00/00/0000";
             this.mTxt_H.Name = "mTxt_H";
-            this.mTxt_H.Size = new System.Drawing.Size(121, 27);
+            this.mTxt_H.Size = new System.Drawing.Size(82, 20);
             this.mTxt_H.TabIndex = 98;
             this.mTxt_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mTxt_H.ValidatingType = typeof(System.DateTime);
@@ -522,9 +547,10 @@
             this.labelX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(1695, 114);
+            this.labelX1.Location = new System.Drawing.Point(1130, 78);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(61, 22);
+            this.labelX1.Size = new System.Drawing.Size(47, 17);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "ملاحظات";
             // 
@@ -535,9 +561,10 @@
             // 
             // 
             this.txtMainNote.Border.Class = "TextBoxBorder";
-            this.txtMainNote.Location = new System.Drawing.Point(1209, 108);
+            this.txtMainNote.Location = new System.Drawing.Point(806, 74);
+            this.txtMainNote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMainNote.Name = "txtMainNote";
-            this.txtMainNote.Size = new System.Drawing.Size(482, 27);
+            this.txtMainNote.Size = new System.Drawing.Size(321, 20);
             this.txtMainNote.TabIndex = 62;
             // 
             // txtSerNo
@@ -547,9 +574,10 @@
             // 
             // 
             this.txtSerNo.Border.Class = "TextBoxBorder";
-            this.txtSerNo.Location = new System.Drawing.Point(564, 42);
+            this.txtSerNo.Location = new System.Drawing.Point(376, 29);
+            this.txtSerNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSerNo.Name = "txtSerNo";
-            this.txtSerNo.Size = new System.Drawing.Size(121, 27);
+            this.txtSerNo.Size = new System.Drawing.Size(81, 20);
             this.txtSerNo.TabIndex = 107;
             this.txtSerNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -560,9 +588,10 @@
             // 
             // 
             this.Main_serNo.Border.Class = "TextBoxBorder";
-            this.Main_serNo.Location = new System.Drawing.Point(564, 74);
+            this.Main_serNo.Location = new System.Drawing.Point(376, 51);
+            this.Main_serNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Main_serNo.Name = "Main_serNo";
-            this.Main_serNo.Size = new System.Drawing.Size(121, 27);
+            this.Main_serNo.Size = new System.Drawing.Size(81, 20);
             this.Main_serNo.TabIndex = 108;
             this.Main_serNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -571,9 +600,10 @@
             this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(693, 44);
+            this.labelX6.Location = new System.Drawing.Point(462, 30);
+            this.labelX6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(62, 22);
+            this.labelX6.Size = new System.Drawing.Size(47, 17);
             this.labelX6.TabIndex = 106;
             this.labelX6.Text = "رقم القيد";
             // 
@@ -582,9 +612,10 @@
             this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX7.AutoSize = true;
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(693, 76);
+            this.labelX7.Location = new System.Drawing.Point(462, 52);
+            this.labelX7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(71, 22);
+            this.labelX7.Size = new System.Drawing.Size(53, 17);
             this.labelX7.TabIndex = 105;
             this.labelX7.Text = "رقم السند";
             // 
@@ -595,9 +626,10 @@
             this.previous_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.previous_.Image = ((System.Drawing.Image)(resources.GetObject("previous_.Image")));
             this.previous_.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.previous_.Location = new System.Drawing.Point(1594, 15);
+            this.previous_.Location = new System.Drawing.Point(1063, 10);
+            this.previous_.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.previous_.Name = "previous_";
-            this.previous_.Size = new System.Drawing.Size(22, 30);
+            this.previous_.Size = new System.Drawing.Size(16, 22);
             this.previous_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.previous_.TabIndex = 110;
             this.previous_.TabStop = false;
@@ -609,9 +641,10 @@
             this.first_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.first_.Image = ((System.Drawing.Image)(resources.GetObject("first_.Image")));
             this.first_.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.first_.Location = new System.Drawing.Point(1616, 15);
+            this.first_.Location = new System.Drawing.Point(1077, 10);
+            this.first_.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.first_.Name = "first_";
-            this.first_.Size = new System.Drawing.Size(23, 30);
+            this.first_.Size = new System.Drawing.Size(17, 22);
             this.first_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.first_.TabIndex = 109;
             this.first_.TabStop = false;
@@ -623,9 +656,10 @@
             this.next_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.next_.Image = ((System.Drawing.Image)(resources.GetObject("next_.Image")));
             this.next_.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.next_.Location = new System.Drawing.Point(1427, 15);
+            this.next_.Location = new System.Drawing.Point(951, 10);
+            this.next_.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.next_.Name = "next_";
-            this.next_.Size = new System.Drawing.Size(22, 30);
+            this.next_.Size = new System.Drawing.Size(16, 22);
             this.next_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.next_.TabIndex = 111;
             this.next_.TabStop = false;
@@ -637,9 +671,10 @@
             this.last_.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.last_.Image = ((System.Drawing.Image)(resources.GetObject("last_.Image")));
             this.last_.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.last_.Location = new System.Drawing.Point(1404, 15);
+            this.last_.Location = new System.Drawing.Point(936, 10);
+            this.last_.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.last_.Name = "last_";
-            this.last_.Size = new System.Drawing.Size(23, 30);
+            this.last_.Size = new System.Drawing.Size(17, 22);
             this.last_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.last_.TabIndex = 112;
             this.last_.TabStop = false;
@@ -652,9 +687,10 @@
             this.flowLayoutPanel1.Controls.Add(this.jor_Row3);
             this.flowLayoutPanel1.Controls.Add(this.jor_Row4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 233);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 159);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1803, 244);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1202, 167);
             this.flowLayoutPanel1.TabIndex = 105;
             // 
             // jor_Row1
@@ -666,8 +702,8 @@
             this.jor_Row1.Location = new System.Drawing.Point(0, 0);
             this.jor_Row1.Margin = new System.Windows.Forms.Padding(0);
             this.jor_Row1.Name = "jor_Row1";
-            this.jor_Row1.Padding = new System.Windows.Forms.Padding(3);
-            this.jor_Row1.Size = new System.Drawing.Size(1785, 80);
+            this.jor_Row1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jor_Row1.Size = new System.Drawing.Size(1191, 55);
             this.jor_Row1.TabIndex = 0;
             this.jor_Row1.Load += new System.EventHandler(this.jor_Row1_Load);
             // 
@@ -675,53 +711,56 @@
             // 
             this.jor_Row2.BackColor = System.Drawing.SystemColors.Control;
             this.jor_Row2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jor_Row2.Location = new System.Drawing.Point(0, 80);
+            this.jor_Row2.Location = new System.Drawing.Point(0, 55);
             this.jor_Row2.Margin = new System.Windows.Forms.Padding(0);
             this.jor_Row2.Name = "jor_Row2";
-            this.jor_Row2.Padding = new System.Windows.Forms.Padding(3);
-            this.jor_Row2.Size = new System.Drawing.Size(1785, 80);
+            this.jor_Row2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jor_Row2.Size = new System.Drawing.Size(1191, 55);
             this.jor_Row2.TabIndex = 1;
             // 
             // jor_Row3
             // 
             this.jor_Row3.BackColor = System.Drawing.SystemColors.Control;
             this.jor_Row3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jor_Row3.Location = new System.Drawing.Point(0, 160);
+            this.jor_Row3.Location = new System.Drawing.Point(0, 110);
             this.jor_Row3.Margin = new System.Windows.Forms.Padding(0);
             this.jor_Row3.Name = "jor_Row3";
-            this.jor_Row3.Padding = new System.Windows.Forms.Padding(3);
-            this.jor_Row3.Size = new System.Drawing.Size(1785, 80);
+            this.jor_Row3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jor_Row3.Size = new System.Drawing.Size(1191, 55);
             this.jor_Row3.TabIndex = 2;
             // 
             // jor_Row4
             // 
             this.jor_Row4.BackColor = System.Drawing.SystemColors.Control;
             this.jor_Row4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jor_Row4.Location = new System.Drawing.Point(0, 240);
+            this.jor_Row4.Location = new System.Drawing.Point(0, 165);
             this.jor_Row4.Margin = new System.Windows.Forms.Padding(0);
             this.jor_Row4.Name = "jor_Row4";
-            this.jor_Row4.Padding = new System.Windows.Forms.Padding(3);
-            this.jor_Row4.Size = new System.Drawing.Size(1785, 80);
+            this.jor_Row4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jor_Row4.Size = new System.Drawing.Size(1191, 55);
             this.jor_Row4.TabIndex = 3;
             // 
             // jorHead1
             // 
+            this.jorHead1.AutoSize = true;
             this.jorHead1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.jorHead1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.jorHead1.Location = new System.Drawing.Point(0, 198);
+            this.jorHead1.Location = new System.Drawing.Point(0, 135);
+            this.jorHead1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.jorHead1.Name = "jorHead1";
-            this.jorHead1.Size = new System.Drawing.Size(1803, 35);
+            this.jorHead1.Size = new System.Drawing.Size(1202, 24);
             this.jorHead1.TabIndex = 104;
             // 
             // frmEntryJornal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1803, 579);
+            this.ClientSize = new System.Drawing.Size(1202, 396);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.jorHead1);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.ribbonBar1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmEntryJornal";
             this.Text = "frmEntryJornal";
             this.Load += new System.EventHandler(this.frmEntryJornal_Load);
@@ -734,6 +773,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.last_)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

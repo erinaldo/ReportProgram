@@ -141,6 +141,7 @@
             this.BtnPrint.ImagePaddingHorizontal = 15;
             this.BtnPrint.Name = "BtnPrint";
             this.BtnPrint.SubItemsExpandWidth = 14;
+            this.BtnPrint.Click += new System.EventHandler(this.BtnPrint_Click);
             // 
             // BtnEmail
             // 

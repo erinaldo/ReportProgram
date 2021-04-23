@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PreformaInvoice));
             this.label9 = new System.Windows.Forms.Label();
             this.lblAccept = new System.Windows.Forms.Label();
             this.txtCurrency = new System.Windows.Forms.ComboBox();
@@ -50,6 +51,7 @@
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.btnPrint = new DevComponents.DotNetBar.ButtonItem();
             this.btnPrint_1 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnSendEmail = new DevComponents.DotNetBar.ButtonItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Cancl = new DevComponents.DotNetBar.ButtonX();
             this.btn_Srearch = new DevComponents.DotNetBar.ButtonX();
@@ -114,6 +116,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.tabcontrol1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Company_Paper = new System.Windows.Forms.RadioButton();
+            this.Factory_Paper = new System.Windows.Forms.RadioButton();
             this.AcceptDays = new DevComponents.Editors.IntegerInput();
             this.ch_Close = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.txtcyear = new System.Windows.Forms.Label();
@@ -138,9 +143,18 @@
             this.tabDelevery = new DevComponents.DotNetBar.TabItem(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.inv_Grid1 = new Report_Pro.MyControls.Inv_Grid();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Factory_Paper = new System.Windows.Forms.RadioButton();
-            this.Company_Paper = new System.Windows.Forms.RadioButton();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.ribbonBar1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate)).BeginInit();
@@ -153,11 +167,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabcontrol1)).BeginInit();
             this.tabcontrol1.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AcceptDays)).BeginInit();
             this.tabControlPanel2.SuspendLayout();
             this.tabControlPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label9
@@ -308,7 +324,8 @@
             this.btnAttachment,
             this.buttonItem2,
             this.btnPrint,
-            this.btnPrint_1});
+            this.btnPrint_1,
+            this.btnSendEmail});
             this.ribbonBar1.Location = new System.Drawing.Point(0, 0);
             this.ribbonBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonBar1.Name = "ribbonBar1";
@@ -409,6 +426,13 @@
             this.btnPrint_1.SubItemsExpandWidth = 14;
             this.btnPrint_1.Text = "Print Pieces Preforma";
             this.btnPrint_1.Click += new System.EventHandler(this.btnPrint_1_Click);
+            // 
+            // btnSendEmail
+            // 
+            this.btnSendEmail.Name = "btnSendEmail";
+            this.btnSendEmail.SubItemsExpandWidth = 14;
+            this.btnSendEmail.Text = "Send Email";
+            this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
             // 
             // groupBox1
             // 
@@ -1277,9 +1301,9 @@
             // tabcontrol1
             // 
             this.tabcontrol1.CanReorderTabs = true;
+            this.tabcontrol1.Controls.Add(this.tabControlPanel3);
             this.tabcontrol1.Controls.Add(this.tabControlPanel1);
             this.tabcontrol1.Controls.Add(this.tabControlPanel2);
-            this.tabcontrol1.Controls.Add(this.tabControlPanel3);
             this.tabcontrol1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabcontrol1.Location = new System.Drawing.Point(2, 2);
             this.tabcontrol1.Margin = new System.Windows.Forms.Padding(2);
@@ -1296,6 +1320,7 @@
             // 
             // tabControlPanel1
             // 
+            this.tabControlPanel1.Controls.Add(this.bindingNavigator1);
             this.tabControlPanel1.Controls.Add(this.groupBox2);
             this.tabControlPanel1.Controls.Add(this.AcceptDays);
             this.tabControlPanel1.Controls.Add(this.disc_Rate);
@@ -1365,6 +1390,39 @@
             this.tabControlPanel1.TabIndex = 1;
             this.tabControlPanel1.TabItem = this.tabGenral;
             this.tabControlPanel1.Click += new System.EventHandler(this.tabControlPanel1_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Company_Paper);
+            this.groupBox2.Controls.Add(this.Factory_Paper);
+            this.groupBox2.Location = new System.Drawing.Point(1307, 87);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(188, 86);
+            this.groupBox2.TabIndex = 305;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Print Paper";
+            // 
+            // Company_Paper
+            // 
+            this.Company_Paper.AutoSize = true;
+            this.Company_Paper.Location = new System.Drawing.Point(35, 48);
+            this.Company_Paper.Name = "Company_Paper";
+            this.Company_Paper.Size = new System.Drawing.Size(104, 17);
+            this.Company_Paper.TabIndex = 1;
+            this.Company_Paper.TabStop = true;
+            this.Company_Paper.Text = "Company paper ";
+            this.Company_Paper.UseVisualStyleBackColor = true;
+            // 
+            // Factory_Paper
+            // 
+            this.Factory_Paper.AutoSize = true;
+            this.Factory_Paper.Location = new System.Drawing.Point(35, 22);
+            this.Factory_Paper.Name = "Factory_Paper";
+            this.Factory_Paper.Size = new System.Drawing.Size(96, 17);
+            this.Factory_Paper.TabIndex = 0;
+            this.Factory_Paper.TabStop = true;
+            this.Factory_Paper.Text = "Factory paper ";
+            this.Factory_Paper.UseVisualStyleBackColor = true;
             // 
             // AcceptDays
             // 
@@ -1678,38 +1736,118 @@
             this.inv_Grid1.Size = new System.Drawing.Size(1536, 477);
             this.inv_Grid1.TabIndex = 88;
             // 
-            // groupBox2
+            // bindingNavigator1
             // 
-            this.groupBox2.Controls.Add(this.Company_Paper);
-            this.groupBox2.Controls.Add(this.Factory_Paper);
-            this.groupBox2.Location = new System.Drawing.Point(1307, 87);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(188, 86);
-            this.groupBox2.TabIndex = 305;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Print Paper";
+            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem});
+            this.bindingNavigator1.Location = new System.Drawing.Point(1, 1);
+            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigator1.Size = new System.Drawing.Size(1534, 25);
+            this.bindingNavigator1.TabIndex = 306;
+            this.bindingNavigator1.Text = "bindingNavigator1";
             // 
-            // Factory_Paper
+            // bindingNavigatorMoveFirstItem
             // 
-            this.Factory_Paper.AutoSize = true;
-            this.Factory_Paper.Location = new System.Drawing.Point(35, 22);
-            this.Factory_Paper.Name = "Factory_Paper";
-            this.Factory_Paper.Size = new System.Drawing.Size(96, 17);
-            this.Factory_Paper.TabIndex = 0;
-            this.Factory_Paper.TabStop = true;
-            this.Factory_Paper.Text = "Factory paper ";
-            this.Factory_Paper.UseVisualStyleBackColor = true;
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
-            // Company_Paper
+            // bindingNavigatorMovePreviousItem
             // 
-            this.Company_Paper.AutoSize = true;
-            this.Company_Paper.Location = new System.Drawing.Point(35, 48);
-            this.Company_Paper.Name = "Company_Paper";
-            this.Company_Paper.Size = new System.Drawing.Size(104, 17);
-            this.Company_Paper.TabIndex = 1;
-            this.Company_Paper.TabStop = true;
-            this.Company_Paper.Text = "Company paper ";
-            this.Company_Paper.UseVisualStyleBackColor = true;
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // frm_PreformaInvoice
             // 
@@ -1742,14 +1880,17 @@
             this.tabcontrol1.ResumeLayout(false);
             this.tabControlPanel1.ResumeLayout(false);
             this.tabControlPanel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AcceptDays)).EndInit();
             this.tabControlPanel2.ResumeLayout(false);
             this.tabControlPanel2.PerformLayout();
             this.tabControlPanel3.ResumeLayout(false);
             this.tabControlPanel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1868,5 +2009,18 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton Company_Paper;
         private System.Windows.Forms.RadioButton Factory_Paper;
+        private DevComponents.DotNetBar.ButtonItem btnSendEmail;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
     }
 }

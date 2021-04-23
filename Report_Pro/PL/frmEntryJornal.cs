@@ -113,5 +113,10 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void BtnPrint_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

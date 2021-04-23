@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Report_Pro.PL
+namespace Report_Pro.Loans
 {
     public partial class frmLoanPaymentSearch : Form
     {
