@@ -11,7 +11,7 @@ using DevExpress.XtraReports.UI;
 
 namespace Report_Pro.RPT
 {
-    public partial class frm_rpt_inventory : DevExpress.XtraEditors.XtraForm
+    public partial class frm_rpt_inventory :Form
     {
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
         string R, F, C, P, S, Z, X;
@@ -285,6 +285,78 @@ namespace Report_Pro.RPT
 
         }
 
+        private void btn_stockGroupByBranch_Click(object sender, EventArgs e)
+        {
+
+            choises();
+
+
+
+            DataSet1 ds = new DataSet1();
+            DataTable dt1 = new DataTable();
+
+            dt1 = dal.getDataTabl_1(@"SELECT d.Branch_code,B.branch_name,B.WH_E_NAME
+        ,sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy")+"' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as Balance_ " +
+        ",sum(case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy")+"' then (D.QTY_ADD - D.QTY_TAKE)*A.Weight  else 0 end) as Balance_Weight " +
+
+
+        ",sum (case when D.TRANSACTION_CODE  like 'Xp%' and  cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") + "' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as Purchases_ " +
+        ",sum (case when D.TRANSACTION_CODE  like 'Xp%' and  cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") + "' then (D.QTY_ADD-D.QTY_TAKE)*A.Weight  else 0 end)  as Purchases_Weight " +
+
+        ",sum (case when D.TRANSACTION_CODE  like 'XS%' and  cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") + "' then D.QTY_TAKE-D.QTY_ADD  else 0 end)  as Sales_ " +
+        ",sum (case when D.TRANSACTION_CODE  like 'XS%' and  cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") + "' then (D.QTY_TAKE-D.QTY_ADD)*A.Weight   else 0 end)  as Sales_Weight " +
+      
+        "FROM wh_material_transaction As D " +
+        "inner join wh_BRANCHES as B on B.branch_code = D.Branch_code " +
+        "inner join wh_main_master As A on A.item_no = D.ITEM_NO " +
+        "inner join wh_Groups As G on g.group_code = a.group_code " +
+
+        "where  g.group_code  between (CASE WHEN '" + Group.ID.Text.Length + "' >3  then  '" + Group.ID.Text + "' else '" + Group.ID.Text + "'+'0' end) and " +
+        "(CASE WHEN '" + Group1.ID.Text.Length + "' >3   then  '" + Group1.ID.Text + "' else  '" + Group1.ID.Text + "'+'z' end) " +
+        "and  D.branch_code like (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "%' else  '" + Branch.ID.Text + "%' end) " +
+
+        "group by  d.Branch_code,B.branch_name,B.WH_E_NAME order by d.Branch_code");
+
+            ds.Tables.Add(dt1);
+            //Reports.rpt_ItemBalanceByBranches rpt = new Reports.rpt_ItemBalanceByBranches();
+            RPT.rpt_inventory_Group_byBranch rpt = new rpt_inventory_Group_byBranch();
+            //rpt.DataSource = ds;
+            //ds.WriteXmlSchema("schema_rpt.xml");
+            rpt.SetDataSource(ds);
+            //rpt.ShowPreview();
+            //if (Properties.Settings.Default.lungh == "0")
+            //{
+            //    rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+            //    rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.Yes;
+            //    rpt.pram1.Value = 0;
+            //}
+            //else
+            //{
+            //    rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+            //    rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+            //    rpt.pram1.Value = 1;
+            //}
+
+            //rpt.lbl_Date.Text = dTP1.Value.ToShortDateString();
+            //rpt.lbl_ToDate.Text = dTP2.Value.ToShortDateString();
+            //rpt.lbl_ItemCode.Text = Item.ID.Text;
+            //rpt.lbl_ItemDescription.Text = Item.Desc.Text;
+            rpt.SetParameterValue("noOfDays", System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(dTP1.Value, dTP2.Value));
+            Form1 frm = new Form1();
+            frm.crystalReportViewer1.ReportSource = rpt;
+            rpt.DataDefinition.FormulaFields["fromDate"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["toDate"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["fromGroup"].Text = "'" + Group.Desc.Text + "'";
+            rpt.DataDefinition.FormulaFields["toGroup"].Text = "'" + Group1.Desc.Text + "'";
+
+
+
+
+            frm.ShowDialog();
+            Cursor.Current = Cursors.Default;
+
+        }
+
         private void btn_stockByBranch_Click(object sender, EventArgs e)
         {
             choises();
@@ -303,30 +375,13 @@ namespace Report_Pro.RPT
         "FROM wh_material_transaction As D inner join wh_BRANCHES as B on B.branch_code = D.Branch_code " +
 		"inner join wh_main_master As A on A.item_no = D.ITEM_NO inner join wh_Groups As G on g.group_code = a.group_code "+
 		"and  A.item_no = '"+Item.ID.Text+ "' and  D.branch_code like (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "%' else  '" + Branch.ID.Text + "%' end) " +
-  "group by d.Branch_code,B.branch_name,B.WH_E_NAME,A.Weight,A.local_cost,A.Unit order by d.Branch_code");
-
-    //            ", sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.Weight)  else 0 end)  as weight_ " +
-    //",sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then ((D.QTY_ADD - D.QTY_TAKE) * a.local_cost)  else 0 end)  as cost " +
-
-    //dt1 = dal.getDataTabl_1(@"SELECT d.Branch_code,B.branch_name,A.item_no,A.descr,a.Descr_eng,A.group_code,G.Group_name,a.Category,A.Weight,a.UnitDepth,a.local_cost,A.Unit,t2.COST_PRICE,
-    //a.Dim_category, round(sum(D.QTY_ADD - D.QTY_TAKE), 2) as balance, sum(D.QTY_ADD - D.QTY_TAKE) * a.local_cost as cost
-    //FROM wh_material_transaction As D 
-    //inner join wh_BRANCHES as B on B.branch_code = D.Branch_code
-    //inner join wh_main_master As A on A.item_no = D.ITEM_NO 
-    //inner join wh_Groups As G on g.group_code = a.group_code 
-    //inner join(select ITEM_NO, COST_PRICE from(select *, ROW_NUMBER() OVER(PARTITION BY item_no ORDER BY G_DATE DESC) AS DuplicateCount 
-    //FROM wh_MATERIAL_TRANSACTION  where cast(G_DATE as date) <= '" +
-    //dTP2.Value.ToString("yyyy/MM/dd") + "') as t1 where DuplicateCount = 1) as t2 on t2.ITEM_NO = a.item_no " +
-    //"where cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' " +
-    //"and A.Category in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "')  and   D.branch_code like " +
-    //" (CASE WHEN '" + Branch.ID.Text + "' !=''  then  '" + Branch.ID.Text + "%' else  '" + Branch.ID.Text + "%' end) and A.group_code like '" + Group.ID.Text +
-    //"%' and  A.item_no = '" + Item.ID.Text + "' and ISNULL (A.UnitDepth,'') between '" + T1 + "' and '" + T2 + "'  " +
-    //"group by A.item_no, A.descr, a.Descr_eng, A.group_code, G.Group_name, a.Category, A.Weight, a.UnitDepth,A.Unit, a.local_cost, a.Dim_category, t2.COST_PRICE,d.Branch_code,B.branch_name order by A.item_no");
+        "group by d.Branch_code,B.branch_name,B.WH_E_NAME,A.Weight,A.local_cost,A.Unit order by d.Branch_code");
 
     ds.Tables.Add(dt1);
+
             Reports.rpt_ItemBalanceByBranches rpt = new Reports.rpt_ItemBalanceByBranches();
             rpt.DataSource = ds;
-            //ds.WriteXmlSchema("schema_rpt.xml");
+            ds.WriteXmlSchema("schema_rpt.xml");
             rpt.ShowPreview();
             if (Properties.Settings.Default.lungh == "0")
             {

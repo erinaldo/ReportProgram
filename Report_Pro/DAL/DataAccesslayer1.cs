@@ -317,4 +317,8 @@ namespace Report_Pro.DAL
         // Assembly a = Assembly.Load("Report_Pro");
        public ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", Assembly.Load("Report_Pro"));
     }
+
+
+
+
 }

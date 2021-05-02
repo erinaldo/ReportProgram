@@ -97,7 +97,7 @@
             // menuStrip1
             // 
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Highlight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BNew,
             this.BSave,
@@ -110,6 +110,7 @@
             // BNew
             // 
             resources.ApplyResources(this.BNew, "BNew");
+            this.BNew.ForeColor = System.Drawing.SystemColors.Window;
             this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
             this.BNew.Name = "BNew";
             this.BNew.Click += new System.EventHandler(this.BNew_Click);
@@ -117,6 +118,7 @@
             // BSave
             // 
             resources.ApplyResources(this.BSave, "BSave");
+            this.BSave.ForeColor = System.Drawing.SystemColors.Window;
             this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
             this.BSave.Name = "BSave";
             this.BSave.Click += new System.EventHandler(this.BSave_Click);
@@ -124,6 +126,7 @@
             // BSearch
             // 
             resources.ApplyResources(this.BSearch, "BSearch");
+            this.BSearch.ForeColor = System.Drawing.SystemColors.Window;
             this.BSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
             this.BSearch.Name = "BSearch";
             this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
@@ -131,6 +134,7 @@
             // BStatment
             // 
             resources.ApplyResources(this.BStatment, "BStatment");
+            this.BStatment.ForeColor = System.Drawing.SystemColors.Window;
             this.BStatment.Image = global::Report_Pro.Properties.Resources.Reports1;
             this.BStatment.Name = "BStatment";
             this.BStatment.Click += new System.EventHandler(this.BStatment_Click);
@@ -138,6 +142,7 @@
             // BPrint
             // 
             resources.ApplyResources(this.BPrint, "BPrint");
+            this.BPrint.ForeColor = System.Drawing.SystemColors.Window;
             this.BPrint.Image = global::Report_Pro.Properties.Resources.printer_icon;
             this.BPrint.Name = "BPrint";
             this.BPrint.Click += new System.EventHandler(this.BPrint_Click);
@@ -145,6 +150,7 @@
             // BExit
             // 
             resources.ApplyResources(this.BExit, "BExit");
+            this.BExit.ForeColor = System.Drawing.SystemColors.Window;
             this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
             this.BExit.Name = "BExit";
             this.BExit.Click += new System.EventHandler(this.BExit_Click);
@@ -291,31 +297,36 @@
             // label35
             // 
             resources.ApplyResources(this.label35, "label35");
-            this.label35.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label35.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label35.ForeColor = System.Drawing.SystemColors.Window;
             this.label35.Name = "label35";
             // 
             // label34
             // 
             resources.ApplyResources(this.label34, "label34");
-            this.label34.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label34.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label34.ForeColor = System.Drawing.SystemColors.Window;
             this.label34.Name = "label34";
             // 
             // label33
             // 
             resources.ApplyResources(this.label33, "label33");
-            this.label33.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label33.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label33.ForeColor = System.Drawing.SystemColors.Window;
             this.label33.Name = "label33";
             // 
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
-            this.label27.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label27.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label27.ForeColor = System.Drawing.SystemColors.Window;
             this.label27.Name = "label27";
             // 
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
-            this.label26.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label26.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label26.ForeColor = System.Drawing.SystemColors.Window;
             this.label26.Name = "label26";
             // 
             // flowLayoutPanel1
@@ -487,8 +498,9 @@
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -534,8 +546,9 @@
             // btnCreateJor
             // 
             resources.ApplyResources(this.btnCreateJor, "btnCreateJor");
-            this.btnCreateJor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCreateJor.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCreateJor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnCreateJor.ForeColor = System.Drawing.SystemColors.Window;
             this.btnCreateJor.Name = "btnCreateJor";
             this.btnCreateJor.UseVisualStyleBackColor = false;
             this.btnCreateJor.Click += new System.EventHandler(this.btnCreateJor_Click);
@@ -543,8 +556,9 @@
             // btnPrintJor
             // 
             resources.ApplyResources(this.btnPrintJor, "btnPrintJor");
-            this.btnPrintJor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPrintJor.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnPrintJor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnPrintJor.ForeColor = System.Drawing.Color.White;
             this.btnPrintJor.Name = "btnPrintJor";
             this.btnPrintJor.UseVisualStyleBackColor = false;
             this.btnPrintJor.Click += new System.EventHandler(this.btnPrintJor_Click);
@@ -667,10 +681,10 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtMainLoanAccNo);
             this.Controls.Add(this.chLoanSave);
             this.Controls.Add(this.txtYear);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.txtMainLoanAccNo);
             this.Name = "frm_Loan";
             this.Load += new System.EventHandler(this.frm_Loan_Load);
             this.menuStrip1.ResumeLayout(false);

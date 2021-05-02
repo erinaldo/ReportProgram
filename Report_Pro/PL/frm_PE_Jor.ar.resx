@@ -118,6 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>830, 58</value>
+  </data>
+  <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>936, 60</value>
+  </data>
   <data name="buttonX2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -125,15 +135,11 @@
   <data name="buttonX2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 66</value>
-  </data>
-  <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>479, 45</value>
   </data>
   <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 54</value>
+    <value>85, 37</value>
   </data>
   <data name="buttonX2.Text" xml:space="preserve">
     <value>اقفال بدون قيد</value>
@@ -141,11 +147,29 @@
   <data name="txt_docId.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txt_docId.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_docId.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txt_docId.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt_docId.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txt_docId.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txt_docId.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="txt_docId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 85</value>
+    <value>149, 58</value>
   </data>
   <data name="txt_docId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 27</value>
+    <value>33, 20</value>
   </data>
   <data name="txt_docId.Text" xml:space="preserve">
     <value>JOR</value>
@@ -156,11 +180,29 @@
   <data name="txtSanad_type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txtSanad_type.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtSanad_type.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtSanad_type.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSanad_type.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtSanad_type.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtSanad_type.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="txtSanad_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 85</value>
+    <value>185, 58</value>
   </data>
   <data name="txtSanad_type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 27</value>
+    <value>33, 20</value>
   </data>
   <data name="txtSanad_type.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -172,10 +214,10 @@
     <value>True</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 89</value>
+    <value>222, 61</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 24</value>
+    <value>53, 17</value>
   </data>
   <data name="labelX5.Text" xml:space="preserve">
     <value>نوع الحركة</value>
@@ -190,10 +232,10 @@
     <value>True</value>
   </data>
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 114</value>
+    <value>185, 78</value>
   </data>
   <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 24</value>
+    <value>38, 17</value>
   </data>
   <data name="labelX8.Text" xml:space="preserve">
     <value>المعرف</value>
@@ -204,11 +246,29 @@
   <data name="txtSer_code.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txtSer_code.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtSer_code.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtSer_code.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSer_code.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtSer_code.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtSer_code.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="txtSer_code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 114</value>
+    <value>149, 78</value>
   </data>
   <data name="txtSer_code.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 27</value>
+    <value>33, 20</value>
   </data>
   <data name="txtSer_code.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -217,10 +277,10 @@
     <value>Top, Right</value>
   </data>
   <data name="Acc_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>751, 44</value>
+    <value>609, 30</value>
   </data>
   <data name="Acc_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 30</value>
+    <value>321, 22</value>
   </data>
   <data name="btn_AddJor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -229,61 +289,109 @@
     <value>False</value>
   </data>
   <data name="btn_AddJor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 4</value>
+    <value>388, 3</value>
   </data>
   <data name="btn_AddJor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 54</value>
+    <value>85, 37</value>
   </data>
   <data name="txtSerNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txtSerNo.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtSerNo.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtSerNo.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSerNo.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtSerNo.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtSerNo.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSerNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 9</value>
+  </data>
   <data name="Main_serNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="Main_serNo.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Main_serNo.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Main_serNo.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Main_serNo.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Main_serNo.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Main_serNo.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Main_serNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 33</value>
   </data>
   <data name="labelX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 24</value>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 12</value>
   </data>
   <data name="labelX7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 24</value>
+  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>200, 35</value>
   </data>
-  <data name="txtAcc_year.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 24</value>
+  <data name="txtAcc_year.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 58</value>
   </data>
-  <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 24</value>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>727, 92</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1239, 48</value>
+    <value>932, 33</value>
   </data>
-  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 24</value>
-  </data>
-  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 24</value>
+  <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 92</value>
   </data>
   <data name="btnReport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 4</value>
+    <value>479, 3</value>
   </data>
   <data name="btnReport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 54</value>
+    <value>85, 37</value>
   </data>
   <data name="btnReport.Text" xml:space="preserve">
     <value>معاينة القيد</value>
   </data>
-  <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 24</value>
+  <data name="toDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>619, 90</value>
+  </data>
+  <data name="fromDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>825, 90</value>
+  </data>
+  <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>932, 6</value>
   </data>
   <data name="Branch_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>751, 5</value>
+    <value>609, 3</value>
   </data>
   <data name="Branch_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 30</value>
+    <value>321, 22</value>
+  </data>
+  <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 119</value>
   </data>
   <data name="pictureBox2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -292,7 +400,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 34</value>
+    <value>35, 23</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -303,8 +411,11 @@
   <data name="labelX9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>815, 7</value>
+  </data>
   <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 24</value>
+    <value>31, 17</value>
   </data>
   <data name="labelX9.Text" xml:space="preserve">
     <value>الفرق</value>
@@ -312,37 +423,190 @@
   <data name="txtdiff.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="txtdiff.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtdiff.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtdiff.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtdiff.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtdiff.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtdiff.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtdiff.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtdiff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 5</value>
+  </data>
   <data name="txtdiff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="txtdiff.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 27</value>
+    <value>61, 20</value>
   </data>
   <data name="totalCredit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="totalCredit.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalCredit.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalCredit.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalCredit.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalCredit.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalCredit.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalCredit.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalCredit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 5</value>
   </data>
   <data name="totalCredit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="totalCredit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 27</value>
+    <value>59, 20</value>
   </data>
   <data name="totalDebit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="totalDebit.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalDebit.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalDebit.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalDebit.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalDebit.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalDebit.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="totalDebit.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="totalDebit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>938, 5</value>
   </data>
   <data name="totalDebit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="totalDebit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 27</value>
+    <value>57, 20</value>
   </data>
-  <data name="dGV_Item.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="groupPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 551</value>
   </data>
-  <data name="dGV_Item.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="groupPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 34</value>
   </data>
   <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1358, 519</value>
+    <value>1011, 426</value>
+  </data>
+  <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 119</value>
+  </data>
+  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 432</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 585</value>
   </data>
 </root>

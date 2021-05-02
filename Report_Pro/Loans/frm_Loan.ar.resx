@@ -158,10 +158,19 @@
     <value>0, 30</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 30</value>
+    <value>1084, 30</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 65</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 484</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>بيانات القرض</value>
   </data>
   <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>273, 435</value>
+    <value>301, 435</value>
   </data>
   <data name="NoOfPayments.Location" type="System.Drawing.Point, System.Drawing">
     <value>71, 85</value>
@@ -173,37 +182,43 @@
     <value>248, 85</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 250</value>
+    <value>32, 250</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
     <value>الفائدة</value>
   </data>
   <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 250</value>
+    <value>84, 250</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
     <value>تاريخ الاستحقاق</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 250</value>
+    <value>196, 250</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
     <value>تاريخ الصرف</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 250</value>
+    <value>307, 250</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
     <value>المبلغ</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 250</value>
+    <value>417, 250</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 23</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>الدفعة</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 276</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 153</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>162, 89</value>
@@ -328,26 +343,35 @@
   <data name="txtLoanId.Location" type="System.Drawing.Point, System.Drawing">
     <value>304, 35</value>
   </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 76</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>بيانات القرض</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>اضافة حساب القرض</value>
-  </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>586, 79</value>
+    <value>528, 65</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>532, 187</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>اضافة الحساب</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 25</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>اضافة حساب القرض</value>
+  </data>
+  <data name="dgAccNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 61</value>
+  </data>
   <data name="txtJorSer.Location" type="System.Drawing.Point, System.Drawing">
     <value>55, 50</value>
   </data>
+  <data name="btnCreateJor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 140</value>
+  </data>
   <data name="btnCreateJor.Text" xml:space="preserve">
     <value>انشاء قيد اليومية</value>
+  </data>
+  <data name="btnPrintJor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 140</value>
   </data>
   <data name="btnPrintJor.Text" xml:space="preserve">
     <value>طباعة قيد اليومية</value>
@@ -407,7 +431,7 @@
     <value>تاريخ قيد اليومية</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>689, 306</value>
+    <value>644, 293</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>قيد اليومية</value>
@@ -416,7 +440,7 @@
     <value>344, 501</value>
   </data>
   <data name="txtMainLoanAccNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 498</value>
+    <value>199, 498</value>
   </data>
   <data name="chLoanSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>689, 42</value>
@@ -431,5 +455,8 @@
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>القروض</value>
   </data>
 </root>

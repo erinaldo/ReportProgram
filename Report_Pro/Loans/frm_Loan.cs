@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -47,10 +48,22 @@ namespace Report_Pro.Loans
 
         private void BSave_Click(object sender, EventArgs e)
         {
+            saveLoanDataWithUpdateJor();
+        }
+
+
+
+        private void saveLoanDataWithUpdateJor() { 
             ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", a);
 
             foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
             {
+                gettot();
+                if (txtLoanValue.Value <= 0 || txtTotal.Value <= 0 || txtLoanValue.Value != txtTotal.Value)
+                {
+                    MessageBox.Show("تأكد من توازن القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
                 if (r.PayValue.Text.ToDecimal() > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
                 {
@@ -65,11 +78,7 @@ namespace Report_Pro.Loans
                             "',LoanPurpose='" + Convert.ToString(txtLoanPurpose.SelectedValue) + "',LoanRefrance='" + txtLoanRefrance.Text +
                             "',Branch_code = '" + _branch + "' where  id='" + txtLoanId.Text + "' and PaymentNo='" + r.paySer.Text + "' ");
                         MessageBox.Show(rm.GetString("msgEdit", cul), rm.GetString("msgEdit_H", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        if (txtJorSer.Text != string.Empty)
-                        {
-                            dal.Execute_1(@"delete from daily_transaction where ser_no='" + txtJorSer.Text + "' and Branch_code='" + _branch + "'");
-                        }
+                        
                         UpdateJor();
                     }
                     else
@@ -91,6 +100,50 @@ namespace Report_Pro.Loans
             dal.Execute_1(@"delete from LoansTbl where id='" + txtLoanId.Text + "' and PaymentNo >'" + flowLayoutPanel1.Controls.Count + "' ");
 
         }
+
+
+        private void saveLoanData()
+        {
+            ResourceManager rm = new ResourceManager("Report_Pro.Lang.Langres", a);
+
+            foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
+            {
+
+                if (r.PayValue.Text.ToDecimal() > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
+                {
+                    DataTable dt_ = dal.getDataTabl_1(@"select * from LoansTbl where id='" + txtLoanId.Text + "' and PaymentNo='" + r.paySer.Text + "' ");
+                    if (dt_.Rows.Count > 0)
+                    {
+
+                        dal.Execute_1(@"UPDATE LoansTbl set LoanNo='" + txtLoanNo.Text + "',BankId='" + BName.ID.Text + "',LoanACC='" + txtLoanAcc.ID.Text +
+                            "',LoanDate='" + L_StartDate.Value.ToString("yyyy-MM-dd") + "',NumberOfPayments='" + NoOfPayments.Value + "',LoanValue='" + txtLoanValue.Value + "',PaymentNo='" + r.paySer.Value +
+                            "', PaymentValue='" + r.PayValue.Text.ToDecimal() + "',StartDate='" + r.startDate.Value.ToString("yyyy-MM-dd") +
+                            "', MaturityDate='" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "', Rate='" + r.intrestRate.Text.ToDecimal() +
+                            "',LoanPurpose='" + Convert.ToString(txtLoanPurpose.SelectedValue) + "',LoanRefrance='" + txtLoanRefrance.Text +
+                            "',Branch_code = '" + _branch + "' where  id='" + txtLoanId.Text + "' and PaymentNo='" + r.paySer.Text + "' ");
+                        MessageBox.Show(rm.GetString("msgEdit", cul), rm.GetString("msgEdit_H", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+
+                        dal.Execute_1(@"INSERT INTO LoansTbl(id,LoanNo,BankId,LoanACC,LoanDate,NumberOfPayments,LoanValue,PaymentNo,
+                        PaymentValue,StartDate,MaturityDate,Rate,LoanPurpose,LoanRefrance,Branch_code)
+                        VALUES(  '" + txtLoanId.Text + "', '" + txtLoanNo.Text + "','" + BName.ID.Text + "','" + txtLoanAcc.ID.Text + "','" + L_StartDate.Value.ToString("yyyy-MM-dd") + "','" + NoOfPayments.Value +
+                        "','" + txtLoanValue.Value + "','" + r.paySer.Value + "','" + r.PayValue.Text.ToDecimal() + "','" + r.startDate.Value.ToString("yyyy-MM-dd") +
+                        "','" + r.maturityDate.Value.ToString("yyyy-MM-dd") + "','" + r.intrestRate.Text.ToDecimal() + "','" + Convert.ToString(txtLoanPurpose.SelectedValue) + "', '" + txtLoanRefrance.Text + "','" + _branch + "')");
+                        MessageBox.Show(rm.GetString("msgSave", cul), rm.GetString("msgSave_H", cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        chLoanSave.Checked = true;
+                    }
+                }
+            }
+
+
+            dal.Execute_1(@"delete from LoansTbl where id='" + txtLoanId.Text + "' and PaymentNo >'" + flowLayoutPanel1.Controls.Count + "' ");
+
+        }
+
 
 
         private void addRows()
@@ -222,171 +275,307 @@ namespace Report_Pro.Loans
 
         private void btnCreateJor_Click(object sender, EventArgs e)
         {
-            int JorSer;
-            getJorSer();
-            gettot();
-            if (txtLoanValue.Value <= 0 || txtTotal.Value <= 0 || txtLoanValue.Value != txtTotal.Value)
-            {
-                MessageBox.Show("تأكد من توازن القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (txtLoanAcc.ID.Text == string.Empty)
-            {
-                MessageBox.Show("تأكد من حساب القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtLoanAcc.Focus();
-                return;
-            }
-            if (BName.ID.Text == string.Empty)
-            {
-                MessageBox.Show("تأكد من حساب البنك", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                BName.Focus();
-                return;
-            }
-            if (!dal.IsDateTime(jorDate.Text))
-            {
-                MessageBox.Show("تأكد تاريخ القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                jorDate.Focus();
-                return;
-            }
-
-            if (!dal.IsDateTime(L_StartDate.Text))
-            {
-                MessageBox.Show("تأكد تاريخ بداية القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                L_StartDate.Focus();
-                return;
-            }
-
-            if (txtJorSer.Text.Contains('M'))
-            {
-                var Jor_ser = txtJorSer.Text.Split('M');
-                JorSer = Convert.ToInt32(Jor_ser[1]);
-            }
-
-            else
-            {
-                JorSer = Convert.ToInt32(txtJorSer.Text);
-            }
-
-            string DbDesc = "صرف قرض رقم " + txtLoanNo.Text + " - " + L_StartDate.Text.ToString();
-            dal.Execute_1(@"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
-                   , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
-                    VALUES('" + txtYear.Text + "','" + BName.ID.Text + "','" + _branch + "','" +
-                   txtJorSer.Text + "','1','" + txtLoanValue.Value + "','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
-                   "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')");
-
-
-            foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
-            {
-
-                if (r.PayValue.Text.ToDecimal() > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
-                {
-
-                    string crDesc = "صرف الدفعة رقم " + r.paySer.Text + " من القرض - " + L_StartDate.Text.ToString();
-
-                    dal.Execute_1(@"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
-                   , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
-                    VALUES('" + txtYear.Text + "','" + txtLoanAcc.ID.Text + "','" + _branch + "','" +
-                    txtJorSer.Text + "','1','0','" + r.PayValue.Text.ToDecimal() + "','" + -r.PayValue.Text.ToDecimal() + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
-                    "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + crDesc + "','0','1','" + JorSer + "')");
-
-                }
-
-                dal.Execute_1(@"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ");
-
-                dal.Execute_1(@"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer.Text + "' WHERE id =  '" + txtLoanId.Text + "' ");
-
-
-                MessageBox.Show("تم الحفظ بنجاح", "حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
+           saveLoanData();
+            AddJor();
         }
 
 
         private void UpdateJor()
         {
-            int JorSer;
+           
 
-            gettot();
-            if (txtLoanValue.Value <= 0 || txtTotal.Value <= 0 || txtLoanValue.Value != txtTotal.Value)
+            if (dal.sqlconn_1.State == ConnectionState.Closed)
             {
-                MessageBox.Show("تأكد من توازن القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                dal.sqlconn_1.Open();
             }
+            SqlCommand cmd = dal.sqlconn_1.CreateCommand();
+            SqlTransaction trans;
+            trans = dal.sqlconn_1.BeginTransaction();
+            cmd.Connection = dal.sqlconn_1;
+            cmd.Transaction = trans;
 
-            if (txtLoanAcc.ID.Text == string.Empty)
-            {
-                MessageBox.Show("تأكد من حساب القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtLoanAcc.Focus();
-                return;
-            }
-            if (BName.ID.Text == string.Empty)
-            {
-                MessageBox.Show("تأكد من حساب البنك", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                BName.Focus();
-                return;
-            }
-            if (!dal.IsDateTime(jorDate.Text))
-            {
-                MessageBox.Show("تأكد تاريخ القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                jorDate.Focus();
-                return;
-            }
 
-            if (!dal.IsDateTime(L_StartDate.Text))
+            try
             {
-                MessageBox.Show("تأكد تاريخ بداية القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                L_StartDate.Focus();
-                return;
-            }
+                //cmd.CommandText = @"delete  FROM fund_Balance_Detials WHERE branch_code='" + Branch.ID.Text + "' and cast(G_date as date) = '" + ToDate.Value.ToString("yyyy-MM-dd") + "'";
+                //cmd.ExecuteNonQuery();
 
-            if (txtJorSer.Text.Contains('M'))
-            {
-                var Jor_ser = txtJorSer.Text.Split('M');
-                JorSer = Convert.ToInt32(Jor_ser[1]);
-            }
+                int JorSer;
+                if (txtJorSer.Text != string.Empty)
+                {
+                    cmd.CommandText = @"delete from daily_transaction where ser_no='" + txtJorSer.Text + "' and Branch_code='" + _branch + "'";
+                    cmd.ExecuteNonQuery();
+                    //}
+                    //else
+                    //{
+                    //    getJorSer();
+                    //}
+                    gettot();
+                    if (txtLoanValue.Value <= 0 || txtTotal.Value <= 0 || txtLoanValue.Value != txtTotal.Value)
+                    {
+                        MessageBox.Show("تأكد من توازن القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-            else
-            {
-                JorSer = Convert.ToInt32(txtJorSer.Text);
-            }
+                    if (txtLoanAcc.ID.Text == string.Empty)
+                    {
+                        MessageBox.Show("تأكد من حساب القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtLoanAcc.Focus();
+                        return;
+                    }
+                    if (BName.ID.Text == string.Empty)
+                    {
+                        MessageBox.Show("تأكد من حساب البنك", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        BName.Focus();
+                        return;
+                    }
+                    if (!dal.IsDateTime(jorDate.Text))
+                    {
+                        MessageBox.Show("تأكد تاريخ القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        jorDate.Focus();
+                        return;
+                    }
 
-            string DbDesc = "صرف قرض رقم " + txtLoanNo.Text + " - " + L_StartDate.Text.ToString();
-            dal.Execute_1(@"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
+                    if (!dal.IsDateTime(L_StartDate.Text))
+                    {
+                        MessageBox.Show("تأكد تاريخ بداية القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        L_StartDate.Focus();
+                        return;
+                    }
+
+                    if (txtJorSer.Text.Contains('M'))
+                    {
+                        var Jor_ser = txtJorSer.Text.Split('M');
+                        JorSer = Convert.ToInt32(Jor_ser[1]);
+                    }
+
+                    else
+                    {
+                        JorSer = Convert.ToInt32(txtJorSer.Text);
+                    }
+
+
+                    string DbDesc = "صرف قرض رقم " + txtLoanNo.Text + " - " + L_StartDate.Text.ToString();
+                    cmd.CommandText = @"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
                    , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
                     VALUES('" + txtYear.Text + "','" + BName.ID.Text + "','" + _branch + "','" +
-                   txtJorSer.Text + "','1','" + txtLoanValue.Value + "','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
-                   "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')");
+                            txtJorSer.Text + "','1','" + txtLoanValue.Value + "','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
+                            "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')";
+                    cmd.ExecuteNonQuery();
 
 
-            foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
-            {
+                    foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
+                    {
 
-                if (r.PayValue.Text.ToDecimal() > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
-                {
+                        if (r.PayValue.Text.ToDecimal() > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
+                        {
 
-                    string crDesc = "صرف الدفعة رقم " + r.paySer.Text + " من القرض - " + L_StartDate.Text.ToString();
+                            string crDesc = "صرف الدفعة رقم " + r.paySer.Text + " من القرض - " + L_StartDate.Text.ToString();
 
-                    dal.Execute_1(@"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
+                            cmd.CommandText = @"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
                    , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
                     VALUES('" + txtYear.Text + "','" + txtLoanAcc.ID.Text + "','" + _branch + "','" +
-                    txtJorSer.Text + "','1','0','" + r.PayValue.Text.ToDecimal() + "','" + -r.PayValue.Text.ToDecimal() + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
-                    "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + crDesc + "','0','1','" + JorSer + "')");
+                               txtJorSer.Text + "','1','0','" + r.PayValue.Text.ToDecimal() + "','" + -r.PayValue.Text.ToDecimal() + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
+                               "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + crDesc + "','0','1','" + JorSer + "')";
+                            cmd.ExecuteNonQuery();
 
+                            cmd.CommandText = @"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer.Text + "' WHERE id =  '" + txtLoanId.Text + "' ";
+                            cmd.ExecuteNonQuery();
+
+
+                            cmd.CommandText = @"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ";
+                            cmd.ExecuteNonQuery();
+                        }
+
+
+                    }
+                    MessageBox.Show("تم الحفظ بنجاح", "حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+                    trans.Commit();
                 }
-
-                dal.Execute_1(@"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ");
-
-                dal.Execute_1(@"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer.Text + "' WHERE id =  '" + txtLoanId.Text + "' ");
-
-
-               // MessageBox.Show("تم الحفظ بنجاح", "حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            catch (Exception ex)
+            {
+
+
+                trans.Rollback();
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dal.sqlconn_1.Close();
+            }
+
+
+
+
+
+            //---
+
+
+            // UpdateJor();
+
+
+
+
+
 
 
 
 
         }
+
+
+
+        private void AddJor()
+        {
+
+
+            if (dal.sqlconn_1.State == ConnectionState.Closed)
+            {
+                dal.sqlconn_1.Open();
+            }
+            SqlCommand cmd = dal.sqlconn_1.CreateCommand();
+            SqlTransaction trans;
+            trans = dal.sqlconn_1.BeginTransaction();
+            cmd.Connection = dal.sqlconn_1;
+            cmd.Transaction = trans;
+
+
+            try
+            {
+                //cmd.CommandText = @"delete  FROM fund_Balance_Detials WHERE branch_code='" + Branch.ID.Text + "' and cast(G_date as date) = '" + ToDate.Value.ToString("yyyy-MM-dd") + "'";
+                //cmd.ExecuteNonQuery();
+
+                int JorSer;
+                if (txtJorSer.Text != string.Empty)
+                {
+                    cmd.CommandText = @"delete from daily_transaction where ser_no='" + txtJorSer.Text + "' and Branch_code='" + _branch + "'";
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    getJorSer();
+                }
+                gettot();
+                if (txtLoanValue.Value <= 0 || txtTotal.Value <= 0 || txtLoanValue.Value != txtTotal.Value)
+                {
+                    MessageBox.Show("تأكد من توازن القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (txtLoanAcc.ID.Text == string.Empty)
+                {
+                    MessageBox.Show("تأكد من حساب القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtLoanAcc.Focus();
+                    return;
+                }
+                if (BName.ID.Text == string.Empty)
+                {
+                    MessageBox.Show("تأكد من حساب البنك", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    BName.Focus();
+                    return;
+                }
+                if (!dal.IsDateTime(jorDate.Text))
+                {
+                    MessageBox.Show("تأكد تاريخ القيد", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    jorDate.Focus();
+                    return;
+                }
+
+                if (!dal.IsDateTime(L_StartDate.Text))
+                {
+                    MessageBox.Show("تأكد تاريخ بداية القرض", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    L_StartDate.Focus();
+                    return;
+                }
+
+                if (txtJorSer.Text.Contains('M'))
+                {
+                    var Jor_ser = txtJorSer.Text.Split('M');
+                    JorSer = Convert.ToInt32(Jor_ser[1]);
+                }
+
+                else
+                {
+                    JorSer = Convert.ToInt32(txtJorSer.Text);
+                }
+
+
+                    string DbDesc = "صرف قرض رقم " + txtLoanNo.Text + " - " + L_StartDate.Text.ToString();
+                    cmd.CommandText = @"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
+                    , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
+                    VALUES('" + txtYear.Text + "','" + BName.ID.Text + "','" + _branch + "','" +
+                    txtJorSer.Text + "','1','" + txtLoanValue.Value + "','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
+                    "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')";
+                    cmd.ExecuteNonQuery();
+
+
+                foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
+                {
+
+                    if (r.PayValue.Text.ToDecimal() > 0 && dal.IsDateTime(r.startDate.Text) && dal.IsDateTime(r.maturityDate.Text))
+                    {
+
+                        string crDesc = "صرف الدفعة رقم " + r.paySer.Text + " من القرض - " + L_StartDate.Text.ToString();
+
+                        cmd.CommandText = @"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
+                   , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
+                    VALUES('" + txtYear.Text + "','" + txtLoanAcc.ID.Text + "','" + _branch + "','" +
+                           txtJorSer.Text + "','1','0','" + r.PayValue.Text.ToDecimal() + "','" + -r.PayValue.Text.ToDecimal() + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
+                           "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + crDesc + "','0','1','" + JorSer + "')";
+                        cmd.ExecuteNonQuery();
+
+                        cmd.CommandText = @"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer.Text + "' WHERE id =  '" + txtLoanId.Text + "' ";
+                        cmd.ExecuteNonQuery();
+
+
+                        cmd.CommandText = @"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ";
+                        cmd.ExecuteNonQuery();
+                    }
+
+
+                }
+                MessageBox.Show("تم الحفظ بنجاح", "حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+                trans.Commit();
+
+            }
+            catch (Exception ex)
+            {
+
+
+                trans.Rollback();
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dal.sqlconn_1.Close();
+            }
+
+
+
+
+
+            //---
+
+
+            // UpdateJor();
+
+
+
+
+
+
+
+
+
+        }
+
 
         public void gettot()
         {
@@ -489,14 +678,14 @@ namespace Report_Pro.Loans
 
         private void txtJorSer_TextChanged(object sender, EventArgs e)
         {
-            if (txtJorSer.Text.Trim() == string.Empty)
-            {
-                btnCreateJor.Enabled = true;
-            }
-            else
-            {
-                btnCreateJor.Enabled = false;
-            }
+            //if (txtJorSer.Text.Trim() == string.Empty)
+            //{
+            //    btnCreateJor.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnCreateJor.Enabled = false;
+            //}
         }
 
         private void chLoanSave_CheckedChanged(object sender, EventArgs e)
@@ -505,13 +694,13 @@ namespace Report_Pro.Loans
             {
                 chLoanSave.Text = "Saved";
                 chLoanSave.BackColor = Color.GreenYellow;
-                btnCreateJor.Enabled = true;
+            //    btnCreateJor.Enabled = true;
             }
             else
             {
                 chLoanSave.Text = " Not Saved";
                 chLoanSave.BackColor = Color.Transparent;
-                btnCreateJor.Enabled = false;
+                //btnCreateJor.Enabled = false;
             }
         }
 

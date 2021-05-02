@@ -129,20 +129,28 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtAcc_year.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 85</value>
+    <value>18, 58</value>
   </data>
   <data name="txtSer_code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 89</value>
+    <value>228, 84</value>
+  </data>
+  <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 325</value>
   </data>
   <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="totalCredit.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txtSerNo.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="groupPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>909, 34</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>909, 495</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 22</value>
+    <value>47, 17</value>
   </data>
   <data name="&gt;&gt;totalCredit.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -150,29 +158,24 @@
   <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
+  <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;txtdiff.Parent" xml:space="preserve">
     <value>groupPanel3</value>
   </data>
-  <data name="&gt;&gt;dGV_.Parent" xml:space="preserve">
-    <value>groupPanel2</value>
-  </data>
-  <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="totalDebit.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="btn_AddJor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 67</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
   </data>
-  <data name="toDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 85</value>
-  </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 22</value>
+    <value>47, 17</value>
   </data>
   <data name="&gt;&gt;labelX7.Parent" xml:space="preserve">
     <value>groupPanel1</value>
@@ -186,8 +189,8 @@
   <data name="&gt;&gt;groupPanel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;dGV_.Name" xml:space="preserve">
-    <value>dGV_</value>
+  <data name="Main_serNo.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
   </data>
   <data name="totalCredit.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -201,29 +204,26 @@
   <data name="labelX1.Text" xml:space="preserve">
     <value>من تاريخ</value>
   </data>
-  <data name="btnReport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 13</value>
+  <data name="&gt;&gt;txtAcc_year.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;btn_AddJor.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="txt_Cyear.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 18</value>
+    <value>92, 12</value>
   </data>
   <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 22</value>
+    <value>53, 17</value>
   </data>
   <data name="Acc_.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
   </data>
   <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 91</value>
+    <value>307, 62</value>
   </data>
   <data name="txtdiff.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -231,34 +231,31 @@
   <data name="&gt;&gt;totalCredit.Name" xml:space="preserve">
     <value>totalCredit</value>
   </data>
-  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
-  </data>
-  <data name="txtSerNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="labelX1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelX3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;groupPanel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
+  <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="txtdiff.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;labelX2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
   </data>
   <data name="txtSer_code.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt_docId.ButtonCustom2.Text" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;buttonX2.Name" xml:space="preserve">
@@ -271,16 +268,13 @@
     <value>9</value>
   </data>
   <data name="&gt;&gt;labelX5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;totalDebit.Parent" xml:space="preserve">
     <value>groupPanel3</value>
   </data>
-  <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 148</value>
+    <value>0, 130</value>
   </data>
   <data name="totalDebit.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -289,13 +283,13 @@
     <value>تقرير الاستحقاق</value>
   </data>
   <data name="&gt;&gt;txtSanad_type.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>groupPanel3</value>
   </data>
-  <data name="toDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>909, 331</value>
   </data>
   <data name="&gt;&gt;groupPanel3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -306,14 +300,14 @@
   <data name="totalDebit.ButtonDropDown.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;labelX10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="Main_serNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 27</value>
+    <value>72, 20</value>
   </data>
   <data name="&gt;&gt;txtSer_code.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 22</value>
   </data>
   <data name="labelX4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -327,29 +321,32 @@
   <data name="&gt;&gt;txtSerNo.Name" xml:space="preserve">
     <value>txtSerNo</value>
   </data>
-  <data name="txtSerNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 13</value>
+  <data name="txtSerNo.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;btn_AddJor.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="totalDebit.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="toDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>512, 85</value>
   </data>
   <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
     <value>labelX4</value>
   </data>
+  <data name="txt_docId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="&gt;&gt;groupPanel2.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1364, 525</value>
   </data>
   <data name="txtdiff.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="txtSanad_type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="labelX10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="Acc_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -364,10 +361,7 @@
     <value>labelX5</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1364, 148</value>
-  </data>
-  <data name="&gt;&gt;labelX9.Parent" xml:space="preserve">
-    <value>groupPanel3</value>
+    <value>909, 130</value>
   </data>
   <data name="txtdiff.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -381,9 +375,6 @@
   <data name="&gt;&gt;totalDebit.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;txt_Cyear.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
   <data name="&gt;&gt;groupPanel3.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
@@ -391,10 +382,10 @@
     <value>0</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 19</value>
+    <value>6, 13</value>
   </data>
-  <data name="groupPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="txtSanad_type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Main_serNo.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -402,14 +393,17 @@
   <data name="&gt;&gt;groupPanel3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="txtdiff.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;txtSanad_type.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
   <data name="btn_AddJor.Text" xml:space="preserve">
     <value>انشاء قيد</value>
   </data>
-  <data name="totalCredit.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
   </data>
   <data name="Main_serNo.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -427,13 +421,19 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;Branch_.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
+  </data>
+  <data name="totalCredit.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtSer_code.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="dGV_Item.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dGV_Item.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;groupPanel2.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -442,10 +442,10 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;labelX1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;txt_Cyear.Name" xml:space="preserve">
-    <value>txt_Cyear</value>
+  <data name="totalCredit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="totalCredit.ButtonClear.Text" xml:space="preserve">
     <value />
@@ -453,8 +453,11 @@
   <data name="&gt;&gt;labelX6.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="dGV_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1358, 519</value>
+  <data name="totalCredit.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelX9.Parent" xml:space="preserve">
+    <value>groupPanel3</value>
   </data>
   <data name="&gt;&gt;groupPanel1.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.GroupPanel, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -462,23 +465,26 @@
   <data name="&gt;&gt;dGV_Item.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="labelX10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 17</value>
+  </data>
+  <data name="&gt;&gt;toDate.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="txt_docId.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt_docId.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="txt_Cyear.ButtonCustom.Text" xml:space="preserve">
-    <value />
+  <data name="btn_AddJor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 9</value>
   </data>
   <data name="&gt;&gt;dGV_Item.Parent" xml:space="preserve">
     <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>12</value>
   </data>
   <data name="labelX9.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -486,8 +492,11 @@
   <data name="&gt;&gt;labelX7.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="groupPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 673</value>
+  <data name="&gt;&gt;txtID.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="labelX10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="txtdiff.ButtonClear.Text" xml:space="preserve">
     <value />
@@ -504,11 +513,8 @@
   <data name="&gt;&gt;fromDate.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="&gt;&gt;txtAcc_year.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
   <data name="&gt;&gt;labelX7.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="totalCredit.ButtonFreeText.Text" xml:space="preserve">
     <value />
@@ -516,11 +522,14 @@
   <data name="&gt;&gt;labelX1.Name" xml:space="preserve">
     <value>labelX1</value>
   </data>
-  <data name="&gt;&gt;txtSerNo.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>620, 87</value>
   </data>
   <data name="&gt;&gt;txt_docId.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="dGV_Item.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -528,20 +537,20 @@
   <data name="txtdiff.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="txt_docId.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+  <data name="txt_docId.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtID.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupPanel2.Name" xml:space="preserve">
-    <value>groupPanel2</value>
-  </data>
-  <data name="txtAcc_year.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;dGV_Item.Name" xml:space="preserve">
     <value>dGV_Item</value>
   </data>
-  <data name="labelX7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;labelX8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="labelX5.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
   </data>
   <data name="txtSer_code.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -549,41 +558,32 @@
   <data name="txtAcc_year.Text" xml:space="preserve">
     <value>CY</value>
   </data>
+  <data name="txtdiff.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
     <value>labelX6</value>
   </data>
   <data name="&gt;&gt;txtSer_code.Name" xml:space="preserve">
     <value>txtSer_code</value>
   </data>
-  <data name="groupPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1364, 50</value>
+  <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="Branch_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 51</value>
+    <value>92, 35</value>
   </data>
-  <data name="&gt;&gt;txt_Cyear.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
-  </data>
-  <data name="btn_AddJor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btnReport.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="totalDebit.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txtAcc_year.Name" xml:space="preserve">
     <value>txtAcc_year</value>
   </data>
   <data name="labelX2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;dGV_.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Main_serNo.Name" xml:space="preserve">
-    <value>Main_serNo</value>
   </data>
   <data name="&gt;&gt;txtSerNo.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
@@ -597,8 +597,8 @@
   <data name="txtdiff.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txtSer_code.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
   </data>
   <data name="&gt;&gt;Branch_.Type" xml:space="preserve">
     <value>Report_Pro.MyControls.UC_AccBranch, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
@@ -618,8 +618,8 @@
   <data name="totalCredit.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="txt_docId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
   </data>
   <data name="txtSanad_type.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -631,7 +631,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="totalDebit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1245, 8</value>
+    <value>830, 5</value>
   </data>
   <data name="&gt;&gt;txt_docId.Parent" xml:space="preserve">
     <value>groupPanel1</value>
@@ -640,16 +640,16 @@
     <value>126</value>
   </data>
   <data name="&gt;&gt;Acc_.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
+  </data>
+  <data name="txtAcc_year.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 17</value>
   </data>
   <data name="&gt;&gt;labelX3.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="txt_docId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 89</value>
-  </data>
-  <data name="&gt;&gt;dGV_.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+    <value>80, 84</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -670,28 +670,16 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;labelX3.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="txtSerNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 27</value>
+    <value>72, 20</value>
   </data>
   <data name="totalDebit.ButtonCustom.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txt_Cyear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 89</value>
-  </data>
-  <data name="txtSerNo.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
-    <value>labelX2</value>
-  </data>
   <data name="Main_serNo.ButtonCustom2.Text" xml:space="preserve">
     <value />
-  </data>
-  <data name="txt_Cyear.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;Branch_.Parent" xml:space="preserve">
     <value>groupPanel1</value>
@@ -699,11 +687,8 @@
   <data name="buttonX2.TabIndex" type="System.Int32, mscorlib">
     <value>139</value>
   </data>
-  <data name="&gt;&gt;labelX8.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="fromDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;labelX2.Name" xml:space="preserve">
+    <value>labelX2</value>
   </data>
   <data name="labelX7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -711,31 +696,31 @@
   <data name="txtdiff.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="txtSanad_type.TabIndex" type="System.Int32, mscorlib">
     <value>135</value>
   </data>
   <data name="&gt;&gt;labelX8.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1239, 9</value>
+    <value>826, 6</value>
   </data>
-  <data name="&gt;&gt;dGV_Item.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="btnReport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 9</value>
   </data>
-  <data name="&gt;&gt;fromDate.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="txtID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>719, 59</value>
+  </data>
+  <data name="txtdiff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;Main_serNo.Type" xml:space="preserve">
     <value>DevComponents.DotNetBar.Controls.TextBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="txtAcc_year.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 22</value>
+  <data name="&gt;&gt;buttonX2.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
   </data>
-  <data name="txt_docId.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtSerNo.ButtonCustom.Text" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;labelX9.Type" xml:space="preserve">
@@ -744,26 +729,20 @@
   <data name="btnReport.Text" xml:space="preserve">
     <value>التقرير</value>
   </data>
-  <data name="totalCredit.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="totalCredit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
   </data>
   <data name="totalCredit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1151, 8</value>
+    <value>767, 5</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
-  </data>
-  <data name="dGV_.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="&gt;&gt;labelX3.Name" xml:space="preserve">
     <value>labelX3</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1238, 88</value>
-  </data>
-  <data name="dGV_.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>825, 87</value>
   </data>
   <data name="&gt;&gt;labelX9.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -774,14 +753,26 @@
   <data name="totalCredit.ButtonDropDown.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="groupPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 461</value>
+  </data>
+  <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>825, 61</value>
+  </data>
   <data name="labelX1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="Branch_.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="labelX10.Text" xml:space="preserve">
+    <value>رقم المعرف</value>
+  </data>
   <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="labelX9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="totalDebit.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -789,50 +780,62 @@
   <data name="&gt;&gt;labelX8.Name" xml:space="preserve">
     <value>labelX8</value>
   </data>
-  <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="txtSerNo.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;txtID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1239, 50</value>
-  </data>
-  <data name="txtSerNo.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="totalDebit.ButtonCustom2.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 34</value>
+  </data>
+  <data name="txtID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;labelX10.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;fromDate.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Main_serNo.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;totalDebit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fromDate.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="toDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 27</value>
+    <value>104, 20</value>
+  </data>
+  <data name="txt_docId.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;labelX9.Name" xml:space="preserve">
     <value>labelX9</value>
   </data>
   <data name="Branch_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>463, 32</value>
+    <value>310, 23</value>
+  </data>
+  <data name="&gt;&gt;txtID.Name" xml:space="preserve">
+    <value>txtID</value>
   </data>
   <data name="Acc_.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="&gt;&gt;labelX2.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="txt_Cyear.TabIndex" type="System.Int32, mscorlib">
-    <value>137</value>
+  <data name="&gt;&gt;dGV_Item.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.DataGridViewX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="txtID.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
   </data>
   <data name="&gt;&gt;txtdiff.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="groupPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtSanad_type.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -840,62 +843,50 @@
   <data name="labelX7.Text" xml:space="preserve">
     <value>رقم السند</value>
   </data>
-  <data name="txtdiff.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="totalDebit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="txt_Cyear.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="txtSerNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 9</value>
   </data>
   <data name="txtdiff.Location" type="System.Drawing.Point, System.Drawing">
-    <value>963, 8</value>
-  </data>
-  <data name="buttonX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>642, 5</value>
   </data>
   <data name="txtSanad_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 89</value>
+    <value>133, 84</value>
   </data>
-  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
-    <value>buttonX1</value>
+  <data name="buttonX2.Text" xml:space="preserve">
+    <value>معاينة القيد</value>
   </data>
-  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 67</value>
-  </data>
-  <data name="dGV_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;txt_Cyear.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 34</value>
+  <data name="totalDebit.ButtonFreeText.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frm_PE_Jor</value>
   </data>
-  <data name="buttonX1.Text" xml:space="preserve">
-    <value>buttonX1</value>
+  <data name="labelX2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="labelX3.Text" xml:space="preserve">
     <value>الفرع</value>
   </data>
   <data name="Main_serNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 48</value>
+    <value>18, 33</value>
   </data>
   <data name="&gt;&gt;txtdiff.Name" xml:space="preserve">
     <value>txtdiff</value>
   </data>
   <data name="btnReport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 54</value>
+    <value>98, 37</value>
   </data>
-  <data name="&gt;&gt;buttonX2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="groupPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="totalDebit.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;txtSer_code.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="txtAcc_year.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -903,7 +894,7 @@
   <data name="&gt;&gt;totalDebit.Name" xml:space="preserve">
     <value>totalDebit</value>
   </data>
-  <data name="totalDebit.ButtonCustom2.Text" xml:space="preserve">
+  <data name="txtdiff.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;btn_AddJor.Name" xml:space="preserve">
@@ -921,14 +912,11 @@
   <data name="txtSer_code.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="txt_Cyear.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;labelX10.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
   </data>
-  <data name="&gt;&gt;buttonX2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="txt_Cyear.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="txtdiff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
   </data>
   <data name="btn_AddJor.TabIndex" type="System.Int32, mscorlib">
     <value>114</value>
@@ -939,23 +927,23 @@
   <data name="&gt;&gt;txtSanad_type.Name" xml:space="preserve">
     <value>txtSanad_type</value>
   </data>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="txt_docId.TabIndex" type="System.Int32, mscorlib">
     <value>138</value>
   </data>
-  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;groupPanel2.Name" xml:space="preserve">
+    <value>groupPanel2</value>
   </data>
   <data name="&gt;&gt;Acc_.Type" xml:space="preserve">
     <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btn_AddJor.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>665, 4</value>
+    <value>443, 3</value>
   </data>
   <data name="txtAcc_year.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -966,11 +954,14 @@
   <data name="&gt;&gt;groupPanel1.Name" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="txt_docId.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtSerNo.ButtonCustom2.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="totalDebit.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="totalDebit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
   </data>
   <data name="Main_serNo.ButtonCustom.Text" xml:space="preserve">
     <value />
@@ -978,34 +969,31 @@
   <data name="txtdiff.ButtonFreeText.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="labelX3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1061, 10</value>
+    <value>707, 7</value>
   </data>
-  <data name="txtdiff.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="groupPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtSerNo.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="txtdiff.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;buttonX2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;toDate.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="&gt;&gt;txtSerNo.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="&gt;&gt;buttonX2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="txtdiff.ButtonCustom.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;labelX5.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="totalDebit.ButtonFreeText.Text" xml:space="preserve">
+  <data name="txtdiff.ButtonDropDown.Text" xml:space="preserve">
     <value />
   </data>
   <data name="totalCredit.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
@@ -1018,16 +1006,19 @@
     <value>groupPanel1</value>
   </data>
   <data name="btn_AddJor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 34</value>
+    <value>98, 37</value>
+  </data>
+  <data name="&gt;&gt;toDate.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
   <data name="&gt;&gt;btnReport.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
+  </data>
+  <data name="labelX4.Text" xml:space="preserve">
+    <value>حساب المقدم</value>
   </data>
   <data name="totalDebit.ButtonClear.Text" xml:space="preserve">
     <value />
-  </data>
-  <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>930, 88</value>
   </data>
   <data name="&gt;&gt;txtSerNo.Parent" xml:space="preserve">
     <value>groupPanel1</value>
@@ -1059,26 +1050,23 @@
   <data name="&gt;&gt;Main_serNo.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1364, 723</value>
-  </data>
-  <data name="totalDebit.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="dGV_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;Main_serNo.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="Acc_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>463, 32</value>
-  </data>
-  <data name="&gt;&gt;buttonX2.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
+    <value>310, 23</value>
   </data>
   <data name="fromDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1077, 85</value>
+    <value>718, 85</value>
   </data>
   <data name="totalCredit.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="totalCredit.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="labelX8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="labelX8.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -1092,20 +1080,20 @@
   <data name="txtSer_code.ButtonCustom.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="Main_serNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;totalDebit.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;Main_serNo.Name" xml:space="preserve">
+    <value>Main_serNo</value>
   </data>
-  <data name="txtdiff.ButtonDropDown.Text" xml:space="preserve">
-    <value />
+  <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="txtdiff.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 22</value>
+    <value>71, 17</value>
   </data>
   <data name="txtSanad_type.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1113,29 +1101,32 @@
   <data name="txtdiff.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="labelX4.Text" xml:space="preserve">
-    <value>حساب المقدم</value>
+  <data name="buttonX2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 37</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 34</value>
   </data>
   <data name="totalDebit.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="Main_serNo.TabIndex" type="System.Int32, mscorlib">
-    <value>112</value>
+  <data name="txtSer_code.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;btnReport.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtAcc_year.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="fromDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 27</value>
+    <value>104, 20</value>
   </data>
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>523, 73</value>
+    <value>400, 51</value>
   </data>
   <data name="Acc_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 44</value>
+    <value>512, 30</value>
   </data>
   <data name="Main_serNo.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1143,20 +1134,20 @@
   <data name="txtSerNo.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
   </data>
-  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;toDate.Parent" xml:space="preserve">
-    <value>groupPanel1</value>
+  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;txtAcc_year.Parent" xml:space="preserve">
     <value>groupPanel1</value>
+  </data>
+  <data name="labelX10.TabIndex" type="System.Int32, mscorlib">
+    <value>140</value>
   </data>
   <data name="&gt;&gt;txtSer_code.Parent" xml:space="preserve">
     <value>groupPanel1</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 22</value>
+    <value>29, 17</value>
   </data>
   <data name="&gt;&gt;txt_docId.Name" xml:space="preserve">
     <value>txt_docId</value>
@@ -1164,8 +1155,11 @@
   <data name="dGV_Item.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="txt_docId.ButtonCustom2.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;labelX10.Name" xml:space="preserve">
+    <value>labelX10</value>
+  </data>
+  <data name="groupPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="totalDebit.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1174,10 +1168,10 @@
     <value>fromDate</value>
   </data>
   <data name="Branch_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 6</value>
+    <value>512, 4</value>
   </data>
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 91</value>
+    <value>401, 62</value>
   </data>
   <data name="txtSer_code.TabIndex" type="System.Int32, mscorlib">
     <value>136</value>

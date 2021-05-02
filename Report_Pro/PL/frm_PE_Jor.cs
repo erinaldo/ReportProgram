@@ -45,8 +45,9 @@ namespace Report_Pro.PL
             inner join BRANCHS AS D ON A.branch_code=D.BRANCH_code
             left join payer2 as P on P.acc_no = A.Kind and P.branch_code=A.branch_code 
 			inner join COST_CENTER as CS on CS.COST_CODE=A.costCode 
+
             where isnull(Recorded,0)<>1 and A.branch_code like '" + Branch_.ID.Text + "%'  and acc_no_p like '"+Acc_.ID.Text+"%' and cast(p_date as date) between '" +
-            fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "') As X " +
+            fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "'  and A.id like case when '"+txtID.Text+"' = ''  then '%' else '"+txtID.Text+"' end ) As X " +
             "left join payer2 as P1 on P1.acc_no = X.Acc_no_P and P1.branch_code=X.branch_code" +
             " inner join serial_no As S on X.branch_code = S.branch_code and S.ACC_YEAR='"+ txtAcc_year.Text+"' ");
 

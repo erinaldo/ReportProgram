@@ -93,6 +93,16 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accounting {
+            get {
+                object obj = ResourceManager.GetObject("accounting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Add_Icon {
             get {
                 object obj = ResourceManager.GetObject("Add_Icon", resourceCulture);
@@ -116,6 +126,16 @@ namespace Report_Pro.Properties {
         internal static System.Drawing.Bitmap Add_Icon2 {
             get {
                 object obj = ResourceManager.GetObject("Add_Icon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addfile_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("addfile_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +193,26 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bank {
+            get {
+                object obj = ResourceManager.GetObject("bank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buy_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("buy_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CalcImg {
             get {
                 object obj = ResourceManager.GetObject("CalcImg", resourceCulture);
@@ -193,10 +233,40 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap changetheme_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("changetheme_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap choose {
             get {
                 object obj = ResourceManager.GetObject("choose", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
         
@@ -293,10 +363,60 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap customer_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("customer_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customers {
+            get {
+                object obj = ResourceManager.GetObject("customers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deleteAttach_icon {
             get {
                 object obj = ResourceManager.GetObject("deleteAttach_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap department {
+            get {
+                object obj = ResourceManager.GetObject("department", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage employees {
+            get {
+                object obj = ResourceManager.GetObject("employees", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage employeesummary {
+            get {
+                object obj = ResourceManager.GetObject("employeesummary", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
         
@@ -356,6 +476,16 @@ namespace Report_Pro.Properties {
         internal static System.Drawing.Bitmap gtk_refresh1 {
             get {
                 object obj = ResourceManager.GetObject("gtk-refresh1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("home_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +556,36 @@ namespace Report_Pro.Properties {
         internal static System.Drawing.Bitmap lcs {
             get {
                 object obj = ResourceManager.GetObject("lcs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linestyle_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("linestyle_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linestyle_32x321 {
+            get {
+                object obj = ResourceManager.GetObject("linestyle_32x321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loadpagesetup_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("loadpagesetup_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -583,6 +743,16 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pielabelstooltips_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("pielabelstooltips_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus_add_green {
             get {
                 object obj = ResourceManager.GetObject("plus_add_green", resourceCulture);
@@ -633,6 +803,16 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap properties_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("properties_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap purchase {
             get {
                 object obj = ResourceManager.GetObject("purchase", resourceCulture);
@@ -656,6 +836,36 @@ namespace Report_Pro.Properties {
         internal static System.Drawing.Bitmap purchase2 {
             get {
                 object obj = ResourceManager.GetObject("purchase2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("remove_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report {
+            get {
+                object obj = ResourceManager.GetObject("report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report_icon {
+            get {
+                object obj = ResourceManager.GetObject("report_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -743,6 +953,16 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap salesanalysis_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("salesanalysis_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_Icon {
             get {
                 object obj = ResourceManager.GetObject("save_Icon", resourceCulture);
@@ -813,6 +1033,16 @@ namespace Report_Pro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap selectall_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("selectall_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Setting {
             get {
                 object obj = ResourceManager.GetObject("Setting", resourceCulture);
@@ -856,6 +1086,26 @@ namespace Report_Pro.Properties {
         internal static System.Drawing.Bitmap statement1 {
             get {
                 object obj = ResourceManager.GetObject("statement1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stock {
+            get {
+                object obj = ResourceManager.GetObject("stock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap store {
+            get {
+                object obj = ResourceManager.GetObject("store", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

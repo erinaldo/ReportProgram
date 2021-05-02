@@ -117,19 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtLoanValue.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 85</value>
   </data>
   <data name="&gt;&gt;label25.Name" xml:space="preserve">
     <value>label25</value>
   </data>
-  <data name="btnPrintJor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="NoOfPayments.ButtonDropDown.Text" xml:space="preserve">
     <value />
@@ -149,9 +152,8 @@
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 13</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtLoanValue.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="menuStrip1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="&gt;&gt;btnCreateJor.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -186,6 +188,7 @@
   <data name="&gt;&gt;BName.Name" xml:space="preserve">
     <value>BName</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
   </data>
@@ -234,20 +237,14 @@
   <data name="txtMainLoanAccNo.TabIndex" type="System.Int32, mscorlib">
     <value>143</value>
   </data>
-  <data name="&gt;&gt;NoOfPayments.Name" xml:space="preserve">
-    <value>NoOfPayments</value>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
     <value>No Of Payment</value>
   </data>
   <data name="label34.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
-  </data>
-  <data name="txtIntrestRate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnPrintJor.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -304,10 +301,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
+    <value>62, 20</value>
   </data>
   <data name="NoOfPayments.ButtonClear.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="jorDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="L_StartDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>316, 35</value>
@@ -364,13 +364,13 @@
     <value>groupBox4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>frm_Loan</value>
+    <value>Loans</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 250</value>
   </data>
-  <data name="&gt;&gt;label34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtLoanPurpose.Name" xml:space="preserve">
+    <value>txtLoanPurpose</value>
   </data>
   <data name="txtYear.Text" xml:space="preserve">
     <value>cy</value>
@@ -400,7 +400,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="&gt;&gt;chLoanSave.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>540, 187</value>
@@ -408,8 +408,8 @@
   <data name="&gt;&gt;label35.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Intrest Rate</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -422,9 +422,6 @@
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;txtTotal.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 13</value>
@@ -450,11 +447,14 @@
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 202</value>
+  </data>
   <data name="txtIntrestRate.ButtonFreeText.Text" xml:space="preserve">
     <value />
   </data>
   <data name="&gt;&gt;txtMainLoanAccNo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="txtLoanValue.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -486,8 +486,8 @@
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1084, 24</value>
   </data>
   <data name="dgAccNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>504, 103</value>
@@ -495,8 +495,8 @@
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
-  <data name="jorDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
   </data>
   <data name="txtIntrestRate.TabIndex" type="System.Int32, mscorlib">
     <value>149</value>
@@ -507,11 +507,14 @@
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 13</value>
   </data>
+  <data name="L_StartDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  </data>
   <data name="BStatment.Text" xml:space="preserve">
     <value>Statment</value>
   </data>
-  <data name="&gt;&gt;label33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtIntrestRate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;BSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -583,7 +586,7 @@
     <value>135, 20</value>
   </data>
   <data name="BStatment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 20</value>
+    <value>88, 20</value>
   </data>
   <data name="txtTotal.ButtonCustom.Text" xml:space="preserve">
     <value />
@@ -618,6 +621,9 @@
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
+  <data name="btnPrintJor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="txtLoanValue.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -642,6 +648,9 @@
   <data name="&gt;&gt;BStatment.Name" xml:space="preserve">
     <value>BStatment</value>
   </data>
+  <data name="NoOfPayments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
@@ -652,7 +661,7 @@
     <value>label23</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="jorDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -675,6 +684,9 @@
   <data name="txtLoanValue.ButtonDropDown.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 600</value>
+  </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 23</value>
   </data>
@@ -684,8 +696,8 @@
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 23</value>
   </data>
-  <data name="btnCreateJor.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="NoOfPayments.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -726,11 +738,11 @@
   <data name="txtLoanAcc.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 141</value>
   </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 202</value>
+  <data name="&gt;&gt;btnPrintJor.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>135</value>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
   <data name="txtLoanId.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -768,8 +780,8 @@
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label23.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtIntrestRate.ButtonCustom2.Text" xml:space="preserve">
     <value />
@@ -795,8 +807,8 @@
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtSanadSer.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label35.Name" xml:space="preserve">
     <value>label35</value>
@@ -834,11 +846,14 @@
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="BNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
+    <value>61, 20</value>
   </data>
   <data name="txtMainLoanAccNo.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -864,8 +879,8 @@
   <data name="&gt;&gt;txtLoanNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtLoanValue.TabIndex" type="System.Int32, mscorlib">
-    <value>148</value>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 250</value>
   </data>
   <data name="txtIntrestRate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -875,9 +890,6 @@
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 23</value>
-  </data>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
   </data>
   <data name="txtJorSer.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 20</value>
@@ -892,7 +904,7 @@
     <value>20, 13</value>
   </data>
   <data name="BSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
+    <value>62, 20</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
     <value>Loan Date</value>
@@ -907,7 +919,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 306</value>
+    <value>633, 301</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 89</value>
@@ -917,6 +929,9 @@
   </data>
   <data name="jorDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="btnPrintJor.TabIndex" type="System.Int32, mscorlib">
+    <value>116</value>
   </data>
   <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -933,6 +948,9 @@
   <data name="L_StartDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="BExit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="txtIntrestRate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -947,6 +965,9 @@
   </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
+  </data>
+  <data name="BSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
   </data>
   <data name="&gt;&gt;txtLoanValue.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -981,8 +1002,8 @@
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 25</value>
   </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>145</value>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -991,7 +1012,7 @@
     <value>True</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 79</value>
+    <value>530, 74</value>
   </data>
   <data name="txtTotal.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1029,8 +1050,8 @@
   <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtIntrestRate.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="btnPrintJor.Text" xml:space="preserve">
+    <value>Print Daily Entry</value>
   </data>
   <data name="&gt;&gt;dgAccNo.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1077,20 +1098,17 @@
   <data name="L_StartDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="jorDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
+  <data name="txtLoanValue.TabIndex" type="System.Int32, mscorlib">
+    <value>148</value>
   </data>
-  <data name="jorDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgAccNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnPrintJor.Text" xml:space="preserve">
-    <value>Print Daily Entry</value>
+  <data name="btnPrintJor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -1137,11 +1155,14 @@
   <data name="chLoanSave.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 24</value>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="BExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
   </data>
   <data name="&gt;&gt;NoOfPayments.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1167,8 +1188,8 @@
   <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="BSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 20</value>
+  <data name="&gt;&gt;btnCreateJor.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -1181,6 +1202,9 @@
   </data>
   <data name="txtYear.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 13</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="jorDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1239,9 +1263,6 @@
   <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Intrest Rate</value>
-  </data>
   <data name="btnCreateJor.Text" xml:space="preserve">
     <value>Create Daily Entry</value>
   </data>
@@ -1282,7 +1303,7 @@
     <value>15</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 76</value>
+    <value>23, 71</value>
   </data>
   <data name="NoOfPayments.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1299,8 +1320,8 @@
   <data name="label26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="BName.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btnCreateJor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Daily Entery Data</value>
@@ -1317,14 +1338,11 @@
   <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;txtLoanPurpose.Name" xml:space="preserve">
-    <value>txtLoanPurpose</value>
+  <data name="jorDate.MonthCalendar.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="txtLoanAcc.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
-  </data>
-  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
-    <value>groupBox3</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 13</value>
@@ -1338,14 +1356,11 @@
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="NoOfPayments.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;btnCreateJor.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;txtTotal.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
@@ -1359,14 +1374,17 @@
   <data name="&gt;&gt;chLoanSave.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="jorDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="L_StartDate.MonthCalendar.Category" xml:space="preserve">
     <value />
   </data>
   <data name="txtLoanNo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnPrintJor.TabIndex" type="System.Int32, mscorlib">
-    <value>116</value>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1414,7 +1432,13 @@
     <value />
   </data>
   <data name="chLoanSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 42</value>
+    <value>633, 37</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="L_StartDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1442,6 +1466,9 @@
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;BPrint.Name" xml:space="preserve">
+    <value>BPrint</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -1476,9 +1503,6 @@
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;txtLoanPurpose.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
   <data name="NoOfPayments.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -1494,6 +1518,9 @@
   <data name="&gt;&gt;BNew.Name" xml:space="preserve">
     <value>BNew</value>
   </data>
+  <data name="BStatment.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
@@ -1507,7 +1534,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="txtMainLoanAccNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 498</value>
+    <value>358, 493</value>
   </data>
   <data name="NoOfPayments.ButtonCustom2.Text" xml:space="preserve">
     <value />
@@ -1539,6 +1566,9 @@
   <data name="BPrint.Text" xml:space="preserve">
     <value>Print</value>
   </data>
+  <data name="BSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1549,7 +1579,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="txtYear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>625, 42</value>
+    <value>585, 37</value>
   </data>
   <data name="jorDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1570,7 +1600,7 @@
     <value>135, 20</value>
   </data>
   <data name="&gt;&gt;txtYear.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="chLoanSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1587,14 +1617,23 @@
   <data name="&gt;&gt;txtMainLoanAccNo.Name" xml:space="preserve">
     <value>txtMainLoanAccNo</value>
   </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
   <data name="&gt;&gt;L_StartDate.Name" xml:space="preserve">
     <value>L_StartDate</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Loan Amount</value>
   </data>
+  <data name="&gt;&gt;txtIntrestRate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="L_StartDate.MonthCalendar.Tag" xml:space="preserve">
+    <value />
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 561</value>
+    <value>1084, 561</value>
   </data>
   <data name="txtLoanValue.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1605,14 +1644,11 @@
   <data name="jorDate.MonthCalendar.Category" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;txtSanadSer.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txtIntrestRate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="txtTotal.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1621,7 +1657,7 @@
     <value>groupBox4</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 501</value>
+    <value>288, 508</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
@@ -1695,23 +1731,23 @@
   <data name="&gt;&gt;txtLoanAcc.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 600</value>
+  </data>
   <data name="L_StartDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="txtIntrestRate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="jorDate.ButtonCustom.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="L_StartDate.MonthCalendar.Tag" xml:space="preserve">
+  <data name="NoOfPayments.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="jorDate.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
   </data>
-  <data name="NoOfPayments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+  <data name="&gt;&gt;txtLoanPurpose.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
   <data name="btnCreateJor.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 140</value>
@@ -1722,8 +1758,8 @@
   <data name="label12.Text" xml:space="preserve">
     <value>Loan Account</value>
   </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="BPrint.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
   </data>
   <data name="jorDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 20</value>
@@ -1737,6 +1773,9 @@
   <data name="NoOfPayments.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;NoOfPayments.Name" xml:space="preserve">
+    <value>NoOfPayments</value>
+  </data>
   <data name="btnCreateJor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1745,9 +1784,6 @@
   </data>
   <data name="&gt;&gt;label27.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 250</value>
   </data>
   <data name="L_StartDate.MonthCalendar.Text" xml:space="preserve">
     <value />
@@ -1758,8 +1794,8 @@
   <data name="label35.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;BPrint.Name" xml:space="preserve">
-    <value>BPrint</value>
+  <data name="txtLoanValue.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="L_StartDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1767,11 +1803,11 @@
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
   </data>
-  <data name="BExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+  <data name="BNew.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
   </data>
-  <data name="L_StartDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="txtTotal.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1797,8 +1833,8 @@
   <data name="&gt;&gt;txtTotal.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="BName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="NoOfPayments.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1817,6 +1853,9 @@
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

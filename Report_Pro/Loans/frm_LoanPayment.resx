@@ -117,84 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ribbonBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="BNew.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="BSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="BSearch.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BExit.RibbonWordWrap" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="BExit.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="btnStatment.Text" xml:space="preserve">
-    <value>Statment</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>983, 27</value>
-  </data>
-  <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="ribbonBar1.Text" xml:space="preserve">
-    <value>ribbonBar1</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.Name" xml:space="preserve">
-    <value>ribbonBar1</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 37</value>
-  </data>
-  <data name="buttonX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 16</value>
-  </data>
-  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
-    <value>133</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
-    <value>buttonX1</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="MaturityDate.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MaturityDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 236</value>
+    <value>58, 231</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MaturityDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
@@ -226,7 +157,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;MaturityDate.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -238,16 +169,16 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 240</value>
+    <value>171, 235</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
+    <value>93, 13</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Maturity Date</value>
+    <value>تاريخ الاستحقاق</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -259,7 +190,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -271,16 +202,16 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 212</value>
+    <value>423, 208</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+    <value>70, 13</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Amount</value>
+    <value>قيمة القرض</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -292,13 +223,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="Amount.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="Amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 208</value>
+    <value>273, 204</value>
   </data>
   <data name="Amount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -319,7 +250,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;Amount.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="labelX4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -328,19 +259,19 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 37</value>
+    <value>144, 34</value>
   </data>
   <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 17</value>
+    <value>63, 17</value>
   </data>
   <data name="labelX4.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
   </data>
   <data name="labelX4.Text" xml:space="preserve">
-    <value>Payment No.</value>
+    <value>رقم الدفعة</value>
   </data>
   <data name="&gt;&gt;labelX4.Name" xml:space="preserve">
     <value>labelX4</value>
@@ -352,13 +283,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;labelX4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="StartDate.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="StartDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 236</value>
+    <value>309, 231</value>
   </data>
   <data name="StartDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -391,7 +322,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;StartDate.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -403,16 +334,16 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 240</value>
+    <value>423, 235</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 13</value>
+    <value>102, 13</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Start Date</value>
+    <value>تاريخ صرف القرض</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -424,10 +355,10 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="txtPaymentNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 35</value>
+    <value>91, 32</value>
   </data>
   <data name="txtPaymentNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -448,13 +379,13 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;txtPaymentNo.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="txtLoanRefrance.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="txtLoanRefrance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 148</value>
+    <value>91, 148</value>
   </data>
   <data name="txtLoanRefrance.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 20</value>
@@ -472,7 +403,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;txtLoanRefrance.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -484,16 +415,16 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 147</value>
+    <value>423, 152</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
+    <value>43, 13</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Loan Refrance</value>
+    <value>المرجع</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -505,7 +436,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="txtLoanPurpose.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -520,7 +451,7 @@
     <value>Long Tearm Loan</value>
   </data>
   <data name="txtLoanPurpose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 119</value>
+    <value>91, 118</value>
   </data>
   <data name="txtLoanPurpose.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 21</value>
@@ -538,7 +469,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;txtLoanPurpose.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -550,16 +481,16 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 123</value>
+    <value>423, 122</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+    <value>73, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Loan Purpose</value>
+    <value>سبب القرض</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -571,7 +502,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -583,16 +514,16 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 95</value>
+    <value>423, 95</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+    <value>81, 13</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Loan Account</value>
+    <value>حساب القرض</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -604,7 +535,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -616,16 +547,16 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 66</value>
+    <value>423, 65</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>33, 13</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>Bank</value>
+    <value>البنك</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -637,7 +568,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -649,16 +580,16 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 39</value>
+    <value>423, 36</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
+    <value>65, 13</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Loan No.</value>
+    <value>رقم القرض</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -670,10 +601,10 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="txtLoanNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 35</value>
+    <value>273, 32</value>
   </data>
   <data name="txtLoanNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -694,7 +625,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;txtLoanNo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -706,16 +637,16 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 38</value>
+    <value>419, 65</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>77, 13</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>144</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>Payment ID</value>
+    <value>معرف السداد</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
@@ -727,7 +658,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -736,7 +667,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 88</value>
+    <value>89, 115</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 13</value>
@@ -757,7 +688,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -769,16 +700,16 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 88</value>
+    <value>169, 116</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 13</value>
+    <value>71, 13</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Payment Interest</value>
+    <value>معدل الفائدة</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -790,13 +721,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="InterestRate.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="InterestRate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 84</value>
+    <value>112, 111</value>
   </data>
   <data name="InterestRate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -817,7 +748,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;InterestRate.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -829,16 +760,16 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 63</value>
+    <value>169, 91</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 13</value>
+    <value>71, 13</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>140</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>Loan Balance</value>
+    <value>رصيد القرض</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -850,13 +781,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txtID.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="txtID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 34</value>
+    <value>361, 61</value>
   </data>
   <data name="txtID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -877,13 +808,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtID.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="LoanBalance.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="LoanBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 59</value>
+    <value>30, 86</value>
   </data>
   <data name="LoanBalance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -904,10 +835,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;LoanBalance.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="PaymentDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 108</value>
+    <value>309, 135</value>
   </data>
   <data name="PaymentDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -940,7 +871,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;PaymentDate.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -952,16 +883,16 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 112</value>
+    <value>419, 139</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
+    <value>73, 13</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>134</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Payment Date</value>
+    <value>تاريخ السداد</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -973,7 +904,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -985,16 +916,16 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 88</value>
+    <value>419, 115</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 13</value>
+    <value>91, 13</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Payment Interest</value>
+    <value>الفائدة المدفوعة</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -1006,10 +937,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="PaymentInterest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 84</value>
+    <value>273, 111</value>
   </data>
   <data name="PaymentInterest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1030,7 +961,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;PaymentInterest.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1042,16 +973,16 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 63</value>
+    <value>419, 90</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
+    <value>80, 13</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Payment Amount</value>
+    <value>المبلغ المسدد</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -1063,43 +994,55 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
-  <data name="PaymentAmount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 59</value>
+  <data name="txtPaymentAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 86</value>
   </data>
-  <data name="PaymentAmount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtPaymentAmount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="PaymentAmount.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtPaymentAmount.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 20</value>
   </data>
-  <data name="PaymentAmount.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtPaymentAmount.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
   </data>
-  <data name="&gt;&gt;PaymentAmount.Name" xml:space="preserve">
-    <value>PaymentAmount</value>
+  <data name="&gt;&gt;txtPaymentAmount.Name" xml:space="preserve">
+    <value>txtPaymentAmount</value>
   </data>
-  <data name="&gt;&gt;PaymentAmount.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtPaymentAmount.Type" xml:space="preserve">
     <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;PaymentAmount.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtPaymentAmount.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;PaymentAmount.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;txtPaymentAmount.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Name" xml:space="preserve">
+    <value>lbl_1</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 349</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>563, 158</value>
+    <value>563, 184</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>PayMent Data</value>
+    <value>بيانات السداد</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -1111,7 +1054,76 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="lbl_1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14pt</value>
+  </data>
+  <data name="lbl_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="lbl_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 23</value>
+  </data>
+  <data name="lbl_1.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="lbl_1.Text" xml:space="preserve">
+    <value>القرض مسدد بالكامل !!!!</value>
+  </data>
+  <data name="lbl_1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Name" xml:space="preserve">
+    <value>lbl_1</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;lbl_1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.Name" xml:space="preserve">
+    <value>BalanceBeforPay</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
+    <value>buttonX1</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
@@ -1123,7 +1135,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txtInterestAcc.Name" xml:space="preserve">
     <value>txtInterestAcc</value>
@@ -1135,7 +1147,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;txtInterestAcc.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;BName.Name" xml:space="preserve">
     <value>BName</value>
@@ -1147,7 +1159,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;BName.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;txtLoanAcc.Name" xml:space="preserve">
     <value>txtLoanAcc</value>
@@ -1159,7 +1171,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;txtLoanAcc.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 59</value>
@@ -1171,7 +1183,7 @@
     <value>40</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Loan Data</value>
+    <value>بيانات القرض</value>
   </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
@@ -1183,13 +1195,343 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 208</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>رصيد القرض</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BalanceBeforPay.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BalanceBeforPay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 204</value>
+  </data>
+  <data name="BalanceBeforPay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BalanceBeforPay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 20</value>
+  </data>
+  <data name="BalanceBeforPay.TabIndex" type="System.Int32, mscorlib">
+    <value>151</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.Name" xml:space="preserve">
+    <value>BalanceBeforPay</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DoubleInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;BalanceBeforPay.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonX1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonX1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 31</value>
+  </data>
+  <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 23</value>
+  </data>
+  <data name="buttonX1.TabIndex" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Name" xml:space="preserve">
+    <value>buttonX1</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;buttonX1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 180</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>حساب الفوائد</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtInterestAcc.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtInterestAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 175</value>
+  </data>
+  <data name="txtInterestAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="txtInterestAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtInterestAcc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 23</value>
+  </data>
+  <data name="txtInterestAcc.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="&gt;&gt;txtInterestAcc.Name" xml:space="preserve">
+    <value>txtInterestAcc</value>
+  </data>
+  <data name="&gt;&gt;txtInterestAcc.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtInterestAcc.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtInterestAcc.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BName.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 60</value>
+  </data>
+  <data name="BName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="BName.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="BName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 23</value>
+  </data>
+  <data name="BName.TabIndex" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="&gt;&gt;BName.Name" xml:space="preserve">
+    <value>BName</value>
+  </data>
+  <data name="&gt;&gt;BName.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BName.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;BName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtLoanAcc.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtLoanAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 90</value>
+  </data>
+  <data name="txtLoanAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="txtLoanAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtLoanAcc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 23</value>
+  </data>
+  <data name="txtLoanAcc.TabIndex" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="&gt;&gt;txtLoanAcc.Name" xml:space="preserve">
+    <value>txtLoanAcc</value>
+  </data>
+  <data name="&gt;&gt;txtLoanAcc.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtLoanAcc.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;txtLoanAcc.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.Name" xml:space="preserve">
+    <value>txtJorSer</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;txtJorSer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.Name" xml:space="preserve">
+    <value>btnCreateJor</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;btnCreateJor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.Name" xml:space="preserve">
+    <value>btnPrintJor</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;btnPrintJor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.Name" xml:space="preserve">
+    <value>txtSanadSer</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;txtSanadSer.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;jorDate.Name" xml:space="preserve">
+    <value>jorDate</value>
+  </data>
+  <data name="&gt;&gt;jorDate.Type" xml:space="preserve">
+    <value>DevComponents.Editors.DateTimeAdv.DateTimeInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;jorDate.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;jorDate.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>634, 137</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 225</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>بيانات قيد اليومية</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="txtJorSer.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="txtJorSer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 50</value>
+    <value>48, 44</value>
   </data>
   <data name="txtJorSer.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 20</value>
@@ -1212,11 +1554,14 @@
   <data name="btnCreateJor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="btnCreateJor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="btnCreateJor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnCreateJor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 148</value>
+    <value>162, 148</value>
   </data>
   <data name="btnCreateJor.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 31</value>
@@ -1225,7 +1570,7 @@
     <value>115</value>
   </data>
   <data name="btnCreateJor.Text" xml:space="preserve">
-    <value>Create Daily Entry</value>
+    <value>انشاء قيد اليومية</value>
   </data>
   <data name="&gt;&gt;btnCreateJor.Name" xml:space="preserve">
     <value>btnCreateJor</value>
@@ -1242,11 +1587,14 @@
   <data name="btnPrintJor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="btnPrintJor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="btnPrintJor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnPrintJor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 148</value>
+    <value>25, 148</value>
   </data>
   <data name="btnPrintJor.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 31</value>
@@ -1255,7 +1603,7 @@
     <value>116</value>
   </data>
   <data name="btnPrintJor.Text" xml:space="preserve">
-    <value>Print Daily Entry</value>
+    <value>طباعة قيد اليومية</value>
   </data>
   <data name="&gt;&gt;btnPrintJor.Name" xml:space="preserve">
     <value>btnPrintJor</value>
@@ -1273,7 +1621,7 @@
     <value>False</value>
   </data>
   <data name="txtSanadSer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 76</value>
+    <value>48, 70</value>
   </data>
   <data name="txtSanadSer.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 20</value>
@@ -1296,20 +1644,23 @@
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 54</value>
+    <value>185, 47</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 13</value>
+    <value>84, 13</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
   </data>
   <data name="label16.Text" xml:space="preserve">
-    <value>Daily Entry No.</value>
+    <value>رقم قيد اليومية</value>
   </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
@@ -1326,20 +1677,23 @@
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 80</value>
+    <value>185, 73</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
+    <value>60, 13</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
-    <value>Sand No.</value>
+    <value>رقم السند</value>
   </data>
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
@@ -1354,7 +1708,7 @@
     <value>5</value>
   </data>
   <data name="jorDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 102</value>
+    <value>48, 96</value>
   </data>
   <data name="jorDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -1389,20 +1743,23 @@
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 106</value>
+    <value>185, 99</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+    <value>91, 13</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
   </data>
   <data name="label18.Text" xml:space="preserve">
-    <value>Daily Entry Date</value>
+    <value>تاريخ قيد اليومية</value>
   </data>
   <data name="&gt;&gt;label18.Name" xml:space="preserve">
     <value>label18</value>
@@ -1415,30 +1772,6 @@
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>634, 137</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 225</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>147</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Daily Entery Data</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="txtYear.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1468,130 +1801,91 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtYear.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 180</value>
-  </data>
-  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 13</value>
-  </data>
-  <data name="label19.TabIndex" type="System.Int32, mscorlib">
-    <value>135</value>
-  </data>
-  <data name="label19.Text" xml:space="preserve">
-    <value>Interest Account</value>
-  </data>
-  <data name="&gt;&gt;label19.Name" xml:space="preserve">
-    <value>label19</value>
-  </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtLoanAcc.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtLoanAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 90</value>
-  </data>
-  <data name="txtLoanAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtLoanAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtLoanAcc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 23</value>
-  </data>
-  <data name="txtLoanAcc.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
-  </data>
-  <data name="&gt;&gt;txtLoanAcc.Name" xml:space="preserve">
-    <value>txtLoanAcc</value>
-  </data>
-  <data name="&gt;&gt;txtLoanAcc.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtLoanAcc.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtLoanAcc.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="BName.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="BName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 61</value>
-  </data>
-  <data name="BName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="BName.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="BName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 23</value>
-  </data>
-  <data name="BName.TabIndex" type="System.Int32, mscorlib">
-    <value>121</value>
-  </data>
-  <data name="&gt;&gt;BName.Name" xml:space="preserve">
-    <value>BName</value>
-  </data>
-  <data name="&gt;&gt;BName.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BName.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;BName.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="txtInterestAcc.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtInterestAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 177</value>
-  </data>
-  <data name="txtInterestAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtInterestAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtInterestAcc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 23</value>
-  </data>
-  <data name="txtInterestAcc.TabIndex" type="System.Int32, mscorlib">
-    <value>134</value>
-  </data>
-  <data name="&gt;&gt;txtInterestAcc.Name" xml:space="preserve">
-    <value>txtInterestAcc</value>
-  </data>
-  <data name="&gt;&gt;txtInterestAcc.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.UC_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtInterestAcc.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;txtInterestAcc.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="BNew.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="BNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 26</value>
+  </data>
+  <data name="BNew.Text" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="BSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="BSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 26</value>
+  </data>
+  <data name="BSave.Text" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="BSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="BSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 26</value>
+  </data>
+  <data name="BSearch.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="BStatment.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="BStatment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 26</value>
+  </data>
+  <data name="BStatment.Text" xml:space="preserve">
+    <value>كشف حساب</value>
+  </data>
+  <data name="BPrint.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="BPrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 26</value>
+  </data>
+  <data name="BPrint.Text" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="BExit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
+  <data name="BExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 26</value>
+  </data>
+  <data name="BExit.Text" xml:space="preserve">
+    <value>اغلاق</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 30</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1600,46 +1894,64 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>983, 519</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>984, 561</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 600</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 600</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>frm_LoanPayment</value>
+    <value>سداد القروض</value>
   </data>
   <data name="&gt;&gt;BNew.Name" xml:space="preserve">
     <value>BNew</value>
   </data>
   <data name="&gt;&gt;BNew.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BSave.Name" xml:space="preserve">
     <value>BSave</value>
   </data>
   <data name="&gt;&gt;BSave.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BSearch.Name" xml:space="preserve">
     <value>BSearch</value>
   </data>
   <data name="&gt;&gt;BSearch.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BStatment.Name" xml:space="preserve">
+    <value>BStatment</value>
+  </data>
+  <data name="&gt;&gt;BStatment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BPrint.Name" xml:space="preserve">
+    <value>BPrint</value>
+  </data>
+  <data name="&gt;&gt;BPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BExit.Name" xml:space="preserve">
     <value>BExit</value>
   </data>
   <data name="&gt;&gt;BExit.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnStatment.Name" xml:space="preserve">
-    <value>btnStatment</value>
-  </data>
-  <data name="&gt;&gt;btnStatment.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frm_LoanPayment</value>

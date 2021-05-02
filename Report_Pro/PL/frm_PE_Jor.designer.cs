@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PE_Jor));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.txt_docId = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtSanad_type = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -75,6 +77,8 @@
             resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.txtID);
+            this.groupPanel1.Controls.Add(this.labelX10);
             this.groupPanel1.Controls.Add(this.buttonX2);
             this.groupPanel1.Controls.Add(this.txt_docId);
             this.groupPanel1.Controls.Add(this.txtSanad_type);
@@ -117,6 +121,17 @@
             this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // txtID
+            // 
+            resources.ApplyResources(this.txtID, "txtID");
+            this.txtID.Name = "txtID";
+            // 
+            // labelX10
+            // 
+            resources.ApplyResources(this.labelX10, "labelX10");
+            this.labelX10.BackColor = System.Drawing.Color.Transparent;
+            this.labelX10.Name = "labelX10";
             // 
             // buttonX2
             // 
@@ -530,7 +545,6 @@
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.LabelX txtAcc_year;
         private DevComponents.DotNetBar.Controls.TextBoxX txtSerNo;
         private DevComponents.DotNetBar.Controls.TextBoxX Main_serNo;
@@ -553,5 +567,8 @@
         private DevComponents.Editors.DoubleInput totalDebit;
         private System.Windows.Forms.PictureBox pictureBox2;
         private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.LabelX labelX4;
+        private System.Windows.Forms.TextBox txtID;
+        private DevComponents.DotNetBar.LabelX labelX10;
     }
 }

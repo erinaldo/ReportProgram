@@ -568,8 +568,8 @@ namespace Report_Pro.PL
 
         private void M51_Click(object sender, EventArgs e)
         {
-            //openForm(new RPT.frm_rpt_inventory(), FormWindowState.Normal, 0);
-            openForm(new RPT.frm_Inventory_Report(), FormWindowState.Normal, 0);
+            openForm(new RPT.frm_rpt_inventory(), FormWindowState.Normal, 0);
+            //openForm(new RPT.frm_Inventory_Report(), FormWindowState.Normal, 0);
 
         }
 
@@ -1294,7 +1294,10 @@ namespace Report_Pro.PL
 
         private void M85_Click(object sender, EventArgs e)
         {
-            openForm(new Loans.frm_Loan(), FormWindowState.Maximized, 0);
+            //  openForm(new Loans.frm_Loan(), FormWindowState.Normal, 0);
+
+            Loans.frm_Loan frm = new Loans.frm_Loan();
+            frm.Show();
         }
 
         private void M86_Click(object sender, EventArgs e)
@@ -1351,7 +1354,10 @@ namespace Report_Pro.PL
 
         private void M89_Click(object sender, EventArgs e)
         {
-            openForm(new Loans.frm_LoanPayment(), FormWindowState.Maximized, 0);
+            //openForm(new Loans.frm_LoanPayment(), FormWindowState.Normal, 0);
+
+            Loans.frm_LoanPayment frm = new Loans.frm_LoanPayment();
+            frm.Show();
         }
 
         private void M87_2_Click(object sender, EventArgs e)
@@ -1379,6 +1385,48 @@ namespace Report_Pro.PL
         private void M810_Click(object sender, EventArgs e)
         {
             openForm(new Loans.frm_LoansReports(), FormWindowState.Maximized, 0);
+        }
+
+        private void M_Loans_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void M_Loans_1_Click(object sender, EventArgs e)
+        {
+            Loans.frm_Loan frm = new Loans.frm_Loan();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void M_Loans_2_Click(object sender, EventArgs e)
+        {
+            Loans.frm_LoanPayment frm = new Loans.frm_LoanPayment();
+            frm.Show();
+        }
+
+        private void M_Loans_3_Click(object sender, EventArgs e)
+        {
+            openForm(new Loans.frm_LoansReports(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void M58_Click(object sender, EventArgs e)
+        {
+            RPT.frm_rpt_InventoryBranches frm = new RPT.frm_rpt_InventoryBranches();
+              frm.Show();
+        }
+
+        private void M59_Click(object sender, EventArgs e)
+        {
+            RPT.frm_rpt_InventoryGroups frm = new RPT.frm_rpt_InventoryGroups();
+            frm.Show();
+        }
+
+        private void M60_Click(object sender, EventArgs e)
+        {
+            RPT.frm_rpt_InventoryItems frm = new RPT.frm_rpt_InventoryItems();
+            frm.Show();
         }
     }
 }

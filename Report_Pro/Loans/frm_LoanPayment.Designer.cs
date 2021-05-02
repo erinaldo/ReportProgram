@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_LoanPayment));
-            this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
-            this.BNew = new DevComponents.DotNetBar.ButtonItem();
-            this.BSave = new DevComponents.DotNetBar.ButtonItem();
-            this.BSearch = new DevComponents.DotNetBar.ButtonItem();
-            this.BExit = new DevComponents.DotNetBar.ButtonItem();
-            this.btnStatment = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.MaturityDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -64,9 +57,17 @@
             this.label7 = new System.Windows.Forms.Label();
             this.PaymentInterest = new DevComponents.Editors.DoubleInput();
             this.label3 = new System.Windows.Forms.Label();
-            this.PaymentAmount = new DevComponents.Editors.DoubleInput();
+            this.txtPaymentAmount = new DevComponents.Editors.DoubleInput();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbl_1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.BalanceBeforPay = new DevComponents.Editors.DoubleInput();
+            this.buttonX1 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtInterestAcc = new Report_Pro.MyControls.UC_Acc();
+            this.BName = new Report_Pro.MyControls.UC_Acc();
+            this.txtLoanAcc = new Report_Pro.MyControls.UC_Acc();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtJorSer = new System.Windows.Forms.TextBox();
             this.btnCreateJor = new System.Windows.Forms.Button();
@@ -77,10 +78,13 @@
             this.jorDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.label18 = new System.Windows.Forms.Label();
             this.txtYear = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtLoanAcc = new Report_Pro.MyControls.UC_Acc();
-            this.BName = new Report_Pro.MyControls.UC_Acc();
-            this.txtInterestAcc = new Report_Pro.MyControls.UC_Acc();
+            this.BNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.BSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.BSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.BStatment = new System.Windows.Forms.ToolStripMenuItem();
+            this.BPrint = new System.Windows.Forms.ToolStripMenuItem();
+            this.BExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.MaturityDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Amount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StartDate)).BeginInit();
@@ -89,75 +93,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoanBalance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaymentDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaymentInterest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PaymentAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPaymentAmount)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BalanceBeforPay)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.jorDate)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ribbonBar1
-            // 
-            this.ribbonBar1.AutoOverflowEnabled = true;
-            this.ribbonBar1.AutoSizeItems = false;
-            this.ribbonBar1.ContainerControlProcessDialogKey = true;
-            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
-            this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.BNew,
-            this.BSave,
-            this.BSearch,
-            this.BExit,
-            this.btnStatment});
-            this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonBar1.TitleVisible = false;
-            // 
-            // BNew
-            // 
-            this.BNew.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BNew.Name = "BNew";
-            this.BNew.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BNew, "BNew");
-            this.BNew.Click += new System.EventHandler(this.BNew_Click);
-            // 
-            // BSave
-            // 
-            this.BSave.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BSave.Name = "BSave";
-            this.BSave.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BSave, "BSave");
-            this.BSave.Click += new System.EventHandler(this.BSave_Click);
-            // 
-            // BSearch
-            // 
-            this.BSearch.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BSearch.Name = "BSearch";
-            this.BSearch.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BSearch, "BSearch");
-            this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
-            // 
-            // BExit
-            // 
-            this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BExit.Name = "BExit";
-            resources.ApplyResources(this.BExit, "BExit");
-            this.BExit.SubItemsExpandWidth = 14;
-            // 
-            // btnStatment
-            // 
-            this.btnStatment.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnStatment.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.btnStatment.Name = "btnStatment";
-            this.btnStatment.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.btnStatment, "btnStatment");
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            resources.ApplyResources(this.buttonX1, "buttonX1");
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // MaturityDate
             // 
@@ -216,6 +159,14 @@
             // 
             // Amount
             // 
+            // 
+            // 
+            // 
+            this.Amount.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Amount.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Amount.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Amount.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.Amount.BackgroundStyle.Class = "TextBoxBorder";
             this.Amount.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             resources.ApplyResources(this.Amount, "Amount");
             this.Amount.Increment = 1D;
@@ -491,27 +442,26 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Name = "label3";
             // 
-            // PaymentAmount
+            // txtPaymentAmount
             // 
             // 
             // 
             // 
-            this.PaymentAmount.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.PaymentAmount.ButtonFreeText.Checked = true;
-            this.PaymentAmount.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.PaymentAmount.FreeTextEntryMode = true;
-            this.PaymentAmount.Increment = 1D;
-            resources.ApplyResources(this.PaymentAmount, "PaymentAmount");
-            this.PaymentAmount.Name = "PaymentAmount";
-            this.PaymentAmount.Leave += new System.EventHandler(this.PaymentAmount_Leave);
+            this.txtPaymentAmount.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtPaymentAmount.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtPaymentAmount.Increment = 1D;
+            resources.ApplyResources(this.txtPaymentAmount, "txtPaymentAmount");
+            this.txtPaymentAmount.Name = "txtPaymentAmount";
+            this.txtPaymentAmount.Leave += new System.EventHandler(this.PaymentAmount_Leave);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.GhostWhite;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lbl_1);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.PaymentAmount);
+            this.groupBox1.Controls.Add(this.txtPaymentAmount);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.InterestRate);
@@ -525,12 +475,21 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // lbl_1
+            // 
+            resources.ApplyResources(this.lbl_1, "lbl_1");
+            this.lbl_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl_1.ForeColor = System.Drawing.Color.Blue;
+            this.lbl_1.Name = "lbl_1";
+            // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.GhostWhite;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.BalanceBeforPay);
+            this.groupBox2.Controls.Add(this.buttonX1);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.txtInterestAcc);
-            this.groupBox2.Controls.Add(this.buttonX1);
             this.groupBox2.Controls.Add(this.txtLoanNo);
             this.groupBox2.Controls.Add(this.MaturityDate);
             this.groupBox2.Controls.Add(this.label12);
@@ -553,9 +512,72 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label20.Name = "label20";
+            // 
+            // BalanceBeforPay
+            // 
+            // 
+            // 
+            // 
+            this.BalanceBeforPay.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.BalanceBeforPay.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.BalanceBeforPay.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.BalanceBeforPay.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.BalanceBeforPay.BackgroundStyle.Class = "TextBoxBorder";
+            this.BalanceBeforPay.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            resources.ApplyResources(this.BalanceBeforPay, "BalanceBeforPay");
+            this.BalanceBeforPay.Increment = 1D;
+            this.BalanceBeforPay.Name = "BalanceBeforPay";
+            this.BalanceBeforPay.ValueChanged += new System.EventHandler(this.BalanceBeforPay_ValueChanged);
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonX1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            resources.ApplyResources(this.buttonX1, "buttonX1");
+            this.buttonX1.ForeColor = System.Drawing.SystemColors.Window;
+            this.buttonX1.Image = global::Report_Pro.Properties.Resources.Search_icon1;
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.UseVisualStyleBackColor = false;
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label19.Name = "label19";
+            // 
+            // txtInterestAcc
+            // 
+            this.txtInterestAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txtInterestAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.txtInterestAcc, "txtInterestAcc");
+            this.txtInterestAcc.Name = "txtInterestAcc";
+            // 
+            // BName
+            // 
+            this.BName.BackColor = System.Drawing.Color.Transparent;
+            this.BName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.BName, "BName");
+            this.BName.Name = "BName";
+            this.BName.Load += new System.EventHandler(this.BName_Load);
+            // 
+            // txtLoanAcc
+            // 
+            this.txtLoanAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txtLoanAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.txtLoanAcc, "txtLoanAcc");
+            this.txtLoanAcc.Name = "txtLoanAcc";
+            // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.GhostWhite;
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.txtJorSer);
             this.groupBox3.Controls.Add(this.btnCreateJor);
             this.groupBox3.Controls.Add(this.btnPrintJor);
@@ -575,21 +597,22 @@
             // 
             // btnCreateJor
             // 
-            this.btnCreateJor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCreateJor.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCreateJor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
             resources.ApplyResources(this.btnCreateJor, "btnCreateJor");
+            this.btnCreateJor.ForeColor = System.Drawing.SystemColors.Window;
             this.btnCreateJor.Name = "btnCreateJor";
             this.btnCreateJor.UseVisualStyleBackColor = false;
             this.btnCreateJor.Click += new System.EventHandler(this.btnCreateJor_Click);
             // 
             // btnPrintJor
             // 
-            this.btnPrintJor.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPrintJor.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnPrintJor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
             resources.ApplyResources(this.btnPrintJor, "btnPrintJor");
+            this.btnPrintJor.ForeColor = System.Drawing.SystemColors.Window;
             this.btnPrintJor.Name = "btnPrintJor";
             this.btnPrintJor.UseVisualStyleBackColor = false;
-            this.btnPrintJor.Click += new System.EventHandler(this.btnPrintJor_Click);
             // 
             // txtSanadSer
             // 
@@ -660,44 +683,73 @@
             this.txtYear.BackColor = System.Drawing.Color.Transparent;
             this.txtYear.Name = "txtYear";
             // 
-            // label19
+            // BNew
             // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label19.Name = "label19";
+            resources.ApplyResources(this.BNew, "BNew");
+            this.BNew.ForeColor = System.Drawing.SystemColors.Window;
+            this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
+            this.BNew.Name = "BNew";
+            this.BNew.Click += new System.EventHandler(this.BNew_Click);
             // 
-            // txtLoanAcc
+            // BSave
             // 
-            this.txtLoanAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txtLoanAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.txtLoanAcc, "txtLoanAcc");
-            this.txtLoanAcc.Name = "txtLoanAcc";
+            resources.ApplyResources(this.BSave, "BSave");
+            this.BSave.ForeColor = System.Drawing.SystemColors.Window;
+            this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
+            this.BSave.Name = "BSave";
+            this.BSave.Click += new System.EventHandler(this.BSave_Click);
             // 
-            // BName
+            // BSearch
             // 
-            this.BName.BackColor = System.Drawing.Color.Transparent;
-            this.BName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.BName, "BName");
-            this.BName.Name = "BName";
-            this.BName.Load += new System.EventHandler(this.BName_Load);
+            resources.ApplyResources(this.BSearch, "BSearch");
+            this.BSearch.ForeColor = System.Drawing.SystemColors.Window;
+            this.BSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
+            this.BSearch.Name = "BSearch";
+            this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
             // 
-            // txtInterestAcc
+            // BStatment
             // 
-            this.txtInterestAcc.BackColor = System.Drawing.Color.Transparent;
-            this.txtInterestAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.txtInterestAcc, "txtInterestAcc");
-            this.txtInterestAcc.Name = "txtInterestAcc";
+            resources.ApplyResources(this.BStatment, "BStatment");
+            this.BStatment.ForeColor = System.Drawing.SystemColors.Window;
+            this.BStatment.Image = global::Report_Pro.Properties.Resources.Reports1;
+            this.BStatment.Name = "BStatment";
+            // 
+            // BPrint
+            // 
+            resources.ApplyResources(this.BPrint, "BPrint");
+            this.BPrint.ForeColor = System.Drawing.SystemColors.Window;
+            this.BPrint.Image = global::Report_Pro.Properties.Resources.printer_icon;
+            this.BPrint.Name = "BPrint";
+            // 
+            // BExit
+            // 
+            resources.ApplyResources(this.BExit, "BExit");
+            this.BExit.ForeColor = System.Drawing.SystemColors.Window;
+            this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
+            this.BExit.Name = "BExit";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BNew,
+            this.BSave,
+            this.BSearch,
+            this.BStatment,
+            this.BPrint,
+            this.BExit});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
             // 
             // frm_LoanPayment
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.txtYear);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.ribbonBar1);
             this.Name = "frm_LoanPayment";
             this.Load += new System.EventHandler(this.frm_LoanPayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MaturityDate)).EndInit();
@@ -708,27 +760,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoanBalance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaymentDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaymentInterest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PaymentAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPaymentAmount)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BalanceBeforPay)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.jorDate)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevComponents.DotNetBar.RibbonBar ribbonBar1;
-        private DevComponents.DotNetBar.ButtonItem BNew;
-        private DevComponents.DotNetBar.ButtonItem BSave;
-        private DevComponents.DotNetBar.ButtonItem BSearch;
-        private DevComponents.DotNetBar.ButtonItem BExit;
-        private DevComponents.DotNetBar.ButtonItem btnStatment;
         private System.Windows.Forms.Label label12;
         private DevComponents.DotNetBar.Controls.TextBoxX txtLoanNo;
         private System.Windows.Forms.TextBox txtLoanRefrance;
@@ -747,13 +795,12 @@
         private System.Windows.Forms.Label label5;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput MaturityDate;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput StartDate;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput PaymentDate;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private DevComponents.Editors.DoubleInput PaymentInterest;
         private System.Windows.Forms.Label label3;
-        private DevComponents.Editors.DoubleInput PaymentAmount;
+        private DevComponents.Editors.DoubleInput txtPaymentAmount;
         private DevComponents.DotNetBar.Controls.TextBoxX txtID;
         private System.Windows.Forms.Label label10;
         private DevComponents.Editors.DoubleInput InterestRate;
@@ -775,5 +822,16 @@
         private System.Windows.Forms.Label txtYear;
         private System.Windows.Forms.Label label19;
         private MyControls.UC_Acc txtInterestAcc;
+        private System.Windows.Forms.ToolStripMenuItem BNew;
+        private System.Windows.Forms.ToolStripMenuItem BSave;
+        private System.Windows.Forms.ToolStripMenuItem BSearch;
+        private System.Windows.Forms.ToolStripMenuItem BStatment;
+        private System.Windows.Forms.ToolStripMenuItem BPrint;
+        private System.Windows.Forms.ToolStripMenuItem BExit;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Button buttonX1;
+        private System.Windows.Forms.Label label20;
+        private DevComponents.Editors.DoubleInput BalanceBeforPay;
+        private System.Windows.Forms.Label lbl_1;
     }
 }

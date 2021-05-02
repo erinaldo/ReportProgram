@@ -614,49 +614,127 @@
   <data name="PaymentInterest.ButtonFreeText.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+  <data name="txtPaymentAmount.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="PaymentAmount.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtPaymentAmount.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonClear.Text" xml:space="preserve">
+  <data name="txtPaymentAmount.ButtonClear.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+  <data name="txtPaymentAmount.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="PaymentAmount.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtPaymentAmount.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonCustom.Text" xml:space="preserve">
+  <data name="txtPaymentAmount.ButtonCustom.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+  <data name="txtPaymentAmount.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="PaymentAmount.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtPaymentAmount.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonCustom2.Text" xml:space="preserve">
+  <data name="txtPaymentAmount.ButtonCustom2.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+  <data name="txtPaymentAmount.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="PaymentAmount.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtPaymentAmount.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonDropDown.Text" xml:space="preserve">
+  <data name="txtPaymentAmount.ButtonDropDown.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+  <data name="txtPaymentAmount.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="PaymentAmount.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="txtPaymentAmount.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="PaymentAmount.ButtonFreeText.Text" xml:space="preserve">
+  <data name="txtPaymentAmount.ButtonFreeText.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="jorDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="jorDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.ButtonClear.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="jorDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.ButtonCustom.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="jorDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.ButtonCustom2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="jorDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.ButtonDropDown.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="jorDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.ButtonFreeText.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="jorDate.MonthCalendar.Category" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="jorDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
+  </data>
+  <data name="jorDate.MonthCalendar.Tag" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.Tooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="jorDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
 </root>

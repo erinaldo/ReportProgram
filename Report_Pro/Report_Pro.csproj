@@ -29,7 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -49,6 +49,9 @@
     </Reference>
     <Reference Include="AccRow_new">
       <HintPath>..\..\..\WH 22-9-2020\bin\AccRow_new.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -214,6 +217,9 @@
     <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -603,6 +609,9 @@
     <Compile Include="MyControls\Update_Acc.designer.cs">
       <DependentUpon>Update_Acc.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="PL\background.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -722,6 +731,12 @@
     </Compile>
     <Compile Include="PL\frmLocations.designer.cs">
       <DependentUpon>frmLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmProducts.cs">
       <SubType>Form</SubType>
@@ -843,6 +858,12 @@
     <Compile Include="PL\frm_deposit.designer.cs">
       <DependentUpon>frm_deposit.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frm_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_home.Designer.cs">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frm_inputText.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -920,6 +941,12 @@
     </Compile>
     <Compile Include="PL\frm_R_Qutaion.designer.cs">
       <DependentUpon>frm_R_Qutaion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_SALESREPORTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SALESREPORTS.Designer.cs">
+      <DependentUpon>FRM_SALESREPORTS.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frm_SearchAcc.cs">
       <SubType>Form</SubType>
@@ -1061,6 +1088,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reports\rpt_Confirmation.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1072,6 +1104,12 @@
     </Compile>
     <Compile Include="Reports\rpt_Fees_Consolidated.Designer.cs">
       <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rpt_GroupBalanceByBranches.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_GroupBalanceByBranches.Designer.cs">
+      <DependentUpon>rpt_GroupBalanceByBranches.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\rpt_PExpenssBalance.cs">
       <SubType>Component</SubType>
@@ -1545,6 +1583,9 @@
       <DependentUpon>frmLocations.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmProducts.resx">
       <DependentUpon>frmProducts.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1649,6 +1690,9 @@
       <DependentUpon>frm_deposit.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_home.resx">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_inputText.resx">
       <DependentUpon>frm_inputText.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1729,6 +1773,9 @@
     <EmbeddedResource Include="PL\frm_R_Qutaion.resx">
       <DependentUpon>frm_R_Qutaion.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SALESREPORTS.resx">
+      <DependentUpon>FRM_SALESREPORTS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_SearchAcc.resx">
       <DependentUpon>frm_SearchAcc.cs</DependentUpon>
@@ -1839,8 +1886,8 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Confirmation.resx">
       <DependentUpon>rpt_Confirmation.cs</DependentUpon>
@@ -1850,6 +1897,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Fees_Consolidated.resx">
       <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_GroupBalanceByBranches.ar.resx">
+      <DependentUpon>rpt_GroupBalanceByBranches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_GroupBalanceByBranches.resx">
+      <DependentUpon>rpt_GroupBalanceByBranches.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_ItemBalanceByBranches.ar.resx">
       <DependentUpon>rpt_ItemBalanceByBranches.cs</DependentUpon>
@@ -1940,6 +1994,12 @@
     <EmbeddedResource Include="RPT\frm_Inventory_Report.resx">
       <DependentUpon>frm_Inventory_Report.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rpt_InventoryItems.resx">
+      <DependentUpon>frm_rpt_InventoryItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rpt_InventoryGroups.resx">
+      <DependentUpon>frm_rpt_InventoryGroups.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\print_PurchaseInv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>print_PurchaseInv.cs</LastGenOutput>
@@ -1962,9 +2022,20 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Rpt_inv.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_rpt_InventoryBranches.resx">
+      <DependentUpon>frm_rpt_InventoryBranches.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_InventoryList.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_InventoryList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_inventory_Group_byBranch_E.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_inventory_Group_byBranch_E.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_inventory_Group_byBranch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_inventory_Group_byBranch.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_inventory_Mstore_Branchs_G.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2685,11 +2756,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>trans_by_inv.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Reports\XtraReport1.resx">
       <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
@@ -2707,6 +2773,7 @@
     <None Include="DAL\db.dbml.layout">
       <DependentUpon>db.dbml</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -2751,6 +2818,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport6.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_InventoryItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_InventoryItems.Designer.cs">
+      <DependentUpon>frm_rpt_InventoryItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_InventoryGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_InventoryGroups.Designer.cs">
+      <DependentUpon>frm_rpt_InventoryGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_InventoryBranches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rpt_InventoryBranches.Designer.cs">
+      <DependentUpon>frm_rpt_InventoryBranches.cs</DependentUpon>
     </Compile>
     <Compile Include="RPT\frmAccDetails.cs">
       <SubType>Form</SubType>
@@ -2843,6 +2928,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>rpt_InventoryList.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_inventory_Group_byBranch_E.cs">
+      <DependentUpon>rpt_inventory_Group_byBranch_E.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\rpt_inventory_Group_byBranch.cs">
+      <DependentUpon>rpt_inventory_Group_byBranch.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="RPT\rpt_inventory_Mstore_Branchs_G.cs">
       <DependentUpon>rpt_inventory_Mstore_Branchs_G.rpt</DependentUpon>
@@ -3859,6 +3956,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="report_SsV_icon.ico" />
+    <None Include="Resources\employeesummary.svg" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\report_icon.jfif" />
+    <None Include="Resources\salesanalysis_32x32.png" />
+    <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\customers.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\customer_32x32.png" />
+    <None Include="Resources\linestyle_32x321.png" />
+    <None Include="Resources\employees.svg" />
+    <None Include="Resources\linestyle_32x32.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\pielabelstooltips_32x32.png" />
+    <None Include="Resources\remove_32x32.png" />
+    <None Include="Resources\selectall_32x32.png" />
+    <None Include="Resources\close.svg" />
+    <None Include="Resources\accounting.png" />
+    <None Include="Resources\bank.png" />
+    <None Include="Resources\changetheme_32x32.png" />
+    <None Include="Resources\loadpagesetup_32x32.png" />
+    <None Include="Resources\stock.png" />
+    <None Include="Resources\properties_32x32.png" />
+    <None Include="Resources\department.png" />
+    <None Include="Resources\store.png" />
+    <None Include="Resources\buy_32x32.png" />
     <None Include="Resources\company_chose.jpg" />
     <None Include="Resources\company chose.jpg" />
     <None Include="Resources\Cross-icon11.png" />

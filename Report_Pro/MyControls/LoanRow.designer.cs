@@ -49,7 +49,7 @@
             this.paySer.BackgroundStyle.Class = "DateTimeInputBackground";
             this.paySer.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.paySer.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.paySer.DisabledBackColor = System.Drawing.Color.Navy;
+            this.paySer.DisabledBackColor = System.Drawing.SystemColors.Highlight;
             this.paySer.DisabledForeColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.paySer, "paySer");
             this.paySer.Name = "paySer";
