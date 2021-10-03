@@ -257,17 +257,25 @@ namespace Report_Pro.CTR
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text == "1975")
+
+
+            DataTable dt_ = dal.getDataTabl_1(@"SELECT pass_id,Description,Password  FROM tblPassword where pass_id='pass2' and Password='" + textBox1.Text + "' ");
+            if (dt_.Rows.Count > 0)
             {
                 buttonX2.Visible = true;
                 buttonX5.Visible = true;
                 btn_ReportFundDetials.Visible = true;
             }
-            else {
+            else
+            {
                 buttonX2.Visible = false;
                 buttonX5.Visible = false;
                 btn_ReportFundDetials.Visible = false;
             }
+
+
+
+
         }
 
         private void buttonX3_Click(object sender, EventArgs e)

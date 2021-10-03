@@ -73,9 +73,9 @@ namespace Report_Pro.PL
 
         private void getBalance(string lcNum)
         {
-            //try
-            //{
-               DataTable lcBalance = dal.getDataTabl_1(@"SELECT isnull(sum(InvAmount),0),isnull(sum(InvQty),0) FROM LcInvTbl where LcNo='" + lcNum + "'");
+            try
+            {
+                DataTable lcBalance = dal.getDataTabl_1(@"SELECT isnull(sum(InvAmount),0),isnull(sum(InvQty),0) FROM LcInvTbl where LcNo='" + lcNum + "'");
                 if (lcBalance.Rows.Count > 0)
                 {
                     balanceAmount.Value = Convert.ToDouble(Amount.Text) - Convert.ToDouble(lcBalance.Rows[0][0].ToString()) - InvAmount.Value;
@@ -87,11 +87,18 @@ namespace Report_Pro.PL
                     balanceQty.Value = Convert.ToDouble(txtQty.Text) - InvQty.Value;
 
                 }
-            //}
-            //catch { }
+        }
+            catch { }
             }
     private void button1_Click_1(object sender, EventArgs e)
         {
+
+            ClearTextBoxes();
+            //if (DGV1.Rows.Count > 0)
+            //{
+            //    DGV1.Rows.Clear();
+            //}
+
             FrmSerchLcs frmSrchLcs = new FrmSerchLcs();
             frmSrchLcs.ShowDialog();
             try
@@ -104,6 +111,7 @@ namespace Report_Pro.PL
                 //balanceAmount.Value = Convert.ToDouble(Amount.Text) - InvAmount.Value;
                 //balanceQty.Value = Convert.ToDouble(txtQty.Text) - InvQty.Value;
                 getBalance(LcNo.Text);
+                searchInv(LcNo.Text);
             }
             catch
             {
@@ -140,35 +148,25 @@ namespace Report_Pro.PL
                 //    this.LcNo.Text = frmSrchLcs.DGV1.CurrentRow.Cells[0].Value.ToString();
                 this.BAccept.Text = dal.getDataTabl_1("select BAccept from BanksTbl where Acc_No='"+ BName.ID.Text+"'").Rows[0][0].ToString().ToDecimal().ToString("n2");
 
-                //        this.AcceptDays.Text = frmSrchLcs.DGV1.CurrentRow.Cells[4].Value.ToString();
-
-                //        InvMaturtyDate.Text = InvShipDate.Value.AddDays(Convert.ToDouble(AcceptDays.Text)).ToShortDateString();
-
-                //        if (Properties.Settings.Default.lungh == "0")
-                //        {
-                //            this.BName.Text = frmSrchLcs.DGV1.CurrentRow.Cells[10].Value.ToString();
-                //            this.Currency.Text = frmSrchLcs.DGV1.CurrentRow.Cells[8].Value.ToString();
-                //        }
-                //        else
-                //        {
-                //            this.BName.Text = frmSrchLcs.DGV1.CurrentRow.Cells[11].Value.ToString();
-                //            this.Currency.Text = frmSrchLcs.DGV1.CurrentRow.Cells[9].Value.ToString();
-
-                //        }
-                //        this.Rate.Text = frmSrchLcs.DGV1.CurrentRow.Cells[13].Value.ToString();
-
-
-                //        this.InvAmount.Focus();
-                //    }
-                //    catch
-                //    {
-                //    }
-                //}
+                
 
             }
         }
 
 
+        private void searchInv(string txtSearch)
+        {
+           DataTable  searchDT = dal.getDataTabl_1("SELECT * FROM LcInvTbl where LcNo = '" + txtSearch + "'");
+            if (searchDT.Rows.Count > 0)
+            {
+                DGV1.DataSource = searchDT;
+            }
+            else
+            {
+                DGV1.DataSource = null;
+                DGV1.Rows.Clear();
+            }
+        }
 
 
 
@@ -227,6 +225,7 @@ namespace Report_Pro.PL
             };
 
             func(Controls);
+       
         }
 
         
@@ -235,6 +234,10 @@ namespace Report_Pro.PL
         {
             ClearTextBoxes();
             BSave.Enabled = true;
+            if (DGV1.Rows.Count > 0)
+            {
+                DGV1.Rows.Clear();
+            }
         }
 
         private void BSave_Click(object sender, EventArgs e)
@@ -244,7 +247,9 @@ namespace Report_Pro.PL
                 dal.Execute_1("insert into LcInvTbl(LcNo,InvNo,InvAmount,InvQty,InvShipDate,InvMaturtyDate,Rate,Accept_Amount) values('" + LcNo.Text+"','"+ InvNo.Text + "','" + InvAmount.Text.ToDecimal() + "','" +
                     InvQty.Text.ToDecimal() + "','" + InvShipDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + InvMaturtyDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" +
                     Rate.Text.ToDecimal() + "','" + Accept_Amount.Text.ToDecimal() + "')");
-                MessageBox.Show("تم الحفظ بنجاح", "حفظ ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("تم الحفظ بنجاح", "حفظ ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(dal.rm.GetString("msgSave", dal.cul), dal.rm.GetString("msgSave_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 ClearTextBoxes();
             }
             catch (System.Exception ex)
@@ -262,7 +267,10 @@ namespace Report_Pro.PL
                 dal.Execute_1("update LcInvTbl set LcNo='" + LcNo.Text + "', InvNo='" + InvNo.Text + "',InvAmount='" + InvAmount.Text.ToDecimal() +
                     "', InvQty='" + InvQty.Text.ToDecimal() + "', InvShipDate='" + InvShipDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "',InvMaturtyDate='" + InvMaturtyDate.Value.ToString("yyyy-MM-dd HH:mm:ss")
                     + "', Rate='" + Rate.Text.ToDecimal() + "', Accept_Amount='" + Accept_Amount.Text.ToDecimal() + "' where  LcNo='" + LcNo.Text + "' and InvNo='" + InvNo.Text + "'");
-                MessageBox.Show("تم التعديل بنجاح", "تعديل ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                MessageBox.Show(dal.rm.GetString("msgEdit", dal.cul), dal.rm.GetString("msgEdit_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //MessageBox.Show("تم التعديل بنجاح", "تعديل ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearTextBoxes();
                 BSave.Enabled = true;
             }
@@ -276,21 +284,22 @@ namespace Report_Pro.PL
         private void BSearch_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                FrmSerchLcInv FrmSerchLcInv = new FrmSerchLcInv();
-                FrmSerchLcInv.ShowDialog();
+            //try
+            //{
                 ClearTextBoxes();
-                showInvData(FrmSerchLcInv.DGV1.CurrentRow.Cells[0].Value.ToString(), FrmSerchLcInv.DGV1.CurrentRow.Cells[1].Value.ToString());
+          PL.FrmSerchLcInv frm = new PL.FrmSerchLcInv();
+                frm.ShowDialog();
+                
+                showInvData(frm.DGV1.CurrentRow.Cells[0].Value.ToString(), frm.DGV1.CurrentRow.Cells[1].Value.ToString());
 
                
 
 
                 BSave.Enabled = false;
                 BEdit.Enabled = true;
-                
-            }
-            catch { }
+                searchInv(LcNo.Text);
+          //  }
+            //catch { }
         }
 
        private void showInvData(string lcNo_, string invNo_)
@@ -599,7 +608,8 @@ namespace Report_Pro.PL
                     MyControls.LoanRow r = new MyControls.LoanRow();
                     flowLayoutPanel1.Controls.Add(r);
                     r.paySer.Text = (flowLayoutPanel1.Controls.GetChildIndex(r) + 1).ToString();
-                    r.intrestRate.Text = txtIntrestRate.Text;
+
+                    r.intrestRate.Text = txtIntrestRate.Text.ParseInt(0).ToString();
                 }
             }
             else if ((NoOfPayments.Value - flowLayoutPanel1.Controls.Count) < 0)
@@ -671,6 +681,40 @@ namespace Report_Pro.PL
         private void txtLoanAcc_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void DGV1_DoubleClick(object sender, EventArgs e)
+        {
+            showInvData(DGV1.CurrentRow.Cells[0].Value.ToString(), DGV1.CurrentRow.Cells[1].Value.ToString());
+
+
+
+
+            BSave.Enabled = false;
+            BEdit.Enabled = true;
+        }
+
+        private void buttonItem1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(dal.rm.GetString("msgConfirmDelete", dal.cul), dal.rm.GetString("msgConfirmDelete_H!", dal.cul), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+
+            {
+                try
+                {
+
+
+                    dal.Execute_1("delete from LcInvTbl  where  LcNo='" + LcNo.Text + "' and InvNo='" + InvNo.Text + "'");
+
+                    MessageBox.Show(dal.rm.GetString("msgDelete", dal.cul), dal.rm.GetString("msgDelete_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearTextBoxes();
+                    BSave.Enabled = true;
+
+                }
+                catch (System.Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

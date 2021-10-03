@@ -31,8 +31,21 @@ namespace Report_Pro.RPT
 
     private void btnReport_Click(object sender, EventArgs e)
     {
+            string titeltext = "";
+            if (comb1.SelectedIndex == 0)
+            {
+                titeltext = "Isue Date";
+            }
+            else if (comb1.SelectedIndex == 1)
+            {
+                titeltext = "Expiry Date";
+            }
+            else if (comb1.SelectedIndex == 2)
+            {
+                titeltext = "Last Ship Date";
+            }
 
-      RPT.rpt_lcsRpt rptLcsRpt = new rpt_lcsRpt();
+            RPT.rpt_lcsRpt rptLcsRpt = new rpt_lcsRpt();
       DataTable dataTabl1 = this.dal.getDataTabl_1(@"SELECT L.*,p.PAYER_NAME as bankName 
         ,p1.PAYER_NAME as SuplierName ,p.payer_l_name as bankNameE ,p1.payer_l_name as SuplierNameE  
         ,c.Currency_Name as CurrencyName 
@@ -48,7 +61,12 @@ namespace Report_Pro.RPT
       dataSet.WriteXmlSchema("schema_rpt.xml");
       rptLcsRpt.SetDataSource(dataSet);
       this.crystalReportViewer1.ReportSource = (object) rptLcsRpt;
-      this.groupPanel2.Visible = false;
+            rptLcsRpt.DataDefinition.FormulaFields["From_date"].Text = "'" + fromDate.Value.ToString("yyyy/MM/dd") + "'";
+            rptLcsRpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + toDate.Value.ToString("yyyy/MM/dd") + "'";
+            rptLcsRpt.DataDefinition.FormulaFields["titelText"].Text = "'" + titeltext+ "'";
+
+
+            this.groupPanel2.Visible = false;
     }
 
     private void btnOption_Click(object sender, EventArgs e)

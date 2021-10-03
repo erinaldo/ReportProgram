@@ -287,7 +287,9 @@ namespace Report_Pro.PL
             bnk.Loan_Rate = Loans_Rate.Text.ToDecimal();
             bnk.BComnication = txtComnication.Text.ToDecimal();
             bnk.mainLcAccNo = txtLcAcc.ID.Text;
-        }
+            bnk.MainLoanAccNo = txtLoanAcc.ID.Text;
+            bnk.LoanIntrestAccNo = txtFeesAcc.ID.Text;
+    }
 
 
         void GetData()
@@ -308,6 +310,8 @@ namespace Report_Pro.PL
             Loans_Rate.Text = bnk.Loan_Rate.ToString().ToDecimal().ToString("N2"); ;
             txtComnication.Text = bnk.BComnication.ToString().ToDecimal().ToString("N2");
             txtLcAcc.ID.Text = bnk.mainLcAccNo;
+            txtLoanAcc.ID.Text = bnk.MainLoanAccNo;
+            txtFeesAcc.ID.Text = bnk.LoanIntrestAccNo;
         }
 
         void New()
@@ -522,6 +526,11 @@ namespace Report_Pro.PL
         }
 
         private void BID_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }

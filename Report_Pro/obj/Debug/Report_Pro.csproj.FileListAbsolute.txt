@@ -1965,8 +1965,10 @@ C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\am-ET\Report_Pro.resources.
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\sq-AL\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ar-EG\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\en-US\Report_Pro.resources.dll
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\sq\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\AccRow.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\AccRow_new.dll
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\AdvancedDataGridView.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportSource.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.Shared.dll
@@ -2028,6 +2030,7 @@ C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ADODB.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\stdole.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ShockwaveFlashObjects.dll
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\AdvancedDataGridView.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.Data.v19.1.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.DataAccess.v19.1.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\DevExpress.DataAccess.v19.1.UI.xml
@@ -2062,6 +2065,8 @@ C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\Microsoft.ReportViewer.WinF
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\PagedList.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\office.xml
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\Microsoft.Build.Utilities.v3.5.xml
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\fr\AdvancedDataGridView.resources.dll
+C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ru\AdvancedDataGridView.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\de\DevExpress.Data.v19.1.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\es\DevExpress.Data.v19.1.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ja\DevExpress.Data.v19.1.resources.dll
@@ -2184,11 +2189,13 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.CTR.frmSerchSana
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.CTR.Frm_BalanceDeatials.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.CTR.frm_Cash_Receipt.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.CTR.frm_cash_transaction.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.CTR.frm_Funds_Detials_Report.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.CTR.frm_Update_Sanadtype_2.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Form1.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Form_1.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.frm_Master.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Lang.Langres.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_Accrued_Interest.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frm_Loan.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.CashCustomer.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Grid.resources
@@ -2295,6 +2302,7 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_send_sms.
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.frm_serchbanks.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_serch_cost.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_UpdateAccData.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Update_Classification.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Update_custom_no.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Update_invoiceData.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_update_trans_invoice.resources
@@ -2327,6 +2335,7 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_maintena
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rep_Fees_Consolidated.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_Cut_off.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_Inventory_Report.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_InventoryItems.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_InventoryGroups.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_InventoryList.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_InventoryBranches.resources
@@ -2425,6 +2434,7 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Loans.frmLoanSea
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmQuotation.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frmQuotation.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.FrmSerchLcs.ar-EG.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.FrmSerchLcs.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.FrmSerchLcs.en-US.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_Banks.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_BS_elements.ar.resources
@@ -2441,6 +2451,8 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_R_Qutaion
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_R_Qutaion.en.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_search_items.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_search_items.en.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_uploadImage.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.Frm_uploadImage.sq.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.list_H_price.en-US.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.UpdateAccData.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.Reports.rpt_Fees_Consolidated.ar.resources
@@ -2485,12 +2497,12 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\am-ET\Report_Pro.resources.
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\sq-AL\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\ar-EG\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\en-US\Report_Pro.resources.dll
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\sq\Report_Pro.resources.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csproj.CopyComplete
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.exe
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.pdb
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\AdvancedDataGridView.dll
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\AdvancedDataGridView.xml
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\fr\AdvancedDataGridView.resources.dll
-C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\ru\AdvancedDataGridView.resources.dll
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.RPT.frm_rpt_InventoryItems.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_SalesInvoice.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Grid.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.Inv_Row.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_SalesInvoice.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.invoice_frm.ar.resources

@@ -204,6 +204,8 @@ namespace Report_Pro.RPT
                     getInvoiceTotal(int32.ToString(), Branch.ID.Text, Transaction.ID.Text, (txtYear.Value - 2000).ToString());
                     ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt_inv_total.Rows[0]["NetValue"].ToString())), currencies[currencyNo]);
                     rptInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+
+
                     rptInv.PrintOptions.PrinterName = Properties.Settings.Default.Invoice_P;
 
                     rptInv.PrintToPrinter(1, false, 0, 0);

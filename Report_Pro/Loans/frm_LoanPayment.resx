@@ -1020,6 +1020,27 @@
   <data name="&gt;&gt;txtPaymentAmount.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="lbl_1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14pt</value>
+  </data>
+  <data name="lbl_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 20</value>
+  </data>
+  <data name="lbl_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 23</value>
+  </data>
+  <data name="lbl_1.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="lbl_1.Text" xml:space="preserve">
+    <value>القرض مسدد بالكامل !!!!</value>
+  </data>
+  <data name="lbl_1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;lbl_1.Name" xml:space="preserve">
     <value>lbl_1</value>
   </data>
@@ -1055,39 +1076,6 @@
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="lbl_1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 14pt</value>
-  </data>
-  <data name="lbl_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 20</value>
-  </data>
-  <data name="lbl_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 23</value>
-  </data>
-  <data name="lbl_1.TabIndex" type="System.Int32, mscorlib">
-    <value>145</value>
-  </data>
-  <data name="lbl_1.Text" xml:space="preserve">
-    <value>القرض مسدد بالكامل !!!!</value>
-  </data>
-  <data name="lbl_1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lbl_1.Name" xml:space="preserve">
-    <value>lbl_1</value>
-  </data>
-  <data name="&gt;&gt;lbl_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;lbl_1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>

@@ -478,9 +478,9 @@ namespace Report_Pro.PL
             {
                 dal.Execute_1_test(@"INSERT INTO R_Qutation (Ser_no,Branch_code,Transaction_code,Cyear,G_date,C_Phone,c_fax,E_mail,C_mobile,
 					c_Efax,C_address,C_Notes,Delevry_Tearms)
-     VALUES ('" + txt_serNo.Text + "," + Uc_Branch.ID.Text + "," + txt_transaction_code.Text + "," +
-            txt_InvDate.Value.ToString("yy") + "," + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "," + txt_Tel.Text + "," + txt_Fax.Text + "," +
-            txt_Email.Text + "," + txtMobile.Text + "," + txtE_Fax.Text + "," + txt_address.Text + "," + txt_MainNote.Text + "," + Convert.ToString(deliveryTearms.SelectedValue) + "')");
+     VALUES ('" + txt_serNo.Text + "','" + Uc_Branch.ID.Text + "','" + txt_transaction_code.Text + "','" +
+            txt_InvDate.Value.ToString("yy") + "','" + txt_InvDate.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + txt_Tel.Text + "','" + txt_Fax.Text + "','" +
+            txt_Email.Text + "','" + txtMobile.Text + "','" + txtE_Fax.Text + "','" + txt_address.Text + "','" + txt_MainNote.Text + "','" + Convert.ToString(deliveryTearms.SelectedValue) + "')");
             }
             catch
             {

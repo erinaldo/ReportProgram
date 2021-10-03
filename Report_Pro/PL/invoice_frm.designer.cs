@@ -192,15 +192,15 @@
             this.txt_InvDate = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.Uc_Customer = new Report_Pro.MyControls.UC_Acc();
+            this.cashCustomer = new Report_Pro.MyControls.CashCustomer();
+            this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
             this.tabItem5 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
+            this.tabItem7 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.txtKmCode = new System.Windows.Forms.TextBox();
             this.tabItem6 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
-            this.tabItem7 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.cashCustomer = new Report_Pro.MyControls.CashCustomer();
-            this.Uc_Cost = new Report_Pro.MyControls.UC_cost();
-            this.Uc_Customer = new Report_Pro.MyControls.UC_Acc();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupPanel5.SuspendLayout();
@@ -222,8 +222,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
-            this.tabControlPanel2.SuspendLayout();
             this.tabControlPanel3.SuspendLayout();
+            this.tabControlPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -695,6 +695,7 @@
             this.Price_ton.DisplayFormat = "#,##0";
             this.Price_ton.Increment = 1D;
             this.Price_ton.Name = "Price_ton";
+            this.Price_ton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_ton_KeyUp);
             // 
             // totWeight
             // 
@@ -1679,11 +1680,63 @@
             this.tabControlPanel1.Style.GradientAngle = 90;
             this.tabControlPanel1.TabItem = this.tabItem5;
             // 
+            // Uc_Customer
+            // 
+            resources.ApplyResources(this.Uc_Customer, "Uc_Customer");
+            this.Uc_Customer.BackColor = System.Drawing.Color.Transparent;
+            this.Uc_Customer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Customer.Name = "Uc_Customer";
+            this.Uc_Customer.Load += new System.EventHandler(this.Uc_Customer_Load);
+            // 
+            // cashCustomer
+            // 
+            this.cashCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.cashCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.cashCustomer, "cashCustomer");
+            this.cashCustomer.Name = "cashCustomer";
+            // 
+            // Uc_Cost
+            // 
+            this.Uc_Cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
+            this.Uc_Cost.Name = "Uc_Cost";
+            // 
             // tabItem5
             // 
             this.tabItem5.AttachedControl = this.tabControlPanel1;
             this.tabItem5.Name = "tabItem5";
             resources.ApplyResources(this.tabItem5, "tabItem5");
+            // 
+            // tabControlPanel3
+            // 
+            this.tabControlPanel3.Controls.Add(this.Vat_acc_Desc);
+            this.tabControlPanel3.Controls.Add(this.txtAcc2_Desc);
+            this.tabControlPanel3.Controls.Add(this.txt_CustAcc_Desc);
+            this.tabControlPanel3.Controls.Add(this.labelX11);
+            this.tabControlPanel3.Controls.Add(this.txt_CustAcc_ID);
+            this.tabControlPanel3.Controls.Add(this.labelX12);
+            this.tabControlPanel3.Controls.Add(this.txt_CashAcc_Desc);
+            this.tabControlPanel3.Controls.Add(this.labelX13);
+            this.tabControlPanel3.Controls.Add(this.txt_CashAcc_ID);
+            this.tabControlPanel3.Controls.Add(this.labelX14);
+            this.tabControlPanel3.Controls.Add(this.Vat_acc);
+            this.tabControlPanel3.Controls.Add(this.txtAcc2_ID);
+            resources.ApplyResources(this.tabControlPanel3, "tabControlPanel3");
+            this.tabControlPanel3.Name = "tabControlPanel3";
+            this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel3.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel3.Style.GradientAngle = 90;
+            this.tabControlPanel3.TabItem = this.tabItem7;
+            // 
+            // tabItem7
+            // 
+            this.tabItem7.AttachedControl = this.tabControlPanel3;
+            this.tabItem7.Name = "tabItem7";
+            resources.ApplyResources(this.tabItem7, "tabItem7");
             // 
             // tabControlPanel2
             // 
@@ -1733,58 +1786,6 @@
             this.tabItem6.Name = "tabItem6";
             resources.ApplyResources(this.tabItem6, "tabItem6");
             // 
-            // tabControlPanel3
-            // 
-            this.tabControlPanel3.Controls.Add(this.Vat_acc_Desc);
-            this.tabControlPanel3.Controls.Add(this.txtAcc2_Desc);
-            this.tabControlPanel3.Controls.Add(this.txt_CustAcc_Desc);
-            this.tabControlPanel3.Controls.Add(this.labelX11);
-            this.tabControlPanel3.Controls.Add(this.txt_CustAcc_ID);
-            this.tabControlPanel3.Controls.Add(this.labelX12);
-            this.tabControlPanel3.Controls.Add(this.txt_CashAcc_Desc);
-            this.tabControlPanel3.Controls.Add(this.labelX13);
-            this.tabControlPanel3.Controls.Add(this.txt_CashAcc_ID);
-            this.tabControlPanel3.Controls.Add(this.labelX14);
-            this.tabControlPanel3.Controls.Add(this.Vat_acc);
-            this.tabControlPanel3.Controls.Add(this.txtAcc2_ID);
-            resources.ApplyResources(this.tabControlPanel3, "tabControlPanel3");
-            this.tabControlPanel3.Name = "tabControlPanel3";
-            this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel3.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel3.Style.GradientAngle = 90;
-            this.tabControlPanel3.TabItem = this.tabItem7;
-            // 
-            // tabItem7
-            // 
-            this.tabItem7.AttachedControl = this.tabControlPanel3;
-            this.tabItem7.Name = "tabItem7";
-            resources.ApplyResources(this.tabItem7, "tabItem7");
-            // 
-            // cashCustomer
-            // 
-            this.cashCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.cashCustomer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.cashCustomer, "cashCustomer");
-            this.cashCustomer.Name = "cashCustomer";
-            // 
-            // Uc_Cost
-            // 
-            this.Uc_Cost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.Uc_Cost, "Uc_Cost");
-            this.Uc_Cost.Name = "Uc_Cost";
-            // 
-            // Uc_Customer
-            // 
-            resources.ApplyResources(this.Uc_Customer, "Uc_Customer");
-            this.Uc_Customer.BackColor = System.Drawing.Color.Transparent;
-            this.Uc_Customer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Customer.Name = "Uc_Customer";
-            this.Uc_Customer.Load += new System.EventHandler(this.Uc_Customer_Load);
-            // 
             // invoice_frm
             // 
             resources.ApplyResources(this, "$this");
@@ -1828,10 +1829,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabControlPanel1.ResumeLayout(false);
             this.tabControlPanel1.PerformLayout();
-            this.tabControlPanel2.ResumeLayout(false);
-            this.tabControlPanel2.PerformLayout();
             this.tabControlPanel3.ResumeLayout(false);
             this.tabControlPanel3.PerformLayout();
+            this.tabControlPanel2.ResumeLayout(false);
+            this.tabControlPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

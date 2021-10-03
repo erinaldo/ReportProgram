@@ -33,7 +33,9 @@ namespace Report_Pro.PL
         void resizeDG()
         {
             DGV_b.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DGV_b.Columns[1].Width = 70;
+            DGV_b.Columns[1].Width = 100;
+            DGV_b.Columns[2].Width = 100;
+          
         }
 
         void resizeDG_LP()
@@ -51,6 +53,7 @@ namespace Report_Pro.PL
         {
             dt.Columns.Add("الفرع");
             dt.Columns.Add(" الرصيد");
+            dt.Columns.Add("الوزن");
             DGV_b.DataSource = dt;
             resizeDG();
           
@@ -77,9 +80,16 @@ namespace Report_Pro.PL
                  where row.Cells[0].FormattedValue.ToString() != string.Empty
                  // select Convert.ToDouble(row.Cells[0].FormattedValue)).Sum().ToString();
                  select (row.Cells[1].FormattedValue).ToString().ToDecimal()).Sum().ToString();
-           
+
+            txtBalance_weight.Text =
+               (from DataGridViewRow row in DGV_b.Rows
+                where row.Cells[0].FormattedValue.ToString() != string.Empty
+                 // select Convert.ToDouble(row.Cells[0].FormattedValue)).Sum().ToString();
+                 select (row.Cells[2].FormattedValue).ToString().ToDecimal()).Sum().ToString();
+
+
         }
- 
+
         private void labelX2_Click(object sender, EventArgs e)
         {
 
@@ -184,9 +194,8 @@ namespace Report_Pro.PL
 
                 row = dt.NewRow();
                 row[0] = dt_b.Rows[i][1].ToString();
-                row[1] = Convert.ToDecimal(dt_b.Rows[i][2]).ToString("n" + 2);
-                // row[9] = Convert.ToDecimal(dt_.Rows[i][70]).ToString("n" + dal.digits_);
-
+                row[1] = dt_b.Rows[i][2];
+                row[2] = (Convert.ToDouble(dt_b.Rows[i][2]) * txtWeight.Value);
 
                 //row[8] = dt_.Rows[i][7];
                 //row[9] = dt_.Rows[i][2];
@@ -203,7 +212,16 @@ namespace Report_Pro.PL
         }
         private void get_last_Purch(string item_no)
         {
-            DataTable dt_LP = dal.getDataTabl_1(@"select top 1 A.ser_no,A.G_DATE,A.QTY_ADD,A.Local_Price,P.PAYER_NAME from wh_material_transaction as A
+            int X = nRow.Value;
+            if (X > 0)
+            {
+                X = nRow.Value;
+            }
+            else
+            {
+                X = 1000;
+            }
+            DataTable dt_LP = dal.getDataTabl_1(" DECLARE  @X int ='" + X + @"' select top (isnull(@X,1000))  A.ser_no,A.G_DATE,A.QTY_ADD,A.Local_Price,P.PAYER_NAME from wh_material_transaction as A
             inner join wh_inv_data as B on A.SER_NO=B.Ser_no and A.TRANSACTION_CODE=B.TRANSACTION_CODE and a.Branch_code=b.Branch_code and a.Cyear=b.Cyear
             inner join payer2 as P on p.ACC_NO=b.Acc_no and b.Acc_Branch_code=p.BRANCH_code
             where item_no='" + item_no + "' and (A.TRANSACTION_CODE='Xpc' or A.TRANSACTION_CODE='XpE') order by G_DATE desc");
@@ -320,6 +338,16 @@ namespace Report_Pro.PL
         private void txtTonCost_1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DGV_b_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void nRow_ValueChanged(object sender, EventArgs e)
+        {
+            get_last_Purch(Uc_Items.ID.Text);
         }
     }
 }

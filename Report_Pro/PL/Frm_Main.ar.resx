@@ -191,13 +191,13 @@
 </value>
   </data>
   <data name="M58.Text" xml:space="preserve">
-    <value>تقرير مخزون مجموعة بالفروع</value>
+    <value>تقرير رصيد مجموعة بالفروع</value>
   </data>
   <data name="M59.Text" xml:space="preserve">
-    <value>تقرير مخزون فرع بالمجموعات</value>
+    <value>تقرير رصيد فرع بالمجموعات</value>
   </data>
   <data name="M60.Text" xml:space="preserve">
-    <value>تقرير مخزون فرع بالاصناف</value>
+    <value>تقرير رصيد فرع بالاصناف</value>
   </data>
   <data name="M61.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -283,8 +283,17 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <data name="M718.Text" xml:space="preserve">
+    <value>تحديث التصنيف</value>
+  </data>
   <data name="M_Loans.Text" xml:space="preserve">
     <value>القروض</value>
+  </data>
+  <data name="btnCash_1.Text" xml:space="preserve">
+    <value>حركة الصندوق</value>
+  </data>
+  <data name="btnCash_2.Text" xml:space="preserve">
+    <value>تقارير حركة الصندوق</value>
   </data>
   <data name="btn_CashTransaction.Text" xml:space="preserve">
     <value>حركة الصندوق</value>
@@ -319,7 +328,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
-        GQAAAk1TRnQBSQFMAgEBCgEAAZQBAgGUAQIBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        GQAAAk1TRnQBSQFMAgEBCgEAAeQBAgHkAQIBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -444,7 +453,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
-        GQAAAk1TRnQBSQFMAgEBCgEAAZABAQGQAQEBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        GQAAAk1TRnQBSQFMAgEBCgEAAeABAQHgAQEBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA

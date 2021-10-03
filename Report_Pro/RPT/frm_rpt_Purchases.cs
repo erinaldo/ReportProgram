@@ -633,7 +633,7 @@ namespace Report_Pro.RPT
 
             // DataTable dt_ = dal.getDataTabl(@"sales_by_item_", dTP1.Value.Date, dTP2.Value.Date, pay_code, Convert.ToString(category.SelectedValue), T1, T2, Convert.ToString(cmb_DimCategory.SelectedValue), "xp",UC_Branch.ID.Text,Uc_Acc.ID.Text,db1, Uc_Group.ID.Text,Lc_Acc.ID.Text);
 
-            DataTable dt_ = dal.getDataTabl_1(@"SELECT d.ITEM_NO,s.descr
+            DataTable dt_ = dal.getDataTabl_1(@"SELECT d.ITEM_NO,s.descr,s.UnitDepth,s.group_code,s.Dim_category,s.Category
                 ,sum(D.QTY_ADD - D.QTY_TAKE) as Qty
                 ,ROUND(sum((D.QTY_ADD - D.QTY_TAKE) * D.Local_Price) - sum(((D.QTY_ADD - D.QTY_TAKE) * D.Local_Price * D.total_disc) / 100), 2) AS Value
                 ,sum(D.TAX_IN) - sum(D.TAX_OUT) As Vat
@@ -654,7 +654,7 @@ namespace Report_Pro.RPT
                 "and A.acc_no like '" + Uc_Acc.ID.Text + "%' " +
                 "and S.group_code like '" + Uc_Group.ID.Text + "%' " +
                 "and isnull(A.LC_ACC_NO,'') like '" + Lc_Acc.ID.Text + "%' " +
-                "group by d.ITEM_NO, s.descr");
+                "group by d.ITEM_NO, s.descr,s.UnitDepth,s.group_code,s.Dim_category,s.Category");
 
             //INNER JOIN payer2 As P ON A.Acc_no = P.ACC_NO AND A.Acc_Branch_code = P.BRANCH_code
             //INNER JOIN wh_BRANCHES As B ON A.Branch_code = B.Branch_code

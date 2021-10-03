@@ -304,14 +304,14 @@ namespace Report_Pro.PL
 , t_final, resp_name, t_level, PREV_NO, balance, COST_CENTER, notes, S_DATE, med_MEZAN, user_id, MultyCurrency
 , Currency_Code, Last_Currency_Value_Purch, Last_Currency_Value_Sales, CREDIT_AGE, COSTMER_CASH_NO, CAT_CODE
 , acc_no2, KM_CODE_Sales, KM_CODE_Purch, EXTER_EXP) VALUES
-('"+CoId.Text+","+ MAccId.Text+"' + '"+AccId.Text+"," + BranchId.Text+"," + MAccId.Text+"," + (radioActive.Checked ? "0" : "1")
-+"," + AccName.Text+"," + AccNameL.Text+"," + UC_Credit.Desc.Text.ToDecimal()+"," + UC_QutType.ID.Text+"," + Address.Text
-+"," + BOBox.Text+"," + uC_Area.ID.Text+"," + PhoneNo.Text+"," + Email.Text+"," + FaxNo.Text+"," + MobileNo.Text+"," + RespMobileNo.Text
-+"," + RespPhone.Text+"," + (radioParent.Checked ? "0" : "1")+"," + RespName.Text+"," + AccLevel.Text+"," + MAccId.Text
-+"," + Balance.Text.ToDecimal()+"," + uC_cost.ID.Text+"," + Notes.Text+"," + Sdate.Text+"," + uC_FinalAcc.ID.Text+"," + UC_User.Desc.Text
-+"," + UC_MultiCurncey.Desc.Text+"," + uC_currency.ID.Text+"," + UC_Purch_price.Desc.Text.ToDecimal()+"," + UC_Sales_price.Desc.Text
-+"," + UC_days.Desc.Text.ToDecimal()+"," + uC_CashCard.ID.Text+"," + uC_Catogry.ID.Text+"," + uC_OtherNu.ID.Text+"," + KM_Sales.ID.Text
-+"," + KM_Purch.ID.Text+"," + UC_KM_no.Desc.Text+"')");
+('"+CoId.Text+"','"+ MAccId.Text+"' + '"+AccId.Text+"','" + BranchId.Text+"','" + MAccId.Text+"','" + (radioActive.Checked ? "0" : "1")
++"','" + AccName.Text+"','" + AccNameL.Text+"','" + UC_Credit.Desc.Text.ToDecimal()+"','" + UC_QutType.ID.Text+"','" + Address.Text
++"','" + BOBox.Text+"','" + uC_Area.ID.Text+"','" + PhoneNo.Text+"','" + Email.Text+"','" + FaxNo.Text+"','" + MobileNo.Text+"','" + RespMobileNo.Text
++"','" + RespPhone.Text+"','" + (radioParent.Checked ? "0" : "1")+"','" + RespName.Text+"','" + AccLevel.Text+"','" + MAccId.Text
++"','" + Balance.Text.ToDecimal()+"','" + uC_cost.ID.Text+"','" + Notes.Text+"','" + Sdate.Text+"','" + uC_FinalAcc.ID.Text+"','" + UC_User.Desc.Text
++"','" + UC_MultiCurncey.Desc.Text+"','" + uC_currency.ID.Text+"','" + UC_Purch_price.Desc.Text.ToDecimal()+"','" + UC_Sales_price.Desc.Text
++"','" + UC_days.Desc.Text.ToDecimal()+"','" + uC_CashCard.ID.Text+"','" + uC_Catogry.ID.Text+"','" + uC_OtherNu.ID.Text+"','" + KM_Sales.ID.Text
++"','" + KM_Purch.ID.Text+"','" + UC_KM_no.Desc.Text+"')");
                     
                     TV1.Nodes.Clear();
                     _acountsTb = dal.getDataTabl_1("select * FROM payer2 where BRANCH_code='" + Properties.Settings.Default.BranchId + "'");

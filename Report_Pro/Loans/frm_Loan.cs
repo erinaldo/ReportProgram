@@ -16,7 +16,7 @@ namespace Report_Pro.Loans
 {
     public partial class frm_Loan : Form
     {
-
+        
         CultureInfo cul;
         string _branch = Properties.Settings.Default.BranchAccID;
         Assembly a = Assembly.Load("Report_Pro");
@@ -44,6 +44,7 @@ namespace Report_Pro.Loans
         {
             getLoanID();
             addRows();
+            L_StartDate.Focus();
         }
 
         private void BSave_Click(object sender, EventArgs e)
@@ -276,7 +277,15 @@ namespace Report_Pro.Loans
         private void btnCreateJor_Click(object sender, EventArgs e)
         {
            saveLoanData();
-            AddJor();
+            DataTable checkJor = dal.getDataTabl_1(@"select * from daily_transaction where ser_no = '"+txtJorSer.Text+"'");
+            if (checkJor.Rows.Count > 0)
+            {
+                UpdateJor();
+            }
+            else
+            {
+                AddJor();
+            }
         }
 
 
@@ -360,7 +369,7 @@ namespace Report_Pro.Loans
                    , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
                     VALUES('" + txtYear.Text + "','" + BName.ID.Text + "','" + _branch + "','" +
                             txtJorSer.Text + "','1','" + txtLoanValue.Value + "','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
-                            "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')";
+                            "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','810','" + JorSer + "')";
                     cmd.ExecuteNonQuery();
 
 
@@ -373,18 +382,18 @@ namespace Report_Pro.Loans
                             string crDesc = "صرف الدفعة رقم " + r.paySer.Text + " من القرض - " + L_StartDate.Text.ToString();
 
                             cmd.CommandText = @"INSERT INTO daily_transaction(ACC_YEAR, ACC_NO, BRANCH_code, ser_no, COST_CENTER, meno, loh
-                   , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
-                    VALUES('" + txtYear.Text + "','" + txtLoanAcc.ID.Text + "','" + _branch + "','" +
+                            , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
+                             VALUES('" + txtYear.Text + "','" + txtLoanAcc.ID.Text + "','" + _branch + "','" +
                                txtJorSer.Text + "','1','0','" + r.PayValue.Text.ToDecimal() + "','" + -r.PayValue.Text.ToDecimal() + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
                                "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + crDesc + "','0','1','" + JorSer + "')";
                             cmd.ExecuteNonQuery();
 
-                            cmd.CommandText = @"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer.Text + "' WHERE id =  '" + txtLoanId.Text + "' ";
-                            cmd.ExecuteNonQuery();
+                            //cmd.CommandText = @"UPDATE LoansTbl SET Jor_ser_no = '" + txtJorSer.Text + "' WHERE id =  '" + txtLoanId.Text + "' ";
+                            //cmd.ExecuteNonQuery();
 
 
-                            cmd.CommandText = @"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ";
-                            cmd.ExecuteNonQuery();
+                            //cmd.CommandText = @"UPDATE serial_no SET daily_sn_ser='" + txtSanadSer.Text + "' , main_daily_ser = '" + JorSer + "' WHERE BRANCH_CODE=  '" + _branch + "' and ACC_YEAR='" + txtYear.Text + "' ";
+                            //cmd.ExecuteNonQuery();
                         }
 
 
@@ -509,7 +518,7 @@ namespace Report_Pro.Loans
                     , balance, g_date, sanad_no, SANAD_TYPE, user_name, desc2, POASTING, CAT_CODE, MAIN_SER_NO)
                     VALUES('" + txtYear.Text + "','" + BName.ID.Text + "','" + _branch + "','" +
                     txtJorSer.Text + "','1','" + txtLoanValue.Value + "','0','" + txtLoanValue.Value + "','" + jorDate.Value.ToString("yyyy/MM/dd HH:mm:ss") +
-                    "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','1','" + JorSer + "')";
+                    "','" + txtSanadSer.Text + "','6','" + Program.userID + "','" + DbDesc + "','0','810','" + JorSer + "')";
                     cmd.ExecuteNonQuery();
 
 
@@ -831,6 +840,125 @@ namespace Report_Pro.Loans
         private void BExit_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtLoanNo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter && txtLoanNo.Text.Trim() != string.Empty)
+            {
+                NoOfPayments.Focus();
+            }
+        }
+
+        private void txtIntrestRate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NoOfPayments_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && NoOfPayments.Value>0)
+            {
+                txtLoanValue.Focus();
+            }
+        }
+
+        private void txtLoanValue_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtLoanValue.Value > 0)
+            {
+                txtIntrestRate.Focus();
+            }
+        }
+
+        private void txtIntrestRate_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtIntrestRate.Value > 0)
+            {
+                BName.ID.Focus();
+            }
+        }
+
+        private void BName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && BName.ID.Text.Trim()!=string.Empty)
+            {
+                txtLoanAcc.ID.Focus();
+            }
+        }
+
+        private void txtLoanAcc_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtLoanAcc.ID.Text.Trim() != string.Empty)
+            {
+              txtLoanPurpose.Focus();
+            }
+        }
+
+        private void txtLoanPurpose_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtLoanRefrance.Focus();
+            }
+        }
+
+      
+
+        private void L_StartDate_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter &&dal.IsDateTime(L_StartDate.Text))
+            {
+                txtLoanNo.Focus();
+            }
+        }
+
+        private void txtLoanValue_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLoanValue_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txtLoanNo_KeyUp(object sender, KeyEventArgs e)
+        {
+            fillFristRow();
+        }
+
+        void fillFristRow()
+        {
+            foreach (MyControls.LoanRow r in flowLayoutPanel1.Controls)
+            {
+                if (flowLayoutPanel1.Controls.GetChildIndex(r) == 0)
+                {
+                    r.startDate.Text = L_StartDate.Text;
+                    r.intrestRate.Value = txtIntrestRate.Value;
+                    r.PayValue.Value = txtLoanValue.Value;
+                }
+            }
+        }
+
+        private void L_StartDate_KeyUp(object sender, KeyEventArgs e)
+        {
+            fillFristRow();
+        }
+
+        private void txtIntrestRate_KeyUp(object sender, KeyEventArgs e)
+        {
+            fillFristRow();
         }
     }
 }

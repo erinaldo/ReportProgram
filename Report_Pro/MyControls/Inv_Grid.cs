@@ -237,7 +237,9 @@ namespace Report_Pro.MyControls
 
         }
 
-       
-      
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

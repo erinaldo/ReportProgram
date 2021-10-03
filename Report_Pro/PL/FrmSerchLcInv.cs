@@ -52,9 +52,8 @@ namespace Report_Pro.PL
 
   
 
-        private void DGV1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            this.Close();
-        }
+       
+
+     
     }
 }

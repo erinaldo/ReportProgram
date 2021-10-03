@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="msgConfirmDelete" xml:space="preserve">
+    <value>هل انت متاكد من الحذف؟</value>
+  </data>
+  <data name="msgConfirmDelete_H" xml:space="preserve">
+    <value>تأكيد الحذف</value>
+  </data>
+  <data name="msgDelete" xml:space="preserve">
+    <value>تم حذف البيانات بنجاح</value>
+  </data>
+  <data name="msgDelete_H" xml:space="preserve">
+    <value>حذف</value>
+  </data>
   <data name="msgDuplicate" xml:space="preserve">
     <value>الرقم مكرر</value>
   </data>
@@ -134,5 +146,11 @@
   </data>
   <data name="msgSave_H" xml:space="preserve">
     <value>حفظ</value>
+  </data>
+  <data name="oldpassConfirm" xml:space="preserve">
+    <value>كلمة المرور القديمة ليست صحيحة</value>
+  </data>
+  <data name="passConfirm" xml:space="preserve">
+    <value>كلمة المرور الجديدة غير متطابقة</value>
   </data>
 </root>

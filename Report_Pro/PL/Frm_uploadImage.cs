@@ -44,8 +44,7 @@ namespace Report_Pro.PL
             dataGridView1.Columns[2].Width = 120;
             dataGridView1.Columns[3].Width = 80;
             dataGridView1.Columns[4].Width = 80;
-            //dataGridView1.Columns[5].Width = 100;
-            //dataGridView1.Columns[5].Width = 50;
+          
 
         }
 
@@ -57,23 +56,6 @@ namespace Report_Pro.PL
             {
                 DataTable dt_ = dal.getDataTabl_1("SELECT id,FilePath,FileName,FileType,DeviceID FROM " + dal.db1 + ".dbo.FileTbl where  DeviceID='" + p_id + "'");
                 dataGridView1.DataSource = dt_;
-                //DataGridViewButtonColumn btnShow = new DataGridViewButtonColumn();
-                //{
-                //    btnShow.Name = "btnShow";
-                //    btnShow.HeaderText = "";
-                //    btnShow.Text = "عرض";
-                //    btnShow.UseColumnTextForButtonValue = true; //dont forget this line
-                //    this.dataGridView1.Columns.Add(btnShow);
-                //}
-
-                //DataGridViewButtonColumn btnDelete = new DataGridViewButtonColumn();
-                //{
-                //    btnDelete.Name = "btnDelete";
-                //    btnDelete.HeaderText = "";
-                //    btnDelete.Text = "حذف";
-                //    btnDelete.UseColumnTextForButtonValue = true; //dont forget this line
-                //    this.dataGridView1.Columns.Add(btnDelete);
-                //}
             }
             catch { }
         }
@@ -208,7 +190,9 @@ namespace Report_Pro.PL
                     connection.Close();
                 }
             }
-            MessageBox.Show("تم حفظ اابيات بنجاح");
+          //  MessageBox.Show("تم حفظ اابيات بنجاح");
+            MessageBox.Show(dal.rm.GetString("msgSave", dal.cul), dal.rm.GetString("msgSave_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             dgv2.Rows.Clear();
             button3_Click(sender, e);
 
@@ -277,13 +261,19 @@ namespace Report_Pro.PL
 
         private void btnEdle_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("هل تريد فعلا حذف المرفق المحدد", "تحذير !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
-            {
-                SqlCommand cmd = new SqlCommand("delete from " + dal.db1 + ".dbo.filetbl where ID='" + dataGridView1.CurrentRow.Cells[0].Value + "' ", connection);
+
+           // if (MessageBox.Show("هل تريد فعلا حذف المرفق المحدد", "تحذير !!!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                if (MessageBox.Show(dal.rm.GetString("msgConfirmDelete", dal.cul), dal.rm.GetString("msgConfirmDelete_H!", dal.cul), MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+
+                {
+                    SqlCommand cmd = new SqlCommand("delete from " + dal.db1 + ".dbo.filetbl where ID='" + dataGridView1.CurrentRow.Cells[0].Value + "' ", connection);
                 connection.Open();
                 cmd.ExecuteNonQuery();
                 connection.Close();
-                MessageBox.Show("تم حذف المرفق ", "رسالة تاكيد !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               // MessageBox.Show("تم حذف المرفق ", "رسالة تاكيد !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(dal.rm.GetString("msgDelete", dal.cul), dal.rm.GetString("msgDelete_H", dal.cul), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
                 button3_Click(sender, e);
             }
         }

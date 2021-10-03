@@ -34,7 +34,7 @@ namespace Report_Pro.Loans
         inner join payer2 as p1 on L.LoanAcc=p1.ACC_NO and L.BRANCH_code=P1.BRANCH_code 
         inner join LoanPurpose as LP on LP.Id = L.LoanPurpose       
 
-where ( case when '" + comb1.SelectedIndex + "'=0 then StartDate when '" + comb1.SelectedIndex + "'=1  then MaturityDate when'" + comb1.SelectedIndex + "'=2  then MaturityDate end ) between '" + this.fromDate.Value.ToString("yyyy/MM/dd")
+            where ( case when '" + comb1.SelectedIndex + "'=0 then StartDate when '" + comb1.SelectedIndex + "'=1  then MaturityDate when'" + comb1.SelectedIndex + "'=2  then MaturityDate end ) between '" + this.fromDate.Value.ToString("yyyy/MM/dd")
               + "' and '" + toDate.Value.ToString("yyyy/MM/dd") + "' and L.BankId like '"+Bank_.ID.Text+"%'");
             DataSet dataSet = new DataSet();
             dataSet.Tables.Add(dataTabl1);

@@ -35,6 +35,11 @@
             this.BSearch = new DevComponents.DotNetBar.ButtonItem();
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtFeesAcc = new Report_Pro.MyControls.UC_Acc();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtLoanAcc = new Report_Pro.MyControls.UC_Acc();
+            this.BID = new System.Windows.Forms.TextBox();
             this.BNameA = new DevExpress.XtraEditors.TextEdit();
             this.label16 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -71,7 +76,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.BID = new System.Windows.Forms.TextBox();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BNameA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Facility)).BeginInit();
@@ -82,10 +86,10 @@
             // 
             // ribbonBar1
             // 
+            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.AutoOverflowEnabled = true;
             this.ribbonBar1.AutoSizeItems = false;
             this.ribbonBar1.ContainerControlProcessDialogKey = true;
-            resources.ApplyResources(this.ribbonBar1, "ribbonBar1");
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.BNew,
             this.BSave,
@@ -97,44 +101,49 @@
             // 
             // BNew
             // 
+            resources.ApplyResources(this.BNew, "BNew");
             this.BNew.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BNew.Image = global::Report_Pro.Properties.Resources.Add_Icon;
             this.BNew.Name = "BNew";
             this.BNew.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BNew, "BNew");
             this.BNew.Click += new System.EventHandler(this.BNew_Click);
             // 
             // BSave
             // 
+            resources.ApplyResources(this.BSave, "BSave");
             this.BSave.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BSave.Image = global::Report_Pro.Properties.Resources.save_Icon;
             this.BSave.Name = "BSave";
             this.BSave.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BSave, "BSave");
             this.BSave.Click += new System.EventHandler(this.BSave_Click);
             // 
             // BSearch
             // 
+            resources.ApplyResources(this.BSearch, "BSearch");
             this.BSearch.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
             this.BSearch.Name = "BSearch";
             this.BSearch.SubItemsExpandWidth = 14;
-            resources.ApplyResources(this.BSearch, "BSearch");
             this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
             // 
             // BExit
             // 
+            resources.ApplyResources(this.BExit, "BExit");
             this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
             this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
             this.BExit.Name = "BExit";
-            resources.ApplyResources(this.BExit, "BExit");
             this.BExit.SubItemsExpandWidth = 14;
             this.BExit.Click += new System.EventHandler(this.BExit_Click);
             // 
             // groupPanel1
             // 
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.label22);
+            this.groupPanel1.Controls.Add(this.txtFeesAcc);
+            this.groupPanel1.Controls.Add(this.label21);
+            this.groupPanel1.Controls.Add(this.txtLoanAcc);
             this.groupPanel1.Controls.Add(this.BID);
             this.groupPanel1.Controls.Add(this.BNameA);
             this.groupPanel1.Controls.Add(this.label16);
@@ -172,7 +181,6 @@
             this.groupPanel1.Controls.Add(this.label8);
             this.groupPanel1.Controls.Add(this.label6);
             this.groupPanel1.Controls.Add(this.label7);
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -196,6 +204,39 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label22.Name = "label22";
+            // 
+            // txtFeesAcc
+            // 
+            resources.ApplyResources(this.txtFeesAcc, "txtFeesAcc");
+            this.txtFeesAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txtFeesAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtFeesAcc.Name = "txtFeesAcc";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label21.Name = "label21";
+            // 
+            // txtLoanAcc
+            // 
+            resources.ApplyResources(this.txtLoanAcc, "txtLoanAcc");
+            this.txtLoanAcc.BackColor = System.Drawing.Color.Transparent;
+            this.txtLoanAcc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtLoanAcc.Name = "txtLoanAcc";
+            // 
+            // BID
+            // 
+            resources.ApplyResources(this.BID, "BID");
+            this.BID.Name = "BID";
+            // 
             // BNameA
             // 
             resources.ApplyResources(this.BNameA, "BNameA");
@@ -207,6 +248,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label16.Name = "label16";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label20
             // 
@@ -248,6 +290,21 @@
             this.txt_Facility.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txt_Facility.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txt_Facility.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txt_Facility.ButtonClear.DisplayPosition = ((int)(resources.GetObject("txt_Facility.ButtonClear.DisplayPosition")));
+            this.txt_Facility.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("txt_Facility.ButtonClear.Image")));
+            this.txt_Facility.ButtonClear.Text = resources.GetString("txt_Facility.ButtonClear.Text");
+            this.txt_Facility.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txt_Facility.ButtonCustom.DisplayPosition")));
+            this.txt_Facility.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txt_Facility.ButtonCustom.Image")));
+            this.txt_Facility.ButtonCustom.Text = resources.GetString("txt_Facility.ButtonCustom.Text");
+            this.txt_Facility.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txt_Facility.ButtonCustom2.DisplayPosition")));
+            this.txt_Facility.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txt_Facility.ButtonCustom2.Image")));
+            this.txt_Facility.ButtonCustom2.Text = resources.GetString("txt_Facility.ButtonCustom2.Text");
+            this.txt_Facility.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("txt_Facility.ButtonDropDown.DisplayPosition")));
+            this.txt_Facility.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("txt_Facility.ButtonDropDown.Image")));
+            this.txt_Facility.ButtonDropDown.Text = resources.GetString("txt_Facility.ButtonDropDown.Text");
+            this.txt_Facility.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("txt_Facility.ButtonFreeText.DisplayPosition")));
+            this.txt_Facility.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("txt_Facility.ButtonFreeText.Image")));
+            this.txt_Facility.ButtonFreeText.Text = resources.GetString("txt_Facility.ButtonFreeText.Text");
             this.txt_Facility.Increment = 1D;
             this.txt_Facility.Name = "txt_Facility";
             // 
@@ -263,6 +320,21 @@
             this.Loans_Rate.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.Loans_Rate.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.Loans_Rate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.Loans_Rate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("Loans_Rate.ButtonClear.DisplayPosition")));
+            this.Loans_Rate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("Loans_Rate.ButtonClear.Image")));
+            this.Loans_Rate.ButtonClear.Text = resources.GetString("Loans_Rate.ButtonClear.Text");
+            this.Loans_Rate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("Loans_Rate.ButtonCustom.DisplayPosition")));
+            this.Loans_Rate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("Loans_Rate.ButtonCustom.Image")));
+            this.Loans_Rate.ButtonCustom.Text = resources.GetString("Loans_Rate.ButtonCustom.Text");
+            this.Loans_Rate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("Loans_Rate.ButtonCustom2.DisplayPosition")));
+            this.Loans_Rate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("Loans_Rate.ButtonCustom2.Image")));
+            this.Loans_Rate.ButtonCustom2.Text = resources.GetString("Loans_Rate.ButtonCustom2.Text");
+            this.Loans_Rate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("Loans_Rate.ButtonDropDown.DisplayPosition")));
+            this.Loans_Rate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("Loans_Rate.ButtonDropDown.Image")));
+            this.Loans_Rate.ButtonDropDown.Text = resources.GetString("Loans_Rate.ButtonDropDown.Text");
+            this.Loans_Rate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("Loans_Rate.ButtonFreeText.DisplayPosition")));
+            this.Loans_Rate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("Loans_Rate.ButtonFreeText.Image")));
+            this.Loans_Rate.ButtonFreeText.Text = resources.GetString("Loans_Rate.ButtonFreeText.Text");
             this.Loans_Rate.Increment = 1D;
             this.Loans_Rate.Name = "Loans_Rate";
             // 
@@ -295,6 +367,21 @@
             this.txtComnication.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txtComnication.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.txtComnication.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtComnication.ButtonClear.DisplayPosition = ((int)(resources.GetObject("txtComnication.ButtonClear.DisplayPosition")));
+            this.txtComnication.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("txtComnication.ButtonClear.Image")));
+            this.txtComnication.ButtonClear.Text = resources.GetString("txtComnication.ButtonClear.Text");
+            this.txtComnication.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtComnication.ButtonCustom.DisplayPosition")));
+            this.txtComnication.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtComnication.ButtonCustom.Image")));
+            this.txtComnication.ButtonCustom.Text = resources.GetString("txtComnication.ButtonCustom.Text");
+            this.txtComnication.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtComnication.ButtonCustom2.DisplayPosition")));
+            this.txtComnication.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtComnication.ButtonCustom2.Image")));
+            this.txtComnication.ButtonCustom2.Text = resources.GetString("txtComnication.ButtonCustom2.Text");
+            this.txtComnication.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("txtComnication.ButtonDropDown.DisplayPosition")));
+            this.txtComnication.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("txtComnication.ButtonDropDown.Image")));
+            this.txtComnication.ButtonDropDown.Text = resources.GetString("txtComnication.ButtonDropDown.Text");
+            this.txtComnication.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("txtComnication.ButtonFreeText.DisplayPosition")));
+            this.txtComnication.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("txtComnication.ButtonFreeText.Image")));
+            this.txtComnication.ButtonFreeText.Text = resources.GetString("txtComnication.ButtonFreeText.Text");
             this.txtComnication.Increment = 1D;
             this.txtComnication.Name = "txtComnication";
             // 
@@ -310,6 +397,21 @@
             this.BAccept.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.BAccept.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.BAccept.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.BAccept.ButtonClear.DisplayPosition = ((int)(resources.GetObject("BAccept.ButtonClear.DisplayPosition")));
+            this.BAccept.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("BAccept.ButtonClear.Image")));
+            this.BAccept.ButtonClear.Text = resources.GetString("BAccept.ButtonClear.Text");
+            this.BAccept.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("BAccept.ButtonCustom.DisplayPosition")));
+            this.BAccept.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("BAccept.ButtonCustom.Image")));
+            this.BAccept.ButtonCustom.Text = resources.GetString("BAccept.ButtonCustom.Text");
+            this.BAccept.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("BAccept.ButtonCustom2.DisplayPosition")));
+            this.BAccept.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("BAccept.ButtonCustom2.Image")));
+            this.BAccept.ButtonCustom2.Text = resources.GetString("BAccept.ButtonCustom2.Text");
+            this.BAccept.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("BAccept.ButtonDropDown.DisplayPosition")));
+            this.BAccept.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("BAccept.ButtonDropDown.Image")));
+            this.BAccept.ButtonDropDown.Text = resources.GetString("BAccept.ButtonDropDown.Text");
+            this.BAccept.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("BAccept.ButtonFreeText.DisplayPosition")));
+            this.BAccept.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("BAccept.ButtonFreeText.Image")));
+            this.BAccept.ButtonFreeText.Text = resources.GetString("BAccept.ButtonFreeText.Text");
             this.BAccept.Increment = 1D;
             this.BAccept.Name = "BAccept";
             this.BAccept.ValueChanged += new System.EventHandler(this.doubleInput1_ValueChanged);
@@ -461,11 +563,6 @@
             this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label7.Name = "label7";
             // 
-            // BID
-            // 
-            resources.ApplyResources(this.BID, "BID");
-            this.BID.Name = "BID";
-            // 
             // Frm_Banks
             // 
             resources.ApplyResources(this, "$this");
@@ -535,5 +632,9 @@
         private System.Windows.Forms.Label label16;
         private DevExpress.XtraEditors.TextEdit BNameA;
         private System.Windows.Forms.TextBox BID;
+        private System.Windows.Forms.Label label22;
+        private MyControls.UC_Acc txtFeesAcc;
+        private System.Windows.Forms.Label label21;
+        private MyControls.UC_Acc txtLoanAcc;
     }
 }

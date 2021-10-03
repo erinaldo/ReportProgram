@@ -130,7 +130,7 @@ namespace Report_Pro.RPT
 
 	        inner join (SELECT CASE Category WHEN 'r' THEN LEFT(group_code, 4) WHEN 'F' THEN LEFT(group_code, 2) WHEN 'c' THEN LEFT(group_code, 2) ELSE LEFT(group_code, 2) END AS G_Id, item_no
            , CASE WHEN LEFT(group_code, 2) IN ('40','41','42','43','44','45','46','47','48','49') THEN '2' WHEN LEFT(group_code, 2) IN ('50') THEN '3' ELSE '1' END AS xe_ FROM wh_main_master) As V on V.item_no=a.item_no
-	        inner join wh_Groups As G on  v.G_ID=G.group_code
+	        left join wh_Groups As G on  v.G_ID=G.group_code
 	        inner join wh_BRANCHES As H on H.Branch_code=d.Branch_code
 
 
@@ -138,16 +138,15 @@ namespace Report_Pro.RPT
 		        and cast(D.G_date as date) between '" + dTP1.Value.ToString("yyyy/MM/dd") + "' and '" + dTP2.Value.ToString("yyyy/MM/dd") +
                "' and ISNULL (a.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "') " +
                " and ISNULL (A.Dim_category,'') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
-               "%' and ISNULL (A.UnitDepth,'') BETWEEN '" + T1 + "' AND '" + T2 +
+               "%' and ISNULL (A.UnitDepth,'0') BETWEEN '" + T1 + "' AND '" + T2 +
                "' and Payment_Type like '" + pay_code +
                "%' and c.acc_no like '" + Uc_Acc.ID.Text +
                "%' and c.acc_no like case when '" + SC + "' = 2 then'123998%' else '%' end " +
                " and c.acc_no not like case when '" + SC + "' = 3 then'123998%' else '' end  " +
                " and  H.Branch_code like '" + UC_Branch.ID.Text +
-               "%' and A.group_code like '" + Uc_Group.ID.Text +
+               "%' and ISNULL(A.group_code,'') like '" + Uc_Group.ID.Text +
                "%' and D.Item_No like '" + Items.ID.Text +
-                "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
-                " group by   v.G_ID ,G.Group_name ,v.xe_");
+                "%' group by   v.G_ID ,G.Group_name ,v.xe_");
 
                 rpt.SetDataSource(dt_);
 
@@ -357,7 +356,7 @@ namespace Report_Pro.RPT
 
                 RPT.S_P_by_Items rpt = new RPT.S_P_by_Items();
 
-                DataTable dt_ = dal.getDataTabl_1(@"SELECT d.ITEM_NO,s.descr
+                DataTable dt_ = dal.getDataTabl_1(@"SELECT d.ITEM_NO,s.descr,s.UnitDepth,s.group_code,s.Dim_category,s.Category
                 ,sum(D.QTY_TAKE - D.QTY_ADD) as Qty
                 ,ROUND(sum((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price) - sum(((D.QTY_TAKE - D.QTY_ADD) * D.Local_Price * D.total_disc) / 100), 2) AS Value
                 ,sum(D.TAX_OUT - D.TAX_IN) As Vat
@@ -373,17 +372,20 @@ namespace Report_Pro.RPT
                  " and A.Payment_Type like '" + pay_code + "%' " +
                  " and ISNULL (S.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "') " +
                  " and isnull(S.UnitDepth,0) BETWEEN '" + T1 + "' AND '" + T2 + "' " +
-                 " and S.Dim_category like '" + Convert.ToString(cmb_DimCategory.SelectedValue) + "%' " +
+                 " and ISNULL(S.Dim_category,'C') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) + "%' " +
                  " and A.Branch_code like '" + UC_Branch.ID.Text + "%' " +
                  " and A.acc_no like '" + Uc_Acc.ID.Text + 
                  "%' and A.acc_no like case when '" + SC + "' = 2 then'123998%' else '%' end " +
                  " and A.acc_no not like case when '" + SC + "' = 3 then'123998%' else '' end  " +
                  " and S.group_code like '" + Uc_Group.ID.Text + "%' " +
                  " and D.item_no like '" + Items.ID.Text +
-                 "%' and KM_CODE_ACC like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
-                 " group by d.ITEM_NO, s.descr");
+                 "%' group by d.ITEM_NO, s.descr,s.UnitDepth,s.group_code,s.Dim_category,s.Category");
+                //"%' and ISNULL(KM_CODE_ACC,'1') like case when '" + str_t + "'= 3 then '3%' else '%' end  and KM_CODE_ACC not like case when '" + str_t + "'= 2 then '3%' else '' end " +
 
-                rpt.SetDataSource(dt_);
+DataSet ds = new DataSet();
+                ds.Tables.Add(dt_);
+                ds.WriteXmlSchema("schema2.xml");
+                rpt.SetDataSource(ds);
                 crystalReportViewer1.ReportSource = rpt;
 
                 rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";

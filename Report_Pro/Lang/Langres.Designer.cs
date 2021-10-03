@@ -61,6 +61,42 @@ namespace Report_Pro.Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure to delete?.
+        /// </summary>
+        internal static string msgConfirmDelete {
+            get {
+                return ResourceManager.GetString("msgConfirmDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Delete.
+        /// </summary>
+        internal static string msgConfirmDelete_H {
+            get {
+                return ResourceManager.GetString("msgConfirmDelete_H", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data was Deleted Successfully.
+        /// </summary>
+        internal static string msgDelete {
+            get {
+                return ResourceManager.GetString("msgDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string msgDelete_H {
+            get {
+                return ResourceManager.GetString("msgDelete_H", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The Number Is Duplicate.
         /// </summary>
         internal static string msgDuplicate {
@@ -70,7 +106,7 @@ namespace Report_Pro.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data was Updated.
+        ///   Looks up a localized string similar to Data was Updated Successfully.
         /// </summary>
         internal static string msgEdit {
             get {
@@ -106,7 +142,7 @@ namespace Report_Pro.Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data was saved.
+        ///   Looks up a localized string similar to Data was saved Successfully.
         /// </summary>
         internal static string msgSave {
             get {
@@ -120,6 +156,24 @@ namespace Report_Pro.Lang {
         internal static string msgSave_H {
             get {
                 return ResourceManager.GetString("msgSave_H", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Old password does not match.
+        /// </summary>
+        internal static string oldpassConfirm {
+            get {
+                return ResourceManager.GetString("oldpassConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The new password does not match.
+        /// </summary>
+        internal static string passConfirm {
+            get {
+                return ResourceManager.GetString("passConfirm", resourceCulture);
             }
         }
     }

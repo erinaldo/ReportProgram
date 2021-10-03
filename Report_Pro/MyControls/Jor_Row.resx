@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="branchID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1258, 24</value>
+    <value>1401, 177</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="branchID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -145,130 +145,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;branchID.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 35</value>
+  </data>
+  <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 24</value>
+  </data>
+  <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
+    <value>169</value>
+  </data>
+  <data name="labelX6.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
+    <value>labelX6</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 63</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1330, 8</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>181</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtBalance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtBalance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1257, 0</value>
-  </data>
-  <data name="txtBalance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 24</value>
-  </data>
-  <data name="txtBalance.TabIndex" type="System.Int32, mscorlib">
-    <value>180</value>
-  </data>
-  <data name="&gt;&gt;txtBalance.Name" xml:space="preserve">
-    <value>txtBalance</value>
-  </data>
-  <data name="&gt;&gt;txtBalance.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.myText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtBalance.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;txtBalance.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtCr.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtCr.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txtCr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 0</value>
-  </data>
-  <data name="txtCr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtCr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
-  </data>
-  <data name="txtCr.TabIndex" type="System.Int32, mscorlib">
-    <value>179</value>
-  </data>
-  <data name="&gt;&gt;txtCr.Name" xml:space="preserve">
-    <value>txtCr</value>
-  </data>
-  <data name="&gt;&gt;txtCr.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.mDouble, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtCr.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;txtCr.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txtDb.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtDb.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txtDb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 0</value>
-  </data>
-  <data name="txtDb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtDb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
-  </data>
-  <data name="txtDb.TabIndex" type="System.Int32, mscorlib">
-    <value>178</value>
-  </data>
-  <data name="&gt;&gt;txtDb.Name" xml:space="preserve">
-    <value>txtDb</value>
-  </data>
-  <data name="&gt;&gt;txtDb.Type" xml:space="preserve">
-    <value>Report_Pro.MyControls.mDouble, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;txtDb.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;txtDb.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="ser_.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8pt, style=Bold</value>
   </data>
   <data name="ser_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>1, 4</value>
   </data>
   <data name="ser_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -286,52 +196,97 @@
     <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;ser_.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;ser_.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
-  <data name="labelX6.AutoSize" type="System.Boolean, mscorlib">
+  <data name="txtBalance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelX6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1258, 4</value>
   </data>
-  <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>669, 39</value>
-  </data>
-  <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txtBalance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
+  <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 24</value>
   </data>
-  <data name="labelX6.TabIndex" type="System.Int32, mscorlib">
-    <value>169</value>
+  <data name="txtBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>180</value>
   </data>
-  <data name="labelX6.Text" xml:space="preserve">
-    <value>Date</value>
+  <data name="&gt;&gt;txtBalance.Name" xml:space="preserve">
+    <value>txtBalance</value>
   </data>
-  <data name="&gt;&gt;labelX6.Name" xml:space="preserve">
-    <value>labelX6</value>
+  <data name="&gt;&gt;txtBalance.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.myText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;labelX6.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.LabelX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;txtBalance.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;labelX6.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+  <data name="&gt;&gt;txtBalance.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;labelX6.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="txtCr.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtCr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 4</value>
+  </data>
+  <data name="txtCr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="txtCr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
+  </data>
+  <data name="txtCr.TabIndex" type="System.Int32, mscorlib">
+    <value>179</value>
+  </data>
+  <data name="&gt;&gt;txtCr.Name" xml:space="preserve">
+    <value>txtCr</value>
+  </data>
+  <data name="&gt;&gt;txtCr.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.mDouble, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtCr.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtCr.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtDb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 4</value>
+  </data>
+  <data name="txtDb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="txtDb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 24</value>
+  </data>
+  <data name="txtDb.TabIndex" type="System.Int32, mscorlib">
+    <value>178</value>
+  </data>
+  <data name="&gt;&gt;txtDb.Name" xml:space="preserve">
+    <value>txtDb</value>
+  </data>
+  <data name="&gt;&gt;txtDb.Type" xml:space="preserve">
+    <value>Report_Pro.MyControls.mDouble, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDb.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="txtDocument.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtDocument.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="txtDocument.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 39</value>
+    <value>480, 35</value>
   </data>
   <data name="txtDocument.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -349,79 +304,16 @@
     <value>Report_Pro.MyControls.myText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtDocument.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtDocument.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 25</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 37</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>172</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 25</value>
-  </data>
-  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 37</value>
-  </data>
-  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>173</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>5</value>
   </data>
   <data name="txtVatNo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtVatNo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="txtVatNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>827, 39</value>
+    <value>823, 35</value>
   </data>
   <data name="txtVatNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -439,19 +331,16 @@
     <value>Report_Pro.MyControls.myText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtVatNo.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtVatNo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>4</value>
   </data>
   <data name="Acc_.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Acc_.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="Acc_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 0</value>
+    <value>303, 4</value>
   </data>
   <data name="Acc_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -469,19 +358,16 @@
     <value>Report_Pro.MyControls.Jor_Acc, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Acc_.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;Acc_.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="txtCat.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtCat.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="txtCat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 0</value>
+    <value>716, 4</value>
   </data>
   <data name="txtCat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -499,19 +385,16 @@
     <value>Report_Pro.MyControls.Jor_Cat, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtCat.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtCat.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="txtAcc_2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtAcc_2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="txtAcc_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1033, 39</value>
+    <value>1034, 35</value>
   </data>
   <data name="txtAcc_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -529,19 +412,16 @@
     <value>Report_Pro.MyControls.myText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtAcc_2.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtAcc_2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>3</value>
   </data>
   <data name="txtCost.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtCost.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="txtCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>986, 0</value>
+    <value>987, 4</value>
   </data>
   <data name="txtCost.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -559,25 +439,22 @@
     <value>Report_Pro.MyControls.Jor_Cost, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtCost.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtCost.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="txtDescription.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtDescription.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="txtDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 39</value>
+    <value>43, 35</value>
   </data>
   <data name="txtDescription.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="txtDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>395, 24</value>
+    <value>431, 24</value>
   </data>
   <data name="txtDescription.TabIndex" type="System.Int32, mscorlib">
     <value>157</value>
@@ -589,46 +466,13 @@
     <value>Report_Pro.MyControls.myText, Report_Pro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;txtDescription.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;txtDescription.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="tablePanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="tablePanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tablePanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1330, 72</value>
-  </data>
-  <data name="tablePanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>175</value>
-  </data>
-  <data name="&gt;&gt;tablePanel1.Name" xml:space="preserve">
-    <value>tablePanel1</value>
-  </data>
-  <data name="&gt;&gt;tablePanel1.Type" xml:space="preserve">
-    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v19.1, Version=19.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;tablePanel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tablePanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtDocDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;txtDescription.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="txtDocDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 39</value>
-  </data>
-  <data name="txtDocDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="txtDocDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 24</value>
+    <value>704, 35</value>
   </data>
   <data name="txtDocDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -643,10 +487,10 @@
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
   <data name="txtDocDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 20</value>
+    <value>116, 20</value>
   </data>
   <data name="txtDocDate.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>181</value>
   </data>
   <data name="&gt;&gt;txtDocDate.Name" xml:space="preserve">
     <value>txtDocDate</value>
@@ -655,10 +499,10 @@
     <value>DevComponents.Editors.DateTimeAdv.DateTimeInput, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
   <data name="&gt;&gt;txtDocDate.Parent" xml:space="preserve">
-    <value>tablePanel1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtDocDate.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -673,7 +517,7 @@
     <value>0, 0, 0, 10</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1330, 72</value>
+    <value>1340, 65</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Jor_Row</value>

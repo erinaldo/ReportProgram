@@ -24,7 +24,11 @@ namespace Report_Pro.RPT
         {
             InitializeComponent();
             createDattable();
-           
+
+            cmb_DimCategory.DataSource = dal.getDataTabl_1(@"select * FROM " + Properties.Settings.Default.Database_1 + ".dbo.Wh_Unit_dim");
+            cmb_DimCategory.DisplayMember = "Wh_Unit_dim";
+            cmb_DimCategory.ValueMember = "Wh_Unit_dim";
+            cmb_DimCategory.SelectedIndex = -1;
         }
 
         void createDattable()
@@ -126,6 +130,25 @@ namespace Report_Pro.RPT
             getTotal();
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            RPT.frm_Item_Transaction frm = new RPT.frm_Item_Transaction();
+            frm.UC_Branch.ID.Text = Branch.ID.Text;
+            frm.Uc_Group1.ID.Text = Group.ID.Text;
+            frm.UC_Items.ID.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            frm.UC_Transaction.ID.Text = Uc_Transaction.ID.Text;
+            frm.FromDate_.Value = dTP1.Value;
+            frm.ToDate_.Value = dTP2.Value;
+           
+            frm.getItemCard();
+            frm.ShowDialog();
+        }
+
         string languh = Properties.Settings.Default.lungh;
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -163,14 +186,14 @@ namespace Report_Pro.RPT
         private void btnReport_Click(object sender, EventArgs e)
         {
 
-            getInventoryByGroup();
+            getInventoryByItems();
 
         }
 
-        public void getInventoryByGroup(){
+        public void getInventoryByItems(){
 
   Cursor.Current = Cursors.WaitCursor;
-            groupBox1.Visible = false;
+           // groupBox1.Visible = false;
 
             choises();
 
@@ -179,7 +202,7 @@ namespace Report_Pro.RPT
         DataSet1 ds = new DataSet1();
         DataTable dt1 = new DataTable();
 
-        dt1 = dal.getDataTabl_1(@"SELECT G.group_code as Code ,G.Group_name as Name,G.Group_E_NAME as Name_E
+        dt1 = dal.getDataTabl_1(@"SELECT D.item_no as Code ,A.descr as Name,A.Descr_eng as Name_E
         ,sum (case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as Balance_ " +
         ",sum(case when cast(D.G_date as date) <= '" + dTP2.Value.ToString("yyyy/MM/dd") + "' and D.cyear = '" + dTP2.Value.ToString("yy") + "' then (D.QTY_ADD - D.QTY_TAKE)*A.Weight  else 0 end) as Balance_Weight " +
 
@@ -202,7 +225,7 @@ namespace Report_Pro.RPT
         "' and ISNULL (a.Category,'') in('" + R + "','" + F + "','" + C + "','" + P + "','" + S + "','" + Z + "','" + X + "') " +
         " and ISNULL (A.Dim_category,'') like '" + Convert.ToString(cmb_DimCategory.SelectedValue) +
         "%' and D.Item_No like '" + Item.ID.Text +
-        "%'group by   G.group_code,G.Group_name,G.Group_E_NAME order by G.group_code");
+        "%'group by    D.item_no ,A.descr ,A.Descr_eng order by D.item_no");
 
             int days = System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(dTP1.Value, dTP2.Value) + 1;
             // dataGridView1.DataSource = dt1;
@@ -246,7 +269,7 @@ namespace Report_Pro.RPT
             dataGridView1.DataSource = dt_;
              
             bs.DataSource = dataGridView1.DataSource;
-            bs.Filter = "[Balance_Weight] <> 0";
+            bs.Filter = "[Balance_Weight] <> 0 or [Sales_Weight] <> 0 ";
             dataGridView1.DataSource = bs;
             FormatDG();
             getTotal();

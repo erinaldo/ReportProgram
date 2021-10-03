@@ -48,6 +48,7 @@
             // 
             // groupPanel1
             // 
+            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.btnSearch);
@@ -59,7 +60,6 @@
             this.groupPanel1.Controls.Add(this.txtPreformNo);
             this.groupPanel1.Controls.Add(this.txtSupplier);
             this.groupPanel1.Controls.Add(this.txtBank);
-            resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.Name = "groupPanel1";
             // 
             // 
@@ -84,10 +84,10 @@
             // 
             // btnSearch
             // 
+            resources.ApplyResources(this.btnSearch, "btnSearch");
             this.btnSearch.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnSearch.Image = global::Report_Pro.Properties.Resources.Search_icon1;
-            resources.ApplyResources(this.btnSearch, "btnSearch");
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -117,47 +117,59 @@
             // 
             // txtlcNo
             // 
+            resources.ApplyResources(this.txtlcNo, "txtlcNo");
             // 
             // 
             // 
             this.txtlcNo.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txtlcNo, "txtlcNo");
+            this.txtlcNo.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtlcNo.ButtonCustom.DisplayPosition")));
+            this.txtlcNo.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtlcNo.ButtonCustom.Image")));
+            this.txtlcNo.ButtonCustom.Text = resources.GetString("txtlcNo.ButtonCustom.Text");
+            this.txtlcNo.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtlcNo.ButtonCustom2.DisplayPosition")));
+            this.txtlcNo.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtlcNo.ButtonCustom2.Image")));
+            this.txtlcNo.ButtonCustom2.Text = resources.GetString("txtlcNo.ButtonCustom2.Text");
             this.txtlcNo.Name = "txtlcNo";
             this.txtlcNo.TextChanged += new System.EventHandler(this.txtlcNo_TextChanged);
             this.txtlcNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtlcNo_KeyUp);
             // 
             // txtPreformNo
             // 
+            resources.ApplyResources(this.txtPreformNo, "txtPreformNo");
             // 
             // 
             // 
             this.txtPreformNo.Border.Class = "TextBoxBorder";
-            resources.ApplyResources(this.txtPreformNo, "txtPreformNo");
+            this.txtPreformNo.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("txtPreformNo.ButtonCustom.DisplayPosition")));
+            this.txtPreformNo.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("txtPreformNo.ButtonCustom.Image")));
+            this.txtPreformNo.ButtonCustom.Text = resources.GetString("txtPreformNo.ButtonCustom.Text");
+            this.txtPreformNo.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("txtPreformNo.ButtonCustom2.DisplayPosition")));
+            this.txtPreformNo.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("txtPreformNo.ButtonCustom2.Image")));
+            this.txtPreformNo.ButtonCustom2.Text = resources.GetString("txtPreformNo.ButtonCustom2.Text");
             this.txtPreformNo.Name = "txtPreformNo";
             this.txtPreformNo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreformNo_KeyUp);
             // 
             // txtSupplier
             // 
+            resources.ApplyResources(this.txtSupplier, "txtSupplier");
             this.txtSupplier.BackColor = System.Drawing.Color.Transparent;
             this.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.txtSupplier, "txtSupplier");
             this.txtSupplier.Name = "txtSupplier";
             this.txtSupplier.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSupplier_KeyUp);
             // 
             // txtBank
             // 
+            resources.ApplyResources(this.txtBank, "txtBank");
             this.txtBank.BackColor = System.Drawing.Color.Transparent;
             this.txtBank.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            resources.ApplyResources(this.txtBank, "txtBank");
             this.txtBank.Name = "txtBank";
             this.txtBank.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtBank_KeyUp);
             // 
             // groupPanel2
             // 
+            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.DGV1);
-            resources.ApplyResources(this.groupPanel2, "groupPanel2");
             this.groupPanel2.Name = "groupPanel2";
             // 
             // 
@@ -182,11 +194,11 @@
             // 
             // DGV1
             // 
+            resources.ApplyResources(this.DGV1, "DGV1");
             this.DGV1.AllowUserToAddRows = false;
             this.DGV1.AllowUserToDeleteRows = false;
             this.DGV1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.DGV1, "DGV1");
             this.DGV1.Name = "DGV1";
             this.DGV1.ReadOnly = true;
             this.DGV1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

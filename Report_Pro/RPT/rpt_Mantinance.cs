@@ -22,16 +22,14 @@ namespace Report_Pro.RPT
 
         private void btn_Report_Click(object sender, EventArgs e)
         {
-            RPT.CrystalReport2 rpt = new RPT.CrystalReport2();
 
+            RPT.CrystalReport2 rpt = new RPT.CrystalReport2();
             rpt.SetDataSource(dal.getDataTabl("Get_WorkShope_Inv_",txt_AccId.Text, dTP1.Value.Date, dTP2.Value.Date));
             crystalReportViewer1.ReportSource = rpt;
             rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + dTP1.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + dTP2.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["Acc_Id"].Text = "'" + txt_AccId.Text + "'";
             rpt.DataDefinition.FormulaFields["Acc_Name"].Text = "'" + txt_AccName.Text + "'";
-
-           
 
         }
 

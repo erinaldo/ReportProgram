@@ -1,29 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="main_acc_wh" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=mydell;Initial Catalog=main_acc_wh;Integrated Security=True" SettingsObjectName="Report_Pro.Properties.Settings" SettingsPropertyName="main_acc_whConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=server;Initial Catalog=main_acc_wh;User ID=bilal" SettingsObjectName="Report_Pro.Properties.Settings" SettingsPropertyName="main_acc_whConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.AAAA" Member="AAAAs">
     <Type Name="AAAA">
       <Column Name="acc_no" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="costmer" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="adress" Type="System.String" DbType="Char(10)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.zzzzzzitems" Member="zzzzzzitems">
-    <Type Name="zzzzzzitem">
-      <Column Name="Item" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="classcode_classname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Descr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="ALU" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Attr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Size" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Cost" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Price" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="item_no" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="DESCR_E" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="UNIT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="GRP" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Vendor" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="COST_price" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
-      <Column Name="Sale_Price" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Acc_users_branch" Member="Acc_users_branches">
@@ -117,6 +98,78 @@
       <Column Name="g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.AssetsGroup" Member="AssetsGroups">
+    <Type Name="AssetsGroup">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_L" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MainId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AssetAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Deprec_Acc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="A_Deprec_Acc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="G_Sales_Acc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="L_Sales_Acc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="RG_Acc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="RL_Acc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="isFinal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AssetsTbl" Member="AssetsTbls">
+    <Type Name="AssetsTbl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_L" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GroupID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lastDepDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="assKinf" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="assOrigin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="assSize" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="assColor" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="assModel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="assStuds" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="assWeight" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="assLocation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="assSerail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="proCo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="proCoAddres" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="proDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SuppCo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ContractNo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ContractDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PurchaseDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="receveDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SuppCoAddres" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tel1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tel2" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReceveNote" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="isStopDepris" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="assAge" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="assEndValue" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="assPurchValue" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="deprisStartDate" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="addValue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="reductionValue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="gReevaluation" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="lReevaluation" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="A_Deprecition" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="netValue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="assAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="depAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="adepAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="gsAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="lsAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="rgAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="rlAcc" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="branchcode" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.BanksTbl" Member="BanksTbls">
     <Type Name="BanksTbl">
       <Column Name="BID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -136,6 +189,8 @@
       <Column Name="Loan_Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
       <Column Name="BComnication" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
       <Column Name="mainLcAccNo" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="MainLoanAccNo" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="LoanIntrestAccNo" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Brances_Balance" Member="Brances_Balances">
@@ -473,6 +528,12 @@
       <Column Name="VAT_NO" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="USER_ID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="G_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CAT_CODE_New" Member="CAT_CODE_News">
+    <Type Name="CAT_CODE_New">
+      <Column Name="CAT_CODE" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="CAT_CODE_new" Member="CAT_CODE_new1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.CATEGORY" Member="CATEGORies">
@@ -2571,6 +2632,17 @@
       <Column Name="FileData" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
     </Type>
   </Table>
+  <Table Name="dbo.fund_Balance_Detials" Member="fund_Balance_Detials">
+    <Type Name="fund_Balance_Detial">
+      <Column Name="branch_code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="G_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="descripstion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="d_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="notes" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.GAWZAT" Member="GAWZATs">
     <Type Name="GAWZAT">
       <Column Name="Ser_no" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -2844,12 +2916,51 @@
       <Column Name="g_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.LoanPaymentTbl" Member="LoanPaymentTbls">
+    <Type Name="LoanPaymentTbl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LoanNo" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PaymentNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PaymentAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PayMentInterest" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PaymentDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Branch_code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Jor_ser_no" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoanPurpose" Member="LoanPurposes">
+    <Type Name="LoanPurpose">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Loan_Purpose" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Loan_Purpose_E" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.zzzzzzitems" Member="zzzzzzitems">
+    <Type Name="zzzzzzitem">
+      <Column Name="Item" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="classcode_classname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ALU" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Attr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Size" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Cost" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="item_no" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DESCR_E" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="UNIT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GRP" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Vendor" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="COST_price" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Sale_Price" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.LoansTbl" Member="LoansTbls">
     <Type Name="LoansTbl">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="LoanNo" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="BankId" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="LoanACC" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="LoanDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="NumberOfPayments" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="LoanValue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="PaymentNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -2859,6 +2970,8 @@
       <Column Name="Rate" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="LoanPurpose" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="LoanRefrance" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Branch_code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Jor_ser_no" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Locations" Member="Locations">
@@ -2871,6 +2984,16 @@
       <Column Name="Main_no" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
       <Column Name="User_id" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="G_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LocationsTbl" Member="LocationsTbls">
+    <Type Name="LocationsTbl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name_L" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BranchCode" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.MAINT_COLOR" Member="MAINT_COLORs">
@@ -3019,6 +3142,8 @@
       <Column Name="p_year" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
       <Column Name="p_Quarter" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="Recorded" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Jor_No" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="C_amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.pay_method" Member="pay_methods">
@@ -3044,8 +3169,8 @@
       <Column Name="adress" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="b_o_box" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="area_code" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="phone_no" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="E_MAIL" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="phone_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="E_MAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="fax_no" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
       <Column Name="mobile_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="RESP_MOBILE_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
@@ -6017,6 +6142,15 @@
       <Column Name="sanad_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Transfare_Cash_customer" Member="Transfare_Cash_customers">
+    <Type Name="Transfare_Cash_customer">
+      <Column Name="Ser_no" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Branch_code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Transaction_code" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Cyear" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="Costmer_No" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.updateCost" Member="updateCosts">
     <Type Name="updateCost">
       <Column Name="SER_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -7506,8 +7640,8 @@
       <Column Name="Actual_arrival_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Bolisa_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Cargo_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="Cargo_port" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Arrival_port" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Cargo_port" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Arrival_port" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Cargo_Company" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
       <Column Name="Cargo_Company_Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Catgo_Media" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
@@ -7519,8 +7653,8 @@
       <Column Name="Bolisa_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Storing_Expire_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Paper_Arival_Notes" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
-      <Column Name="Country" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Factory" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Factory" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="LC_EXPIRE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="LC_STOPED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
@@ -7738,6 +7872,7 @@
       <Column Name="REQ_SER_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="APROVED" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
       <Association Name="wh_inv_data_Jop_Order_wh_MATERIAL_TRANSACTION_Jop_Order" Member="wh_MATERIAL_TRANSACTION_Jop_Orders" ThisKey="Ser_no,Branch_code,Transaction_code,Cyear" OtherKey="SER_NO,Branch_code,TRANSACTION_CODE,Cyear" Type="wh_MATERIAL_TRANSACTION_Jop_Order" />
+      <Association Name="wh_inv_data_Jop_Order_wh_MATERIAL_TRANSACTION_Jop_Order1" Member="wh_MATERIAL_TRANSACTION_Jop_Orders1" ThisKey="Ser_no,Branch_code,Transaction_code,Cyear" OtherKey="SER_NO,Branch_code,TRANSACTION_CODE,Cyear" Type="wh_MATERIAL_TRANSACTION_Jop_Order" />
     </Type>
   </Table>
   <Table Name="dbo.wh_inv_data_LC" Member="wh_inv_data_LCs">
@@ -9826,6 +9961,10 @@
       <Column Name="Replic_Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Prev_Local_Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="GAMAREK" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="K_M_TYPE_ITEMS" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="TAX_IN" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TAX_OUT" Type="System.Decimal" DbType="Money" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.wh_MATERIAL_TRANSACTION_INT" Member="wh_MATERIAL_TRANSACTION_INTs">
@@ -9986,7 +10125,73 @@
       <Column Name="SOURCE_INV" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SOURCE_BRANCH" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
       <Association Name="wh_inv_data_Jop_Order_wh_MATERIAL_TRANSACTION_Jop_Order" Member="wh_inv_data_Jop_Order" ThisKey="SER_NO,Branch_code,TRANSACTION_CODE,Cyear" OtherKey="Ser_no,Branch_code,Transaction_code,Cyear" Type="wh_inv_data_Jop_Order" IsForeignKey="true" />
+      <Association Name="wh_inv_data_Jop_Order_wh_MATERIAL_TRANSACTION_Jop_Order1" Member="wh_inv_data_Jop_Order1" ThisKey="SER_NO,Branch_code,TRANSACTION_CODE,Cyear" OtherKey="Ser_no,Branch_code,Transaction_code,Cyear" Type="wh_inv_data_Jop_Order" IsForeignKey="true" />
       <Association Name="wh_main_master_wh_MATERIAL_TRANSACTION_Jop_Order" Member="wh_main_master" ThisKey="ITEM_NO" OtherKey="item_no" Type="wh_main_master" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.wh_MATERIAL_TRANSACTION_Jop_Order_11" Member="wh_MATERIAL_TRANSACTION_Jop_Order_11s">
+    <Type Name="wh_MATERIAL_TRANSACTION_Jop_Order_11">
+      <Column Name="SER_NO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Branch_code" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TRANSACTION_CODE" Type="System.String" DbType="VarChar(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Cyear" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SANAD_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ITEM_NO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="QTY_ADD" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="QTY_TAKE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Qty_Sales_Holding_balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Qry_Purch_holding_balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Return_Qty" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="T_PRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="COST_PRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="total_disc" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DISC_R" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DISC_R2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DISC_R3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="G_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BONAS_QTY" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="EXPIRE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Forign_price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Local_Price" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FORIN_TYPE" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="EMPL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="USER_ID" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="main_counter" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="tem_for_pivot_report" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Send_To_Another_Branch" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="LC_NO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="LC_SER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Expensive_Factor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Currancy_Change_Factor" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Backege" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Store_Code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="QTY_ADD2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="QTY_TAKE2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Check_Fash" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Replic_Ser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DISC_R4" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DISC_R5" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BONAS_QTY_ADD" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BONAS_QTY_Take" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Purch_Inv_No" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Total_Take_qty" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Disc_R_Add1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Disc_R_Add2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Sales_qty" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Referance_no" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TRANS_TO_RECIPY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="modular" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Material_id" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Master_Material_id" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IN_OUT_TYPE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="old_item_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DISC_R6" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SOURCE_INV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SOURCE_BRANCH" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.wh_MATERIAL_TRANSACTION_LC" Member="wh_MATERIAL_TRANSACTION_LCs">

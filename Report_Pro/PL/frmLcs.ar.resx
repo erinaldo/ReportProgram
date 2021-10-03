@@ -290,25 +290,6 @@
   <data name="txtId.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtId.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtId.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtId.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtId.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtId.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtId.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtId.Location" type="System.Drawing.Point, System.Drawing">
     <value>971, 4</value>
   </data>
@@ -329,24 +310,6 @@
   </data>
   <data name="txtAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="txtAddress.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddress.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddress.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddress.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddress.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddress.ButtonCustom2.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="txtAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>392, 208</value>
@@ -390,51 +353,6 @@
   <data name="txtProformaDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="txtProformaDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtProformaDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtProformaDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtProformaDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtProformaDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtProformaDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtProformaDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>717, 231</value>
   </data>
@@ -444,32 +362,11 @@
   <data name="txtProformaDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="txtProformaDate.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtProformaDate.MonthCalendar.Description" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtProformaDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="txtProformaDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="txtProformaDate.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtProformaDate.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
   </data>
   <data name="txtProformaDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -549,6 +446,7 @@
   <data name="txtLcAcc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtLcAcc.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -636,51 +534,6 @@
   <data name="LShipDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="LShipDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LShipDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LShipDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LShipDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LShipDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="LShipDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="LShipDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 185</value>
   </data>
@@ -690,32 +543,11 @@
   <data name="LShipDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="LShipDate.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="LShipDate.MonthCalendar.Description" xml:space="preserve">
-    <value />
-  </data>
   <data name="LShipDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="LShipDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="LShipDate.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LShipDate.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
   </data>
   <data name="LShipDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -726,51 +558,6 @@
   <data name="ExpiryDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="ExpiryDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ExpiryDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ExpiryDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ExpiryDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ExpiryDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ExpiryDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="ExpiryDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 160</value>
   </data>
@@ -780,32 +567,11 @@
   <data name="ExpiryDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="ExpiryDate.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ExpiryDate.MonthCalendar.Description" xml:space="preserve">
-    <value />
-  </data>
   <data name="ExpiryDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="ExpiryDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="ExpiryDate.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ExpiryDate.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
   </data>
   <data name="ExpiryDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -816,51 +582,6 @@
   <data name="OpenDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="OpenDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="OpenDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="OpenDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="OpenDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="OpenDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="OpenDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="OpenDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 134</value>
   </data>
@@ -870,32 +591,11 @@
   <data name="OpenDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="OpenDate.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="OpenDate.MonthCalendar.Description" xml:space="preserve">
-    <value />
-  </data>
   <data name="OpenDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="OpenDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="OpenDate.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OpenDate.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
   </data>
   <data name="OpenDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -905,51 +605,6 @@
   </data>
   <data name="txtAddValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="txtAddValue.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddValue.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddValue.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddValue.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddValue.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddValue.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddValue.ButtonFreeText.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="txtAddValue.Location" type="System.Drawing.Point, System.Drawing">
     <value>474, 54</value>
@@ -1071,51 +726,6 @@
   <data name="txtRate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="txtRate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtRate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtRate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtRate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtRate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtRate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtRate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtRate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtRate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtRate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtRate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtRate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtRate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtRate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtRate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="txtRate.Location" type="System.Drawing.Point, System.Drawing">
     <value>511, 106</value>
   </data>
@@ -1136,6 +746,387 @@
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1136, 281</value>
+  </data>
+  <data name="label25.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>946, 37</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>رسوم اصدار اضافية</value>
+  </data>
+  <data name="txtIssuSAMA.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtIssuSAMA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 10</value>
+  </data>
+  <data name="txtIssuSAMA.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtIssuSAMA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>947, 14</value>
+  </data>
+  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 13</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>رسوم الاصدار (مؤسسة النقد)</value>
+  </data>
+  <data name="txtAddFees.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtAddFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 33</value>
+  </data>
+  <data name="txtAddFees.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtAddFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="label22.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>946, 151</value>
+  </data>
+  <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>الربح المقدم</value>
+  </data>
+  <data name="txtMuskDownP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtMuskDownP.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="txtMuskDownP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 146</value>
+  </data>
+  <data name="txtMuskDownP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtMuskDownP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="txtopenFess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtopenFess.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 56</value>
+  </data>
+  <data name="txtopenFess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtopenFess.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="txtComnication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtComnication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 79</value>
+  </data>
+  <data name="txtComnication.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtComnication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>946, 81</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>اتصالات وبريد</value>
+  </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>946, 62</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>رسوم الاصدار</value>
+  </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>946, 104</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>عمولات اخري</value>
+  </data>
+  <data name="txtotharFess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtotharFess.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 101</value>
+  </data>
+  <data name="txtotharFess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtotharFess.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1006, 126</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>عمولة التأجيل</value>
+  </data>
+  <data name="ratioAccept.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ratioAccept.Location" type="System.Drawing.Point, System.Drawing">
+    <value>970, 124</value>
+  </data>
+  <data name="ratioAccept.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="btnPrintIssueFees.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnPrintIssueFees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 34</value>
+  </data>
+  <data name="btnPrintIssueFees.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="btnPrintIssueFees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 47</value>
+  </data>
+  <data name="btnPrintIssueFees.Text" xml:space="preserve">
+    <value>طباعة اشعار الفتح</value>
+  </data>
+  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>946, 127</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="txtAcceptance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtAcceptance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 124</value>
+  </data>
+  <data name="txtAcceptance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtAcceptance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="TotalFess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="TotalFess.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 31</value>
+  </data>
+  <data name="TotalFess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="TotalFess.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 34</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>الاجمالي قبل الضريبة</value>
+  </data>
+  <data name="txtVat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtVat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 53</value>
+  </data>
+  <data name="txtVat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtVat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 56</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>الضريبة</value>
+  </data>
+  <data name="txtTotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 76</value>
+  </data>
+  <data name="txtTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 79</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>الاجمالي شامل الضريبة</value>
+  </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>719, 100</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 16</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>الموؤنة</value>
+  </data>
+  <data name="txtMargin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtMargin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>543, 99</value>
+  </data>
+  <data name="txtMargin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtMargin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>662, 100</value>
+  </data>
+  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 16</value>
+  </data>
+  <data name="marginRatio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="marginRatio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 99</value>
+  </data>
+  <data name="marginRatio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="marginRatio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 16</value>
+  </data>
+  <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1128, 384</value>
+  </data>
+  <data name="tabControlPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="tabControlPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1130, 386</value>
+  </data>
+  <data name="tabItem1.Text" xml:space="preserve">
+    <value>رسوم الاصدار</value>
   </data>
   <data name="dGV_Item.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 54</value>
@@ -1221,51 +1212,6 @@
   <data name="doubleInput3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="doubleInput3.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput3.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput3.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput3.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput3.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput3.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput3.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="doubleInput3.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 21</value>
   </data>
@@ -1307,51 +1253,6 @@
   </data>
   <data name="doubleInput2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="doubleInput2.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput2.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput2.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput2.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput2.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput2.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput2.ButtonFreeText.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="doubleInput2.Location" type="System.Drawing.Point, System.Drawing">
     <value>368, 21</value>
@@ -1470,51 +1371,6 @@
   <data name="doubleInput1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="doubleInput1.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput1.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput1.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput1.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput1.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="doubleInput1.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="doubleInput1.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="doubleInput1.Location" type="System.Drawing.Point, System.Drawing">
     <value>430, 21</value>
   </data>
@@ -1607,882 +1463,6 @@
   </data>
   <data name="tabControlPanel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>1130, 386</value>
-  </data>
-  <data name="label25.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 37</value>
-  </data>
-  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 13</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>رسوم اصدار اضافية</value>
-  </data>
-  <data name="txtIssuSAMA.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtIssuSAMA.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtIssuSAMA.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtIssuSAMA.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtIssuSAMA.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtIssuSAMA.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtIssuSAMA.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtIssuSAMA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 10</value>
-  </data>
-  <data name="txtIssuSAMA.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtIssuSAMA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>947, 14</value>
-  </data>
-  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 13</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>رسوم الاصدار (مؤسسة النقد)</value>
-  </data>
-  <data name="txtAddFees.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtAddFees.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddFees.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddFees.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddFees.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddFees.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAddFees.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAddFees.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAddFees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 33</value>
-  </data>
-  <data name="txtAddFees.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtAddFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="label22.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 151</value>
-  </data>
-  <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 13</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>الربح المقدم</value>
-  </data>
-  <data name="txtMuskDownP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtMuskDownP.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMuskDownP.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMuskDownP.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMuskDownP.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMuskDownP.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMuskDownP.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMuskDownP.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMuskDownP.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txtMuskDownP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 146</value>
-  </data>
-  <data name="txtMuskDownP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtMuskDownP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="txtopenFess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtopenFess.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtopenFess.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtopenFess.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtopenFess.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtopenFess.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtopenFess.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtopenFess.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtopenFess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 56</value>
-  </data>
-  <data name="txtopenFess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtopenFess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="txtComnication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtComnication.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtComnication.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtComnication.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtComnication.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtComnication.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtComnication.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtComnication.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtComnication.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 79</value>
-  </data>
-  <data name="txtComnication.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtComnication.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 81</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 13</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>اتصالات وبريد</value>
-  </data>
-  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 62</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 13</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>رسوم الاصدار</value>
-  </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 104</value>
-  </data>
-  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>عمولات اخري</value>
-  </data>
-  <data name="txtotharFess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtotharFess.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtotharFess.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtotharFess.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtotharFess.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtotharFess.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtotharFess.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtotharFess.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtotharFess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 101</value>
-  </data>
-  <data name="txtotharFess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtotharFess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1006, 126</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>عمولة التأجيل</value>
-  </data>
-  <data name="ratioAccept.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="ratioAccept.Location" type="System.Drawing.Point, System.Drawing">
-    <value>970, 124</value>
-  </data>
-  <data name="ratioAccept.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="btnPrintIssueFees.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btnPrintIssueFees.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 34</value>
-  </data>
-  <data name="btnPrintIssueFees.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
-  </data>
-  <data name="btnPrintIssueFees.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 47</value>
-  </data>
-  <data name="btnPrintIssueFees.Text" xml:space="preserve">
-    <value>طباعة اشعار الفتح</value>
-  </data>
-  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>946, 127</value>
-  </data>
-  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="txtAcceptance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtAcceptance.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAcceptance.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAcceptance.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAcceptance.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAcceptance.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtAcceptance.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtAcceptance.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAcceptance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>826, 124</value>
-  </data>
-  <data name="txtAcceptance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtAcceptance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="TotalFess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="TotalFess.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TotalFess.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TotalFess.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TotalFess.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TotalFess.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TotalFess.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="TotalFess.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TotalFess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>543, 31</value>
-  </data>
-  <data name="TotalFess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="TotalFess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 34</value>
-  </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>الاجمالي قبل الضريبة</value>
-  </data>
-  <data name="txtVat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtVat.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtVat.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtVat.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtVat.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtVat.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtVat.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtVat.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtVat.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtVat.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtVat.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtVat.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtVat.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtVat.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtVat.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtVat.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtVat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>543, 53</value>
-  </data>
-  <data name="txtVat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtVat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 56</value>
-  </data>
-  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>الضريبة</value>
-  </data>
-  <data name="txtTotal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtTotal.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtTotal.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtTotal.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtTotal.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtTotal.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtTotal.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtTotal.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>543, 76</value>
-  </data>
-  <data name="txtTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtTotal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 79</value>
-  </data>
-  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 13</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>الاجمالي شامل الضريبة</value>
-  </data>
-  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 100</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 16</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>الموؤنة</value>
-  </data>
-  <data name="txtMargin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtMargin.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMargin.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMargin.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMargin.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMargin.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtMargin.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="txtMargin.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtMargin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>543, 99</value>
-  </data>
-  <data name="txtMargin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="txtMargin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
-  </data>
-  <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>662, 100</value>
-  </data>
-  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 16</value>
-  </data>
-  <data name="marginRatio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="marginRatio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>683, 99</value>
-  </data>
-  <data name="marginRatio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 1, 0</value>
-  </data>
-  <data name="marginRatio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 16</value>
-  </data>
-  <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1128, 384</value>
-  </data>
-  <data name="tabControlPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="tabControlPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 386</value>
-  </data>
-  <data name="tabItem1.Text" xml:space="preserve">
-    <value>رسوم الاصدار</value>
   </data>
   <data name="dgAccNo.Location" type="System.Drawing.Point, System.Drawing">
     <value>386, 53</value>

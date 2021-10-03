@@ -351,6 +351,7 @@
             this.txtID.Border.Class = "TextBoxBorder";
             resources.ApplyResources(this.txtID, "txtID");
             this.txtID.Name = "txtID";
+            this.txtID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtID_KeyDown);
             // 
             // LoanBalance
             // 
@@ -433,6 +434,7 @@
             this.PaymentInterest.Increment = 1D;
             resources.ApplyResources(this.PaymentInterest, "PaymentInterest");
             this.PaymentInterest.Name = "PaymentInterest";
+            this.PaymentInterest.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PaymentInterest_KeyDown);
             this.PaymentInterest.Leave += new System.EventHandler(this.PaymentInterest_Leave);
             // 
             // label3
@@ -452,6 +454,7 @@
             this.txtPaymentAmount.Increment = 1D;
             resources.ApplyResources(this.txtPaymentAmount, "txtPaymentAmount");
             this.txtPaymentAmount.Name = "txtPaymentAmount";
+            this.txtPaymentAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPaymentAmount_KeyDown);
             this.txtPaymentAmount.Leave += new System.EventHandler(this.PaymentAmount_Leave);
             // 
             // groupBox1
@@ -613,6 +616,7 @@
             this.btnPrintJor.ForeColor = System.Drawing.SystemColors.Window;
             this.btnPrintJor.Name = "btnPrintJor";
             this.btnPrintJor.UseVisualStyleBackColor = false;
+            this.btnPrintJor.Click += new System.EventHandler(this.btnPrintJor_Click);
             // 
             // txtSanadSer
             // 

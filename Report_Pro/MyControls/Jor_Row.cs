@@ -366,6 +366,11 @@ namespace Report_Pro.MyControls
         {
 
         }
+
+        private void txtVatNo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

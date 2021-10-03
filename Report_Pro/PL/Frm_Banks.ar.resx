@@ -125,260 +125,253 @@
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>879, 32</value>
   </data>
-  <data name="label20.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 451</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="txtFeesAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 448</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 423</value>
+  </data>
+  <data name="txtLoanAcc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 415</value>
+  </data>
+  <data name="BID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>626, 14</value>
+  </data>
+  <data name="BID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="BNameA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 75</value>
+  </data>
+  <data name="BNameA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>544, 302</value>
   </data>
   <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 449</value>
-  </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 19</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>حساب الاعتمادات</value>
-  </data>
-  <data name="txtLcAcc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>687, 388</value>
   </data>
   <data name="txtLcAcc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 441</value>
-  </data>
-  <data name="txtLcAcc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+    <value>351, 382</value>
   </data>
   <data name="txtLcAcc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 1, 2, 1</value>
-  </data>
-  <data name="txtLcAcc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 30</value>
   </data>
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 414</value>
-  </data>
-  <data name="txtComnication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="txtComnication.Location" type="System.Drawing.Point, System.Drawing">
-    <value>534, 411</value>
-  </data>
-  <data name="txtComnication.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
-  </data>
-  <data name="txtComnication.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 27</value>
+    <value>687, 359</value>
   </data>
   <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>534, 381</value>
+    <value>544, 331</value>
   </data>
-  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="txt_Facility.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 327</value>
   </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 354</value>
-  </data>
-  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>534, 349</value>
-  </data>
-  <data name="BAccept.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 345</value>
-  </data>
-  <data name="BAccept.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="txt_Facility.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 1, 2, 1</value>
   </data>
-  <data name="BAccept.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 27</value>
+  <data name="txt_Facility.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
   </data>
   <data name="Loans_Rate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 379</value>
+    <value>566, 327</value>
   </data>
   <data name="Loans_Rate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 1, 2, 1</value>
   </data>
   <data name="Loans_Rate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 27</value>
+    <value>108, 20</value>
+  </data>
+  <data name="txt_Margin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 298</value>
+  </data>
+  <data name="txt_Margin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="BFax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 271</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 331</value>
+  </data>
+  <data name="txtComnication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 355</value>
+  </data>
+  <data name="txtComnication.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="txtComnication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="BAccept.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 298</value>
+  </data>
+  <data name="BAccept.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="BAccept.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 20</value>
+  </data>
+  <data name="BNameE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 103</value>
+  </data>
+  <data name="BNameE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
+  </data>
+  <data name="UC_Acc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 42</value>
+  </data>
+  <data name="UC_Acc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 1, 2, 1</value>
+  </data>
+  <data name="BTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 271</value>
+  </data>
+  <data name="BAccNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 187</value>
+  </data>
+  <data name="BAccNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
+  </data>
+  <data name="txt_Iban.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 215</value>
+  </data>
+  <data name="txt_Iban.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
+  </data>
+  <data name="txt_accName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 131</value>
+  </data>
+  <data name="txt_accName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
+  </data>
+  <data name="BEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 243</value>
+  </data>
+  <data name="BEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
+  </data>
+  <data name="txt_accNameE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 159</value>
+  </data>
+  <data name="txt_accNameE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 20</value>
   </data>
   <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 381</value>
+    <value>687, 331</value>
   </data>
   <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 51</value>
-  </data>
-  <data name="UC_Acc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 45</value>
-  </data>
-  <data name="UC_Acc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
-  </data>
-  <data name="txt_accNameE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 181</value>
-  </data>
-  <data name="txt_accNameE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>687, 41</value>
   </data>
   <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 186</value>
-  </data>
-  <data name="txt_accName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 148</value>
-  </data>
-  <data name="txt_accName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>687, 162</value>
   </data>
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 152</value>
+    <value>687, 135</value>
   </data>
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 250</value>
-  </data>
-  <data name="txt_Facility.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 383</value>
-  </data>
-  <data name="txt_Facility.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 1, 2, 1</value>
+    <value>687, 220</value>
   </data>
   <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 354</value>
+    <value>302, 302</value>
   </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 386</value>
-  </data>
-  <data name="txt_Margin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 349</value>
-  </data>
-  <data name="txt_Margin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 27</value>
-  </data>
-  <data name="BID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>626, 13</value>
-  </data>
-  <data name="BID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 27</value>
+    <value>302, 331</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 18</value>
-  </data>
-  <data name="BNameA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 82</value>
-  </data>
-  <data name="BNameA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>687, 18</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 86</value>
-  </data>
-  <data name="BNameE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 115</value>
-  </data>
-  <data name="BNameE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>687, 80</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 118</value>
-  </data>
-  <data name="BAccNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 213</value>
-  </data>
-  <data name="BAccNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+    <value>687, 108</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 218</value>
-  </data>
-  <data name="txt_Iban.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 246</value>
-  </data>
-  <data name="txt_Iban.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
-  </data>
-  <data name="BTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>534, 311</value>
+    <value>687, 191</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 316</value>
+    <value>687, 275</value>
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 349</value>
-  </data>
-  <data name="BFax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 317</value>
+    <value>687, 302</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 320</value>
+    <value>302, 275</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 284</value>
+    <value>687, 247</value>
   </data>
-  <data name="BEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 279</value>
-  </data>
-  <data name="BEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 27</value>
+  <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>879, 557</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>879, 589</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
 </root>

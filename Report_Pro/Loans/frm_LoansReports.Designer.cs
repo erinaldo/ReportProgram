@@ -40,12 +40,16 @@
             this.fromDate = new System.Windows.Forms.DateTimePicker();
             this.txtBank = new Report_Pro.MyControls.UC_Acc();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.btnNewLoans = new System.Windows.Forms.Button();
+            this.btnPaymentsLoans = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnPaymentsLoans);
+            this.groupBox1.Controls.Add(this.btnNewLoans);
             this.groupBox1.Controls.Add(this.btnMaturityLoans);
             this.groupBox1.Controls.Add(this.btnReportToal);
             this.groupBox1.Controls.Add(this.btnOption);
@@ -165,6 +169,26 @@
             this.crystalReportViewer1.TabIndex = 2;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
+            // btnNewLoans
+            // 
+            this.btnNewLoans.Location = new System.Drawing.Point(266, 12);
+            this.btnNewLoans.Name = "btnNewLoans";
+            this.btnNewLoans.Size = new System.Drawing.Size(75, 23);
+            this.btnNewLoans.TabIndex = 3;
+            this.btnNewLoans.Text = "New Loans";
+            this.btnNewLoans.UseVisualStyleBackColor = true;
+            this.btnNewLoans.Click += new System.EventHandler(this.btnNewLoans_Click);
+            // 
+            // btnPaymentsLoans
+            // 
+            this.btnPaymentsLoans.Location = new System.Drawing.Point(347, 12);
+            this.btnPaymentsLoans.Name = "btnPaymentsLoans";
+            this.btnPaymentsLoans.Size = new System.Drawing.Size(104, 23);
+            this.btnPaymentsLoans.TabIndex = 4;
+            this.btnPaymentsLoans.Text = "Payments Loans";
+            this.btnPaymentsLoans.UseVisualStyleBackColor = true;
+            this.btnPaymentsLoans.Click += new System.EventHandler(this.btnPaymentsLoans_Click);
+            // 
             // frm_LoansReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,5 +221,7 @@
         private System.Windows.Forms.DateTimePicker fromDate;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Button btnMaturityLoans;
+        private System.Windows.Forms.Button btnPaymentsLoans;
+        private System.Windows.Forms.Button btnNewLoans;
     }
 }

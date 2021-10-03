@@ -95,32 +95,36 @@ namespace Report_Pro.RPT
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
+            getItemCard();
 
+           
+        }
 
+      public  void getItemCard(){
             this.Cursor = Cursors.WaitCursor;
             DataSet1 ds = new DataSet1();
             DataTable dt1 = new DataTable();
             DataTable dt2 = new DataTable();
             groupPanel1.Visible = false;
             RPT.CrystalReport5 rpt = new RPT.CrystalReport5();
-            dt1=(dal.getDataTabl_1(@"select D.ser_no,D.g_date,D.ITEM_NO,s.descr,D.QTY_ADD,D.QTY_TAKE
+            dt1 = (dal.getDataTabl_1(@"select D.ser_no,D.g_date,D.ITEM_NO,s.descr,D.QTY_ADD,D.QTY_TAKE
             ,D.Local_Price*(100-ISNULL(D.DISC_R3,0))/100 as Local_Price
             ,D.TRANSACTION_CODE,p.ACC_NO,p.PAYER_NAME,t.INV_NAME,A.branch_code
             ,C_Balance= SUM(QTY_ADD-QTY_TAKE) OVER (  ORDER BY  D.G_DATE,D.SER_NO,D.main_counter)
 	       ,A.inv_no,A.inv_Date
            , ROW_NUMBER()OVER(  ORDER BY  D.G_DATE,D.SER_NO ,D.BRANCH_CODE) " +
-            "from wh_inv_data as A "+
-            "INNER JOIN payer2 As P ON A.Acc_no = P.ACC_NO AND A.Acc_Branch_code = P.BRANCH_code "+
-            "INNER JOIN wh_BRANCHES As B ON A.Branch_code = B.Branch_code "+
-            "INNER JOIN wh_Payment_type As C ON A.Payment_Type = C.Payment_type "+
-            "INNER JOIN wh_material_transaction As D ON A.Ser_no = D.SER_NO "+
-            "AND A.Branch_code =D.Branch_code AND A.Transaction_code = D.TRANSACTION_CODE AND A.Cyear = D.Cyear "+
-            "inner join wh_main_master As S  on D.ITEM_NO=s.item_no "+
-            "inner join WH_INV_TYPE As T  on T.INV_CODE=A.Transaction_code "+
-            "where D.ITEM_NO = '" + UC_Items.ID.Text+"' and CAST (D.G_DATE as date )between '" + FromDate_.Value.ToString("yyyy-MM-dd")+ 
-            "' and '"+ToDate_.Value.ToString("yyyy-MM-dd")+ "' and D.Branch_code like '"+UC_Branch.ID.Text+
-            "%' and A.Acc_no like '" + UC_Acc.ID.Text+ "%'  and A.Transaction_code like '"+UC_Transaction.ID.Text+
-            "%' and S.group_code like '"+Uc_Group1.ID.Text+"%' order by D.G_DATE,D.SER_NO "));
+            "from wh_inv_data as A " +
+            "INNER JOIN payer2 As P ON A.Acc_no = P.ACC_NO AND A.Acc_Branch_code = P.BRANCH_code " +
+            "INNER JOIN wh_BRANCHES As B ON A.Branch_code = B.Branch_code " +
+            "INNER JOIN wh_Payment_type As C ON A.Payment_Type = C.Payment_type " +
+            "INNER JOIN wh_material_transaction As D ON A.Ser_no = D.SER_NO " +
+            "AND A.Branch_code =D.Branch_code AND A.Transaction_code = D.TRANSACTION_CODE AND A.Cyear = D.Cyear " +
+            "inner join wh_main_master As S  on D.ITEM_NO=s.item_no " +
+            "inner join WH_INV_TYPE As T  on T.INV_CODE=A.Transaction_code " +
+            "where D.ITEM_NO = '" + UC_Items.ID.Text + "' and CAST (D.G_DATE as date )between '" + FromDate_.Value.ToString("yyyy-MM-dd") +
+            "' and '" + ToDate_.Value.ToString("yyyy-MM-dd") + "' and D.Branch_code like '" + UC_Branch.ID.Text +
+            "%' and A.Acc_no like '" + UC_Acc.ID.Text + "%'  and A.Transaction_code like '" + UC_Transaction.ID.Text +
+            "%' and S.group_code like '" + Uc_Group1.ID.Text + "%' order by D.G_DATE,D.SER_NO "));
             rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + FromDate_.Value.ToString("yyyy/MM/dd") + "'";
             rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + ToDate_.Value.ToString("yyyy/MM/dd") + "'";
 
@@ -133,6 +137,7 @@ namespace Report_Pro.RPT
             crystalReportViewer1.ReportSource = rpt;
             this.Cursor = Cursors.Default;
         }
+
 
         private void buttonX2_Click(object sender, EventArgs e)
         {

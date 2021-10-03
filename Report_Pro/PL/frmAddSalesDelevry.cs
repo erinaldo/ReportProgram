@@ -120,7 +120,7 @@ namespace Report_Pro.PL
                 if (saveType == "add")
                 {
                     {
-                        dal.Execute_1("insert into  " + dal.db1 + ".dbo.sales_delevry values('" + txtCode.Text + "," + txtDesc.Text + "," + txtDesc_L.Text + "')");
+                        dal.Execute_1("insert into  " + dal.db1 + ".dbo.sales_delevry values('" + txtCode.Text + "','" + txtDesc.Text + "','" + txtDesc_L.Text + "')");
                         MessageBox.Show("تم حفظ البيانات بنجاح", "تاكيد الحفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         fillDG();
                     }

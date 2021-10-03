@@ -62,6 +62,7 @@
             this.totalDebit = new DevComponents.Editors.DoubleInput();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.dGV_Item = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.groupPanel1.SuspendLayout();
             this.groupPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -77,6 +78,7 @@
             resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.txtpass);
             this.groupPanel1.Controls.Add(this.txtID);
             this.groupPanel1.Controls.Add(this.labelX10);
             this.groupPanel1.Controls.Add(this.buttonX2);
@@ -353,7 +355,7 @@
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Report_Pro.Properties.Resources.Cross_icon1;
+            this.pictureBox2.Image = global::Report_Pro.Properties.Resources.Cross_icon;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
@@ -513,6 +515,12 @@
             this.dGV_Item.Name = "dGV_Item";
             this.dGV_Item.ReadOnly = true;
             // 
+            // txtpass
+            // 
+            resources.ApplyResources(this.txtpass, "txtpass");
+            this.txtpass.Name = "txtpass";
+            this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
+            // 
             // frm_PE_Jor
             // 
             resources.ApplyResources(this, "$this");
@@ -570,5 +578,6 @@
         private DevComponents.DotNetBar.LabelX labelX4;
         private System.Windows.Forms.TextBox txtID;
         private DevComponents.DotNetBar.LabelX labelX10;
+        private System.Windows.Forms.TextBox txtpass;
     }
 }

@@ -121,86 +121,123 @@
   <data name="branchID.Location" type="System.Drawing.Point, System.Drawing">
     <value>1245, 27</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1362, 9</value>
-  </data>
-  <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1287, 0</value>
-  </data>
-  <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 24</value>
-  </data>
-  <data name="txtCr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 0</value>
-  </data>
-  <data name="txtCr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
-  </data>
-  <data name="txtDb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 0</value>
-  </data>
-  <data name="txtDb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
-  </data>
-  <data name="ser_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 63</value>
-  </data>
-  <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>494, 39</value>
-  </data>
-  <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 17</value>
-  </data>
-  <data name="labelX4.Text" xml:space="preserve">
-    <value>المستند</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelX6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 39</value>
+    <value>632, 39</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
+    <value>34, 17</value>
   </data>
   <data name="labelX6.Text" xml:space="preserve">
     <value>التاريخ</value>
   </data>
+  <data name="ser_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ser_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1316, 3</value>
+  </data>
+  <data name="ser_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 63</value>
+  </data>
+  <data name="txtBalance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 3</value>
+  </data>
+  <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 24</value>
+  </data>
+  <data name="txtCr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtCr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1050, 3</value>
+  </data>
+  <data name="txtCr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 24</value>
+  </data>
+  <data name="txtDb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtDb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1183, 3</value>
+  </data>
+  <data name="txtDb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 24</value>
+  </data>
+  <data name="txtDocument.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="txtDocument.Location" type="System.Drawing.Point, System.Drawing">
-    <value>568, 39</value>
+    <value>671, 37</value>
   </data>
   <data name="txtDocument.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 24</value>
+    <value>177, 24</value>
   </data>
-  <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>847, 39</value>
+  <data name="txtVatNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 17</value>
+  <data name="txtVatNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 37</value>
   </data>
-  <data name="labelX7.Text" xml:space="preserve">
-    <value>الرقم الضريبي</value>
+  <data name="txtVatNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 24</value>
   </data>
-  <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1057, 39</value>
+  <data name="Acc_.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 17</value>
+  <data name="Acc_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>632, 3</value>
   </data>
-  <data name="labelX8.Text" xml:space="preserve">
-    <value>المورد</value>
+  <data name="Acc_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 24</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 30</value>
+  <data name="txtCat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 27</value>
+  <data name="txtCat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 3</value>
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 30</value>
+  <data name="txtCat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 24</value>
   </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 27</value>
+  <data name="txtAcc_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtAcc_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 37</value>
+  </data>
+  <data name="txtAcc_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 24</value>
+  </data>
+  <data name="txtCost.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtCost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 3</value>
+  </data>
+  <data name="txtCost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 24</value>
+  </data>
+  <data name="txtDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>853, 37</value>
+  </data>
+  <data name="txtDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>463, 24</value>
+  </data>
+  <data name="txtDocDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="txtDocDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 39</value>
+    <value>510, 36</value>
   </data>
   <data name="txtDocDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -215,55 +252,12 @@
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
   <data name="txtDocDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="txtVatNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>913, 39</value>
-  </data>
-  <data name="txtVatNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
-  </data>
-  <data name="Acc_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 0</value>
-  </data>
-  <data name="Acc_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 24</value>
-  </data>
-  <data name="txtCat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 0</value>
-  </data>
-  <data name="txtCat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 24</value>
-  </data>
-  <data name="txtAcc_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1125, 39</value>
-  </data>
-  <data name="txtAcc_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 24</value>
-  </data>
-  <data name="txtCost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1010, 0</value>
-  </data>
-  <data name="txtCost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>278, 24</value>
-  </data>
-  <data name="tablePanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1362, 72</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtDescription.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="txtDescription.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 39</value>
-  </data>
-  <data name="txtDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 24</value>
+    <value>122, 20</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1362, 71</value>
+    <value>1362, 67</value>
   </data>
 </root>

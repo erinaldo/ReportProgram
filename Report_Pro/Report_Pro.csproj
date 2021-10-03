@@ -283,6 +283,12 @@
     <Compile Include="CTR\frm_cash_transaction.designer.cs">
       <DependentUpon>frm_cash_transaction.cs</DependentUpon>
     </Compile>
+    <Compile Include="CTR\frm_Funds_Detials_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTR\frm_Funds_Detials_Report.Designer.cs">
+      <DependentUpon>frm_Funds_Detials_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="CTR\frm_Update_Sanadtype_2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,6 +331,18 @@
       <DependentUpon>rpt_FundDetials.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CTR\rpt_FundsDetialsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_FundsDetialsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CTR\rpt_Funds_Detials_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Funds_Detials_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CurrencyInfo.cs" />
     <Compile Include="DAL\DataAccesslayer1.cs" />
     <Compile Include="DAL\db.designer.cs">
@@ -355,6 +373,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Langres.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Loans\frm_Accrued_Interest .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loans\frm_Accrued_Interest .Designer.cs">
+      <DependentUpon>frm_Accrued_Interest .cs</DependentUpon>
     </Compile>
     <Compile Include="Loans\frm_Loan.cs">
       <SubType>Form</SubType>
@@ -996,6 +1020,12 @@
     <Compile Include="PL\frm_UpdateAccData.designer.cs">
       <DependentUpon>frm_UpdateAccData.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frm_Update_Classification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_Update_Classification.Designer.cs">
+      <DependentUpon>frm_Update_Classification.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frm_Update_custom_no.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1019,6 +1049,12 @@
     </Compile>
     <Compile Include="PL\Frm_uploadImage.designer.cs">
       <DependentUpon>Frm_uploadImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_SalesInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_SalesInvoice.designer.cs">
+      <DependentUpon>frm_SalesInvoice.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\invoice_frm.cs">
       <SubType>Form</SubType>
@@ -1160,6 +1196,9 @@
     <EmbeddedResource Include="CTR\frm_cash_transaction.resx">
       <DependentUpon>frm_cash_transaction.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CTR\frm_Funds_Detials_Report.resx">
+      <DependentUpon>frm_Funds_Detials_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CTR\frm_Update_Sanadtype_2.resx">
       <DependentUpon>frm_Update_Sanadtype_2.cs</DependentUpon>
     </EmbeddedResource>
@@ -1187,6 +1226,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_FundDetials.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CTR\rpt_FundsDetialsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_FundsDetialsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTR\rpt_Funds_Detials_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Funds_Detials_Report.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1209,6 +1256,9 @@
     <EmbeddedResource Include="Loans\frmLoan.ar.resx">
       <DependentUpon>frmLoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Loans\frm_Accrued_Interest .resx">
+      <DependentUpon>frm_Accrued_Interest .cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loans\frm_Loan.aa.resx">
       <DependentUpon>frm_Loan.cs</DependentUpon>
     </EmbeddedResource>
@@ -1225,8 +1275,14 @@
       <DependentUpon>CashCustomer .cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Inv_Grid.ar.resx">
+      <DependentUpon>Inv_Grid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Inv_Grid.resx">
       <DependentUpon>Inv_Grid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Inv_Row.ar.resx">
+      <DependentUpon>Inv_Row.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Inv_Row.resx">
       <DependentUpon>Inv_Row.cs</DependentUpon>
@@ -1621,6 +1677,9 @@
       <DependentUpon>FrmSerchLcs.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmSerchLcs.ar.resx">
+      <DependentUpon>FrmSerchLcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FrmSerchLcs.en-US.resx">
       <DependentUpon>FrmSerchLcs.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1685,6 +1744,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_DataBaseChose.resx">
       <DependentUpon>frm_DataBaseChose.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_deposit.resx">
       <DependentUpon>frm_deposit.cs</DependentUpon>
@@ -1705,6 +1765,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Main.en.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
@@ -1774,6 +1835,9 @@
       <DependentUpon>frm_R_Qutaion.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_SalesInvoice.ar.resx">
+      <DependentUpon>frm_SalesInvoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_SALESREPORTS.resx">
       <DependentUpon>FRM_SALESREPORTS.cs</DependentUpon>
     </EmbeddedResource>
@@ -1817,6 +1881,9 @@
       <DependentUpon>frm_UpdateAccData.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_Update_Classification.resx">
+      <DependentUpon>frm_Update_Classification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_Update_custom_no.resx">
       <DependentUpon>frm_Update_custom_no.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1829,9 +1896,22 @@
       <DependentUpon>frm_update_trans_invoice.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_uploadImage.ar.resx">
+      <DependentUpon>Frm_uploadImage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Frm_uploadImage.resx">
       <DependentUpon>Frm_uploadImage.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_uploadImage.sq.resx">
+      <DependentUpon>Frm_uploadImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_SalesInvoice.resx">
+      <DependentUpon>frm_SalesInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\invoice_frm.ar.resx">
+      <DependentUpon>invoice_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\invoice_frm.resx">
       <DependentUpon>invoice_frm.cs</DependentUpon>
@@ -1897,6 +1977,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Fees_Consolidated.resx">
       <DependentUpon>rpt_Fees_Consolidated.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_GroupBalanceByBranches.ar.resx">
       <DependentUpon>rpt_GroupBalanceByBranches.cs</DependentUpon>
@@ -1917,6 +1998,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_BalanceByBranch.ar.resx">
       <DependentUpon>rpt_BalanceByBranch.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_BalanceByBranch.resx">
       <DependentUpon>rpt_BalanceByBranch.cs</DependentUpon>
@@ -1965,13 +2047,17 @@
     <EmbeddedResource Include="RPT\frm_maintenance_SP_ByCustomer.resx">
       <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_Print_invoice.ar.resx">
+      <DependentUpon>frm_Print_invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\frm_Print_invoice.resx">
+      <DependentUpon>frm_Print_invoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_rep_Fees_Consolidated.ar.resx">
       <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_rep_Fees_Consolidated.resx">
       <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_rpt_inventory.ar.resx">
       <DependentUpon>frm_rpt_inventory.cs</DependentUpon>
@@ -2010,13 +2096,22 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_InventoryList.ar.resx">
       <DependentUpon>rpt_InventoryList.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_InventoryList.resx">
       <DependentUpon>rpt_InventoryList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Loans\rpt_Accrued_Interest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Accrued_Interest.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\rpt_Cut_Off.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rpt_Cut_Off.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\rpt_Fees_Consolidated.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Fees_Consolidated.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\Rpt_inv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -2047,9 +2142,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Inventory_M_Br.ar.resx">
       <DependentUpon>rpt_Inventory_M_Br.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Inventory_M_Br.resx">
       <DependentUpon>rpt_Inventory_M_Br.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_TotalInventory.ar.resx">
       <DependentUpon>rpt_TotalInventory.cs</DependentUpon>
@@ -2262,14 +2359,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_PE_rpt.resx">
       <DependentUpon>frm_PE_rpt.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\frm_Print_invoice.ar.resx">
-      <DependentUpon>frm_Print_invoice.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\frm_Print_invoice.resx">
-      <DependentUpon>frm_Print_invoice.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frm_project_materails.resx">
@@ -2761,6 +2850,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_TotalInventory.resx">
       <DependentUpon>rpt_TotalInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
@@ -2819,6 +2909,18 @@
       <DependentUpon>CrystalReport6.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RPT\frm_Print_invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_Print_invoice.designer.cs">
+      <DependentUpon>frm_Print_invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\frm_rep_Fees_Consolidated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\frm_rep_Fees_Consolidated.designer.cs">
+      <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
+    </Compile>
     <Compile Include="RPT\frm_rpt_InventoryItems.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2867,12 +2969,6 @@
     <Compile Include="RPT\frm_maintenance_SP_ByCustomer.Designer.cs">
       <DependentUpon>frm_maintenance_SP_ByCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPT\frm_rep_Fees_Consolidated.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RPT\frm_rep_Fees_Consolidated.designer.cs">
-      <DependentUpon>frm_rep_Fees_Consolidated.cs</DependentUpon>
-    </Compile>
     <Compile Include="RPT\frm_rpt_Cut_off.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2911,10 +3007,22 @@
     <Compile Include="Reports\rpt_InventoryList.Designer.cs">
       <DependentUpon>rpt_InventoryList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loans\rpt_Accrued_Interest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Accrued_Interest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RPT\rpt_Cut_Off.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rpt_Cut_Off.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\rpt_Fees_Consolidated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Fees_Consolidated.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\Rpt_inv.cs">
@@ -3239,12 +3347,6 @@
     </Compile>
     <Compile Include="RPT\frm_PE_rpt.designer.cs">
       <DependentUpon>frm_PE_rpt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RPT\frm_Print_invoice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RPT\frm_Print_invoice.designer.cs">
-      <DependentUpon>frm_Print_invoice.cs</DependentUpon>
     </Compile>
     <Compile Include="RPT\frm_project_materails.cs">
       <SubType>Form</SubType>

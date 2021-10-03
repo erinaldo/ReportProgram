@@ -272,7 +272,6 @@
             // 
             // 
             this.txtId.Border.Class = "TextBoxBorder";
-            this.txtId.Enabled = false;
             this.txtId.Location = new System.Drawing.Point(469, 27);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(52, 20);

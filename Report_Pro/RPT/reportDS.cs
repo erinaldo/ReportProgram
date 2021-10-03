@@ -6,7 +6,7 @@
     {
         partial class dt_JorPrintDataTable
         {
-           
+
         }
 
         partial class dt_LoandDetialsDataTable

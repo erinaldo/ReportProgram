@@ -39,6 +39,8 @@
             this.btnReport = new System.Windows.Forms.Button();
             this.btnOption = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.thick_2 = new Report_Pro.NumericTextBox();
+            this.thick_1 = new Report_Pro.NumericTextBox();
             this.dTP2 = new System.Windows.Forms.DateTimePicker();
             this.dTP1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -50,13 +52,18 @@
             this.chP = new System.Windows.Forms.CheckBox();
             this.chF = new System.Windows.Forms.CheckBox();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
+            this.Group1 = new Report_Pro.MyControls.Uc_Group();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.Uc_Transaction = new Report_Pro.MyControls.UC_Transaction();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.Branch = new Report_Pro.MyControls.UC_Branch();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.Item = new Report_Pro.MyControls.UC_Items();
+            this.Group = new Report_Pro.MyControls.Uc_Group();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.cmb_DimCategory = new System.Windows.Forms.ComboBox();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
@@ -75,13 +82,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.thick_2 = new Report_Pro.NumericTextBox();
-            this.thick_1 = new Report_Pro.NumericTextBox();
-            this.Group1 = new Report_Pro.MyControls.Uc_Group();
-            this.Uc_Transaction = new Report_Pro.MyControls.UC_Transaction();
-            this.Branch = new Report_Pro.MyControls.UC_Branch();
-            this.Item = new Report_Pro.MyControls.UC_Items();
-            this.Group = new Report_Pro.MyControls.Uc_Group();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -183,20 +183,36 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 49);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(984, 306);
+            this.groupBox1.Size = new System.Drawing.Size(984, 184);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // thick_2
+            // 
+            this.thick_2.decimaldigit = 2;
+            this.thick_2.Location = new System.Drawing.Point(380, 99);
+            this.thick_2.Name = "thick_2";
+            this.thick_2.Size = new System.Drawing.Size(64, 20);
+            this.thick_2.TabIndex = 91;
+            // 
+            // thick_1
+            // 
+            this.thick_1.decimaldigit = 2;
+            this.thick_1.Location = new System.Drawing.Point(123, 99);
+            this.thick_1.Name = "thick_1";
+            this.thick_1.Size = new System.Drawing.Size(64, 20);
+            this.thick_1.TabIndex = 90;
+            // 
             // dTP2
             // 
-            this.dTP2.Location = new System.Drawing.Point(332, 206);
+            this.dTP2.Location = new System.Drawing.Point(332, 127);
             this.dTP2.Name = "dTP2";
             this.dTP2.Size = new System.Drawing.Size(112, 20);
             this.dTP2.TabIndex = 87;
             // 
             // dTP1
             // 
-            this.dTP1.Location = new System.Drawing.Point(123, 206);
+            this.dTP1.Location = new System.Drawing.Point(123, 127);
             this.dTP1.Name = "dTP1";
             this.dTP1.Size = new System.Drawing.Size(112, 20);
             this.dTP1.TabIndex = 86;
@@ -210,9 +226,9 @@
             this.groupBox2.Controls.Add(this.chZ);
             this.groupBox2.Controls.Add(this.chP);
             this.groupBox2.Controls.Add(this.chF);
-            this.groupBox2.Location = new System.Drawing.Point(487, 26);
+            this.groupBox2.Location = new System.Drawing.Point(595, 99);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(293, 117);
+            this.groupBox2.Size = new System.Drawing.Size(321, 74);
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Classification";
@@ -222,7 +238,7 @@
             this.chC.AutoSize = true;
             this.chC.Checked = true;
             this.chC.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chC.Location = new System.Drawing.Point(15, 29);
+            this.chC.Location = new System.Drawing.Point(15, 23);
             this.chC.Name = "chC";
             this.chC.Size = new System.Drawing.Size(80, 17);
             this.chC.TabIndex = 78;
@@ -235,7 +251,7 @@
             this.chS.AutoSize = true;
             this.chS.Checked = true;
             this.chS.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chS.Location = new System.Drawing.Point(213, 54);
+            this.chS.Location = new System.Drawing.Point(268, 23);
             this.chS.Name = "chS";
             this.chS.Size = new System.Drawing.Size(46, 17);
             this.chS.TabIndex = 83;
@@ -247,7 +263,7 @@
             this.chX.AutoSize = true;
             this.chX.Checked = true;
             this.chX.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chX.Location = new System.Drawing.Point(15, 75);
+            this.chX.Location = new System.Drawing.Point(116, 46);
             this.chX.Name = "chX";
             this.chX.Size = new System.Drawing.Size(59, 17);
             this.chX.TabIndex = 84;
@@ -259,7 +275,7 @@
             this.chR.AutoSize = true;
             this.chR.Checked = true;
             this.chR.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chR.Location = new System.Drawing.Point(213, 29);
+            this.chR.Location = new System.Drawing.Point(200, 23);
             this.chR.Name = "chR";
             this.chR.Size = new System.Drawing.Size(47, 17);
             this.chR.TabIndex = 82;
@@ -271,7 +287,7 @@
             this.chZ.AutoSize = true;
             this.chZ.Checked = true;
             this.chZ.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chZ.Location = new System.Drawing.Point(15, 52);
+            this.chZ.Location = new System.Drawing.Point(15, 46);
             this.chZ.Name = "chZ";
             this.chZ.Size = new System.Drawing.Size(59, 17);
             this.chZ.TabIndex = 79;
@@ -283,7 +299,7 @@
             this.chP.AutoSize = true;
             this.chP.Checked = true;
             this.chP.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chP.Location = new System.Drawing.Point(118, 54);
+            this.chP.Location = new System.Drawing.Point(200, 46);
             this.chP.Name = "chP";
             this.chP.Size = new System.Drawing.Size(64, 17);
             this.chP.TabIndex = 81;
@@ -295,7 +311,7 @@
             this.chF.AutoSize = true;
             this.chF.Checked = true;
             this.chF.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chF.Location = new System.Drawing.Point(118, 29);
+            this.chF.Location = new System.Drawing.Point(116, 23);
             this.chF.Name = "chF";
             this.chF.Size = new System.Drawing.Size(63, 17);
             this.chF.TabIndex = 80;
@@ -312,21 +328,39 @@
             this.labelX10.TabIndex = 77;
             this.labelX10.Text = "To Group";
             // 
+            // Group1
+            // 
+            this.Group1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Group1.Location = new System.Drawing.Point(123, 71);
+            this.Group1.Margin = new System.Windows.Forms.Padding(0);
+            this.Group1.Name = "Group1";
+            this.Group1.Size = new System.Drawing.Size(321, 22);
+            this.Group1.TabIndex = 76;
+            // 
             // labelX9
             // 
             this.labelX9.AutoSize = true;
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(52, 150);
+            this.labelX9.Location = new System.Drawing.Point(524, 47);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(62, 17);
             this.labelX9.TabIndex = 75;
             this.labelX9.Text = "Transaction";
             // 
+            // Uc_Transaction
+            // 
+            this.Uc_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Uc_Transaction.Location = new System.Drawing.Point(595, 44);
+            this.Uc_Transaction.Margin = new System.Windows.Forms.Padding(0);
+            this.Uc_Transaction.Name = "Uc_Transaction";
+            this.Uc_Transaction.Size = new System.Drawing.Size(321, 22);
+            this.Uc_Transaction.TabIndex = 74;
+            // 
             // labelX1
             // 
             this.labelX1.AutoSize = true;
             this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Location = new System.Drawing.Point(57, 203);
+            this.labelX1.Location = new System.Drawing.Point(57, 129);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(57, 17);
             this.labelX1.TabIndex = 73;
@@ -336,7 +370,7 @@
             // 
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(305, 181);
+            this.labelX8.Location = new System.Drawing.Point(305, 101);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(69, 17);
             this.labelX8.TabIndex = 70;
@@ -346,7 +380,7 @@
             // 
             this.labelX7.AutoSize = true;
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(32, 181);
+            this.labelX7.Location = new System.Drawing.Point(32, 101);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(82, 17);
             this.labelX7.TabIndex = 69;
@@ -356,17 +390,28 @@
             // 
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(74, 18);
+            this.labelX6.Location = new System.Drawing.Point(74, 19);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(40, 17);
             this.labelX6.TabIndex = 66;
             this.labelX6.Text = "Branch";
             // 
+            // Branch
+            // 
+            this.Branch.BackColor = System.Drawing.Color.Transparent;
+            this.Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Branch.Location = new System.Drawing.Point(123, 16);
+            this.Branch.Margin = new System.Windows.Forms.Padding(0);
+            this.Branch.Name = "Branch";
+            this.Branch.Size = new System.Drawing.Size(321, 22);
+            this.Branch.TabIndex = 65;
+            // 
             // labelX3
             // 
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(85, 103);
+            this.labelX3.Location = new System.Drawing.Point(557, 19);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(29, 17);
             this.labelX3.TabIndex = 62;
@@ -376,17 +421,35 @@
             // 
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(50, 46);
+            this.labelX2.Location = new System.Drawing.Point(50, 47);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(64, 17);
             this.labelX2.TabIndex = 61;
             this.labelX2.Text = "From Group";
             // 
+            // Item
+            // 
+            this.Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Item.Location = new System.Drawing.Point(595, 16);
+            this.Item.Margin = new System.Windows.Forms.Padding(0);
+            this.Item.Name = "Item";
+            this.Item.Size = new System.Drawing.Size(321, 22);
+            this.Item.TabIndex = 60;
+            // 
+            // Group
+            // 
+            this.Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Group.Location = new System.Drawing.Point(123, 44);
+            this.Group.Margin = new System.Windows.Forms.Padding(0);
+            this.Group.Name = "Group";
+            this.Group.Size = new System.Drawing.Size(321, 22);
+            this.Group.TabIndex = 59;
+            // 
             // labelX5
             // 
             this.labelX5.AutoSize = true;
             this.labelX5.BackColor = System.Drawing.Color.Transparent;
-            this.labelX5.Location = new System.Drawing.Point(37, 126);
+            this.labelX5.Location = new System.Drawing.Point(509, 74);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(77, 17);
             this.labelX5.TabIndex = 64;
@@ -395,7 +458,7 @@
             // cmb_DimCategory
             // 
             this.cmb_DimCategory.FormattingEnabled = true;
-            this.cmb_DimCategory.Location = new System.Drawing.Point(123, 126);
+            this.cmb_DimCategory.Location = new System.Drawing.Point(595, 72);
             this.cmb_DimCategory.Name = "cmb_DimCategory";
             this.cmb_DimCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmb_DimCategory.Size = new System.Drawing.Size(321, 21);
@@ -405,7 +468,7 @@
             // 
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(283, 203);
+            this.labelX4.Location = new System.Drawing.Point(283, 129);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(45, 17);
             this.labelX4.TabIndex = 58;
@@ -510,12 +573,12 @@
             this.Column5});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 355);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 233);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 20;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(984, 666);
+            this.dataGridView1.Size = new System.Drawing.Size(984, 788);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -584,69 +647,6 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-            // 
-            // thick_2
-            // 
-            this.thick_2.decimaldigit = 2;
-            this.thick_2.Location = new System.Drawing.Point(380, 178);
-            this.thick_2.Name = "thick_2";
-            this.thick_2.Size = new System.Drawing.Size(64, 20);
-            this.thick_2.TabIndex = 91;
-            // 
-            // thick_1
-            // 
-            this.thick_1.decimaldigit = 2;
-            this.thick_1.Location = new System.Drawing.Point(123, 178);
-            this.thick_1.Name = "thick_1";
-            this.thick_1.Size = new System.Drawing.Size(64, 20);
-            this.thick_1.TabIndex = 90;
-            // 
-            // Group1
-            // 
-            this.Group1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Group1.Location = new System.Drawing.Point(123, 72);
-            this.Group1.Margin = new System.Windows.Forms.Padding(0);
-            this.Group1.Name = "Group1";
-            this.Group1.Size = new System.Drawing.Size(321, 22);
-            this.Group1.TabIndex = 76;
-            // 
-            // Uc_Transaction
-            // 
-            this.Uc_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Transaction.Location = new System.Drawing.Point(123, 150);
-            this.Uc_Transaction.Margin = new System.Windows.Forms.Padding(0);
-            this.Uc_Transaction.Name = "Uc_Transaction";
-            this.Uc_Transaction.Size = new System.Drawing.Size(321, 21);
-            this.Uc_Transaction.TabIndex = 74;
-            // 
-            // Branch
-            // 
-            this.Branch.BackColor = System.Drawing.Color.Transparent;
-            this.Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Branch.Location = new System.Drawing.Point(123, 16);
-            this.Branch.Margin = new System.Windows.Forms.Padding(0);
-            this.Branch.Name = "Branch";
-            this.Branch.Size = new System.Drawing.Size(321, 22);
-            this.Branch.TabIndex = 65;
-            // 
-            // Item
-            // 
-            this.Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Item.Location = new System.Drawing.Point(123, 101);
-            this.Item.Margin = new System.Windows.Forms.Padding(0);
-            this.Item.Name = "Item";
-            this.Item.Size = new System.Drawing.Size(321, 22);
-            this.Item.TabIndex = 60;
-            // 
-            // Group
-            // 
-            this.Group.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Group.Location = new System.Drawing.Point(123, 44);
-            this.Group.Margin = new System.Windows.Forms.Padding(0);
-            this.Group.Name = "Group";
-            this.Group.Size = new System.Drawing.Size(321, 22);
-            this.Group.TabIndex = 59;
             // 
             // frm_rpt_InventoryBranches
             // 

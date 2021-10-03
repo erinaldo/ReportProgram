@@ -333,5 +333,27 @@ namespace Report_Pro.Properties {
                 this["font_"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=server;Initial Catalog=main_acc_wh;User ID=bilal;Password=hassan")]
+        public string main_acc_whConnectionString1 {
+            get {
+                return ((string)(this["main_acc_whConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string password1 {
+            get {
+                return ((string)(this["password1"]));
+            }
+            set {
+                this["password1"] = value;
+            }
+        }
     }
 }

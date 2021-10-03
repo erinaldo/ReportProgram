@@ -1605,6 +1605,23 @@ namespace Report_Pro.PL
             //MessageBox.Show(date);
         }
 
+        private void Price_ton_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter)
+            {
+                if (Weight_.Value > 0)
+                {
+                    TxtPrice.Value = Price_ton.Value * Weight_.Value / 1000;
+                }
+                else
+                {
+
+                    MessageBox.Show("فضلا.. تاكد من الوزن ", "خطأ !!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Price_ton.PerformClick(); ;
+                }
+            }
+        }
+
         private void Uc_Customer_Load(object sender, EventArgs e)
         {
 

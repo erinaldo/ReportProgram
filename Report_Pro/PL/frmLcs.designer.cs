@@ -1016,8 +1016,8 @@
             // 
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel1);
+            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
@@ -1662,6 +1662,7 @@
             this.txtComnication.DisabledForeColor = System.Drawing.Color.Blue;
             this.txtComnication.Increment = 1D;
             this.txtComnication.Name = "txtComnication";
+            this.txtComnication.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtComnication_KeyUp);
             // 
             // label2
             // 

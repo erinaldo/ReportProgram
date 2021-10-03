@@ -1560,6 +1560,7 @@
             this.txtRLAcc.Location = new System.Drawing.Point(41, 67);
             this.txtRLAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtRLAcc.Name = "txtRLAcc";
+            this.txtRLAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtRLAcc.Size = new System.Drawing.Size(310, 23);
             this.txtRLAcc.TabIndex = 28;
             // 
@@ -1571,6 +1572,7 @@
             this.txtRGAcc.Location = new System.Drawing.Point(41, 42);
             this.txtRGAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtRGAcc.Name = "txtRGAcc";
+            this.txtRGAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtRGAcc.Size = new System.Drawing.Size(310, 23);
             this.txtRGAcc.TabIndex = 27;
             // 
@@ -1582,6 +1584,7 @@
             this.txtLSAcc.Location = new System.Drawing.Point(41, 17);
             this.txtLSAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtLSAcc.Name = "txtLSAcc";
+            this.txtLSAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtLSAcc.Size = new System.Drawing.Size(310, 23);
             this.txtLSAcc.TabIndex = 26;
             // 
@@ -1593,6 +1596,7 @@
             this.txtGSAcc.Location = new System.Drawing.Point(531, 92);
             this.txtGSAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtGSAcc.Name = "txtGSAcc";
+            this.txtGSAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtGSAcc.Size = new System.Drawing.Size(310, 23);
             this.txtGSAcc.TabIndex = 25;
             // 
@@ -1604,6 +1608,7 @@
             this.txtADepAcc.Location = new System.Drawing.Point(531, 67);
             this.txtADepAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtADepAcc.Name = "txtADepAcc";
+            this.txtADepAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtADepAcc.Size = new System.Drawing.Size(310, 23);
             this.txtADepAcc.TabIndex = 24;
             // 
@@ -1615,6 +1620,7 @@
             this.txtDepAcc.Location = new System.Drawing.Point(531, 42);
             this.txtDepAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtDepAcc.Name = "txtDepAcc";
+            this.txtDepAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtDepAcc.Size = new System.Drawing.Size(310, 23);
             this.txtDepAcc.TabIndex = 23;
             // 
@@ -1626,6 +1632,7 @@
             this.txtAssAcc.Location = new System.Drawing.Point(531, 17);
             this.txtAssAcc.Margin = new System.Windows.Forms.Padding(0);
             this.txtAssAcc.Name = "txtAssAcc";
+            this.txtAssAcc.Padding = new System.Windows.Forms.Padding(1);
             this.txtAssAcc.Size = new System.Drawing.Size(310, 23);
             this.txtAssAcc.TabIndex = 22;
             // 

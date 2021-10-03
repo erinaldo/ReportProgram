@@ -117,12 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnReport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnReport.Location" type="System.Drawing.Point, System.Drawing">
     <value>655, 4</value>
   </data>
   <data name="btnReport.Text" xml:space="preserve">
     <value>التقرير</value>
+  </data>
+  <data name="btnOption.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="btnOption.Location" type="System.Drawing.Point, System.Drawing">
     <value>739, 3</value>
@@ -137,7 +144,6 @@
   <data name="comb1.Location" type="System.Drawing.Point, System.Drawing">
     <value>583, 88</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="labelX3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -189,69 +195,11 @@
   <data name="ToDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ToDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ToDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ToDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ToDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ToDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ToDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
-  </data>
   <data name="ToDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>407, 103</value>
   </data>
   <data name="ToDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="ToDate.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ToDate.MonthCalendar.Description" xml:space="preserve">
-    <value />
   </data>
   <data name="ToDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
@@ -259,65 +207,11 @@
   <data name="ToDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="ToDate.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ToDate.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
-  </data>
   <data name="ToDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
   </data>
   <data name="FromDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="FromDate.ButtonClear.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="FromDate.ButtonClear.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.ButtonClear.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.ButtonCustom.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="FromDate.ButtonCustom.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.ButtonCustom.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.ButtonCustom2.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="FromDate.ButtonCustom2.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.ButtonCustom2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.ButtonDropDown.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="FromDate.ButtonDropDown.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.ButtonDropDown.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.ButtonFreeText.DisplayPosition" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="FromDate.ButtonFreeText.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.ButtonFreeText.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="FromDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>407, 77</value>
@@ -325,32 +219,11 @@
   <data name="FromDate.MonthCalendar.AnnuallyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
-  <data name="FromDate.MonthCalendar.Category" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.MonthCalendar.CommandParameter" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.MonthCalendar.DayNames" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="FromDate.MonthCalendar.Description" xml:space="preserve">
-    <value />
-  </data>
   <data name="FromDate.MonthCalendar.MarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
   </data>
   <data name="FromDate.MonthCalendar.MonthlyMarkedDates" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAPAQAAAAAAAAANCw==</value>
-  </data>
-  <data name="FromDate.MonthCalendar.Tag" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.MonthCalendar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FromDate.MonthCalendar.Tooltip" xml:space="preserve">
-    <value />
   </data>
   <data name="FromDate.MonthCalendar.WeeklyMarkedDays" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAAAAAAMQU3lzdGVtLkRheU9mV2Vlaws=</value>
@@ -376,6 +249,7 @@
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>

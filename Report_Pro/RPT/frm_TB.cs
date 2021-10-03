@@ -244,6 +244,29 @@ namespace Report_Pro.RPT
                 t_final = "1";
             }
 
+            string Balance_ = "";
+           
+            if (All_B.Checked == true)
+            {
+              Balance_ = "0";
+              
+            }
+            else if (debit_B.Checked == true)
+            {
+                Balance_ = "1";
+               
+            }
+            else if (Credit_B.Checked == true)
+            {
+                Balance_ = "2";
+               
+            }
+            else if (Zero_B.Checked == true)
+            {
+                Balance_ = "3";
+
+            }
+
 
             RPT.rpt_TB tb_rep = new RPT.rpt_TB();
 

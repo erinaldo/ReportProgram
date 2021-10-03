@@ -20,6 +20,7 @@ namespace Report_Pro.RPT
         public frm_Inventory_Report()
         {
             InitializeComponent();
+            dTP1.Value = new DateTime(DateTime.Now.Year, 1, 1);
             dTP2.Value = DateTime.Today;
 
             //category.DataSource = dal.getDataTabl_1(@"SELECT * FROM wh_Category");
@@ -302,8 +303,14 @@ namespace Report_Pro.RPT
 
             rpt.DataDefinition.FormulaFields["Date_"].Text = "'" + dTP2.Value.ToString("dd/MM/yyyy") + "'";
             int no_days= System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(dTP1.Value, dTP2.Value);
-            rpt.SetParameterValue("noOfDays", no_days);
-
+            if (no_days > 0)
+            {
+                rpt.SetParameterValue("noOfDays", no_days);
+            }
+            else
+            {
+                rpt.SetParameterValue("noOfDays", 1);
+            }
             
 
 

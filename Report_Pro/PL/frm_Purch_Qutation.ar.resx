@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-   <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -313,22 +313,31 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 36</value>
+    <value>954, 25</value>
   </data>
   <data name="labelX21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 186</value>
+    <value>127, 127</value>
+  </data>
+  <data name="labelX21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 21</value>
+    <value>93, 16</value>
   </data>
   <data name="RQ_Date.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 183</value>
+    <value>41, 125</value>
+  </data>
+  <data name="RQ_Date.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="RQ_Date.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 26</value>
+    <value>83, 20</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -336,19 +345,25 @@
     <value>Top, Right</value>
   </data>
   <data name="btnCancel_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 84</value>
+    <value>11, 57</value>
+  </data>
+  <data name="btnCancel_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btnCancel_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 31</value>
+    <value>61, 21</value>
   </data>
   <data name="btnOk_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="btnOk_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 84</value>
+    <value>77, 57</value>
+  </data>
+  <data name="btnOk_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btnOk_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 31</value>
+    <value>61, 21</value>
   </data>
   <data name="labelX16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -358,43 +373,61 @@
     <value>True</value>
   </data>
   <data name="labelX16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 16</value>
+    <value>40, 11</value>
+  </data>
+  <data name="labelX16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 21</value>
+    <value>85, 16</value>
   </data>
   <data name="txtsearh_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtsearh_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 50</value>
+    <value>15, 34</value>
+  </data>
+  <data name="txtsearh_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtsearh_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 26</value>
+    <value>129, 20</value>
   </data>
   <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>934, 5</value>
+    <value>623, 3</value>
+  </data>
+  <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="groupPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 132</value>
+    <value>160, 90</value>
   </data>
   <data name="txt_RQ_ser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 149</value>
+    <value>41, 102</value>
+  </data>
+  <data name="txt_RQ_ser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_RQ_ser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 26</value>
+    <value>83, 20</value>
   </data>
   <data name="labelX12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 150</value>
+    <value>127, 103</value>
+  </data>
+  <data name="labelX12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>88, 16</value>
   </data>
   <data name="txt_transaction_code.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 217</value>
+    <value>41, 148</value>
+  </data>
+  <data name="txt_transaction_code.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_transaction_code.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 21</value>
+    <value>83, 14</value>
   </data>
   <data name="txt_transaction_code.Text" xml:space="preserve">
     <value>IQT</value>
@@ -406,142 +439,199 @@
     <value />
   </data>
   <data name="Tot_Price.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 37</value>
+    <value>13, 25</value>
+  </data>
+  <data name="Tot_Price.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="Tot_Price.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 26</value>
+    <value>64, 20</value>
   </data>
   <data name="labelX18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 11</value>
+    <value>13, 8</value>
+  </data>
+  <data name="labelX18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
+    <value>64, 16</value>
   </data>
   <data name="txtPrice.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 37</value>
+    <value>77, 25</value>
+  </data>
+  <data name="txtPrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 26</value>
+    <value>54, 20</value>
   </data>
   <data name="txtPrice.TabIndex" type="System.Int32, mscorlib">
     <value>142</value>
   </data>
   <data name="labelX13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 11</value>
+    <value>77, 8</value>
+  </data>
+  <data name="labelX13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+    <value>54, 16</value>
   </data>
   <data name="labelX53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 11</value>
+    <value>131, 8</value>
+  </data>
+  <data name="labelX53.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX53.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 23</value>
+    <value>71, 16</value>
   </data>
   <data name="txt_TotWeight.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txt_TotWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 37</value>
+    <value>131, 25</value>
+  </data>
+  <data name="txt_TotWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_TotWeight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 26</value>
+    <value>73, 20</value>
   </data>
   <data name="labelX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 11</value>
+    <value>314, 8</value>
+  </data>
+  <data name="labelX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 23</value>
+    <value>56, 16</value>
   </data>
   <data name="txtUnitWeight.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 37</value>
+    <value>314, 25</value>
+  </data>
+  <data name="txtUnitWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtUnitWeight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 26</value>
+    <value>57, 20</value>
   </data>
   <data name="labelX4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 11</value>
+    <value>370, 8</value>
+  </data>
+  <data name="labelX4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 23</value>
+    <value>53, 16</value>
   </data>
   <data name="txtUnit.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 37</value>
+    <value>370, 25</value>
+  </data>
+  <data name="txtUnit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtUnit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 26</value>
+    <value>55, 20</value>
   </data>
   <data name="TxtQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>390, 37</value>
+    <value>260, 25</value>
+  </data>
+  <data name="TxtQty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="TxtQty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 26</value>
+    <value>54, 20</value>
   </data>
   <data name="labelX52.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 11</value>
+    <value>202, 8</value>
+  </data>
+  <data name="labelX52.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 23</value>
+    <value>58, 16</value>
   </data>
   <data name="txtBalance.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtBalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 37</value>
+    <value>202, 25</value>
+  </data>
+  <data name="txtBalance.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtBalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 26</value>
+    <value>59, 20</value>
   </data>
   <data name="labelX17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>635, 11</value>
+    <value>423, 8</value>
+  </data>
+  <data name="labelX17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 23</value>
+    <value>179, 16</value>
   </data>
   <data name="txtNote.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="txtNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>635, 37</value>
+    <value>423, 25</value>
+  </data>
+  <data name="txtNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 26</value>
+    <value>181, 20</value>
   </data>
   <data name="labelX29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>390, 11</value>
+    <value>260, 8</value>
+  </data>
+  <data name="labelX29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 23</value>
+    <value>54, 16</value>
   </data>
   <data name="labelX30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>904, 13</value>
+    <value>603, 9</value>
+  </data>
+  <data name="labelX30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>338, 20</value>
+    <value>225, 14</value>
   </data>
   <data name="labelX31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1242, 11</value>
+    <value>828, 8</value>
+  </data>
+  <data name="labelX31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 23</value>
+    <value>76, 16</value>
   </data>
   <data name="TxtDesc.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="TxtDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>904, 37</value>
+    <value>603, 25</value>
+  </data>
+  <data name="TxtDesc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="TxtDesc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>338, 26</value>
+    <value>227, 20</value>
   </data>
   <data name="btn_braws.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -808,37 +898,46 @@
 </value>
   </data>
   <data name="btn_braws.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1357, 11</value>
+    <value>905, 8</value>
+  </data>
+  <data name="btn_braws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="btn_braws.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 52</value>
+    <value>35, 36</value>
   </data>
   <data name="TxtId.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="TxtId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1242, 37</value>
+    <value>828, 25</value>
+  </data>
+  <data name="TxtId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="TxtId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 26</value>
+    <value>77, 20</value>
   </data>
   <data name="groupPanel7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="groupPanel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 277</value>
+    <value>-2, 190</value>
+  </data>
+  <data name="groupPanel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="groupPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1428, 78</value>
+    <value>952, 53</value>
   </data>
   <data name="uC_Acc1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="uC_Acc1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 15</value>
+    <value>305, 10</value>
   </data>
   <data name="uC_Acc1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 29</value>
+    <value>321, 21</value>
   </data>
   <data name="labelX10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -847,10 +946,13 @@
     <value />
   </data>
   <data name="labelX10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 19</value>
+    <value>31, 13</value>
+  </data>
+  <data name="labelX10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 21</value>
+    <value>85, 16</value>
   </data>
   <data name="labelX10.Text" xml:space="preserve">
     <value>ادخل الرقم للبحث</value>
@@ -859,7 +961,13 @@
     <value>Top, Right</value>
   </data>
   <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 82</value>
+    <value>15, 56</value>
+  </data>
+  <data name="btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
   </data>
   <data name="btnCancel.Text" xml:space="preserve">
     <value>الغاء</value>
@@ -868,7 +976,13 @@
     <value>Top, Right</value>
   </data>
   <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 82</value>
+    <value>78, 56</value>
+  </data>
+  <data name="btnOk.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
     <value>بحث</value>
@@ -877,175 +991,268 @@
     <value>Top, Right</value>
   </data>
   <data name="txtSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 48</value>
+    <value>19, 33</value>
+  </data>
+  <data name="txtSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>121, 20</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 137</value>
+    <value>95, 48</value>
+  </data>
+  <data name="groupPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="groupPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 132</value>
+    <value>160, 90</value>
   </data>
   <data name="txtCurrency.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtCurrency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 85</value>
+    <value>107, 58</value>
+  </data>
+  <data name="txtCurrency.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtCurrency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 27</value>
+    <value>139, 20</value>
   </data>
   <data name="labelX15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 15</value>
+    <value>439, 10</value>
+  </data>
+  <data name="labelX15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_Rate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txt_Rate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 85</value>
+    <value>35, 58</value>
+  </data>
+  <data name="txt_Rate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_Rate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 26</value>
+    <value>69, 20</value>
   </data>
   <data name="labelX14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 88</value>
+    <value>249, 60</value>
+  </data>
+  <data name="labelX14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 21</value>
+    <value>33, 16</value>
   </data>
   <data name="labelX11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>948, 19</value>
+    <value>632, 13</value>
+  </data>
+  <data name="labelX11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 21</value>
+    <value>32, 16</value>
   </data>
   <data name="labelX3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>948, 54</value>
+    <value>632, 37</value>
+  </data>
+  <data name="labelX3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 21</value>
+    <value>28, 16</value>
   </data>
   <data name="labelX20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>940, 190</value>
+    <value>627, 130</value>
+  </data>
+  <data name="labelX20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 21</value>
+    <value>45, 16</value>
   </data>
   <data name="txt_MainNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 187</value>
+    <value>305, 128</value>
+  </data>
+  <data name="txt_MainNote.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_MainNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 26</value>
+    <value>321, 20</value>
   </data>
   <data name="txtMobile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 87</value>
+    <value>305, 60</value>
+  </data>
+  <data name="txtMobile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtMobile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 26</value>
+    <value>117, 20</value>
   </data>
   <data name="labelX6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>634, 89</value>
+    <value>423, 61</value>
+  </data>
+  <data name="labelX6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 21</value>
+    <value>27, 16</value>
   </data>
   <data name="labelX9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>948, 124</value>
+    <value>632, 85</value>
+  </data>
+  <data name="labelX9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 21</value>
+    <value>74, 16</value>
   </data>
   <data name="txtE_Fax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 119</value>
+    <value>525, 81</value>
+  </data>
+  <data name="txtE_Fax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txtE_Fax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 26</value>
+    <value>100, 20</value>
   </data>
   <data name="txt_Tel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 85</value>
+    <value>525, 58</value>
+  </data>
+  <data name="txt_Tel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_Tel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 26</value>
+    <value>100, 20</value>
   </data>
   <data name="txt_address.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 120</value>
+    <value>35, 82</value>
+  </data>
+  <data name="txt_address.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_address.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 93</value>
+    <value>211, 64</value>
   </data>
   <data name="labelX7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>948, 87</value>
+    <value>632, 60</value>
+  </data>
+  <data name="labelX7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 21</value>
+    <value>29, 16</value>
   </data>
   <data name="txt_Email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 153</value>
+    <value>305, 105</value>
+  </data>
+  <data name="txt_Email.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_Email.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 26</value>
+    <value>321, 20</value>
   </data>
   <data name="labelX8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>948, 156</value>
+    <value>632, 107</value>
+  </data>
+  <data name="labelX8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 21</value>
+    <value>30, 16</value>
   </data>
   <data name="labelX25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>633, 126</value>
+    <value>422, 86</value>
+  </data>
+  <data name="labelX25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 21</value>
+    <value>33, 16</value>
   </data>
   <data name="labelX47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 127</value>
+    <value>249, 87</value>
+  </data>
+  <data name="labelX47.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX47.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 21</value>
+    <value>35, 16</value>
+  </data>
+  <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 3</value>
+  </data>
+  <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_Fax.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 121</value>
+    <value>305, 83</value>
+  </data>
+  <data name="txt_Fax.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_Fax.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 26</value>
+    <value>117, 20</value>
   </data>
   <data name="buttonX1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 22</value>
+    <value>99, 15</value>
+  </data>
+  <data name="buttonX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="buttonX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 44</value>
+    <value>156, 30</value>
   </data>
   <data name="Uc_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 50</value>
+    <value>305, 34</value>
+  </data>
+  <data name="Uc_Branch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 21</value>
+  </data>
+  <data name="tabControlPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="tabControlPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="tabControlPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1054, 229</value>
+    <value>703, 151</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 10</value>
+    <value>241, 7</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1054, 259</value>
+    <value>703, 177</value>
   </data>
   <data name="labelX51.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 217</value>
+    <value>127, 148</value>
+  </data>
+  <data name="labelX51.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX51.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 21</value>
+    <value>53, 16</value>
   </data>
   <data name="Doc_Name.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14pt, style=Bold</value>
   </data>
   <data name="Doc_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 19</value>
+    <value>35, 13</value>
+  </data>
+  <data name="Doc_Name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Doc_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 43</value>
+    <value>188, 29</value>
   </data>
   <data name="Doc_Name.Text" xml:space="preserve">
     <value>تسعيرة مشتريات</value>
@@ -1066,22 +1273,31 @@
 </value>
   </data>
   <data name="next_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 83</value>
+    <value>41, 57</value>
+  </data>
+  <data name="next_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="next_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 23</value>
+    <value>22, 17</value>
   </data>
   <data name="labelX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 84</value>
+    <value>127, 57</value>
+  </data>
+  <data name="labelX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 21</value>
+    <value>28, 16</value>
   </data>
   <data name="labelX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 118</value>
+    <value>127, 81</value>
+  </data>
+  <data name="labelX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="labelX2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 21</value>
+    <value>33, 16</value>
   </data>
   <data name="previous_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1101,10 +1317,13 @@
 </value>
   </data>
   <data name="previous_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 83</value>
+    <value>158, 57</value>
+  </data>
+  <data name="previous_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="previous_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 23</value>
+    <value>22, 17</value>
   </data>
   <data name="first_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1129,16 +1348,22 @@
 </value>
   </data>
   <data name="first_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 83</value>
+    <value>179, 57</value>
+  </data>
+  <data name="first_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="first_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 23</value>
+    <value>22, 17</value>
   </data>
   <data name="txt_InvDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 115</value>
+    <value>41, 79</value>
+  </data>
+  <data name="txt_InvDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_InvDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 26</value>
+    <value>83, 20</value>
   </data>
   <data name="last_.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1164,78 +1389,138 @@
 </value>
   </data>
   <data name="last_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 83</value>
+    <value>20, 57</value>
+  </data>
+  <data name="last_.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="last_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 23</value>
+    <value>22, 17</value>
   </data>
   <data name="txt_serNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 81</value>
+    <value>65, 55</value>
+  </data>
+  <data name="txt_serNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="txt_serNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 26</value>
+    <value>59, 20</value>
   </data>
   <data name="groupPanel6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 7.8pt</value>
   </data>
+  <data name="groupPanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="groupPanel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
   <data name="groupPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 361</value>
+    <value>954, 247</value>
   </data>
   <data name="labelX19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 17</value>
+    <value>102, 12</value>
+  </data>
+  <data name="labelX19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="labelX19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
   </data>
   <data name="TotalPrice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 15</value>
+    <value>13, 10</value>
+  </data>
+  <data name="TotalPrice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="TotalPrice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 27</value>
+    <value>85, 20</value>
   </data>
   <data name="labelX24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 17</value>
+    <value>267, 12</value>
+  </data>
+  <data name="labelX24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="labelX24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
   </data>
   <data name="labelX23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 17</value>
+    <value>442, 12</value>
+  </data>
+  <data name="labelX23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="labelX23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 17</value>
   </data>
   <data name="Btn_DelRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1244, 14</value>
+    <value>829, 10</value>
+  </data>
+  <data name="Btn_DelRow.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
+  </data>
+  <data name="Btn_DelRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 19</value>
   </data>
   <data name="totalWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 15</value>
+    <value>179, 10</value>
+  </data>
+  <data name="totalWeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="totalWeight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 27</value>
+    <value>85, 20</value>
   </data>
   <data name="totalQty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>529, 15</value>
+    <value>353, 10</value>
+  </data>
+  <data name="totalQty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="totalQty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 27</value>
+    <value>85, 20</value>
   </data>
   <data name="groupPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 609</value>
+    <value>0, 416</value>
+  </data>
+  <data name="groupPanel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="groupPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 59</value>
+    <value>954, 40</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 668</value>
+    <value>0, 456</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 22</value>
+    <value>954, 16</value>
   </data>
   <data name="dGV_Item.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="dGV_Item.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 212</value>
+    <value>954, 144</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 397</value>
+    <value>0, 272</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 212</value>
+    <value>954, 144</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1431, 690</value>
+    <value>954, 472</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
 </root>

@@ -236,7 +236,7 @@ namespace Report_Pro.PL
             Costomer_adress, Costomer_Phone, Costmer_fax, Ref, E_mail, TermsOfPayment, Validity, DelevryE, PERM_SER,
             K_M_ACC_NO, K_M_Credit_TAX, COSTMER_K_M_NO, KM_CODE_ACC, MAIN_KM_CODE, Costomer_Notes, OPEN_VAT, VAT_RATIO)
             values('" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txt_InvDate.Value.ToString("yy") +
-                "', '" + 0 + "," + txt_InvDate.Value.ToString("yyyy-MM-dd HH: mm:ss") + "', '" + AccType.Text + "', '" + Uc_Acc.ID.Text + "', '" + txtBranchID.Text + "', '" + Convert.ToString(PaymentType.SelectedValue) +
+                "', '" + 0 + "','" + txt_InvDate.Value.ToString("yyyy-MM-dd HH: mm:ss") + "', '" + AccType.Text + "', '" + Uc_Acc.ID.Text + "', '" + txtBranchID.Text + "', '" + Convert.ToString(PaymentType.SelectedValue) +
                 "', '" + Uc_cost.ID.Text + "',  '" + userID.Text + "', '" + cashCustomer.ID.Text +
                 "', '" + txt_address.Text + "', '" + txt_custTel.Text + "', '" + txt_custFax.Text + "', '" + CustomerRef.Text + "', '" + txt_CustEmail.Text +
                 "', '" + Convert.ToString(PaymentTearms.SelectedValue) + "', '" + ValidtyDays.Text + "', '" + Convert.ToString(DelevryTearms.SelectedValue) +
@@ -302,7 +302,7 @@ namespace Report_Pro.PL
                 Costomer_adress, Costomer_Phone, Costmer_fax, Ref, E_mail, TermsOfPayment, Validity, DelevryE, PERM_SER,
                 K_M_ACC_NO, K_M_Credit_TAX, COSTMER_K_M_NO, KM_CODE_ACC, MAIN_KM_CODE, Costomer_Notes, OPEN_VAT, VAT_RATIO)
                 values('" + txt_InvNu.Text + "', '" + txtStore_ID.Text + "', '" + Doc_Type.Text + "', '" + txt_InvDate.Value.ToString("yy") +
-                "', '" + 0 + "," + txt_InvDate.Value.ToString("yyyy-MM-dd HH: mm:ss") + "', '" + AccType.Text + "', '" + Uc_Acc.ID.Text + "', '" + txtBranchID.Text + "', '" + Convert.ToString(PaymentType.SelectedValue) +
+                "', '" + 0 + "','" + txt_InvDate.Value.ToString("yyyy-MM-dd HH: mm:ss") + "', '" + AccType.Text + "', '" + Uc_Acc.ID.Text + "', '" + txtBranchID.Text + "', '" + Convert.ToString(PaymentType.SelectedValue) +
                 "', '" + Uc_cost.ID.Text + "',  '" + userID.Text + "', '" + cashCustomer.ID.Text +
                 "', '" + txt_address.Text + "', '" + txt_custTel.Text + "', '" + txt_custFax.Text + "', '" + CustomerRef.Text + "', '" + txt_CustEmail.Text +
                 "', '" + Convert.ToString(PaymentTearms.SelectedValue) + "', '" + ValidtyDays.Text + "', '" + Convert.ToString(DelevryTearms.SelectedValue) +

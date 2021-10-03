@@ -332,7 +332,7 @@ namespace Report_Pro.RPT {
             
             private global::System.Data.DataColumn columnPaymentValue;
             
-            private global::System.Data.DataColumn _columnStartDate_date;
+            private global::System.Data.DataColumn columnStartDate;
             
             private global::System.Data.DataColumn columnMaturityDate;
             
@@ -353,6 +353,12 @@ namespace Report_Pro.RPT {
             private global::System.Data.DataColumn columnLoan_Purpose;
             
             private global::System.Data.DataColumn columnLoan_Purpose_E;
+            
+            private global::System.Data.DataColumn columnpayment;
+            
+            private global::System.Data.DataColumn columnPayMentInterest;
+            
+            private global::System.Data.DataColumn columnPaymentDate;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -461,9 +467,9 @@ namespace Report_Pro.RPT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn _StartDate_dateColumn {
+            public global::System.Data.DataColumn StartDateColumn {
                 get {
-                    return this._columnStartDate_date;
+                    return this.columnStartDate;
                 }
             }
             
@@ -549,6 +555,30 @@ namespace Report_Pro.RPT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn paymentColumn {
+                get {
+                    return this.columnpayment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn PayMentInterestColumn {
+                get {
+                    return this.columnPayMentInterest;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn PaymentDateColumn {
+                get {
+                    return this.columnPaymentDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -594,7 +624,7 @@ namespace Report_Pro.RPT {
                         decimal LoanValue, 
                         int PaymentNo, 
                         decimal PaymentValue, 
-                        System.DateTime _StartDate_date, 
+                        System.DateTime StartDate, 
                         System.DateTime MaturityDate, 
                         decimal Rate, 
                         string LoanPurpose, 
@@ -604,7 +634,10 @@ namespace Report_Pro.RPT {
                         string PAYER_NAME, 
                         string payer_l_name, 
                         string Loan_Purpose, 
-                        string Loan_Purpose_E) {
+                        string Loan_Purpose_E, 
+                        decimal payment, 
+                        decimal PayMentInterest, 
+                        System.DateTime PaymentDate) {
                 dt_LoandDetialsRow rowdt_LoandDetialsRow = ((dt_LoandDetialsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
@@ -616,7 +649,7 @@ namespace Report_Pro.RPT {
                         LoanValue,
                         PaymentNo,
                         PaymentValue,
-                        _StartDate_date,
+                        StartDate,
                         MaturityDate,
                         Rate,
                         LoanPurpose,
@@ -626,7 +659,10 @@ namespace Report_Pro.RPT {
                         PAYER_NAME,
                         payer_l_name,
                         Loan_Purpose,
-                        Loan_Purpose_E};
+                        Loan_Purpose_E,
+                        payment,
+                        PayMentInterest,
+                        PaymentDate};
                 rowdt_LoandDetialsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowdt_LoandDetialsRow);
                 return rowdt_LoandDetialsRow;
@@ -658,7 +694,7 @@ namespace Report_Pro.RPT {
                 this.columnLoanValue = base.Columns["LoanValue"];
                 this.columnPaymentNo = base.Columns["PaymentNo"];
                 this.columnPaymentValue = base.Columns["PaymentValue"];
-                this._columnStartDate_date = base.Columns["StartDate\tdate"];
+                this.columnStartDate = base.Columns["StartDate"];
                 this.columnMaturityDate = base.Columns["MaturityDate"];
                 this.columnRate = base.Columns["Rate"];
                 this.columnLoanPurpose = base.Columns["LoanPurpose"];
@@ -669,6 +705,9 @@ namespace Report_Pro.RPT {
                 this.columnpayer_l_name = base.Columns["payer_l_name"];
                 this.columnLoan_Purpose = base.Columns["Loan_Purpose"];
                 this.columnLoan_Purpose_E = base.Columns["Loan_Purpose_E"];
+                this.columnpayment = base.Columns["payment"];
+                this.columnPayMentInterest = base.Columns["PayMentInterest"];
+                this.columnPaymentDate = base.Columns["PaymentDate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -692,10 +731,8 @@ namespace Report_Pro.RPT {
                 base.Columns.Add(this.columnPaymentNo);
                 this.columnPaymentValue = new global::System.Data.DataColumn("PaymentValue", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPaymentValue);
-                this._columnStartDate_date = new global::System.Data.DataColumn("StartDate\tdate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                this._columnStartDate_date.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnStartDate_date");
-                this._columnStartDate_date.ExtendedProperties.Add("Generator_UserColumnName", "StartDate\tdate");
-                base.Columns.Add(this._columnStartDate_date);
+                this.columnStartDate = new global::System.Data.DataColumn("StartDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStartDate);
                 this.columnMaturityDate = new global::System.Data.DataColumn("MaturityDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMaturityDate);
                 this.columnRate = new global::System.Data.DataColumn("Rate", typeof(decimal), null, global::System.Data.MappingType.Element);
@@ -716,6 +753,12 @@ namespace Report_Pro.RPT {
                 base.Columns.Add(this.columnLoan_Purpose);
                 this.columnLoan_Purpose_E = new global::System.Data.DataColumn("Loan_Purpose_E", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLoan_Purpose_E);
+                this.columnpayment = new global::System.Data.DataColumn("payment", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpayment);
+                this.columnPayMentInterest = new global::System.Data.DataColumn("PayMentInterest", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayMentInterest);
+                this.columnPaymentDate = new global::System.Data.DataColumn("PaymentDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPaymentDate);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1505,17 +1548,17 @@ namespace Report_Pro.RPT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime _StartDate_date {
+            public System.DateTime StartDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tabledt_LoandDetials._StartDate_dateColumn]));
+                        return ((global::System.DateTime)(this[this.tabledt_LoandDetials.StartDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'StartDate\tdate\' in table \'dt_LoandDetials\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'StartDate\' in table \'dt_LoandDetials\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabledt_LoandDetials._StartDate_dateColumn] = value;
+                    this[this.tabledt_LoandDetials.StartDateColumn] = value;
                 }
             }
             
@@ -1681,6 +1724,54 @@ namespace Report_Pro.RPT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal payment {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledt_LoandDetials.paymentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'payment\' in table \'dt_LoandDetials\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledt_LoandDetials.paymentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public decimal PayMentInterest {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabledt_LoandDetials.PayMentInterestColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PayMentInterest\' in table \'dt_LoandDetials\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledt_LoandDetials.PayMentInterestColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public System.DateTime PaymentDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabledt_LoandDetials.PaymentDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PaymentDate\' in table \'dt_LoandDetials\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabledt_LoandDetials.PaymentDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsidNull() {
                 return this.IsNull(this.tabledt_LoandDetials.idColumn);
             }
@@ -1789,14 +1880,14 @@ namespace Report_Pro.RPT {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool Is_StartDate_dateNull() {
-                return this.IsNull(this.tabledt_LoandDetials._StartDate_dateColumn);
+            public bool IsStartDateNull() {
+                return this.IsNull(this.tabledt_LoandDetials.StartDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void Set_StartDate_dateNull() {
-                this[this.tabledt_LoandDetials._StartDate_dateColumn] = global::System.Convert.DBNull;
+            public void SetStartDateNull() {
+                this[this.tabledt_LoandDetials.StartDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1917,6 +2008,42 @@ namespace Report_Pro.RPT {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public void SetLoan_Purpose_ENull() {
                 this[this.tabledt_LoandDetials.Loan_Purpose_EColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IspaymentNull() {
+                return this.IsNull(this.tabledt_LoandDetials.paymentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetpaymentNull() {
+                this[this.tabledt_LoandDetials.paymentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsPayMentInterestNull() {
+                return this.IsNull(this.tabledt_LoandDetials.PayMentInterestColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetPayMentInterestNull() {
+                this[this.tabledt_LoandDetials.PayMentInterestColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsPaymentDateNull() {
+                return this.IsNull(this.tabledt_LoandDetials.PaymentDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetPaymentDateNull() {
+                this[this.tabledt_LoandDetials.PaymentDateColumn] = global::System.Convert.DBNull;
             }
         }
         

@@ -39,7 +39,13 @@ namespace Report_Pro.RPT
             ds.Tables.Add(dt_);
             ds.WriteXmlSchema("schema_rpt.xml");
             rpt.SetDataSource(ds);
+
             crystalReportViewer1.ReportSource = rpt;
+            rpt.DataDefinition.FormulaFields["From_date"].Text = "'" + FromDate.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["To_Date"].Text = "'" + ToDate.Value.ToString("yyyy/MM/dd") + "'";
+            rpt.DataDefinition.FormulaFields["titelText"].Text = "'" + comb1.SelectedText.ToString() + "'";
+
+
 
             //this.Cursor = Cursors.Default;
 
@@ -59,6 +65,11 @@ namespace Report_Pro.RPT
 
             txtBank.txtMainAcc.Text = "122";
             txtBank.txtFinal.Text = "1";
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

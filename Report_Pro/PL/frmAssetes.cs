@@ -49,16 +49,16 @@ namespace Report_Pro.PL
             , assModel, assStuds, assWeight, assLocation, assSerail, proCo, proCoAddres, proDate, SuppCo, ContractNo, ContractDate
             , PurchaseDate, receveDate, SuppCoAddres, Tel1, Tel2, Fax, Email, Web, ReceveNote, isStopDepris, assAge, assEndValue
             , assPurchValue, deprisStartDate, addValue, reductionValue, gReevaluation, lReevaluation, A_Deprecition, netValue
-            , assAcc, depAcc, adepAcc, gsAcc, lsAcc, rgAcc, rlAcc,BranchCode) VALUES ('" + txtId.Text + "," + txtCode.Text + "," + txtName.Text + "," + txtName_L.Text + "," + Convert.ToString(cmbGroup.SelectedValue) +
-            "," + lastDepDat.Value.ToString("yyyy-MM-dd") + "," + txtNote.Text + "," + txtKind.Text + "," + txtOrigin.Text + "," + txtSize.Text + "," + txtColor.Text +
-            "," + txtModel.Text + "," + txtStuds.Text + "," + txtWeight.Text + "," + Convert.ToString(cobLocation.SelectedValue) + "," + txtSearil.Text +
-            "," + txtproCo.Text + "," + txtproCoAddres.Text+","+ proDate.Text + "," + txtSuppCo.Text + "," + txtContractNo.Text +
-            "," + ContractDate.Text + "," + PurchaseDate.Text+ "," + receveDate.Text + "," + txtSuppCoAddres.Text + "," + txtTel1.Text +
-            "," + txtTel2.Text + "," + txtFax.Text + "," + txtEmail.Text + "," + txtWeb.Text + "," + txtReceveNote.Text +
-            "," + chb1.Checked + "," + txtAge.Value + "," + txtEndValue.Value + "," + txtPurchaseValue.Value + "," + StartDate.Text +
-            "," + txtAddValue.Value + "," + txtReductionValue.Value + "," + txtGReevaluation.Value + "," + txtLReevaluation.Value +
-            "," + A_Deprecition.Value + "," + netValue.Value + "," + txtAssAcc.ID.Text + "," + txtDepAcc.ID.Text + "," + txtADepAcc.ID.Text +
-            "," + txtGSAcc.ID.Text + "," + txtLSAcc.ID.Text + "," + txtRGAcc.ID.Text + "," + txtRLAcc.ID.Text + ","+ AccBranch.ID.Text+"')");
+            , assAcc, depAcc, adepAcc, gsAcc, lsAcc, rgAcc, rlAcc,BranchCode) VALUES ('" + txtId.Text + "','" + txtCode.Text + "','" + txtName.Text + "','" + txtName_L.Text + "','" + Convert.ToString(cmbGroup.SelectedValue) +
+            "','" + lastDepDat.Value.ToString("yyyy-MM-dd") + "','" + txtNote.Text + "','" + txtKind.Text + "','" + txtOrigin.Text + "','" + txtSize.Text + "','" + txtColor.Text +
+            "','" + txtModel.Text + "','" + txtStuds.Text + "','" + txtWeight.Text + "','" + Convert.ToString(cobLocation.SelectedValue) + "','" + txtSearil.Text +
+            "','" + txtproCo.Text + "','" + txtproCoAddres.Text+"','"+ proDate.Text + "','" + txtSuppCo.Text + "','" + txtContractNo.Text +
+            "','" + ContractDate.Text + "','" + PurchaseDate.Text+ "','" + receveDate.Text + "','" + txtSuppCoAddres.Text + "','" + txtTel1.Text +
+            "','" + txtTel2.Text + "','" + txtFax.Text + "','" + txtEmail.Text + "','" + txtWeb.Text + "','" + txtReceveNote.Text +
+            "','" + chb1.Checked + "','" + txtAge.Value + "','" + txtEndValue.Value + "','" + txtPurchaseValue.Value + "','" + StartDate.Text +
+            "','" + txtAddValue.Value + "','" + txtReductionValue.Value + "','" + txtGReevaluation.Value + "','" + txtLReevaluation.Value +
+            "','" + A_Deprecition.Value + "','" + netValue.Value + "','" + txtAssAcc.ID.Text + "','" + txtDepAcc.ID.Text + "','" + txtADepAcc.ID.Text +
+            "','" + txtGSAcc.ID.Text + "','" + txtLSAcc.ID.Text + "','" + txtRGAcc.ID.Text + "','" + txtRLAcc.ID.Text + "','"+ AccBranch.ID.Text+"')");
             }
             else
             {

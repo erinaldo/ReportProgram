@@ -43,11 +43,11 @@ namespace Report_Pro.MyControls
                     D.KM_RATIO as V_PurchRatio,
                     E.KM_RATIO as V_SalesRatio
                     from payer2 As A 
-                   inner join KM_MAIN_ACC_CODE As B on isnull(A.KM_CODE_Purch,21)=B.MAIN_KM_CODE
-				   inner join KM_MAIN_ACC_CODE As C on isnull(A.KM_CODE_Sales,11)=C.MAIN_KM_CODE
-				   inner join KM_ACC_CODE As D on B.KM_CODE=D.KM_CODE
-				   inner join KM_ACC_CODE As E on C.KM_CODE=E.KM_CODE
-                   where A.ACC_NO= '" + ID.Text + "'  and A.acc_no like '"+txtMainAcc.Text +"%' and A.BRANCH_code like '" + branchID.Text + "'+'%' and A.t_final like '"+txtFinal.Text+"%' ");
+                   left join KM_MAIN_ACC_CODE As B on isnull(A.KM_CODE_Purch,21)=B.MAIN_KM_CODE
+				   left join KM_MAIN_ACC_CODE As C on isnull(A.KM_CODE_Sales,11)=C.MAIN_KM_CODE
+				   left join KM_ACC_CODE As D on B.KM_CODE=D.KM_CODE
+				   left join KM_ACC_CODE As E on C.KM_CODE=E.KM_CODE
+                   where A.ACC_NO= '" + ID.Text + "'  and (A.acc_no like '"+txtMainAcc.Text + "%' or A.acc_no like '" + txtAccCash.Text + "')   and A.BRANCH_code like '" + branchID.Text + "'+'%' and A.t_final like '"+txtFinal.Text+"%' ");
 
 
                           if (dt_.Rows.Count > 0)
@@ -90,7 +90,7 @@ namespace Report_Pro.MyControls
                 dgv1.Visible = true;
                 this.Height = 150;
                 this.BringToFront();
-                dgv1.DataSource = dal.getDataTabl_1("select ACC_NO,PAYER_NAME from payer2 where (PAYER_NAME like '%" + Desc.Text + "%' or payer_l_name like '%" + Desc.Text + "%'  )and Acc_No like '" + txtMainAcc.Text+"%' and BRANCH_code like '" + branchID.Text + "'+'%'  and t_final like '" + txtFinal.Text + "%' ORDER BY acc_no ");
+                dgv1.DataSource = dal.getDataTabl_1("select ACC_NO,PAYER_NAME from payer2 where (PAYER_NAME like '%" + Desc.Text + "%' or payer_l_name like '%" + Desc.Text + "%'  )and ( Acc_No like '" + txtMainAcc.Text+ "%' or  Acc_No like '" + txtAccCash.Text + "') and BRANCH_code like '" + branchID.Text + "'+'%'  and t_final like '" + txtFinal.Text + "%' ORDER BY acc_no ");
                 dgv1.Columns[0].Width = 72;
             //}
             //catch { }
@@ -161,11 +161,11 @@ namespace Report_Pro.MyControls
                     D.KM_RATIO as V_PurchRatio,
                     E.KM_RATIO as V_SalesRatio
                     from payer2 As A 
-                   inner join KM_MAIN_ACC_CODE As B on isnull(A.KM_CODE_Purch,21)=B.MAIN_KM_CODE
-				   inner join KM_MAIN_ACC_CODE As C on isnull(A.KM_CODE_Sales,11)=C.MAIN_KM_CODE
-				   inner join KM_ACC_CODE As D on B.KM_CODE=D.KM_CODE
-				   inner join KM_ACC_CODE As E on C.KM_CODE=E.KM_CODE
-                   where A.ACC_NO= '" + ID.Text + "'  and A.acc_no like '" + txtMainAcc.Text + "%' and A.BRANCH_code like '" + branchID.Text + "'+'%' and A.t_final like '" + txtFinal.Text + "%' ");
+                   left join KM_MAIN_ACC_CODE As B on isnull(A.KM_CODE_Purch,21)=B.MAIN_KM_CODE
+				   left join KM_MAIN_ACC_CODE As C on isnull(A.KM_CODE_Sales,11)=C.MAIN_KM_CODE
+				   left join KM_ACC_CODE As D on B.KM_CODE=D.KM_CODE
+				   left join KM_ACC_CODE As E on C.KM_CODE=E.KM_CODE
+                   where A.ACC_NO= '" + ID.Text + "'  and (A.acc_no like '" + txtMainAcc.Text + "%' or  A.acc_no like '" + txtAccCash.Text + "') and A.BRANCH_code like '" + branchID.Text + "'+'%' and A.t_final like '" + txtFinal.Text + "%' ");
 
                 if (dt_.Rows.Count > 0)
                 {

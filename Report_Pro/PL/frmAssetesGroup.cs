@@ -251,17 +251,22 @@ namespace Report_Pro.PL
         private void btnSave_Click(object sender, EventArgs e)
         {
             try {
-                if (txtId.Text != string.Empty && txtCode.Text != string.Empty && txtName.Text != string.Empty && cmbMainGroup.SelectedIndex > -1)
+                if (txtId.Text != string.Empty && txtCode.Text != string.Empty && txtName.Text != string.Empty )
                 {
+                   if( cmbMainGroup.SelectedIndex ==-1 && radioTransaction.Checked==true)
+                    {
+                        MessageBox.Show("تاكد من المجموعة الرئيسية", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     string isFinal_ = radioParent.Checked ? "0" : "1";
-
-                    dal.Execute_1(@" INSERT INTO dbo.AssetsGroup(Id, Code, Name, Name_L, MainId, 
+                    
+                    dal.Execute_1(@" INSERT INTO AssetsGroup(Id, Code, Name, Name_L, MainId, 
                     Notes, AssetAcc, Deprec_Acc, A_Deprec_Acc, G_Sales_Acc, L_Sales_Acc, RG_Acc, RL_Acc,isFinal)
-                    VALUES('" + txtId.Text + "," + txtCode.Text + "," + txtName.Text + "," +
-                    txtName_L.Text + "," + cmbMainGroup.SelectedValue + "," + txtNotes.Text +
-                    "," + txtAssAcc.ID.Text + "," + txtDepAcc.ID.Text + "," + txtADepAcc.ID.Text +
-                    "," + txtGSAcc.ID.Text + "," + txtLSAcc.ID.Text + "," + txtRGAcc.ID.Text +
-                    "," + txtRLAcc.ID.Text + ","+isFinal_+"')");
+                    VALUES('" + txtId.Text + "','" + txtCode.Text + "','" + txtName.Text + "','" +
+                    txtName_L.Text + "','" + cmbMainGroup.SelectedValue + "','" + txtNotes.Text +
+                    "','" + txtAssAcc.ID.Text + "','" + txtDepAcc.ID.Text + "','" + txtADepAcc.ID.Text +
+                    "','" + txtGSAcc.ID.Text + "','" + txtLSAcc.ID.Text + "','" + txtRGAcc.ID.Text +
+                    "','" + txtRLAcc.ID.Text + "','"+isFinal_+"')");
 
                     MessageBox.Show("تم الحفظ بنجاح", "تاكيد الحفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

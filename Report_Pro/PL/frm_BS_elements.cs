@@ -317,9 +317,9 @@ namespace Report_Pro.PL
 
 
                         dal.Execute_1(@"INSERT INTO tbl1 (ser_no,acc_Code,debit,credir,desription,G_date)
-                        VALUES ('"+txtSerNo.Text.ToString()+","+ DgRow.Cells[2].Value.ToString()+","+
-                        DgRow.Cells[0].Value.ToString().ToDecimal()+","+DgRow.Cells[1].Value.ToString().ToDecimal()+
-                        ","+dGV_Item.Rows[i].Cells[4].Value.ToString()+","+dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss") +"')");
+                        VALUES ('"+txtSerNo.Text.ToString()+"','"+ DgRow.Cells[2].Value.ToString()+"','"+
+                        DgRow.Cells[0].Value.ToString().ToDecimal()+"','"+DgRow.Cells[1].Value.ToString().ToDecimal()+
+                        "','"+dGV_Item.Rows[i].Cells[4].Value.ToString()+"','"+dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss") +"')");
 
                     }
 

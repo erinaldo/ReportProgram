@@ -81,6 +81,7 @@
             this.M57 = new DevComponents.DotNetBar.ButtonItem();
             this.M58 = new DevComponents.DotNetBar.ButtonItem();
             this.M59 = new DevComponents.DotNetBar.ButtonItem();
+            this.M60 = new DevComponents.DotNetBar.ButtonItem();
             this.M6 = new DevComponents.DotNetBar.ButtonItem();
             this.M61 = new DevComponents.DotNetBar.ButtonItem();
             this.M62 = new DevComponents.DotNetBar.ButtonItem();
@@ -104,12 +105,13 @@
             this.M715 = new DevComponents.DotNetBar.ButtonItem();
             this.M716 = new DevComponents.DotNetBar.ButtonItem();
             this.M717 = new DevComponents.DotNetBar.ButtonItem();
+            this.M86 = new DevComponents.DotNetBar.ButtonItem();
+            this.M718 = new DevComponents.DotNetBar.ButtonItem();
             this.M8 = new DevComponents.DotNetBar.ButtonItem();
             this.M81 = new DevComponents.DotNetBar.ButtonItem();
             this.M82 = new DevComponents.DotNetBar.ButtonItem();
             this.M83 = new DevComponents.DotNetBar.ButtonItem();
             this.M84 = new DevComponents.DotNetBar.ButtonItem();
-            this.M86 = new DevComponents.DotNetBar.ButtonItem();
             this.M87 = new DevComponents.DotNetBar.ButtonItem();
             this.M87_1 = new DevComponents.DotNetBar.ButtonItem();
             this.M87_2 = new DevComponents.DotNetBar.ButtonItem();
@@ -117,6 +119,7 @@
             this.M_Loans_1 = new DevComponents.DotNetBar.ButtonItem();
             this.M_Loans_2 = new DevComponents.DotNetBar.ButtonItem();
             this.M_Loans_3 = new DevComponents.DotNetBar.ButtonItem();
+            this.M_Loans_4 = new DevComponents.DotNetBar.ButtonItem();
             this.M9 = new DevComponents.DotNetBar.ButtonItem();
             this.M91 = new DevComponents.DotNetBar.ButtonItem();
             this.M911 = new DevComponents.DotNetBar.ButtonItem();
@@ -142,6 +145,8 @@
             this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem8 = new DevComponents.DotNetBar.ButtonItem();
             this.btn_CashTransaction = new DevComponents.DotNetBar.ButtonItem();
+            this.btnCash_1 = new DevComponents.DotNetBar.ButtonItem();
+            this.btnCash_2 = new DevComponents.DotNetBar.ButtonItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnChangBranch = new DevComponents.DotNetBar.ButtonX();
             this.TV1 = new System.Windows.Forms.TreeView();
@@ -153,7 +158,6 @@
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem18 = new DevComponents.DotNetBar.ButtonItem();
-            this.M60 = new DevComponents.DotNetBar.ButtonItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -540,6 +544,12 @@
             this.M59.Name = "M59";
             this.M59.Click += new System.EventHandler(this.M59_Click);
             // 
+            // M60
+            // 
+            resources.ApplyResources(this.M60, "M60");
+            this.M60.Name = "M60";
+            this.M60.Click += new System.EventHandler(this.M60_Click);
+            // 
             // M6
             // 
             resources.ApplyResources(this.M6, "M6");
@@ -598,7 +608,9 @@
             this.M714,
             this.M715,
             this.M716,
-            this.M717});
+            this.M717,
+            this.M86,
+            this.M718});
             this.M7.SubItemsExpandWidth = 14;
             this.M7.Click += new System.EventHandler(this.buttonItem3_Click_1);
             // 
@@ -707,6 +719,18 @@
             this.M717.Name = "M717";
             this.M717.Click += new System.EventHandler(this.M717_Click);
             // 
+            // M86
+            // 
+            resources.ApplyResources(this.M86, "M86");
+            this.M86.Name = "M86";
+            this.M86.Click += new System.EventHandler(this.M86_Click);
+            // 
+            // M718
+            // 
+            resources.ApplyResources(this.M718, "M718");
+            this.M718.Name = "M718";
+            this.M718.Click += new System.EventHandler(this.M718_Click);
+            // 
             // M8
             // 
             resources.ApplyResources(this.M8, "M8");
@@ -716,7 +740,6 @@
             this.M82,
             this.M83,
             this.M84,
-            this.M86,
             this.M87});
             this.M8.SubItemsExpandWidth = 14;
             this.M8.Click += new System.EventHandler(this.M8_Click);
@@ -744,12 +767,6 @@
             resources.ApplyResources(this.M84, "M84");
             this.M84.Name = "M84";
             this.M84.Click += new System.EventHandler(this.M84_Click);
-            // 
-            // M86
-            // 
-            resources.ApplyResources(this.M86, "M86");
-            this.M86.Name = "M86";
-            this.M86.Click += new System.EventHandler(this.M86_Click);
             // 
             // M87
             // 
@@ -779,7 +796,8 @@
             this.M_Loans.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.M_Loans_1,
             this.M_Loans_2,
-            this.M_Loans_3});
+            this.M_Loans_3,
+            this.M_Loans_4});
             this.M_Loans.SubItemsExpandWidth = 14;
             this.M_Loans.Click += new System.EventHandler(this.M_Loans_Click);
             // 
@@ -800,6 +818,12 @@
             resources.ApplyResources(this.M_Loans_3, "M_Loans_3");
             this.M_Loans_3.Name = "M_Loans_3";
             this.M_Loans_3.Click += new System.EventHandler(this.M_Loans_3_Click);
+            // 
+            // M_Loans_4
+            // 
+            resources.ApplyResources(this.M_Loans_4, "M_Loans_4");
+            this.M_Loans_4.Name = "M_Loans_4";
+            this.M_Loans_4.Click += new System.EventHandler(this.M_Loans_4_Click);
             // 
             // M9
             // 
@@ -976,8 +1000,23 @@
             // 
             resources.ApplyResources(this.btn_CashTransaction, "btn_CashTransaction");
             this.btn_CashTransaction.Name = "btn_CashTransaction";
+            this.btn_CashTransaction.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnCash_1,
+            this.btnCash_2});
             this.btn_CashTransaction.SubItemsExpandWidth = 14;
             this.btn_CashTransaction.Click += new System.EventHandler(this.btn_CashTransaction_Click);
+            // 
+            // btnCash_1
+            // 
+            resources.ApplyResources(this.btnCash_1, "btnCash_1");
+            this.btnCash_1.Name = "btnCash_1";
+            this.btnCash_1.Click += new System.EventHandler(this.btnCash_1_Click);
+            // 
+            // btnCash_2
+            // 
+            resources.ApplyResources(this.btnCash_2, "btnCash_2");
+            this.btnCash_2.Name = "btnCash_2";
+            this.btnCash_2.Click += new System.EventHandler(this.btnCash_2_Click);
             // 
             // panel2
             // 
@@ -1075,12 +1114,6 @@
             // 
             resources.ApplyResources(this.buttonItem18, "buttonItem18");
             this.buttonItem18.Name = "buttonItem18";
-            // 
-            // M60
-            // 
-            resources.ApplyResources(this.M60, "M60");
-            this.M60.Name = "M60";
-            this.M60.Click += new System.EventHandler(this.M60_Click);
             // 
             // Frm_Main
             // 
@@ -1239,5 +1272,9 @@
         private DevComponents.DotNetBar.ButtonItem M58;
         private DevComponents.DotNetBar.ButtonItem M59;
         private DevComponents.DotNetBar.ButtonItem M60;
+        private DevComponents.DotNetBar.ButtonItem M_Loans_4;
+        private DevComponents.DotNetBar.ButtonItem btnCash_1;
+        private DevComponents.DotNetBar.ButtonItem btnCash_2;
+        private DevComponents.DotNetBar.ButtonItem M718;
     }
 }

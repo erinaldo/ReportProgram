@@ -191,18 +191,25 @@ namespace Report_Pro.PL
             getJorSer();
             showDetails();
 
-
-            if (dGV_Item.Rows.Count > 0)
+            DataTable dt_ = dal.getDataTabl_1(@"SELECT pass_id,Description,Password  FROM tblPassword where pass_id='pass3' and Password='" + txtpass.Text + "' ");
+            if (dt_.Rows.Count > 0)
             {
-                btn_AddJor.Enabled = true;
-                buttonX2.Enabled = true;
+                if (dGV_Item.Rows.Count > 0 && txtpass.Text == dt_.Rows[0]["Password"].ToString())
+                {
+                    btn_AddJor.Enabled = true;
+                    buttonX2.Enabled = true;
+                }
+                else
+                {
+                    btn_AddJor.Enabled = false;
+                    buttonX2.Enabled = false;
+                }
             }
             else
             {
                 btn_AddJor.Enabled = false;
                 buttonX2.Enabled = false;
             }
-
             total_inv();
             resizeDG();
 
@@ -336,6 +343,29 @@ namespace Report_Pro.PL
                 DataGridViewRow row_ = dGV_Item.Rows[i];
                 dal.Execute_1(@"UPDATE P_expenses_T2 SET Recorded=NULL,Jor_No=NULL WHERE id=  '" + row_.Cells[10].Value.ToString() + "' and P_ser='" + row_.Cells[11].Value.ToString() + "' ");
 
+            }
+        }
+
+        private void txtpass_TextChanged(object sender, EventArgs e)
+        {
+            DataTable dt_ = dal.getDataTabl_1(@"SELECT pass_id,Description,Password  FROM tblPassword where pass_id='pass3' and Password='" + txtpass.Text + "' ");
+            if (dt_.Rows.Count > 0)
+            {
+                if (dGV_Item.Rows.Count > 0 && txtpass.Text == dt_.Rows[0]["Password"].ToString())
+                {
+                    btn_AddJor.Enabled = true;
+                    buttonX2.Enabled = true;
+                }
+                else
+                {
+                    btn_AddJor.Enabled = false;
+                    buttonX2.Enabled = false;
+                }
+            }
+            else
+            {
+                btn_AddJor.Enabled = false;
+                buttonX2.Enabled = false;
             }
         }
     }

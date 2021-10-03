@@ -162,6 +162,22 @@ namespace Report_Pro.PL{
             {
                 cmb_DB_1.Text = "CUST_ACC_WH";
             }
+            else if (CompanyDB.SelectedIndex == 3)
+            {
+                cmb_DB_1.Text = "Qatar";
+            }
+            else if (CompanyDB.SelectedIndex == 4)
+            {
+                cmb_DB_1.Text = "Kuwait";
+            }
+            else if (CompanyDB.SelectedIndex == 5)
+            {
+                cmb_DB_1.Text = "Bahrain";
+            }
+            else if (CompanyDB.SelectedIndex == 6)
+            {
+                cmb_DB_1.Text = "Oman";
+            }
         }
 
 

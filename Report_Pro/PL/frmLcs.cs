@@ -524,6 +524,14 @@ namespace Report_Pro.PL
                     txtMuskDownP.Value = 0;
                 }
 
+                if (txtBank.ID.Text == "122102")
+                {
+                   int lcDates = ((TimeSpan)(ExpiryDate.Value - OpenDate.Value)).Days;
+                    double ryadadd = Math.Round(.005 * lcDates * txtRate.Value * Convert.ToDouble(Amount.Text) * (txtAddValue.Value + 100) / 100 / 360, 2);
+                    txtAddFees.Text = ryadadd.ToString();
+                    txtopenFess.Value += ryadadd;
+                }
+
                 //----------------Totals & VAT --------------------------------
                 txtMargin.Text = (Convert.ToDouble(Amount.Text) * txtRate.Value * (txtAddValue.Value + 100) / 100 * Convert.ToDouble(marginRatio.Text) / 100).ToString();
                 txtopenFess.Value = txtIssuSAMA.Value + txtAddFees.Value;
@@ -923,6 +931,22 @@ namespace Report_Pro.PL
 
         private void label9_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void txtComnication_KeyUp(object sender, KeyEventArgs e)
+        {
+            TotalFess.Value = txtopenFess.Value + txtComnication.Value + txtotharFess.Value + txtAcceptance.Value + txtMuskDownP.Value;
+
+            if (OpenDate.Value < new DateTime(2020, 7, 1))
+            {
+                txtVat.Value = TotalFess.Value * .05;
+            }
+            else
+            {
+                txtVat.Value = TotalFess.Value * .15;
+            }
+            txtTotal.Value = TotalFess.Value + txtVat.Value;
 
         }
     }

@@ -35,9 +35,12 @@
             this.BSave = new DevComponents.DotNetBar.ButtonItem();
             this.BEdit = new DevComponents.DotNetBar.ButtonItem();
             this.BSearch = new DevComponents.DotNetBar.ButtonItem();
-            this.BExit = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.btnStatment = new DevComponents.DotNetBar.ButtonItem();
+            this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.DGV1 = new System.Windows.Forms.DataGridView();
             this.LShipDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.ExpiryDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.OpenDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
@@ -90,6 +93,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
+            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
+            this.recivePanel = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnRecive = new DevComponents.DotNetBar.ButtonX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.rdoReceve = new System.Windows.Forms.RadioButton();
+            this.rdoNotReceve = new System.Windows.Forms.RadioButton();
+            this.reciveDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
+            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.loanPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
@@ -118,17 +131,9 @@
             this.rdoPaied = new System.Windows.Forms.RadioButton();
             this.rdoNotPaied = new System.Windows.Forms.RadioButton();
             this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
-            this.recivePanel = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.btnRecive = new DevComponents.DotNetBar.ButtonX();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.rdoReceve = new System.Windows.Forms.RadioButton();
-            this.rdoNotReceve = new System.Windows.Forms.RadioButton();
-            this.reciveDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.groupPanel1.SuspendLayout();
+            this.groupPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LShipDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiryDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpenDate)).BeginInit();
@@ -143,6 +148,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.InvAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.tabControlPanel1.SuspendLayout();
+            this.tabControlPanel2.SuspendLayout();
+            this.recivePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reciveDate)).BeginInit();
             this.tabControlPanel3.SuspendLayout();
             this.groupPanel4.SuspendLayout();
             this.loanPanel.SuspendLayout();
@@ -150,10 +159,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NoOfPayments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoanValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PayDate)).BeginInit();
-            this.tabControlPanel2.SuspendLayout();
-            this.recivePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reciveDate)).BeginInit();
-            this.tabControlPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonBar1
@@ -167,8 +172,9 @@
             this.BSave,
             this.BEdit,
             this.BSearch,
-            this.BExit,
-            this.btnStatment});
+            this.buttonItem1,
+            this.btnStatment,
+            this.BExit});
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TitleVisible = false;
@@ -210,14 +216,14 @@
             this.BSearch.SubItemsExpandWidth = 14;
             this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
             // 
-            // BExit
+            // buttonItem1
             // 
-            resources.ApplyResources(this.BExit, "BExit");
-            this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.BExit.Image = global::Report_Pro.Properties.Resources.Exit_icon;
-            this.BExit.Name = "BExit";
-            this.BExit.SubItemsExpandWidth = 14;
-            this.BExit.Click += new System.EventHandler(this.BExit_Click);
+            resources.ApplyResources(this.buttonItem1, "buttonItem1");
+            this.buttonItem1.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem1.Image = global::Report_Pro.Properties.Resources.Exit_icon;
+            this.buttonItem1.Name = "buttonItem1";
+            this.buttonItem1.SubItemsExpandWidth = 14;
+            this.buttonItem1.Click += new System.EventHandler(this.buttonItem1_Click);
             // 
             // btnStatment
             // 
@@ -229,11 +235,22 @@
             this.btnStatment.SubItemsExpandWidth = 14;
             this.btnStatment.Click += new System.EventHandler(this.btnStatment_Click);
             // 
+            // BExit
+            // 
+            resources.ApplyResources(this.BExit, "BExit");
+            this.BExit.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.BExit.Image = global::Report_Pro.Properties.Resources.logout;
+            this.BExit.ImageFixedSize = new System.Drawing.Size(16, 16);
+            this.BExit.Name = "BExit";
+            this.BExit.SubItemsExpandWidth = 14;
+            this.BExit.Click += new System.EventHandler(this.BExit_Click);
+            // 
             // groupPanel1
             // 
             resources.ApplyResources(this.groupPanel1, "groupPanel1");
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.groupPanel3);
             this.groupPanel1.Controls.Add(this.LShipDate);
             this.groupPanel1.Controls.Add(this.ExpiryDate);
             this.groupPanel1.Controls.Add(this.OpenDate);
@@ -290,6 +307,47 @@
             this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             this.groupPanel1.TabStop = true;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click_1);
+            // 
+            // groupPanel3
+            // 
+            resources.ApplyResources(this.groupPanel3, "groupPanel3");
+            this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.DGV1);
+            this.groupPanel3.Name = "groupPanel3";
+            // 
+            // 
+            // 
+            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel3.Style.BackColorGradientAngle = 90;
+            this.groupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderBottomWidth = 1;
+            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderLeftWidth = 1;
+            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderRightWidth = 1;
+            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderTopWidth = 1;
+            this.groupPanel3.Style.CornerDiameter = 4;
+            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // DGV1
+            // 
+            resources.ApplyResources(this.DGV1, "DGV1");
+            this.DGV1.AllowUserToAddRows = false;
+            this.DGV1.AllowUserToDeleteRows = false;
+            this.DGV1.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV1.MultiSelect = false;
+            this.DGV1.Name = "DGV1";
+            this.DGV1.ReadOnly = true;
+            this.DGV1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV1.DoubleClick += new System.EventHandler(this.DGV1_DoubleClick);
             // 
             // LShipDate
             // 
@@ -1077,15 +1135,179 @@
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.CanReorderTabs = true;
             this.tabControl1.Controls.Add(this.tabControlPanel1);
-            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
+            this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.SelectedTabIndex = 1;
+            this.tabControl1.SelectedTabIndex = 0;
             this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabControl1.Tabs.Add(this.tabItem1);
             this.tabControl1.Tabs.Add(this.tabItem2);
             this.tabControl1.Tabs.Add(this.tabItem3);
+            // 
+            // tabControlPanel1
+            // 
+            resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
+            this.tabControlPanel1.Controls.Add(this.groupPanel2);
+            this.tabControlPanel1.Name = "tabControlPanel1";
+            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel1.Style.GradientAngle = 90;
+            this.tabControlPanel1.TabItem = this.tabItem1;
+            // 
+            // tabItem1
+            // 
+            this.tabItem1.AttachedControl = this.tabControlPanel1;
+            this.tabItem1.Name = "tabItem1";
+            resources.ApplyResources(this.tabItem1, "tabItem1");
+            // 
+            // tabControlPanel2
+            // 
+            resources.ApplyResources(this.tabControlPanel2, "tabControlPanel2");
+            this.tabControlPanel2.Controls.Add(this.recivePanel);
+            this.tabControlPanel2.Name = "tabControlPanel2";
+            this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel2.Style.GradientAngle = 90;
+            this.tabControlPanel2.TabItem = this.tabItem2;
+            // 
+            // recivePanel
+            // 
+            resources.ApplyResources(this.recivePanel, "recivePanel");
+            this.recivePanel.CanvasColor = System.Drawing.SystemColors.Control;
+            this.recivePanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.recivePanel.Controls.Add(this.btnRecive);
+            this.recivePanel.Controls.Add(this.labelX1);
+            this.recivePanel.Controls.Add(this.rdoReceve);
+            this.recivePanel.Controls.Add(this.rdoNotReceve);
+            this.recivePanel.Controls.Add(this.reciveDate);
+            this.recivePanel.Name = "recivePanel";
+            // 
+            // 
+            // 
+            this.recivePanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.recivePanel.Style.BackColorGradientAngle = 90;
+            this.recivePanel.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.recivePanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.recivePanel.Style.BorderBottomWidth = 1;
+            this.recivePanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.recivePanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.recivePanel.Style.BorderLeftWidth = 1;
+            this.recivePanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.recivePanel.Style.BorderRightWidth = 1;
+            this.recivePanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.recivePanel.Style.BorderTopWidth = 1;
+            this.recivePanel.Style.CornerDiameter = 4;
+            this.recivePanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.recivePanel.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.recivePanel.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.recivePanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // btnRecive
+            // 
+            resources.ApplyResources(this.btnRecive, "btnRecive");
+            this.btnRecive.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnRecive.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnRecive.Name = "btnRecive";
+            this.btnRecive.Click += new System.EventHandler(this.btnRecive_Click);
+            // 
+            // labelX1
+            // 
+            resources.ApplyResources(this.labelX1, "labelX1");
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            this.labelX1.Name = "labelX1";
+            // 
+            // rdoReceve
+            // 
+            resources.ApplyResources(this.rdoReceve, "rdoReceve");
+            this.rdoReceve.BackColor = System.Drawing.Color.Transparent;
+            this.rdoReceve.Name = "rdoReceve";
+            this.rdoReceve.UseVisualStyleBackColor = false;
+            // 
+            // rdoNotReceve
+            // 
+            resources.ApplyResources(this.rdoNotReceve, "rdoNotReceve");
+            this.rdoNotReceve.BackColor = System.Drawing.Color.Transparent;
+            this.rdoNotReceve.Checked = true;
+            this.rdoNotReceve.Name = "rdoNotReceve";
+            this.rdoNotReceve.TabStop = true;
+            this.rdoNotReceve.UseVisualStyleBackColor = false;
+            // 
+            // reciveDate
+            // 
+            resources.ApplyResources(this.reciveDate, "reciveDate");
+            // 
+            // 
+            // 
+            this.reciveDate.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.reciveDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonClear.DisplayPosition")));
+            this.reciveDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonClear.Image")));
+            this.reciveDate.ButtonClear.Text = resources.GetString("reciveDate.ButtonClear.Text");
+            this.reciveDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonCustom.DisplayPosition")));
+            this.reciveDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonCustom.Image")));
+            this.reciveDate.ButtonCustom.Text = resources.GetString("reciveDate.ButtonCustom.Text");
+            this.reciveDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonCustom2.DisplayPosition")));
+            this.reciveDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonCustom2.Image")));
+            this.reciveDate.ButtonCustom2.Text = resources.GetString("reciveDate.ButtonCustom2.Text");
+            this.reciveDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonDropDown.DisplayPosition")));
+            this.reciveDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonDropDown.Image")));
+            this.reciveDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
+            this.reciveDate.ButtonDropDown.Text = resources.GetString("reciveDate.ButtonDropDown.Text");
+            this.reciveDate.ButtonDropDown.Visible = true;
+            this.reciveDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonFreeText.DisplayPosition")));
+            this.reciveDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonFreeText.Image")));
+            this.reciveDate.ButtonFreeText.Text = resources.GetString("reciveDate.ButtonFreeText.Text");
+            // 
+            // 
+            // 
+            this.reciveDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("reciveDate.MonthCalendar.AnnuallyMarkedDates")));
+            // 
+            // 
+            // 
+            this.reciveDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
+            this.reciveDate.MonthCalendar.Category = resources.GetString("reciveDate.MonthCalendar.Category");
+            this.reciveDate.MonthCalendar.ClearButtonVisible = true;
+            this.reciveDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("reciveDate.MonthCalendar.CommandParameter")));
+            // 
+            // 
+            // 
+            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
+            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
+            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
+            this.reciveDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("reciveDate.MonthCalendar.DayNames")));
+            this.reciveDate.MonthCalendar.Description = resources.GetString("reciveDate.MonthCalendar.Description");
+            this.reciveDate.MonthCalendar.DisplayMonth = new System.DateTime(2020, 7, 1, 0, 0, 0, 0);
+            this.reciveDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("reciveDate.MonthCalendar.MarkedDates")));
+            this.reciveDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("reciveDate.MonthCalendar.MonthlyMarkedDates")));
+            // 
+            // 
+            // 
+            this.reciveDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.reciveDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
+            this.reciveDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.reciveDate.MonthCalendar.Tag = resources.GetString("reciveDate.MonthCalendar.Tag");
+            this.reciveDate.MonthCalendar.Text = resources.GetString("reciveDate.MonthCalendar.Text");
+            this.reciveDate.MonthCalendar.TodayButtonVisible = true;
+            this.reciveDate.MonthCalendar.Tooltip = resources.GetString("reciveDate.MonthCalendar.Tooltip");
+            this.reciveDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("reciveDate.MonthCalendar.WeeklyMarkedDays")));
+            this.reciveDate.Name = "reciveDate";
+            // 
+            // tabItem2
+            // 
+            this.tabItem2.AttachedControl = this.tabControlPanel2;
+            this.tabItem2.Name = "tabItem2";
+            resources.ApplyResources(this.tabItem2, "tabItem2");
             // 
             // tabControlPanel3
             // 
@@ -1494,170 +1716,6 @@
             this.tabItem3.Name = "tabItem3";
             resources.ApplyResources(this.tabItem3, "tabItem3");
             // 
-            // tabControlPanel2
-            // 
-            resources.ApplyResources(this.tabControlPanel2, "tabControlPanel2");
-            this.tabControlPanel2.Controls.Add(this.recivePanel);
-            this.tabControlPanel2.Name = "tabControlPanel2";
-            this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel2.Style.GradientAngle = 90;
-            this.tabControlPanel2.TabItem = this.tabItem2;
-            // 
-            // recivePanel
-            // 
-            resources.ApplyResources(this.recivePanel, "recivePanel");
-            this.recivePanel.CanvasColor = System.Drawing.SystemColors.Control;
-            this.recivePanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.recivePanel.Controls.Add(this.btnRecive);
-            this.recivePanel.Controls.Add(this.labelX1);
-            this.recivePanel.Controls.Add(this.rdoReceve);
-            this.recivePanel.Controls.Add(this.rdoNotReceve);
-            this.recivePanel.Controls.Add(this.reciveDate);
-            this.recivePanel.Name = "recivePanel";
-            // 
-            // 
-            // 
-            this.recivePanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.recivePanel.Style.BackColorGradientAngle = 90;
-            this.recivePanel.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.recivePanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.recivePanel.Style.BorderBottomWidth = 1;
-            this.recivePanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.recivePanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.recivePanel.Style.BorderLeftWidth = 1;
-            this.recivePanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.recivePanel.Style.BorderRightWidth = 1;
-            this.recivePanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.recivePanel.Style.BorderTopWidth = 1;
-            this.recivePanel.Style.CornerDiameter = 4;
-            this.recivePanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.recivePanel.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.recivePanel.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.recivePanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // btnRecive
-            // 
-            resources.ApplyResources(this.btnRecive, "btnRecive");
-            this.btnRecive.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnRecive.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnRecive.Name = "btnRecive";
-            this.btnRecive.Click += new System.EventHandler(this.btnRecive_Click);
-            // 
-            // labelX1
-            // 
-            resources.ApplyResources(this.labelX1, "labelX1");
-            this.labelX1.BackColor = System.Drawing.Color.Transparent;
-            this.labelX1.Name = "labelX1";
-            // 
-            // rdoReceve
-            // 
-            resources.ApplyResources(this.rdoReceve, "rdoReceve");
-            this.rdoReceve.BackColor = System.Drawing.Color.Transparent;
-            this.rdoReceve.Name = "rdoReceve";
-            this.rdoReceve.UseVisualStyleBackColor = false;
-            // 
-            // rdoNotReceve
-            // 
-            resources.ApplyResources(this.rdoNotReceve, "rdoNotReceve");
-            this.rdoNotReceve.BackColor = System.Drawing.Color.Transparent;
-            this.rdoNotReceve.Checked = true;
-            this.rdoNotReceve.Name = "rdoNotReceve";
-            this.rdoNotReceve.TabStop = true;
-            this.rdoNotReceve.UseVisualStyleBackColor = false;
-            // 
-            // reciveDate
-            // 
-            resources.ApplyResources(this.reciveDate, "reciveDate");
-            // 
-            // 
-            // 
-            this.reciveDate.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.reciveDate.ButtonClear.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonClear.DisplayPosition")));
-            this.reciveDate.ButtonClear.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonClear.Image")));
-            this.reciveDate.ButtonClear.Text = resources.GetString("reciveDate.ButtonClear.Text");
-            this.reciveDate.ButtonCustom.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonCustom.DisplayPosition")));
-            this.reciveDate.ButtonCustom.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonCustom.Image")));
-            this.reciveDate.ButtonCustom.Text = resources.GetString("reciveDate.ButtonCustom.Text");
-            this.reciveDate.ButtonCustom2.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonCustom2.DisplayPosition")));
-            this.reciveDate.ButtonCustom2.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonCustom2.Image")));
-            this.reciveDate.ButtonCustom2.Text = resources.GetString("reciveDate.ButtonCustom2.Text");
-            this.reciveDate.ButtonDropDown.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonDropDown.DisplayPosition")));
-            this.reciveDate.ButtonDropDown.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonDropDown.Image")));
-            this.reciveDate.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.reciveDate.ButtonDropDown.Text = resources.GetString("reciveDate.ButtonDropDown.Text");
-            this.reciveDate.ButtonDropDown.Visible = true;
-            this.reciveDate.ButtonFreeText.DisplayPosition = ((int)(resources.GetObject("reciveDate.ButtonFreeText.DisplayPosition")));
-            this.reciveDate.ButtonFreeText.Image = ((System.Drawing.Image)(resources.GetObject("reciveDate.ButtonFreeText.Image")));
-            this.reciveDate.ButtonFreeText.Text = resources.GetString("reciveDate.ButtonFreeText.Text");
-            // 
-            // 
-            // 
-            this.reciveDate.MonthCalendar.AnnuallyMarkedDates = ((System.DateTime[])(resources.GetObject("reciveDate.MonthCalendar.AnnuallyMarkedDates")));
-            // 
-            // 
-            // 
-            this.reciveDate.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
-            this.reciveDate.MonthCalendar.Category = resources.GetString("reciveDate.MonthCalendar.Category");
-            this.reciveDate.MonthCalendar.ClearButtonVisible = true;
-            this.reciveDate.MonthCalendar.CommandParameter = ((object)(resources.GetObject("reciveDate.MonthCalendar.CommandParameter")));
-            // 
-            // 
-            // 
-            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.reciveDate.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.reciveDate.MonthCalendar.DayNames = ((string[])(resources.GetObject("reciveDate.MonthCalendar.DayNames")));
-            this.reciveDate.MonthCalendar.Description = resources.GetString("reciveDate.MonthCalendar.Description");
-            this.reciveDate.MonthCalendar.DisplayMonth = new System.DateTime(2020, 7, 1, 0, 0, 0, 0);
-            this.reciveDate.MonthCalendar.MarkedDates = ((System.DateTime[])(resources.GetObject("reciveDate.MonthCalendar.MarkedDates")));
-            this.reciveDate.MonthCalendar.MonthlyMarkedDates = ((System.DateTime[])(resources.GetObject("reciveDate.MonthCalendar.MonthlyMarkedDates")));
-            // 
-            // 
-            // 
-            this.reciveDate.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.reciveDate.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.reciveDate.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.reciveDate.MonthCalendar.Tag = resources.GetString("reciveDate.MonthCalendar.Tag");
-            this.reciveDate.MonthCalendar.Text = resources.GetString("reciveDate.MonthCalendar.Text");
-            this.reciveDate.MonthCalendar.TodayButtonVisible = true;
-            this.reciveDate.MonthCalendar.Tooltip = resources.GetString("reciveDate.MonthCalendar.Tooltip");
-            this.reciveDate.MonthCalendar.WeeklyMarkedDays = ((System.DayOfWeek[])(resources.GetObject("reciveDate.MonthCalendar.WeeklyMarkedDays")));
-            this.reciveDate.Name = "reciveDate";
-            // 
-            // tabItem2
-            // 
-            this.tabItem2.AttachedControl = this.tabControlPanel2;
-            this.tabItem2.Name = "tabItem2";
-            resources.ApplyResources(this.tabItem2, "tabItem2");
-            // 
-            // tabControlPanel1
-            // 
-            resources.ApplyResources(this.tabControlPanel1, "tabControlPanel1");
-            this.tabControlPanel1.Controls.Add(this.groupPanel2);
-            this.tabControlPanel1.Name = "tabControlPanel1";
-            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel1.Style.GradientAngle = 90;
-            this.tabControlPanel1.TabItem = this.tabItem1;
-            // 
-            // tabItem1
-            // 
-            this.tabItem1.AttachedControl = this.tabControlPanel1;
-            this.tabItem1.Name = "tabItem1";
-            resources.ApplyResources(this.tabItem1, "tabItem1");
-            // 
             // FrmLcInv
             // 
             resources.ApplyResources(this, "$this");
@@ -1673,6 +1731,8 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLcInv_KeyDown);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
+            this.groupPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LShipDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExpiryDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpenDate)).EndInit();
@@ -1688,6 +1748,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.InvAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.tabControlPanel1.ResumeLayout(false);
+            this.tabControlPanel2.ResumeLayout(false);
+            this.recivePanel.ResumeLayout(false);
+            this.recivePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.reciveDate)).EndInit();
             this.tabControlPanel3.ResumeLayout(false);
             this.groupPanel4.ResumeLayout(false);
             this.groupPanel4.PerformLayout();
@@ -1697,11 +1762,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NoOfPayments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLoanValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PayDate)).EndInit();
-            this.tabControlPanel2.ResumeLayout(false);
-            this.recivePanel.ResumeLayout(false);
-            this.recivePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reciveDate)).EndInit();
-            this.tabControlPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1805,5 +1865,8 @@
         private DevComponents.Editors.DateTimeAdv.DateTimeInput OpenDate;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput InvMaturtyDate;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput InvShipDate;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
+        public System.Windows.Forms.DataGridView DGV1;
+        private DevComponents.DotNetBar.ButtonItem buttonItem1;
     }
 }

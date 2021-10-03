@@ -73,79 +73,84 @@ namespace Report_Pro.RPT
 
     private void btnReport_2_Click(object sender, EventArgs e)
     {
-            this.groupPanel2.Visible = false;
-            DataSet1 dataSet1 = new DataSet1();
-            DataTable dt_1 = new DataTable();
-            DataTable dt_2 = new DataTable();
-            dt_1 = dal.getDataTabl_1(@"select  c.Prev_no,d.Gr_name 
-          , SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Trading' and A.acc_no like '34%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno-loh else 0 END) as T_Indust " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company = 'Trading' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as T_GA " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Qatar' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as Q_GA_SAR " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Kuwait' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as K_GA_SAR " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Bahrain' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as B_GA_SAR " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Oman' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as O_GA_SAR " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Transportation' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as Trans_SAR " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '31%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_GA " +
-          ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '32%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_Indust " +
-
-          
-
-
-
-          " from GroupDB.dbo.daily_transaction  as A " +
-          "inner join GroupDB.dbo.payer2 as b  on A.ACC_NO=B.ACC_NO and A.BRANCH_code = b.BRANCH_code " +
-          "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as C on b.Temp1 =C.Gr_Code " +
-          "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as D on C.Prev_no =D.Gr_Code " +
-          "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
-          "where A.BRANCH_code like '%'  group by  c.Prev_no,d.Gr_name");
-
-
-            dt_2 = dal.getDataTabl_1(@"select 
-             SUM(CASE WHEN  A.Company = 'Trading' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno) else 0 END) as T_R " +
-          ", SUM(CASE WHEN  A.Company='Qatar' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as Q_R " +
-          ", SUM(CASE WHEN  A.Company='Kuwait' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as K_R " +
-          ", SUM(CASE WHEN  A.Company='Bahrain' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as B_R " +
-          ", SUM(CASE WHEN  A.Company='Oman' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as O_R " +
-          ", SUM(CASE WHEN  A.Company='Transportation' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as Trans_R " +
-          ", SUM(CASE WHEN  A.Company='factory' and A.acc_no like '4%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  (loh - meno)*e.Average_Rate else 0 END) as F_R " +
-          ", SUM(CASE WHEN A.Company = 'Trading' and A.ACC_NO like '123998%' and SOURCE_CODE like 'xs%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as T_S_R " +
-          ", SUM(CASE WHEN A.Company = 'factory' and A.ACC_NO = '120200001' and SOURCE_CODE like 'xs%' and CAST(A.g_date as date) between '2020-01-01' and '2020-12-31' THEN  meno - loh else 0 END) as F_S_R " +
+                this.groupPanel2.Visible = false;
+                DataSet1 dataSet1 = new DataSet1();
+                DataTable dt_1 = new DataTable();
+                DataTable dt_2 = new DataTable();
+                dt_1 = dal.getDataTabl_1(@"select  c.Prev_no,d.Gr_name 
+          , SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Trading' and A.acc_no like '34%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno-loh else 0 END) as T_Indust " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company = 'Trading' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno - loh else 0 END) as T_GA " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company = 'Trading' and A.acc_no like '33%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno - loh else 0 END) as T_F " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Qatar' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as Q_GA_SAR " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Kuwait' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as K_GA_SAR " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Bahrain' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as B_GA_SAR " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Oman' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as O_GA_SAR " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='Transportation' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as Trans_SAR " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '31%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_GA " +
+              ", SUM(CASE WHEN B.Temp1 like '" + Acc_Group.ID.Text + "%' and A.Company='factory' and A.acc_no like '32%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (meno-loh)*e.Average_Rate else 0 END) as F_Indust " +
 
 
 
-          " from GroupDB.dbo.daily_transaction  as A " +
-          "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
-          "where A.BRANCH_code like '%' ");
 
 
-            dataSet1.Tables.Add(dt_1);
-            dataSet1.Tables.Add(dt_2);
-           // dataSet1.WriteXmlSchema("schema1.xml");
-            Reports.rpt_Fees_Consolidated rpt = new Reports.rpt_Fees_Consolidated();
-            rpt.DataSource = dataSet1;
-            rpt.ShowPreview();
+              " from GroupDB.dbo.daily_transaction  as A " +
+              "inner join GroupDB.dbo.payer2 as b  on A.ACC_NO=B.ACC_NO and A.BRANCH_code = b.BRANCH_code " +
+              "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as C on b.Temp1 =C.Gr_Code " +
+              "inner join GroupDB.dbo.Wh_Costmers_Vendors_Group as D on C.Prev_no =D.Gr_Code " +
+              "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
+              "where A.BRANCH_code like '%'  group by  c.Prev_no,d.Gr_name");
 
-            if (Properties.Settings.Default.lungh == "0")
-            {
-                rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
-                rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.Yes;
-                rpt.pram1.Value = 0;
+
+                dt_2 = dal.getDataTabl_1(@"select 
+               SUM(CASE WHEN  A.Company = 'Trading' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno) else 0 END) as T_R " +
+              ", SUM(CASE WHEN  A.Company='Qatar' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno)*e.Average_Rate else 0 END) as Q_R " +
+              ", SUM(CASE WHEN  A.Company='Kuwait' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno)*e.Average_Rate else 0 END) as K_R " +
+              ", SUM(CASE WHEN  A.Company='Bahrain' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno)*e.Average_Rate else 0 END) as B_R " +
+              ", SUM(CASE WHEN  A.Company='Oman' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno)*e.Average_Rate else 0 END) as O_R " +
+              ", SUM(CASE WHEN  A.Company='Transportation' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno)*e.Average_Rate else 0 END) as Trans_R " +
+              ", SUM(CASE WHEN  A.Company='factory' and A.acc_no like '4%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  (loh - meno)*e.Average_Rate else 0 END) as F_R " +
+              ", SUM(CASE WHEN A.Company = 'Trading' and A.ACC_NO like '123998%' and SOURCE_CODE like 'xs%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno - loh else 0 END) as T_S_R " +
+              ", SUM(CASE WHEN A.Company = 'factory' and A.ACC_NO = '120200001' and SOURCE_CODE like 'xs%' and CAST(A.g_date as date) between '" + fromDate.Value.ToString("yyyy-MM-dd") + "' and '" + toDate.Value.ToString("yyyy-MM-dd") + "' THEN  meno - loh else 0 END) as F_S_R " +
+
+
+
+              " from GroupDB.dbo.daily_transaction  as A " +
+              "inner join GroupDB.dbo.Currency_tbl as E on e.Currency_Code = a.Currency_Code " +
+              "where A.BRANCH_code like '%' ");
+
+
+                dataSet1.Tables.Add(dt_1);
+                dataSet1.Tables.Add(dt_2);
+                dataSet1.WriteXmlSchema("schema1.xml");
+            RPT.rpt_Fees_Consolidated rpt = new RPT.rpt_Fees_Consolidated();
+            rpt.SetDataSource(dataSet1);
+            crystalReportViewer1.ReportSource = rpt;
+                //Reports.rpt_Fees_Consolidated rpt = new Reports.rpt_Fees_Consolidated();
+                //rpt.DataSource = dataSet1;
+                //rpt.ShowPreview();
+
+                //if (Properties.Settings.Default.lungh == "0")
+                //{
+                //    rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.Yes;
+                //    rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.Yes;
+                //    rpt.pram1.Value = 0;
+                //}
+                //else
+                //{
+                //    rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
+                //    rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
+                //    rpt.pram1.Value = 1;
+                //}
+
+                //rpt.lbl_Branch.Text = txtBranch.Desc.Text;
+                //rpt.lbl_Group.Text = Acc_Group.Desc.Text;
+                //rpt.lbl_FromDate.Text = fromDate.Value.ToShortDateString();
+                //rpt.lbl_ToDate.Text = toDate.Value.ToShortDateString();
+
             }
-            else
-            {
-                rpt.RightToLeft = DevExpress.XtraReports.UI.RightToLeft.No;
-                rpt.RightToLeftLayout = DevExpress.XtraReports.UI.RightToLeftLayout.No;
-                rpt.pram1.Value = 1;
-            }
 
-            rpt.lbl_Branch.Text = txtBranch.Desc.Text;
-            rpt.lbl_Group.Text = Acc_Group.Desc.Text;
-            rpt.lbl_FromDate.Text = fromDate.Value.ToShortDateString();
-            rpt.lbl_ToDate.Text = toDate.Value.ToShortDateString();
 
-        }
-
-        private void labelX5_Click(object sender, EventArgs e)
+            private void labelX5_Click(object sender, EventArgs e)
     {
 
     }

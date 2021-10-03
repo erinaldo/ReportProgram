@@ -20,8 +20,11 @@ namespace Report_Pro.RPT
         public frm_rpt_InventoryGroups()
         {
             InitializeComponent();
-            //this.dataGridView1.CellFormatting += dataGridView1_CellFormatting;
-            //this.dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
+            cmb_DimCategory.DataSource = dal.getDataTabl_1(@"select * FROM " + Properties.Settings.Default.Database_1 + ".dbo.Wh_Unit_dim");
+            cmb_DimCategory.DisplayMember = "Wh_Unit_dim";
+            cmb_DimCategory.ValueMember = "Wh_Unit_dim";
+            cmb_DimCategory.SelectedIndex = -1;
+
         }
         private void btn_print_Click(object sender, EventArgs e)
         {
@@ -80,6 +83,31 @@ namespace Report_Pro.RPT
 
         }
 
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            RPT.frm_rpt_InventoryItems frm = new RPT.frm_rpt_InventoryItems();
+            frm.Branch.ID.Text = Branch.ID.Text;
+            frm.Group.ID.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            frm.Group1.ID.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            frm.Item.ID.Text = Item.ID.Text;
+            frm.cmb_DimCategory.Text = cmb_DimCategory.Text;
+            frm.Uc_Transaction.ID.Text = Uc_Transaction.ID.Text;
+            frm.thick_1.Text = thick_1.Text;
+            frm.thick_2.Text = thick_2.Text;
+            frm.dTP1.Value = dTP1.Value;
+            frm.dTP2.Value = dTP2.Value;
+            frm.chR.Checked = chR.Checked;
+            frm.chC.Checked = chC.Checked;
+            frm.chF.Checked = chF.Checked;
+            frm.chS.Checked = chS.Checked;
+            frm.chP.Checked = chP.Checked;
+            frm.chX.Checked = chX.Checked;
+            frm.chZ.Checked = chZ.Checked;
+
+            frm.getInventoryByItems();
+            frm.ShowDialog();
+        }
+
         string languh = Properties.Settings.Default.lungh;
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -124,7 +152,7 @@ namespace Report_Pro.RPT
         public void getInventoryByGroup(){
 
   Cursor.Current = Cursors.WaitCursor;
-            groupBox1.Visible = false;
+           // groupBox1.Visible = false;
 
             choises();
 
@@ -216,11 +244,14 @@ Cursor.Current = Cursors.Default;
 
             totMonthelySales.Text =
                 (from DataGridViewRow row in dataGridView1.Rows
-                 where row.Cells[4].FormattedValue.ToString() != string.Empty 
+                 where row.Cells[4].FormattedValue.ToString() != string.Empty
                  // select Convert.ToDouble(row.Cells[0].FormattedValue)).Sum().ToString();
                  select (row.Cells[4].FormattedValue).ToString().ToDecimal()).Sum().ToString("N0");
-          
-            totBalancePeriod.Text = (totBalance.Text.ToDecimal() / totMonthelySales.Text.ToDecimal()).ToString("N2");
+            if (totMonthelySales.Text.ToDecimal() != 0)
+            {
+                totBalancePeriod.Text = (totBalance.Text.ToDecimal() / totMonthelySales.Text.ToDecimal()).ToString("N2");
+            }
+            else { "0".ToDecimal(); }
         }
 
 

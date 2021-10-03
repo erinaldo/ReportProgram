@@ -77,8 +77,8 @@ namespace Report_Pro.PL
         {
            
             dal.Execute_1("INSERT INTO LocationsTbl(Id,Code,Name,Name_L,BranchCode,Notes) VALUES('"+txtId.Text+ 
-                "," + txtCode.Text + "," + txtName.Text + "," + txtName_L.Text + "," + Branch.ID.Text + 
-                "," + txtNotes.Text + "')");
+                "','" + txtCode.Text + "','" + txtName.Text + "','" + txtName_L.Text + "','" + Branch.ID.Text + 
+                "','" + txtNotes.Text + "')");
             MessageBox.Show("تم الحفظ بنجاح", "تاكيد الحفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             search_();
         }

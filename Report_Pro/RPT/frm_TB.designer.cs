@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.button3 = new System.Windows.Forms.Button();
             this.Button2 = new System.Windows.Forms.Button();
@@ -86,7 +87,11 @@
             this.UC_Branch = new Report_Pro.MyControls.UC_Branch();
             this.UC_Acc = new Report_Pro.MyControls.UC_Acc();
             this.cachedCrystalReport21 = new Report_Pro.RPT.CachedCrystalReport2();
-            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Credit_B = new System.Windows.Forms.RadioButton();
+            this.debit_B = new System.Windows.Forms.RadioButton();
+            this.All_B = new System.Windows.Forms.RadioButton();
+            this.Zero_B = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
@@ -98,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGV3)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupPanel1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,6 +120,18 @@
             this.panel1.Size = new System.Drawing.Size(1172, 49);
             this.panel1.TabIndex = 51;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(545, 9);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(83, 31);
+            this.button4.TabIndex = 291;
+            this.button4.Text = "الميزان المجمع";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // buttonX6
             // 
@@ -182,9 +200,9 @@
             this.panel3.Controls.Add(this.DataGridView1);
             this.panel3.Controls.Add(this.groupPanel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 227);
+            this.panel3.Location = new System.Drawing.Point(0, 241);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1172, 474);
+            this.panel3.Size = new System.Drawing.Size(1172, 460);
             this.panel3.TabIndex = 56;
             // 
             // DataGridView1
@@ -207,10 +225,10 @@
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersWidth = 43;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(1172, 444);
+            this.DataGridView1.Size = new System.Drawing.Size(1172, 430);
             this.DataGridView1.TabIndex = 42;
             this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
@@ -244,9 +262,9 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle7.Format = "N2";
-            dataGridViewCellStyle7.NullValue = "0.00";
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = "0.00";
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column4.HeaderText = "الرصيد السابق";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -254,9 +272,9 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle8.Format = "N2";
-            dataGridViewCellStyle8.NullValue = "0.00";
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = "0.00";
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column5.HeaderText = "مدين";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -264,9 +282,9 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle9.Format = "N2";
-            dataGridViewCellStyle9.NullValue = "0.00";
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = "0.00";
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column6.HeaderText = "دائن";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
@@ -274,9 +292,9 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle10.Format = "N2";
-            dataGridViewCellStyle10.NullValue = "0.00";
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = "0.00";
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column7.HeaderText = "الرصيد الحالي";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
@@ -291,7 +309,7 @@
             this.groupPanel2.Controls.Add(this.T_Bb);
             this.groupPanel2.Controls.Add(this.T_Db);
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupPanel2.Location = new System.Drawing.Point(0, 444);
+            this.groupPanel2.Location = new System.Drawing.Point(0, 430);
             this.groupPanel2.Name = "groupPanel2";
             this.groupPanel2.Size = new System.Drawing.Size(1172, 30);
             // 
@@ -658,14 +676,14 @@
             this.DGV3.Location = new System.Drawing.Point(-3, 14);
             this.DGV3.Name = "DGV3";
             this.DGV3.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DGV3.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV3.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DGV3.RowHeadersVisible = false;
             this.DGV3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV3.Size = new System.Drawing.Size(270, 150);
@@ -728,6 +746,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.groupBox4);
             this.groupPanel1.Controls.Add(this.UC_Catogry);
             this.groupPanel1.Controls.Add(this.UC_cost);
             this.groupPanel1.Controls.Add(this.UC_Branch);
@@ -748,7 +767,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 49);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(1172, 178);
+            this.groupPanel1.Size = new System.Drawing.Size(1172, 192);
             // 
             // 
             // 
@@ -814,21 +833,73 @@
             this.UC_Acc.Location = new System.Drawing.Point(755, 32);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
             this.UC_Acc.Size = new System.Drawing.Size(310, 23);
             this.UC_Acc.TabIndex = 302;
             // 
-            // button4
+            // groupBox4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(545, 9);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 31);
-            this.button4.TabIndex = 291;
-            this.button4.Text = "الميزان المجمع";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.Zero_B);
+            this.groupBox4.Controls.Add(this.Credit_B);
+            this.groupBox4.Controls.Add(this.debit_B);
+            this.groupBox4.Controls.Add(this.All_B);
+            this.groupBox4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(278, 134);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(472, 35);
+            this.groupBox4.TabIndex = 306;
+            this.groupBox4.TabStop = false;
+            // 
+            // Credit_B
+            // 
+            this.Credit_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Credit_B.AutoSize = true;
+            this.Credit_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Credit_B.Location = new System.Drawing.Point(208, 14);
+            this.Credit_B.Name = "Credit_B";
+            this.Credit_B.Size = new System.Drawing.Size(90, 17);
+            this.Credit_B.TabIndex = 44;
+            this.Credit_B.Text = "الارصدة الدائنة";
+            this.Credit_B.UseVisualStyleBackColor = true;
+            // 
+            // debit_B
+            // 
+            this.debit_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.debit_B.AutoSize = true;
+            this.debit_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debit_B.Location = new System.Drawing.Point(320, 14);
+            this.debit_B.Name = "debit_B";
+            this.debit_B.Size = new System.Drawing.Size(94, 17);
+            this.debit_B.TabIndex = 43;
+            this.debit_B.Text = "الارصدة المدينة";
+            this.debit_B.UseVisualStyleBackColor = true;
+            // 
+            // All_B
+            // 
+            this.All_B.AutoSize = true;
+            this.All_B.Checked = true;
+            this.All_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.All_B.Location = new System.Drawing.Point(415, 14);
+            this.All_B.Name = "All_B";
+            this.All_B.Size = new System.Drawing.Size(55, 17);
+            this.All_B.TabIndex = 32;
+            this.All_B.TabStop = true;
+            this.All_B.Text = "الجميع";
+            this.All_B.UseVisualStyleBackColor = true;
+            // 
+            // Zero_B
+            // 
+            this.Zero_B.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Zero_B.AutoSize = true;
+            this.Zero_B.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Zero_B.Location = new System.Drawing.Point(90, 14);
+            this.Zero_B.Name = "Zero_B";
+            this.Zero_B.Size = new System.Drawing.Size(97, 17);
+            this.Zero_B.TabIndex = 45;
+            this.Zero_B.Text = "الارصدة الصفرية";
+            this.Zero_B.UseVisualStyleBackColor = true;
             // 
             // frm_TB
             // 
@@ -860,6 +931,8 @@
             this.groupBox3.PerformLayout();
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -919,5 +992,10 @@
         private CachedCrystalReport2 cachedCrystalReport21;
         private MyControls.UC_Catogry UC_Catogry;
         internal System.Windows.Forms.Button button4;
+        internal System.Windows.Forms.GroupBox groupBox4;
+        internal System.Windows.Forms.RadioButton Zero_B;
+        internal System.Windows.Forms.RadioButton Credit_B;
+        internal System.Windows.Forms.RadioButton debit_B;
+        internal System.Windows.Forms.RadioButton All_B;
     }
 }

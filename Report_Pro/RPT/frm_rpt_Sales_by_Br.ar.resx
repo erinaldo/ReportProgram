@@ -118,12 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnMonthelySales.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="btn_CustomersMonthelySales.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_CustomersMonthelySales.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 8</value>
+  </data>
+  <data name="btn_CustomersMonthelySales.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 42</value>
+  </data>
+  <data name="btnMonthelySales.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
   <data name="btnMonthelySales.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 8</value>
+    <value>404, 8</value>
   </data>
   <data name="btnMonthelySales.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -135,10 +144,10 @@
     <value>مبيعات الفروع الشهرية</value>
   </data>
   <data name="button5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 8</value>
+    <value>271, 8</value>
   </data>
   <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -150,10 +159,10 @@
     <value>ملخص المبيعات والمشتريات</value>
   </data>
   <data name="buttonX5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="buttonX5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 8</value>
+    <value>537, 8</value>
   </data>
   <data name="buttonX5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
@@ -165,10 +174,10 @@
     <value>المبيعات بالفواتير</value>
   </data>
   <data name="button15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 8</value>
+    <value>632, 8</value>
   </data>
   <data name="button15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 4, 5, 4</value>
@@ -180,13 +189,13 @@
     <value>المبيعات بالعملاء</value>
   </data>
   <data name="button13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Inherit</value>
   </data>
   <data name="button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 8</value>
+    <value>727, 8</value>
   </data>
   <data name="button13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -202,13 +211,13 @@
     <value>المبيعات الشهرية</value>
   </data>
   <data name="button4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Inherit</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>803, 8</value>
+    <value>822, 8</value>
   </data>
   <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -223,13 +232,13 @@
     <value>المبيعات بالاصناف</value>
   </data>
   <data name="button3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Inherit</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>898, 8</value>
+    <value>917, 8</value>
   </data>
   <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -244,13 +253,13 @@
     <value>المبيعات بالمجموعات وطريقة الدفع</value>
   </data>
   <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Inherit</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1037, 8</value>
+    <value>1056, 8</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -265,13 +274,13 @@
     <value>المبيعات بالمجموعات</value>
   </data>
   <data name="btn_Report.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="btn_Report.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Inherit</value>
   </data>
   <data name="btn_Report.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1132, 8</value>
+    <value>1151, 8</value>
   </data>
   <data name="btn_Report.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -286,13 +295,13 @@
     <value>المبيعات بالفروع</value>
   </data>
   <data name="btnOption.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Right</value>
   </data>
   <data name="btnOption.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Inherit</value>
   </data>
   <data name="btnOption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1281, 8</value>
+    <value>1300, 8</value>
   </data>
   <data name="btnOption.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -310,13 +319,13 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1381, 59</value>
+    <value>1400, 59</value>
   </data>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>734, 93</value>
+    <value>753, 93</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -331,7 +340,7 @@
     <value>Top, Right</value>
   </data>
   <data name="cmb_DimCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 88</value>
+    <value>583, 88</value>
   </data>
   <data name="cmb_DimCategory.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -343,7 +352,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>734, 63</value>
+    <value>753, 63</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -358,7 +367,7 @@
     <value>Top, Right</value>
   </data>
   <data name="payment_type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 58</value>
+    <value>583, 58</value>
   </data>
   <data name="payment_type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -370,7 +379,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1005, 158</value>
+    <value>1024, 158</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -385,7 +394,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1264, 159</value>
+    <value>1283, 159</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -400,7 +409,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1005, 190</value>
+    <value>1076, 182</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -415,7 +424,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1264, 191</value>
+    <value>1283, 191</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -430,7 +439,7 @@
     <value>Top, Right</value>
   </data>
   <data name="dTP2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 185</value>
+    <value>950, 177</value>
   </data>
   <data name="dTP2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -439,7 +448,7 @@
     <value>Top, Right</value>
   </data>
   <data name="dTP1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1141, 186</value>
+    <value>1174, 186</value>
   </data>
   <data name="dTP1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -451,7 +460,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1381, 708</value>
+    <value>1400, 708</value>
   </data>
   <data name="crystalReportViewer1.ToolPanelWidth" type="System.Int32, mscorlib">
     <value>300</value>
@@ -460,7 +469,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 27</value>
+    <value>317, 27</value>
   </data>
   <data name="buttonX2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -472,7 +481,7 @@
     <value>Top, Right</value>
   </data>
   <data name="buttonX1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 27</value>
+    <value>176, 27</value>
   </data>
   <data name="buttonX1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -556,7 +565,7 @@
     <value>داخلي</value>
   </data>
   <data name="groupPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 270</value>
+    <value>576, 270</value>
   </data>
   <data name="groupPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -616,7 +625,7 @@
     <value>الجميع</value>
   </data>
   <data name="groupPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 270</value>
+    <value>901, 270</value>
   </data>
   <data name="groupPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -736,7 +745,7 @@
     <value>نصف مصنع</value>
   </data>
   <data name="groupPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 124</value>
+    <value>576, 124</value>
   </data>
   <data name="groupPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -751,7 +760,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1264, 128</value>
+    <value>1283, 128</value>
   </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -766,7 +775,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1264, 91</value>
+    <value>1283, 91</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -781,7 +790,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1264, 60</value>
+    <value>1283, 60</value>
   </data>
   <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -796,7 +805,7 @@
     <value>Top, Right</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1264, 27</value>
+    <value>1283, 27</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 0, 5, 0</value>
@@ -811,7 +820,7 @@
     <value>Top, Right</value>
   </data>
   <data name="thick_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>931, 153</value>
+    <value>950, 153</value>
   </data>
   <data name="thick_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -823,7 +832,7 @@
     <value>Top, Right</value>
   </data>
   <data name="thick_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1190, 154</value>
+    <value>1207, 154</value>
   </data>
   <data name="thick_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -838,28 +847,28 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="UC_Branch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 27</value>
+    <value>950, 27</value>
   </data>
   <data name="UC_Branch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 27</value>
+    <value>323, 27</value>
   </data>
   <data name="Items.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Items.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 118</value>
+    <value>950, 118</value>
   </data>
   <data name="Items.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 27</value>
+    <value>323, 27</value>
   </data>
   <data name="Uc_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Uc_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 87</value>
+    <value>950, 87</value>
   </data>
   <data name="Uc_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 27</value>
+    <value>323, 27</value>
   </data>
   <data name="Uc_Acc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -868,19 +877,19 @@
     <value>Tahoma, 8pt</value>
   </data>
   <data name="Uc_Acc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>882, 58</value>
+    <value>950, 58</value>
   </data>
   <data name="Uc_Acc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 27</value>
+    <value>323, 27</value>
   </data>
   <data name="groupPanel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 59</value>
   </data>
   <data name="groupPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1381, 408</value>
+    <value>1400, 408</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1381, 767</value>
+    <value>1400, 767</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>

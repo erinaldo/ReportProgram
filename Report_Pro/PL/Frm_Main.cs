@@ -568,8 +568,8 @@ namespace Report_Pro.PL
 
         private void M51_Click(object sender, EventArgs e)
         {
-            openForm(new RPT.frm_rpt_inventory(), FormWindowState.Normal, 0);
-            //openForm(new RPT.frm_Inventory_Report(), FormWindowState.Normal, 0);
+            //openForm(new RPT.frm_rpt_inventory(), FormWindowState.Normal, 0);
+            openForm(new RPT.frm_Inventory_Report(), FormWindowState.Normal, 0);
 
         }
 
@@ -1124,7 +1124,7 @@ namespace Report_Pro.PL
 
             foreach (DataRow DR in dt_.Rows)
             {
-                OleDbCommand command = new OleDbCommand("INSERT INTO tatable (database_name,table_name,field_name,field_type,field_size,AllowNull) VALUES('" + DR[0] + "','" + DR[1] + "','" + DR[2] + "','" + DR[3] + "'," + DR[4] + "," + DR[5] +")", conn);
+                OleDbCommand command = new OleDbCommand("INSERT INTO tatable (database_name,table_name,field_name,field_type,field_size,AllowNull) VALUES('" + DR[0] + "','" + DR[1] + "','" + DR[2] + "','" + DR[3] + "','" + DR[4] + "','" + DR[5] +"')", conn);
                 command.ExecuteNonQuery();
             }
 
@@ -1164,7 +1164,7 @@ namespace Report_Pro.PL
 
         private void M311_Click(object sender, EventArgs e)
         {
-            openForm(new PL.invoice_frm(), FormWindowState.Maximized, 0);
+            openForm(new PL.frm_SalesInvoice(), FormWindowState.Maximized, 0);
         }
 
         private void listView1_SelectedIndexChanged_2(object sender, EventArgs e)
@@ -1258,6 +1258,7 @@ namespace Report_Pro.PL
         {
             DataRow r = _acountsTb.Rows[int.Parse(nod.Tag.ToString())];
             Properties.Settings.Default.BranchId = r[0].ToString();
+            Properties.Settings.Default.BranchAccID = r[5].ToString();
             Properties.Settings.Default.TRANS_TO_ACC = r[13].ToString();
             Properties.Settings.Default.Save();
         }
@@ -1374,7 +1375,6 @@ namespace Report_Pro.PL
 
         private void btn_CashTransaction_Click(object sender, EventArgs e)
         {
-            openForm(new CTR.frm_cash_transaction(), FormWindowState.Maximized, 0);
         }
 
         private void btnChangeAccBranch_Click(object sender, EventArgs e)
@@ -1395,7 +1395,7 @@ namespace Report_Pro.PL
         private void M_Loans_1_Click(object sender, EventArgs e)
         {
             Loans.frm_Loan frm = new Loans.frm_Loan();
-            frm.MdiParent = this;
+            //frm.MdiParent = this;
             frm.Show();
         }
 
@@ -1427,6 +1427,30 @@ namespace Report_Pro.PL
         {
             RPT.frm_rpt_InventoryItems frm = new RPT.frm_rpt_InventoryItems();
             frm.Show();
+        }
+
+        private void M_Loans_4_Click(object sender, EventArgs e)
+        {
+            Loans.frm_Accrued_Interest frm = new Loans.frm_Accrued_Interest();
+            frm.Show();
+        }
+
+        private void btnCash_1_Click(object sender, EventArgs e)
+        {
+            openForm(new CTR.frm_cash_transaction(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void btnCash_2_Click(object sender, EventArgs e)
+        {
+            openForm(new CTR.frm_Funds_Detials_Report(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void M718_Click(object sender, EventArgs e)
+        {
+            openForm(new PL.frm_Update_Classification(), FormWindowState.Maximized, 0);
+
         }
     }
 }

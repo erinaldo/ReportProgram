@@ -157,6 +157,7 @@
             // 
             this.intrestRate.BackgroundStyle.Class = "DateTimeInputBackground";
             this.intrestRate.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.intrestRate.DisplayFormat = "#,##0.0000";
             this.intrestRate.Increment = 1D;
             resources.ApplyResources(this.intrestRate, "intrestRate");
             this.intrestRate.Name = "intrestRate";

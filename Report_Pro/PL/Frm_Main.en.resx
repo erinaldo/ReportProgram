@@ -410,14 +410,32 @@
   <data name="M714.Text" xml:space="preserve">
     <value>Daily Jornal</value>
   </data>
+  <data name="M86.Text" xml:space="preserve">
+    <value>Account Balance Detials</value>
+  </data>
   <data name="M7.Text" xml:space="preserve">
     <value>Accounting</value>
   </data>
+  <data name="M81.Text" xml:space="preserve">
+    <value>LC</value>
+  </data>
+  <data name="M82.Text" xml:space="preserve">
+    <value>LC Invoice</value>
+  </data>
+  <data name="M83.Text" xml:space="preserve">
+    <value>Lc Report - Open Date</value>
+  </data>
+  <data name="M84.Text" xml:space="preserve">
+    <value>Lc Invoices Report</value>
+  </data>
   <data name="M87_1.Text" xml:space="preserve">
-    <value>PreformaInvoice Local</value>
+    <value>Pre-formaInvoice Local</value>
   </data>
   <data name="M87_2.Text" xml:space="preserve">
-    <value>PreformaInvoice</value>
+    <value>Pre-formaInvoice Imported</value>
+  </data>
+  <data name="M87.Text" xml:space="preserve">
+    <value>Pre-forma Invoice</value>
   </data>
   <data name="M8.Text" xml:space="preserve">
     <value>Letter Of Credit</value>
@@ -437,27 +455,18 @@
   <data name="MLangue.Text" xml:space="preserve">
     <value>عربي</value>
   </data>
-  <data name="btn_CashTransaction.Text" xml:space="preserve">
-    <value>Cash Transaction</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1282, 40</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1282, 40</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnChangBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
   <data name="btnChangBranch.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 651</value>
-  </data>
-  <data name="btnChangBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
   </data>
   <data name="btnChangBranch.Size" type="System.Drawing.Size, System.Drawing">
     <value>249, 27</value>
@@ -470,9 +479,6 @@
   </data>
   <data name="TV1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1055, 0</value>
-  </data>
-  <data name="TV1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
   </data>
   <data name="TV1.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 687</value>
@@ -487,9 +493,6 @@
   <data name="btnChangeAccBranch.Location" type="System.Drawing.Point, System.Drawing">
     <value>819, 651</value>
   </data>
-  <data name="btnChangeAccBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="btnChangeAccBranch.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 27</value>
   </data>
@@ -502,9 +505,6 @@
   <data name="tvStore.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="tvStore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="tvStore.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 687</value>
   </data>
@@ -513,7 +513,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA+
-        SgAAAk1TRnQBSQFMAgEBCgEAATQBAQE0AQEBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        SgAAAk1TRnQBSQFMAgEBCgEAATwBAQE8AQEBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABwAMAAZADAAEBAQABCAYAAWwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -832,9 +832,6 @@
         AT8B/xIAA/8B4AL/DAABgAUAA/8B4AL/EgAD/wHgAv8SAAP/AeAC/xIABv8MAAHgBQAL
 </value>
   </data>
-  <data name="listView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="listView1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Inherit</value>
   </data>
@@ -844,15 +841,6 @@
   <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1282, 687</value>
   </data>
-  <data name="vScrollBarAdv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>1282, 687</value>
   </data>
@@ -861,7 +849,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
-        GQAAAk1TRnQBSQFMAgEBCgEAATQBAQE0AQEBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        GQAAAk1TRnQBSQFMAgEBCgEAATwBAQE8AQEBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -972,14 +960,8 @@
         Af4BAAF/CQAB/gEAAX8JAAH/AfwB/wYAAYACAAH/AfwB/wkAA/8GAAHAAgAL
 </value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1282, 727</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Inherit</value>

@@ -20,8 +20,11 @@ namespace Report_Pro.RPT
         public frm_rpt_InventoryBranches()
         {
             InitializeComponent();
-            //this.dataGridView1.CellFormatting += dataGridView1_CellFormatting;
-            //this.dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
+
+            cmb_DimCategory.DataSource = dal.getDataTabl_1(@"select * FROM " + Properties.Settings.Default.Database_1 + ".dbo.Wh_Unit_dim");
+            cmb_DimCategory.DisplayMember = "Wh_Unit_dim";
+            cmb_DimCategory.ValueMember = "Wh_Unit_dim";
+            cmb_DimCategory.SelectedIndex = -1;
         }
         private void btn_print_Click(object sender, EventArgs e)
         {
@@ -76,7 +79,7 @@ namespace Report_Pro.RPT
             frm.Group.ID.Text = Group.ID.Text;
             frm.Group1.ID.Text = Group1.ID.Text;
             frm.Item.ID.Text = Item.ID.Text;
-            frm.cmb_DimCategory.SelectedValue = cmb_DimCategory.SelectedValue;
+            frm.cmb_DimCategory.Text = cmb_DimCategory.Text;
             frm.Uc_Transaction.ID.Text = Uc_Transaction.ID.Text;
             frm.thick_1.Text = thick_1.Text;
             frm.thick_2.Text = thick_2.Text;
@@ -137,7 +140,7 @@ namespace Report_Pro.RPT
         private void btnReport_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            groupBox1.Visible = false;
+           // groupBox1.Visible = false;
 
             choises();
 

@@ -126,6 +126,28 @@ namespace Report_Pro.DAL
         }
 
 
+        public int effectRows(string sp)
+        {
+
+
+            close_1();
+            SqlCommand cmd = new SqlCommand();
+            open_1();
+            cmd.CommandText = sp;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandTimeout = 1000;
+            cmd.Connection = sqlconn_1;
+            int rows_count = Convert.ToInt32(cmd.ExecuteNonQuery());
+            //SqlDataAdapter da1 = new SqlDataAdapter(cmd);
+            //DataTable dt1 = new DataTable();
+            //da1.Fill(dt1);
+            //return dt1;
+            return rows_count;
+
+            //sqlconn1.Close();
+        }
+
+
         public object GetCell_1(string sp)
         {
 

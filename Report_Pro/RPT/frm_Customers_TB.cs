@@ -281,7 +281,7 @@ namespace Report_Pro.RPT
             RPT.rpt_Customers_TB tb_rep = new RPT.rpt_Customers_TB();
             DataSet1 ds = new DataSet1();
             DataTable dt1 = new DataTable();
-            dt1= dal.getDataTabl("Get_customer_TB_", FromDate.Value.Date, ToDate.Value.Date, accNO, UC_Branch.ID.Text, "", bal, "1", Properties.Settings.Default.closeAcc, Acc_Stope,db1, b_1, b_2);
+            dt1 = dal.getDataTabl("Get_customer_TB_", FromDate.Value.Date, ToDate.Value.Date, accNO, UC_Branch.ID.Text, "", bal, "1", "", Acc_Stope,db1, b_1, b_2);
             ds.Tables.Add(dt1);
             //tb_rep.SetDataSource(dal.getDataTabl("Get_customer_TB", FromDate.Value.Date, ToDate.Value.Date, accNO, UC_Branch.ID.Text, "", bal,"1",Properties.Settings.Default.closeAcc,db1));                  
             ds.WriteXmlSchema("schema_rpt.xml");
