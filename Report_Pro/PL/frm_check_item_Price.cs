@@ -238,7 +238,7 @@ namespace Report_Pro.PL
             inner join wh_inv_data as B on A.SER_NO=B.Ser_no and A.TRANSACTION_CODE=B.TRANSACTION_CODE and a.Branch_code=b.Branch_code and a.Cyear=b.Cyear
             inner join payer2 as P on p.ACC_NO=b.Acc_no and b.Acc_Branch_code=p.BRANCH_code 
             inner join wh_BRANCHES As C on A.Branch_code=C.Branch_code 
-            where item_no='" + item_no + "' and (A.TRANSACTION_CODE='Xpc' or A.TRANSACTION_CODE='XpE') order by G_DATE desc");
+            where item_no='" + item_no + "' and (A.TRANSACTION_CODE='Xpc' or A.TRANSACTION_CODE='XpE' or A.TRANSACTION_CODE='Xpd') order by G_DATE desc");
 
 
 

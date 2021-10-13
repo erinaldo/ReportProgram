@@ -114,6 +114,8 @@ namespace Report_Pro.PL
                     if (form.Name == frm.Name)
                     {
                         frm.Activate();
+                        frm.BringToFront();
+                        frm.StartPosition = FormStartPosition.CenterScreen;
                         return;
                     }
                 }
@@ -154,7 +156,8 @@ namespace Report_Pro.PL
 
             this.panel2.Controls.Add(form);
             this.panel2.Dock = DockStyle.Fill;
-            form.Dock = DockStyle.Fill;
+            //form.Dock = DockStyle.Fill;
+           // form.StartPosition = FormStartPosition.CenterScreen;
 
             //form.MdiParent = this;
             form.WindowState = frmstate;
@@ -1450,6 +1453,12 @@ namespace Report_Pro.PL
         private void M718_Click(object sender, EventArgs e)
         {
             openForm(new PL.frm_Update_Classification(), FormWindowState.Maximized, 0);
+
+        }
+
+        private void M314_Click(object sender, EventArgs e)
+        {
+            openForm(new PL.frm_Price_Group(), FormWindowState.Normal, 0);
 
         }
     }

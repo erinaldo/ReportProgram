@@ -573,6 +573,12 @@
     <Compile Include="MyControls\UC_FinalAcc.designer.cs">
       <DependentUpon>UC_FinalAcc.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\UC_SalesGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UC_SalesGroup.designer.cs">
+      <DependentUpon>UC_SalesGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\Uc_Group.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -959,6 +965,12 @@
     </Compile>
     <Compile Include="PL\frm_Preview_Jor.designer.cs">
       <DependentUpon>frm_Preview_Jor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frm_Price_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frm_Price_Group.Designer.cs">
+      <DependentUpon>frm_Price_Group.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frm_PurchaseOrder.cs">
       <SubType>Form</SubType>
@@ -1492,6 +1504,21 @@
       <DependentUpon>UC_FinalAcc.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_KM_Item.ar.resx">
+      <DependentUpon>UC_KM_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_SalesGroup.ar.resx">
+      <DependentUpon>UC_SalesGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_SalesGroup.resx">
+      <DependentUpon>UC_SalesGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_SalesGroup.sq-AL.resx">
+      <DependentUpon>UC_SalesGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Uc_Group.ar.resx">
       <DependentUpon>Uc_Group.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1819,6 +1846,9 @@
     <EmbeddedResource Include="PL\frm_Preview_Jor.resx">
       <DependentUpon>frm_Preview_Jor.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frm_Price_Group.resx">
+      <DependentUpon>frm_Price_Group.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frm_PurchaseOrder.resx">
       <DependentUpon>frm_PurchaseOrder.cs</DependentUpon>

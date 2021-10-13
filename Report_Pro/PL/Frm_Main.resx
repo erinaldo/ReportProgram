@@ -117,377 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="M75.Text" xml:space="preserve">
-    <value>قيود التسوية</value>
-  </data>
-  <data name="&gt;&gt;M1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M6.Text" xml:space="preserve">
-    <value>تقارير الانتاج</value>
-  </data>
-  <data name="&gt;&gt;M87.Name" xml:space="preserve">
-    <value>M87</value>
-  </data>
-  <data name="&gt;&gt;M54.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M9.Text" xml:space="preserve">
-    <value>الاصول الثابتة</value>
-  </data>
-  <data name="M24.Text" xml:space="preserve">
-    <value>اجمالي الايرادات</value>
-  </data>
-  <data name="&gt;&gt;M57.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="M61.Text" xml:space="preserve">
-    <value>تقرير الانتاج</value>
-  </data>
-  <data name="&gt;&gt;M11.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribbonBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="M62.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
-        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
-        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
-        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
-        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
-        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
-        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
-        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
-        AElFTkSuQmCC
-</value>
+  <data name="ribbonBar1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
   </data>
-  <data name="M72.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
-        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
-        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
-        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
-        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
-        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
-        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
-        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;buttonItem2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M91.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="M57.Text" xml:space="preserve">
-    <value>عينة الفواتير لمكتب المراجعة</value>
-  </data>
-  <data name="M54.Text" xml:space="preserve">
-    <value>تقارير الجرد</value>
-  </data>
-  <data name="vScrollBarAdv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;btnUpdatetables.Name" xml:space="preserve">
-    <value>btnUpdatetables</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_4.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M912.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="btn_CashTransaction.Text" xml:space="preserve">
-    <value>Cash Transaction</value>
-  </data>
-  <data name="M102.Text" xml:space="preserve">
-    <value>تقرير الاستحقاق</value>
-  </data>
-  <data name="btnCash_2.Text" xml:space="preserve">
-    <value>Cash Transaction Report</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listView1.RightToLeftLayout" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;M713.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="buttonItem4.Text" xml:space="preserve">
-    <value>buttonItem4</value>
-  </data>
-  <data name="M36.Text" xml:space="preserve">
-    <value>تحديث بيانات حساب</value>
-  </data>
-  <data name="&gt;&gt;buttonItem5.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M82.Text" xml:space="preserve">
-    <value>فاتورة اعتماد</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_3.Name" xml:space="preserve">
-    <value>M_Loans_3</value>
-  </data>
-  <data name="&gt;&gt;M56.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M11.Text" xml:space="preserve">
+    <value>اعدادت النظام</value>
   </data>
   <data name="M12.Text" xml:space="preserve">
     <value>الالوان</value>
   </data>
-  <data name="&gt;&gt;buttonItem2.Name" xml:space="preserve">
-    <value>buttonItem2</value>
+  <data name="M13.Text" xml:space="preserve">
+    <value>الشاشات المفتوحة</value>
   </data>
-  <data name="&gt;&gt;M717.Name" xml:space="preserve">
-    <value>M717</value>
-  </data>
-  <data name="M3.Text" xml:space="preserve">
-    <value>تقارير المبيعات</value>
-  </data>
-  <data name="&gt;&gt;M101.Name" xml:space="preserve">
-    <value>M101</value>
-  </data>
-  <data name="M93.Text" xml:space="preserve">
-    <value>الاهلاك</value>
-  </data>
-  <data name="&gt;&gt;M81.Name" xml:space="preserve">
-    <value>M81</value>
-  </data>
-  <data name="M22.Text" xml:space="preserve">
-    <value>ايرادات الصيانه</value>
-  </data>
-  <data name="tvStore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;M45.Name" xml:space="preserve">
-    <value>M45</value>
-  </data>
-  <data name="btn_Updat_Take_To_Pro.Text" xml:space="preserve">
-    <value>تحديث تكلفة صرف المواد</value>
-  </data>
-  <data name="buttonItem2.Text" xml:space="preserve">
-    <value>أخرى</value>
-  </data>
-  <data name="&gt;&gt;M714.Name" xml:space="preserve">
-    <value>M714</value>
-  </data>
-  <data name="&gt;&gt;M59.Name" xml:space="preserve">
-    <value>M59</value>
-  </data>
-  <data name="&gt;&gt;M911.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="btnChangBranch.Text" xml:space="preserve">
-    <value>المستودعات</value>
-  </data>
-  <data name="&gt;&gt;M16.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M14.Text" xml:space="preserve">
+    <value>البنوك</value>
   </data>
   <data name="M15.Text" xml:space="preserve">
     <value>المخازن</value>
   </data>
-  <data name="&gt;&gt;btnCash_1.Name" xml:space="preserve">
-    <value>btnCash_1</value>
+  <data name="M16.Text" xml:space="preserve">
+    <value>معدل صرف العملات</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1236, 40</value>
+  <data name="M1.Text" xml:space="preserve">
+    <value>اعدادات</value>
   </data>
-  <data name="&gt;&gt;buttonItem8.Name" xml:space="preserve">
-    <value>buttonItem8</value>
+  <data name="M21.Text" xml:space="preserve">
+    <value>تقرير النقل</value>
   </data>
-  <data name="imageList2.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
-        GQAAAk1TRnQBSQFMAgEBCgEAARgBBAEgAQQBGAEAARgBAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
-        AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
-        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
-        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
-        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
-        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
-        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
-        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
-        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
-        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
-        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
-        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
-        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
-        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
-        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
-        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
-        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
-        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
-        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
-        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
-        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
-        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
-        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
-        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
-        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
-        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
-        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
-        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
-        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wIAAf8U9AL/SAABGwF1
-        FFMBdQEaSAABUxYyAVMEAAPTCQABCQHTAQkB2QEJMwAYUwMAAtMBAALTBwAB2gIAAtM0AAFTFjgBMgIA
-        Af8B0wH/AdsBGQLTBgAB0wEAAdMB/zUAGDgDAALTAQAB0wEAAdMB2gUAAdMBAAHTAwAB2QH/MQAQOAFS
-        AW0BEgFRBDgDAAH0AtMBAAHbAtMB2gMAAfQB0wEAAf8B2gEZAdMB2wH0MQAQOAFtAewB6wHqAVIDOAUA
-        B9MCAAHTAdoDAAH/AQAB0zIAEDgB6gHrAWYBEgFSAzgFAAH0AdoE0wEZAf8B0wH/AQAB2QEJAf8BCQHT
-        Af8yABA4AW0BkgHrAeoBUgM4BwAD0wHcAQAB0wEAAdMBAAHTAts1ABA4AeoB7AHqARIBUgM4BwAB/wHT
-        ARkB/wHTAf8B2QH/AdM4ABA4AW0B9wHsAeoBUgM4CgAB0wEAAdMBAAHTOQAQOAHqAewBbAESAVIDOAkA
-        AdMB/wHaAfQB0zoAEDgBbQHtAesB6gFSAzgIAAHTAQAB0wEAAdMBAAHbAf84ABA4AeoB6wFmARIBUgM4
-        AwAB9AHTAgkB2gEJAQAB/wHZAgABGQHTOAAQOAFtAZIB6wHqAVIDOAMAAdMEAAHTAf8B0wQAAdsB0zcA
-        EDgB6gHsAeoBEgFSAzgCAAEJARkB0wEJAdMCAAHTBgABCQHTAf81ABA4AW0B9wHsAeoBUgM4AgABCQHb
-        AgAB3AH/AQAB0wcAAf8C0zQAEDgB6gHsAWwBEgFSAzgGAAH0Af8BAAHTCAAD0zMAEDgBbQHtAesB6gFS
-        AzgFAALTAgAB2ggAAfQC0wHZMgABWQ84AeoB6wFmARIBUgI4AVkEAAHTAgkB0wEJCgAB9AHTMwAB/w96
-        AXMB7wHtAewBeQJ6ARtJAAH/DvYE9AL2Av/JAAeKCQAD/wHzAbMI1AazBP86AAWKCQAE/wHbAbIH0wey
-        AfMC/wYAD/8NAAH/AvMC9AL/EwAB/wGKAf8KAAT/AdsB0wGyAdUJ2wHUAdMBsgHzA/8DAAL/AvQB8wHy
-        AfEBBwHqARIBbQEHAfAB8gHzAfQC/woAARcIRwGTEgAB/wGKAf8LAAP/AdsCsgsJArIB8wP/BwAB/wFD
-        AQAB/wMUAv8BFQ0AARoKRwEXAfQQAAH/AYoB/woABP8B2wGyAdMLCQLTAfMD/wYAAfABFAETAeoB7AMS
-        AZIBEwEUARUB/woADkcQAAH/AYoB/wwAAv8B2wKyAgkH/wIJAdMBsgHzA/8HAAESAeoCbQHrAewB6wFt
-        AuoBEgoAAb0ORwEWAf8FAAH/AbUEigEJAgAB/wGKAf8CAAEJBIoBuwH/AgAD/wHbArICCQcZAgkC0wHz
-        A/8EAAHvAQcB8QFtAesBrgGLAooBpgGLAZEB6wFtAfMB7wHyBgABvRFHBAAB/weKAYsBAAH/AYoB/wEA
-        CIoB/wIAAv8B2wKyCwkB0wGyAfMD/wMAAf8BEgHqAW0B7AFlAYoBswG6AdwBtAGtAYoBiwHsAW0B6gEU
-        BgABlANHAZMBlAxHBAAJigHyAf8BigH/AfEJigEAA/8B2wLTAgkH9AIJAtMB8wP/AwAB8QFtAesB7AFm
-        AawBsgGzAQcBvAHvAbMBsgGsAYsB7AFtARIB9AUABUcCFwFvCkcHAATxAgABtAH/AYoB/wG0AgAB/wGK
-        AZAB/wGKAQAB/wEAAf8CAAHbArILCQLTAfMD/wQAAfMB7AGuAYoBsgGRAfIC8QHwAfEBswGyAYoC7AH/
-        BQAB/wNHAZQC/wEXARsBlAG9AZQBRgZHAZQDAAGLAQABtAO8AYsBAAHwAQAB/wGKA/8BAAK7AYsBkAHx
-        AQABiwT/AdsC0wEJARkH/wIJAdMBsgHzA/8CAAH/AfMB7wHtAWYBrAGyAfABvAHxAfMC8AHyAbIBrAFm
-        AewB8AH0BQADRwH/AUcBRgEXAUYB/wFHARYBvQEXAUUERwG9AwAB/wEAAbsD/wGLAQABiwEAAf8BigH/
-        AQABiwEAAYsCigG1AbQC/wEAA/8B2wLTCwkC0wHzA/8CAAH0AesB7AH3AaYBrAGRArwCAAH/AbwB8QGt
-        AawBZQGSAewBbQH/AwAB/wRHAZQBRwEXAfMBRwG9AkcB8wFHAZQDRwGTBAABtAG7A/8BiwMAAf8BigH/
-        AgAB/wH0AfIBigG1Af8BkAEABP8B2wGyAdMFCQHcBQkC0wHzA/8CAAH0AewB7QHvAaYBrAGRAfQB8wIA
-        Af8B8wH0AYsBrAFlAe8B7QHrAf8EAAlHAf8CRwL/BEcBBwQAAfIBigG7AgABiwGKAgAB/wGKAf8CAAGK
-        AgAB/wIAAfMBAAT/AdsC0wQJAdMBsgHUBAkCsgHzBQAB/wG8AfcBBwFlAawBiwL0AbwB/wHwAfEB8gGy
-        AawBZgHvAfcB8AH/AwAB/wlHARcBRwEXAUYFRwEaBAAB/wHyAbQCCQH/AwAB/wGKAf8CAAHyBAABuwH/
-        AQAE/wHbAtMECQHbAdQB0wQJAtMB8wP/BAAB9AEHAWwBigGzAbwB8gHzAf8B9AHzAbUBswGKAewBBwH/
-        BgAMRwHjAf8ERwH0BQABigMAAYsDAAH/AYoB/wMAAYsDAAG0AgAE/wHbAbIB0wQJAdMB2wUJArIB8wL/
-        BAAB/wHvAQcB8QGmArMB7wP/AZECswFlAfABBwH3Af8FAAH0AeMPRwG9BgAB9AH/AgAB8QMAAf8BigH/
-        AwABuwIAAfMB/wIABP8B2wLTBAkB1AHTAdsECQKyAfMD/wMAAfQB7wEHAfEB9wGKAbQB3AG7AbQBuwG6
-        AbQBpgG8AfABBwH3Af8HAA5HAZQIAAG7AQABtAQAAf8BigH/BAAB9AEAAYoDAAT/AdsCsgsJArIB8wL/
-        BQACBwHxAvIBZQEJAhkBCQG1AWUB9ALyAQcB8QgAAZQMRwGUCQABCQH/AbsCAAG8AYoBuwGKAbsBigH0
-        AgABiwEAAfMDAAT/AdsBsgHTCgkB2wHTAbIB8wP/BwAB8gHzAfQBvAHtAZEB7QHwAfQB8wHxDQAKRwHj
-        CwABtAIAAYoBuwEAAf8BigH/AQABiwGKAv8BtAUAA/8B2wSyB9MEsgHzA/8GAAHzAfAB8gHzAvQB/wL0
-        AfMB8gHwDQABvQZHAZQBvQwAAf8BigG7AQkCAAH/A4oDAAEJAbsBigH/AwAE/wHbArIB0wkJAtMBsgHz
-        A/8HAAHyAfEC/wPzAQAB8wHwAfMRAAH/AvQB/xQAAf8Big0AAv8B3AOyCQkC0wGyBP8LAALxAfIuAAG7
-        Af8LAAf/CQkH/0wACf8HAAT/GQAB9hIaARsDAAW5AREBQwERAZAKuQNDAQ0BuQ7/AbQW/wHsAgABBwf/
-        AQAUWQH0AgAFuQP/C7kCQwERAWwBuQz/A+IU/wHzBQAH/wEAAVMTWQF6AgAGuQKaCrkBugFmAUMBEQK5
-        Bv8B6gP/AbwB8AEUAe8B/wETARQBEwH/AewB/wEVC/8BlAEWAfQBFQQAAQ4G/wEAAVIUWQIABrkCmgGd
-        CbkBGgH2Af8BEAK5Bf8CkgHwApIC/wGSAfcE/wH3Ae8Ckgr/BCAB9AEOBAABkgX/AQABUhRZAf8BAAW5
-        BJoIZgGRA5oDuQz/AvQR/wYgAfMBEQQABf8BAAExAfYTWQH0AQACuQG6ArkBvAGaAWYBmgb/AfQBGgOa
-        BLkF/wGSDfABkgHyA/8BAAX/CCAB/wEOAwABEAT/AQABMQH/E1kBegEAArkBugO5AZoBZgEaB/8BGgGa
-        AZkBmgGWArkBugP/CfIB8wIbAcIE8gHzAfIBkgb/CiAB8wEQAwABBwP/AQABUgH/AcMTWQEAB7kBZgEb
-        BPMB8QLzAb0CswGQBLkC/wX0Af8B9AEZAsMCGgIbAcIB8wX0AfcBAAP/AiABQAEgAbcBFgYgAf8EAAT/
-        AVIBwwH/E1kB/we5AWYB/wH0A/8B8wP/AboBuQK6AbMB8gG5Bv8BvQH2Ab0B/wHhAfYBoAEbARoCGwHx
-        AfMI/wIgAUAF/wYgAfMBQwIAARMC/wHzAVMBmgH/AfMBWBFZARsHuQFmBf8B9AP/B7kD/wP0AUcBRgFN
-        AUUB0wGQAfsBoAEyAcMBWAGXAVUD9AL/AQAB/wQgAv8BIAFGAf8BFwYgAf8BDgIAAfIB/wEaAVMBegL/
-        AdwBvAHvAQcB/wG8AQcB8AtZB7kBZgn/B7kC/wEIAfQB/wHzA0YBRQGyAZAB+wGaATIBGgFYAZcBVQHz
-        Bf8EIAGUAf8BQAH/ARcB/wFGByAB8wFDAgAB/wGaAVMBWQP/AfIB/wHxAfABtQEHAfAB8wpZB7kBZgH/
-        AZIBZgGSBf8HuQT/AfYBmAT/AYEBkQE4AaABUwHDAVcBlwFPBf8BFwQgARYB/wFGASAC/wEgAfQBlAYg
-        AfQBDgEAARUB/wJTBf8C9AHzA/ABGglZB7kBZgL/AWYB8AT0Af8HuQb/AfYBmAHzAv8B9gFYAaABUgHD
-        AVcBcgFPBf8BFwUgARsCRgL/AUYB8wH/ByAB9AUAAf8B9AHzAvQBvAHzAfQC8wH/AQAB9ghZAbkCugS5
-        AWYB9AGSAWYB7AX/BbkBugG5CP8B9gF4AbsC/wH2AUwBwwFXAXIBTwb/ByAB8wH/ASAB/wEaAf8HIAG9
-        BgAB/wT0Af8CAAH0Af8DAAb2Af8CuQG6BLkBZgn/BrkBugr/AfYBeAHCAv8BGwFXAXIBTwb/AfQGIAEX
-        Af8CGgH/ARcHIAEaDgABwgFVAfQJAAe5AWYJ/we5DP8CeAP/AXIBSQj/BiABlAL/AUAB/wcgAb0OAAH/
-        AlUBlwH/BwAHuQFmAf8B6wLsAe0BvALtAf8HuQ3/AfYBeAGdAv8BDwj/AfQLIAGUAf8B9AFvAiABGgEA
-        Ae8FAAH0BQAB/wF4BFUBmAYAB7kBZgL/BVgC/we5D/8BeAFxDP8JIAGUBP8BRgEgAb0BAAH/BgABlwKY
-        AZcHVQGXBgAKuQVZCbkP/wH2AVcB9AGZCv8B9AggBf8BGgEgARoBAAH/BwABVglVBwAMuQFZC7kO/wN4
-        AVYBTgz/ByAF/wEaASABGgEAAf8HAAH/AQgHVQEbBwABuQG6DbkBugi5D/8BeAJXDf8B9AYgARcE/wIg
-        ARoBEgH/DgACVQgAArkBuga5AboMuQK6EP8BeAGXBv8BAAj/ByABvQGUAyABGgHxAf8OAAGXAf8IAAi5
-        AboHuQG6B7kR/wH0D/8B9AsgARoC/xgAGLkY/wIACf8CvQgaA/8BQgFNAT4HAAE+AwABKAMAAWADAAFI
-        AwABAQEAAQEFAAFgAQMWAAP/AQABgAIAA/8JAAP/CQAB8QH/AQcJAAHkAf4BzwkAAcABfgGfCQAB5QE+
-        AbkJAAHiARwBgQkAAfgBDAHrCQAB+AEBAQMJAAH+ARUBHwkAAf4BAAH/CQAB/wHVAf8JAAH/AYMB/wkA
-        Af8BVAH/CQAB4AFMAf8JAAHvAR4BfwkAAcEBvwEfCQABzAG/AY8JAAH8Ab8BxwkAAfkBvwHDCQAB8AF/
-        AecJAAP/BgABgAIAA/8GAAb/BgAE/wGAAf8BgAIAB/8BwQH/AgABAQH4AQABDwH/AYAC/wHjAf8DAAHg
-        AQABBwH+AQABfwH/AeMB/wGAAgAB/gFAAX8B/AEAAR8B/wHjAf8DAAH8AQABHwH4AQABHwH/AeMB/wHA
-        AgAB/gEAAT8B8AEAAQcBwAFjAQEBgAIAAfABAAEHAeABAAEHAYABIgEAAcACAAHgAQABBwHgAQABBwGA
-        AgABgAIAAeABAAEDAeABAAEHAfABwQGCAbACAAHwAQABBwHAAQABAwKgAYIDAAHAAQABAwHgAQABAwGg
-        AaICgAIAAcABGAEBAcABAAEDAcAB4wEBAwABwAEYAQEB4AEAAQMBxgFjAW0CAAEHAcABAAEBAcABAAED
-        AcAB4wF5AwAB8AEAAQcB4AEAAQMB7gHjAbsCAAEBAeABAAEDAeABAAEHAeYB4wGzAwAB4AEAAQMB+AEA
-        AQ8B9QHjAdcCAAEBAfABAAEHAfgBAAEfAfEBgAHXAwAB/gEAAT8B/gEAAT8B+wEiAQ8BgAIAAfwBAAE/
-        Af4BAAH/AfABwwGHAwAB/gECAT8B/wHhAv8B5wH/AcACAAH/AeMF/wHzAf8BgAIACf8B8AEHAfAD/wGA
-        AQABBwkAAYABAAEDCQABgAEAAQMJAAGAAQABAwkAAYABAAEBCQABgAEAAQEGAAGAAgABgAEAAQEJAAGA
-        AQABAQYAAYAXAAGAJgAB4AECCgAB8AEzAYAJAAH/AfEB/wkAAf8B8AF/CQAB+wHgAT8JAAH8AQABPwkA
-        Af4BAAF/CQAB/gEAAX8JAAH/AfwB/wYAAYACAAH/AfwB/wkAA/8GAAHAGAAL
-</value>
+  <data name="M22.Text" xml:space="preserve">
+    <value>ايرادات الصيانه</value>
   </data>
-  <data name="M52.Text" xml:space="preserve">
-    <value>تقرير حركة الاصناف</value>
+  <data name="M23.Text" xml:space="preserve">
+    <value>المشتريات</value>
   </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
+  <data name="M24.Text" xml:space="preserve">
+    <value>اجمالي الايرادات</value>
   </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="M25.Text" xml:space="preserve">
+    <value>تعديل المشتريات</value>
   </data>
-  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
-    <value>imageList1</value>
+  <data name="M26.Text" xml:space="preserve">
+    <value>تقارير النقليات</value>
   </data>
-  <data name="M44.Text" xml:space="preserve">
-    <value>طلب تسعيرة</value>
+  <data name="M27.Text" xml:space="preserve">
+    <value>تقرير  قطع الغيار</value>
   </data>
-  <data name="&gt;&gt;ribbonBar1.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="M2.Text" xml:space="preserve">
+    <value>النقليات</value>
   </data>
-  <data name="M91.Text" xml:space="preserve">
-    <value>اعدادات الاصول</value>
+  <data name="M31.Text" xml:space="preserve">
+    <value>تقارير المبيعات</value>
   </data>
-  <data name="&gt;&gt;M103.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M32.Text" xml:space="preserve">
+    <value>مبيعات الضريبة</value>
   </data>
-  <data name="btnChangBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1002, 6</value>
+  <data name="M33.Text" xml:space="preserve">
+    <value>استعلام سعر صنف</value>
   </data>
-  <data name="btnCash_1.Text" xml:space="preserve">
-    <value>Cash Transaction</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;M15.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="btnChangeAccBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 27</value>
-  </data>
-  <data name="&gt;&gt;M716.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M312.Text" xml:space="preserve">
-    <value>قائمة الاسعار</value>
-  </data>
-  <data name="&gt;&gt;vScrollBarAdv1.Name" xml:space="preserve">
-    <value>vScrollBarAdv1</value>
-  </data>
-  <data name="M74.Text" xml:space="preserve">
-    <value>ميزان مراكز التكلفة</value>
-  </data>
-  <data name="M87_1.Text" xml:space="preserve">
-    <value>فاتورة مبدئية داخلية</value>
-  </data>
-  <data name="&gt;&gt;M7.Name" xml:space="preserve">
-    <value>M7</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_3.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M8.Name" xml:space="preserve">
-    <value>M8</value>
-  </data>
-  <data name="M_Loans_2.Text" xml:space="preserve">
-    <value>سداد قرض</value>
-  </data>
-  <data name="&gt;&gt;M1.Name" xml:space="preserve">
-    <value>M1</value>
+  <data name="M34.Text" xml:space="preserve">
+    <value>ميزان العملاء</value>
   </data>
   <data name="M35.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -525,155 +218,171 @@
         QmCC
 </value>
   </data>
-  <data name="buttonItem7.Text" xml:space="preserve">
-    <value>buttonItem7</value>
+  <data name="M35.Text" xml:space="preserve">
+    <value>تحديث بيانات الجمارك</value>
   </data>
-  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="M36.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAABulJREFUWEfFlmtUVNcVgP3df/3Vxq5qfCIQERR5jrxR8FEbGxOUBLTRWpc1jUk0
+        ioIKohIUREShPJViBWmMgCKiQSBEh/fgAxBYERwGZoaXDCgR8Oudy43hJQxt18p316w16959znx3nzP7
+        7Gn8whgsMPBqgK7nXbT1tKMVPj0/9khP/jcmFXjS3sSerP2sv7CR1UnrkMW5YHHGFlmsK2svvEfIt+E0
+        dT6VoqfOGwX6BwdIUaRxojicPOUdcrtuk911g5y2HK4+zcSvPACbXAdMMs2xTl6G/43DtOrU0mjDGVeg
+        r7+P4MIQziliyXyeSWTHGU63R3KmI4rIrjMc7T5K7PNYUrtSCaoJxqTAnIVXLfFIXktefb40i2GMKxB9
+        Pw6bOnvOtp8jrC2c8LZThLefwr/NH7diTzZ864N3vi8e+av5qMaXi8pLuBatwPyaFdbxDmQ8vCbNNDlj
+        BO42y3mnypy9mn0cV39FiCaUk5owKl8o2Fm4i/QHV3g5+JLBV4N09HXS0NHAh7mbOSI/zpo767DMsMMq
+        RsaNmlxpxokZITAgTLrp3hbWqf9EYMsRglqCOdwShPqlBs/kd4n5Pl6KHEtVxwPWf+2N05Xl2Fx2ZOlp
+        mUF7YoRApUbBnAfz2Kn8BD9lAPuV/nQMdmJ/3pV3E7zoG+iTIt/MX3L+hk2CIBAlwyx4qXT3zYwQiHoU
+        zczqWSyqsuDTJ5/hrzxIaG0YNrFOXKxIlaImRr88eU35tHarxYxOxmuB5i4VG+U+vN0wC6NKY8wrFpPX
+        nYdZtDXWUQ7UaeulyP8v03oGevn46nZk/3BjSZYNs+pnY6QwZk7pPFS9KuwSXHGIdEfb2yYNMZxXwvWo
+        tYaYogSCc0OkuyOZ1jvwHKvLMixyrTC7s4RZdXNEAdPyhdR112GX6IoswpXU8nTKn1bS3aeThk5OhbaS
+        rTnbcc9bhVPych60PJSe/Iy4BJvkW3hL9TtmNM5kTs1cUWB+6QIquys5XBzMnzO343ZxFfaJLgTfHP9N
+        RvPsx25cLnuK3x0uLsc+wY29Wf7i33c4ooDmhQajchPh7Wcz//4CUcC4zBTzksW4lbkTUHeQr5u/wTHJ
+        nVrNY3HgZBwrDmV+ozFXdN/gm7OVZcJY+3MuVCgVUsQQrzehb8nHzGiY+bNAuSmm8oUsKDKhuqcax3h3
+        /ll6SYqeGHlLCYtyLQnrDBfLt6ZPi+y8G7JENz69sntEFl4L/ND9hLkVRsytmfdawFhuil+9H46pK/BJ
+        2SJFTswA/azL9mJj24dEtglnSEckl3XpbL/1dzELiyPteNjySIoeJqDfsdvKdghZeFv8G+qXwKrMmhst
+        OSwNl9HY2SRFTkyocHpa1lpzQhtGmFY4R9ojONV+msquSpYlu7NMyMLWS9ul6GECekq1ZcwT3n7uw/mY
+        lL2DQlfFokgbbj6+JUVMTJm6HIvvrPhM+zkn1CcJ1ZwUzxG9SKYui90FfsiS3IS64ihkoVocM0KgX7i2
+        le/g93UziFKdxeuqDx8k+Qi9Qb8UMTFRihjcc1dhWWXD+ub3OaYO4St1KCcEEb3EtdbrOKd4CllwZ8MF
+        X3HMCAE9Rarvca/w5ER5GM5nPYTSatiP/8TTHiXZDTksy3blkCZQkDgunKohnNZGCv1DGrsLh7JgG+2E
+        vLFkrMCgcB25e5yYe/Eou5qlu1ND91KHe/ZKAloPEdQazNHWEBTPqrityaNAW4hdnDMesWsJyAkaK6Bn
+        dLGYKnWdddjfdGa/yp9DqkCxrzhZESGeqpvTt6FoqXpdUccVGI1apyGh+ILYqhlCiaoMi4ol7FPu50Bz
+        gLARw9mW/Ynw5i4czDkiRQ0xqcCvQn+NZZg9tucd2ZRqWC0IuncMhx+c+LLRjz1NfmS0Z7A27X2hBthT
+        2VwlRQ0xqUBLbwsW/7bGLs0JyxQ7NqZsor23Q3o6FtULFa63PLEut+Hzxj3savwCZU8ztonO/DVtp9ht
+        D8egJch6cp3AkqNsk+/APGsptkmORBRE0dgxsjjp+nrYW3QAo2ITzAosWFmxhr1CBr4o3IdVpIO460dj
+        kICejIZr7CreTXxrAvseH8Dj9h9YekHG+n954522mS9zD7Aifw3zSoWjXG7GwiJzoV1fSOdAJ9YxQ8Lj
+        bW6DBfTca5XzwR1vvOq8OdwRSKI6iVhlHLGNcULzGohxrYlYwo2LTVlw14RTTRFsSPflYHbQGzfwlAT0
+        dAvnfNT9aOzzHPmNYjpv1U7nt/XTmVE7k9lCLzGnei6rqldzrj6GA7mHiLubyMCodR/OlAV+4tnLbgqU
+        3+GV/xHvZW/E4brQOeU4s/LaH/HN3srRglC0usnbuP9aYDT69Z16AYP/ALwm1GSNmS/1AAAAAElFTkSu
+        QmCC
+</value>
   </data>
-  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="M36.Text" xml:space="preserve">
+    <value>تحديث بيانات حساب</value>
   </data>
-  <data name="&gt;&gt;M79.Name" xml:space="preserve">
-    <value>M79</value>
+  <data name="M37.Text" xml:space="preserve">
+    <value>مبيعات عميل نقدي</value>
   </data>
-  <data name="M104.Text" xml:space="preserve">
-    <value>buttonItem7</value>
+  <data name="buttonItem1.Text" xml:space="preserve">
+    <value>عرض سعر</value>
   </data>
-  <data name="TV1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="M39.Text" xml:space="preserve">
+    <value>تقرير التسهيلات</value>
   </data>
-  <data name="btnChangBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="M311.Text" xml:space="preserve">
+    <value>Sales Invoice</value>
   </data>
-  <data name="&gt;&gt;M86.Name" xml:space="preserve">
-    <value>M86</value>
+  <data name="M312.Text" xml:space="preserve">
+    <value>قائمة الاسعار</value>
   </data>
-  <data name="&gt;&gt;M59.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M313.Text" xml:space="preserve">
+    <value>طباعة اشعار الشحن</value>
   </data>
-  <data name="&gt;&gt;M2.Name" xml:space="preserve">
-    <value>M2</value>
+  <data name="M314.Text" xml:space="preserve">
+    <value>Price Groups</value>
   </data>
-  <data name="M_Loans_1.Text" xml:space="preserve">
-    <value>القروض</value>
+  <data name="M3.Text" xml:space="preserve">
+    <value>تقارير المبيعات</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;M715.Name" xml:space="preserve">
-    <value>M715</value>
-  </data>
-  <data name="&gt;&gt;tvStore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnChangBranch.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;M37.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M87.Text" xml:space="preserve">
-    <value>الفاتورة المبدئية</value>
-  </data>
-  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1236, 40</value>
-  </data>
-  <data name="M716.Text" xml:space="preserve">
-    <value>تقرير المصاريف</value>
+  <data name="M41.Text" xml:space="preserve">
+    <value>تقارير المشتريات</value>
   </data>
   <data name="M42.Text" xml:space="preserve">
     <value>مشتريات الضريبة</value>
   </data>
-  <data name="&gt;&gt;M14.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M43.Text" xml:space="preserve">
+    <value>سعر اخر مشتريات</value>
   </data>
-  <data name="buttonItem5.Text" xml:space="preserve">
-    <value>حركة الصندوق</value>
+  <data name="M44.Text" xml:space="preserve">
+    <value>طلب تسعيرة</value>
   </data>
-  <data name="&gt;&gt;M712.Name" xml:space="preserve">
-    <value>M712</value>
+  <data name="M45.Text" xml:space="preserve">
+    <value>عرض سعر مشتريات</value>
   </data>
-  <data name="M81.Text" xml:space="preserve">
-    <value>الاعتمادات</value>
+  <data name="M46.Text" xml:space="preserve">
+    <value>مقارنة عروض اسعار المشتريات</value>
   </data>
-  <data name="&gt;&gt;TV1.Name" xml:space="preserve">
-    <value>TV1</value>
+  <data name="M47.Text" xml:space="preserve">
+    <value>طلب مواد</value>
   </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="M48.Text" xml:space="preserve">
+    <value>تقرير الفاتورة المبدئية</value>
   </data>
-  <data name="&gt;&gt;M104.Name" xml:space="preserve">
-    <value>M104</value>
-  </data>
-  <data name="M35.Text" xml:space="preserve">
-    <value>تحديث بيانات الجمارك</value>
-  </data>
-  <data name="M53.Text" xml:space="preserve">
-    <value>كارت صنف</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;M313.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M72.Text" xml:space="preserve">
-    <value>اعمار الديون</value>
-  </data>
-  <data name="&gt;&gt;M87_1.Name" xml:space="preserve">
-    <value>M87_1</value>
-  </data>
-  <data name="&gt;&gt;M8.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M713.Text" xml:space="preserve">
-    <value>تقرير الجلفنة</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M410.Name" xml:space="preserve">
-    <value>M410</value>
+  <data name="M49.Text" xml:space="preserve">
+    <value>طلب شراء</value>
   </data>
   <data name="M410.Text" xml:space="preserve">
     <value>طباعة الفواتير</value>
   </data>
-  <data name="M21.Text" xml:space="preserve">
-    <value>تقرير النقل</value>
+  <data name="M4.Text" xml:space="preserve">
+    <value>تقارير المشتريات</value>
   </data>
-  <data name="&gt;&gt;M7.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M51.Text" xml:space="preserve">
+    <value>تقرير المخزون</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="M52.Text" xml:space="preserve">
+    <value>تقرير حركة الاصناف</value>
   </data>
-  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="M53.Text" xml:space="preserve">
+    <value>كارت صنف</value>
   </data>
-  <data name="&gt;&gt;btnAdjData.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M54.Text" xml:space="preserve">
+    <value>تقارير الجرد</value>
   </data>
-  <data name="&gt;&gt;M715.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M55.Text" xml:space="preserve">
+    <value>الاصناف</value>
+  </data>
+  <data name="M56.Text" xml:space="preserve">
+    <value>المخزون ( مركزية وفروع ) - بالاصناف</value>
+  </data>
+  <data name="M57.Text" xml:space="preserve">
+    <value>عينة الفواتير لمكتب المراجعة</value>
   </data>
   <data name="M58.Text" xml:space="preserve">
     <value>Group Stock By Branch Report</value>
   </data>
-  <data name="&gt;&gt;buttonItem5.Name" xml:space="preserve">
-    <value>buttonItem5</value>
+  <data name="M59.Text" xml:space="preserve">
+    <value>Branch Stock By Group Report</value>
   </data>
-  <data name="M_Loans.Text" xml:space="preserve">
-    <value>Loans</value>
+  <data name="M60.Text" xml:space="preserve">
+    <value>Branch Stock By Items</value>
   </data>
-  <data name="&gt;&gt;M73.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M5.Text" xml:space="preserve">
+    <value>تقارير المخزون</value>
   </data>
-  <data name="M14.Text" xml:space="preserve">
-    <value>البنوك</value>
+  <data name="M61.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
+        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
+        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
+        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
+        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
+        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
+        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
+        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
+        AElFTkSuQmCC
+</value>
   </data>
-  <data name="M7.Text" xml:space="preserve">
-    <value>تقاير الحسابات</value>
+  <data name="M61.Text" xml:space="preserve">
+    <value>تقرير الانتاج</value>
+  </data>
+  <data name="M62.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
+        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
+        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
+        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
+        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
+        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
+        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
+        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="M62.Text" xml:space="preserve">
+    <value>تقرير المنصرف للانتاج</value>
   </data>
   <data name="M63.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -689,51 +398,412 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="M51.Text" xml:space="preserve">
-    <value>تقرير المخزون</value>
+  <data name="M63.Text" xml:space="preserve">
+    <value>تقرير المنصرف للمشاريع</value>
   </data>
-  <data name="&gt;&gt;M91.Name" xml:space="preserve">
-    <value>M91</value>
+  <data name="M6.Text" xml:space="preserve">
+    <value>تقارير الانتاج</value>
   </data>
-  <data name="&gt;&gt;btn_Updat_Take_To_Pro.Name" xml:space="preserve">
-    <value>btn_Updat_Take_To_Pro</value>
+  <data name="M71.Text" xml:space="preserve">
+    <value>كشف حساب</value>
+  </data>
+  <data name="M72.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
+        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
+        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
+        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
+        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
+        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
+        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
+        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="M72.Text" xml:space="preserve">
+    <value>اعمار الديون</value>
+  </data>
+  <data name="M73.Text" xml:space="preserve">
+    <value>ميزان المراجعة</value>
+  </data>
+  <data name="M74.Text" xml:space="preserve">
+    <value>ميزان مراكز التكلفة</value>
+  </data>
+  <data name="M75.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
+        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
+        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
+        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
+        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
+        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
+        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
+        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="M75.Text" xml:space="preserve">
+    <value>قيود التسوية</value>
+  </data>
+  <data name="M76.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
+        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
+        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
+        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
+        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
+        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
+        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
+        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="M76.Text" xml:space="preserve">
+    <value>قائمة المركز المالي</value>
+  </data>
+  <data name="M77.Text" xml:space="preserve">
+    <value>ميزان حساب ميزانية</value>
+  </data>
+  <data name="M78.Text" xml:space="preserve">
+    <value>مقارنة الحسابات</value>
+  </data>
+  <data name="M79.Text" xml:space="preserve">
+    <value>مصادقة حساب</value>
+  </data>
+  <data name="M710.Text" xml:space="preserve">
+    <value>تقرير الرواتب</value>
+  </data>
+  <data name="M711.Text" xml:space="preserve">
+    <value>تقرير قيود اليومية</value>
   </data>
   <data name="M712.Text" xml:space="preserve">
     <value>تقرير القيود غير المتوازنه</value>
   </data>
-  <data name="&gt;&gt;M4.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="M713.Text" xml:space="preserve">
+    <value>تقرير الجلفنة</value>
   </data>
-  <data name="&gt;&gt;buttonItem6.Name" xml:space="preserve">
-    <value>buttonItem6</value>
+  <data name="M714.Text" xml:space="preserve">
+    <value>قيد اليومية</value>
+  </data>
+  <data name="M715.Text" xml:space="preserve">
+    <value>ميزان المراجعة الشهري</value>
+  </data>
+  <data name="M716.Text" xml:space="preserve">
+    <value>تقرير المصاريف</value>
+  </data>
+  <data name="M717.Text" xml:space="preserve">
+    <value>تقرير المصاريف المجمع</value>
+  </data>
+  <data name="M86.Text" xml:space="preserve">
+    <value>تفاصيل ارصدة الحسابات</value>
+  </data>
+  <data name="M718.Text" xml:space="preserve">
+    <value>Update Classification</value>
+  </data>
+  <data name="M7.Text" xml:space="preserve">
+    <value>تقاير الحسابات</value>
+  </data>
+  <data name="M81.Text" xml:space="preserve">
+    <value>الاعتمادات</value>
+  </data>
+  <data name="M82.Text" xml:space="preserve">
+    <value>فاتورة اعتماد</value>
+  </data>
+  <data name="M83.Text" xml:space="preserve">
+    <value>تقرير الاعتمادات بتاريخ الفتح</value>
+  </data>
+  <data name="M84.Text" xml:space="preserve">
+    <value>تقرير فواتير  الاعتمادات</value>
+  </data>
+  <data name="M87_1.Text" xml:space="preserve">
+    <value>فاتورة مبدئية داخلية</value>
+  </data>
+  <data name="M87_2.Text" xml:space="preserve">
+    <value>فاتورة مبدئية خارجية</value>
+  </data>
+  <data name="M87.Text" xml:space="preserve">
+    <value>الفاتورة المبدئية</value>
+  </data>
+  <data name="M8.Text" xml:space="preserve">
+    <value>الاعتمادات المستندية</value>
+  </data>
+  <data name="M_Loans_1.Text" xml:space="preserve">
+    <value>القروض</value>
+  </data>
+  <data name="M_Loans_2.Text" xml:space="preserve">
+    <value>سداد قرض</value>
+  </data>
+  <data name="M_Loans_3.Text" xml:space="preserve">
+    <value>تقارير القروض</value>
+  </data>
+  <data name="M_Loans.Text" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="M911.Text" xml:space="preserve">
+    <value>بطاقة مجموعة اصول</value>
+  </data>
+  <data name="M912.Text" xml:space="preserve">
+    <value>بطاقة اصل</value>
+  </data>
+  <data name="M913.Text" xml:space="preserve">
+    <value>بطاقة موقع</value>
+  </data>
+  <data name="M91.Text" xml:space="preserve">
+    <value>اعدادات الاصول</value>
+  </data>
+  <data name="M92.Text" xml:space="preserve">
+    <value>اضافات الاصول</value>
+  </data>
+  <data name="M93.Text" xml:space="preserve">
+    <value>الاهلاك</value>
+  </data>
+  <data name="M9.Text" xml:space="preserve">
+    <value>الاصول الثابتة</value>
+  </data>
+  <data name="M101.Text" xml:space="preserve">
+    <value>حساب الاستحقاق</value>
+  </data>
+  <data name="M102.Text" xml:space="preserve">
+    <value>تقرير الاستحقاق</value>
   </data>
   <data name="M103.Text" xml:space="preserve">
     <value>اقفال استحقاق المقدم</value>
   </data>
-  <data name="&gt;&gt;M21.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M74.Name" xml:space="preserve">
-    <value>M74</value>
-  </data>
-  <data name="&gt;&gt;btnChangeAccBranch.Name" xml:space="preserve">
-    <value>btnChangeAccBranch</value>
-  </data>
-  <data name="btnUpdatetables.Text" xml:space="preserve">
+  <data name="M104.Text" xml:space="preserve">
     <value>buttonItem7</value>
+  </data>
+  <data name="M10.Text" xml:space="preserve">
+    <value>المقدمات</value>
   </data>
   <data name="buttonItem3.Text" xml:space="preserve">
     <value>التفقيط</value>
   </data>
-  <data name="&gt;&gt;btnAdjData.Name" xml:space="preserve">
-    <value>btnAdjData</value>
+  <data name="buttonItem4.Text" xml:space="preserve">
+    <value>buttonItem4</value>
   </data>
+  <data name="buttonItem5.Text" xml:space="preserve">
+    <value>حركة الصندوق</value>
+  </data>
+  <data name="btn_Updat_Take_To_Pro.Text" xml:space="preserve">
+    <value>تحديث تكلفة صرف المواد</value>
+  </data>
+  <data name="buttonItem2.Text" xml:space="preserve">
+    <value>أخرى</value>
+  </data>
+  <data name="MLangue.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="btnUpdatetables.Text" xml:space="preserve">
+    <value>buttonItem7</value>
+  </data>
+  <data name="btnAdjData.Text" xml:space="preserve">
+    <value>buttonItem7</value>
+  </data>
+  <data name="buttonItem7.Text" xml:space="preserve">
+    <value>buttonItem7</value>
+  </data>
+  <data name="buttonItem8.Text" xml:space="preserve">
+    <value>buttonItem8</value>
+  </data>
+  <data name="buttonItem6.Text" xml:space="preserve">
+    <value>buttonItem6</value>
+  </data>
+  <data name="btnCash_1.Text" xml:space="preserve">
+    <value>Cash Transaction</value>
+  </data>
+  <data name="btnCash_2.Text" xml:space="preserve">
+    <value>Cash Transaction Report</value>
+  </data>
+  <data name="btn_CashTransaction.Text" xml:space="preserve">
+    <value>Cash Transaction</value>
+  </data>
+  <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribbonBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="ribbonBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1236, 40</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Name" xml:space="preserve">
+    <value>ribbonBar1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1236, 40</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnChangBranch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnChangBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1002, 6</value>
+  </data>
+  <data name="btnChangBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnChangBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 27</value>
+  </data>
+  <data name="btnChangBranch.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnChangBranch.Text" xml:space="preserve">
+    <value>المستودعات</value>
+  </data>
+  <data name="&gt;&gt;btnChangBranch.Name" xml:space="preserve">
+    <value>btnChangBranch</value>
+  </data>
+  <data name="&gt;&gt;btnChangBranch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnChangBranch.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnChangBranch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TV1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="TV1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TV1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TV1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 564</value>
+  </data>
+  <data name="TV1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;TV1.Name" xml:space="preserve">
+    <value>TV1</value>
+  </data>
+  <data name="&gt;&gt;TV1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TV1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;TV1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnChangeAccBranch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 6</value>
+  </data>
+  <data name="btnChangeAccBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnChangeAccBranch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 27</value>
+  </data>
+  <data name="btnChangeAccBranch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnChangeAccBranch.Text" xml:space="preserve">
+    <value>الحسابات</value>
+  </data>
+  <data name="&gt;&gt;btnChangeAccBranch.Name" xml:space="preserve">
+    <value>btnChangeAccBranch</value>
+  </data>
+  <data name="&gt;&gt;btnChangeAccBranch.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnChangeAccBranch.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnChangeAccBranch.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tvStore.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="tvStore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1000, 0</value>
+  </data>
+  <data name="tvStore.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="tvStore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 564</value>
+  </data>
+  <data name="tvStore.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="tvStore.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tvStore.Name" xml:space="preserve">
+    <value>tvStore</value>
+  </data>
+  <data name="&gt;&gt;tvStore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvStore.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;tvStore.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listView1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8pt, style=Bold</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA+
-        SgAAAk1TRnQBSQFMAgEBCgEAARgBBAEgAQQBMAEAATABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        SgAAAk1TRnQBSQFMAgEBCgEAASwBBAEsAQQBMAEAATABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABwAMAAZADAAEBAQABCAYAAWwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1049,1021 +1119,957 @@
         AfgCAAEIFAAB+AIAAQgUAAH+AQABDgEPAYATAAH+AQABDgEDAYATAAL/Af4BAwL/EgAC/wH+AQABPwH/
         EgAC/wH+AQABPwH/EgAB/wGPAfgBAAEPAf8SAAH/AY8B+AEAAQ8B/xIAAf8BgAIAAQ8B/xIAAf8B4AIA
         AQ8B/xIAAf8B4AIAAQ8B/xIAAf8B+AIAAT8B/xIAAf8B+AIAAT8B/xIAAf8B+AIAAT8B/xIAAf8B+AIA
-        AT8B/xIAA/8B4AL/DAABgAUAA/8B4AL/EgAD/wHgAv8SAAP/AeAC/xIABv8MAAHgGwAL
+        AT8B/xIAA/8B4AL/DAABgAUAA/8B4AL/EgAD/wHgAv8SAAP/AeAC/xIABv8MAAHgBQAL
 </value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;M62.Name" xml:space="preserve">
-    <value>M62</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;M49.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M711.Text" xml:space="preserve">
-    <value>تقرير قيود اليومية</value>
-  </data>
-  <data name="&gt;&gt;buttonItem7.Name" xml:space="preserve">
-    <value>buttonItem7</value>
-  </data>
-  <data name="&gt;&gt;M13.Name" xml:space="preserve">
-    <value>M13</value>
-  </data>
-  <data name="M43.Text" xml:space="preserve">
-    <value>سعر اخر مشتريات</value>
-  </data>
-  <data name="&gt;&gt;M10.Name" xml:space="preserve">
-    <value>M10</value>
-  </data>
-  <data name="&gt;&gt;TV1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;M_Loans.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnChangeAccBranch.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;M712.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M718.Name" xml:space="preserve">
-    <value>M718</value>
-  </data>
-  <data name="buttonItem1.Text" xml:space="preserve">
-    <value>عرض سعر</value>
-  </data>
-  <data name="M10.Text" xml:space="preserve">
-    <value>المقدمات</value>
-  </data>
-  <data name="M73.Text" xml:space="preserve">
-    <value>ميزان المراجعة</value>
-  </data>
-  <data name="btnChangeAccBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="M4.Text" xml:space="preserve">
-    <value>تقارير المشتريات</value>
-  </data>
-  <data name="M47.Text" xml:space="preserve">
-    <value>طلب مواد</value>
-  </data>
-  <data name="listView1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="M48.Text" xml:space="preserve">
-    <value>تقرير الفاتورة المبدئية</value>
-  </data>
-  <data name="buttonItem8.Text" xml:space="preserve">
-    <value>buttonItem8</value>
-  </data>
-  <data name="&gt;&gt;M83.Name" xml:space="preserve">
-    <value>M83</value>
-  </data>
-  <data name="&gt;&gt;buttonItem4.Name" xml:space="preserve">
-    <value>buttonItem4</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnChangBranch.Name" xml:space="preserve">
-    <value>btnChangBranch</value>
-  </data>
-  <data name="M86.Text" xml:space="preserve">
-    <value>تفاصيل ارصدة الحسابات</value>
-  </data>
-  <data name="&gt;&gt;M2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M34.Name" xml:space="preserve">
-    <value>M34</value>
-  </data>
-  <data name="M41.Text" xml:space="preserve">
-    <value>تقارير المشتريات</value>
-  </data>
-  <data name="M101.Text" xml:space="preserve">
-    <value>حساب الاستحقاق</value>
-  </data>
-  <data name="&gt;&gt;M75.Name" xml:space="preserve">
-    <value>M75</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="M_Loans_3.Text" xml:space="preserve">
-    <value>تقارير القروض</value>
-  </data>
-  <data name="&gt;&gt;btnChangBranch.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="M59.Text" xml:space="preserve">
-    <value>Branch Stock By Group Report</value>
-  </data>
-  <data name="&gt;&gt;buttonItem1.Name" xml:space="preserve">
-    <value>buttonItem1</value>
-  </data>
-  <data name="&gt;&gt;M313.Name" xml:space="preserve">
-    <value>M313</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1236, 564</value>
-  </data>
-  <data name="&gt;&gt;buttonItem4.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M71.Name" xml:space="preserve">
-    <value>M71</value>
-  </data>
-  <data name="&gt;&gt;M82.Name" xml:space="preserve">
-    <value>M82</value>
-  </data>
-  <data name="&gt;&gt;M311.Name" xml:space="preserve">
-    <value>M311</value>
-  </data>
-  <data name="&gt;&gt;TV1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="M34.Text" xml:space="preserve">
-    <value>ميزان العملاء</value>
-  </data>
-  <data name="M1.Text" xml:space="preserve">
-    <value>اعدادات</value>
-  </data>
-  <data name="M26.Text" xml:space="preserve">
-    <value>تقارير النقليات</value>
-  </data>
-  <data name="M71.Text" xml:space="preserve">
-    <value>كشف حساب</value>
-  </data>
-  <data name="&gt;&gt;btn_CashTransaction.Name" xml:space="preserve">
-    <value>btn_CashTransaction</value>
-  </data>
-  <data name="tvStore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1000, 0</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="M78.Text" xml:space="preserve">
-    <value>مقارنة الحسابات</value>
-  </data>
-  <data name="&gt;&gt;M911.Name" xml:space="preserve">
-    <value>M911</value>
-  </data>
-  <data name="M76.Text" xml:space="preserve">
-    <value>قائمة المركز المالي</value>
-  </data>
-  <data name="&gt;&gt;buttonItem18.Name" xml:space="preserve">
-    <value>buttonItem18</value>
-  </data>
-  <data name="M313.Text" xml:space="preserve">
-    <value>طباعة اشعار الشحن</value>
-  </data>
-  <data name="&gt;&gt;M102.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M913.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;M43.Name" xml:space="preserve">
-    <value>M43</value>
-  </data>
-  <data name="M56.Text" xml:space="preserve">
-    <value>المخزون ( مركزية وفروع ) - بالاصناف</value>
-  </data>
-  <data name="&gt;&gt;M3.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M23.Text" xml:space="preserve">
-    <value>المشتريات</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_1.Name" xml:space="preserve">
-    <value>M_Loans_1</value>
-  </data>
-  <data name="&gt;&gt;M32.Name" xml:space="preserve">
-    <value>M32</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;tvStore.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ribbonBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;buttonItem3.Name" xml:space="preserve">
-    <value>buttonItem3</value>
-  </data>
-  <data name="&gt;&gt;M34.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M42.Name" xml:space="preserve">
-    <value>M42</value>
-  </data>
-  <data name="&gt;&gt;M14.Name" xml:space="preserve">
-    <value>M14</value>
-  </data>
-  <data name="btnAdjData.Text" xml:space="preserve">
-    <value>buttonItem7</value>
-  </data>
-  <data name="tvStore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 564</value>
-  </data>
-  <data name="&gt;&gt;M55.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M718.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M31.Name" xml:space="preserve">
-    <value>M31</value>
-  </data>
-  <data name="&gt;&gt;M44.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;M24.Name" xml:space="preserve">
-    <value>M24</value>
-  </data>
-  <data name="tvStore.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;M33.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M77.Name" xml:space="preserve">
-    <value>M77</value>
-  </data>
-  <data name="M13.Text" xml:space="preserve">
-    <value>الشاشات المفتوحة</value>
-  </data>
-  <data name="M49.Text" xml:space="preserve">
-    <value>طلب شراء</value>
-  </data>
-  <data name="&gt;&gt;M41.Name" xml:space="preserve">
-    <value>M41</value>
-  </data>
-  <data name="btnChangBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="M32.Text" xml:space="preserve">
-    <value>مبيعات الضريبة</value>
-  </data>
-  <data name="M76.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
-        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
-        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
-        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
-        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
-        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
-        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
-        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;btn_Updat_Take_To_Pro.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M42.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M311.Text" xml:space="preserve">
-    <value>Sales Invoice</value>
-  </data>
-  <data name="&gt;&gt;M43.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnChangeAccBranch.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="btnChangeAccBranch.Text" xml:space="preserve">
-    <value>الحسابات</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1236, 564</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="M79.Text" xml:space="preserve">
-    <value>مصادقة حساب</value>
-  </data>
-  <data name="&gt;&gt;M32.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnCash_1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;M48.Name" xml:space="preserve">
-    <value>M48</value>
-  </data>
-  <data name="&gt;&gt;M12.Name" xml:space="preserve">
-    <value>M12</value>
-  </data>
-  <data name="tvStore.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;M913.Name" xml:space="preserve">
-    <value>M913</value>
-  </data>
-  <data name="M46.Text" xml:space="preserve">
-    <value>مقارنة عروض اسعار المشتريات</value>
-  </data>
-  <data name="M11.Text" xml:space="preserve">
-    <value>اعدادت النظام</value>
-  </data>
-  <data name="&gt;&gt;M37.Name" xml:space="preserve">
-    <value>M37</value>
-  </data>
-  <data name="&gt;&gt;M312.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M22.Name" xml:space="preserve">
-    <value>M22</value>
-  </data>
-  <data name="M61.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
-        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
-        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
-        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
-        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
-        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
-        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
-        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;b1.Name" xml:space="preserve">
-    <value>b1</value>
-  </data>
-  <data name="&gt;&gt;M54.Name" xml:space="preserve">
-    <value>M54</value>
-  </data>
-  <data name="&gt;&gt;btnUpdatetables.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;buttonItem17.Name" xml:space="preserve">
-    <value>buttonItem17</value>
-  </data>
-  <data name="&gt;&gt;M31.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;vScrollBarAdv1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;M47.Name" xml:space="preserve">
-    <value>M47</value>
-  </data>
-  <data name="&gt;&gt;M11.Name" xml:space="preserve">
-    <value>M11</value>
-  </data>
-  <data name="&gt;&gt;M24.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M33.Name" xml:space="preserve">
-    <value>M33</value>
-  </data>
-  <data name="vScrollBarAdv1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;M84.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M36.Name" xml:space="preserve">
-    <value>M36</value>
-  </data>
-  <data name="&gt;&gt;M_Loans.Name" xml:space="preserve">
-    <value>M_Loans</value>
-  </data>
-  <data name="&gt;&gt;M41.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M60.Name" xml:space="preserve">
-    <value>M60</value>
-  </data>
-  <data name="M36.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAABulJREFUWEfFlmtUVNcVgP3df/3Vxq5qfCIQERR5jrxR8FEbGxOUBLTRWpc1jUk0
-        ioIKohIUREShPJViBWmMgCKiQSBEh/fgAxBYERwGZoaXDCgR8Oudy43hJQxt18p316w16959znx3nzP7
-        7Gn8whgsMPBqgK7nXbT1tKMVPj0/9khP/jcmFXjS3sSerP2sv7CR1UnrkMW5YHHGFlmsK2svvEfIt+E0
-        dT6VoqfOGwX6BwdIUaRxojicPOUdcrtuk911g5y2HK4+zcSvPACbXAdMMs2xTl6G/43DtOrU0mjDGVeg
-        r7+P4MIQziliyXyeSWTHGU63R3KmI4rIrjMc7T5K7PNYUrtSCaoJxqTAnIVXLfFIXktefb40i2GMKxB9
-        Pw6bOnvOtp8jrC2c8LZThLefwr/NH7diTzZ864N3vi8e+av5qMaXi8pLuBatwPyaFdbxDmQ8vCbNNDlj
-        BO42y3mnypy9mn0cV39FiCaUk5owKl8o2Fm4i/QHV3g5+JLBV4N09HXS0NHAh7mbOSI/zpo767DMsMMq
-        RsaNmlxpxokZITAgTLrp3hbWqf9EYMsRglqCOdwShPqlBs/kd4n5Pl6KHEtVxwPWf+2N05Xl2Fx2ZOlp
-        mUF7YoRApUbBnAfz2Kn8BD9lAPuV/nQMdmJ/3pV3E7zoG+iTIt/MX3L+hk2CIBAlwyx4qXT3zYwQiHoU
-        zczqWSyqsuDTJ5/hrzxIaG0YNrFOXKxIlaImRr88eU35tHarxYxOxmuB5i4VG+U+vN0wC6NKY8wrFpPX
-        nYdZtDXWUQ7UaeulyP8v03oGevn46nZk/3BjSZYNs+pnY6QwZk7pPFS9KuwSXHGIdEfb2yYNMZxXwvWo
-        tYaYogSCc0OkuyOZ1jvwHKvLMixyrTC7s4RZdXNEAdPyhdR112GX6IoswpXU8nTKn1bS3aeThk5OhbaS
-        rTnbcc9bhVPych60PJSe/Iy4BJvkW3hL9TtmNM5kTs1cUWB+6QIquys5XBzMnzO343ZxFfaJLgTfHP9N
-        RvPsx25cLnuK3x0uLsc+wY29Wf7i33c4ooDmhQajchPh7Wcz//4CUcC4zBTzksW4lbkTUHeQr5u/wTHJ
-        nVrNY3HgZBwrDmV+ozFXdN/gm7OVZcJY+3MuVCgVUsQQrzehb8nHzGiY+bNAuSmm8oUsKDKhuqcax3h3
-        /ll6SYqeGHlLCYtyLQnrDBfLt6ZPi+y8G7JENz69sntEFl4L/ND9hLkVRsytmfdawFhuil+9H46pK/BJ
-        2SJFTswA/azL9mJj24dEtglnSEckl3XpbL/1dzELiyPteNjySIoeJqDfsdvKdghZeFv8G+qXwKrMmhst
-        OSwNl9HY2SRFTkyocHpa1lpzQhtGmFY4R9ojONV+msquSpYlu7NMyMLWS9ul6GECekq1ZcwT3n7uw/mY
-        lL2DQlfFokgbbj6+JUVMTJm6HIvvrPhM+zkn1CcJ1ZwUzxG9SKYui90FfsiS3IS64ihkoVocM0KgX7i2
-        le/g93UziFKdxeuqDx8k+Qi9Qb8UMTFRihjcc1dhWWXD+ub3OaYO4St1KCcEEb3EtdbrOKd4CllwZ8MF
-        X3HMCAE9Rarvca/w5ER5GM5nPYTSatiP/8TTHiXZDTksy3blkCZQkDgunKohnNZGCv1DGrsLh7JgG+2E
-        vLFkrMCgcB25e5yYe/Eou5qlu1ND91KHe/ZKAloPEdQazNHWEBTPqrityaNAW4hdnDMesWsJyAkaK6Bn
-        dLGYKnWdddjfdGa/yp9DqkCxrzhZESGeqpvTt6FoqXpdUccVGI1apyGh+ILYqhlCiaoMi4ol7FPu50Bz
-        gLARw9mW/Ynw5i4czDkiRQ0xqcCvQn+NZZg9tucd2ZRqWC0IuncMhx+c+LLRjz1NfmS0Z7A27X2hBthT
-        2VwlRQ0xqUBLbwsW/7bGLs0JyxQ7NqZsor23Q3o6FtULFa63PLEut+Hzxj3savwCZU8ztonO/DVtp9ht
-        D8egJch6cp3AkqNsk+/APGsptkmORBRE0dgxsjjp+nrYW3QAo2ITzAosWFmxhr1CBr4o3IdVpIO460dj
-        kICejIZr7CreTXxrAvseH8Dj9h9YekHG+n954522mS9zD7Aifw3zSoWjXG7GwiJzoV1fSOdAJ9YxQ8Lj
-        bW6DBfTca5XzwR1vvOq8OdwRSKI6iVhlHLGNcULzGohxrYlYwo2LTVlw14RTTRFsSPflYHbQGzfwlAT0
-        dAvnfNT9aOzzHPmNYjpv1U7nt/XTmVE7k9lCLzGnei6rqldzrj6GA7mHiLubyMCodR/OlAV+4tnLbgqU
-        3+GV/xHvZW/E4brQOeU4s/LaH/HN3srRglC0usnbuP9aYDT69Z16AYP/ALwm1GSNmS/1AAAAAElFTkSu
-        QmCC
-</value>
-  </data>
-  <data name="&gt;&gt;M21.Name" xml:space="preserve">
-    <value>M21</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.Name" xml:space="preserve">
-    <value>ribbonBar1</value>
-  </data>
-  <data name="&gt;&gt;M72.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M9.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M46.Name" xml:space="preserve">
-    <value>M46</value>
-  </data>
-  <data name="&gt;&gt;MLangue.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M23.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M2.Text" xml:space="preserve">
-    <value>النقليات</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Frm_Main</value>
-  </data>
-  <data name="&gt;&gt;M6.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M911.Text" xml:space="preserve">
-    <value>بطاقة مجموعة اصول</value>
-  </data>
-  <data name="M717.Text" xml:space="preserve">
-    <value>تقرير المصاريف المجمع</value>
-  </data>
-  <data name="&gt;&gt;M83.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M35.Name" xml:space="preserve">
-    <value>M35</value>
-  </data>
-  <data name="ribbonBar1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt, style=Bold</value>
-  </data>
-  <data name="listView1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8pt, style=Bold</value>
-  </data>
-  <data name="M75.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAcdJREFUWEdjGAUg8Pk4t/j7w/xBH47yRVADz+gyqe/oCJs/e079jrqmpB01NV7z
-        ZvcY1cLk3x/hDwbZCbb8w2E+14+HeL9+PML/n1q4sNDlf3Jx8/+9h4//r+/p/e8bn/u/pNgZVR3QTpDd
-        DO8O8t9BkaACBjnALyEfbLmJZxwYYzgAiN8d4r/N8PEwqiA1MMgBUVlV/2csXvk/vazuv2tEBlYHgDAD
-        NkFKMcgBkSAHLFz5P6209r9L+AA4gJgoAGGaOYBgIoRimjkgKLn4f3P/NLDl1gHJA+CA1JL/LROmg6PC
-        ZiAcMOBRMOCJcLQcGC0HRsuBkV0OlJY4Y5QDlaWOWNXSxAErp+oC00Dp//6Zi+HlwLoZOljV0sQBH4Ct
-        rImt5v8dAyP/OwZF/J/SboZVHQgzfDgggFWCHvjDfoH/DG8WSmCVpAd+DbSb4VWb7P9X06X/v10t9v/t
-        GjphoF0gO1+1ywKjYIrof5AjntUr/n9Wp0QfDLQLZPmHqaLgEPj8eZbQ/89z6IxnCf9/0Sz7ieFprWLD
-        80YFoIvkwK6iD5b7D7ITGBq14O7ZszqF2Cc1Soue1SiuoAcG2fW0RjEKbPnAAgYGAEfgehYI4LuHAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;buttonItem8.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="M92.Text" xml:space="preserve">
-    <value>اضافات الاصول</value>
-  </data>
-  <data name="&gt;&gt;M48.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M5.Text" xml:space="preserve">
-    <value>تقارير المخزون</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.RibbonBar, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M71.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;M716.Name" xml:space="preserve">
-    <value>M716</value>
-  </data>
-  <data name="M33.Text" xml:space="preserve">
-    <value>استعلام سعر صنف</value>
-  </data>
-  <data name="&gt;&gt;M3.Name" xml:space="preserve">
-    <value>M3</value>
-  </data>
-  <data name="&gt;&gt;M22.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M4.Name" xml:space="preserve">
-    <value>M4</value>
-  </data>
-  <data name="&gt;&gt;btn_CashTransaction.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M5.Name" xml:space="preserve">
-    <value>M5</value>
-  </data>
-  <data name="&gt;&gt;M82.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M25.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="vScrollBarAdv1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="listView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;M5.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="listView1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
-  <data name="&gt;&gt;b1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M27.Name" xml:space="preserve">
-    <value>M27</value>
-  </data>
-  <data name="&gt;&gt;M60.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="ribbonBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;M711.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M6.Name" xml:space="preserve">
-    <value>M6</value>
-  </data>
-  <data name="TV1.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;M93.Name" xml:space="preserve">
-    <value>M93</value>
-  </data>
-  <data name="&gt;&gt;M16.Name" xml:space="preserve">
-    <value>M16</value>
-  </data>
-  <data name="&gt;&gt;M711.Name" xml:space="preserve">
-    <value>M711</value>
-  </data>
-  <data name="&gt;&gt;M36.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M78.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="btnChangBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 27</value>
-  </data>
-  <data name="&gt;&gt;M81.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_4.Name" xml:space="preserve">
-    <value>M_Loans_4</value>
-  </data>
-  <data name="M84.Text" xml:space="preserve">
-    <value>تقرير فواتير  الاعتمادات</value>
-  </data>
-  <data name="M31.Text" xml:space="preserve">
-    <value>تقارير المبيعات</value>
-  </data>
-  <data name="M8.Text" xml:space="preserve">
-    <value>الاعتمادات المستندية</value>
-  </data>
-  <data name="&gt;&gt;M26.Name" xml:space="preserve">
-    <value>M26</value>
-  </data>
-  <data name="&gt;&gt;M46.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="ribbonBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="M87_2.Text" xml:space="preserve">
-    <value>فاتورة مبدئية خارجية</value>
-  </data>
-  <data name="&gt;&gt;M92.Name" xml:space="preserve">
-    <value>M92</value>
-  </data>
-  <data name="&gt;&gt;M714.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M27.Text" xml:space="preserve">
-    <value>تقرير  قطع الغيار</value>
-  </data>
-  <data name="&gt;&gt;M15.Name" xml:space="preserve">
-    <value>M15</value>
-  </data>
-  <data name="&gt;&gt;M312.Name" xml:space="preserve">
-    <value>M312</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="M710.Text" xml:space="preserve">
-    <value>تقرير الرواتب</value>
-  </data>
-  <data name="M16.Text" xml:space="preserve">
-    <value>معدل صرف العملات</value>
-  </data>
-  <data name="&gt;&gt;buttonItem18.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="tvStore.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;M73.Name" xml:space="preserve">
-    <value>M73</value>
-  </data>
-  <data name="&gt;&gt;M64.Name" xml:space="preserve">
-    <value>M64</value>
-  </data>
-  <data name="&gt;&gt;M10.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;buttonItem3.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M25.Name" xml:space="preserve">
-    <value>M25</value>
-  </data>
-  <data name="&gt;&gt;M45.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M912.Name" xml:space="preserve">
-    <value>M912</value>
-  </data>
-  <data name="btnChangeAccBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 6</value>
-  </data>
-  <data name="&gt;&gt;M44.Name" xml:space="preserve">
-    <value>M44</value>
-  </data>
-  <data name="&gt;&gt;M53.Name" xml:space="preserve">
-    <value>M53</value>
-  </data>
-  <data name="&gt;&gt;M87_1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;M76.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M62.Text" xml:space="preserve">
-    <value>تقرير المنصرف للانتاج</value>
-  </data>
-  <data name="&gt;&gt;tvStore.Name" xml:space="preserve">
-    <value>tvStore</value>
-  </data>
-  <data name="&gt;&gt;M101.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M27.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M87_2.Name" xml:space="preserve">
-    <value>M87_2</value>
-  </data>
-  <data name="&gt;&gt;M39.Name" xml:space="preserve">
-    <value>M39</value>
-  </data>
-  <data name="&gt;&gt;TV1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;vScrollBarAdv1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.VScrollBarAdv, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M63.Name" xml:space="preserve">
-    <value>M63</value>
-  </data>
-  <data name="&gt;&gt;M87.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M47.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCash_2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M713.Name" xml:space="preserve">
-    <value>M713</value>
-  </data>
-  <data name="&gt;&gt;M52.Name" xml:space="preserve">
-    <value>M52</value>
-  </data>
-  <data name="vScrollBarAdv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;M49.Name" xml:space="preserve">
-    <value>M49</value>
-  </data>
-  <data name="&gt;&gt;vScrollBarAdv1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;M75.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M25.Text" xml:space="preserve">
-    <value>تعديل المشتريات</value>
-  </data>
-  <data name="&gt;&gt;M26.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M104.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M102.Name" xml:space="preserve">
-    <value>M102</value>
-  </data>
-  <data name="&gt;&gt;M23.Name" xml:space="preserve">
-    <value>M23</value>
-  </data>
-  <data name="&gt;&gt;btnCash_2.Name" xml:space="preserve">
-    <value>btnCash_2</value>
-  </data>
-  <data name="&gt;&gt;M710.Name" xml:space="preserve">
-    <value>M710</value>
-  </data>
-  <data name="&gt;&gt;M86.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="TV1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 564</value>
-  </data>
-  <data name="&gt;&gt;M92.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M717.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M83.Text" xml:space="preserve">
-    <value>تقرير الاعتمادات بتاريخ الفتح</value>
-  </data>
-  <data name="&gt;&gt;btnChangeAccBranch.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="M37.Text" xml:space="preserve">
-    <value>مبيعات عميل نقدي</value>
-  </data>
-  <data name="&gt;&gt;M51.Name" xml:space="preserve">
-    <value>M51</value>
-  </data>
-  <data name="&gt;&gt;M64.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M39.Text" xml:space="preserve">
-    <value>تقرير التسهيلات</value>
-  </data>
-  <data name="M55.Text" xml:space="preserve">
-    <value>الاصناف</value>
-  </data>
-  <data name="M77.Text" xml:space="preserve">
-    <value>ميزان حساب ميزانية</value>
-  </data>
-  <data name="&gt;&gt;M53.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M74.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="TV1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="&gt;&gt;tvStore.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1236, 604</value>
-  </data>
-  <data name="&gt;&gt;M61.Name" xml:space="preserve">
-    <value>M61</value>
-  </data>
-  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MLangue.Name" xml:space="preserve">
-    <value>MLangue</value>
-  </data>
-  <data name="&gt;&gt;M78.Name" xml:space="preserve">
-    <value>M78</value>
-  </data>
-  <data name="panel2.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="listView1.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;buttonItem6.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1236, 564</value>
   </data>
-  <data name="M60.Text" xml:space="preserve">
-    <value>Branch Stock By Items</value>
+  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="&gt;&gt;M58.Name" xml:space="preserve">
-    <value>M58</value>
-  </data>
-  <data name="&gt;&gt;M63.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>الصفحة الرئيسية</value>
-  </data>
-  <data name="&gt;&gt;M84.Name" xml:space="preserve">
-    <value>M84</value>
-  </data>
-  <data name="&gt;&gt;M9.Name" xml:space="preserve">
-    <value>M9</value>
-  </data>
-  <data name="&gt;&gt;M39.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M715.Text" xml:space="preserve">
-    <value>ميزان المراجعة الشهري</value>
-  </data>
-  <data name="&gt;&gt;M_Loans_2.Name" xml:space="preserve">
-    <value>M_Loans_2</value>
+  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
+    <value>listView1</value>
   </data>
   <data name="&gt;&gt;listView1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="M718.Text" xml:space="preserve">
-    <value>Update Classification</value>
-  </data>
-  <data name="&gt;&gt;buttonItem17.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;buttonItem7.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M311.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M57.Name" xml:space="preserve">
-    <value>M57</value>
-  </data>
-  <data name="&gt;&gt;M62.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;btnChangBranch.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="M714.Text" xml:space="preserve">
-    <value>قيد اليومية</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;M52.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M51.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="btnChangBranch.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonItem6.Text" xml:space="preserve">
-    <value>buttonItem6</value>
-  </data>
-  <data name="M913.Text" xml:space="preserve">
-    <value>بطاقة موقع</value>
-  </data>
-  <data name="MLangue.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="&gt;&gt;M13.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M35.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M56.Name" xml:space="preserve">
-    <value>M56</value>
-  </data>
-  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
-    <value>imageList2</value>
-  </data>
-  <data name="&gt;&gt;M61.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btnChangeAccBranch.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TV1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="vScrollBarAdv1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;M93.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="vScrollBarAdv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;M103.Name" xml:space="preserve">
-    <value>M103</value>
+  <data name="vScrollBarAdv1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="M45.Text" xml:space="preserve">
-    <value>عرض سعر مشتريات</value>
-  </data>
-  <data name="M63.Text" xml:space="preserve">
-    <value>تقرير المنصرف للمشاريع</value>
-  </data>
-  <data name="&gt;&gt;M87_2.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M79.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M410.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M58.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M77.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;M710.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
-  </data>
-  <data name="&gt;&gt;ribbonBar1.ZOrder" xml:space="preserve">
+  <data name="vScrollBarAdv1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;M12.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="&gt;&gt;vScrollBarAdv1.Name" xml:space="preserve">
+    <value>vScrollBarAdv1</value>
   </data>
-  <data name="M912.Text" xml:space="preserve">
-    <value>بطاقة اصل</value>
+  <data name="&gt;&gt;vScrollBarAdv1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.VScrollBarAdv, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
   </data>
-  <data name="&gt;&gt;M55.Name" xml:space="preserve">
-    <value>M55</value>
+  <data name="&gt;&gt;vScrollBarAdv1.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;M76.Name" xml:space="preserve">
-    <value>M76</value>
+  <data name="&gt;&gt;vScrollBarAdv1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;M72.Name" xml:space="preserve">
-    <value>M72</value>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;buttonItem1.Type" xml:space="preserve">
-    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
   </data>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1236, 564</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="imageList2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ar</value>
-  </metadata>
+  <data name="imageList2.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
+        GQAAAk1TRnQBSQFMAgEBCgEAASwBBAEsAQQBGAEAARgBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABYAMAAUgDAAEBAQABCAYAARsYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wIAAf8U9AL/SAABGwF1
+        FFMBdQEaSAABUxYyAVMEAAPTCQABCQHTAQkB2QEJMwAYUwMAAtMBAALTBwAB2gIAAtM0AAFTFjgBMgIA
+        Af8B0wH/AdsBGQLTBgAB0wEAAdMB/zUAGDgDAALTAQAB0wEAAdMB2gUAAdMBAAHTAwAB2QH/MQAQOAFS
+        AW0BEgFRBDgDAAH0AtMBAAHbAtMB2gMAAfQB0wEAAf8B2gEZAdMB2wH0MQAQOAFtAewB6wHqAVIDOAUA
+        B9MCAAHTAdoDAAH/AQAB0zIAEDgB6gHrAWYBEgFSAzgFAAH0AdoE0wEZAf8B0wH/AQAB2QEJAf8BCQHT
+        Af8yABA4AW0BkgHrAeoBUgM4BwAD0wHcAQAB0wEAAdMBAAHTAts1ABA4AeoB7AHqARIBUgM4BwAB/wHT
+        ARkB/wHTAf8B2QH/AdM4ABA4AW0B9wHsAeoBUgM4CgAB0wEAAdMBAAHTOQAQOAHqAewBbAESAVIDOAkA
+        AdMB/wHaAfQB0zoAEDgBbQHtAesB6gFSAzgIAAHTAQAB0wEAAdMBAAHbAf84ABA4AeoB6wFmARIBUgM4
+        AwAB9AHTAgkB2gEJAQAB/wHZAgABGQHTOAAQOAFtAZIB6wHqAVIDOAMAAdMEAAHTAf8B0wQAAdsB0zcA
+        EDgB6gHsAeoBEgFSAzgCAAEJARkB0wEJAdMCAAHTBgABCQHTAf81ABA4AW0B9wHsAeoBUgM4AgABCQHb
+        AgAB3AH/AQAB0wcAAf8C0zQAEDgB6gHsAWwBEgFSAzgGAAH0Af8BAAHTCAAD0zMAEDgBbQHtAesB6gFS
+        AzgFAALTAgAB2ggAAfQC0wHZMgABWQ84AeoB6wFmARIBUgI4AVkEAAHTAgkB0wEJCgAB9AHTMwAB/w96
+        AXMB7wHtAewBeQJ6ARtJAAH/DvYE9AL2Av/JAAeKCQAD/wHzAbMI1AazBP86AAWKCQAE/wHbAbIH0wey
+        AfMC/wYAD/8NAAH/AvMC9AL/EwAB/wGKAf8KAAT/AdsB0wGyAdUJ2wHUAdMBsgHzA/8DAAL/AvQB8wHy
+        AfEBBwHqARIBbQEHAfAB8gHzAfQC/woAARcIRwGTEgAB/wGKAf8LAAP/AdsCsgsJArIB8wP/BwAB/wFD
+        AQAB/wMUAv8BFQ0AARoKRwEXAfQQAAH/AYoB/woABP8B2wGyAdMLCQLTAfMD/wYAAfABFAETAeoB7AMS
+        AZIBEwEUARUB/woADkcQAAH/AYoB/wwAAv8B2wKyAgkH/wIJAdMBsgHzA/8HAAESAeoCbQHrAewB6wFt
+        AuoBEgoAAb0ORwEWAf8FAAH/AbUEigEJAgAB/wGKAf8CAAEJBIoBuwH/AgAD/wHbArICCQcZAgkC0wHz
+        A/8EAAHvAQcB8QFtAesBrgGLAooBpgGLAZEB6wFtAfMB7wHyBgABvRFHBAAB/weKAYsBAAH/AYoB/wEA
+        CIoB/wIAAv8B2wKyCwkB0wGyAfMD/wMAAf8BEgHqAW0B7AFlAYoBswG6AdwBtAGtAYoBiwHsAW0B6gEU
+        BgABlANHAZMBlAxHBAAJigHyAf8BigH/AfEJigEAA/8B2wLTAgkH9AIJAtMB8wP/AwAB8QFtAesB7AFm
+        AawBsgGzAQcBvAHvAbMBsgGsAYsB7AFtARIB9AUABUcCFwFvCkcHAATxAgABtAH/AYoB/wG0AgAB/wGK
+        AZAB/wGKAQAB/wEAAf8CAAHbArILCQLTAfMD/wQAAfMB7AGuAYoBsgGRAfIC8QHwAfEBswGyAYoC7AH/
+        BQAB/wNHAZQC/wEXARsBlAG9AZQBRgZHAZQDAAGLAQABtAO8AYsBAAHwAQAB/wGKA/8BAAK7AYsBkAHx
+        AQABiwT/AdsC0wEJARkH/wIJAdMBsgHzA/8CAAH/AfMB7wHtAWYBrAGyAfABvAHxAfMC8AHyAbIBrAFm
+        AewB8AH0BQADRwH/AUcBRgEXAUYB/wFHARYBvQEXAUUERwG9AwAB/wEAAbsD/wGLAQABiwEAAf8BigH/
+        AQABiwEAAYsCigG1AbQC/wEAA/8B2wLTCwkC0wHzA/8CAAH0AesB7AH3AaYBrAGRArwCAAH/AbwB8QGt
+        AawBZQGSAewBbQH/AwAB/wRHAZQBRwEXAfMBRwG9AkcB8wFHAZQDRwGTBAABtAG7A/8BiwMAAf8BigH/
+        AgAB/wH0AfIBigG1Af8BkAEABP8B2wGyAdMFCQHcBQkC0wHzA/8CAAH0AewB7QHvAaYBrAGRAfQB8wIA
+        Af8B8wH0AYsBrAFlAe8B7QHrAf8EAAlHAf8CRwL/BEcBBwQAAfIBigG7AgABiwGKAgAB/wGKAf8CAAGK
+        AgAB/wIAAfMBAAT/AdsC0wQJAdMBsgHUBAkCsgHzBQAB/wG8AfcBBwFlAawBiwL0AbwB/wHwAfEB8gGy
+        AawBZgHvAfcB8AH/AwAB/wlHARcBRwEXAUYFRwEaBAAB/wHyAbQCCQH/AwAB/wGKAf8CAAHyBAABuwH/
+        AQAE/wHbAtMECQHbAdQB0wQJAtMB8wP/BAAB9AEHAWwBigGzAbwB8gHzAf8B9AHzAbUBswGKAewBBwH/
+        BgAMRwHjAf8ERwH0BQABigMAAYsDAAH/AYoB/wMAAYsDAAG0AgAE/wHbAbIB0wQJAdMB2wUJArIB8wL/
+        BAAB/wHvAQcB8QGmArMB7wP/AZECswFlAfABBwH3Af8FAAH0AeMPRwG9BgAB9AH/AgAB8QMAAf8BigH/
+        AwABuwIAAfMB/wIABP8B2wLTBAkB1AHTAdsECQKyAfMD/wMAAfQB7wEHAfEB9wGKAbQB3AG7AbQBuwG6
+        AbQBpgG8AfABBwH3Af8HAA5HAZQIAAG7AQABtAQAAf8BigH/BAAB9AEAAYoDAAT/AdsCsgsJArIB8wL/
+        BQACBwHxAvIBZQEJAhkBCQG1AWUB9ALyAQcB8QgAAZQMRwGUCQABCQH/AbsCAAG8AYoBuwGKAbsBigH0
+        AgABiwEAAfMDAAT/AdsBsgHTCgkB2wHTAbIB8wP/BwAB8gHzAfQBvAHtAZEB7QHwAfQB8wHxDQAKRwHj
+        CwABtAIAAYoBuwEAAf8BigH/AQABiwGKAv8BtAUAA/8B2wSyB9MEsgHzA/8GAAHzAfAB8gHzAvQB/wL0
+        AfMB8gHwDQABvQZHAZQBvQwAAf8BigG7AQkCAAH/A4oDAAEJAbsBigH/AwAE/wHbArIB0wkJAtMBsgHz
+        A/8HAAHyAfEC/wPzAQAB8wHwAfMRAAH/AvQB/xQAAf8Big0AAv8B3AOyCQkC0wGyBP8LAALxAfIuAAG7
+        Af8LAAf/CQkH/0wACf8HAAT/GQAB9hIaARsDAAW5AREBQwERAZAKuQNDAQ0BuQ7/AbQW/wHsAgABBwf/
+        AQAUWQH0AgAFuQP/C7kCQwERAWwBuQz/A+IU/wHzBQAH/wEAAVMTWQF6AgAGuQKaCrkBugFmAUMBEQK5
+        Bv8B6gP/AbwB8AEUAe8B/wETARQBEwH/AewB/wEVC/8BlAEWAfQBFQQAAQ4G/wEAAVIUWQIABrkCmgGd
+        CbkBGgH2Af8BEAK5Bf8CkgHwApIC/wGSAfcE/wH3Ae8Ckgr/BCAB9AEOBAABkgX/AQABUhRZAf8BAAW5
+        BJoIZgGRA5oDuQz/AvQR/wYgAfMBEQQABf8BAAExAfYTWQH0AQACuQG6ArkBvAGaAWYBmgb/AfQBGgOa
+        BLkF/wGSDfABkgHyA/8BAAX/CCAB/wEOAwABEAT/AQABMQH/E1kBegEAArkBugO5AZoBZgEaB/8BGgGa
+        AZkBmgGWArkBugP/CfIB8wIbAcIE8gHzAfIBkgb/CiAB8wEQAwABBwP/AQABUgH/AcMTWQEAB7kBZgEb
+        BPMB8QLzAb0CswGQBLkC/wX0Af8B9AEZAsMCGgIbAcIB8wX0AfcBAAP/AiABQAEgAbcBFgYgAf8EAAT/
+        AVIBwwH/E1kB/we5AWYB/wH0A/8B8wP/AboBuQK6AbMB8gG5Bv8BvQH2Ab0B/wHhAfYBoAEbARoCGwHx
+        AfMI/wIgAUAF/wYgAfMBQwIAARMC/wHzAVMBmgH/AfMBWBFZARsHuQFmBf8B9AP/B7kD/wP0AUcBRgFN
+        AUUB0wGQAfsBoAEyAcMBWAGXAVUD9AL/AQAB/wQgAv8BIAFGAf8BFwYgAf8BDgIAAfIB/wEaAVMBegL/
+        AdwBvAHvAQcB/wG8AQcB8AtZB7kBZgn/B7kC/wEIAfQB/wHzA0YBRQGyAZAB+wGaATIBGgFYAZcBVQHz
+        Bf8EIAGUAf8BQAH/ARcB/wFGByAB8wFDAgAB/wGaAVMBWQP/AfIB/wHxAfABtQEHAfAB8wpZB7kBZgH/
+        AZIBZgGSBf8HuQT/AfYBmAT/AYEBkQE4AaABUwHDAVcBlwFPBf8BFwQgARYB/wFGASAC/wEgAfQBlAYg
+        AfQBDgEAARUB/wJTBf8C9AHzA/ABGglZB7kBZgL/AWYB8AT0Af8HuQb/AfYBmAHzAv8B9gFYAaABUgHD
+        AVcBcgFPBf8BFwUgARsCRgL/AUYB8wH/ByAB9AUAAf8B9AHzAvQBvAHzAfQC8wH/AQAB9ghZAbkCugS5
+        AWYB9AGSAWYB7AX/BbkBugG5CP8B9gF4AbsC/wH2AUwBwwFXAXIBTwb/ByAB8wH/ASAB/wEaAf8HIAG9
+        BgAB/wT0Af8CAAH0Af8DAAb2Af8CuQG6BLkBZgn/BrkBugr/AfYBeAHCAv8BGwFXAXIBTwb/AfQGIAEX
+        Af8CGgH/ARcHIAEaDgABwgFVAfQJAAe5AWYJ/we5DP8CeAP/AXIBSQj/BiABlAL/AUAB/wcgAb0OAAH/
+        AlUBlwH/BwAHuQFmAf8B6wLsAe0BvALtAf8HuQ3/AfYBeAGdAv8BDwj/AfQLIAGUAf8B9AFvAiABGgEA
+        Ae8FAAH0BQAB/wF4BFUBmAYAB7kBZgL/BVgC/we5D/8BeAFxDP8JIAGUBP8BRgEgAb0BAAH/BgABlwKY
+        AZcHVQGXBgAKuQVZCbkP/wH2AVcB9AGZCv8B9AggBf8BGgEgARoBAAH/BwABVglVBwAMuQFZC7kO/wN4
+        AVYBTgz/ByAF/wEaASABGgEAAf8HAAH/AQgHVQEbBwABuQG6DbkBugi5D/8BeAJXDf8B9AYgARcE/wIg
+        ARoBEgH/DgACVQgAArkBuga5AboMuQK6EP8BeAGXBv8BAAj/ByABvQGUAyABGgHxAf8OAAGXAf8IAAi5
+        AboHuQG6B7kR/wH0D/8B9AsgARoC/xgAGLkY/wIACf8CvQgaA/8BQgFNAT4HAAE+AwABKAMAAWADAAFI
+        AwABAQEAAQEFAAFgAQMWAAP/AQABgAIAA/8JAAP/CQAB8QH/AQcJAAHkAf4BzwkAAcABfgGfCQAB5QE+
+        AbkJAAHiARwBgQkAAfgBDAHrCQAB+AEBAQMJAAH+ARUBHwkAAf4BAAH/CQAB/wHVAf8JAAH/AYMB/wkA
+        Af8BVAH/CQAB4AFMAf8JAAHvAR4BfwkAAcEBvwEfCQABzAG/AY8JAAH8Ab8BxwkAAfkBvwHDCQAB8AF/
+        AecJAAP/BgABgAIAA/8GAAb/BgAE/wGAAf8BgAIAB/8BwQH/AgABAQH4AQABDwH/AYAC/wHjAf8DAAHg
+        AQABBwH+AQABfwH/AeMB/wGAAgAB/gFAAX8B/AEAAR8B/wHjAf8DAAH8AQABHwH4AQABHwH/AeMB/wHA
+        AgAB/gEAAT8B8AEAAQcBwAFjAQEBgAIAAfABAAEHAeABAAEHAYABIgEAAcACAAHgAQABBwHgAQABBwGA
+        AgABgAIAAeABAAEDAeABAAEHAfABwQGCAbACAAHwAQABBwHAAQABAwKgAYIDAAHAAQABAwHgAQABAwGg
+        AaICgAIAAcABGAEBAcABAAEDAcAB4wEBAwABwAEYAQEB4AEAAQMBxgFjAW0CAAEHAcABAAEBAcABAAED
+        AcAB4wF5AwAB8AEAAQcB4AEAAQMB7gHjAbsCAAEBAeABAAEDAeABAAEHAeYB4wGzAwAB4AEAAQMB+AEA
+        AQ8B9QHjAdcCAAEBAfABAAEHAfgBAAEfAfEBgAHXAwAB/gEAAT8B/gEAAT8B+wEiAQ8BgAIAAfwBAAE/
+        Af4BAAH/AfABwwGHAwAB/gECAT8B/wHhAv8B5wH/AcACAAH/AeMF/wHzAf8BgAIACf8B8AEHAfAD/wGA
+        AQABBwkAAYABAAEDCQABgAEAAQMJAAGAAQABAwkAAYABAAEBCQABgAEAAQEGAAGAAgABgAEAAQEJAAGA
+        AQABAQYAAYAXAAGAJgAB4AECCgAB8AEzAYAJAAH/AfEB/wkAAf8B8AF/CQAB+wHgAT8JAAH8AQABPwkA
+        Af4BAAF/CQAB/gEAAX8JAAH/AfwB/wYAAYACAAH/AfwB/wkAA/8GAAHAAgAL
+</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
-  <metadata name="imageList2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>127, 17</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1236, 604</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="&gt;&gt;M1.Name" xml:space="preserve">
+    <value>M1</value>
+  </data>
+  <data name="&gt;&gt;M1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M11.Name" xml:space="preserve">
+    <value>M11</value>
+  </data>
+  <data name="&gt;&gt;M11.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M12.Name" xml:space="preserve">
+    <value>M12</value>
+  </data>
+  <data name="&gt;&gt;M12.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M13.Name" xml:space="preserve">
+    <value>M13</value>
+  </data>
+  <data name="&gt;&gt;M13.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M14.Name" xml:space="preserve">
+    <value>M14</value>
+  </data>
+  <data name="&gt;&gt;M14.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M15.Name" xml:space="preserve">
+    <value>M15</value>
+  </data>
+  <data name="&gt;&gt;M15.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M16.Name" xml:space="preserve">
+    <value>M16</value>
+  </data>
+  <data name="&gt;&gt;M16.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M2.Name" xml:space="preserve">
+    <value>M2</value>
+  </data>
+  <data name="&gt;&gt;M2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M21.Name" xml:space="preserve">
+    <value>M21</value>
+  </data>
+  <data name="&gt;&gt;M21.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M22.Name" xml:space="preserve">
+    <value>M22</value>
+  </data>
+  <data name="&gt;&gt;M22.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M23.Name" xml:space="preserve">
+    <value>M23</value>
+  </data>
+  <data name="&gt;&gt;M23.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M24.Name" xml:space="preserve">
+    <value>M24</value>
+  </data>
+  <data name="&gt;&gt;M24.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M25.Name" xml:space="preserve">
+    <value>M25</value>
+  </data>
+  <data name="&gt;&gt;M25.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M26.Name" xml:space="preserve">
+    <value>M26</value>
+  </data>
+  <data name="&gt;&gt;M26.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M27.Name" xml:space="preserve">
+    <value>M27</value>
+  </data>
+  <data name="&gt;&gt;M27.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M3.Name" xml:space="preserve">
+    <value>M3</value>
+  </data>
+  <data name="&gt;&gt;M3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M31.Name" xml:space="preserve">
+    <value>M31</value>
+  </data>
+  <data name="&gt;&gt;M31.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M32.Name" xml:space="preserve">
+    <value>M32</value>
+  </data>
+  <data name="&gt;&gt;M32.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M33.Name" xml:space="preserve">
+    <value>M33</value>
+  </data>
+  <data name="&gt;&gt;M33.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M34.Name" xml:space="preserve">
+    <value>M34</value>
+  </data>
+  <data name="&gt;&gt;M34.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M35.Name" xml:space="preserve">
+    <value>M35</value>
+  </data>
+  <data name="&gt;&gt;M35.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M36.Name" xml:space="preserve">
+    <value>M36</value>
+  </data>
+  <data name="&gt;&gt;M36.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M37.Name" xml:space="preserve">
+    <value>M37</value>
+  </data>
+  <data name="&gt;&gt;M37.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem1.Name" xml:space="preserve">
+    <value>buttonItem1</value>
+  </data>
+  <data name="&gt;&gt;buttonItem1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M39.Name" xml:space="preserve">
+    <value>M39</value>
+  </data>
+  <data name="&gt;&gt;M39.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M311.Name" xml:space="preserve">
+    <value>M311</value>
+  </data>
+  <data name="&gt;&gt;M311.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M312.Name" xml:space="preserve">
+    <value>M312</value>
+  </data>
+  <data name="&gt;&gt;M312.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M313.Name" xml:space="preserve">
+    <value>M313</value>
+  </data>
+  <data name="&gt;&gt;M313.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M314.Name" xml:space="preserve">
+    <value>M314</value>
+  </data>
+  <data name="&gt;&gt;M314.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M4.Name" xml:space="preserve">
+    <value>M4</value>
+  </data>
+  <data name="&gt;&gt;M4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M41.Name" xml:space="preserve">
+    <value>M41</value>
+  </data>
+  <data name="&gt;&gt;M41.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M42.Name" xml:space="preserve">
+    <value>M42</value>
+  </data>
+  <data name="&gt;&gt;M42.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M43.Name" xml:space="preserve">
+    <value>M43</value>
+  </data>
+  <data name="&gt;&gt;M43.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M44.Name" xml:space="preserve">
+    <value>M44</value>
+  </data>
+  <data name="&gt;&gt;M44.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M45.Name" xml:space="preserve">
+    <value>M45</value>
+  </data>
+  <data name="&gt;&gt;M45.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M46.Name" xml:space="preserve">
+    <value>M46</value>
+  </data>
+  <data name="&gt;&gt;M46.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M47.Name" xml:space="preserve">
+    <value>M47</value>
+  </data>
+  <data name="&gt;&gt;M47.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M48.Name" xml:space="preserve">
+    <value>M48</value>
+  </data>
+  <data name="&gt;&gt;M48.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M49.Name" xml:space="preserve">
+    <value>M49</value>
+  </data>
+  <data name="&gt;&gt;M49.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M410.Name" xml:space="preserve">
+    <value>M410</value>
+  </data>
+  <data name="&gt;&gt;M410.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M5.Name" xml:space="preserve">
+    <value>M5</value>
+  </data>
+  <data name="&gt;&gt;M5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M51.Name" xml:space="preserve">
+    <value>M51</value>
+  </data>
+  <data name="&gt;&gt;M51.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M52.Name" xml:space="preserve">
+    <value>M52</value>
+  </data>
+  <data name="&gt;&gt;M52.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M53.Name" xml:space="preserve">
+    <value>M53</value>
+  </data>
+  <data name="&gt;&gt;M53.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M54.Name" xml:space="preserve">
+    <value>M54</value>
+  </data>
+  <data name="&gt;&gt;M54.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M55.Name" xml:space="preserve">
+    <value>M55</value>
+  </data>
+  <data name="&gt;&gt;M55.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M56.Name" xml:space="preserve">
+    <value>M56</value>
+  </data>
+  <data name="&gt;&gt;M56.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M57.Name" xml:space="preserve">
+    <value>M57</value>
+  </data>
+  <data name="&gt;&gt;M57.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M58.Name" xml:space="preserve">
+    <value>M58</value>
+  </data>
+  <data name="&gt;&gt;M58.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M59.Name" xml:space="preserve">
+    <value>M59</value>
+  </data>
+  <data name="&gt;&gt;M59.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M60.Name" xml:space="preserve">
+    <value>M60</value>
+  </data>
+  <data name="&gt;&gt;M60.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M6.Name" xml:space="preserve">
+    <value>M6</value>
+  </data>
+  <data name="&gt;&gt;M6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M61.Name" xml:space="preserve">
+    <value>M61</value>
+  </data>
+  <data name="&gt;&gt;M61.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M62.Name" xml:space="preserve">
+    <value>M62</value>
+  </data>
+  <data name="&gt;&gt;M62.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M63.Name" xml:space="preserve">
+    <value>M63</value>
+  </data>
+  <data name="&gt;&gt;M63.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M64.Name" xml:space="preserve">
+    <value>M64</value>
+  </data>
+  <data name="&gt;&gt;M64.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M7.Name" xml:space="preserve">
+    <value>M7</value>
+  </data>
+  <data name="&gt;&gt;M7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M71.Name" xml:space="preserve">
+    <value>M71</value>
+  </data>
+  <data name="&gt;&gt;M71.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M72.Name" xml:space="preserve">
+    <value>M72</value>
+  </data>
+  <data name="&gt;&gt;M72.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M73.Name" xml:space="preserve">
+    <value>M73</value>
+  </data>
+  <data name="&gt;&gt;M73.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M74.Name" xml:space="preserve">
+    <value>M74</value>
+  </data>
+  <data name="&gt;&gt;M74.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M75.Name" xml:space="preserve">
+    <value>M75</value>
+  </data>
+  <data name="&gt;&gt;M75.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M76.Name" xml:space="preserve">
+    <value>M76</value>
+  </data>
+  <data name="&gt;&gt;M76.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M77.Name" xml:space="preserve">
+    <value>M77</value>
+  </data>
+  <data name="&gt;&gt;M77.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M78.Name" xml:space="preserve">
+    <value>M78</value>
+  </data>
+  <data name="&gt;&gt;M78.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M79.Name" xml:space="preserve">
+    <value>M79</value>
+  </data>
+  <data name="&gt;&gt;M79.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M710.Name" xml:space="preserve">
+    <value>M710</value>
+  </data>
+  <data name="&gt;&gt;M710.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M711.Name" xml:space="preserve">
+    <value>M711</value>
+  </data>
+  <data name="&gt;&gt;M711.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M712.Name" xml:space="preserve">
+    <value>M712</value>
+  </data>
+  <data name="&gt;&gt;M712.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M713.Name" xml:space="preserve">
+    <value>M713</value>
+  </data>
+  <data name="&gt;&gt;M713.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M714.Name" xml:space="preserve">
+    <value>M714</value>
+  </data>
+  <data name="&gt;&gt;M714.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M715.Name" xml:space="preserve">
+    <value>M715</value>
+  </data>
+  <data name="&gt;&gt;M715.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M716.Name" xml:space="preserve">
+    <value>M716</value>
+  </data>
+  <data name="&gt;&gt;M716.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M717.Name" xml:space="preserve">
+    <value>M717</value>
+  </data>
+  <data name="&gt;&gt;M717.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M86.Name" xml:space="preserve">
+    <value>M86</value>
+  </data>
+  <data name="&gt;&gt;M86.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M718.Name" xml:space="preserve">
+    <value>M718</value>
+  </data>
+  <data name="&gt;&gt;M718.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M8.Name" xml:space="preserve">
+    <value>M8</value>
+  </data>
+  <data name="&gt;&gt;M8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M81.Name" xml:space="preserve">
+    <value>M81</value>
+  </data>
+  <data name="&gt;&gt;M81.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M82.Name" xml:space="preserve">
+    <value>M82</value>
+  </data>
+  <data name="&gt;&gt;M82.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M83.Name" xml:space="preserve">
+    <value>M83</value>
+  </data>
+  <data name="&gt;&gt;M83.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M84.Name" xml:space="preserve">
+    <value>M84</value>
+  </data>
+  <data name="&gt;&gt;M84.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M87.Name" xml:space="preserve">
+    <value>M87</value>
+  </data>
+  <data name="&gt;&gt;M87.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M87_1.Name" xml:space="preserve">
+    <value>M87_1</value>
+  </data>
+  <data name="&gt;&gt;M87_1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M87_2.Name" xml:space="preserve">
+    <value>M87_2</value>
+  </data>
+  <data name="&gt;&gt;M87_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M_Loans.Name" xml:space="preserve">
+    <value>M_Loans</value>
+  </data>
+  <data name="&gt;&gt;M_Loans.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_1.Name" xml:space="preserve">
+    <value>M_Loans_1</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_2.Name" xml:space="preserve">
+    <value>M_Loans_2</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_3.Name" xml:space="preserve">
+    <value>M_Loans_3</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_4.Name" xml:space="preserve">
+    <value>M_Loans_4</value>
+  </data>
+  <data name="&gt;&gt;M_Loans_4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M9.Name" xml:space="preserve">
+    <value>M9</value>
+  </data>
+  <data name="&gt;&gt;M9.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M91.Name" xml:space="preserve">
+    <value>M91</value>
+  </data>
+  <data name="&gt;&gt;M91.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M911.Name" xml:space="preserve">
+    <value>M911</value>
+  </data>
+  <data name="&gt;&gt;M911.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M912.Name" xml:space="preserve">
+    <value>M912</value>
+  </data>
+  <data name="&gt;&gt;M912.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M913.Name" xml:space="preserve">
+    <value>M913</value>
+  </data>
+  <data name="&gt;&gt;M913.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M92.Name" xml:space="preserve">
+    <value>M92</value>
+  </data>
+  <data name="&gt;&gt;M92.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M93.Name" xml:space="preserve">
+    <value>M93</value>
+  </data>
+  <data name="&gt;&gt;M93.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M10.Name" xml:space="preserve">
+    <value>M10</value>
+  </data>
+  <data name="&gt;&gt;M10.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M101.Name" xml:space="preserve">
+    <value>M101</value>
+  </data>
+  <data name="&gt;&gt;M101.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M102.Name" xml:space="preserve">
+    <value>M102</value>
+  </data>
+  <data name="&gt;&gt;M102.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M103.Name" xml:space="preserve">
+    <value>M103</value>
+  </data>
+  <data name="&gt;&gt;M103.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;M104.Name" xml:space="preserve">
+    <value>M104</value>
+  </data>
+  <data name="&gt;&gt;M104.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem2.Name" xml:space="preserve">
+    <value>buttonItem2</value>
+  </data>
+  <data name="&gt;&gt;buttonItem2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem3.Name" xml:space="preserve">
+    <value>buttonItem3</value>
+  </data>
+  <data name="&gt;&gt;buttonItem3.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem4.Name" xml:space="preserve">
+    <value>buttonItem4</value>
+  </data>
+  <data name="&gt;&gt;buttonItem4.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem5.Name" xml:space="preserve">
+    <value>buttonItem5</value>
+  </data>
+  <data name="&gt;&gt;buttonItem5.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btn_Updat_Take_To_Pro.Name" xml:space="preserve">
+    <value>btn_Updat_Take_To_Pro</value>
+  </data>
+  <data name="&gt;&gt;btn_Updat_Take_To_Pro.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;MLangue.Name" xml:space="preserve">
+    <value>MLangue</value>
+  </data>
+  <data name="&gt;&gt;MLangue.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem6.Name" xml:space="preserve">
+    <value>buttonItem6</value>
+  </data>
+  <data name="&gt;&gt;buttonItem6.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnUpdatetables.Name" xml:space="preserve">
+    <value>btnUpdatetables</value>
+  </data>
+  <data name="&gt;&gt;btnUpdatetables.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnAdjData.Name" xml:space="preserve">
+    <value>btnAdjData</value>
+  </data>
+  <data name="&gt;&gt;btnAdjData.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;b1.Name" xml:space="preserve">
+    <value>b1</value>
+  </data>
+  <data name="&gt;&gt;b1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem7.Name" xml:space="preserve">
+    <value>buttonItem7</value>
+  </data>
+  <data name="&gt;&gt;buttonItem7.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem8.Name" xml:space="preserve">
+    <value>buttonItem8</value>
+  </data>
+  <data name="&gt;&gt;buttonItem8.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btn_CashTransaction.Name" xml:space="preserve">
+    <value>btn_CashTransaction</value>
+  </data>
+  <data name="&gt;&gt;btn_CashTransaction.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnCash_1.Name" xml:space="preserve">
+    <value>btnCash_1</value>
+  </data>
+  <data name="&gt;&gt;btnCash_1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;btnCash_2.Name" xml:space="preserve">
+    <value>btnCash_2</value>
+  </data>
+  <data name="&gt;&gt;btnCash_2.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
+    <value>imageList2</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonItem17.Name" xml:space="preserve">
+    <value>buttonItem17</value>
+  </data>
+  <data name="&gt;&gt;buttonItem17.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;buttonItem18.Name" xml:space="preserve">
+    <value>buttonItem18</value>
+  </data>
+  <data name="&gt;&gt;buttonItem18.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.ButtonItem, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Frm_Main</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -2508,5 +2508,10 @@ C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_SalesInvo
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.invoice_frm.ar.resources
 C:\Report_Program\ReportProgram\Report_Pro\bin\Debug\QRCoder.dll
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.frm_QR_Code.resources
-C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
 C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_KM_Item.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_SalesGroup.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_SalesGroup.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_SalesGroup.sq-AL.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.MyControls.UC_KM_Item.ar.resources
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.csprojAssemblyReference.cache
+C:\Report_Program\ReportProgram\Report_Pro\obj\Debug\Report_Pro.PL.frm_Price_Group.resources

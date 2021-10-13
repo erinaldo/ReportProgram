@@ -42,87 +42,89 @@
             this.BExit = new DevComponents.DotNetBar.ButtonItem();
             this.print_sand = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX33 = new DevComponents.DotNetBar.LabelX();
+            this.txtSalesGroup = new Report_Pro.MyControls.UC_SalesGroup();
+            this.labelX31 = new DevComponents.DotNetBar.LabelX();
+            this.txtType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.txtKM_Item = new Report_Pro.MyControls.UC_KM_Item();
+            this.labelX32 = new DevComponents.DotNetBar.LabelX();
             this.txtDimCategory = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX29 = new DevComponents.DotNetBar.LabelX();
             this.txtCategory = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX28 = new DevComponents.DotNetBar.LabelX();
+            this.labelX19 = new DevComponents.DotNetBar.LabelX();
             this.txtCompany = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX27 = new DevComponents.DotNetBar.LabelX();
             this.txtCompanyID = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtSalesPrice = new DevComponents.Editors.DoubleInput();
+            this.labelX26 = new DevComponents.DotNetBar.LabelX();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.labelX12 = new DevComponents.DotNetBar.LabelX();
+            this.labelX25 = new DevComponents.DotNetBar.LabelX();
             this.txtFactoryNo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.txtBrand = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtCode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.labelX23 = new DevComponents.DotNetBar.LabelX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
+            this.txtSalesUnit = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX22 = new DevComponents.DotNetBar.LabelX();
             this.txtColor = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.txtWeightUnit = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX21 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.txtgroup = new Report_Pro.MyControls.Uc_Group();
             this.txtDescrption_E = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX20 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.txtDescrption = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.txtBarcode = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtWeight = new DevComponents.Editors.DoubleInput();
+            this.txtLength = new DevComponents.Editors.DoubleInput();
+            this.txtWidth = new DevComponents.Editors.DoubleInput();
+            this.txtThickness = new DevComponents.Editors.DoubleInput();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
-            this.labelX31 = new DevComponents.DotNetBar.LabelX();
-            this.txtKM_Item = new Report_Pro.MyControls.UC_KM_Item();
-            this.labelX30 = new DevComponents.DotNetBar.LabelX();
-            this.labelX29 = new DevComponents.DotNetBar.LabelX();
-            this.labelX28 = new DevComponents.DotNetBar.LabelX();
-            this.labelX27 = new DevComponents.DotNetBar.LabelX();
-            this.labelX26 = new DevComponents.DotNetBar.LabelX();
-            this.labelX18 = new DevComponents.DotNetBar.LabelX();
-            this.labelX17 = new DevComponents.DotNetBar.LabelX();
-            this.labelX16 = new DevComponents.DotNetBar.LabelX();
-            this.labelX15 = new DevComponents.DotNetBar.LabelX();
-            this.labelX24 = new DevComponents.DotNetBar.LabelX();
-            this.labelX23 = new DevComponents.DotNetBar.LabelX();
-            this.labelX22 = new DevComponents.DotNetBar.LabelX();
-            this.labelX14 = new DevComponents.DotNetBar.LabelX();
-            this.labelX21 = new DevComponents.DotNetBar.LabelX();
-            this.labelX13 = new DevComponents.DotNetBar.LabelX();
-            this.labelX19 = new DevComponents.DotNetBar.LabelX();
-            this.labelX25 = new DevComponents.DotNetBar.LabelX();
-            this.labelX20 = new DevComponents.DotNetBar.LabelX();
-            this.labelX12 = new DevComponents.DotNetBar.LabelX();
-            this.txtpack3_Price = new DevComponents.Editors.DoubleInput();
-            this.txtpack2_Price = new DevComponents.Editors.DoubleInput();
-            this.txtSalesPrice = new DevComponents.Editors.DoubleInput();
-            this.txtpackaging3 = new DevComponents.Editors.DoubleInput();
-            this.txtpackaging2 = new DevComponents.Editors.DoubleInput();
-            this.txtUnit3 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.txtUnit2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.txtSalesUnit = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.txtWeightUnit = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.txtArea = new DevComponents.Editors.DoubleInput();
-            this.txtThickness = new DevComponents.Editors.DoubleInput();
-            this.txtWidth = new DevComponents.Editors.DoubleInput();
-            this.txtLength = new DevComponents.Editors.DoubleInput();
-            this.txtWeight = new DevComponents.Editors.DoubleInput();
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.txtType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.labelX32 = new DevComponents.DotNetBar.LabelX();
+            this.labelX30 = new DevComponents.DotNetBar.LabelX();
+            this.labelX18 = new DevComponents.DotNetBar.LabelX();
+            this.labelX17 = new DevComponents.DotNetBar.LabelX();
+            this.labelX16 = new DevComponents.DotNetBar.LabelX();
+            this.labelX15 = new DevComponents.DotNetBar.LabelX();
+            this.labelX24 = new DevComponents.DotNetBar.LabelX();
+            this.labelX14 = new DevComponents.DotNetBar.LabelX();
+            this.labelX13 = new DevComponents.DotNetBar.LabelX();
+            this.txtpack3_Price = new DevComponents.Editors.DoubleInput();
+            this.txtpack2_Price = new DevComponents.Editors.DoubleInput();
+            this.txtpackaging3 = new DevComponents.Editors.DoubleInput();
+            this.txtpackaging2 = new DevComponents.Editors.DoubleInput();
+            this.txtUnit3 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.txtUnit2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.txtArea = new DevComponents.Editors.DoubleInput();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalesPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThickness)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabControlPanel1.SuspendLayout();
+            this.tabControlPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtpack3_Price)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpack2_Price)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSalesPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpackaging3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpackaging2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtArea)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtThickness)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWidth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonBar1
@@ -249,6 +251,8 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.labelX33);
+            this.groupPanel1.Controls.Add(this.txtSalesGroup);
             this.groupPanel1.Controls.Add(this.labelX31);
             this.groupPanel1.Controls.Add(this.txtType);
             this.groupPanel1.Controls.Add(this.txtKM_Item);
@@ -257,9 +261,11 @@
             this.groupPanel1.Controls.Add(this.labelX29);
             this.groupPanel1.Controls.Add(this.txtCategory);
             this.groupPanel1.Controls.Add(this.labelX28);
+            this.groupPanel1.Controls.Add(this.labelX19);
             this.groupPanel1.Controls.Add(this.txtCompany);
             this.groupPanel1.Controls.Add(this.labelX27);
             this.groupPanel1.Controls.Add(this.txtCompanyID);
+            this.groupPanel1.Controls.Add(this.txtSalesPrice);
             this.groupPanel1.Controls.Add(this.labelX26);
             this.groupPanel1.Controls.Add(this.labelX11);
             this.groupPanel1.Controls.Add(this.labelX12);
@@ -320,6 +326,69 @@
             this.groupPanel1.TabIndex = 104;
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
+            // labelX33
+            // 
+            this.labelX33.AutoSize = true;
+            this.labelX33.BackColor = System.Drawing.Color.Transparent;
+            this.labelX33.Location = new System.Drawing.Point(34, 311);
+            this.labelX33.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX33.Name = "labelX33";
+            this.labelX33.Size = new System.Drawing.Size(64, 17);
+            this.labelX33.TabIndex = 30;
+            this.labelX33.Text = "Sales Group";
+            // 
+            // txtSalesGroup
+            // 
+            this.txtSalesGroup.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtSalesGroup.Location = new System.Drawing.Point(105, 310);
+            this.txtSalesGroup.Margin = new System.Windows.Forms.Padding(0);
+            this.txtSalesGroup.Name = "txtSalesGroup";
+            this.txtSalesGroup.Size = new System.Drawing.Size(323, 22);
+            this.txtSalesGroup.TabIndex = 29;
+            // 
+            // labelX31
+            // 
+            this.labelX31.AutoSize = true;
+            this.labelX31.BackColor = System.Drawing.Color.Transparent;
+            this.labelX31.Location = new System.Drawing.Point(49, 285);
+            this.labelX31.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX31.Name = "labelX31";
+            this.labelX31.Size = new System.Drawing.Size(49, 17);
+            this.labelX31.TabIndex = 27;
+            this.labelX31.Text = "KM Code";
+            // 
+            // txtType
+            // 
+            this.txtType.DisplayMember = "Text";
+            this.txtType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtType.FormattingEnabled = true;
+            this.txtType.ItemHeight = 14;
+            this.txtType.Location = new System.Drawing.Point(103, 259);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(325, 20);
+            this.txtType.TabIndex = 28;
+            // 
+            // txtKM_Item
+            // 
+            this.txtKM_Item.BackColor = System.Drawing.Color.Transparent;
+            this.txtKM_Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtKM_Item.Location = new System.Drawing.Point(103, 282);
+            this.txtKM_Item.Margin = new System.Windows.Forms.Padding(0);
+            this.txtKM_Item.Name = "txtKM_Item";
+            this.txtKM_Item.Size = new System.Drawing.Size(325, 24);
+            this.txtKM_Item.TabIndex = 26;
+            // 
+            // labelX32
+            // 
+            this.labelX32.AutoSize = true;
+            this.labelX32.BackColor = System.Drawing.Color.Transparent;
+            this.labelX32.Location = new System.Drawing.Point(68, 261);
+            this.labelX32.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX32.Name = "labelX32";
+            this.labelX32.Size = new System.Drawing.Size(30, 17);
+            this.labelX32.TabIndex = 27;
+            this.labelX32.Text = "Type";
+            // 
             // txtDimCategory
             // 
             this.txtDimCategory.DisplayMember = "Text";
@@ -328,8 +397,19 @@
             this.txtDimCategory.ItemHeight = 14;
             this.txtDimCategory.Location = new System.Drawing.Point(103, 231);
             this.txtDimCategory.Name = "txtDimCategory";
-            this.txtDimCategory.Size = new System.Drawing.Size(308, 20);
+            this.txtDimCategory.Size = new System.Drawing.Size(325, 20);
             this.txtDimCategory.TabIndex = 26;
+            // 
+            // labelX29
+            // 
+            this.labelX29.AutoSize = true;
+            this.labelX29.BackColor = System.Drawing.Color.Transparent;
+            this.labelX29.Location = new System.Drawing.Point(670, 159);
+            this.labelX29.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX29.Name = "labelX29";
+            this.labelX29.Size = new System.Drawing.Size(23, 17);
+            this.labelX29.TabIndex = 25;
+            this.labelX29.Text = "MM";
             // 
             // txtCategory
             // 
@@ -339,8 +419,30 @@
             this.txtCategory.ItemHeight = 14;
             this.txtCategory.Location = new System.Drawing.Point(105, 205);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(308, 20);
+            this.txtCategory.Size = new System.Drawing.Size(325, 20);
             this.txtCategory.TabIndex = 25;
+            // 
+            // labelX28
+            // 
+            this.labelX28.AutoSize = true;
+            this.labelX28.BackColor = System.Drawing.Color.Transparent;
+            this.labelX28.Location = new System.Drawing.Point(670, 133);
+            this.labelX28.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX28.Name = "labelX28";
+            this.labelX28.Size = new System.Drawing.Size(23, 17);
+            this.labelX28.TabIndex = 25;
+            this.labelX28.Text = "MM";
+            // 
+            // labelX19
+            // 
+            this.labelX19.AutoSize = true;
+            this.labelX19.BackColor = System.Drawing.Color.Transparent;
+            this.labelX19.Location = new System.Drawing.Point(479, 237);
+            this.labelX19.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX19.Name = "labelX19";
+            this.labelX19.Size = new System.Drawing.Size(58, 17);
+            this.labelX19.TabIndex = 21;
+            this.labelX19.Text = "Sales Price";
             // 
             // txtCompany
             // 
@@ -356,8 +458,19 @@
             this.txtCompany.Location = new System.Drawing.Point(166, 126);
             this.txtCompany.Margin = new System.Windows.Forms.Padding(2);
             this.txtCompany.Name = "txtCompany";
-            this.txtCompany.Size = new System.Drawing.Size(265, 20);
+            this.txtCompany.Size = new System.Drawing.Size(262, 20);
             this.txtCompany.TabIndex = 24;
+            // 
+            // labelX27
+            // 
+            this.labelX27.AutoSize = true;
+            this.labelX27.BackColor = System.Drawing.Color.Transparent;
+            this.labelX27.Location = new System.Drawing.Point(673, 107);
+            this.labelX27.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX27.Name = "labelX27";
+            this.labelX27.Size = new System.Drawing.Size(23, 17);
+            this.labelX27.TabIndex = 25;
+            this.labelX27.Text = "MM";
             // 
             // txtCompanyID
             // 
@@ -376,6 +489,31 @@
             this.txtCompanyID.Size = new System.Drawing.Size(57, 20);
             this.txtCompanyID.TabIndex = 23;
             // 
+            // txtSalesPrice
+            // 
+            // 
+            // 
+            // 
+            this.txtSalesPrice.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtSalesPrice.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtSalesPrice.Increment = 1D;
+            this.txtSalesPrice.Location = new System.Drawing.Point(547, 235);
+            this.txtSalesPrice.Name = "txtSalesPrice";
+            this.txtSalesPrice.Size = new System.Drawing.Size(123, 20);
+            this.txtSalesPrice.TabIndex = 11;
+            this.txtSalesPrice.ValueChanged += new System.EventHandler(this.doubleInput8_ValueChanged);
+            // 
+            // labelX26
+            // 
+            this.labelX26.AutoSize = true;
+            this.labelX26.BackColor = System.Drawing.Color.Transparent;
+            this.labelX26.Location = new System.Drawing.Point(673, 81);
+            this.labelX26.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX26.Name = "labelX26";
+            this.labelX26.Size = new System.Drawing.Size(20, 17);
+            this.labelX26.TabIndex = 25;
+            this.labelX26.Text = "KG";
+            // 
             // labelX11
             // 
             this.labelX11.AutoSize = true;
@@ -386,6 +524,28 @@
             this.labelX11.Size = new System.Drawing.Size(51, 17);
             this.labelX11.TabIndex = 22;
             this.labelX11.Text = "Company";
+            // 
+            // labelX12
+            // 
+            this.labelX12.AutoSize = true;
+            this.labelX12.BackColor = System.Drawing.Color.Transparent;
+            this.labelX12.Location = new System.Drawing.Point(488, 211);
+            this.labelX12.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX12.Name = "labelX12";
+            this.labelX12.Size = new System.Drawing.Size(54, 17);
+            this.labelX12.TabIndex = 21;
+            this.labelX12.Text = "Sales Unit";
+            // 
+            // labelX25
+            // 
+            this.labelX25.AutoSize = true;
+            this.labelX25.BackColor = System.Drawing.Color.Transparent;
+            this.labelX25.Location = new System.Drawing.Point(479, 185);
+            this.labelX25.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX25.Name = "labelX25";
+            this.labelX25.Size = new System.Drawing.Size(63, 17);
+            this.labelX25.TabIndex = 21;
+            this.labelX25.Text = "Weight Unit";
             // 
             // txtFactoryNo
             // 
@@ -460,6 +620,17 @@
             this.labelX9.TabIndex = 17;
             this.labelX9.Text = "Dim Category";
             // 
+            // labelX23
+            // 
+            this.labelX23.AutoSize = true;
+            this.labelX23.BackColor = System.Drawing.Color.Transparent;
+            this.labelX23.Location = new System.Drawing.Point(487, 159);
+            this.labelX23.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX23.Name = "labelX23";
+            this.labelX23.Size = new System.Drawing.Size(53, 17);
+            this.labelX23.TabIndex = 23;
+            this.labelX23.Text = "Thickness";
+            // 
             // labelX8
             // 
             this.labelX8.AutoSize = true;
@@ -470,6 +641,28 @@
             this.labelX8.Size = new System.Drawing.Size(49, 17);
             this.labelX8.TabIndex = 16;
             this.labelX8.Text = "Category";
+            // 
+            // txtSalesUnit
+            // 
+            this.txtSalesUnit.DisplayMember = "Text";
+            this.txtSalesUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtSalesUnit.FormattingEnabled = true;
+            this.txtSalesUnit.ItemHeight = 14;
+            this.txtSalesUnit.Location = new System.Drawing.Point(547, 209);
+            this.txtSalesUnit.Name = "txtSalesUnit";
+            this.txtSalesUnit.Size = new System.Drawing.Size(123, 20);
+            this.txtSalesUnit.TabIndex = 6;
+            // 
+            // labelX22
+            // 
+            this.labelX22.AutoSize = true;
+            this.labelX22.BackColor = System.Drawing.Color.Transparent;
+            this.labelX22.Location = new System.Drawing.Point(506, 133);
+            this.labelX22.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX22.Name = "labelX22";
+            this.labelX22.Size = new System.Drawing.Size(34, 17);
+            this.labelX22.TabIndex = 23;
+            this.labelX22.Text = "Width";
             // 
             // txtColor
             // 
@@ -485,20 +678,42 @@
             this.txtColor.Location = new System.Drawing.Point(298, 176);
             this.txtColor.Margin = new System.Windows.Forms.Padding(2);
             this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(133, 20);
+            this.txtColor.Size = new System.Drawing.Size(130, 20);
             this.txtColor.TabIndex = 13;
             // 
             // labelX6
             // 
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(264, 178);
+            this.labelX6.Location = new System.Drawing.Point(263, 178);
             this.labelX6.Margin = new System.Windows.Forms.Padding(2);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(31, 17);
             this.labelX6.TabIndex = 12;
             this.labelX6.Text = "Color";
             this.labelX6.Click += new System.EventHandler(this.labelX6_Click);
+            // 
+            // txtWeightUnit
+            // 
+            this.txtWeightUnit.DisplayMember = "Text";
+            this.txtWeightUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtWeightUnit.FormattingEnabled = true;
+            this.txtWeightUnit.ItemHeight = 14;
+            this.txtWeightUnit.Location = new System.Drawing.Point(547, 183);
+            this.txtWeightUnit.Name = "txtWeightUnit";
+            this.txtWeightUnit.Size = new System.Drawing.Size(123, 20);
+            this.txtWeightUnit.TabIndex = 5;
+            // 
+            // labelX21
+            // 
+            this.labelX21.AutoSize = true;
+            this.labelX21.BackColor = System.Drawing.Color.Transparent;
+            this.labelX21.Location = new System.Drawing.Point(504, 107);
+            this.labelX21.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX21.Name = "labelX21";
+            this.labelX21.Size = new System.Drawing.Size(36, 17);
+            this.labelX21.TabIndex = 22;
+            this.labelX21.Text = "length";
             // 
             // labelX7
             // 
@@ -528,7 +743,7 @@
             this.txtgroup.Location = new System.Drawing.Point(105, 150);
             this.txtgroup.Margin = new System.Windows.Forms.Padding(0);
             this.txtgroup.Name = "txtgroup";
-            this.txtgroup.Size = new System.Drawing.Size(323, 21);
+            this.txtgroup.Size = new System.Drawing.Size(323, 22);
             this.txtgroup.TabIndex = 8;
             // 
             // txtDescrption_E
@@ -547,6 +762,17 @@
             this.txtDescrption_E.Name = "txtDescrption_E";
             this.txtDescrption_E.Size = new System.Drawing.Size(323, 20);
             this.txtDescrption_E.TabIndex = 7;
+            // 
+            // labelX20
+            // 
+            this.labelX20.AutoSize = true;
+            this.labelX20.BackColor = System.Drawing.Color.Transparent;
+            this.labelX20.Location = new System.Drawing.Point(500, 81);
+            this.labelX20.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX20.Name = "labelX20";
+            this.labelX20.Size = new System.Drawing.Size(40, 17);
+            this.labelX20.TabIndex = 21;
+            this.labelX20.Text = "Weight";
             // 
             // labelX4
             // 
@@ -626,11 +852,63 @@
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "Code";
             // 
+            // txtWeight
+            // 
+            // 
+            // 
+            // 
+            this.txtWeight.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtWeight.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtWeight.Increment = 1D;
+            this.txtWeight.Location = new System.Drawing.Point(545, 79);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(123, 20);
+            this.txtWeight.TabIndex = 0;
+            // 
+            // txtLength
+            // 
+            // 
+            // 
+            // 
+            this.txtLength.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtLength.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtLength.Increment = 1D;
+            this.txtLength.Location = new System.Drawing.Point(545, 105);
+            this.txtLength.Name = "txtLength";
+            this.txtLength.Size = new System.Drawing.Size(123, 20);
+            this.txtLength.TabIndex = 1;
+            // 
+            // txtWidth
+            // 
+            // 
+            // 
+            // 
+            this.txtWidth.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtWidth.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtWidth.Increment = 1D;
+            this.txtWidth.Location = new System.Drawing.Point(545, 131);
+            this.txtWidth.Name = "txtWidth";
+            this.txtWidth.Size = new System.Drawing.Size(123, 20);
+            this.txtWidth.TabIndex = 2;
+            // 
+            // txtThickness
+            // 
+            // 
+            // 
+            // 
+            this.txtThickness.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtThickness.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtThickness.Increment = 1D;
+            this.txtThickness.Location = new System.Drawing.Point(545, 157);
+            this.txtThickness.Name = "txtThickness";
+            this.txtThickness.Size = new System.Drawing.Size(123, 20);
+            this.txtThickness.TabIndex = 3;
+            // 
             // tabControl1
             // 
             this.tabControl1.CanReorderTabs = true;
-            this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel2);
+            this.tabControl1.Controls.Add(this.tabControlPanel1);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 419);
@@ -644,27 +922,10 @@
             this.tabControl1.Tabs.Add(this.tabItem1);
             this.tabControl1.Tabs.Add(this.tabItem2);
             this.tabControl1.Tabs.Add(this.tabItem3);
-            this.tabControl1.Text = "tabControl1";
+            this.tabControl1.Text = "Cost";
             // 
             // tabControlPanel1
             // 
-            this.tabControlPanel1.Controls.Add(this.labelX30);
-            this.tabControlPanel1.Controls.Add(this.labelX18);
-            this.tabControlPanel1.Controls.Add(this.labelX17);
-            this.tabControlPanel1.Controls.Add(this.labelX16);
-            this.tabControlPanel1.Controls.Add(this.labelX15);
-            this.tabControlPanel1.Controls.Add(this.labelX24);
-            this.tabControlPanel1.Controls.Add(this.labelX14);
-            this.tabControlPanel1.Controls.Add(this.labelX13);
-            this.tabControlPanel1.Controls.Add(this.labelX19);
-            this.tabControlPanel1.Controls.Add(this.txtpack3_Price);
-            this.tabControlPanel1.Controls.Add(this.txtpack2_Price);
-            this.tabControlPanel1.Controls.Add(this.txtSalesPrice);
-            this.tabControlPanel1.Controls.Add(this.txtpackaging3);
-            this.tabControlPanel1.Controls.Add(this.txtpackaging2);
-            this.tabControlPanel1.Controls.Add(this.txtUnit3);
-            this.tabControlPanel1.Controls.Add(this.txtUnit2);
-            this.tabControlPanel1.Controls.Add(this.txtArea);
             this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -681,427 +942,35 @@
             this.tabControlPanel1.TabIndex = 1;
             this.tabControlPanel1.TabItem = this.tabItem1;
             // 
-            // labelX31
-            // 
-            this.labelX31.AutoSize = true;
-            this.labelX31.BackColor = System.Drawing.Color.Transparent;
-            this.labelX31.Location = new System.Drawing.Point(49, 285);
-            this.labelX31.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX31.Name = "labelX31";
-            this.labelX31.Size = new System.Drawing.Size(49, 17);
-            this.labelX31.TabIndex = 27;
-            this.labelX31.Text = "KM Code";
-            // 
-            // txtKM_Item
-            // 
-            this.txtKM_Item.BackColor = System.Drawing.Color.Transparent;
-            this.txtKM_Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtKM_Item.Location = new System.Drawing.Point(103, 282);
-            this.txtKM_Item.Margin = new System.Windows.Forms.Padding(0);
-            this.txtKM_Item.Name = "txtKM_Item";
-            this.txtKM_Item.Size = new System.Drawing.Size(308, 24);
-            this.txtKM_Item.TabIndex = 26;
-            // 
-            // labelX30
-            // 
-            this.labelX30.AutoSize = true;
-            this.labelX30.BackColor = System.Drawing.Color.Transparent;
-            this.labelX30.Location = new System.Drawing.Point(207, 64);
-            this.labelX30.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX30.Name = "labelX30";
-            this.labelX30.Size = new System.Drawing.Size(37, 17);
-            this.labelX30.TabIndex = 25;
-            this.labelX30.Text = "MM^2";
-            // 
-            // labelX29
-            // 
-            this.labelX29.AutoSize = true;
-            this.labelX29.BackColor = System.Drawing.Color.Transparent;
-            this.labelX29.Location = new System.Drawing.Point(645, 157);
-            this.labelX29.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX29.Name = "labelX29";
-            this.labelX29.Size = new System.Drawing.Size(23, 17);
-            this.labelX29.TabIndex = 25;
-            this.labelX29.Text = "MM";
-            // 
-            // labelX28
-            // 
-            this.labelX28.AutoSize = true;
-            this.labelX28.BackColor = System.Drawing.Color.Transparent;
-            this.labelX28.Location = new System.Drawing.Point(645, 131);
-            this.labelX28.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX28.Name = "labelX28";
-            this.labelX28.Size = new System.Drawing.Size(23, 17);
-            this.labelX28.TabIndex = 25;
-            this.labelX28.Text = "MM";
-            // 
-            // labelX27
-            // 
-            this.labelX27.AutoSize = true;
-            this.labelX27.BackColor = System.Drawing.Color.Transparent;
-            this.labelX27.Location = new System.Drawing.Point(648, 105);
-            this.labelX27.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX27.Name = "labelX27";
-            this.labelX27.Size = new System.Drawing.Size(23, 17);
-            this.labelX27.TabIndex = 25;
-            this.labelX27.Text = "MM";
-            // 
-            // labelX26
-            // 
-            this.labelX26.AutoSize = true;
-            this.labelX26.BackColor = System.Drawing.Color.Transparent;
-            this.labelX26.Location = new System.Drawing.Point(648, 79);
-            this.labelX26.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX26.Name = "labelX26";
-            this.labelX26.Size = new System.Drawing.Size(20, 17);
-            this.labelX26.TabIndex = 25;
-            this.labelX26.Text = "KG";
-            // 
-            // labelX18
-            // 
-            this.labelX18.AutoSize = true;
-            this.labelX18.BackColor = System.Drawing.Color.Transparent;
-            this.labelX18.Location = new System.Drawing.Point(713, 90);
-            this.labelX18.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX18.Name = "labelX18";
-            this.labelX18.Size = new System.Drawing.Size(91, 17);
-            this.labelX18.TabIndex = 24;
-            this.labelX18.Text = "packaging 3 Price";
-            // 
-            // labelX17
-            // 
-            this.labelX17.AutoSize = true;
-            this.labelX17.BackColor = System.Drawing.Color.Transparent;
-            this.labelX17.Location = new System.Drawing.Point(713, 64);
-            this.labelX17.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX17.Name = "labelX17";
-            this.labelX17.Size = new System.Drawing.Size(91, 17);
-            this.labelX17.TabIndex = 24;
-            this.labelX17.Text = "packaging 2 Price";
-            // 
-            // labelX16
-            // 
-            this.labelX16.AutoSize = true;
-            this.labelX16.BackColor = System.Drawing.Color.Transparent;
-            this.labelX16.Location = new System.Drawing.Point(500, 90);
-            this.labelX16.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX16.Name = "labelX16";
-            this.labelX16.Size = new System.Drawing.Size(64, 17);
-            this.labelX16.TabIndex = 24;
-            this.labelX16.Text = "packaging 3";
-            // 
-            // labelX15
-            // 
-            this.labelX15.AutoSize = true;
-            this.labelX15.BackColor = System.Drawing.Color.Transparent;
-            this.labelX15.Location = new System.Drawing.Point(500, 64);
-            this.labelX15.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX15.Name = "labelX15";
-            this.labelX15.Size = new System.Drawing.Size(64, 17);
-            this.labelX15.TabIndex = 24;
-            this.labelX15.Text = "packaging 2";
-            // 
-            // labelX24
-            // 
-            this.labelX24.AutoSize = true;
-            this.labelX24.BackColor = System.Drawing.Color.Transparent;
-            this.labelX24.Location = new System.Drawing.Point(49, 64);
-            this.labelX24.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX24.Name = "labelX24";
-            this.labelX24.Size = new System.Drawing.Size(28, 17);
-            this.labelX24.TabIndex = 23;
-            this.labelX24.Text = "Area";
-            // 
-            // labelX23
-            // 
-            this.labelX23.AutoSize = true;
-            this.labelX23.BackColor = System.Drawing.Color.Transparent;
-            this.labelX23.Location = new System.Drawing.Point(462, 157);
-            this.labelX23.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX23.Name = "labelX23";
-            this.labelX23.Size = new System.Drawing.Size(53, 17);
-            this.labelX23.TabIndex = 23;
-            this.labelX23.Text = "Thickness";
-            // 
-            // labelX22
-            // 
-            this.labelX22.AutoSize = true;
-            this.labelX22.BackColor = System.Drawing.Color.Transparent;
-            this.labelX22.Location = new System.Drawing.Point(481, 131);
-            this.labelX22.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX22.Name = "labelX22";
-            this.labelX22.Size = new System.Drawing.Size(34, 17);
-            this.labelX22.TabIndex = 23;
-            this.labelX22.Text = "Width";
-            // 
-            // labelX14
-            // 
-            this.labelX14.AutoSize = true;
-            this.labelX14.BackColor = System.Drawing.Color.Transparent;
-            this.labelX14.Location = new System.Drawing.Point(307, 90);
-            this.labelX14.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX14.Name = "labelX14";
-            this.labelX14.Size = new System.Drawing.Size(35, 17);
-            this.labelX14.TabIndex = 23;
-            this.labelX14.Text = "Unit 3";
-            // 
-            // labelX21
-            // 
-            this.labelX21.AutoSize = true;
-            this.labelX21.BackColor = System.Drawing.Color.Transparent;
-            this.labelX21.Location = new System.Drawing.Point(479, 105);
-            this.labelX21.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX21.Name = "labelX21";
-            this.labelX21.Size = new System.Drawing.Size(36, 17);
-            this.labelX21.TabIndex = 22;
-            this.labelX21.Text = "length";
-            // 
-            // labelX13
-            // 
-            this.labelX13.AutoSize = true;
-            this.labelX13.BackColor = System.Drawing.Color.Transparent;
-            this.labelX13.Location = new System.Drawing.Point(307, 64);
-            this.labelX13.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX13.Name = "labelX13";
-            this.labelX13.Size = new System.Drawing.Size(35, 17);
-            this.labelX13.TabIndex = 22;
-            this.labelX13.Text = "Unit 2";
-            // 
-            // labelX19
-            // 
-            this.labelX19.AutoSize = true;
-            this.labelX19.BackColor = System.Drawing.Color.Transparent;
-            this.labelX19.Location = new System.Drawing.Point(746, 38);
-            this.labelX19.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX19.Name = "labelX19";
-            this.labelX19.Size = new System.Drawing.Size(58, 17);
-            this.labelX19.TabIndex = 21;
-            this.labelX19.Text = "Sales Price";
-            // 
-            // labelX25
-            // 
-            this.labelX25.AutoSize = true;
-            this.labelX25.BackColor = System.Drawing.Color.Transparent;
-            this.labelX25.Location = new System.Drawing.Point(454, 183);
-            this.labelX25.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX25.Name = "labelX25";
-            this.labelX25.Size = new System.Drawing.Size(63, 17);
-            this.labelX25.TabIndex = 21;
-            this.labelX25.Text = "Weight Unit";
-            // 
-            // labelX20
-            // 
-            this.labelX20.AutoSize = true;
-            this.labelX20.BackColor = System.Drawing.Color.Transparent;
-            this.labelX20.Location = new System.Drawing.Point(475, 79);
-            this.labelX20.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX20.Name = "labelX20";
-            this.labelX20.Size = new System.Drawing.Size(40, 17);
-            this.labelX20.TabIndex = 21;
-            this.labelX20.Text = "Weight";
-            // 
-            // labelX12
-            // 
-            this.labelX12.AutoSize = true;
-            this.labelX12.BackColor = System.Drawing.Color.Transparent;
-            this.labelX12.Location = new System.Drawing.Point(463, 209);
-            this.labelX12.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(54, 17);
-            this.labelX12.TabIndex = 21;
-            this.labelX12.Text = "Sales Unit";
-            // 
-            // txtpack3_Price
-            // 
-            // 
-            // 
-            // 
-            this.txtpack3_Price.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtpack3_Price.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtpack3_Price.Increment = 1D;
-            this.txtpack3_Price.Location = new System.Drawing.Point(814, 88);
-            this.txtpack3_Price.Name = "txtpack3_Price";
-            this.txtpack3_Price.Size = new System.Drawing.Size(123, 20);
-            this.txtpack3_Price.TabIndex = 13;
-            this.txtpack3_Price.ValueChanged += new System.EventHandler(this.doubleInput6_ValueChanged);
-            // 
-            // txtpack2_Price
-            // 
-            // 
-            // 
-            // 
-            this.txtpack2_Price.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtpack2_Price.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtpack2_Price.Increment = 1D;
-            this.txtpack2_Price.Location = new System.Drawing.Point(814, 62);
-            this.txtpack2_Price.Name = "txtpack2_Price";
-            this.txtpack2_Price.Size = new System.Drawing.Size(123, 20);
-            this.txtpack2_Price.TabIndex = 12;
-            this.txtpack2_Price.ValueChanged += new System.EventHandler(this.doubleInput7_ValueChanged);
-            // 
-            // txtSalesPrice
-            // 
-            // 
-            // 
-            // 
-            this.txtSalesPrice.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtSalesPrice.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtSalesPrice.Increment = 1D;
-            this.txtSalesPrice.Location = new System.Drawing.Point(814, 36);
-            this.txtSalesPrice.Name = "txtSalesPrice";
-            this.txtSalesPrice.Size = new System.Drawing.Size(123, 20);
-            this.txtSalesPrice.TabIndex = 11;
-            this.txtSalesPrice.ValueChanged += new System.EventHandler(this.doubleInput8_ValueChanged);
-            // 
-            // txtpackaging3
-            // 
-            // 
-            // 
-            // 
-            this.txtpackaging3.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtpackaging3.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtpackaging3.Increment = 1D;
-            this.txtpackaging3.Location = new System.Drawing.Point(568, 88);
-            this.txtpackaging3.Name = "txtpackaging3";
-            this.txtpackaging3.Size = new System.Drawing.Size(123, 20);
-            this.txtpackaging3.TabIndex = 10;
-            // 
-            // txtpackaging2
-            // 
-            // 
-            // 
-            // 
-            this.txtpackaging2.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtpackaging2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtpackaging2.Increment = 1D;
-            this.txtpackaging2.Location = new System.Drawing.Point(568, 62);
-            this.txtpackaging2.Name = "txtpackaging2";
-            this.txtpackaging2.Size = new System.Drawing.Size(123, 20);
-            this.txtpackaging2.TabIndex = 9;
-            // 
-            // txtUnit3
-            // 
-            this.txtUnit3.DisplayMember = "Text";
-            this.txtUnit3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtUnit3.FormattingEnabled = true;
-            this.txtUnit3.ItemHeight = 14;
-            this.txtUnit3.Location = new System.Drawing.Point(347, 88);
-            this.txtUnit3.Name = "txtUnit3";
-            this.txtUnit3.Size = new System.Drawing.Size(121, 20);
-            this.txtUnit3.TabIndex = 8;
-            // 
-            // txtUnit2
-            // 
-            this.txtUnit2.DisplayMember = "Text";
-            this.txtUnit2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtUnit2.FormattingEnabled = true;
-            this.txtUnit2.ItemHeight = 14;
-            this.txtUnit2.Location = new System.Drawing.Point(347, 62);
-            this.txtUnit2.Name = "txtUnit2";
-            this.txtUnit2.Size = new System.Drawing.Size(121, 20);
-            this.txtUnit2.TabIndex = 7;
-            // 
-            // txtSalesUnit
-            // 
-            this.txtSalesUnit.DisplayMember = "Text";
-            this.txtSalesUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtSalesUnit.FormattingEnabled = true;
-            this.txtSalesUnit.ItemHeight = 14;
-            this.txtSalesUnit.Location = new System.Drawing.Point(522, 207);
-            this.txtSalesUnit.Name = "txtSalesUnit";
-            this.txtSalesUnit.Size = new System.Drawing.Size(123, 20);
-            this.txtSalesUnit.TabIndex = 6;
-            // 
-            // txtWeightUnit
-            // 
-            this.txtWeightUnit.DisplayMember = "Text";
-            this.txtWeightUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtWeightUnit.FormattingEnabled = true;
-            this.txtWeightUnit.ItemHeight = 14;
-            this.txtWeightUnit.Location = new System.Drawing.Point(522, 181);
-            this.txtWeightUnit.Name = "txtWeightUnit";
-            this.txtWeightUnit.Size = new System.Drawing.Size(123, 20);
-            this.txtWeightUnit.TabIndex = 5;
-            // 
-            // txtArea
-            // 
-            // 
-            // 
-            // 
-            this.txtArea.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtArea.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtArea.Increment = 1D;
-            this.txtArea.Location = new System.Drawing.Point(82, 62);
-            this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(123, 20);
-            this.txtArea.TabIndex = 4;
-            // 
-            // txtThickness
-            // 
-            // 
-            // 
-            // 
-            this.txtThickness.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtThickness.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtThickness.Increment = 1D;
-            this.txtThickness.Location = new System.Drawing.Point(520, 155);
-            this.txtThickness.Name = "txtThickness";
-            this.txtThickness.Size = new System.Drawing.Size(123, 20);
-            this.txtThickness.TabIndex = 3;
-            // 
-            // txtWidth
-            // 
-            // 
-            // 
-            // 
-            this.txtWidth.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtWidth.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtWidth.Increment = 1D;
-            this.txtWidth.Location = new System.Drawing.Point(520, 129);
-            this.txtWidth.Name = "txtWidth";
-            this.txtWidth.Size = new System.Drawing.Size(123, 20);
-            this.txtWidth.TabIndex = 2;
-            // 
-            // txtLength
-            // 
-            // 
-            // 
-            // 
-            this.txtLength.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtLength.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtLength.Increment = 1D;
-            this.txtLength.Location = new System.Drawing.Point(520, 103);
-            this.txtLength.Name = "txtLength";
-            this.txtLength.Size = new System.Drawing.Size(123, 20);
-            this.txtLength.TabIndex = 1;
-            // 
-            // txtWeight
-            // 
-            // 
-            // 
-            // 
-            this.txtWeight.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.txtWeight.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
-            this.txtWeight.Increment = 1D;
-            this.txtWeight.Location = new System.Drawing.Point(520, 77);
-            this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(123, 20);
-            this.txtWeight.TabIndex = 0;
-            // 
             // tabItem1
             // 
             this.tabItem1.AttachedControl = this.tabControlPanel1;
             this.tabItem1.Name = "tabItem1";
-            this.tabItem1.Text = "Specifications";
+            this.tabItem1.Text = "Cost";
             // 
             // tabControlPanel2
             // 
+            this.tabControlPanel2.Controls.Add(this.labelX30);
+            this.tabControlPanel2.Controls.Add(this.txtUnit2);
+            this.tabControlPanel2.Controls.Add(this.labelX18);
+            this.tabControlPanel2.Controls.Add(this.txtArea);
+            this.tabControlPanel2.Controls.Add(this.labelX17);
+            this.tabControlPanel2.Controls.Add(this.txtUnit3);
+            this.tabControlPanel2.Controls.Add(this.labelX16);
+            this.tabControlPanel2.Controls.Add(this.txtpackaging2);
+            this.tabControlPanel2.Controls.Add(this.labelX15);
+            this.tabControlPanel2.Controls.Add(this.txtpackaging3);
+            this.tabControlPanel2.Controls.Add(this.labelX24);
+            this.tabControlPanel2.Controls.Add(this.txtpack2_Price);
+            this.tabControlPanel2.Controls.Add(this.labelX14);
+            this.tabControlPanel2.Controls.Add(this.txtpack3_Price);
+            this.tabControlPanel2.Controls.Add(this.labelX13);
             this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel2.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlPanel2.Name = "tabControlPanel2";
             this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel2.Size = new System.Drawing.Size(955, 408);
+            this.tabControlPanel2.Size = new System.Drawing.Size(955, 305);
             this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1142,27 +1011,180 @@
             this.tabItem3.Name = "tabItem3";
             this.tabItem3.Text = "tabItem3";
             // 
-            // txtType
+            // labelX30
             // 
-            this.txtType.DisplayMember = "Text";
-            this.txtType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtType.FormattingEnabled = true;
-            this.txtType.ItemHeight = 14;
-            this.txtType.Location = new System.Drawing.Point(103, 259);
-            this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(308, 20);
-            this.txtType.TabIndex = 28;
+            this.labelX30.AutoSize = true;
+            this.labelX30.BackColor = System.Drawing.Color.Transparent;
+            this.labelX30.Location = new System.Drawing.Point(172, 45);
+            this.labelX30.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX30.Name = "labelX30";
+            this.labelX30.Size = new System.Drawing.Size(37, 17);
+            this.labelX30.TabIndex = 120;
+            this.labelX30.Text = "MM^2";
             // 
-            // labelX32
+            // labelX18
             // 
-            this.labelX32.AutoSize = true;
-            this.labelX32.BackColor = System.Drawing.Color.Transparent;
-            this.labelX32.Location = new System.Drawing.Point(68, 261);
-            this.labelX32.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX32.Name = "labelX32";
-            this.labelX32.Size = new System.Drawing.Size(30, 17);
-            this.labelX32.TabIndex = 27;
-            this.labelX32.Text = "Type";
+            this.labelX18.AutoSize = true;
+            this.labelX18.BackColor = System.Drawing.Color.Transparent;
+            this.labelX18.Location = new System.Drawing.Point(678, 71);
+            this.labelX18.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX18.Name = "labelX18";
+            this.labelX18.Size = new System.Drawing.Size(91, 17);
+            this.labelX18.TabIndex = 116;
+            this.labelX18.Text = "packaging 3 Price";
+            // 
+            // labelX17
+            // 
+            this.labelX17.AutoSize = true;
+            this.labelX17.BackColor = System.Drawing.Color.Transparent;
+            this.labelX17.Location = new System.Drawing.Point(678, 45);
+            this.labelX17.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX17.Name = "labelX17";
+            this.labelX17.Size = new System.Drawing.Size(91, 17);
+            this.labelX17.TabIndex = 117;
+            this.labelX17.Text = "packaging 2 Price";
+            // 
+            // labelX16
+            // 
+            this.labelX16.AutoSize = true;
+            this.labelX16.BackColor = System.Drawing.Color.Transparent;
+            this.labelX16.Location = new System.Drawing.Point(465, 71);
+            this.labelX16.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX16.Name = "labelX16";
+            this.labelX16.Size = new System.Drawing.Size(64, 17);
+            this.labelX16.TabIndex = 118;
+            this.labelX16.Text = "packaging 3";
+            // 
+            // labelX15
+            // 
+            this.labelX15.AutoSize = true;
+            this.labelX15.BackColor = System.Drawing.Color.Transparent;
+            this.labelX15.Location = new System.Drawing.Point(465, 45);
+            this.labelX15.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX15.Name = "labelX15";
+            this.labelX15.Size = new System.Drawing.Size(64, 17);
+            this.labelX15.TabIndex = 119;
+            this.labelX15.Text = "packaging 2";
+            // 
+            // labelX24
+            // 
+            this.labelX24.AutoSize = true;
+            this.labelX24.BackColor = System.Drawing.Color.Transparent;
+            this.labelX24.Location = new System.Drawing.Point(14, 45);
+            this.labelX24.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX24.Name = "labelX24";
+            this.labelX24.Size = new System.Drawing.Size(28, 17);
+            this.labelX24.TabIndex = 114;
+            this.labelX24.Text = "Area";
+            // 
+            // labelX14
+            // 
+            this.labelX14.AutoSize = true;
+            this.labelX14.BackColor = System.Drawing.Color.Transparent;
+            this.labelX14.Location = new System.Drawing.Point(272, 71);
+            this.labelX14.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX14.Name = "labelX14";
+            this.labelX14.Size = new System.Drawing.Size(35, 17);
+            this.labelX14.TabIndex = 115;
+            this.labelX14.Text = "Unit 3";
+            // 
+            // labelX13
+            // 
+            this.labelX13.AutoSize = true;
+            this.labelX13.BackColor = System.Drawing.Color.Transparent;
+            this.labelX13.Location = new System.Drawing.Point(272, 45);
+            this.labelX13.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX13.Name = "labelX13";
+            this.labelX13.Size = new System.Drawing.Size(35, 17);
+            this.labelX13.TabIndex = 113;
+            this.labelX13.Text = "Unit 2";
+            // 
+            // txtpack3_Price
+            // 
+            // 
+            // 
+            // 
+            this.txtpack3_Price.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtpack3_Price.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtpack3_Price.Increment = 1D;
+            this.txtpack3_Price.Location = new System.Drawing.Point(779, 69);
+            this.txtpack3_Price.Name = "txtpack3_Price";
+            this.txtpack3_Price.Size = new System.Drawing.Size(123, 20);
+            this.txtpack3_Price.TabIndex = 112;
+            // 
+            // txtpack2_Price
+            // 
+            // 
+            // 
+            // 
+            this.txtpack2_Price.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtpack2_Price.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtpack2_Price.Increment = 1D;
+            this.txtpack2_Price.Location = new System.Drawing.Point(779, 43);
+            this.txtpack2_Price.Name = "txtpack2_Price";
+            this.txtpack2_Price.Size = new System.Drawing.Size(123, 20);
+            this.txtpack2_Price.TabIndex = 111;
+            // 
+            // txtpackaging3
+            // 
+            // 
+            // 
+            // 
+            this.txtpackaging3.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtpackaging3.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtpackaging3.Increment = 1D;
+            this.txtpackaging3.Location = new System.Drawing.Point(533, 69);
+            this.txtpackaging3.Name = "txtpackaging3";
+            this.txtpackaging3.Size = new System.Drawing.Size(123, 20);
+            this.txtpackaging3.TabIndex = 110;
+            // 
+            // txtpackaging2
+            // 
+            // 
+            // 
+            // 
+            this.txtpackaging2.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtpackaging2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtpackaging2.Increment = 1D;
+            this.txtpackaging2.Location = new System.Drawing.Point(533, 43);
+            this.txtpackaging2.Name = "txtpackaging2";
+            this.txtpackaging2.Size = new System.Drawing.Size(123, 20);
+            this.txtpackaging2.TabIndex = 109;
+            // 
+            // txtUnit3
+            // 
+            this.txtUnit3.DisplayMember = "Text";
+            this.txtUnit3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtUnit3.FormattingEnabled = true;
+            this.txtUnit3.ItemHeight = 14;
+            this.txtUnit3.Location = new System.Drawing.Point(312, 69);
+            this.txtUnit3.Name = "txtUnit3";
+            this.txtUnit3.Size = new System.Drawing.Size(121, 20);
+            this.txtUnit3.TabIndex = 108;
+            // 
+            // txtUnit2
+            // 
+            this.txtUnit2.DisplayMember = "Text";
+            this.txtUnit2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtUnit2.FormattingEnabled = true;
+            this.txtUnit2.ItemHeight = 14;
+            this.txtUnit2.Location = new System.Drawing.Point(312, 43);
+            this.txtUnit2.Name = "txtUnit2";
+            this.txtUnit2.Size = new System.Drawing.Size(121, 20);
+            this.txtUnit2.TabIndex = 107;
+            // 
+            // txtArea
+            // 
+            // 
+            // 
+            // 
+            this.txtArea.BackgroundStyle.Class = "DateTimeInputBackground";
+            this.txtArea.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
+            this.txtArea.Increment = 1D;
+            this.txtArea.Location = new System.Drawing.Point(47, 43);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(123, 20);
+            this.txtArea.TabIndex = 106;
             // 
             // frmProducts
             // 
@@ -1177,20 +1199,20 @@
             this.Text = "frmProducts";
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalesPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtThickness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabControlPanel1.ResumeLayout(false);
-            this.tabControlPanel1.PerformLayout();
+            this.tabControlPanel2.ResumeLayout(false);
+            this.tabControlPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtpack3_Price)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpack2_Price)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSalesPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpackaging3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtpackaging2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtArea)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtThickness)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWeight)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1239,35 +1261,20 @@
         private DevComponents.DotNetBar.LabelX labelX10;
         private DevComponents.DotNetBar.Controls.ComboBoxEx txtDimCategory;
         private DevComponents.DotNetBar.Controls.ComboBoxEx txtCategory;
-        private DevComponents.DotNetBar.LabelX labelX30;
         private DevComponents.DotNetBar.LabelX labelX29;
         private DevComponents.DotNetBar.LabelX labelX28;
         private DevComponents.DotNetBar.LabelX labelX27;
         private DevComponents.DotNetBar.LabelX labelX26;
-        private DevComponents.DotNetBar.LabelX labelX18;
-        private DevComponents.DotNetBar.LabelX labelX17;
-        private DevComponents.DotNetBar.LabelX labelX16;
-        private DevComponents.DotNetBar.LabelX labelX15;
-        private DevComponents.DotNetBar.LabelX labelX24;
         private DevComponents.DotNetBar.LabelX labelX23;
         private DevComponents.DotNetBar.LabelX labelX22;
-        private DevComponents.DotNetBar.LabelX labelX14;
         private DevComponents.DotNetBar.LabelX labelX21;
-        private DevComponents.DotNetBar.LabelX labelX13;
         private DevComponents.DotNetBar.LabelX labelX19;
         private DevComponents.DotNetBar.LabelX labelX25;
         private DevComponents.DotNetBar.LabelX labelX20;
         private DevComponents.DotNetBar.LabelX labelX12;
-        private DevComponents.Editors.DoubleInput txtpack3_Price;
-        private DevComponents.Editors.DoubleInput txtpack2_Price;
         private DevComponents.Editors.DoubleInput txtSalesPrice;
-        private DevComponents.Editors.DoubleInput txtpackaging3;
-        private DevComponents.Editors.DoubleInput txtpackaging2;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx txtUnit3;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx txtUnit2;
         private DevComponents.DotNetBar.Controls.ComboBoxEx txtSalesUnit;
         private DevComponents.DotNetBar.Controls.ComboBoxEx txtWeightUnit;
-        private DevComponents.Editors.DoubleInput txtArea;
         private DevComponents.Editors.DoubleInput txtThickness;
         private DevComponents.Editors.DoubleInput txtWidth;
         private DevComponents.Editors.DoubleInput txtLength;
@@ -1276,5 +1283,22 @@
         private MyControls.UC_KM_Item txtKM_Item;
         private DevComponents.DotNetBar.Controls.ComboBoxEx txtType;
         private DevComponents.DotNetBar.LabelX labelX32;
+        private DevComponents.DotNetBar.LabelX labelX33;
+        private MyControls.UC_SalesGroup txtSalesGroup;
+        private DevComponents.DotNetBar.LabelX labelX30;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx txtUnit2;
+        private DevComponents.DotNetBar.LabelX labelX18;
+        private DevComponents.Editors.DoubleInput txtArea;
+        private DevComponents.DotNetBar.LabelX labelX17;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx txtUnit3;
+        private DevComponents.DotNetBar.LabelX labelX16;
+        private DevComponents.Editors.DoubleInput txtpackaging2;
+        private DevComponents.DotNetBar.LabelX labelX15;
+        private DevComponents.Editors.DoubleInput txtpackaging3;
+        private DevComponents.DotNetBar.LabelX labelX24;
+        private DevComponents.Editors.DoubleInput txtpack2_Price;
+        private DevComponents.DotNetBar.LabelX labelX14;
+        private DevComponents.Editors.DoubleInput txtpack3_Price;
+        private DevComponents.DotNetBar.LabelX labelX13;
     }
 }
