@@ -1,11 +1,16 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing; using System.Linq;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Linq;
 
 using System.Text;
 using System.Windows.Forms;
+
 
 namespace Report_Pro.PL
 {
@@ -15,6 +20,10 @@ namespace Report_Pro.PL
         DAL.DataAccesslayer1 dal = new DAL.DataAccesslayer1();
 
         int days = 1;
+        DataTable dt_inv;
+        DataTable dt_inv_total;
+        int currencyNo = 2;
+        List<CurrencyInfo> currencies = new List<CurrencyInfo>();
 
         DataTable dt_;
         DataTable dt_1 =  new DataTable();
@@ -171,9 +180,9 @@ namespace Report_Pro.PL
         private void get_balance()
         {
 
-            DataTable dt_b = dal.getDataTabl_1(@"select T.Branch_code,t.branch_name,T.balance,X.Sales_ from ( SELECT  D.Branch_code,A.branch_name,sum(D.QTY_BALANCE) as balance
-            FROM VIEW_balance As D inner join wh_BRANCHES As A on A.Branch_code = D.Branch_code
-            where D.item_no = '"+Uc_Items.ID.Text+"' group by D.Branch_code, A.branch_name) as T " +
+            DataTable dt_b = dal.getDataTabl_1(@"select T.Branch_code,t.branch_name,T.balance,X.Sales_ from ( SELECT  D.Branch_code,A.branch_name,sum (case when cast(D.G_date as date) <= '" + ToDate.Value.ToString("yyyy-MM-dd") + "' and D.cyear = '21' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as balance "+
+            "FROM wh_material_transaction As D inner join wh_BRANCHES As A on A.Branch_code = D.Branch_code "+
+            "where D.item_no = '" + Uc_Items.ID.Text+"' group by D.Branch_code, A.branch_name) as T " +
             "left join (select Branch_code,SUM(QTY_TAKE-QTY_ADD) as Sales_ " +
             "from wh_material_transaction  where TRANSACTION_CODE like 'xs%'  and cast(G_DATE as date) between '"+ FromDate.Value.ToString("yyyy-MM-dd")+"' and '"+ ToDate.Value.ToString("yyyy-MM-dd")+"'	and item_no = '"+ Uc_Items.ID.Text + "'		group by Branch_code) as X " +
             "on T.Branch_code=X.Branch_code where t.balance <> 0 or X.Sales_<>0 ");
@@ -189,16 +198,19 @@ namespace Report_Pro.PL
                     DGV_b.Rows[i].Cells[1].Value = dt_b.Rows[i]["balance"];
                     DGV_b.Rows[i].Cells[2].Value = Convert.ToDouble(dt_b.Rows[i]["balance"]) * txtWeight.Value;
                     DGV_b.Rows[i].Cells[3].Value = dt_b.Rows[i]["Sales_"].ToString().ToDecimal();
-                   
-                    DGV_b.Rows[i].Cells[4].Value = Math.Round(dt_b.Rows[i]["Sales_"].ToString().ToDecimal() * 30 / days,0) ;
+                    DGV_b.Rows[i].Cells[4].Value = dt_b.Rows[i]["Sales_"].ToString().ToDecimal() * txtWeight.Text.ToDecimal();
+                    DGV_b.Rows[i].Cells[5].Value = Math.Round(dt_b.Rows[i]["Sales_"].ToString().ToDecimal() * 30 / days,0) ;
+                    DGV_b.Rows[i].Cells[6].Value = Math.Round((dt_b.Rows[i]["Sales_"].ToString().ToDecimal() * 30 / days) * txtWeight.Text.ToDecimal(), 0); 
                     if (dt_b.Rows[i]["Sales_"].ToString().ToDecimal() > 0)
                     {
-                        DGV_b.Rows[i].Cells[5].Value = dt_b.Rows[i]["balance"].ToString().ToDecimal() / dt_b.Rows[i]["Sales_"].ToString().ToDecimal() * 30 / days;
+                        DGV_b.Rows[i].Cells[7].Value = dt_b.Rows[i]["balance"].ToString().ToDecimal() / (dt_b.Rows[i]["Sales_"].ToString().ToDecimal() * 30 / days);
                     }
                     else
                     {
-                        DGV_b.Rows[i].Cells[5].Value = "-";
+                        DGV_b.Rows[i].Cells[7].Value = "-";
                     }
+
+                    DGV_b.Rows[i].Cells[8].Value = dt_b.Rows[i]["Branch_code"];
                 }
             }
             else
@@ -222,7 +234,7 @@ namespace Report_Pro.PL
             {
                 X = 1000;
             }
-            DataTable dt_LP = dal.getDataTabl_1(" DECLARE  @X int ='" + X + @"' select top (isnull(@X,1000))  A.ser_no,A.G_DATE,A.QTY_ADD,A.Local_Price,P.PAYER_NAME,C.branch_name from wh_material_transaction as A
+            DataTable dt_LP = dal.getDataTabl_1(" DECLARE  @X int ='" + X + @"' select top (isnull(@X,1000))  A.ser_no,A.G_DATE,A.QTY_ADD,A.Local_Price,P.PAYER_NAME,C.branch_name,A.Branch_code,a.Cyear, A.TRANSACTION_CODE from wh_material_transaction as A
             inner join wh_inv_data as B on A.SER_NO=B.Ser_no and A.TRANSACTION_CODE=B.TRANSACTION_CODE and a.Branch_code=b.Branch_code and a.Cyear=b.Cyear
             inner join payer2 as P on p.ACC_NO=b.Acc_no and b.Acc_Branch_code=p.BRANCH_code 
             inner join wh_BRANCHES As C on A.Branch_code=C.Branch_code 
@@ -239,9 +251,9 @@ namespace Report_Pro.PL
                 {
                     dgv_LP.Rows[ii].Cells[0].Value = dt_LP.Rows[ii]["branch_name"].ToString();
                     dgv_LP.Rows[ii].Cells[1].Value = dt_LP.Rows[ii]["ser_no"].ToString();
-                    dgv_LP.Rows[ii].Cells[2].Value = dt_LP.Rows[ii]["G_DATE"].ToString();
-                    dgv_LP.Rows[ii].Cells[3].Value = dt_LP.Rows[ii]["QTY_ADD"].ToString();
-                    dgv_LP.Rows[ii].Cells[4].Value = dt_LP.Rows[ii]["Local_Price"].ToString();
+                    dgv_LP.Rows[ii].Cells[2].Value = dt_LP.Rows[ii]["G_DATE"];
+                    dgv_LP.Rows[ii].Cells[3].Value = dt_LP.Rows[ii]["QTY_ADD"];
+                    dgv_LP.Rows[ii].Cells[4].Value = dt_LP.Rows[ii]["Local_Price"];
 
                     if (txtWeight.Value > 0)
                     {
@@ -252,6 +264,9 @@ namespace Report_Pro.PL
                         dgv_LP.Rows[ii].Cells[5].Value = 0;
                     }
                     dgv_LP.Rows[ii].Cells[6].Value = dt_LP.Rows[ii]["PAYER_NAME"].ToString();
+                    dgv_LP.Rows[ii].Cells[7].Value = dt_LP.Rows[ii]["Branch_code"].ToString();
+                    dgv_LP.Rows[ii].Cells[8].Value = dt_LP.Rows[ii]["Cyear"].ToString();
+                    dgv_LP.Rows[ii].Cells[9].Value = dt_LP.Rows[ii]["TRANSACTION_CODE"].ToString();
 
 
                 }
@@ -295,9 +310,9 @@ namespace Report_Pro.PL
                 {
                     dgv_LS.Rows[ii].Cells[0].Value = dt_Ls.Rows[ii]["branch_name"].ToString();
                     dgv_LS.Rows[ii].Cells[1].Value = dt_Ls.Rows[ii]["ser_no"].ToString();
-                    dgv_LS.Rows[ii].Cells[2].Value = dt_Ls.Rows[ii]["G_DATE"].ToString();
-                    dgv_LS.Rows[ii].Cells[3].Value = dt_Ls.Rows[ii]["QTY_TAKE"].ToString();
-                    dgv_LS.Rows[ii].Cells[4].Value = dt_Ls.Rows[ii]["Local_Price"].ToString();
+                    dgv_LS.Rows[ii].Cells[2].Value = dt_Ls.Rows[ii]["G_DATE"];
+                    dgv_LS.Rows[ii].Cells[3].Value = dt_Ls.Rows[ii]["QTY_TAKE"];
+                    dgv_LS.Rows[ii].Cells[4].Value = dt_Ls.Rows[ii]["Local_Price"];
 
                     if (txtWeight.Value > 0)
                     {
@@ -401,6 +416,36 @@ namespace Report_Pro.PL
         {
             FromDate.Value = new DateTime(DateTime.Now.Year, 1, 1);
             ToDate.Value = DateTime.Today;
+
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Syria));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.UAE));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.s));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Tunisia));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Gold));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Bahrain));
+            currencies.Add(new CurrencyInfo(CurrencyInfo.Currencies.Oman));
+            string currency = Properties.Settings.Default.Currency;
+            if (!(currency == "s"))
+            {
+                if (!(currency == "BH"))
+                {
+                    if (!(currency == "OM"))
+                    {
+                        if (!(currency == "DR"))
+                            return;
+                        currencyNo = 1;
+                    }
+                    else
+                        currencyNo = 6;
+                }
+                else
+                    currencyNo = 5;
+            }
+            else
+                currencyNo = 2;
+
+
+
         }
 
         private void txtTonCost_1_ValueChanged(object sender, EventArgs e)
@@ -432,6 +477,180 @@ namespace Report_Pro.PL
         private void btnReport_Click(object sender, EventArgs e)
         {
             getData();
+        }
+
+        private void dgv_LS_DoubleClick(object sender, EventArgs e)
+        {
+            RPT.Rpt_inv rptInv = new RPT.Rpt_inv();
+            RPT.Form1 frm = new RPT.Form1();
+
+            DataSet dataSet = new DataSet();
+            getSalesInv(dgv_LS.CurrentRow.Cells[1].Value.ToString(), dgv_LS.CurrentRow.Cells[7].Value.ToString(), dgv_LS.CurrentRow.Cells[9].Value.ToString(), dgv_LS.CurrentRow.Cells[8].Value.ToString());
+            getInvoiceTotal(dgv_LS.CurrentRow.Cells[1].Value.ToString(), dgv_LS.CurrentRow.Cells[7].Value.ToString(), dgv_LS.CurrentRow.Cells[9].Value.ToString(), dgv_LS.CurrentRow.Cells[8].Value.ToString());
+
+
+
+                       string code = "Alusaimi Steel " + System.Environment.NewLine + "Invoice No. :" + dgv_LS.CurrentRow.Cells[1].Value.ToString() + System.Environment.NewLine + "Branch Code :" + dgv_LS.CurrentRow.Cells[7].Value.ToString() + System.Environment.NewLine + "Total Value :" + dt_inv_total.Rows[0]["NetValue"] + System.Environment.NewLine + "VAT Value :" + dt_inv_total.Rows[0]["tax"];
+
+
+            QRCodeGenerator qRCodeGenerator = new QRCodeGenerator();
+            QRCodeData qRCodeData = qRCodeGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q);
+            QRCode qRCode = new QRCode(qRCodeData);
+            Bitmap bmp = qRCode.GetGraphic(7);
+            DataTable dQR = new DataTable();
+            using (MemoryStream ms = new MemoryStream())
+            {
+                bmp.Save(ms, ImageFormat.Bmp);
+
+                byte[] byteImage = ms.ToArray();
+
+                //picQR.Image = bmp;
+
+                // RPT.QR_rpt rpt = new RPT.QR_rpt();
+                dQR.Columns.Add(new DataColumn("Barcode", typeof(byte[])));
+                dQR.Rows.Add(byteImage);
+            }
+
+
+
+            dataSet.Tables.Add(dt_inv);
+            dataSet.Tables.Add(dQR);
+            dataSet.WriteXmlSchema("schema_rpt.xml");
+            rptInv.SetDataSource(dataSet);
+            rptInv.DataDefinition.FormulaFields["Branch_"].Text = "'" + dgv_LS.CurrentRow.Cells[7].Value.ToString() + " - " + dgv_LS.CurrentRow.Cells[0].Value.ToString() + "'";
+            ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt_inv_total.Rows[0]["NetValue"].ToString())), currencies[currencyNo]);
+            rptInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+
+
+            frm.crystalReportViewer1.ReportSource = rptInv;
+            frm.ShowDialog();
+
+            //rptInv.PrintOptions.PrinterName = Properties.Settings.Default.Invoice_P;
+
+            //rptInv.PrintToPrinter(1, false, 0, 0);
+            //rptInv.Close();
+            //rptInv.Dispose();
+        }
+
+
+        private byte[] GenerateQrCode(string qrmsg)
+        {
+
+            string code = qrmsg;
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qRCodeData = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q);
+               QRCode qrCode = new QRCode(qRCodeData);
+
+            System.Web.UI.WebControls.Image imgBarCode = new System.Web.UI.WebControls.Image();
+            imgBarCode.Height = 150;
+            imgBarCode.Width = 150;
+            using (Bitmap bitMap = qrCode.GetGraphic(7))
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    bitMap.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
+                    byte[] byteImage = ms.ToArray();
+                    return byteImage;
+                }
+            }
+
+
+        //    string code = qrmsg;
+
+
+        //    QRCodeGenerator qRCodeGenerator = new QRCodeGenerator();
+        //    QRCodeData qRCodeData = qRCodeGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.Q);
+        //    QRCode qRode = new QRCode(qRCodeData);
+        //    Bitmap bmp = qRCode.GetGraphic(7);
+        //    using (MemoryStream ms = new MemoryStream())
+        //    {
+        //        bmp.Save(ms, ImageFormat.Bmp);
+
+        //        byte[] byteImage = ms.ToArray();
+        //        return byteImage;
+        //    }
+
+
+          
+        }
+
+        private void getSalesInv(string ser_, string branch_, string transaction_, string cyear_)
+
+        {
+            dt_inv = this.dal.getDataTabl_1(@"select A.ser_no,A.Branch_code,A.Cyear,A.Transaction_code,A.G_date,A.Acc_no,A.Payment_Type,A.Sales_man_Id,A.Inv_no,A.Inv_date,a.Inv_Notes,A.Phone,A.Adress,
+            B.ITEM_NO,B.QTY_ADD,B.QTY_TAKE,B.Unit,B.Local_Price,isnull(B.TAX_IN,0)as TAX_IN ,isnull(B.TAX_OUT,0)as TAX_OUT , round(b.total_disc*B.local_price*QTY_TAKE/100,2) as disc_ ,p.PAYER_NAME,p.payer_l_name,p2.PAYER_NAME as lc_name ,p2.payer_l_name as lc_L_Name,
+            m.descr,m.Descr_eng, br.branch_name,BR.WH_E_NAME,PT.Payment_name 
+            ,(select top 1 vat_ratio from VAT_RATIO_MASTER where cast(A.G_date as date ) between date_of_vat and '"+ DateTime.Today.ToString("yyyy-MM-dd")+"' order by date_of_vat desc) as VatRatio " +
+            "from wh_inv_data As A "+
+            "inner join wh_material_transaction As B on a.Ser_no = b.SER_NO and a.Cyear = b.Cyear and a.Transaction_code = b.TRANSACTION_CODE and a.Branch_code = b.Branch_code  " +
+            "inner join payer2 As P on a.Acc_no = p.ACC_NO and a.Acc_Branch_code = p.BRANCH_code  " +
+            "left join(select* from payer2)as p2 on p2.ACC_NO = a.LC_ACC_NO and a.Acc_Branch_code = p2.BRANCH_code  " +
+            "inner join wh_main_master as M on M.item_no = b.ITEM_NO  " +
+            "inner join wh_BRANCHES As BR on BR.Branch_code = a.Branch_code  " +
+            "inner join wh_Payment_type as PT on A.Payment_Type=PT.Payment_type  " +
+            "where a.SER_NO = '" + ser_ + "' and a.Transaction_code = '" + transaction_ + "' and a.Branch_code = '" + branch_ + "' and a.Cyear = '" + cyear_ + "'");
+        }
+        //(select case when B.K_M_TYPE_ITEMS =1 and CAST(B.G_DATE as date ) between '2018-01-01' and '2020-06-30'   then 5  when B.K_M_TYPE_ITEMS =1 and CAST(B.G_DATE as date ) > '2020-06-30' then 15  else 0 end)as VatRatio
+
+        private void getInvoiceTotal(string ser_, string branch_, string transaction_, string cyear_)
+        {
+            dt_inv_total = dal.getDataTabl_1(@"select round(sum(b.QTY_TAKE*Local_Price),2) as TotalValue
+            , round(sum(b.total_disc * B.local_price * QTY_TAKE / 100), 2) as discount
+            , round(sum(isnull(b.TAX_OUT, 0)), 2) as tax
+            , round(sum(b.QTY_TAKE * Local_Price), 2) - round(sum(b.total_disc * B.local_price * QTY_TAKE / 100), 2) + round(sum(isnull(b.TAX_OUT, 0)), 2) as NetValue
+            , round(sum(b.QTY_ADD * Local_Price), 2) - round(sum(b.total_disc * B.local_price * QTY_ADD / 100), 2) + round(sum(isnull(b.TAX_IN, 0)), 2) as NetValuePurch from wh_material_transaction as b
+            where b.SER_NO = '" + ser_ + "'  and b.Transaction_code = '" + transaction_ + "' and b.Branch_code = '" + branch_ + "' and b.Cyear = '" + cyear_ + "'  " +
+            "group by TRANSACTION_CODE,Branch_code,Cyear,SER_NO");
+        }
+
+        private void getInvoiceTotal_purch(string ser_, string branch_, string transaction_, string cyear_)
+        {
+            dt_inv_total = dal.getDataTabl_1(@"select round(sum(b.QTY_TAKE*Local_Price),2) as TotalValue
+            , round(sum(b.total_disc * B.local_price * QTY_ADD / 100), 2) as discount
+            , round(sum(isnull(b.TAX_IN, 0)), 2) as tax
+            , round(sum(b.QTY_ADD * Local_Price), 2) - round(sum(b.total_disc * B.local_price * QTY_ADD / 100), 2) + round(sum(isnull(b.TAX_IN, 0)), 2) as NetValue
+             from wh_material_transaction as b
+            where b.SER_NO = '" + ser_ + "'  and b.Transaction_code = '" + transaction_ + "' and b.Branch_code = '" + branch_ + "' and b.Cyear = '" + cyear_ + "'  " +
+            "group by TRANSACTION_CODE,Branch_code,Cyear,SER_NO");
+        }
+
+        private void dgv_LP_DoubleClick(object sender, EventArgs e)
+        {
+           // RPT.Rpt_inv rptInv = new RPT.Rpt_inv();
+
+            RPT.print_PurchaseInv rptInv = new RPT.print_PurchaseInv();
+            RPT.Form1 frm = new RPT.Form1();
+
+            DataSet dataSet = new DataSet();
+            getSalesInv(dgv_LP.CurrentRow.Cells[1].Value.ToString(), dgv_LP.CurrentRow.Cells[7].Value.ToString(), dgv_LP.CurrentRow.Cells[9].Value.ToString(), dgv_LP.CurrentRow.Cells[8].Value.ToString());
+            dataSet.Tables.Add(dt_inv);
+            dataSet.WriteXmlSchema("schema_rpt.xml");
+            rptInv.SetDataSource(dataSet);
+            rptInv.DataDefinition.FormulaFields["Branch_"].Text = "'" + dgv_LP.CurrentRow.Cells[7].Value.ToString() + " - " + dgv_LP.CurrentRow.Cells[0].Value.ToString() + "'";
+            getInvoiceTotal_purch(dgv_LP.CurrentRow.Cells[1].Value.ToString(), dgv_LP.CurrentRow.Cells[7].Value.ToString(), dgv_LP.CurrentRow.Cells[9].Value.ToString(), dgv_LP.CurrentRow.Cells[8].Value.ToString());
+            ToWord toWord = new ToWord(Math.Abs(Convert.ToDecimal(dt_inv_total.Rows[0]["NetValue"].ToString())), currencies[currencyNo]);
+            rptInv.DataDefinition.FormulaFields["NuToText_A"].Text = "'" + toWord.ConvertToArabic().ToString() + "'";
+
+            frm.crystalReportViewer1.ReportSource = rptInv;
+            frm.ShowDialog();
+        }
+
+        private void DGV_b_DoubleClick(object sender, EventArgs e)
+        {
+            if (Uc_Items.ID.Text == string.Empty ||DGV_b.SelectedRows.Count<1 || DGV_b.CurrentRow.Cells[6].Value.ToString() == null)
+            {
+                return;
+            }
+            else { 
+                RPT.frm_Item_Transaction frm = new RPT.frm_Item_Transaction();
+                frm.UC_Branch.ID.Text = DGV_b.CurrentRow.Cells[8].Value.ToString();
+                frm.UC_Items.ID.Text = Uc_Items.ID.Text;
+                frm.FromDate_.Text = FromDate.Text;
+                frm.ToDate_.Text = ToDate.Text;
+                frm.buttonX1.PerformClick();
+                frm.ShowDialog();
+            }
+            
         }
     }
 }

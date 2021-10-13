@@ -1314,7 +1314,7 @@ namespace Report_Pro.PL
 
         private void buttonItem8_Click(object sender, EventArgs e)
         {
-           
+            openForm(new frm_QR_Code(), FormWindowState.Maximized, 0);
 
         }
 

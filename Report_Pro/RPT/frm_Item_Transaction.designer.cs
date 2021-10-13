@@ -74,7 +74,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(778, 43);
+            this.panel1.Size = new System.Drawing.Size(989, 43);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -83,7 +83,7 @@
             this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.buttonX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX3.Location = new System.Drawing.Point(137, 8);
+            this.buttonX3.Location = new System.Drawing.Point(348, 8);
             this.buttonX3.Name = "buttonX3";
             this.buttonX3.Size = new System.Drawing.Size(112, 27);
             this.buttonX3.TabIndex = 295;
@@ -97,7 +97,7 @@
             this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.buttonX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(255, 8);
+            this.buttonX2.Location = new System.Drawing.Point(466, 8);
             this.buttonX2.Name = "buttonX2";
             this.buttonX2.Size = new System.Drawing.Size(112, 27);
             this.buttonX2.TabIndex = 294;
@@ -111,7 +111,7 @@
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.buttonX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(487, 8);
+            this.buttonX1.Location = new System.Drawing.Point(698, 8);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(89, 27);
             this.buttonX1.TabIndex = 292;
@@ -124,7 +124,7 @@
             this.btn_1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.btn_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_1.Location = new System.Drawing.Point(676, 8);
+            this.btn_1.Location = new System.Drawing.Point(887, 8);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(89, 27);
             this.btn_1.TabIndex = 291;
@@ -137,7 +137,7 @@
             this.Report_btn.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.Report_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Report_btn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Report_btn.Location = new System.Drawing.Point(582, 8);
+            this.Report_btn.Location = new System.Drawing.Point(793, 8);
             this.Report_btn.Name = "Report_btn";
             this.Report_btn.Size = new System.Drawing.Size(89, 27);
             this.Report_btn.TabIndex = 290;
@@ -223,7 +223,7 @@
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 43);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.SelectionFormula = "";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(778, 407);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(989, 469);
             this.crystalReportViewer1.TabIndex = 6;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.ToolPanelWidth = 300;
@@ -299,7 +299,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 43);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(778, 245);
+            this.groupPanel1.Size = new System.Drawing.Size(989, 245);
             // 
             // 
             // 
@@ -328,7 +328,7 @@
             this.labelX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX9.AutoSize = true;
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(704, 115);
+            this.labelX9.Location = new System.Drawing.Point(915, 116);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(50, 17);
             this.labelX9.TabIndex = 313;
@@ -338,7 +338,7 @@
             // 
             this.Uc_Group1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Uc_Group1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Uc_Group1.Location = new System.Drawing.Point(391, 112);
+            this.Uc_Group1.Location = new System.Drawing.Point(598, 113);
             this.Uc_Group1.Margin = new System.Windows.Forms.Padding(0);
             this.Uc_Group1.Name = "Uc_Group1";
             this.Uc_Group1.Size = new System.Drawing.Size(310, 23);
@@ -349,7 +349,7 @@
             this.labelX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX6.AutoSize = true;
             this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            this.labelX6.Location = new System.Drawing.Point(704, 92);
+            this.labelX6.Location = new System.Drawing.Point(915, 92);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(53, 17);
             this.labelX6.TabIndex = 310;
@@ -359,7 +359,7 @@
             // 
             this.UC_Transaction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Transaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Transaction.Location = new System.Drawing.Point(391, 88);
+            this.UC_Transaction.Location = new System.Drawing.Point(598, 88);
             this.UC_Transaction.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Transaction.Name = "UC_Transaction";
             this.UC_Transaction.Size = new System.Drawing.Size(310, 23);
@@ -369,7 +369,7 @@
             // 
             this.UC_Items.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Items.Location = new System.Drawing.Point(391, 62);
+            this.UC_Items.Location = new System.Drawing.Point(598, 62);
             this.UC_Items.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Items.Name = "UC_Items";
             this.UC_Items.Size = new System.Drawing.Size(310, 23);
@@ -380,7 +380,7 @@
             this.labelX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX3.AutoSize = true;
             this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            this.labelX3.Location = new System.Drawing.Point(704, 65);
+            this.labelX3.Location = new System.Drawing.Point(915, 65);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(34, 17);
             this.labelX3.TabIndex = 303;
@@ -391,7 +391,7 @@
             this.labelX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX2.AutoSize = true;
             this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            this.labelX2.Location = new System.Drawing.Point(704, 39);
+            this.labelX2.Location = new System.Drawing.Point(915, 39);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(32, 17);
             this.labelX2.TabIndex = 298;
@@ -402,10 +402,10 @@
             this.UC_Acc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UC_Acc.BackColor = System.Drawing.Color.Transparent;
             this.UC_Acc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.UC_Acc.Location = new System.Drawing.Point(391, 35);
+            this.UC_Acc.Location = new System.Drawing.Point(598, 35);
             this.UC_Acc.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Acc.Name = "UC_Acc";
-            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.UC_Acc.Padding = new System.Windows.Forms.Padding(1);
             this.UC_Acc.Size = new System.Drawing.Size(310, 25);
             this.UC_Acc.TabIndex = 306;
             // 
@@ -414,7 +414,7 @@
             this.labelX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX4.AutoSize = true;
             this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            this.labelX4.Location = new System.Drawing.Point(704, 11);
+            this.labelX4.Location = new System.Drawing.Point(915, 11);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(29, 17);
             this.labelX4.TabIndex = 296;
@@ -426,7 +426,7 @@
             this.UC_Branch.BackColor = System.Drawing.Color.Transparent;
             this.UC_Branch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UC_Branch.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UC_Branch.Location = new System.Drawing.Point(391, 7);
+            this.UC_Branch.Location = new System.Drawing.Point(598, 7);
             this.UC_Branch.Margin = new System.Windows.Forms.Padding(0);
             this.UC_Branch.Name = "UC_Branch";
             this.UC_Branch.Size = new System.Drawing.Size(310, 24);
@@ -435,17 +435,17 @@
             // ToDate_
             // 
             this.ToDate_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ToDate_.Location = new System.Drawing.Point(211, 35);
+            this.ToDate_.Location = new System.Drawing.Point(415, 37);
             this.ToDate_.Name = "ToDate_";
-            this.ToDate_.Size = new System.Drawing.Size(97, 20);
+            this.ToDate_.Size = new System.Drawing.Size(104, 20);
             this.ToDate_.TabIndex = 292;
             // 
             // FromDate_
             // 
             this.FromDate_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FromDate_.Location = new System.Drawing.Point(211, 11);
+            this.FromDate_.Location = new System.Drawing.Point(415, 9);
             this.FromDate_.Name = "FromDate_";
-            this.FromDate_.Size = new System.Drawing.Size(97, 20);
+            this.FromDate_.Size = new System.Drawing.Size(104, 20);
             this.FromDate_.TabIndex = 291;
             // 
             // labelX7
@@ -453,7 +453,7 @@
             this.labelX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX7.AutoSize = true;
             this.labelX7.BackColor = System.Drawing.Color.Transparent;
-            this.labelX7.Location = new System.Drawing.Point(308, 37);
+            this.labelX7.Location = new System.Drawing.Point(527, 39);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(47, 17);
             this.labelX7.TabIndex = 268;
@@ -464,7 +464,7 @@
             this.labelX8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(306, 13);
+            this.labelX8.Location = new System.Drawing.Point(527, 11);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(44, 17);
             this.labelX8.TabIndex = 267;
@@ -474,7 +474,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 450);
+            this.ClientSize = new System.Drawing.Size(989, 512);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
@@ -482,6 +482,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "frm_Item_Transaction";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Purchase_reports_Load);
             this.panel1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
@@ -513,7 +514,6 @@
         private DevComponents.DotNetBar.LabelX labelX7;
         private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.LabelX labelX6;
         private DevComponents.DotNetBar.LabelX labelX9;
         private DevComponents.DotNetBar.ButtonX buttonX2;
@@ -526,6 +526,7 @@
         public MyControls.UC_Transaction UC_Transaction;
         public MyControls.Uc_Group Uc_Group1;
         public CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        public DevComponents.DotNetBar.ButtonX buttonX1;
         //private MyControls.UC_Items UC_Items;
     }
 }

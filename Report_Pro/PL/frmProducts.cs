@@ -25,5 +25,30 @@ namespace Report_Pro.PL
         {
 
         }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doubleInput8_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doubleInput7_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doubleInput6_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

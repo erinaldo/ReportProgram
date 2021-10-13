@@ -386,5 +386,10 @@ namespace Report_Pro.PL
             cobLocation.DisplayMember = "Name";
            
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

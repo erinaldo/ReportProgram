@@ -220,6 +220,11 @@
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -233,6 +238,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTR\CrystalReport5.cs">
@@ -368,6 +374,12 @@
     </Compile>
     <Compile Include="frm_Master.designer.cs">
       <DependentUpon>frm_Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QR_Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QR_Code.Designer.cs">
+      <DependentUpon>frm_QR_Code.cs</DependentUpon>
     </Compile>
     <Compile Include="Lang\Langres.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -572,6 +584,12 @@
     </Compile>
     <Compile Include="MyControls\UC_Items.designer.cs">
       <DependentUpon>UC_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UC_KM_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UC_KM_Item.designer.cs">
+      <DependentUpon>UC_KM_Item.cs</DependentUpon>
     </Compile>
     <Compile Include="MyControls\UC_KM_Purch.cs">
       <SubType>UserControl</SubType>
@@ -1245,6 +1263,9 @@
     <EmbeddedResource Include="frm_Master.resx">
       <DependentUpon>frm_Master.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_QR_Code.resx">
+      <DependentUpon>frm_QR_Code.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lang\Langres.ar.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1488,6 +1509,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_Items.resx">
       <DependentUpon>UC_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_KM_Item.resx">
+      <DependentUpon>UC_KM_Item.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_KM_Purch.resx">
       <DependentUpon>UC_KM_Purch.cs</DependentUpon>
@@ -2022,6 +2047,10 @@
     <EmbeddedResource Include="RPT\CrystalReport6.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\QR_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>QR_rpt.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\frmAccDetails.ar.resx">
       <DependentUpon>frmAccDetails.cs</DependentUpon>
@@ -2907,6 +2936,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\QR_rpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QR_rpt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\frm_Print_invoice.cs">
