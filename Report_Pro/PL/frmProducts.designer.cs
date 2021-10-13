@@ -67,6 +67,8 @@
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.labelX31 = new DevComponents.DotNetBar.LabelX();
+            this.txtKM_Item = new Report_Pro.MyControls.UC_KM_Item();
             this.labelX30 = new DevComponents.DotNetBar.LabelX();
             this.labelX29 = new DevComponents.DotNetBar.LabelX();
             this.labelX28 = new DevComponents.DotNetBar.LabelX();
@@ -105,8 +107,8 @@
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.tabItem3 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.txtKM_Item = new Report_Pro.MyControls.UC_KM_Item();
-            this.labelX31 = new DevComponents.DotNetBar.LabelX();
+            this.txtType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX32 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -247,34 +249,54 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.labelX31);
+            this.groupPanel1.Controls.Add(this.txtType);
+            this.groupPanel1.Controls.Add(this.txtKM_Item);
+            this.groupPanel1.Controls.Add(this.labelX32);
             this.groupPanel1.Controls.Add(this.txtDimCategory);
+            this.groupPanel1.Controls.Add(this.labelX29);
             this.groupPanel1.Controls.Add(this.txtCategory);
+            this.groupPanel1.Controls.Add(this.labelX28);
             this.groupPanel1.Controls.Add(this.txtCompany);
+            this.groupPanel1.Controls.Add(this.labelX27);
             this.groupPanel1.Controls.Add(this.txtCompanyID);
+            this.groupPanel1.Controls.Add(this.labelX26);
             this.groupPanel1.Controls.Add(this.labelX11);
+            this.groupPanel1.Controls.Add(this.labelX12);
+            this.groupPanel1.Controls.Add(this.labelX25);
             this.groupPanel1.Controls.Add(this.txtFactoryNo);
             this.groupPanel1.Controls.Add(this.labelX10);
             this.groupPanel1.Controls.Add(this.txtBrand);
             this.groupPanel1.Controls.Add(this.txtCode);
             this.groupPanel1.Controls.Add(this.labelX9);
+            this.groupPanel1.Controls.Add(this.labelX23);
             this.groupPanel1.Controls.Add(this.labelX8);
+            this.groupPanel1.Controls.Add(this.txtSalesUnit);
+            this.groupPanel1.Controls.Add(this.labelX22);
             this.groupPanel1.Controls.Add(this.txtColor);
             this.groupPanel1.Controls.Add(this.labelX6);
+            this.groupPanel1.Controls.Add(this.txtWeightUnit);
+            this.groupPanel1.Controls.Add(this.labelX21);
             this.groupPanel1.Controls.Add(this.labelX7);
             this.groupPanel1.Controls.Add(this.labelX5);
             this.groupPanel1.Controls.Add(this.txtgroup);
             this.groupPanel1.Controls.Add(this.txtDescrption_E);
+            this.groupPanel1.Controls.Add(this.labelX20);
             this.groupPanel1.Controls.Add(this.labelX4);
             this.groupPanel1.Controls.Add(this.txtDescrption);
             this.groupPanel1.Controls.Add(this.labelX3);
             this.groupPanel1.Controls.Add(this.txtBarcode);
             this.groupPanel1.Controls.Add(this.labelX2);
             this.groupPanel1.Controls.Add(this.labelX1);
+            this.groupPanel1.Controls.Add(this.txtWeight);
+            this.groupPanel1.Controls.Add(this.txtLength);
+            this.groupPanel1.Controls.Add(this.txtWidth);
+            this.groupPanel1.Controls.Add(this.txtThickness);
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel1.Location = new System.Drawing.Point(0, 29);
             this.groupPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(955, 287);
+            this.groupPanel1.Size = new System.Drawing.Size(955, 390);
             // 
             // 
             // 
@@ -306,7 +328,7 @@
             this.txtDimCategory.ItemHeight = 14;
             this.txtDimCategory.Location = new System.Drawing.Point(103, 231);
             this.txtDimCategory.Name = "txtDimCategory";
-            this.txtDimCategory.Size = new System.Drawing.Size(328, 20);
+            this.txtDimCategory.Size = new System.Drawing.Size(308, 20);
             this.txtDimCategory.TabIndex = 26;
             // 
             // txtCategory
@@ -317,7 +339,7 @@
             this.txtCategory.ItemHeight = 14;
             this.txtCategory.Location = new System.Drawing.Point(105, 205);
             this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(328, 20);
+            this.txtCategory.Size = new System.Drawing.Size(308, 20);
             this.txtCategory.TabIndex = 25;
             // 
             // txtCompany
@@ -334,7 +356,7 @@
             this.txtCompany.Location = new System.Drawing.Point(166, 126);
             this.txtCompany.Margin = new System.Windows.Forms.Padding(2);
             this.txtCompany.Name = "txtCompany";
-            this.txtCompany.Size = new System.Drawing.Size(267, 20);
+            this.txtCompany.Size = new System.Drawing.Size(265, 20);
             this.txtCompany.TabIndex = 24;
             // 
             // txtCompanyID
@@ -431,7 +453,7 @@
             // 
             this.labelX9.AutoSize = true;
             this.labelX9.BackColor = System.Drawing.Color.Transparent;
-            this.labelX9.Location = new System.Drawing.Point(26, 236);
+            this.labelX9.Location = new System.Drawing.Point(26, 233);
             this.labelX9.Margin = new System.Windows.Forms.Padding(2);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(72, 17);
@@ -442,7 +464,7 @@
             // 
             this.labelX8.AutoSize = true;
             this.labelX8.BackColor = System.Drawing.Color.Transparent;
-            this.labelX8.Location = new System.Drawing.Point(49, 205);
+            this.labelX8.Location = new System.Drawing.Point(49, 207);
             this.labelX8.Margin = new System.Windows.Forms.Padding(2);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(49, 17);
@@ -506,7 +528,7 @@
             this.txtgroup.Location = new System.Drawing.Point(105, 150);
             this.txtgroup.Margin = new System.Windows.Forms.Padding(0);
             this.txtgroup.Name = "txtgroup";
-            this.txtgroup.Size = new System.Drawing.Size(326, 21);
+            this.txtgroup.Size = new System.Drawing.Size(323, 21);
             this.txtgroup.TabIndex = 8;
             // 
             // txtDescrption_E
@@ -523,7 +545,7 @@
             this.txtDescrption_E.Location = new System.Drawing.Point(105, 102);
             this.txtDescrption_E.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescrption_E.Name = "txtDescrption_E";
-            this.txtDescrption_E.Size = new System.Drawing.Size(328, 20);
+            this.txtDescrption_E.Size = new System.Drawing.Size(323, 20);
             this.txtDescrption_E.TabIndex = 7;
             // 
             // labelX4
@@ -551,7 +573,7 @@
             this.txtDescrption.Location = new System.Drawing.Point(105, 77);
             this.txtDescrption.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescrption.Name = "txtDescrption";
-            this.txtDescrption.Size = new System.Drawing.Size(328, 20);
+            this.txtDescrption.Size = new System.Drawing.Size(323, 20);
             this.txtDescrption.TabIndex = 5;
             // 
             // labelX3
@@ -611,12 +633,12 @@
             this.tabControl1.Controls.Add(this.tabControlPanel2);
             this.tabControl1.Controls.Add(this.tabControlPanel3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 316);
+            this.tabControl1.Location = new System.Drawing.Point(0, 419);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(955, 434);
+            this.tabControl1.Size = new System.Drawing.Size(955, 331);
             this.tabControl1.TabIndex = 105;
             this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabControl1.Tabs.Add(this.tabItem1);
@@ -626,27 +648,15 @@
             // 
             // tabControlPanel1
             // 
-            this.tabControlPanel1.Controls.Add(this.labelX31);
-            this.tabControlPanel1.Controls.Add(this.txtKM_Item);
             this.tabControlPanel1.Controls.Add(this.labelX30);
-            this.tabControlPanel1.Controls.Add(this.labelX29);
-            this.tabControlPanel1.Controls.Add(this.labelX28);
-            this.tabControlPanel1.Controls.Add(this.labelX27);
-            this.tabControlPanel1.Controls.Add(this.labelX26);
             this.tabControlPanel1.Controls.Add(this.labelX18);
             this.tabControlPanel1.Controls.Add(this.labelX17);
             this.tabControlPanel1.Controls.Add(this.labelX16);
             this.tabControlPanel1.Controls.Add(this.labelX15);
             this.tabControlPanel1.Controls.Add(this.labelX24);
-            this.tabControlPanel1.Controls.Add(this.labelX23);
-            this.tabControlPanel1.Controls.Add(this.labelX22);
             this.tabControlPanel1.Controls.Add(this.labelX14);
-            this.tabControlPanel1.Controls.Add(this.labelX21);
             this.tabControlPanel1.Controls.Add(this.labelX13);
             this.tabControlPanel1.Controls.Add(this.labelX19);
-            this.tabControlPanel1.Controls.Add(this.labelX25);
-            this.tabControlPanel1.Controls.Add(this.labelX20);
-            this.tabControlPanel1.Controls.Add(this.labelX12);
             this.tabControlPanel1.Controls.Add(this.txtpack3_Price);
             this.tabControlPanel1.Controls.Add(this.txtpack2_Price);
             this.tabControlPanel1.Controls.Add(this.txtSalesPrice);
@@ -654,19 +664,13 @@
             this.tabControlPanel1.Controls.Add(this.txtpackaging2);
             this.tabControlPanel1.Controls.Add(this.txtUnit3);
             this.tabControlPanel1.Controls.Add(this.txtUnit2);
-            this.tabControlPanel1.Controls.Add(this.txtSalesUnit);
-            this.tabControlPanel1.Controls.Add(this.txtWeightUnit);
             this.tabControlPanel1.Controls.Add(this.txtArea);
-            this.tabControlPanel1.Controls.Add(this.txtThickness);
-            this.tabControlPanel1.Controls.Add(this.txtWidth);
-            this.tabControlPanel1.Controls.Add(this.txtLength);
-            this.tabControlPanel1.Controls.Add(this.txtWeight);
             this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
             this.tabControlPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel1.Size = new System.Drawing.Size(955, 408);
+            this.tabControlPanel1.Size = new System.Drawing.Size(955, 305);
             this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -677,11 +681,32 @@
             this.tabControlPanel1.TabIndex = 1;
             this.tabControlPanel1.TabItem = this.tabItem1;
             // 
+            // labelX31
+            // 
+            this.labelX31.AutoSize = true;
+            this.labelX31.BackColor = System.Drawing.Color.Transparent;
+            this.labelX31.Location = new System.Drawing.Point(49, 285);
+            this.labelX31.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX31.Name = "labelX31";
+            this.labelX31.Size = new System.Drawing.Size(49, 17);
+            this.labelX31.TabIndex = 27;
+            this.labelX31.Text = "KM Code";
+            // 
+            // txtKM_Item
+            // 
+            this.txtKM_Item.BackColor = System.Drawing.Color.Transparent;
+            this.txtKM_Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtKM_Item.Location = new System.Drawing.Point(103, 282);
+            this.txtKM_Item.Margin = new System.Windows.Forms.Padding(0);
+            this.txtKM_Item.Name = "txtKM_Item";
+            this.txtKM_Item.Size = new System.Drawing.Size(308, 24);
+            this.txtKM_Item.TabIndex = 26;
+            // 
             // labelX30
             // 
             this.labelX30.AutoSize = true;
             this.labelX30.BackColor = System.Drawing.Color.Transparent;
-            this.labelX30.Location = new System.Drawing.Point(205, 142);
+            this.labelX30.Location = new System.Drawing.Point(207, 64);
             this.labelX30.Margin = new System.Windows.Forms.Padding(2);
             this.labelX30.Name = "labelX30";
             this.labelX30.Size = new System.Drawing.Size(37, 17);
@@ -692,7 +717,7 @@
             // 
             this.labelX29.AutoSize = true;
             this.labelX29.BackColor = System.Drawing.Color.Transparent;
-            this.labelX29.Location = new System.Drawing.Point(207, 116);
+            this.labelX29.Location = new System.Drawing.Point(645, 157);
             this.labelX29.Margin = new System.Windows.Forms.Padding(2);
             this.labelX29.Name = "labelX29";
             this.labelX29.Size = new System.Drawing.Size(23, 17);
@@ -703,7 +728,7 @@
             // 
             this.labelX28.AutoSize = true;
             this.labelX28.BackColor = System.Drawing.Color.Transparent;
-            this.labelX28.Location = new System.Drawing.Point(207, 90);
+            this.labelX28.Location = new System.Drawing.Point(645, 131);
             this.labelX28.Margin = new System.Windows.Forms.Padding(2);
             this.labelX28.Name = "labelX28";
             this.labelX28.Size = new System.Drawing.Size(23, 17);
@@ -714,7 +739,7 @@
             // 
             this.labelX27.AutoSize = true;
             this.labelX27.BackColor = System.Drawing.Color.Transparent;
-            this.labelX27.Location = new System.Drawing.Point(210, 64);
+            this.labelX27.Location = new System.Drawing.Point(648, 105);
             this.labelX27.Margin = new System.Windows.Forms.Padding(2);
             this.labelX27.Name = "labelX27";
             this.labelX27.Size = new System.Drawing.Size(23, 17);
@@ -725,7 +750,7 @@
             // 
             this.labelX26.AutoSize = true;
             this.labelX26.BackColor = System.Drawing.Color.Transparent;
-            this.labelX26.Location = new System.Drawing.Point(210, 38);
+            this.labelX26.Location = new System.Drawing.Point(648, 79);
             this.labelX26.Margin = new System.Windows.Forms.Padding(2);
             this.labelX26.Name = "labelX26";
             this.labelX26.Size = new System.Drawing.Size(20, 17);
@@ -780,7 +805,7 @@
             // 
             this.labelX24.AutoSize = true;
             this.labelX24.BackColor = System.Drawing.Color.Transparent;
-            this.labelX24.Location = new System.Drawing.Point(47, 142);
+            this.labelX24.Location = new System.Drawing.Point(49, 64);
             this.labelX24.Margin = new System.Windows.Forms.Padding(2);
             this.labelX24.Name = "labelX24";
             this.labelX24.Size = new System.Drawing.Size(28, 17);
@@ -791,7 +816,7 @@
             // 
             this.labelX23.AutoSize = true;
             this.labelX23.BackColor = System.Drawing.Color.Transparent;
-            this.labelX23.Location = new System.Drawing.Point(24, 116);
+            this.labelX23.Location = new System.Drawing.Point(462, 157);
             this.labelX23.Margin = new System.Windows.Forms.Padding(2);
             this.labelX23.Name = "labelX23";
             this.labelX23.Size = new System.Drawing.Size(53, 17);
@@ -802,7 +827,7 @@
             // 
             this.labelX22.AutoSize = true;
             this.labelX22.BackColor = System.Drawing.Color.Transparent;
-            this.labelX22.Location = new System.Drawing.Point(43, 90);
+            this.labelX22.Location = new System.Drawing.Point(481, 131);
             this.labelX22.Margin = new System.Windows.Forms.Padding(2);
             this.labelX22.Name = "labelX22";
             this.labelX22.Size = new System.Drawing.Size(34, 17);
@@ -824,7 +849,7 @@
             // 
             this.labelX21.AutoSize = true;
             this.labelX21.BackColor = System.Drawing.Color.Transparent;
-            this.labelX21.Location = new System.Drawing.Point(41, 64);
+            this.labelX21.Location = new System.Drawing.Point(479, 105);
             this.labelX21.Margin = new System.Windows.Forms.Padding(2);
             this.labelX21.Name = "labelX21";
             this.labelX21.Size = new System.Drawing.Size(36, 17);
@@ -857,7 +882,7 @@
             // 
             this.labelX25.AutoSize = true;
             this.labelX25.BackColor = System.Drawing.Color.Transparent;
-            this.labelX25.Location = new System.Drawing.Point(14, 168);
+            this.labelX25.Location = new System.Drawing.Point(454, 183);
             this.labelX25.Margin = new System.Windows.Forms.Padding(2);
             this.labelX25.Name = "labelX25";
             this.labelX25.Size = new System.Drawing.Size(63, 17);
@@ -868,7 +893,7 @@
             // 
             this.labelX20.AutoSize = true;
             this.labelX20.BackColor = System.Drawing.Color.Transparent;
-            this.labelX20.Location = new System.Drawing.Point(37, 38);
+            this.labelX20.Location = new System.Drawing.Point(475, 79);
             this.labelX20.Margin = new System.Windows.Forms.Padding(2);
             this.labelX20.Name = "labelX20";
             this.labelX20.Size = new System.Drawing.Size(40, 17);
@@ -879,7 +904,7 @@
             // 
             this.labelX12.AutoSize = true;
             this.labelX12.BackColor = System.Drawing.Color.Transparent;
-            this.labelX12.Location = new System.Drawing.Point(288, 38);
+            this.labelX12.Location = new System.Drawing.Point(463, 209);
             this.labelX12.Margin = new System.Windows.Forms.Padding(2);
             this.labelX12.Name = "labelX12";
             this.labelX12.Size = new System.Drawing.Size(54, 17);
@@ -982,9 +1007,9 @@
             this.txtSalesUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtSalesUnit.FormattingEnabled = true;
             this.txtSalesUnit.ItemHeight = 14;
-            this.txtSalesUnit.Location = new System.Drawing.Point(347, 36);
+            this.txtSalesUnit.Location = new System.Drawing.Point(522, 207);
             this.txtSalesUnit.Name = "txtSalesUnit";
-            this.txtSalesUnit.Size = new System.Drawing.Size(121, 20);
+            this.txtSalesUnit.Size = new System.Drawing.Size(123, 20);
             this.txtSalesUnit.TabIndex = 6;
             // 
             // txtWeightUnit
@@ -993,9 +1018,9 @@
             this.txtWeightUnit.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtWeightUnit.FormattingEnabled = true;
             this.txtWeightUnit.ItemHeight = 14;
-            this.txtWeightUnit.Location = new System.Drawing.Point(82, 166);
+            this.txtWeightUnit.Location = new System.Drawing.Point(522, 181);
             this.txtWeightUnit.Name = "txtWeightUnit";
-            this.txtWeightUnit.Size = new System.Drawing.Size(121, 20);
+            this.txtWeightUnit.Size = new System.Drawing.Size(123, 20);
             this.txtWeightUnit.TabIndex = 5;
             // 
             // txtArea
@@ -1006,7 +1031,7 @@
             this.txtArea.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtArea.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtArea.Increment = 1D;
-            this.txtArea.Location = new System.Drawing.Point(80, 140);
+            this.txtArea.Location = new System.Drawing.Point(82, 62);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(123, 20);
             this.txtArea.TabIndex = 4;
@@ -1019,7 +1044,7 @@
             this.txtThickness.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtThickness.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtThickness.Increment = 1D;
-            this.txtThickness.Location = new System.Drawing.Point(82, 114);
+            this.txtThickness.Location = new System.Drawing.Point(520, 155);
             this.txtThickness.Name = "txtThickness";
             this.txtThickness.Size = new System.Drawing.Size(123, 20);
             this.txtThickness.TabIndex = 3;
@@ -1032,7 +1057,7 @@
             this.txtWidth.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtWidth.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtWidth.Increment = 1D;
-            this.txtWidth.Location = new System.Drawing.Point(82, 88);
+            this.txtWidth.Location = new System.Drawing.Point(520, 129);
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(123, 20);
             this.txtWidth.TabIndex = 2;
@@ -1045,7 +1070,7 @@
             this.txtLength.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtLength.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtLength.Increment = 1D;
-            this.txtLength.Location = new System.Drawing.Point(82, 62);
+            this.txtLength.Location = new System.Drawing.Point(520, 103);
             this.txtLength.Name = "txtLength";
             this.txtLength.Size = new System.Drawing.Size(123, 20);
             this.txtLength.TabIndex = 1;
@@ -1058,7 +1083,7 @@
             this.txtWeight.BackgroundStyle.Class = "DateTimeInputBackground";
             this.txtWeight.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2;
             this.txtWeight.Increment = 1D;
-            this.txtWeight.Location = new System.Drawing.Point(82, 36);
+            this.txtWeight.Location = new System.Drawing.Point(520, 77);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(123, 20);
             this.txtWeight.TabIndex = 0;
@@ -1100,7 +1125,7 @@
             this.tabControlPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tabControlPanel3.Name = "tabControlPanel3";
             this.tabControlPanel3.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel3.Size = new System.Drawing.Size(955, 408);
+            this.tabControlPanel3.Size = new System.Drawing.Size(955, 305);
             this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1117,26 +1142,27 @@
             this.tabItem3.Name = "tabItem3";
             this.tabItem3.Text = "tabItem3";
             // 
-            // txtKM_Item
+            // txtType
             // 
-            this.txtKM_Item.BackColor = System.Drawing.Color.Transparent;
-            this.txtKM_Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.txtKM_Item.Location = new System.Drawing.Point(347, 140);
-            this.txtKM_Item.Margin = new System.Windows.Forms.Padding(0);
-            this.txtKM_Item.Name = "txtKM_Item";
-            this.txtKM_Item.Size = new System.Drawing.Size(310, 24);
-            this.txtKM_Item.TabIndex = 26;
+            this.txtType.DisplayMember = "Text";
+            this.txtType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtType.FormattingEnabled = true;
+            this.txtType.ItemHeight = 14;
+            this.txtType.Location = new System.Drawing.Point(103, 259);
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(308, 20);
+            this.txtType.TabIndex = 28;
             // 
-            // labelX31
+            // labelX32
             // 
-            this.labelX31.AutoSize = true;
-            this.labelX31.BackColor = System.Drawing.Color.Transparent;
-            this.labelX31.Location = new System.Drawing.Point(293, 143);
-            this.labelX31.Margin = new System.Windows.Forms.Padding(2);
-            this.labelX31.Name = "labelX31";
-            this.labelX31.Size = new System.Drawing.Size(49, 17);
-            this.labelX31.TabIndex = 27;
-            this.labelX31.Text = "KM Code";
+            this.labelX32.AutoSize = true;
+            this.labelX32.BackColor = System.Drawing.Color.Transparent;
+            this.labelX32.Location = new System.Drawing.Point(68, 261);
+            this.labelX32.Margin = new System.Windows.Forms.Padding(2);
+            this.labelX32.Name = "labelX32";
+            this.labelX32.Size = new System.Drawing.Size(30, 17);
+            this.labelX32.TabIndex = 27;
+            this.labelX32.Text = "Type";
             // 
             // frmProducts
             // 
@@ -1248,5 +1274,7 @@
         private DevComponents.Editors.DoubleInput txtWeight;
         private DevComponents.DotNetBar.LabelX labelX31;
         private MyControls.UC_KM_Item txtKM_Item;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx txtType;
+        private DevComponents.DotNetBar.LabelX labelX32;
     }
 }
