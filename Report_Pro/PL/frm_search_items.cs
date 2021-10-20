@@ -29,7 +29,18 @@ namespace Report_Pro.PL
 
         private void search_product()
         {
-            dGV_pro_list.DataSource = dal.getDataTabl("srch_product_", txtSrch.Text, txtsrch_1.Text, txtserch_2.Text, txtSrch_3.Text,txtserch_4.Text, (radiobalance.Checked ? "1" : "2"),dal.db1);
+            string strBalance = radiobalance.Checked ? "1" : "2";
+            dGV_pro_list.DataSource = dal.getDataTabl_1(@"SELECT item_no,factory_no,descr,Descr_eng,Weight,Group_name,unit,BALANCE
+            FROM wh_main_master as A
+            inner join wh_Groups as B
+            on A.group_code = B.group_code
+            where BALANCE <> case when '" + strBalance + "'= 1  then  0 else 1000000000  end and " +
+            " descr + Descr_eng + Group_name like '%" + txtsrch_1.Text
+            + "%' and descr + Descr_eng + Group_name like  '%" + txtserch_2.Text
+            + "%' and descr + Descr_eng + Group_name like '%" + txtSrch_3.Text
+            + "%' and descr + Descr_eng + Group_name like '%" + txtserch_4.Text
+            + "%' and ( item_no like '" + txtSrch.Text + "%' or factory_no like '" + txtSrch.Text + "%')");
+            //, txtSrch.Text, txtsrch_1.Text, txtserch_2.Text, txtSrch_3.Text,txtserch_4.Text, (radiobalance.Checked ? "1" : "2"),dal.db1);
             resizeDG();
         }
         void resizeDG()
@@ -44,23 +55,24 @@ namespace Report_Pro.PL
         private void dGV_pro_list_DoubleClick(object sender, EventArgs e)
         {
             clos_ = 1;
-            this.Close();
+            this.Hide();
+           // this.Close();
         }
 
         private void dGV_pro_list_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Enter)
-            {
-                this.Close();
-            }
+            //if (e.KeyData == Keys.Enter)
+            //{
+            //    this.Close();
+            //}
         }
 
         private void dGV_pro_list_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Enter)
-            {
-                e.Handled = true;
-            }
+            //if (e.KeyData == Keys.Enter)
+            //{
+            //    e.Handled = true;
+            //}
         }
 
         private void btnSrch_Click(object sender, EventArgs e)
@@ -140,6 +152,14 @@ namespace Report_Pro.PL
         private void txtserch_2_TextChanged(object sender, EventArgs e)
         {
             search_product();
+        }
+
+        private void txtSrch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter && txtSrch.Text.Trim() != "")
+            {
+                txtsrch_1.Focus();
+            }
         }
     }
 }

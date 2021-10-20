@@ -371,6 +371,38 @@ namespace Report_Pro.DAL
 
 
 
+        public void ClearTextBoxes_uc(UserControl uc)
+        {
+            Action<Control.ControlCollection> func = null;
+
+            func = (controls) =>
+            {
+                foreach (Control control in controls)
+                    if (control is TextBox)
+                        (control as TextBox).Clear();
+                    else if (control is ComboBox)
+                        (control as ComboBox).SelectedIndex = -1;
+                    else if (control is DateTimePicker)
+                        (control as DateTimePicker).Value = DateTime.Now;
+                    else if (control is DevComponents.Editors.DoubleInput)
+                        (control as DevComponents.Editors.DoubleInput).Value = 0;
+                    else if (control is DevComponents.Editors.DateTimeAdv.DateTimeInput)
+                        (control as DevComponents.Editors.DateTimeAdv.DateTimeInput).Text = "";
+                    else if (control is DataGridView)
+                    {
+                        (control as DataGridView).DataSource = null;
+                        (control as DataGridView).Rows.Clear();
+                    }
+
+
+
+                    else
+                        func(control.Controls);
+            };
+
+            func(uc.Controls);
+        }
+
 
 
     }

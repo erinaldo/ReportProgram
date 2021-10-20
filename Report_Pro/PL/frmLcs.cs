@@ -418,7 +418,7 @@ namespace Report_Pro.PL
 
         private void frmLcs_Load(object sender, EventArgs e)
         {
-            txtSupplier.txtMainAcc.Text = "2343";
+            txtSupplier.txtMainAcc.Text = "234";
             txtSupplier.txtFinal.Text = "1";
             txtBank.txtMainAcc.Text = "122";
             txtBank.txtFinal.Text = "1";

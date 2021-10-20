@@ -44,6 +44,7 @@
             this.txtserch_2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dGV_pro_list = new System.Windows.Forms.DataGridView();
+            this.checkBoxX1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.panel1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -61,6 +62,7 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.checkBoxX1);
             this.groupPanel1.Controls.Add(this.btnSrch);
             this.groupPanel1.Controls.Add(this.txtserch_4);
             this.groupPanel1.Controls.Add(this.panel3);
@@ -144,6 +146,7 @@
             resources.ApplyResources(this.txtSrch, "txtSrch");
             this.txtSrch.Name = "txtSrch";
             this.txtSrch.TextChanged += new System.EventHandler(this.txtSrch_TextChanged);
+            this.txtSrch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSrch_KeyDown);
             // 
             // label2
             // 
@@ -195,6 +198,12 @@
             this.dGV_pro_list.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dGV_pro_list_KeyDown);
             this.dGV_pro_list.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dGV_pro_list_KeyUp);
             // 
+            // checkBoxX1
+            // 
+            this.checkBoxX1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.checkBoxX1, "checkBoxX1");
+            this.checkBoxX1.Name = "checkBoxX1";
+            // 
             // frm_search_items
             // 
             resources.ApplyResources(this, "$this");
@@ -230,5 +239,6 @@
         private System.Windows.Forms.TextBox txtserch_4;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.ButtonX btnSrch;
+        private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX1;
     }
 }

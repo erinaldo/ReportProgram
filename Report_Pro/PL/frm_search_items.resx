@@ -112,19 +112,43 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-   <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBoxX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 16</value>
+  </data>
+  <data name="checkBoxX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBoxX1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="checkBoxX1.Text" xml:space="preserve">
+    <value>عدم مسح بيانات البحث</value>
+  </data>
+  <data name="&gt;&gt;checkBoxX1.Name" xml:space="preserve">
+    <value>checkBoxX1</value>
+  </data>
+  <data name="&gt;&gt;checkBoxX1.Type" xml:space="preserve">
+    <value>DevComponents.DotNetBar.Controls.CheckBoxX, DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741</value>
+  </data>
+  <data name="&gt;&gt;checkBoxX1.Parent" xml:space="preserve">
+    <value>groupPanel1</value>
+  </data>
+  <data name="&gt;&gt;checkBoxX1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnSrch.Location" type="System.Drawing.Point, System.Drawing">
     <value>442, 16</value>
   </data>
   <data name="btnSrch.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 37</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnSrch.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
@@ -141,7 +165,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;btnSrch.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtserch_4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -166,28 +190,10 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtserch_4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="radioAll.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="radioAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 3</value>
-  </data>
-  <data name="radioAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 17</value>
-  </data>
-  <data name="radioAll.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="radioAll.Text" xml:space="preserve">
-    <value>الجميع</value>
   </data>
   <data name="&gt;&gt;radioAll.Name" xml:space="preserve">
     <value>radioAll</value>
@@ -200,24 +206,6 @@
   </data>
   <data name="&gt;&gt;radioAll.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="radiobalance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radiobalance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="radiobalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 25</value>
-  </data>
-  <data name="radiobalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 17</value>
-  </data>
-  <data name="radiobalance.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="radiobalance.Text" xml:space="preserve">
-    <value>اصناف لها رصيد</value>
   </data>
   <data name="&gt;&gt;radiobalance.Name" xml:space="preserve">
     <value>radiobalance</value>
@@ -235,7 +223,7 @@
     <value>253, 9</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 48</value>
+    <value>124, 53</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -250,7 +238,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -262,16 +250,16 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 17</value>
+    <value>859, 13</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>107, 13</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>رقم الصنف</value>
+    <value>رقم الصنف/رقم المورد</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -283,16 +271,16 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtSrch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="txtSrch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>824, 14</value>
+    <value>733, 9</value>
   </data>
   <data name="txtSrch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 20</value>
+    <value>118, 20</value>
   </data>
   <data name="txtSrch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -307,7 +295,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtSrch.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -340,7 +328,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="txtsrch_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -364,7 +352,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtsrch_1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="txtSrch_3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -388,7 +376,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtSrch_3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="txtserch_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -412,7 +400,7 @@
     <value>groupPanel1</value>
   </data>
   <data name="&gt;&gt;txtserch_2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="groupPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -493,6 +481,66 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 4</value>
+  </data>
+  <data name="radioAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="radioAll.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="radioAll.Text" xml:space="preserve">
+    <value>الجميع</value>
+  </data>
+  <data name="&gt;&gt;radioAll.Name" xml:space="preserve">
+    <value>radioAll</value>
+  </data>
+  <data name="&gt;&gt;radioAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioAll.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;radioAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radiobalance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radiobalance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radiobalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="radiobalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
+  <data name="radiobalance.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="radiobalance.Text" xml:space="preserve">
+    <value>اصناف لها رصيد</value>
+  </data>
+  <data name="&gt;&gt;radiobalance.Name" xml:space="preserve">
+    <value>radiobalance</value>
+  </data>
+  <data name="&gt;&gt;radiobalance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radiobalance.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;radiobalance.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="dGV_pro_list.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

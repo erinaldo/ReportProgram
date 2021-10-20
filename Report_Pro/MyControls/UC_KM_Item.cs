@@ -32,7 +32,7 @@ namespace Report_Pro.MyControls
         {
             int ii = dgv1.CurrentCell.RowIndex;
 
-            ID.Text = dgv1.Rows[ii].Cells[0].Value.ToString();
+            ID.Text   = dgv1.Rows[ii].Cells[0].Value.ToString();
             Desc.Text = dgv1.Rows[ii].Cells[1].Value.ToString();
 
             dgv1.Visible = false;
@@ -50,7 +50,7 @@ namespace Report_Pro.MyControls
                 this.Height = 130;
                 this.BringToFront();
                 dgv1.Visible = true;
-                dgv1.DataSource = dal.getDataTabl_1("SELECT * FROM VAT_ACC  where VAT_ID like '2'+'%' and VAT_DESC like'%" + Desc.Text + "%'");
+                dgv1.DataSource = dal.getDataTabl_1("SELECT KM_CODE,KM_DESCR,KM_RATIO FROM KM_MATERIAL_CODE  where KM_DESCR like'%" + Desc.Text + "%'");
 
 
                 for (int i = 2; i < dgv1.Columns.Count; i++)
@@ -87,10 +87,10 @@ namespace Report_Pro.MyControls
         {
             try
             {
-                DataTable dt_ = dal.getDataTabl_1("SELECT VAT_DESC FROM VAT_ACC  where VAT_ID like '2'+'%' and VAT_ID = '" + ID.Text + "'");
+                DataTable dt_ = dal.getDataTabl_1("SELECT KM_DESCR FROM KM_MATERIAL_CODE where KM_CODE = '" + ID.Text + "'");
                 if (dt_.Rows.Count > 0)
                 {
-                    Desc.Text = dt_.Rows[0][0].ToString();
+                    Desc.Text = dt_.Rows[0]["KM_DESCR"].ToString();
                 }
                 else
                 {

@@ -531,6 +531,11 @@ namespace Report_Pro.PL
 
         }
 
+        private void BSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void BExit_Click(object sender, EventArgs e)
         {
             this.Close();

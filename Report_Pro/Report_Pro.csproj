@@ -567,11 +567,35 @@
     <Compile Include="MyControls\UC_Date.designer.cs">
       <DependentUpon>UC_Date.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyControls\UC_Drop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UC_Drop.Designer.cs">
+      <DependentUpon>UC_Drop.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyControls\UC_FinalAcc.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MyControls\UC_FinalAcc.designer.cs">
       <DependentUpon>UC_FinalAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UC_Company.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UC_Company.designer.cs">
+      <DependentUpon>UC_Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\UC_ItemType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\UC_ItemType.designer.cs">
+      <DependentUpon>UC_ItemType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Uc_ItemCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Uc_ItemCategory.designer.cs">
+      <DependentUpon>Uc_ItemCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="MyControls\UC_SalesGroup.cs">
       <SubType>UserControl</SubType>
@@ -626,6 +650,12 @@
     </Compile>
     <Compile Include="MyControls\UC_QutType.designer.cs">
       <DependentUpon>UC_QutType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\Uc_SearchItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\Uc_SearchItem.Designer.cs">
+      <DependentUpon>Uc_SearchItem.cs</DependentUpon>
     </Compile>
     <Compile Include="MyControls\Uc_Supplier.cs">
       <SubType>UserControl</SubType>
@@ -1500,8 +1530,47 @@
       <DependentUpon>UC_Date.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_Drop.resx">
+      <DependentUpon>UC_Drop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_FinalAcc.resx">
       <DependentUpon>UC_FinalAcc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_Company.ar.resx">
+      <DependentUpon>UC_Company.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_Company.resx">
+      <DependentUpon>UC_Company.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_Company.sq-AL.resx">
+      <DependentUpon>UC_Company.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_ItemType.ar.resx">
+      <DependentUpon>UC_ItemType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_ItemType.resx">
+      <DependentUpon>UC_ItemType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\UC_ItemType.sq-AL.resx">
+      <DependentUpon>UC_ItemType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Uc_ItemCategory.ar.resx">
+      <DependentUpon>Uc_ItemCategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Uc_ItemCategory.resx">
+      <DependentUpon>Uc_ItemCategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Uc_ItemCategory.sq-AL.resx">
+      <DependentUpon>Uc_ItemCategory.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\UC_KM_Item.ar.resx">
@@ -1564,6 +1633,9 @@
     <EmbeddedResource Include="MyControls\UC_QutType.resx">
       <DependentUpon>UC_QutType.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\Uc_SearchItem.resx">
+      <DependentUpon>Uc_SearchItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyControls\Uc_Supplier.ar.resx">
       <DependentUpon>Uc_Supplier.cs</DependentUpon>

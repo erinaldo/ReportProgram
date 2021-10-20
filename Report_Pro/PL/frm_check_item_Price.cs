@@ -180,12 +180,12 @@ namespace Report_Pro.PL
         private void get_balance()
         {
 
-            DataTable dt_b = dal.getDataTabl_1(@"select T.Branch_code,t.branch_name,T.balance,X.Sales_ from ( SELECT  D.Branch_code,A.branch_name,sum (case when cast(D.G_date as date) <= '" + ToDate.Value.ToString("yyyy-MM-dd") + "' and D.cyear = '21' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as balance "+
+            DataTable dt_b = dal.getDataTabl_1(@"select * from(select T.Branch_code,t.branch_name,T.balance,X.Sales_ from ( SELECT  D.Branch_code,A.branch_name,sum (case when cast(D.G_date as date) <= '" + ToDate.Value.ToString("yyyy-MM-dd") + "' and D.cyear = '21' then D.QTY_ADD-D.QTY_TAKE  else 0 end)  as balance "+
             "FROM wh_material_transaction As D inner join wh_BRANCHES As A on A.Branch_code = D.Branch_code "+
-            "where D.item_no = '" + Uc_Items.ID.Text+"' group by D.Branch_code, A.branch_name) as T " +
+            "where D.item_no = '" + Uc_Items.ID.Text+"'  group by D.Branch_code, A.branch_name) as T " +
             "left join (select Branch_code,SUM(QTY_TAKE-QTY_ADD) as Sales_ " +
             "from wh_material_transaction  where TRANSACTION_CODE like 'xs%'  and cast(G_DATE as date) between '"+ FromDate.Value.ToString("yyyy-MM-dd")+"' and '"+ ToDate.Value.ToString("yyyy-MM-dd")+"'	and item_no = '"+ Uc_Items.ID.Text + "'		group by Branch_code) as X " +
-            "on T.Branch_code=X.Branch_code where t.balance <> 0 or X.Sales_<>0 ");
+            "on T.Branch_code=X.Branch_code where t.balance <> 0 or X.Sales_<>0) as Z where Branch_code like '"+Uc_Branch.ID.Text+"%'");
             if (dt_b.Rows.Count > 0)
             {
                 
@@ -238,7 +238,7 @@ namespace Report_Pro.PL
             inner join wh_inv_data as B on A.SER_NO=B.Ser_no and A.TRANSACTION_CODE=B.TRANSACTION_CODE and a.Branch_code=b.Branch_code and a.Cyear=b.Cyear
             inner join payer2 as P on p.ACC_NO=b.Acc_no and b.Acc_Branch_code=p.BRANCH_code 
             inner join wh_BRANCHES As C on A.Branch_code=C.Branch_code 
-            where item_no='" + item_no + "' and (A.TRANSACTION_CODE='Xpc' or A.TRANSACTION_CODE='XpE' or A.TRANSACTION_CODE='Xpd') order by G_DATE desc");
+            where item_no='" + item_no + "' and A.Branch_code like '"+Uc_Branch.ID.Text+"%' and (A.TRANSACTION_CODE='Xpc' or A.TRANSACTION_CODE='XpE' or A.TRANSACTION_CODE='Xpd') order by G_DATE desc");
 
 
 
@@ -297,7 +297,7 @@ namespace Report_Pro.PL
             inner join wh_inv_data as B on A.SER_NO=B.Ser_no and A.TRANSACTION_CODE=B.TRANSACTION_CODE and a.Branch_code=b.Branch_code and a.Cyear=b.Cyear
             inner join payer2 as P on p.ACC_NO=b.Acc_no and b.Acc_Branch_code=p.BRANCH_code
             inner join wh_BRANCHES As C on A.Branch_code=C.Branch_code 
-            where item_no='" + item_no + "' and (A.TRANSACTION_CODE='XSC' or A.TRANSACTION_CODE='XSD') order by G_DATE desc");
+            where item_no='" + item_no + "'  and A.Branch_code like '" + Uc_Branch.ID.Text + "%' and (A.TRANSACTION_CODE='XSC' or A.TRANSACTION_CODE='XSD') order by G_DATE desc");
 
 
 
@@ -390,16 +390,39 @@ namespace Report_Pro.PL
             }
         }
 
+
+       
+
         private void Uc_Items_Click(object sender, EventArgs e)
         {
-            try
-            {
-                PL.frm_search_items frm = new PL.frm_search_items();
-                frm.ShowDialog();
-                Uc_Items.ID.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
-                get_balance();
-            }
-            catch { }
+            uc_SearchItem1.Visible = true;
+
+            // foreach (Form frm in Application.OpenForms)
+            //{
+                
+            //    if (frm.Name == "frm_search_items")
+            //        {
+            //            frm.Visible=true;
+            //            frm.BringToFront();
+            //            frm.StartPosition = FormStartPosition.CenterScreen;
+            //            return;
+            //        }
+            //    }
+
+
+
+
+            //try
+            //{
+            //    PL.frm_search_items frm = new PL.frm_search_items();
+                                  
+            //        frm.Show();
+            //    frm.TopMost = true;
+            //        Uc_Items.ID.Text = frm.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
+            //        get_balance();
+                
+            //}
+            //catch { }
         }
 
         private void labelX16_Click(object sender, EventArgs e)
@@ -651,6 +674,50 @@ namespace Report_Pro.PL
                 frm.ShowDialog();
             }
             
+        }
+
+        private void uc_SearchItem1_DoubleClick(object sender, EventArgs e)
+        {
+
+
+            Uc_Items.ID.Text = uc_SearchItem1.dGV_pro_list.CurrentRow.Cells[0].Value.ToString();
+            get_balance();
+            if (uc_SearchItem1.ch_SaveSearch.Checked == true)
+            {
+                uc_SearchItem1.Visible = false;
+            }
+            else
+            {
+                dal.ClearTextBoxes_uc(uc_SearchItem1);
+                uc_SearchItem1.Visible = false;
+            }
+
+
+        }
+
+        private void uc_SearchItem1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

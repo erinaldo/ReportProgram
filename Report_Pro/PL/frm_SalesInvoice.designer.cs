@@ -294,6 +294,7 @@
             this.BSearch.Name = "BSearch";
             this.BSearch.SubItemsExpandWidth = 14;
             resources.ApplyResources(this.BSearch, "BSearch");
+            this.BSearch.Click += new System.EventHandler(this.BSearch_Click);
             // 
             // buttonItem1
             // 

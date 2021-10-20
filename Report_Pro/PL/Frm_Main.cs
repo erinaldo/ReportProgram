@@ -173,8 +173,10 @@ namespace Report_Pro.PL
 
         private void Frm_Main_Load(object sender, EventArgs e)
         {
+            this.Location = new Point(0, 0);
 
-            
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+
             this.Controls.OfType<MdiClient>().FirstOrDefault().BackColor = c;
             this.panel1.BackColor = c;
             this.listView1.BackColor = c;

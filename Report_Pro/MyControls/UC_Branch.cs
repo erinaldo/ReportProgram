@@ -61,7 +61,7 @@ namespace Report_Pro.MyControls
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            search_();
+                    search_();
 
         }
 

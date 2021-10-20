@@ -943,7 +943,7 @@ where P.BRANCH_code like '" + uC_Acc1.branchID.Text.ToString() + "%' and P.ACC_N
                 }
 
             
-            dGV_Item.DataSource = dt;
+                 dGV_Item.DataSource = dt;
                 DataGridViewButtonColumn col = new DataGridViewButtonColumn();
                 col.UseColumnTextForButtonValue = true;
                 col.Text = "Edit";

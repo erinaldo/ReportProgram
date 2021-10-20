@@ -119,14 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgv1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
+    <value>0, 24</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dgv1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="dgv1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 130</value>
+    <value>320, 106</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dgv1.TabIndex" type="System.Int32, mscorlib">
@@ -148,13 +148,13 @@
     <value>2</value>
   </data>
   <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 1</value>
+    <value>94, 1</value>
   </data>
   <data name="Desc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 24</value>
+    <value>226, 20</value>
   </data>
   <data name="Desc.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -178,7 +178,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 24</value>
+    <value>67, 20</value>
   </data>
   <data name="ID.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -261,13 +261,13 @@
 </value>
   </data>
   <data name="btn1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 1</value>
+    <value>68, 1</value>
   </data>
   <data name="btn1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="btn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 24</value>
+    <value>27, 20</value>
   </data>
   <data name="btn1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -285,10 +285,13 @@
     <value>4</value>
   </data>
   <data name="txtTfinal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>78, 37</value>
+    <value>67, 30</value>
+  </data>
+  <data name="txtTfinal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="txtTfinal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
+    <value>97, 20</value>
   </data>
   <data name="txtTfinal.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -309,10 +312,13 @@
     <value>1</value>
   </data>
   <data name="txtAccBranch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 37</value>
+    <value>165, 30</value>
+  </data>
+  <data name="txtAccBranch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="txtAccBranch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
+    <value>97, 20</value>
   </data>
   <data name="txtAccBranch.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -332,17 +338,20 @@
   <data name="&gt;&gt;txtAccBranch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ar</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 25</value>
+    <value>317, 20</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>UC_Branch</value>
